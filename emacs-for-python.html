@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>Emacs for python</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <meta name="description" content="Python programming in Emacs Emacs for Python Fonctionne bien, fournit la complétion (M-/) abl-mode Elpy flycheck-pychekers (global-flycheck-mode..." />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">MyBlog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/archerie.html">Archerie</a></li>
+                    <li><a href="/category/archive.html">Archive</a></li>
+                    <li><a href="/category/culture.html">Culture</a></li>
+                    <li class="active"><a href="/category/developpement.html">Développement</a></li>
+                    <li><a href="/category/divers.html">Divers</a></li>
+                    <li><a href="/category/graphisme.html">Graphisme</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li><a href="/category/musique.html">Musique</a></li>
+                    <li><a href="/category/projets.html">Projets</a></li>
+                    <li><a href="/category/reprap.html">RepRap</a></li>
+                    <li><a href="/category/securite.html">Sécurité</a></li>
+                    <li><a href="/category/systeme.html">Système</a></li>
+                    <li><a href="/category/tech.html">Tech</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/emacs-for-python.html" rel="bookmark"
+           title="Permalink to Emacs for python">Emacs for python</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-02-06T18:28:52+01:00">
+                Published: Tue 06 February 2018
+        </abbr>
+		<br />
+        <abbr class="modified" title="2021-07-04T10:47:00+02:00">
+                Updated: Sun 04 July 2021
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/developpement.html">Développement</a>.</p>
+<p>tags: <a href="/tag/emacs.html">Emacs</a> </p>
+</footer><!-- /.post-info -->      <ul>
+<li><a href="https://www.emacswiki.org/emacs/PythonProgrammingInEmacs">Python programming in Emacs</a></li>
+<li><a href="https://github.com/gabrielelanaro/emacs-for-python">Emacs for Python</a> Fonctionne bien, fournit la complétion (M-/)</li>
+<li><a href="https://github.com/afroisalreadyinu/abl-mode">abl-mode</a></li>
+<li><a href="https://github.com/jorgenschaefer/elpy">Elpy</a></li>
+</ul>
+<h1>flycheck-pychekers</h1>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="n">global</span><span class="o">-</span><span class="n">flycheck</span><span class="o">-</span><span class="n">mode</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"></span>
+<span class="p">(</span><span class="n">with</span><span class="o">-</span><span class="n">eval</span><span class="o">-</span><span class="n">after</span><span class="o">-</span><span class="nb">load</span><span class="w"> </span><span class="s1">&#39;flycheck</span>
+<span class="p">(</span><span class="n">add</span><span class="o">-</span><span class="n">hook</span><span class="w"> </span><span class="s1">&#39;flycheck-mode-hook #&#39;</span><span class="n">flycheck</span><span class="o">-</span><span class="n">pycheckers</span><span class="o">-</span><span class="n">setup</span><span class="p">))</span><span class="w"></span>
+</code></pre></div>
+
+<p>Filtrer les messages</p>
+<h2>Mypy</h2>
+<div class="highlight"><pre><span></span><code>pip install mypy
+</code></pre></div>
+
+<p>configuration: </p>
+<div class="highlight"><pre><span></span><code><span class="err">#</span><span class="w"> </span><span class="o">~/</span><span class="p">.</span><span class="n">config</span><span class="o">/</span><span class="n">mypy</span><span class="o">/</span><span class="n">config</span><span class="w"></span>
+<span class="o">[</span><span class="n">mypy</span><span class="o">]</span><span class="w"></span>
+<span class="n">ignore_missing_imports</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">True</span><span class="w"></span>
+</code></pre></div>
+
+<h2>Pylint</h2>
+<p>Générer .pylinrc pour le projet:</p>
+<div class="highlight"><pre><span></span><code>pylint --generate-rcfile &gt; .pylintrc
+</code></pre></div>
+
+<p>Dans .pylintrc du projet modifier init-hook:</p>
+<div class="highlight"><pre><span></span><code><span class="n">init</span><span class="o">-</span><span class="n">hook</span><span class="o">=</span><span class="s1">&#39;import sys; sys.path.append(&quot;/home/stephane/.local/share/virtualenvs/pypass--rJIKvrW/lib/python3.9/site-packages*&quot;)&#39;</span>
+</code></pre></div>
+
+<p>.pylintrc utilisateur</p>
+<div class="highlight"><pre><span></span><code><span class="cp"># ~/.pylintrc</span>
+<span class="p">[</span><span class="n">MESSAGES</span><span class="w"> </span><span class="n">CONTROL</span><span class="p">]</span><span class="w"></span>
+<span class="n">disable</span><span class="o">=</span><span class="n">too</span><span class="o">-</span><span class="n">many</span><span class="o">-</span><span class="n">ancestors</span><span class="w"></span>
+<span class="n">disable</span><span class="o">=</span><span class="n">missing</span><span class="o">-</span><span class="n">function</span><span class="o">-</span><span class="n">docstring</span><span class="w"></span>
+</code></pre></div>
+
+<h1><a href="https://github.com/jorgenschaefer/elpy">Elpy</a></h1>
+<ul>
+<li>Tags fonctionnels</li>
+<li>Checkers fonctionnels</li>
+</ul>
+<p>Problème:</p>
+<p><a href="https://github.com/jorgenschaefer/elpy/issues/538">Elpy is not using python from my activated virtualenv</a></p>
+<h2>GTags</h2>
+<p><a href="https://blade6570.github.io/soumyatripathy/blog_gnuglobal/gnu_global.html">GTags for Python in Emacs</a></p>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

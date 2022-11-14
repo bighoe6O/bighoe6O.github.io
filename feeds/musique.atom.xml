@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>MyBlog - Musique</title><link href="http://dev.duloup.org/" rel="alternate"></link><link href="http://dev.duloup.org/feeds/musique.atom.xml" rel="self"></link><id>http://dev.duloup.org/</id><updated>2019-08-17T11:53:00+02:00</updated><entry><title>LinuxSampler</title><link href="http://dev.duloup.org/musique-linuxsampler.html" rel="alternate"></link><published>2019-08-17T11:53:00+02:00</published><updated>2019-08-17T11:53:00+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2019-08-17:/musique-linuxsampler.html</id><content type="html">&lt;p&gt;&lt;a href="https://linuxsampler.org/"&gt;LinuxSampler&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://sourceforge.net/projects/jsampler/"&gt;JSampler&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.linuxmusicians.com/viewtopic.php?t=18961"&gt;https://www.linuxmusicians.com/viewtopic.php?t=18961&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://freepats.zenvoid.org/Piano/acoustic-grand-piano.html"&gt;https://freepats.zenvoid.org/Piano/acoustic-grand-piano.html&lt;/a&gt;&lt;/p&gt;</content><category term="Musique"></category><category term="DAW"></category></entry><entry><title>OscAnd</title><link href="http://dev.duloup.org/musique-oscand.html" rel="alternate"></link><published>2019-08-15T10:55:00+02:00</published><updated>2019-08-15T10:55:00+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2019-08-15:/musique-oscand.html</id><content type="html">&lt;p&gt;&lt;a href="git@duloup.org:mao-oscand"&gt;Dépôt GIT&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;sudo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;install&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;pkg&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;autoconf&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;autogen&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;libtool&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;zlib1g&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;clone&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="n"&gt;duloup&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;org&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;mao&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;oscand&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;mao&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;oscand&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;virtualenv&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;~/.&lt;/span&gt;&lt;span class="n"&gt;virtualenvs&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;oscand&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;~/.&lt;/span&gt;&lt;span class="n"&gt;virtualenvs&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;oscand&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;bin&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;activate&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;pip&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;install&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;requirements&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;txt&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;oscand&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;buildozer&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;android&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;debug&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;deploy&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;run&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Musique"></category><category term="OSC"></category><category term="DAW"></category><category term="Séquenceur"></category><category term="Projets"></category><category term="Kivy"></category></entry><entry><title>Clavier M-Audio Axiom 49</title><link href="http://dev.duloup.org/musique-m-audio-axiom49.html" rel="alternate"></link><published>2019-08-12T20:35:00+02:00</published><updated>2019-08-12T20:35:00+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2019-08-12:/musique-m-audio-axiom49.html</id><content type="html">&lt;h1&gt;&lt;a href="http://dev.duloup.org/images/musique/M-Audio_Axiom49_UG_FR01french.pdf"&gt;Documention&lt;/a&gt;&lt;/h1&gt;</content><category term="Musique"></category><category term="DAW"></category><category term="Instruments"></category></entry><entry><title>Audacity</title><link href="http://dev.duloup.org/musique-audacity.html" rel="alternate"></link><published>2019-07-30T11:46:00+02:00</published><updated>2019-07-30T11:46:00+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2019-07-30:/musique-audacity.html</id><content type="html">&lt;p&gt;Editeur audio &lt;a href="https://audacity.fr/"&gt;Audacity&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://ccm.net/faq/40373-listen-while-recording-or-monitoring-a-new-track-in-audacity"&gt;Listen While Recording or Monitoring a New Track in Audacity &lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><category term="Musique"></category><category term="DAW"></category></entry><entry><title>EzDrummer</title><link href="http://dev.duloup.org/musique-ezdrummer.html" rel="alternate"></link><published>2019-07-25T12:58:00+02:00</published><updated>2019-07-25T12:58:00+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2019-07-25:/musique-ezdrummer.html</id><content type="html">&lt;p&gt;&lt;a href="https://www.toontrack.com/product/ezdrummer-2/"&gt;EzDrummer 2&lt;/a&gt;&lt;/p&gt;</content><category term="Musique"></category><category term="Midi"></category><category term="DAW"></category><category term="Rythmes"></category></entry><entry><title>Editeurs de partition</title><link href="http://dev.duloup.org/musique-notion.html" rel="alternate"></link><published>2019-07-25T12:45:00+02:00</published><updated>2019-07-25T12:45:00+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2019-07-25:/musique-notion.html</id><content type="html">&lt;p&gt;&lt;a href="https://presonus.com/products/Notion"&gt;Notion&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://musescore.org/fr"&gt;MuseScore&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="notation-abc"&gt;Notation ABC&lt;/a&gt;&lt;/p&gt;</content><category term="Musique"></category><category term="DAW"></category><category term="Midi"></category><category term="Notation"></category></entry><entry><title>FLStudio</title><link href="http://dev.duloup.org/flstudio.html" rel="alternate"></link><published>2019-07-24T13:53:00+02:00</published><updated>2019-07-24T13:53:00+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2019-07-24:/flstudio.html</id><content type="html">&lt;p&gt;&lt;a href="https://www.image-line.com/flstudio/"&gt;Image Line&lt;/a&gt;&lt;/p&gt;</content><category term="Musique"></category><category term="DAW"></category><category term="Midi"></category></entry><entry><title>Band in a Box</title><link href="http://dev.duloup.org/musique-biab.html" rel="alternate"></link><published>2019-07-24T12:13:00+02:00</published><updated>2019-07-24T12:13:00+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2019-07-24:/musique-biab.html</id><content type="html">&lt;p&gt;&lt;a href="https://www.pgmusic.com/"&gt;https://www.pgmusic.com/&lt;/a&gt;&lt;/p&gt;</content><category term="Musique"></category><category term="Accompagnement"></category><category term="DAW"></category><category term="Midi"></category></entry><entry><title>Radios Web</title><link href="http://dev.duloup.org/radios-web.html" rel="alternate"></link><published>2018-12-07T09:57:37+01:00</published><updated>2018-12-07T09:57:37+01:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-12-07:/radios-web.html</id><content type="html">&lt;p&gt;&lt;a href="http://fluxradios.blogspot.com/p/flux-radios-francaise.html"&gt;http://fluxradios.blogspot.com/p/flux-radios-francaise.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ajouter des commentaires et des intructions de caching dans un fichier playlist .m3u&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;#EXTM3U
+#EXTINF:0,fip - Nouveautés
+http://webradiofip5.scdn.arkena.com/webradiofip5.mp3
+#EXTVLCOPT:network-caching=1000
+#EXTINF:0,Nova
+http://broadcast.infomaniak.net:80/radionova-high.mp3
+#EXTVLCOPT:network-caching=1000
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Musique"></category><category term="Culture"></category></entry><entry><title>Bibliotheque musicale</title><link href="http://dev.duloup.org/bibliotheque-musicale.html" rel="alternate"></link><published>2018-12-02T23:00:45+01:00</published><updated>2018-12-02T23:00:45+01:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-12-02:/bibliotheque-musicale.html</id><summary type="html">&lt;h2&gt;Suppression des doublons de la bibliothèque&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/worldveil/dejavu"&gt;https://github.com/worldveil/dejavu&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Raspberry PI&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Utilisation de la carte Cirrus Logic&lt;/li&gt;
+&lt;li&gt;installation de mpd&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;conversion de la bibliothèque au format ogg-vorbis&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="ch"&gt;#!/usr/bin/env python3&lt;/span&gt;
+&lt;span class="c1"&gt;# music-flac2ogg.py&lt;/span&gt;
+
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;os&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;path&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;os&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;subprocess&lt;/span&gt;
+
+&lt;span class="n"&gt;MPD_LIBRARY&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;environ&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;MPD_LIBRARY&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="n"&gt;OGGDIR&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;/media/stephane …&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h2&gt;Suppression des doublons de la bibliothèque&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/worldveil/dejavu"&gt;https://github.com/worldveil/dejavu&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Raspberry PI&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Utilisation de la carte Cirrus Logic&lt;/li&gt;
+&lt;li&gt;installation de mpd&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;conversion de la bibliothèque au format ogg-vorbis&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="ch"&gt;#!/usr/bin/env python3&lt;/span&gt;
+&lt;span class="c1"&gt;# music-flac2ogg.py&lt;/span&gt;
+
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;os&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;path&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;os&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;subprocess&lt;/span&gt;
+
+&lt;span class="n"&gt;MPD_LIBRARY&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;environ&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;MPD_LIBRARY&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="n"&gt;OGGDIR&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;/media/stephane/BUFFALO/OGG&amp;#39;&lt;/span&gt;
+
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="ow"&gt;not&lt;/span&gt; &lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;isdir&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;MPD_LIBRARY&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;raise&lt;/span&gt; &lt;span class="ne"&gt;Exception&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;directory not found: &amp;quot;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;MPD_LIBRARY&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="n"&gt;FLACDIR&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;MPD_LIBRARY&lt;/span&gt;
+
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="ow"&gt;not&lt;/span&gt; &lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;isdir&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;FLACDIR&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;raise&lt;/span&gt; &lt;span class="ne"&gt;Exception&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;directory not found: &amp;quot;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;FLACDIR&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="ow"&gt;not&lt;/span&gt; &lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;isdir&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;OGGDIR&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;raise&lt;/span&gt; &lt;span class="ne"&gt;Exception&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;directory not found: &amp;quot;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;OGGDIR&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+
+&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;root&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;dirs&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;files&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;walk&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;FLACDIR&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;myfile&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;files&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="c1"&gt;# process(os.path.join(root, file))&lt;/span&gt;
+        &lt;span class="c1"&gt;# os.remove(os.path.join(root, file))&lt;/span&gt;
+        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;myfile&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;endswith&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;.flac&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+            &lt;span class="n"&gt;oggdir&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;root&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;replace&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;FLACDIR&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;OGGDIR&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+            &lt;span class="n"&gt;flacfile&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;join&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;root&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;myfile&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+            &lt;span class="n"&gt;oggfile&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;join&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;oggdir&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;myfile&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;replace&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;.flac&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;.ogg&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+            &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="ow"&gt;not&lt;/span&gt; &lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;isfile&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;oggfile&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+                &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;oggfile&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+                &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="ow"&gt;not&lt;/span&gt; &lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;isdir&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dirname&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;oggfile&lt;/span&gt;&lt;span class="p"&gt;)):&lt;/span&gt;
+                    &lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;makedirs&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dirname&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;oggfile&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+                &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;oggenc -q 6 -o &amp;#39;&lt;/span&gt;&lt;span class="si"&gt;{:s}&lt;/span&gt;&lt;span class="s2"&gt;&amp;#39; &amp;#39;&lt;/span&gt;&lt;span class="si"&gt;{:s}&lt;/span&gt;&lt;span class="s2"&gt;&amp;#39;&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;oggfile&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;flacfile&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+                &lt;span class="n"&gt;subprocess&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;run&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;oggenc&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;-q&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;6&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;-o&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;oggfile&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;flacfile&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Vérification de la présence du fichier source flac pour les fichiers ogg&lt;/h2&gt;
+&lt;p&gt;But: éviter les doublons ogg en cas de renommage des fichiers sources flac&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="ch"&gt;#!/usr/bin/env python3&lt;/span&gt;
+&lt;span class="c1"&gt;# music-ogg-check.py&lt;/span&gt;
+
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;os&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;path&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;os&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;subprocess&lt;/span&gt;
+
+&lt;span class="n"&gt;MPD_LIBRARY&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;environ&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;MPD_LIBRARY&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="ow"&gt;not&lt;/span&gt; &lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;isdir&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;MPD_LIBRARY&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;raise&lt;/span&gt; &lt;span class="ne"&gt;Exception&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;directory not found: &amp;quot;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;MPD_LIBRARY&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="c1"&gt;# FLACDIR = path.join(MPD_LIBRARY, &amp;#39;Librairie&amp;#39;)&lt;/span&gt;
+&lt;span class="n"&gt;FLACDIR&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;MPD_LIBRARY&lt;/span&gt;
+&lt;span class="n"&gt;OGGDIR&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;/media/stephane/BUFFALO/OGG&amp;#39;&lt;/span&gt;
+&lt;span class="c1"&gt;# FLACDIR = &amp;#39;/home/stephane/Dev/Projets/flac&amp;#39;&lt;/span&gt;
+&lt;span class="c1"&gt;# OGGDIR = &amp;#39;/home/stephane/Dev/Projets/ogg&amp;#39;&lt;/span&gt;
+
+
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="ow"&gt;not&lt;/span&gt; &lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;isdir&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;FLACDIR&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;raise&lt;/span&gt; &lt;span class="ne"&gt;Exception&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;directory not found: &amp;quot;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;FLACDIR&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="ow"&gt;not&lt;/span&gt; &lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;isdir&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;OGGDIR&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;raise&lt;/span&gt; &lt;span class="ne"&gt;Exception&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;directory not found: &amp;quot;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;OGGDIR&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+
+&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;root&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;dirs&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;files&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;walk&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;OGGDIR&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;myfile&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;files&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="c1"&gt;# process(os.path.join(root, file))&lt;/span&gt;
+        &lt;span class="c1"&gt;# os.remove(os.path.join(root, file))&lt;/span&gt;
+        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;myfile&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;endswith&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;.ogg&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+            &lt;span class="n"&gt;oggfile&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;join&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;root&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;myfile&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+            &lt;span class="n"&gt;flacdir&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;root&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;replace&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;OGGDIR&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;FLACDIR&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+            &lt;span class="n"&gt;flacfile&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;join&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;flacdir&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;myfile&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;replace&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;.ogg&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;.flac&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+            &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="ow"&gt;not&lt;/span&gt; &lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;isfile&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;flacfile&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+                &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="si"&gt;{:s}&lt;/span&gt;&lt;span class="s2"&gt; not found. removing...&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;flacfile&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+                &lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;remove&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;oggfile&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Synchronisation de la bibliothèque sur le Raspberry Pi&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="ch"&gt;#!/bin/bash&lt;/span&gt;
+&lt;span class="c1"&gt;# music-rsync-pi.sh&lt;/span&gt;
+
+&lt;span class="nb"&gt;cd&lt;/span&gt; /media/stephane/BUFFALO/OGG/ &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; rsync -avr --delete . pi@192.168.1.15:mpdmusic/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Musique"></category><category term="MPD"></category><category term="Players"></category></entry><entry><title>Raspberry PI: carte son Cirrus Logic</title><link href="http://dev.duloup.org/raspberry-pi-carte-son-cirrus-logic.html" rel="alternate"></link><published>2018-12-02T12:23:22+01:00</published><updated>2018-12-02T12:23:22+01:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-12-02:/raspberry-pi-carte-son-cirrus-logic.html</id><content type="html">&lt;p&gt;&lt;a href="http://www.richardmudhar.com/blog/2014/10/testing-the-wolfson-audio-board-and-raspberry-pi/"&gt;http://www.richardmudhar.com/blog/2014/10/testing-the-wolfson-audio-board-and-raspberry-pi/&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Initialisation de la sortie audio au boot&lt;/h1&gt;</content><category term="Musique"></category><category term="Pi"></category><category term="DAW"></category><category term="Linux"></category></entry><entry><title>Build MPD from sources</title><link href="http://dev.duloup.org/build-mpd-from-sources.html" rel="alternate"></link><published>2018-12-01T11:44:54+01:00</published><updated>2018-12-01T11:44:54+01:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-12-01:/build-mpd-from-sources.html</id><summary type="html">&lt;p&gt;&lt;a href="https://www.musicpd.org/"&gt;https://www.musicpd.org/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://forum.musicpd.org/"&gt;Forum&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Sous Ubuntu&lt;/h1&gt;
+&lt;p&gt;&lt;a href="http://taudac.com/building-mpd-from-source/"&gt;http://taudac.com/building-mpd-from-source/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Messon build system&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/mesonbuild/meson"&gt;https://github.com/mesonbuild/meson&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pipenv install meson
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href="https://www.musicpd.org/doc/html/user.html"&gt;https://www.musicpd.org/doc/html/user.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/MusicPlayerDaemon/MPD"&gt;https://github.com/MusicPlayerDaemon/MPD&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# git clone https://github.com/MusicPlayerDaemon/MPD&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="n"&gt;wget&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;https&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;musicpd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;org&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;download&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;mpd&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mf"&gt;0 …&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://www.musicpd.org/"&gt;https://www.musicpd.org/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://forum.musicpd.org/"&gt;Forum&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Sous Ubuntu&lt;/h1&gt;
+&lt;p&gt;&lt;a href="http://taudac.com/building-mpd-from-source/"&gt;http://taudac.com/building-mpd-from-source/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Messon build system&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/mesonbuild/meson"&gt;https://github.com/mesonbuild/meson&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pipenv install meson
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href="https://www.musicpd.org/doc/html/user.html"&gt;https://www.musicpd.org/doc/html/user.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/MusicPlayerDaemon/MPD"&gt;https://github.com/MusicPlayerDaemon/MPD&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# git clone https://github.com/MusicPlayerDaemon/MPD&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="n"&gt;wget&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;https&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;musicpd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;org&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;download&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;mpd&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mf"&gt;0.21&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;mpd&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;0.21&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mf"&gt;3.&lt;/span&gt;&lt;span class="n"&gt;tar&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;xz&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;xz&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dc&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;mpd&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;0.21&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mf"&gt;3.&lt;/span&gt;&lt;span class="n"&gt;tar&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;xz&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;tar&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;xf&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;mpd&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;0.21&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;meson&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;output&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;release&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;buildtype&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;debugoptimized&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Db_ndebug&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;true&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;meson&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;configure&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;output&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;release&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;ninja&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;output&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;release&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;ninja&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;output&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;release&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;install&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Raspberry PI&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo apt-get install g++ libboost-dev libicu-dev libglib2.0-dev
+
+sudo apt-get install libsqlite3-dev libmpdclient-dev libexpat1-dev \
+libid3tag0-dev libflac-dev libaudiofile-dev libmad0-dev libmp3lame-dev \
+libasound2-dev libcurl4-gnutls-dev libsystemd-dev
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Qobuz&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/Qobuz/api-documentation/blob/master/endpoints/track/getFileUrl.md#parameters"&gt;https://github.com/Qobuz/api-documentation/blob/master/endpoints/track/getFileUrl.md#parameters&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Pour Android&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://developer.android.com/studio/install"&gt;https://developer.android.com/studio/install&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Compilation croisée pour raspberry-pi&lt;/h1&gt;</content><category term="Musique"></category><category term="MPD"></category><category term="Players"></category></entry><entry><title>MMA (Musical Midi Accompaniment)</title><link href="http://dev.duloup.org/musique-mma.html" rel="alternate"></link><published>2018-11-13T08:29:27+01:00</published><updated>2018-11-13T08:29:27+01:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-11-13:/musique-mma.html</id><content type="html">&lt;h1&gt;&lt;a href="https://musicalmidiaccompaniment.blogspot.com/"&gt;MMA&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://www.mellowood.ca/mma/online-docs/mma.html"&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://perso.univ-rennes1.fr/san.vu-ngoc/prog/mma.el"&gt;Mode pour Emacs&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://welltemperedstudio.wordpress.com/code/abc2mma/"&gt;abc2mma&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Convertit le format &lt;a href="notation-abc"&gt;ABC&lt;/a&gt; vers mma&lt;/p&gt;
+&lt;p&gt;Wrapper&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;&lt;span class="normal"&gt;1&lt;/span&gt;
+&lt;span class="normal"&gt;2&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="ch"&gt;#!/bin/bash&lt;/span&gt;
+perl /home/stephane/Programmes/MAO/abc2mma-0.51/abc2mma.pl &lt;span class="nv"&gt;$*&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+
+&lt;h1&gt;Autres applications&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://sourceforge.net/projects/impro-visor/"&gt;impro-visor&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://musescore.org/en/project/convert-leadsheet-impro-visor-playalong-file"&gt;https://musescore.org/en/project/convert-leadsheet-impro-visor-playalong-file&lt;/a&gt;&lt;/p&gt;</content><category term="Musique"></category><category term="DAW"></category><category term="Accompagnement"></category><category term="Midi"></category></entry><entry><title>linux-kxstudio</title><link href="http://dev.duloup.org/linux-kxstudio.html" rel="alternate"></link><published>2018-11-06T06:49:43+01:00</published><updated>2018-11-06T06:49:43+01:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-11-06:/linux-kxstudio.html</id><content type="html">&lt;p&gt;Tags: DAW, Linux&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://kxstudio.linuxaudio.org/Repositories:Applications"&gt;https://kxstudio.linuxaudio.org/Repositories:Applications&lt;/a&gt;&lt;/p&gt;</content><category term="Musique"></category></entry><entry><title>AKAI Ewi-5000</title><link href="http://dev.duloup.org/akai-ewi-5000.html" rel="alternate"></link><published>2018-11-05T09:37:17+01:00</published><updated>2018-11-05T09:37:17+01:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-11-05:/akai-ewi-5000.html</id><content type="html">&lt;h1&gt;&lt;a href="http://www.akaipro.com/products/ewi-series/ewi-5000"&gt;EWI5000&lt;/a&gt;&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://b8e57dc469f9d8f4cea5-1e3c2cee90259c12021d38ebd8ad6f0f.r79.cf2.rackcdn.com/Product_Documents/EWI5000-ProgramList-v1.0.pdf_40d97918fbbeadb359128d130cdfe8ed.pdf"&gt;Liste des programmes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://b8e57dc469f9d8f4cea5-1e3c2cee90259c12021d38ebd8ad6f0f.r79.cf2.rackcdn.com/Product_Downloads/EWI5000-UserGuide-v1.0.pdf_6b0a349fd5e4a543bc738d9634196b60.pdf"&gt;Guide utilisateur&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://ewilogic.com/?p=438"&gt;Programming Basic Breath Control for Kontakt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://ewiusb.com/review_SaxBrothers"&gt;SaxBrothers&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;EWI4000&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.ewiusb.com/breakdown"&gt;http://www.ewiusb.com/breakdown&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=gtvmcRKsHto"&gt;Démo MrSax&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><category term="Musique"></category><category term="EWI"></category><category term="Instruments"></category><category term="DAW"></category><category term="Midi"></category></entry><entry><title>sequencer-sur-raspberry-pi</title><link href="http://dev.duloup.org/sequencer-sur-raspberry-pi.html" rel="alternate"></link><published>2018-11-01T07:07:35+01:00</published><updated>2018-11-01T07:07:35+01:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-11-01:/sequencer-sur-raspberry-pi.html</id><content type="html">&lt;p&gt;&lt;a href="http://www.midish.org/"&gt;midish&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.midish.org/manual.html"&gt;manuel midish&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/ahlstromcj/sequencer64"&gt;sequencer64&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.jackaudio.org/faq/netjack.html"&gt;netjack&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://non.tuxfamily.org/"&gt;http://non.tuxfamily.org/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://blog.familie-buchberger.at/2015/12/15/jackaudio-over-network-jack-clientserver-connection/"&gt;http://blog.familie-buchberger.at/2015/12/15/jackaudio-over-network-jack-clientserver-connection/&lt;/a&gt;&lt;/p&gt;</content><category term="Musique"></category><category term="Pi"></category><category term="Midi"></category><category term="DAW"></category></entry><entry><title>mpd-icecast</title><link href="http://dev.duloup.org/mpd-icecast.html" rel="alternate"></link><published>2018-10-20T20:33:12+02:00</published><updated>2018-10-20T20:33:12+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-10-20:/mpd-icecast.html</id><content type="html">&lt;p&gt;&lt;a href="https://stmllr.net/blog/streaming-audio-with-mpd-and-icecast2-on-raspberry-pi/"&gt;https://stmllr.net/blog/streaming-audio-with-mpd-and-icecast2-on-raspberry-pi/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.gebbl.net/2013/10/playing-internet-radio-streams-mpdmpc-little-bash-python/"&gt;https://www.gebbl.net/2013/10/playing-internet-radio-streams-mpdmpc-little-bash-python/&lt;/a&gt;&lt;/p&gt;</content><category term="Musique"></category><category term="MPD"></category><category term="Players"></category></entry><entry><title>Pyo</title><link href="http://dev.duloup.org/pyo.html" rel="alternate"></link><published>2018-10-09T08:55:20+02:00</published><updated>2018-10-09T08:55:20+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-10-09:/pyo.html</id><summary type="html">&lt;p&gt;&lt;a href="https://github.com/belangeo/pyo"&gt;Pyo sur GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.matthieuamiguet.ch/blog/python-music-and-black-magic"&gt;https://www.matthieuamiguet.ch/blog/python-music-and-black-magic&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Dépendances&lt;/h1&gt;
+&lt;p&gt;&lt;a href="http://www.portaudio.com/"&gt;Portaudio&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://portmedia.sourceforge.net/portmidi/"&gt;Portmidi&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.mega-nerd.com/libsndfile/"&gt;libsndfile&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://ajaxsoundstudio.com/pyodoc/compiling.html"&gt;http://ajaxsoundstudio.com/pyodoc/compiling.html&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Installation sous Windows&lt;/h1&gt;
+&lt;p&gt;Python27-win32&lt;/p&gt;
+&lt;p&gt;devrait fontionne en Python36-win32&lt;/p&gt;
+&lt;h2&gt;Compilation de portaudio sous Windows/mingw32&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://sdk.steinberg.net/viewtopic.php?f=6&amp;amp;t=566"&gt;https://sdk.steinberg.net/viewtopic.php?f=6&amp;amp;t=566&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;./configure --with-winapi=asio --with-asiodir=/e/repo/Dev …&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://github.com/belangeo/pyo"&gt;Pyo sur GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.matthieuamiguet.ch/blog/python-music-and-black-magic"&gt;https://www.matthieuamiguet.ch/blog/python-music-and-black-magic&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Dépendances&lt;/h1&gt;
+&lt;p&gt;&lt;a href="http://www.portaudio.com/"&gt;Portaudio&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://portmedia.sourceforge.net/portmidi/"&gt;Portmidi&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.mega-nerd.com/libsndfile/"&gt;libsndfile&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://ajaxsoundstudio.com/pyodoc/compiling.html"&gt;http://ajaxsoundstudio.com/pyodoc/compiling.html&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Installation sous Windows&lt;/h1&gt;
+&lt;p&gt;Python27-win32&lt;/p&gt;
+&lt;p&gt;devrait fontionne en Python36-win32&lt;/p&gt;
+&lt;h2&gt;Compilation de portaudio sous Windows/mingw32&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://sdk.steinberg.net/viewtopic.php?f=6&amp;amp;t=566"&gt;https://sdk.steinberg.net/viewtopic.php?f=6&amp;amp;t=566&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;./configure --with-winapi=asio --with-asiodir=/e/repo/Dev/libs/ASIOSDK2.3.1
+make
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Compilation de portmidi&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://sourceforge.net/p/portmedia/wiki/Installing_portmidi_on_Windows/"&gt;https://sourceforge.net/p/portmedia/wiki/Installing_portmidi_on_Windows/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html"&gt;https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Installation sous Linux&lt;/h1&gt;
+&lt;h2&gt;Installation des dépendances&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo apt-get install libportmidi-dev
+sudo apt-get install libsndfile-dev
+sudo apt-get install liblo-dev
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Clonage du dépôt&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git clone https://github.com/belangeo/pyo.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Installation de l'environnement et des librairies python&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://www.wxpython.org/pages/downloads/"&gt;https://www.wxpython.org/pages/downloads/&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install -U -f https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ubuntu-18.04 wxPython
+virtualenv -p python3 $VENVS/pyo
+. $VENVS/outils/bin/activate
+
+pip install wxPython    
+python setup.py install --install-layout=deb --use-jack
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h1&gt;Synths&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://mdoege.github.io/PySynth/"&gt;https://mdoege.github.io/PySynth/&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Tutos&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://waterpigs.co.uk/articles/simple-pyo-synth/"&gt;https://waterpigs.co.uk/articles/simple-pyo-synth/&lt;/a&gt;&lt;/p&gt;</content><category term="Musique"></category><category term="DAW"></category><category term="Instruments"></category></entry><entry><title>Changer la banque de sons midi par defaut sous windows</title><link href="http://dev.duloup.org/changer-la-banque-de-sons-midi-par-defaut-sous-windows.html" rel="alternate"></link><published>2018-10-06T08:44:49+02:00</published><updated>2018-10-06T08:44:49+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-10-06:/changer-la-banque-de-sons-midi-par-defaut-sous-windows.html</id><content type="html">&lt;p&gt;&lt;a href="http://www.informatics-tech.com/how-to-make-midi-files-sound-better.html"&gt;http://www.informatics-tech.com/how-to-make-midi-files-sound-better.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://coolsoft.altervista.org/en/virtualmidisynth#download"&gt;http://coolsoft.altervista.org/en/virtualmidisynth#download&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;C:\Users\stephane\SF2\SGM-V2.01.sf2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Musique"></category><category term="DAW"></category><category term="Midi"></category><category term="Windows"></category></entry><entry><title>Reaper</title><link href="http://dev.duloup.org/reaper.html" rel="alternate"></link><published>2018-09-20T08:15:48+02:00</published><updated>2019-08-14T08:38:59+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-09-20:/reaper.html</id><content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=RJD7aNzSmO8"&gt;Drum Machine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=RJD7aNzSmO8"&gt;Faire une drum machine sous reaper&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;OSC&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://forum.cockos.com/forumdisplay.php?f=47"&gt;Forum&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://osc4py3.readthedocs.io/en/latest/index.html"&gt;osc4py3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><category term="Musique"></category><category term="DAW"></category><category term="Séquenceur"></category><category term="OSC"></category></entry><entry><title>Compilation d'ardour sous Windows</title><link href="http://dev.duloup.org/compilation-dardour-sous-windows.html" rel="alternate"></link><published>2018-09-19T21:19:55+02:00</published><updated>2018-09-19T21:19:55+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-09-19:/compilation-dardour-sous-windows.html</id><content type="html">&lt;p&gt;https://guysherman.com/2015/08/16/building-ardour-on-windows-with-msys2/&lt;/p&gt;</content><category term="Musique"></category><category term="DAW"></category></entry><entry><title>DAW Open Source</title><link href="http://dev.duloup.org/daw-open-source.html" rel="alternate"></link><published>2018-09-19T07:46:02+02:00</published><updated>2018-09-19T07:46:02+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-09-19:/daw-open-source.html</id><content type="html">&lt;p&gt;&lt;a href="http://www.dskmusic.com/dsk-sf2-v2/"&gt;Player SFZ2&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;LMMS : Séquenceur style FLStudio&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.mellowood.ca/mma/index.html"&gt;MMA  (Musical MIDI Accompaniment)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://welltemperedstudio.wordpress.com/code/abc2mma/"&gt;abc2mma&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Convertir des fichiers BiaB vers MMA&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.brenzi.ch/builder.php?content=projects_biabconverter"&gt;projects_biabconverter&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo apt-get install libswitch-perl
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Musique"></category><category term="DAW"></category><category term="Midi"></category></entry><entry><title>DAW sous Linux</title><link href="http://dev.duloup.org/daw-sous-linux.html" rel="alternate"></link><published>2018-09-18T16:24:34+02:00</published><updated>2018-09-18T16:24:34+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-09-18:/daw-sous-linux.html</id><summary type="html">&lt;h2&gt;Synthétiseur midi&lt;/h2&gt;
+&lt;p&gt;Timidity fonctionne mal&lt;/p&gt;
+&lt;p&gt;FluidSynth semble mieux fontionner&lt;/p&gt;
+&lt;p&gt;Fontes utilisées :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://osdn.net/projects/sfnet_androidframe/downloads/soundfonts/SGM-V2.01.sf2/"&gt;https://osdn.net/projects/sfnet_androidframe/downloads/soundfonts/SGM-V2.01.sf2/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Séquenceurs&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://ardour.org/"&gt;Ardour&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://manual.ardour.org/working-with-midi/"&gt;Manuel&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Accompagnement&lt;/h2&gt;
+&lt;h3&gt;&lt;a href="https://www.cs.hmc.edu/~keller/jazz/improvisor/"&gt;Impro-Visor&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;En java&lt;/p&gt;
+&lt;h3&gt;&lt;a href="http://linuxband.org/"&gt;LinuxBand&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Interface graphique à MMA&lt;/p&gt;
+&lt;h3&gt;&lt;a href="https://www.mellowood.ca/mma/"&gt;MMA&lt;/a&gt; (Musical MIDI Accompaniment)&lt;/h3&gt;
+&lt;h1&gt;Wine&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://www.reddit.com/r/FL_Studio/comments/4ucx0i/tutorial_how_to_install_fl_studio_on_linux/"&gt;https://www.reddit.com/r/FL_Studio/comments/4ucx0i/tutorial_how_to_install_fl_studio_on_linux/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Kontakt5&lt;/h2&gt;
+&lt;p&gt;Native Access …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Synthétiseur midi&lt;/h2&gt;
+&lt;p&gt;Timidity fonctionne mal&lt;/p&gt;
+&lt;p&gt;FluidSynth semble mieux fontionner&lt;/p&gt;
+&lt;p&gt;Fontes utilisées :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://osdn.net/projects/sfnet_androidframe/downloads/soundfonts/SGM-V2.01.sf2/"&gt;https://osdn.net/projects/sfnet_androidframe/downloads/soundfonts/SGM-V2.01.sf2/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Séquenceurs&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://ardour.org/"&gt;Ardour&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://manual.ardour.org/working-with-midi/"&gt;Manuel&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Accompagnement&lt;/h2&gt;
+&lt;h3&gt;&lt;a href="https://www.cs.hmc.edu/~keller/jazz/improvisor/"&gt;Impro-Visor&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;En java&lt;/p&gt;
+&lt;h3&gt;&lt;a href="http://linuxband.org/"&gt;LinuxBand&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Interface graphique à MMA&lt;/p&gt;
+&lt;h3&gt;&lt;a href="https://www.mellowood.ca/mma/"&gt;MMA&lt;/a&gt; (Musical MIDI Accompaniment)&lt;/h3&gt;
+&lt;h1&gt;Wine&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://www.reddit.com/r/FL_Studio/comments/4ucx0i/tutorial_how_to_install_fl_studio_on_linux/"&gt;https://www.reddit.com/r/FL_Studio/comments/4ucx0i/tutorial_how_to_install_fl_studio_on_linux/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Kontakt5&lt;/h2&gt;
+&lt;p&gt;Native Access&lt;/p&gt;
+&lt;p&gt;Crash (librairie qt5.2 manquante)&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;ERROR&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ld&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;so&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;object&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;libgtk3-nocsd.so.0&amp;#39;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;from&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;LD_PRELOAD&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;cannot&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;be&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;preloaded&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;cannot&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;open&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;shared&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;object&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;file&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ignored&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href="https://www.linuxquestions.org/questions/blog/the-dsc-472367/getting-rid-of-error-ld-so-object-libgtk3-nocsd-so-0-from-ld_preload-cannot-be-preloaded-cannot-open-shared-object-file-ignored-37823/"&gt;https://www.linuxquestions.org/questions/blog/the-dsc-472367/getting-rid-of-error-ld-so-object-libgtk3-nocsd-so-0-from-ld_preload-cannot-be-preloaded-cannot-open-shared-object-file-ignored-37823/&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo apt-get install libgtk3-nocsd0:i386
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href="https://tehnick.github.io/q4wine/"&gt;https://tehnick.github.io/q4wine/&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo add-apt-repository ppa:tehnick/q4wine
+sudo apt-get install q4wine
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href="https://bugs.winehq.org/show_bug.cgi?id=44138"&gt;https://bugs.winehq.org/show_bug.cgi?id=44138&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://linuxmao.org/Wine+-+WineASIO"&gt;http://linuxmao.org/Wine+-+WineASIO&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://kxstudio.linuxaudio.org/Documentation:Manual:wineasio_and_reaper"&gt;https://kxstudio.linuxaudio.org/Documentation:Manual:wineasio_and_reaper&lt;/a&gt;&lt;/p&gt;</content><category term="Musique"></category><category term="Linux"></category><category term="DAW"></category></entry><entry><title>Hydrogen</title><link href="http://dev.duloup.org/hydrogen.html" rel="alternate"></link><published>2018-09-18T09:46:58+02:00</published><updated>2018-09-18T09:46:58+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-09-18:/hydrogen.html</id><content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://hydrogen-music.org/"&gt;http://hydrogen-music.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/nicklan/drmr"&gt;Plugin LV2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;LV2 non supporté par reaper&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/hydrogen-music/Song-and-pattern-repository"&gt;https://github.com/hydrogen-music/Song-and-pattern-repository&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><category term="Musique"></category><category term="Rythmes"></category><category term="DAW"></category><category term="Midi"></category></entry><entry><title>EWI et Pure Data</title><link href="http://dev.duloup.org/ewi-et-pure-data.html" rel="alternate"></link><published>2018-09-14T22:38:16+02:00</published><updated>2018-09-14T22:38:16+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-09-14:/ewi-et-pure-data.html</id><summary type="html">&lt;h1&gt;Liens&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://forum.pdpatchrepo.info/topic/10554/noob-trying-to-create-a-midi-chorder-harmonizer/1"&gt;noob trying to create a midi chorder harmonizer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://forum.audiob.us/discussion/18730/free-thor-patches-for-ewi-players"&gt;Free thor patches for ewi players&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=XcU5dfBIKh4"&gt;Michael Breckers MIDI Rotator explained&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://fr.audiofanzine.com/vent-electronique/akai/EWI4000S/forums/t.356664,le-rotator-de-m-brecker-realtime-harmonic-midi-processor.html"&gt;Le rotator de M Brecker : Realtime Harmonic MIDI Processor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/channel/UCcqhlDTPzh-Kq-K-4JPAD6w"&gt;Robby Kilgore (YouTube)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/RobbyKilgore/LogicProX_MidiFX_Scripts"&gt;LogicProX_MidiFX_Scripts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://robbykilgore.com/"&gt;https://robbykilgore.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;&lt;a href="https://patchstorage.com/miniwoog/"&gt;MiniWoog&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;Synthé style minimoog, &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;modifié pour accepter le breath control (CC2))&lt;/li&gt;
+&lt;li&gt;modif du canal …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;h1&gt;Liens&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://forum.pdpatchrepo.info/topic/10554/noob-trying-to-create-a-midi-chorder-harmonizer/1"&gt;noob trying to create a midi chorder harmonizer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://forum.audiob.us/discussion/18730/free-thor-patches-for-ewi-players"&gt;Free thor patches for ewi players&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=XcU5dfBIKh4"&gt;Michael Breckers MIDI Rotator explained&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://fr.audiofanzine.com/vent-electronique/akai/EWI4000S/forums/t.356664,le-rotator-de-m-brecker-realtime-harmonic-midi-processor.html"&gt;Le rotator de M Brecker : Realtime Harmonic MIDI Processor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/channel/UCcqhlDTPzh-Kq-K-4JPAD6w"&gt;Robby Kilgore (YouTube)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/RobbyKilgore/LogicProX_MidiFX_Scripts"&gt;LogicProX_MidiFX_Scripts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://robbykilgore.com/"&gt;https://robbykilgore.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;&lt;a href="https://patchstorage.com/miniwoog/"&gt;MiniWoog&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;Synthé style minimoog, &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;modifié pour accepter le breath control (CC2))&lt;/li&gt;
+&lt;li&gt;modif du canal 5 pour le glide&lt;/li&gt;
+&lt;/ul&gt;</content><category term="Musique"></category><category term="PureData"></category><category term="Instruments"></category><category term="EWI"></category><category term="DAW"></category></entry><entry><title>Pure Data sur Raspberry Pi</title><link href="http://dev.duloup.org/pure-data-sur-raspberry-pi.html" rel="alternate"></link><published>2018-09-12T22:00:57+02:00</published><updated>2018-09-12T22:00:57+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-09-12:/pure-data-sur-raspberry-pi.html</id><content type="html">&lt;p&gt;&lt;a href="https://puredata.info/docs/raspberry-pi/"&gt;https://puredata.info/docs/raspberry-pi/&lt;/a&gt;&lt;/p&gt;</content><category term="Musique"></category><category term="PureData"></category><category term="Pi"></category><category term="DAW"></category></entry><entry><title>Synthétiseurs</title><link href="http://dev.duloup.org/synthetiseurs.html" rel="alternate"></link><published>2018-09-11T08:57:45+02:00</published><updated>2018-09-11T08:57:45+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-09-11:/synthetiseurs.html</id><content type="html">&lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=ctOhwRGdVvo"&gt;Jean-Michel Jarre&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://floss.booktype.pro/pure-data/additive-synthesis/"&gt;http://floss.booktype.pro/pure-data/additive-synthesis/&lt;/a&gt;&lt;/p&gt;</content><category term="Musique"></category><category term="Instruments"></category><category term="DAW"></category></entry><entry><title>Looper Mobius</title><link href="http://dev.duloup.org/looper-mobius.html" rel="alternate"></link><published>2018-09-10T10:56:22+02:00</published><updated>2018-09-10T10:56:22+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-09-10:/looper-mobius.html</id><content type="html">&lt;p&gt;&lt;a href="http://circularlabs.com/"&gt;http://circularlabs.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.circularlabs.com/doc/v1/reference.htm"&gt;Aide&lt;/a&gt;&lt;/p&gt;</content><category term="Musique"></category><category term="DAW"></category></entry><entry><title>Pure Data</title><link href="http://dev.duloup.org/pure-data.html" rel="alternate"></link><published>2018-09-09T08:18:32+02:00</published><updated>2018-09-09T08:18:32+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-09-09:/pure-data.html</id><summary type="html">&lt;h1&gt;Livre&lt;/h1&gt;
+&lt;p&gt;&lt;a href="http://msp.ucsd.edu/techniques/latest/book-html/"&gt;http://msp.ucsd.edu/techniques/latest/book-html/&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Tutos&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://wiki.labomedia.org/index.php/Premiers_pas_sur_Pure_Data"&gt;https://wiki.labomedia.org/index.php/Premiers_pas_sur_Pure_Data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://libremusicproduction.com/tutorials/creating-simple-synthesizer-pure-data-%E2%80%93-part-i"&gt;Tuto 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://libremusicproduction.com/tutorials/creating-simple-synthesizer-pure-data-%E2%80%93-part-ii"&gt;Tuto 2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Liens&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://puredata.info/downloads/pure-data"&gt;Pure Data&lt;/a&gt; (Projet original)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/agraef/purr-data/releases"&gt;Purr-Data&lt;/a&gt; (Interface JavaScript)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/pierreguillot/Camomile"&gt;Camomile VST&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=WpO-egAOcOM&amp;amp;t=0s&amp;amp;index=2&amp;amp;list=PLQpnOqsrcBupd5_iJzW4d81n7l7Eu7bYJ"&gt;Making Virtual Instruments &amp;amp; Effects S01E01 Making a Simple Synthesizer with MobMuPlat &amp;amp;Pure Data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.danieliglesia.com/mobmuplat/"&gt;MobMuPlat&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.automatonism.com/"&gt;https://www.automatonism.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://forum.pdpatchrepo.info/topic/9887/save-presets-to-textfile"&gt;https://forum …&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;h1&gt;Livre&lt;/h1&gt;
+&lt;p&gt;&lt;a href="http://msp.ucsd.edu/techniques/latest/book-html/"&gt;http://msp.ucsd.edu/techniques/latest/book-html/&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Tutos&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://wiki.labomedia.org/index.php/Premiers_pas_sur_Pure_Data"&gt;https://wiki.labomedia.org/index.php/Premiers_pas_sur_Pure_Data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://libremusicproduction.com/tutorials/creating-simple-synthesizer-pure-data-%E2%80%93-part-i"&gt;Tuto 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://libremusicproduction.com/tutorials/creating-simple-synthesizer-pure-data-%E2%80%93-part-ii"&gt;Tuto 2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Liens&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://puredata.info/downloads/pure-data"&gt;Pure Data&lt;/a&gt; (Projet original)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/agraef/purr-data/releases"&gt;Purr-Data&lt;/a&gt; (Interface JavaScript)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/pierreguillot/Camomile"&gt;Camomile VST&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=WpO-egAOcOM&amp;amp;t=0s&amp;amp;index=2&amp;amp;list=PLQpnOqsrcBupd5_iJzW4d81n7l7Eu7bYJ"&gt;Making Virtual Instruments &amp;amp; Effects S01E01 Making a Simple Synthesizer with MobMuPlat &amp;amp;Pure Data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.danieliglesia.com/mobmuplat/"&gt;MobMuPlat&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.automatonism.com/"&gt;https://www.automatonism.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://forum.pdpatchrepo.info/topic/9887/save-presets-to-textfile"&gt;https://forum.pdpatchrepo.info/topic/9887/save-presets-to-textfile&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Portamento&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://audioprogrammingblog.wordpress.com/category/pure-data/"&gt;https://audioprogrammingblog.wordpress.com/category/pure-data/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://designingsound.org/2013/04/02/pure-data-wavetable-synth-part-1/"&gt;http://designingsound.org/2013/04/02/pure-data-wavetable-synth-part-1/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Linux&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://puredata.info/docs/JackRoutingMultichannelAndBrowserAudio/"&gt;https://puredata.info/docs/JackRoutingMultichannelAndBrowserAudio/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Utilisation de Cadence / Catia / Claudia&lt;/p&gt;
+&lt;h1&gt;Matériel&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.presonus.com/products/AudioBox-USB/tech-specs"&gt;AudioBox-USB&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.presonus.com/products/AudioBox-USB/downloads"&gt;Downloads&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Réglages:&lt;/p&gt;
+&lt;p&gt;Taille tampon: 64 41khz&lt;/p&gt;
+&lt;h1&gt;&lt;a href="https://github.com/agraef/purr-data"&gt;Purr Data&lt;/a&gt;&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/agraef/purr-data/releases"&gt;Releases&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Paquets obsolètes&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;slv2&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;jack&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;libslv2&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;libjpeg62&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;turbo&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+
+&lt;span class="n"&gt;sudo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;install&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;bison&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;flex&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;automake&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;libasound2&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;\&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;         &lt;/span&gt;&lt;span class="n"&gt;libjack&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;jackd2&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;libtool&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;libbluetooth&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;libgl1&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;mesa&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;\&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;         &lt;/span&gt;&lt;span class="n"&gt;libglu1&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;mesa&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;libglew&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;libmagick&lt;/span&gt;&lt;span class="o"&gt;++-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;libftgl&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;\&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;         &lt;/span&gt;&lt;span class="n"&gt;libgmerlin&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;libgmerlin&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;avdec&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;libavifile&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mf"&gt;0.7&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;\&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;         &lt;/span&gt;&lt;span class="n"&gt;libmpeg3&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;libquicktime&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;libv4l&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;libraw1394&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;\&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;         &lt;/span&gt;&lt;span class="n"&gt;libdc1394&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;22&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;libfftw3&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;libvorbis&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ladspa&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;sdk&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;\&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;         &lt;/span&gt;&lt;span class="n"&gt;dssi&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;tap&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;plugins&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;invada&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;studio&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;plugins&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;ladspa&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;blepvco&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;\&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;         &lt;/span&gt;&lt;span class="n"&gt;swh&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;plugins&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;mcp&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;plugins&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;cmt&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;blop&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;omins&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;rev&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;plugins&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;\&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;         &lt;/span&gt;&lt;span class="n"&gt;dssi&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;utils&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;vco&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;plugins&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;wah&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;plugins&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;fil&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;plugins&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;\&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;         &lt;/span&gt;&lt;span class="n"&gt;mda&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;lv2&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;libmp3lame&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;libspeex&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;libgsl0&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;\&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;         &lt;/span&gt;&lt;span class="n"&gt;portaudio19&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;liblua5&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;python&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;libsmpeg0&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;\&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;         &lt;/span&gt;&lt;span class="n"&gt;flite1&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;libgsm1&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;libgtk2&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;libstk0&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;\&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;         &lt;/span&gt;&lt;span class="n"&gt;libsndobj&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;libfluidsynth&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;fluid&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;soundfont&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;gm&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;byacc&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h1&gt;PDVST&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://forum.image-line.com/viewtopic.php?t=174396"&gt;https://forum.image-line.com/viewtopic.php?t=174396&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/jyg/pure-data/tree/master/pdvst"&gt;https://github.com/jyg/pure-data/tree/master/pdvst&lt;/a&gt;&lt;/p&gt;</content><category term="Musique"></category><category term="PureData"></category><category term="DAW"></category></entry><entry><title>Accordéon</title><link href="http://dev.duloup.org/accordeon.html" rel="alternate"></link><published>2018-09-08T19:30:33+02:00</published><updated>2018-09-08T19:30:33+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-09-08:/accordeon.html</id><summary type="html">&lt;p&gt;Entretiens avec Richard Galiano&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=1wIWDRGz5N0"&gt;Galiano I (Timbres)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=rbYdXH40VTk"&gt;Galiano II (Timbres)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=kcWh5AVaEuk"&gt;Galiano III (midi)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=Jzqt0JEFWVk"&gt;Galiano IV (Bandoneon)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=1FsxBzoB0A0"&gt;Galiano V (Accordina)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Accord%C3%A9oniste_de_jazz"&gt;Accordéonistes de Jazz&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Concertina&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.concertina.com/fingering/"&gt;Fingering Charts for Concertinas&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Qobuz&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.qobuz.com/fr-fr/album/jazz-accordion-experience-bouvelle-and-friends-various-artists/0840958172332"&gt;Jazz Accordion Experience: Bouvelle and Friends&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.qobuz.com/fr-fr/album/classiques-de-laccordeon-various-artists/5099996590652"&gt;Classiques De L'Accordéon&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Divers&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.franceinter.fr/emissions/l-humeur-vagabonde/l-humeur-vagabonde-22-janvier-2015"&gt;France Inter: Daniel Mille&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Frank Marocco&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.qobuz.com/fr-fr/album/like-frank-marocco-frank-marocco-and-friends/8427328609401#item"&gt;Frank Marocco: Like Frank Marocco&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Technique …&lt;/h2&gt;</summary><content type="html">&lt;p&gt;Entretiens avec Richard Galiano&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=1wIWDRGz5N0"&gt;Galiano I (Timbres)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=rbYdXH40VTk"&gt;Galiano II (Timbres)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=kcWh5AVaEuk"&gt;Galiano III (midi)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=Jzqt0JEFWVk"&gt;Galiano IV (Bandoneon)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=1FsxBzoB0A0"&gt;Galiano V (Accordina)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Accord%C3%A9oniste_de_jazz"&gt;Accordéonistes de Jazz&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Concertina&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.concertina.com/fingering/"&gt;Fingering Charts for Concertinas&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Qobuz&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.qobuz.com/fr-fr/album/jazz-accordion-experience-bouvelle-and-friends-various-artists/0840958172332"&gt;Jazz Accordion Experience: Bouvelle and Friends&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.qobuz.com/fr-fr/album/classiques-de-laccordeon-various-artists/5099996590652"&gt;Classiques De L'Accordéon&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Divers&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.franceinter.fr/emissions/l-humeur-vagabonde/l-humeur-vagabonde-22-janvier-2015"&gt;France Inter: Daniel Mille&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Frank Marocco&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.qobuz.com/fr-fr/album/like-frank-marocco-frank-marocco-and-friends/8427328609401#item"&gt;Frank Marocco: Like Frank Marocco&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Technique&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.partitions-accordeon.com/assets/courses/1348933938_10548.pdf"&gt;Accords complexes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.zisman.ca/squeezebox/Originals/Hans%20Palm's%20Accordion%20Page%20Chord%20combining.pdf"&gt;LEFT HAND CHORD COMBINING ON THE 
+ACCORDION&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=nmOj0UTP2mM"&gt;Gipy Jazz&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://nydana.se/accordion.html"&gt;Nydana's Accordion Resources&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;FR1x&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://dev.duloup.org/images/musique/accordionchart.pdf"&gt;Stradella Chart&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Utilisation de kontakt&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=aWOxvCfUll4"&gt;https://www.youtube.com/watch?v=aWOxvCfUll4&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Morceaux&lt;/h2&gt;
+&lt;p&gt;I'll Remember April
+I'm Beginning to See the Light
+In the Cool, Cool, Cool of the Evening
+Invitation
+I Remember Clifford
+Is You Is, Or Is You Ain't (Ma'Baby)
+Lonnies' Lament
+Song For My Father
+Thanks for the Memory (Leo Robin)
+That Old Black Magic
+There'll Be Some Changes Made&lt;/p&gt;</content><category term="Musique"></category><category term="Instruments"></category></entry><entry><title>Notation ABC</title><link href="http://dev.duloup.org/musique-notation-abc.html" rel="alternate"></link><published>2018-08-04T11:38:32+02:00</published><updated>2018-08-04T11:38:32+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-08-04:/musique-notation-abc.html</id><summary type="html">&lt;p&gt;&lt;a href="http://abcnotation.com/wiki/abc:standard:v2.2"&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.mit.edu/~6.005/fa12/projects/abcPlayer/"&gt;http://www.mit.edu/~6.005/fa12/projects/abcPlayer/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.mit.edu/~6.005/fa12/projects/abcPlayer/assignment_files/abc_subset_bnf.txt"&gt;http://www.mit.edu/~6.005/fa12/projects/abcPlayer/assignment_files/abc_subset_bnf.txt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://abcnotation.com/"&gt;http://abcnotation.com/&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Accordeon&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://m.youtube.com/watch?v=xNaskUU5los#"&gt;https://m.youtube.com/watch?v=xNaskUU5los#&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Tam Lin&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://thesession.org/tunes/248"&gt;https://thesession.org/tunes/248&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Session Book&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://thesession.org/members/105978/tunebook"&gt;https://thesession.org/members/105978/tunebook&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Logiciels&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://abcnotation.com/software"&gt;http …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://abcnotation.com/wiki/abc:standard:v2.2"&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.mit.edu/~6.005/fa12/projects/abcPlayer/"&gt;http://www.mit.edu/~6.005/fa12/projects/abcPlayer/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.mit.edu/~6.005/fa12/projects/abcPlayer/assignment_files/abc_subset_bnf.txt"&gt;http://www.mit.edu/~6.005/fa12/projects/abcPlayer/assignment_files/abc_subset_bnf.txt&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://abcnotation.com/"&gt;http://abcnotation.com/&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Accordeon&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://m.youtube.com/watch?v=xNaskUU5los#"&gt;https://m.youtube.com/watch?v=xNaskUU5los#&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Tam Lin&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://thesession.org/tunes/248"&gt;https://thesession.org/tunes/248&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Session Book&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://thesession.org/members/105978/tunebook"&gt;https://thesession.org/members/105978/tunebook&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Logiciels&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://abcnotation.com/software"&gt;http://abcnotation.com/software&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.nilsliberg.se/ksp/easyabc/"&gt;EasyABC&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;abc2xml&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://wim.vree.org/svgParse/abc2xml.html"&gt;abc2xml&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://wim.vree.org/svgParse/abc2xml.py-218.zip"&gt;https://wim.vree.org/svgParse/abc2xml.py-218.zip&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;pyabc&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://github.com/campagnola/pyabc"&gt;https://github.com/campagnola/pyabc&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;abcm2ps&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://github.com/leesavide/abcm2ps"&gt;https://github.com/leesavide/abcm2ps&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;abc2midi&lt;/h3&gt;
+&lt;h1&gt;Rakefile&lt;/h1&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# Rakefile&lt;/span&gt;
+&lt;span class="nb"&gt;require&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;rake&amp;#39;&lt;/span&gt;
+&lt;span class="nb"&gt;require&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;rake/clean&amp;#39;&lt;/span&gt;
+
+&lt;span class="no"&gt;ABC_FILES&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="no"&gt;Rake&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="no"&gt;FileList&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;new&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;**/*.abc&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;fl&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;
+  &lt;span class="n"&gt;fl&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;exclude&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;~*&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="n"&gt;fl&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;exclude&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;balk1.abc&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="n"&gt;fl&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;exclude&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;
+    &lt;span class="sb"&gt;`git ls-files &lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="sb"&gt;`&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;empty?&lt;/span&gt;
+  &lt;span class="k"&gt;end&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+
+&lt;span class="n"&gt;task&lt;/span&gt; &lt;span class="ss"&gt;:default&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="ss"&gt;:list_abc&lt;/span&gt;
+
+&lt;span class="n"&gt;task&lt;/span&gt; &lt;span class="ss"&gt;:all&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="ss"&gt;:midi&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;:ps&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;:svg&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;:html&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+
+&lt;span class="n"&gt;task&lt;/span&gt; &lt;span class="ss"&gt;:list_abc&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt;
+  &lt;span class="c1"&gt;# sh &amp;quot;ls *.abc&amp;quot;&lt;/span&gt;
+  &lt;span class="c1"&gt;# files = Rake::FileList[&amp;#39;*.abc&amp;#39;]&lt;/span&gt;
+  &lt;span class="nb"&gt;puts&lt;/span&gt; &lt;span class="no"&gt;ABC_FILES&lt;/span&gt;
+  &lt;span class="nb"&gt;puts&lt;/span&gt; &lt;span class="no"&gt;ABC_FILES&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ext&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;.ps&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+
+&lt;span class="n"&gt;task&lt;/span&gt; &lt;span class="ss"&gt;:test&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt;
+  &lt;span class="nb"&gt;puts&lt;/span&gt; 
+&lt;span class="k"&gt;end&lt;/span&gt;
+
+&lt;span class="n"&gt;rule&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;.ps&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;.abc&amp;quot;&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;
+  &lt;span class="nb"&gt;puts&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;abcm2ps -O &lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt; &lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;source&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+  &lt;span class="n"&gt;sh&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;abcm2ps -O &lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt; &lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;source&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+
+&lt;span class="n"&gt;rule&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;.svg&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;.abc&amp;quot;&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;
+  &lt;span class="nb"&gt;puts&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;abcm2ps -g -O &lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt; &lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;source&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+  &lt;span class="n"&gt;sh&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;abcm2ps -g -O &lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt; &lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;source&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+
+&lt;span class="n"&gt;rule&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;.html&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;.abc&amp;quot;&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;
+  &lt;span class="nb"&gt;puts&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;abcm2ps -X -O &lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt; &lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;source&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+  &lt;span class="n"&gt;sh&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;abcm2ps -X -O &lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt; &lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;source&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+
+&lt;span class="n"&gt;rule&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;.mid&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;.abc&amp;quot;&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;
+  &lt;span class="nb"&gt;puts&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;abc2midi -o &lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt; &lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;source&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+  &lt;span class="n"&gt;sh&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;abc2midi &lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;source&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt; -o &lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+
+&lt;span class="n"&gt;task&lt;/span&gt; &lt;span class="ss"&gt;:ps&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="no"&gt;ABC_FILES&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ext&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;.ps&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;task&lt;/span&gt; &lt;span class="ss"&gt;:midi&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="no"&gt;ABC_FILES&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ext&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;.mid&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;task&lt;/span&gt; &lt;span class="ss"&gt;:html&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="no"&gt;ABC_FILES&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ext&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;.html&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;task&lt;/span&gt; &lt;span class="ss"&gt;:svg&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="no"&gt;ABC_FILES&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ext&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;.svg&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="no"&gt;CLEAN&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;include&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="no"&gt;ABC_FILES&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ext&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;.ps&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="no"&gt;CLEAN&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;include&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="no"&gt;ABC_FILES&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ext&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;.mid&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="no"&gt;CLEAN&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;include&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="no"&gt;ABC_FILES&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ext&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;.svg&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="no"&gt;CLEAN&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;include&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="no"&gt;ABC_FILES&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ext&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;.html&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Musique"></category><category term="DAW"></category><category term="ABC"></category><category term="Notation"></category></entry><entry><title>Rythmes Orientaux</title><link href="http://dev.duloup.org/rythmes-orientaux.html" rel="alternate"></link><published>2018-01-23T08:55:05+01:00</published><updated>2018-01-23T08:55:05+01:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-01-23:/rythmes-orientaux.html</id><content type="html">&lt;p&gt;&lt;a href="http://www.babayagamusic.com/Music/oriental-dance-rhythm-diagrams-and-descriptions.htm#44"&gt;http://www.babayagamusic.com/Music/oriental-dance-rhythm-diagrams-and-descriptions.htm#44&lt;/a&gt;&lt;/p&gt;</content><category term="Musique"></category><category term="Rythmes"></category></entry><entry><title>drum-tabs_g++</title><link href="http://dev.duloup.org/drum-tabs_g.html" rel="alternate"></link><published>2018-01-16T23:36:03+01:00</published><updated>2018-01-16T23:36:03+01:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-01-16:/drum-tabs_g.html</id><summary type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nt"&gt;make&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nt"&gt;g&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;-Wall&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="nt"&gt;-g&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;-c&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;src&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;drumtab-parser&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;cpp&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;-o&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;obj&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;drumtab-parser&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;o&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nt"&gt;src&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;drumtab-parser&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;cpp&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;In&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;member&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;function&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;‘&lt;/span&gt;&lt;span class="nt"&gt;void&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;DrumTabParser&lt;/span&gt;&lt;span class="p"&gt;::&lt;/span&gt;&lt;span class="nd"&gt;print_bytes&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;std&lt;/span&gt;&lt;span class="p"&gt;::&lt;/span&gt;&lt;span class="nd"&gt;vector&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;int&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;)&lt;/span&gt;&lt;span class="err"&gt;’&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nt"&gt;src&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;drumtab-parser&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;cpp&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nd"&gt;103&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nd"&gt;7&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;warning&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;‘&lt;/span&gt;&lt;span class="nt"&gt;auto&lt;/span&gt;&lt;span class="err"&gt;’&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;changes&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;meaning&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;in&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;C&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="nt"&gt;11&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;please&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;remove&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;it&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="cp"&gt;[&lt;/span&gt;&lt;span class="na"&gt;-Wc&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="nx"&gt;x&lt;/span&gt;&lt;span class="na"&gt;-compat&lt;/span&gt;&lt;span class="cp"&gt;]&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;for&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;auto&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;it&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;steps&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;begin&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;it&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;!=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;steps …&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nt"&gt;make&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nt"&gt;g&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;-Wall&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="nt"&gt;-g&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;-c&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;src&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;drumtab-parser&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;cpp&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;-o&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;obj&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;drumtab-parser&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;o&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nt"&gt;src&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;drumtab-parser&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;cpp&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;In&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;member&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;function&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;‘&lt;/span&gt;&lt;span class="nt"&gt;void&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;DrumTabParser&lt;/span&gt;&lt;span class="p"&gt;::&lt;/span&gt;&lt;span class="nd"&gt;print_bytes&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;std&lt;/span&gt;&lt;span class="p"&gt;::&lt;/span&gt;&lt;span class="nd"&gt;vector&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;int&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;)&lt;/span&gt;&lt;span class="err"&gt;’&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nt"&gt;src&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;drumtab-parser&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;cpp&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nd"&gt;103&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nd"&gt;7&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;warning&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;‘&lt;/span&gt;&lt;span class="nt"&gt;auto&lt;/span&gt;&lt;span class="err"&gt;’&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;changes&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;meaning&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;in&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;C&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="nt"&gt;11&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;please&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;remove&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;it&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="cp"&gt;[&lt;/span&gt;&lt;span class="na"&gt;-Wc&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="nx"&gt;x&lt;/span&gt;&lt;span class="na"&gt;-compat&lt;/span&gt;&lt;span class="cp"&gt;]&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nt"&gt;for&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;auto&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;it&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;steps&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;begin&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;it&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;!=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;steps&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;end&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="nt"&gt;it&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;       &lt;/span&gt;&lt;span class="err"&gt;^&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="err"&gt;src/drumtab-parser.&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;cpp&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;103&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;12&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;error&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;‘&lt;/span&gt;&lt;span class="n"&gt;it&lt;/span&gt;&lt;span class="err"&gt;’&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;does&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;not&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;type&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="nf"&gt;for&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kc"&gt;auto&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;it&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;steps&lt;/span&gt;&lt;span class="err"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;begin&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="err"&gt;;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;it&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;!=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;steps&lt;/span&gt;&lt;span class="err"&gt;.&lt;/span&gt;&lt;span class="kc"&gt;end&lt;/span&gt;&lt;span class="err"&gt;(&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;++it)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;https://gcc.gnu.org/projects/cxx-status.html#cxx11&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nv"&gt;CXXFLAGS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; -std&lt;span class="o"&gt;=&lt;/span&gt;c++11
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Musique"></category><category term="DAW"></category><category term="Rythmes"></category></entry><entry><title>Musique Divers</title><link href="http://dev.duloup.org/musique-divers.html" rel="alternate"></link><published>2018-01-13T10:20:41+01:00</published><updated>2018-01-13T10:20:41+01:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-01-13:/musique-divers.html</id><summary type="html">&lt;h1&gt;Percussions&lt;/h1&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="mf"&gt;1&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;e&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;&amp;amp;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;2&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;e&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;&amp;amp;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;3&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;e&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;&amp;amp;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;4&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;e&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;&amp;amp;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;D&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;D&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;T&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;D&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;T&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;D&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;D&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;T&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;D&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;T&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;D&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;D&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;T&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;D&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;T&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;D&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;D&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;D&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;T&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;t …&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h1&gt;Percussions&lt;/h1&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="mf"&gt;1&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;e&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;&amp;amp;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;2&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;e&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;&amp;amp;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;3&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;e&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;&amp;amp;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;4&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;e&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;&amp;amp;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;D&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;D&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;T&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;D&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;T&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;D&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;D&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;T&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;D&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;T&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;D&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;D&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;T&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;D&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;T&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;D&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;D&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;D&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;T&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h1&gt;Format Wav&lt;/h1&gt;
+&lt;p&gt;&lt;a href="http://soundfile.sapp.org/doc/WaveFormat/"&gt;http://soundfile.sapp.org/doc/WaveFormat/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.bandcoach.org/chordProgsMaj.html"&gt;http://www.bandcoach.org/chordProgsMaj.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.bandcoach.org/chordProgsMin.html"&gt;http://www.bandcoach.org/chordProgsMin.html&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Kontakt&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://web.archive.org/web/20160404103813/"&gt;https://web.archive.org/web/20160404103813/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.soundonsound.com:80/sos/may99/articles/synthsec.htm"&gt;http://www.soundonsound.com:80/sos/may99/articles/synthsec.htm&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Sites Jazz&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://swiss-jazz.ch/"&gt;https://swiss-jazz.ch/&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Suppression des doublons dans la bibliothèque musicale&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://stackoverflow.com/questions/476227/detect-duplicate-mp3-files-with-different-bitrates-and-or-different-id3-tags"&gt;https://stackoverflow.com/questions/476227/detect-duplicate-mp3-files-with-different-bitrates-and-or-different-id3-tags&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/worldveil/dejavu"&gt;https://github.com/worldveil/dejavu&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Picard&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://picard.musicbrainz.org/"&gt;https://picard.musicbrainz.org/&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Installation&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo apt-get install libdiscid-dev
+git clone https://github.com/metabrainz/picard -b 2.0.2
+pip install -r requirements.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href="https://linuxfr.org/users/kaliko/journaux/mpd_sima-client-mpd-non-interactif-en-version-0-13"&gt;https://linuxfr.org/users/kaliko/journaux/mpd_sima-client-mpd-non-interactif-en-version-0-13&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Taglib&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo apt-get install libtag1-dev
+pipfile install pytaglib
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Musique"></category><category term="Musique"></category></entry></feed>

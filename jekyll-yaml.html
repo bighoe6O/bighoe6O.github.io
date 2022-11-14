@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>Jekyll: YAML</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <meta name="description" content="YAML tutorial in the context of Jekyll Example 1: Simple mapping name: husband: Tom wife: Shannon {% raw %} Husband's name:..." />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">MyBlog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/archerie.html">Archerie</a></li>
+                    <li class="active"><a href="/category/archive.html">Archive</a></li>
+                    <li><a href="/category/culture.html">Culture</a></li>
+                    <li><a href="/category/developpement.html">Développement</a></li>
+                    <li><a href="/category/divers.html">Divers</a></li>
+                    <li><a href="/category/graphisme.html">Graphisme</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li><a href="/category/musique.html">Musique</a></li>
+                    <li><a href="/category/projets.html">Projets</a></li>
+                    <li><a href="/category/reprap.html">RepRap</a></li>
+                    <li><a href="/category/securite.html">Sécurité</a></li>
+                    <li><a href="/category/systeme.html">Système</a></li>
+                    <li><a href="/category/tech.html">Tech</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/jekyll-yaml.html" rel="bookmark"
+           title="Permalink to Jekyll: YAML">Jekyll: YAML</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-09-09T07:04:49+02:00">
+                Published: Sun 09 September 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/archive.html">Archive</a>.</p>
+<p>tags: <a href="/tag/jekyll.html">Jekyll</a> </p>
+</footer><!-- /.post-info -->      <p><a href="https://idratherbewriting.com/documentation-theme-jekyll/mydoc_yaml_tutorial">YAML tutorial in the context of Jekyll</a></p>
+<h2>Example 1: Simple mapping</h2>
+<div class="highlight"><pre><span></span><code><span class="n">name</span><span class="o">:</span><span class="w"></span>
+<span class="w">  </span><span class="n">husband</span><span class="o">:</span><span class="w"> </span><span class="n">Tom</span><span class="w"></span>
+<span class="w">  </span><span class="n">wife</span><span class="o">:</span><span class="w"> </span><span class="n">Shannon</span><span class="w"></span>
+</code></pre></div>
+
+<p>{% raw %}</p>
+<div class="highlight"><pre><span></span><code><span class="x">Husband&#39;s name: </span><span class="cp">{{</span><span class="nv">site.data.samplelist.name.husband</span><span class="cp">}}</span><span class="x"></span>
+
+<span class="x">Wife&#39;s name: </span><span class="cp">{{</span><span class="nv">site.data.samplelist.name.wife</span><span class="cp">}}</span><span class="x"></span>
+</code></pre></div>
+
+<p>{% endraw %}</p>
+<p>Husband's name: {{site.data.samplelist.name.husband}}</p>
+<p>Wife's name: {{site.data.samplelist.name.wife}}</p>
+<h2>Example 2: Line breaks</h2>
+<div class="highlight"><pre><span></span><code><span class="nv">feedback</span>:<span class="w"> </span><span class="o">&gt;</span><span class="w"></span>
+<span class="w">  </span><span class="nv">This</span><span class="w"> </span><span class="nv">is</span><span class="w"> </span><span class="nv">my</span><span class="w"> </span><span class="nv">feedback</span><span class="w"> </span><span class="nv">to</span><span class="w"> </span><span class="nv">you</span>.<span class="w"></span>
+<span class="w">  </span><span class="nv">Even</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="nv">I</span><span class="w"> </span><span class="k">include</span><span class="w"> </span><span class="nv">linebreaks</span><span class="w"> </span><span class="nv">here</span>,<span class="w"></span>
+<span class="w">  </span><span class="nv">all</span><span class="w"> </span><span class="nv">of</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">linebreaks</span><span class="w"> </span><span class="nv">will</span><span class="w"> </span><span class="nv">be</span><span class="w"> </span><span class="nv">removed</span><span class="w"> </span><span class="nv">when</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">value</span><span class="w"> </span><span class="nv">is</span><span class="w"> </span><span class="nv">inserted</span>.<span class="w"></span>
+
+<span class="nv">block</span>:<span class="w"> </span><span class="o">|</span><span class="w"></span>
+<span class="w">  </span><span class="nv">This</span><span class="w"> </span><span class="nv">pipe</span><span class="w"> </span><span class="nv">does</span><span class="w"> </span><span class="nv">something</span><span class="w"> </span><span class="nv">a</span><span class="w"> </span><span class="nv">little</span><span class="w"> </span><span class="nv">different</span>.<span class="w"></span>
+<span class="w">  </span><span class="nv">It</span><span class="w"> </span><span class="nv">preserves</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">breaks</span>.<span class="w"></span>
+<span class="w">  </span><span class="nv">This</span><span class="w"> </span><span class="nv">is</span><span class="w"> </span><span class="nv">really</span><span class="w"> </span><span class="nv">helpful</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nv">code</span><span class="w"> </span><span class="nv">samples</span>,<span class="w"></span>
+<span class="w">  </span><span class="nv">since</span><span class="w"> </span><span class="nv">you</span><span class="w"> </span><span class="nv">can</span><span class="w"> </span><span class="nv">format</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">code</span><span class="w"> </span><span class="nv">samples</span><span class="w"> </span><span class="nv">with</span><span class="w"></span>
+<span class="w">  </span><span class="nv">the</span><span class="w"> </span><span class="nv">appropriate</span><span class="w"></span>
+</code></pre></div>
+
+<p>{% raw %}</p>
+<div class="highlight"><pre><span></span><code><span class="x">**Feedback**</span>
+
+<span class="cp">{{</span><span class="nv">site.data.samplelist.feedback</span><span class="cp">}}</span><span class="x"></span>
+
+<span class="x">**Block**</span>
+
+<span class="cp">{{</span><span class="nv">site.data.samplelist.block</span><span class="cp">}}</span><span class="x"></span>
+</code></pre></div>
+
+<p>{% endraw %}</p>
+<p><strong>Feedback</strong></p>
+<p>{{site.data.samplelist.feedback}}</p>
+<p><strong>Block</strong></p>
+<p>{{site.data.samplelist.block}}</p>
+<h2>Example 3: Simple list</h2>
+<div class="highlight"><pre><span></span><code>bikes:
+  - title: mountain bikes
+  - title: road bikes
+  - title: hybrid bikes
+</code></pre></div>
+
+<p>{% raw %}</p>
+<div class="highlight"><pre><span></span><code><span class="cp">{%</span> <span class="k">for</span> <span class="nv">item</span> <span class="k">in</span> <span class="nv">site.data.samplelist.bikes</span> <span class="cp">%}</span><span class="x">* </span><span class="cp">{{</span><span class="nv">item.title</span><span class="cp">}}</span><span class="x"></span>
+<span class="cp">{%</span> <span class="k">endfor</span> <span class="cp">%}</span><span class="x"></span>
+</code></pre></div>
+
+<p>{% endraw %}</p>
+<p _="%" endfor>{% for item in site.data.samplelist.bikes %}* {{item.title}}</p>
+<h2>Example 4: List items</h2>
+<p>YAML:</p>
+<div class="highlight"><pre><span></span><code>salesteams:
+- title: Regions
+ subfolderitems:
+   - location: US
+   - location: Spain
+   - location: France
+</code></pre></div>
+
+<p>{% raw %}</p>
+<div class="highlight"><pre><span></span><code><span class="cp">{%</span> <span class="k">for</span> <span class="nv">item</span> <span class="k">in</span> <span class="nv">site.data.samplelist.salesteams</span> <span class="cp">%}</span><span class="x"></span>
+<span class="x">### </span><span class="cp">{{</span><span class="nv">item.title</span><span class="cp">}}</span><span class="x"></span>
+<span class="cp">{%</span> <span class="k">for</span> <span class="nv">entry</span> <span class="k">in</span> <span class="nv">item.subfolderitems</span> <span class="cp">%}</span><span class="x">* </span><span class="cp">{{</span><span class="nv">entry.location</span><span class="cp">}}</span><span class="x"></span>
+<span class="cp">{%</span> <span class="k">endfor</span> <span class="cp">%}</span><span class="x"></span>
+<span class="cp">{%</span> <span class="k">endfor</span> <span class="cp">%}</span><span class="x"></span>
+</code></pre></div>
+
+<p _="%" for in item site.data.samplelist.salesteams>{% endraw %
+}</p>
+<h3>{{item.title}}</h3>
+<p _="%" endfor>{% for entry in item.subfolderitems %}* {{entry.location}}
+{% endfor %}</p>
+<h2>Example 5: Table of contents</h2>
+<div class="highlight"><pre><span></span><code>toc:
+  - title: Group 1
+    subfolderitems:
+      - page: Thing 1
+      - page: Thing 2
+      - page: Thing 3
+  - title: Group 2
+    subfolderitems:
+      - page: Piece 1
+      - page: Piece 2
+      - page: Piece 3
+  - title: Group 3
+    subfolderitems:
+      - page: Widget 1
+      - page: Widget 2 it&#39;s
+      - page: Widget 3
+</code></pre></div>
+
+<p>{% raw %}</p>
+<div class="highlight"><pre><span></span><code><span class="cp">{%</span> <span class="k">for</span> <span class="nv">item</span> <span class="k">in</span> <span class="nv">site.data.samplelist.toc</span> <span class="cp">%}</span><span class="x"></span>
+<span class="x">### </span><span class="cp">{{</span><span class="nv">item.title</span><span class="cp">}}</span><span class="x"></span>
+<span class="cp">{%</span> <span class="k">for</span> <span class="nv">entry</span> <span class="k">in</span> <span class="nv">item.subfolderitems</span> <span class="cp">%}</span><span class="x">* </span><span class="cp">{{</span><span class="nv">entry.page</span><span class="cp">}}</span><span class="x"></span>
+<span class="cp">{%</span> <span class="k">endfor</span> <span class="cp">%}</span><span class="x"></span>
+<span class="cp">{%</span> <span class="k">endfor</span> <span class="cp">%}</span><span class="x"></span>
+</code></pre></div>
+
+<p>{% endraw %}</p>
+<p>{% for item in site.data.samplelist.toc %}</p>
+<h3>{{item.title}}</h3>
+<p _="%" endfor>{% for entry in item.subfolderitems %}* {{entry.page}}
+{% endfor %}</p>
+<h2>Example 6: Variables</h2>
+<p>{{ site.data.samplelist.myref }}</p>
+<h2>Example 7: Positions in lists</h2>
+<h3>YAML</h3>
+<div class="highlight"><pre><span></span><code>about:
+ - zero
+ - one
+ - two
+ - three
+</code></pre></div>
+
+<h3>Markdown</h3>
+<div class="highlight"><pre><span></span><code><span class="cp">{{</span> <span class="nv">site.data.samplelist.about</span><span class="o">[</span><span class="m">0</span><span class="o">]</span> <span class="cp">}}</span><span class="x"></span>
+</code></pre></div>
+
+<p>{{ site.data.samplelist.about[0] }}</p>
+<h2>Example 8: Properties from list items at specific positions</h2>
+<h3>YAML:</h3>
+<div class="highlight"><pre><span></span><code>numbercolors:
+ - zero:
+   properties: red
+ - one:
+   properties: yellow
+ - two:
+   properties: green
+ - three:
+   properties: blue
+</code></pre></div>
+
+<h3>Markdown + Liquid:</h3>
+<p>{% raw %}</p>
+<div class="highlight"><pre><span></span><code><span class="cp">{{</span> <span class="nv">site.data.samplelist.numbercolors</span><span class="o">[</span><span class="m">0</span><span class="o">]</span><span class="nv">.properties</span> <span class="cp">}}</span><span class="x"></span>
+</code></pre></div>
+
+<p>{% endraw %}</p>
+<p>{{ site.data.samplelist.numbercolors[0].properties }}</p>
+<h2>Example 9: Conditions</h2>
+<h3>YAML:</h3>
+<div class="highlight"><pre><span></span><code>mypages:
+- section1: Section 1
+  audience: developers
+  product: acme
+  url: facebook.com
+- section2: Section 2
+  audience: writers
+  product: acme
+  url: google.com
+- section3: Section 3
+  audience: developers
+  product: acme
+  url: amazon.com
+- section4: Section 4
+  audience: writers
+  product: gizmo
+  url: apple.com
+- section5: Section 5
+  audience: writers
+  product: acme
+  url: microsoft.com
+</code></pre></div>
+
+<h3>Markdown + Liquid:</h3>
+<p>{% raw %}</p>
+<div class="highlight"><pre><span></span><code><span class="cp">{%</span> <span class="k">for</span> <span class="nv">sec</span> <span class="k">in</span> <span class="nv">site.data.samplelist.mypages</span> <span class="cp">%}{%</span> <span class="k">if</span> <span class="nv">sec.audience</span> <span class="o">==</span> <span class="s2">&quot;writers&quot;</span> <span class="cp">%}</span><span class="x">* </span><span class="cp">{{</span><span class="nv">sec.url</span><span class="cp">}}</span><span class="x"></span>
+<span class="cp">{%</span> <span class="k">endif</span> <span class="cp">%}{%</span> <span class="k">endfor</span> <span class="cp">%}</span><span class="x"></span>
+</code></pre></div>
+
+<p>{% endraw %}</p>
+<p>{% for sec in site.data.samplelist.mypages %}{% if sec.audience == "writers" %}* {{sec.url}}
+{% endif %}{% endfor %}</p>
+<p>{% raw %}</p>
+<div class="highlight"><pre><span></span><code><span class="cp">{%</span> <span class="k">for</span> <span class="nv">sec</span> <span class="k">in</span> <span class="nv">site.data.samplelist.mypages</span> <span class="cp">%}{%</span> <span class="k">if</span> <span class="nv">sec.audience</span> <span class="o">==</span> <span class="s2">&quot;writers&quot;</span> <span class="k">and</span> <span class="nv">sec.product</span> <span class="o">==</span> <span class="s2">&quot;gizmo&quot;</span> <span class="cp">%}</span><span class="x">* </span><span class="cp">{{</span><span class="nv">sec.url</span><span class="cp">}}</span><span class="x"></span>
+<span class="cp">{%</span> <span class="k">endif</span> <span class="cp">%}{%</span> <span class="k">endfor</span> <span class="cp">%}</span><span class="x"></span>
+</code></pre></div>
+
+<p>{% endraw %}</p>
+<p>{% for sec in site.data.samplelist.mypages %}{% if sec.audience == "writers" and sec.product == "gizmo" %}* {{sec.url}}
+{% endif %}{% endfor %}</p>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

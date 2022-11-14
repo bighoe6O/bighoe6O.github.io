@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>MyBlog - Players</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">MyBlog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/archerie.html">Archerie</a></li>
+                    <li><a href="/category/archive.html">Archive</a></li>
+                    <li><a href="/category/culture.html">Culture</a></li>
+                    <li><a href="/category/developpement.html">Développement</a></li>
+                    <li><a href="/category/divers.html">Divers</a></li>
+                    <li><a href="/category/graphisme.html">Graphisme</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li><a href="/category/musique.html">Musique</a></li>
+                    <li><a href="/category/projets.html">Projets</a></li>
+                    <li><a href="/category/reprap.html">RepRap</a></li>
+                    <li><a href="/category/securite.html">Sécurité</a></li>
+                    <li><a href="/category/systeme.html">Système</a></li>
+                    <li><a href="/category/tech.html">Tech</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="/bibliotheque-musicale.html">Bibliotheque musicale</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2018-12-02T23:00:45+01:00">
+                Published: Sun 02 December 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/musique.html">Musique</a>.</p>
+<p>tags: <a href="/tag/mpd.html">MPD</a> <a href="/tag/players.html">Players</a> </p>
+</footer><!-- /.post-info --><h2>Suppression des doublons de la bibliothèque</h2>
+<p><a href="https://github.com/worldveil/dejavu">https://github.com/worldveil/dejavu</a></p>
+<h2>Raspberry PI</h2>
+<ul>
+<li>Utilisation de la carte Cirrus Logic</li>
+<li>installation de mpd</li>
+</ul>
+<h2>conversion de la bibliothèque au format ogg-vorbis</h2>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/usr/bin/env python3</span>
+<span class="c1"># music-flac2ogg.py</span>
+
+<span class="kn">from</span> <span class="nn">os</span> <span class="kn">import</span> <span class="n">path</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">subprocess</span>
+
+<span class="n">MPD_LIBRARY</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;MPD_LIBRARY&#39;</span><span class="p">]</span>
+<span class="n">OGGDIR</span> <span class="o">=</span> <span class="s1">&#39;/media/stephane/BUFFALO/OGG&#39;</span>
+
+<span class="k">if</span> <span class="ow">not</span> <span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">MPD_LIBRARY</span><span class="p">):</span>
+    <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;directory not found: &quot;</span> <span class="o">+</span> <span class="n">MPD_LIBRARY</span><span class="p">)</span>
+
+<span class="n">FLACDIR</span> <span class="o">=</span> <span class="n">MPD_LIBRARY</span>
+
+<span class="k">if</span> <span class="ow">not</span> <span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">FLACDIR</span><span class="p">):</span>
+    <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;directory not found: &quot;</span> <span class="o">+</span> <span class="n">FLACDIR</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="ow">not</span> <span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">OGGDIR</span><span class="p">):</span>
+    <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;directory not found: &quot;</span> <span class="o">+</span> <span class="n">OGGDIR</span><span class="p">)</span>
+
+
+<span class="k">for</span> <span class="n">root</span><span class="p">,</span> <span class="n">dirs</span><span class="p">,</span> <span class="n">files</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">walk</span><span class="p">(</span><span class="n">FLACDIR</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">myfile</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
+        <span class="c1"># process(os.path.join(root, file))</span>
+        <span class="c1"># os.remove(os.path.join(root, file))</span>
+        <span class="k">if</span> <span class="n">myfile</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;.flac&#39;</span><span class="p">):</span>
+            <span class="n">oggdir</span> <span class="o">=</span> <span class="n">root</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">FLACDIR</span><span class="p">,</span> <span class="n">OGGDIR</span><span class="p">)</span>
+            <span class="n">flacfile</span> <span class="o">=</span> <span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">myfile</span><span class="p">)</span>
+            <span class="n">oggfile</span> <span class="o">=</span> <span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">oggdir</span><span class="p">,</span> <span class="n">myfile</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;.flac&#39;</span><span class="p">,</span> <span class="s1">&#39;.ogg&#39;</span><span class="p">))</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">oggfile</span><span class="p">):</span>
+                <span class="nb">print</span><span class="p">(</span><span class="n">oggfile</span><span class="p">)</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">oggfile</span><span class="p">)):</span>
+                    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">oggfile</span><span class="p">))</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;oggenc -q 6 -o &#39;</span><span class="si">{:s}</span><span class="s2">&#39; &#39;</span><span class="si">{:s}</span><span class="s2">&#39;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">oggfile</span><span class="p">,</span> <span class="n">flacfile</span><span class="p">))</span>
+                <span class="n">subprocess</span><span class="o">.</span><span class="n">run</span><span class="p">([</span><span class="s1">&#39;oggenc&#39;</span><span class="p">,</span> <span class="s1">&#39;-q&#39;</span><span class="p">,</span> <span class="s1">&#39;6&#39;</span><span class="p">,</span> <span class="s1">&#39;-o&#39;</span><span class="p">,</span> <span class="n">oggfile</span><span class="p">,</span> <span class="n">flacfile</span><span class="p">])</span>
+</code></pre></div>
+
+<h2>Vérification de la présence du fichier source flac pour les fichiers ogg</h2>
+<p>But: éviter les doublons ogg en cas de renommage des fichiers sources flac</p>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/usr/bin/env python3</span>
+<span class="c1"># music-ogg-check.py</span>
+
+<span class="kn">from</span> <span class="nn">os</span> <span class="kn">import</span> <span class="n">path</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">subprocess</span>
+
+<span class="n">MPD_LIBRARY</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;MPD_LIBRARY&#39;</span><span class="p">]</span>
+
+<span class="k">if</span> <span class="ow">not</span> <span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">MPD_LIBRARY</span><span class="p">):</span>
+    <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;directory not found: &quot;</span> <span class="o">+</span> <span class="n">MPD_LIBRARY</span><span class="p">)</span>
+
+<span class="c1"># FLACDIR = path.join(MPD_LIBRARY, &#39;Librairie&#39;)</span>
+<span class="n">FLACDIR</span> <span class="o">=</span> <span class="n">MPD_LIBRARY</span>
+<span class="n">OGGDIR</span> <span class="o">=</span> <span class="s1">&#39;/media/stephane/BUFFALO/OGG&#39;</span>
+<span class="c1"># FLACDIR = &#39;/home/stephane/Dev/Projets/flac&#39;</span>
+<span class="c1"># OGGDIR = &#39;/home/stephane/Dev/Projets/ogg&#39;</span>
+
+
+<span class="k">if</span> <span class="ow">not</span> <span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">FLACDIR</span><span class="p">):</span>
+    <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;directory not found: &quot;</span> <span class="o">+</span> <span class="n">FLACDIR</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="ow">not</span> <span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">OGGDIR</span><span class="p">):</span>
+    <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;directory not found: &quot;</span> <span class="o">+</span> <span class="n">OGGDIR</span><span class="p">)</span>
+
+
+<span class="k">for</span> <span class="n">root</span><span class="p">,</span> <span class="n">dirs</span><span class="p">,</span> <span class="n">files</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">walk</span><span class="p">(</span><span class="n">OGGDIR</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">myfile</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
+        <span class="c1"># process(os.path.join(root, file))</span>
+        <span class="c1"># os.remove(os.path.join(root, file))</span>
+        <span class="k">if</span> <span class="n">myfile</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;.ogg&#39;</span><span class="p">):</span>
+            <span class="n">oggfile</span> <span class="o">=</span> <span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">myfile</span><span class="p">)</span>
+            <span class="n">flacdir</span> <span class="o">=</span> <span class="n">root</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">OGGDIR</span><span class="p">,</span> <span class="n">FLACDIR</span><span class="p">)</span>
+            <span class="n">flacfile</span> <span class="o">=</span> <span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">flacdir</span><span class="p">,</span> <span class="n">myfile</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;.ogg&#39;</span><span class="p">,</span> <span class="s1">&#39;.flac&#39;</span><span class="p">))</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">flacfile</span><span class="p">):</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{:s}</span><span class="s2"> not found. removing...&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">flacfile</span><span class="p">))</span>
+                <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">oggfile</span><span class="p">)</span>
+</code></pre></div>
+
+<h2>Synchronisation de la bibliothèque sur le Raspberry Pi</h2>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
+<span class="c1"># music-rsync-pi.sh</span>
+
+<span class="nb">cd</span> /media/stephane/BUFFALO/OGG/ <span class="o">&amp;&amp;</span> rsync -avr --delete . pi@192.168.1.15:mpdmusic/
+</code></pre></div>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/build-mpd-from-sources.html" rel="bookmark"
+                           title="Permalink to Build MPD from sources">Build MPD from sources</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-12-01T11:44:54+01:00">
+                Published: Sat 01 December 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/musique.html">Musique</a>.</p>
+<p>tags: <a href="/tag/mpd.html">MPD</a> <a href="/tag/players.html">Players</a> </p>
+</footer><!-- /.post-info -->                <p><a href="https://www.musicpd.org/">https://www.musicpd.org/</a></p>
+<p><a href="https://forum.musicpd.org/">Forum</a></p>
+<h1>Sous Ubuntu</h1>
+<p><a href="http://taudac.com/building-mpd-from-source/">http://taudac.com/building-mpd-from-source/</a></p>
+<h2>Messon build system</h2>
+<p><a href="https://github.com/mesonbuild/meson">https://github.com/mesonbuild/meson</a></p>
+<div class="highlight"><pre><span></span><code>pipenv install meson
+</code></pre></div>
+
+<p><a href="https://www.musicpd.org/doc/html/user.html">https://www.musicpd.org/doc/html/user.html</a></p>
+<p><a href="https://github.com/MusicPlayerDaemon/MPD">https://github.com/MusicPlayerDaemon/MPD</a></p>
+<div class="highlight"><pre><span></span><code><span class="c1"># git clone https://github.com/MusicPlayerDaemon/MPD</span><span class="w"></span>
+
+<span class="n">wget</span><span class="w"> </span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">musicpd</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">download</span><span class="o">/</span><span class="n">mpd</span><span class="o">/</span><span class="mf">0 …</span></code></pre></div>
+                <a class="readmore" href="/build-mpd-from-sources.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/mpd-icecast.html" rel="bookmark"
+                           title="Permalink to mpd-icecast">mpd-icecast</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-10-20T20:33:12+02:00">
+                Published: Sat 20 October 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/musique.html">Musique</a>.</p>
+<p>tags: <a href="/tag/mpd.html">MPD</a> <a href="/tag/players.html">Players</a> </p>
+</footer><!-- /.post-info -->                <p><a href="https://stmllr.net/blog/streaming-audio-with-mpd-and-icecast2-on-raspberry-pi/">https://stmllr.net/blog/streaming-audio-with-mpd-and-icecast2-on-raspberry-pi/</a></p>
+<p><a href="https://www.gebbl.net/2013/10/playing-internet-radio-streams-mpdmpc-little-bash-python/">https://www.gebbl.net/2013/10/playing-internet-radio-streams-mpdmpc-little-bash-python/</a></p>
+                <a class="readmore" href="/mpd-icecast.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+                </ol><!-- /#posts-list -->
+                </section><!-- /#content -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

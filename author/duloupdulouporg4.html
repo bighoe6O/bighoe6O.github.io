@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Mon Blog | Articles by duloup@duloup.org</title>
+    <link rel="shortcut icon" type="image/png" href="http://dev.duloup.org/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="http://dev.duloup.org/favicon.ico">
+    <link rel="stylesheet" href="http://dev.duloup.org/theme/css/main.css" type="text/css" />
+    <link rel="stylesheet" href="http://dev.duloup.org/theme/css/pygments.css" type="text/css" />
+    <meta name="generator" content="Pelican" />
+    <meta name="description" content="" />
+    <meta name="author" content="duloup@duloup.org" />
+    <link rel="stylesheet" href="http://dev.duloup.org/theme/css/stork.css">
+    <link rel="stylesheet" media="screen and (prefers-color-scheme: dark)" href="http://dev.duloup.org/theme/css/stork-dark.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+
+                <li class="ephemeral selected"><a href="http://dev.duloup.org/author/duloupdulouporg4.html">duloup@duloup.org</a></li>
+                <li><a href="http://dev.duloup.org/">Home</a></li>
+                <li><a href="http://blog.duloup.org">Site</a></li>
+                <li><a href="http://dev.duloup.org/category/tech.html">Tech</a></li>
+                <li><a href="http://dev.duloup.org/category/musique.html">Musique</a></li>
+                <li><a href="http://dev.duloup.org/categories.html">Categories</a></li>
+                <li><a href="http://dev.duloup.org/tags.html">Tags</a></li>
+                <li><a href="http://dev.duloup.org/about.html">About</a></li>
+            </ul>
+        </nav>
+        <div class="header_box">
+            <h1><a href="http://dev.duloup.org/">Mon Blog</a></h1>
+        </div>
+    </header>
+    <div id="wrapper">
+        <div id="content"><div class="search-box"><div>Search: </div><input data-stork="sitesearch" /></div>
+<div data-stork="sitesearch-output"></div>
+            <h4 class="date">juil. 27, 2019</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/tech-python-pelican-tags.html" rel="bookmark" title="Permanent Link to &quot;Tables avec Pelican&quot;">Tables avec Pelican</a>
+                </h2>
+
+                
+                
+
+                <p><a href="https://github.com/getpelican/pelican-plugins">https://github.com/getpelican/pelican-plugins</a></p>
+<p>installation des plugins</p>
+<div class="highlight"><pre><span></span><code>git clone https://github.com/getpelican/pelican-plugins
+</code></pre></div>
+
+<p>configuration:</p>
+<div class="highlight"><pre><span></span><code>PLUGIN_PATHS = [&#39;path/to/pelican-plugins&#39;]
+PLUGINS = [&#39;assets&#39;, &#39;sitemap&#39;, &#39;gravatar&#39;]
+</code></pre></div>
+
+<p>bootstrapify</p>
+<div class="highlight"><pre><span></span><code>pip install bs4
+</code></pre></div>
+
+<p><a href="https://github.com/ingwinlu/pelican-bootstrapify">https://github.com/ingwinlu/pelican-bootstrapify</a></p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/tech-python-pelican-tags.html">posted at 14:46</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/tech.html" rel="tag">Tech</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/pelican.html" class="tags">pelican</a>
+                </div>
+            </article>            <h4 class="date">juil. 27, 2019</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/tech-python.html" rel="bookmark" title="Permanent Link to &quot;Python&quot;">Python</a>
+                </h2>
+
+                
+                
+
+                <p>Language Python</p>
+<p><a href="https://pep8.org/">PEP 8 - the Style Guide for Python Code</a></p>
+<p>Lancer un sous processus</p>
+<p><a href="https://docs.python.org/3.5/library/subprocess.html">subprocess</a></p>
+<p><a href="https://stackoverflow.com/questions/24771402/powershell-operator-change-encoding">Powershell '&gt;' operator, change encoding?</a></p>
+<p>https://www.xspdf.com/resolution/53213676.html</p>
+<div class="highlight"><pre><span></span><code>$PSDefaultParameterValues[&#39;Out-File:Encoding&#39;] = &#39;utf8&#39;
+</code></pre></div>
+
+<p>PowerShell:</p>
+<div class="highlight"><pre><span></span><code>pip freeze | Out-File -Encoding UTF8 requirements.txt
+</code></pre></div>
+
+<h1>YAML</h1>
+<p>Installation de la version de python par défaut</p>
+<div class="highlight"><pre><span></span><code>sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 10
+</code></pre></div>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/tech-python.html">posted at 08:52</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/tech.html" rel="tag">Tech</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/languages.html" class="tags">Languages</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/python.html" class="tags">Python</a>
+                </div>
+            </article>            <h4 class="date">juil. 26, 2019</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/system-nginx.html" rel="bookmark" title="Permanent Link to &quot;Nginx&quot;">Nginx</a>
+                </h2>
+
+                
+                
+
+                <p><a href="https://nginx.org/en/">nginx</a></p>
+<h1><a href="https://nginxlibrary.com/enable-directory-listing/">Enable directory listing</a></h1>
+<div class="highlight"><pre><span></span><code><span class="n">server</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">listen</span><span class="w">   </span><span class="mi">80</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">server_name</span><span class="w">  </span><span class="n">domain</span><span class="o">.</span><span class="n">com</span><span class="w"> </span><span class="n">www</span><span class="o">.</span><span class="n">domain</span><span class="o">.</span><span class="n">com</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">access_log</span><span class="w">  </span><span class="o">/</span><span class="k">var</span><span class="o">/...........................</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">root</span><span class="w">   </span><span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">root</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">location</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">                </span><span class="n">index</span><span class="w">  </span><span class="n">index</span><span class="o">.</span><span class="n">php</span><span class="w"> </span><span class="n">index</span><span class="o">.</span><span class="n">html</span><span class="w"> </span><span class="n">index</span><span class="o">.</span><span class="n">htm</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span><span class="n">location</span><span class="w"> </span><span class="o">/</span><span class="n">somedir</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">               </span><span class="n">autoindex</span><span class="w"> </span><span class="n">on</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+
+<h1>Démarrage nginx sous windows 10</h1>
+<div class="highlight"><pre><span></span><code>&gt; ubuntu sudo service start nginx
+</code></pre></div>
+
+<h1>Rewrite permanent</h1>
+<p>/etc/nginx/sites-available/myblog</p>
+<div class="highlight"><pre><span></span><code>rewrite ^/$ /arduino/ permanent;
+</code></pre></div>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/system-nginx.html">posted at 08:55</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/tech.html" rel="tag">Tech</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/web.html" class="tags">Web</a>
+                </div>
+            </article>            <h4 class="date">juil. 25, 2019</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/musique-ezdrummer.html" rel="bookmark" title="Permanent Link to &quot;EzDrummer&quot;">EzDrummer</a>
+                </h2>
+
+                
+                
+
+                <p><a href="https://www.toontrack.com/product/ezdrummer-2/">EzDrummer 2</a></p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/musique-ezdrummer.html">posted at 12:58</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/musique.html" rel="tag">Musique</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/midi.html" class="tags">Midi</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/daw.html" class="tags">DAW</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/rythmes.html" class="tags">Rythmes</a>
+                </div>
+            </article>            <h4 class="date">juil. 25, 2019</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/musique-notion.html" rel="bookmark" title="Permanent Link to &quot;Editeurs de partition&quot;">Editeurs de partition</a>
+                </h2>
+
+                
+                
+
+                <p><a href="https://presonus.com/products/Notion">Notion</a></p>
+<p><a href="https://musescore.org/fr">MuseScore</a></p>
+<p><a href="notation-abc">Notation ABC</a></p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/musique-notion.html">posted at 12:45</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/musique.html" rel="tag">Musique</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/daw.html" class="tags">DAW</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/midi.html" class="tags">Midi</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/notation.html" class="tags">Notation</a>
+                </div>
+            </article>            <h4 class="date">juil. 24, 2019</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/flstudio.html" rel="bookmark" title="Permanent Link to &quot;FLStudio&quot;">FLStudio</a>
+                </h2>
+
+                
+                
+
+                <p><a href="https://www.image-line.com/flstudio/">Image Line</a></p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/flstudio.html">posted at 13:53</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/musique.html" rel="tag">Musique</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/daw.html" class="tags">DAW</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/midi.html" class="tags">Midi</a>
+                </div>
+            </article>            <h4 class="date">juil. 24, 2019</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/musique-biab.html" rel="bookmark" title="Permanent Link to &quot;Band in a Box&quot;">Band in a Box</a>
+                </h2>
+
+                
+                
+
+                <p><a href="https://www.pgmusic.com/">https://www.pgmusic.com/</a></p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/musique-biab.html">posted at 12:13</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/musique.html" rel="tag">Musique</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/accompagnement.html" class="tags">Accompagnement</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/daw.html" class="tags">DAW</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/midi.html" class="tags">Midi</a>
+                </div>
+            </article>            <h4 class="date">juil. 24, 2019</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/system-powershell.html" rel="bookmark" title="Permanent Link to &quot;PowerShell&quot;">PowerShell</a>
+                </h2>
+
+                
+                
+
+                <h1>Ajoût de PowerShell au menu contextuel windows</h1>
+<p><a href="https://www.howtogeek.com/165268/how-to-add-open-powershell-here-to-the-context-menu-in-windows/">https://www.howtogeek.com/165268/how-to-add-open-powershell-here-to-the-context-menu-in-windows/</a></p>
+<div class="highlight"><pre><span></span><code>Windows Registry Editor Version 5.00<span class="w"></span>
+
+<span class="k">[</span><span class="nb">HKEY_LOCAL_MACHINE</span><span class="k">\SOFTWARE\Classes\Directory\background\shell\powershellmenu]</span><span class="w"></span>
+<span class="na">@</span><span class="o">=</span><span class="s">&quot;Ouvrir PowerShell ici&quot;</span><span class="w"></span>
+
+<span class="k">[</span><span class="nb">HKEY_LOCAL_MACHINE</span><span class="k">\SOFTWARE\Classes\Directory\background\shell\powershellmenu\command]</span><span class="w"></span>
+<span class="na">@</span><span class="o">=</span><span class="s">&quot;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\powershell.exe -NoExit -Command Set-Location -LiteralPath &#39;%v&#39;&quot;</span><span class="w"></span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Windows Registry Editor Version 5.00<span class="w"></span>
+
+<span class="k">[</span><span class="nb">HKEY_LOCAL_MACHINE</span><span class="k">\SOFTWARE\Classes\Directory\shell\powershellmenu]</span><span class="w"></span>
+<span class="na">@</span><span class="o">=</span><span class="s">&quot;Ouvrir PowerShell ici&quot;</span><span class="w"></span>
+
+<span class="k">[</span><span class="nb">HKEY_LOCAL_MACHINE</span><span class="k">\SOFTWARE\Classes\Directory\shell\powershellmenu\command]</span><span class="w"></span>
+<span class="na">@</span><span class="o">=</span><span class="s">&quot;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\powershell.exe -NoExit -Command Set-Location -LiteralPath &#39;%L&#39;&quot;</span><span class="w"></span>
+</code></pre></div>
+
+<h1>Profile</h1>
+<div class="highlight"><pre><span></span><code>Test-Path $profile
+False
+New-Item -path $profile -type file –force
+</code></pre></div>
+
+<p><a href="https://beebom.com/how-change-powershell-color-scheme-windows-10/">How to Change Windows PowerShell Color Scheme on Windows 10</a></p>
+<p><a href="https://stackoverflow.com/questions/3592851/executing-a-command-stored-in-a-variable-from-powershell">Executing a command stored in a variable from PowerShell</a></p>
+<div class="highlight"><pre><span></span><code>$cmd = &#39;&amp; 7z.exe a -tzip &quot;c:\temp\with space\test2.zip&quot; &quot;C:\TEMP\with space\changelog&quot;&#39;
+Invoke-Expression $cmd
+</code></pre></div>
+
+<p><a href="https://stackoverflow.com/questions/4166370/how-can-i-write-a-powershell-alias-with-arguments-in-the-middle">How can I write a PowerShell alias with arguments in the middle?</a></p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/system-powershell.html">posted at 09:20</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/tech.html" rel="tag">Tech</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/windows.html" class="tags">Windows</a>
+                </div>
+            </article>            <h4 class="date">juin 06, 2019</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/tech-reprap-skeinforge.html" rel="bookmark" title="Permanent Link to &quot;Skeinforge&quot;">Skeinforge</a>
+                </h2>
+
+                
+                
+
+                <p><a href="https://reprap.org/wiki/Skeinforge">https://reprap.org/wiki/Skeinforge</a></p>
+<div class="highlight"><pre><span></span><code>    sudo apt-add-repository ppa:richi-paraeasy/ppa
+    sudo apt-get update
+    sudo apt-get install skeinforge
+</code></pre></div>
+
+<p>Répertoire .skeinforg/profiles/ du ks53 ubuntu</p>
+<div class="highlight"><pre><span></span><code>skeinforge-profiles/
+</code></pre></div>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/tech-reprap-skeinforge.html">posted at 11:59</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/reprap.html" rel="tag">RepRap</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/reprap.html" class="tags">RepRap</a>
+                </div>
+            </article>            <h4 class="date">juin 06, 2019</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/firmware.html" rel="bookmark" title="Permanent Link to &quot;Firmware&quot;">Firmware</a>
+                </h2>
+
+                
+                
+
+                <h1>Firmware</h1>
+<h2>Sprinter</h2>
+<p><a href="http://forum.arduino.cc/index.php?topic=92364.0">http://forum.arduino.cc/index.php?topic=92364.0</a></p>
+<p><a href="http://reprap.org/wiki/RepRapLinuxSoftware">http://reprap.org/wiki/RepRapLinuxSoftware</a></p>
+<h2>Marlin</h2>
+<p><a href="http://reprap.org/wiki/Marlin">http://reprap.org/wiki/Marlin</a></p>
+<p>TODO: ajouter la configuration</p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/firmware.html">posted at 11:22</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/reprap.html" rel="tag">RepRap</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/reprap.html" class="tags">RepRap</a>
+                </div>
+            </article>
+
+                <div class="clear"></div>
+                <div class="pages">
+
+                    <a href="http://dev.duloup.org/author/duloupdulouporg3.html" class="prev_page">&larr;&nbsp;Previous</a>
+
+                    <a href="http://dev.duloup.org/author/duloupdulouporg5.html" class="next_page">Next&nbsp;&rarr;</a>
+
+                    <span>Page 4 of 15</span>
+                </div>
+
+            <div class="clear"></div>
+            <footer>
+                <p>
+                <a href="https://github.com/jody-frankowski/blue-penguin">Blue Penguin</a> Theme
+                &middot;
+                Powered by <a href="http://getpelican.com">Pelican</a>
+            </footer>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <script src="http://dev.duloup.org/theme/js/stork.js"></script>
+    <script>
+        stork.initialize("http://dev.duloup.org/theme/js/stork.wasm")
+        stork.downloadIndex("sitesearch", "http://dev.duloup.org/search-index.st")
+        stork.attach("sitesearch")
+    </script>
+</body>
+</html>

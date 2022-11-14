@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>lighttpd sous windows</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <meta name="description" content="http://www.lighttpd.net/ wget https://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.4.51.tar.gz tar zxf lighttpd-1.4.51.tar.gz cd..." />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">MyBlog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/archerie.html">Archerie</a></li>
+                    <li><a href="/category/archive.html">Archive</a></li>
+                    <li><a href="/category/culture.html">Culture</a></li>
+                    <li><a href="/category/developpement.html">Développement</a></li>
+                    <li><a href="/category/divers.html">Divers</a></li>
+                    <li><a href="/category/graphisme.html">Graphisme</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li><a href="/category/musique.html">Musique</a></li>
+                    <li><a href="/category/projets.html">Projets</a></li>
+                    <li><a href="/category/reprap.html">RepRap</a></li>
+                    <li><a href="/category/securite.html">Sécurité</a></li>
+                    <li class="active"><a href="/category/systeme.html">Système</a></li>
+                    <li><a href="/category/tech.html">Tech</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/lighttpd-sous-windows.html" rel="bookmark"
+           title="Permalink to lighttpd sous windows">lighttpd sous windows</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-10-20T09:35:02+02:00">
+                Published: Sat 20 October 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/systeme.html">Système</a>.</p>
+<p>tags: <a href="/tag/web.html">Web</a> <a href="/tag/windows.html">Windows</a> </p>
+</footer><!-- /.post-info -->      <p><a href="http://www.lighttpd.net/">http://www.lighttpd.net/</a></p>
+<div class="highlight"><pre><span></span><code><span class="n">wget</span><span class="w"> </span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">download</span><span class="o">.</span><span class="n">lighttpd</span><span class="o">.</span><span class="n">net</span><span class="o">/</span><span class="n">lighttpd</span><span class="o">/</span><span class="n">releases</span><span class="o">-</span><span class="mf">1.4</span><span class="o">.</span><span class="n">x</span><span class="o">/</span><span class="n">lighttpd</span><span class="o">-</span><span class="mf">1.4</span><span class="o">.</span><span class="mf">51.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span><span class="w"></span>
+<span class="n">tar</span><span class="w"> </span><span class="n">zxf</span><span class="w"> </span><span class="n">lighttpd</span><span class="o">-</span><span class="mf">1.4</span><span class="o">.</span><span class="mf">51.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span><span class="w"></span>
+<span class="n">cd</span><span class="w"> </span><span class="n">lighttpd</span><span class="o">-</span><span class="mf">1.4</span><span class="o">.</span><span class="mi">51</span><span class="w"></span>
+<span class="o">./</span><span class="n">configure</span><span class="w"> </span><span class="o">--</span><span class="n">disable</span><span class="o">-</span><span class="n">ipv6</span><span class="w"></span>
+<span class="n">make</span><span class="w"></span>
+
+<span class="n">base</span><span class="o">.</span><span class="n">h</span><span class="p">:</span><span class="mi">457</span><span class="p">:</span><span class="mi">2</span><span class="p">:</span><span class="w"> </span><span class="n">error</span><span class="p">:</span><span class="w"> </span><span class="n">unknown</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="s1">&#39;uid_t&#39;</span><span class="w"></span>
+<span class="n">error</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;LOG_ERR&#39;</span><span class="w"> </span><span class="n">undeclared</span><span class="w"></span>
+</code></pre></div>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

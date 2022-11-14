@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>Pyo</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <meta name="description" content="Pyo sur GitHub https://www.matthieuamiguet.ch/blog/python-music-and-black-magic Dépendances Portaudio Portmidi libsndfile..." />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">MyBlog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/archerie.html">Archerie</a></li>
+                    <li><a href="/category/archive.html">Archive</a></li>
+                    <li><a href="/category/culture.html">Culture</a></li>
+                    <li><a href="/category/developpement.html">Développement</a></li>
+                    <li><a href="/category/divers.html">Divers</a></li>
+                    <li><a href="/category/graphisme.html">Graphisme</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li class="active"><a href="/category/musique.html">Musique</a></li>
+                    <li><a href="/category/projets.html">Projets</a></li>
+                    <li><a href="/category/reprap.html">RepRap</a></li>
+                    <li><a href="/category/securite.html">Sécurité</a></li>
+                    <li><a href="/category/systeme.html">Système</a></li>
+                    <li><a href="/category/tech.html">Tech</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/pyo.html" rel="bookmark"
+           title="Permalink to Pyo">Pyo</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-10-09T08:55:20+02:00">
+                Published: Tue 09 October 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/musique.html">Musique</a>.</p>
+<p>tags: <a href="/tag/daw.html">DAW</a> <a href="/tag/instruments.html">Instruments</a> </p>
+</footer><!-- /.post-info -->      <p><a href="https://github.com/belangeo/pyo">Pyo sur GitHub</a></p>
+<p><a href="https://www.matthieuamiguet.ch/blog/python-music-and-black-magic">https://www.matthieuamiguet.ch/blog/python-music-and-black-magic</a></p>
+<h1>Dépendances</h1>
+<p><a href="http://www.portaudio.com/">Portaudio</a></p>
+<p><a href="http://portmedia.sourceforge.net/portmidi/">Portmidi</a></p>
+<p><a href="http://www.mega-nerd.com/libsndfile/">libsndfile</a></p>
+<p><a href="http://ajaxsoundstudio.com/pyodoc/compiling.html">http://ajaxsoundstudio.com/pyodoc/compiling.html</a></p>
+<h1>Installation sous Windows</h1>
+<p>Python27-win32</p>
+<p>devrait fontionne en Python36-win32</p>
+<h2>Compilation de portaudio sous Windows/mingw32</h2>
+<p><a href="https://sdk.steinberg.net/viewtopic.php?f=6&amp;t=566">https://sdk.steinberg.net/viewtopic.php?f=6&amp;t=566</a></p>
+<div class="highlight"><pre><span></span><code>./configure --with-winapi=asio --with-asiodir=/e/repo/Dev/libs/ASIOSDK2.3.1
+make
+</code></pre></div>
+
+<h2>Compilation de portmidi</h2>
+<p><a href="https://sourceforge.net/p/portmedia/wiki/Installing_portmidi_on_Windows/">https://sourceforge.net/p/portmedia/wiki/Installing_portmidi_on_Windows/</a></p>
+<p><a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html">https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html</a></p>
+<h1>Installation sous Linux</h1>
+<h2>Installation des dépendances</h2>
+<div class="highlight"><pre><span></span><code>sudo apt-get install libportmidi-dev
+sudo apt-get install libsndfile-dev
+sudo apt-get install liblo-dev
+</code></pre></div>
+
+<h2>Clonage du dépôt</h2>
+<div class="highlight"><pre><span></span><code>git clone https://github.com/belangeo/pyo.git
+</code></pre></div>
+
+<h2>Installation de l'environnement et des librairies python</h2>
+<p><a href="https://www.wxpython.org/pages/downloads/">https://www.wxpython.org/pages/downloads/</a></p>
+<div class="highlight"><pre><span></span><code>pip install -U -f https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ubuntu-18.04 wxPython
+virtualenv -p python3 $VENVS/pyo
+. $VENVS/outils/bin/activate
+
+pip install wxPython    
+python setup.py install --install-layout=deb --use-jack
+</code></pre></div>
+
+<h1>Synths</h1>
+<p><a href="https://mdoege.github.io/PySynth/">https://mdoege.github.io/PySynth/</a></p>
+<h1>Tutos</h1>
+<p><a href="https://waterpigs.co.uk/articles/simple-pyo-synth/">https://waterpigs.co.uk/articles/simple-pyo-synth/</a></p>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

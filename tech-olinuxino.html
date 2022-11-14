@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>olinuxino</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <meta name="description" content="https://www.olimex.com/Products/OLinuXino/A13/A13-OLinuXino/ https://www.olimex.com/Products/OLinuXino/A13/A13-OLinuXino/resources/A13-Brief.pdf..." />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">MyBlog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/archerie.html">Archerie</a></li>
+                    <li><a href="/category/archive.html">Archive</a></li>
+                    <li><a href="/category/culture.html">Culture</a></li>
+                    <li><a href="/category/developpement.html">Développement</a></li>
+                    <li><a href="/category/divers.html">Divers</a></li>
+                    <li><a href="/category/graphisme.html">Graphisme</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li><a href="/category/musique.html">Musique</a></li>
+                    <li><a href="/category/projets.html">Projets</a></li>
+                    <li><a href="/category/reprap.html">RepRap</a></li>
+                    <li><a href="/category/securite.html">Sécurité</a></li>
+                    <li class="active"><a href="/category/systeme.html">Système</a></li>
+                    <li><a href="/category/tech.html">Tech</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/tech-olinuxino.html" rel="bookmark"
+           title="Permalink to olinuxino">olinuxino</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-10-02T16:55:28+02:00">
+                Published: Tue 02 October 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/systeme.html">Système</a>.</p>
+<p>tags: <a href="/tag/minipc.html">MiniPC</a> </p>
+</footer><!-- /.post-info -->      <p><a href="https://www.olimex.com/Products/OLinuXino/A13/A13-OLinuXino/">https://www.olimex.com/Products/OLinuXino/A13/A13-OLinuXino/</a></p>
+<p><a href="https://www.olimex.com/Products/OLinuXino/A13/A13-OLinuXino/resources/A13-Brief.pdf">https://www.olimex.com/Products/OLinuXino/A13/A13-OLinuXino/resources/A13-Brief.pdf</a></p>
+<p><a href="http://shawnhymel.com/87/getting-wifi-working-on-the-a13-olinuxino-micro/">http://shawnhymel.com/87/getting-wifi-working-on-the-a13-olinuxino-micro/</a></p>
+<p><a href="https://www.olimex.com/wiki/index.php?title=Configuration_of_hardware_in_the_debian_image">https://www.olimex.com/wiki/index.php?title=Configuration_of_hardware_in_the_debian_image</a></p>
+<p><a href="https://linux-sunxi.org/Sunxi-tools">https://linux-sunxi.org/Sunxi-tools</a></p>
+<div class="highlight"><pre><span></span><code><span class="n">git</span><span class="w"> </span><span class="n">clone</span><span class="w"> </span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">linux</span><span class="o">-</span><span class="n">sunxi</span><span class="o">/</span><span class="n">sunxi</span><span class="o">-</span><span class="n">tools</span><span class="w"></span>
+<span class="n">sudo</span><span class="w"> </span><span class="n">apt</span><span class="o">-</span><span class="n">get</span><span class="w"> </span><span class="n">install</span><span class="w"> </span><span class="n">libusb</span><span class="o">-</span><span class="mf">1.0</span><span class="w"></span>
+<span class="n">make</span><span class="w"> </span><span class="n">tools</span><span class="w"></span>
+</code></pre></div>
+
+<p><a href="https://linux-sunxi.org/Olimex_A13-OLinuXino">https://linux-sunxi.org/Olimex_A13-OLinuXino</a></p>
+<p>GPIO</p>
+<p><a href="https://olimex.wordpress.com/2012/10/23/a13-olinuxino-playing-with-gpios/">https://olimex.wordpress.com/2012/10/23/a13-olinuxino-playing-with-gpios/</a></p>
+<p><a href="https://web.archive.org/web/20140502013613/http://www.allwinnertech.com/en/clq/processora/2014/0223/266.html">https://web.archive.org/web/20140502013613/http://www.allwinnertech.com/en/clq/processora/2014/0223/266.html</a></p>
+<h1>Autres images</h1>
+<p><a href="https://en.opensuse.org/HCL:A13-OLinuXino">https://en.opensuse.org/HCL:A13-OLinuXino</a></p>
+<h1>Création d'une image</h1>
+<p>Compilation du noyau</p>
+<p><a href="https://www.olimex.com/wiki/Build_Bootable_SD_Card_with_Debian#Setup_of_the_toolchain">https://www.olimex.com/wiki/Build_Bootable_SD_Card_with_Debian#Setup_of_the_toolchain</a></p>
+<div class="highlight"><pre><span></span><code>sudo apt-get install gcc-arm-linux-gnueabihf
+</code></pre></div>
+
+<p>Nécessite un gcc-4, complètement obosolète, n'est plus présent dans les dépôts</p>
+<p><a href="https://github.com/linux-sunxi/u-boot-sunxi/wiki">Wiki U-Boot</a></p>
+<p><a href="https://github.com/linux-sunxi/u-boot-sunxi/tree/lichee/a1x-stable">https://github.com/linux-sunxi/u-boot-sunxi/tree/lichee/a1x-stable</a></p>
+<div class="highlight"><pre><span></span><code>make &#39;A13-OLinuXino&#39; CROSS_COMPILE=arm-linux-gnueabihf-
+</code></pre></div>
+
+<p>Erreurs de compilation</p>
+<p><a href="https://archlinuxarm.org/wiki/Distcc_Cross-Compiling">https://archlinuxarm.org/wiki/Distcc_Cross-Compiling</a></p>
+<p><a href="/dev/2018/11/10/olinuxino-a13-archlinux.html">Installation d'une ArchLinux</a></p>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

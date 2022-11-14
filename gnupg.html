@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>GnuPG</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <meta name="description" content="Authentification ssh via agent pgp https://opensource.com/article/19/4/gpg-subkeys-ssh export SSH_AUTH_SOCK=$(gpgconf --list-dirs..." />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">MyBlog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/archerie.html">Archerie</a></li>
+                    <li><a href="/category/archive.html">Archive</a></li>
+                    <li><a href="/category/culture.html">Culture</a></li>
+                    <li><a href="/category/developpement.html">Développement</a></li>
+                    <li><a href="/category/divers.html">Divers</a></li>
+                    <li><a href="/category/graphisme.html">Graphisme</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li><a href="/category/musique.html">Musique</a></li>
+                    <li><a href="/category/projets.html">Projets</a></li>
+                    <li><a href="/category/reprap.html">RepRap</a></li>
+                    <li class="active"><a href="/category/securite.html">Sécurité</a></li>
+                    <li><a href="/category/systeme.html">Système</a></li>
+                    <li><a href="/category/tech.html">Tech</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/gnupg.html" rel="bookmark"
+           title="Permalink to GnuPG">GnuPG</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-09-24T22:07:55+02:00">
+                Published: Mon 24 September 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/securite.html">Sécurité</a>.</p>
+<p>tags: <a href="/tag/securite.html">Sécurité</a> </p>
+</footer><!-- /.post-info -->      <p>Authentification ssh via agent pgp</p>
+<p><a href="https://opensource.com/article/19/4/gpg-subkeys-ssh">https://opensource.com/article/19/4/gpg-subkeys-ssh</a></p>
+<div class="highlight"><pre><span></span><code><span class="k">export</span><span class="w"> </span><span class="n">SSH_AUTH_SOCK</span><span class="o">=$</span><span class="p">(</span><span class="n">gpgconf</span><span class="w"> </span><span class="o">--</span><span class="n">list</span><span class="o">-</span><span class="n">dirs</span><span class="w"> </span><span class="n">agent</span><span class="o">-</span><span class="n">ssh</span><span class="o">-</span><span class="n">socket</span><span class="p">)</span><span class="w"></span>
+</code></pre></div>
+
+<p>erreur pass lors du déchiffrement d'une entrée:</p>
+<div class="highlight"><pre><span></span><code><span class="n">gpg</span><span class="o">:</span><span class="w"> </span><span class="err">é</span><span class="n">chec</span><span class="w"> </span><span class="n">du</span><span class="w"> </span><span class="n">déchiffrement</span><span class="w"> </span><span class="n">par</span><span class="w"> </span><span class="n">clef</span><span class="w"> </span><span class="n">publique</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">Pas</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">pinentry</span><span class="w"></span>
+<span class="n">gpg</span><span class="o">:</span><span class="w"> </span><span class="err">é</span><span class="n">chec</span><span class="w"> </span><span class="n">du</span><span class="w"> </span><span class="n">déchiffrement</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">Pas</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">clef</span><span class="w"> </span><span class="n">secrète</span><span class="w"></span>
+</code></pre></div>
+
+<p>Cause:
+Problème de configuration gpg-agent</p>
+<p>Solution:</p>
+<p>Editer ~/.gnupg/gpg-agent.conf</p>
+<div class="highlight"><pre><span></span><code>pinentry-program /usr/bin/pinentry
+</code></pre></div>
+
+<p>Redémarrer l'agent gpg</p>
+<div class="highlight"><pre><span></span><code><span class="nv">gpgconf</span><span class="w"> </span><span class="o">--</span><span class="nv">kill</span><span class="w"> </span><span class="nv">gpg</span><span class="o">-</span><span class="nv">agent</span><span class="w"></span>
+<span class="nv">gpg</span><span class="o">-</span><span class="k">connect</span><span class="o">-</span><span class="nv">agent</span><span class="w"> </span><span class="o">/</span><span class="nv">bye</span><span class="w"></span>
+</code></pre></div>
+
+<p><a href="https://incenp.org/notes/2015/gnupg-for-ssh-authentication.html">https://incenp.org/notes/2015/gnupg-for-ssh-authentication.html</a></p>
+<p>~/.gnupg/gpg-agent.conf:</p>
+<div class="highlight"><pre><span></span><code>enable-ssh-support
+</code></pre></div>
+
+<p>Création de la clé ssh à partir de la clé gpg</p>
+<div class="highlight"><pre><span></span><code><span class="n">gpg</span><span class="w"> </span><span class="o">--</span><span class="n">expert</span><span class="w"> </span><span class="o">--</span><span class="n">edit</span><span class="o">-</span><span class="k">key</span><span class="w"> </span><span class="n">s</span><span class="p">.</span><span class="n">peyrucq</span><span class="nv">@gmail</span><span class="p">.</span><span class="n">com</span><span class="w"></span>
+<span class="n">addkey</span><span class="w"></span>
+</code></pre></div>
+
+<p>Extraction du keygrip</p>
+<div class="highlight"><pre><span></span><code><span class="n">gpg</span><span class="w"> </span><span class="c1">--with-keygrip -k s.peyrucq@gmail.com</span>
+</code></pre></div>
+
+<p>Ajoût à ~/.gnupg/sshcontrol</p>
+<p>Vérification de la présence de la clé</p>
+<div class="highlight"><pre><span></span><code>ssh-add -l
+</code></pre></div>
+
+<p>Extraction de la clé publique</p>
+<div class="highlight"><pre><span></span><code>ssh-add -L
+</code></pre></div>
+
+<p><a href="https://stuff-things.net/2016/02/11/stupid-ssh-add-tricks/">https://stuff-things.net/2016/02/11/stupid-ssh-add-tricks/</a></p>
+<p>Suppression d'une clé ssh ajoutée manuellement (bug gpg ssh-add -d ne fonctionne pas)</p>
+<p>Solution de contournement: </p>
+<p><a href="https://unix.stackexchange.com/questions/185393/gpg-agent-doesnt-remove-my-ssh-key-from-the-keyring#185420">https://unix.stackexchange.com/questions/185393/gpg-agent-doesnt-remove-my-ssh-key-from-the-keyring#185420</a></p>
+<div class="highlight"><pre><span></span><code><span class="o">~/</span>.<span class="nv">ssh</span><span class="o">&gt;</span><span class="w"> </span><span class="nv">gpg</span><span class="o">-</span><span class="k">connect</span><span class="o">-</span><span class="nv">agent</span><span class="w"></span>
+<span class="o">&gt;</span><span class="w"> </span><span class="nv">KEYINFO</span><span class="w"> </span><span class="o">--</span><span class="nv">ssh</span><span class="o">-</span><span class="nv">list</span><span class="w"> </span><span class="o">--</span><span class="nv">ssh</span><span class="o">-</span><span class="nv">fpr</span><span class="w"></span>
+<span class="nv">S</span><span class="w"> </span><span class="nv">KEYINFO</span><span class="w"> </span><span class="mi">2680</span><span class="nv">E01BC8BE717B601E3D95CB4D18B72E9CE1BC</span><span class="w"> </span><span class="nv">D</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nv">P</span><span class="w"> </span><span class="nv">MD5</span>:<span class="mi">9</span><span class="nv">f</span>:<span class="mi">63</span>:<span class="mi">21</span>:<span class="mi">2</span><span class="nv">a</span>:<span class="mi">2</span><span class="nv">a</span>:<span class="mi">36</span>:<span class="mi">66</span>:<span class="nv">ef</span>:<span class="mi">80</span>:<span class="nv">b9</span>:<span class="mi">21</span>:<span class="mi">7</span><span class="nv">a</span>:<span class="mi">53</span>:<span class="mi">85</span>:<span class="nv">aa</span>:<span class="mi">89</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nv">S</span><span class="w"></span>
+<span class="nv">S</span><span class="w"> </span><span class="nv">KEYINFO</span><span class="w"> </span><span class="nv">D3D274A774BC9613B8F6B8A2812BB4B7DFAF4409</span><span class="w"> </span><span class="nv">D</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nv">P</span><span class="w"> </span><span class="nv">MD5</span>:<span class="mi">57</span>:<span class="mi">81</span>:<span class="nv">db</span>:<span class="mi">15</span>:<span class="nv">ba</span>:<span class="mi">9</span><span class="nv">c</span>:<span class="mi">67</span>:<span class="mi">08</span>:<span class="mi">2</span><span class="nv">c</span>:<span class="nv">d4</span>:<span class="nv">fc</span>:<span class="nv">eb</span>:<span class="nv">e7</span>:<span class="mi">4</span><span class="nv">f</span>:<span class="mi">34</span>:<span class="mi">9</span><span class="nv">a</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nv">S</span><span class="w"></span>
+<span class="nv">OK</span><span class="w"></span>
+<span class="o">&gt;</span><span class="w"> </span><span class="nv">DELETE_KEY</span><span class="w"> </span><span class="nv">D3D274A774BC9613B8F6B8A2812BB4B7DFAF4409</span><span class="w"></span>
+<span class="nv">OK</span><span class="w"></span>
+<span class="o">&gt;</span><span class="w"></span>
+</code></pre></div>
+
+<h1>Password Store</h1>
+<div class="highlight"><pre><span></span><code><span class="n">sudo</span><span class="w"> </span><span class="n">apt</span><span class="w"> </span><span class="n">install</span><span class="w"> </span><span class="n">pass</span><span class="w"></span>
+<span class="n">git</span><span class="w"> </span><span class="n">clone</span><span class="w"> </span><span class="n">git</span><span class="nv">@duloup</span><span class="p">.</span><span class="nl">org</span><span class="p">:</span><span class="n">password</span><span class="o">-</span><span class="n">store</span><span class="w"> </span><span class="err">$</span><span class="n">HOME</span><span class="o">/</span><span class="p">.</span><span class="n">password</span><span class="o">-</span><span class="n">store</span><span class="w"></span>
+
+<span class="n">pass</span><span class="w"> </span><span class="k">search</span><span class="w"> </span><span class="n">toto</span><span class="w"></span>
+</code></pre></div>
+
+<p><a href="https://code-examples.net/fr/q/1fd0cac"> encryption print gnupg: Il n'y a aucune assurance que cette clé appartient à l'utilisateur nommé </a></p>
+<div class="highlight"><pre><span></span><code>gpg --edit-key &lt;KEY_ID&gt;
+gpg&gt; trust
+</code></pre></div>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

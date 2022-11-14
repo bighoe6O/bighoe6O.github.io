@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>MyBlog</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">MyBlog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/archerie.html">Archerie</a></li>
+                    <li><a href="/category/archive.html">Archive</a></li>
+                    <li><a href="/category/culture.html">Culture</a></li>
+                    <li><a href="/category/developpement.html">Développement</a></li>
+                    <li><a href="/category/divers.html">Divers</a></li>
+                    <li><a href="/category/graphisme.html">Graphisme</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li><a href="/category/musique.html">Musique</a></li>
+                    <li><a href="/category/projets.html">Projets</a></li>
+                    <li><a href="/category/reprap.html">RepRap</a></li>
+                    <li><a href="/category/securite.html">Sécurité</a></li>
+                    <li><a href="/category/systeme.html">Système</a></li>
+                    <li><a href="/category/tech.html">Tech</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+                <section id="content" class="body">
+                    <ol id="posts-list" class="hfeed" start="9">
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/changer-la-banque-de-sons-midi-par-defaut-sous-windows.html" rel="bookmark"
+                           title="Permalink to Changer la banque de sons midi par defaut sous windows">Changer la banque de sons midi par defaut sous windows</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-10-06T08:44:49+02:00">
+                Published: Sat 06 October 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/musique.html">Musique</a>.</p>
+<p>tags: <a href="/tag/daw.html">DAW</a> <a href="/tag/midi.html">Midi</a> <a href="/tag/windows.html">Windows</a> </p>
+</footer><!-- /.post-info -->                <p><a href="http://www.informatics-tech.com/how-to-make-midi-files-sound-better.html">http://www.informatics-tech.com/how-to-make-midi-files-sound-better.html</a></p>
+<p><a href="http://coolsoft.altervista.org/en/virtualmidisynth#download">http://coolsoft.altervista.org/en/virtualmidisynth#download</a></p>
+<div class="highlight"><pre><span></span><code>C:\Users\stephane\SF2\SGM-V2.01.sf2
+</code></pre></div>
+                <a class="readmore" href="/changer-la-banque-de-sons-midi-par-defaut-sous-windows.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/tech-git-repo-sync.html" rel="bookmark"
+                           title="Permalink to Synchronisation des depots Git">Synchronisation des depots Git</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-10-05T23:05:20+02:00">
+                Published: Fri 05 October 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/developpement.html">Développement</a>.</p>
+<p>tags: <a href="/tag/git.html">Git</a> </p>
+</footer><!-- /.post-info -->                <div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
+<span class="c1"># ~git/bin/git-push-pi0.sh</span>
+
+<span class="nb">pushd</span> ~/repositories
+<span class="c1">#prefix=scans</span>
+<span class="c1">#prefix=&quot;mysensors-&quot;</span>
+<span class="nv">prefixes</span><span class="o">=</span><span class="s2">&quot;mao- mysensors- pio- arduino roaming myblog outils scripts musique&quot;</span>
+<span class="k">for</span> p <span class="k">in</span> <span class="si">${</span><span class="nv">prefixes</span><span class="si">}</span><span class="p">;</span> <span class="k">do</span>
+    <span class="nv">prefix</span><span class="o">=</span><span class="nv">$p</span>
+    <span class="k">for</span> f <span class="k">in</span> <span class="si">${</span><span class="nv">prefix</span><span class="si">}</span>*<span class="p">;</span> <span class="k">do</span>
+        <span class="k">if</span> <span class="o">[</span> -d <span class="s2">&quot;</span><span class="nv">$f</span><span class="s2">&quot;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+            <span class="nb">pushd</span> <span class="nv">$f</span><span class="p">;</span>
+            <span class="nb">echo</span>  --- <span class="nv">$f</span> ---<span class="p">;</span>
+            <span class="nb">echo</span> git push --mirror git@pi0:<span class="nv">$f</span>
+            git …</code></pre></div>
+                <a class="readmore" href="/tech-git-repo-sync.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/system-windows-subsystem-for-linux.html" rel="bookmark"
+                           title="Permalink to Windows Subsystem for Linux">Windows Subsystem for Linux</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-10-05T13:49:40+02:00">
+                Published: Fri 05 October 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/systeme.html">Système</a>.</p>
+<p>tags: <a href="/tag/systeme.html">Système</a> </p>
+</footer><!-- /.post-info -->                <h2>WSL</h2>
+<p><a href="https://docs.microsoft.com/fr-fr/windows/wsl/install-win10">https://docs.microsoft.com/fr-fr/windows/wsl/install-win10</a></p>
+<h2>Windows Terminal</h2>
+<p><a href="https://github.com/powerline/fonts">https://github.com/powerline/fonts</a></p>
+<p><a href="https://github.com/microsoft/terminal">https://github.com/microsoft/terminal</a></p>
+<p>Support de la souris</p>
+<p><a href="https://www.onmsft.com/news/windows-terminal-preview-updated-with-mouse-input-support-duplicate-pane">https://www.onmsft.com/news/windows-terminal-preview-updated-with-mouse-input-support-duplicate-pane</a></p>
+<p>Panneaux</p>
+<p><a href="https://docs.microsoft.com/en-us/windows/terminal/panes">https://docs.microsoft.com/en-us/windows/terminal/panes</a></p>
+                <a class="readmore" href="/system-windows-subsystem-for-linux.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/system-apache.html" rel="bookmark"
+                           title="Permalink to Apache">Apache</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-10-03T10:31:17+02:00">
+                Published: Wed 03 October 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/systeme.html">Système</a>.</p>
+<p>tags: <a href="/tag/git.html">Git</a> <a href="/tag/web.html">Web</a> </p>
+</footer><!-- /.post-info -->                <p>Déploiment du blog</p>
+<div class="highlight"><pre><span></span><code><span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="n">www</span><span class="o">/</span><span class="n">git</span><span class="o">/</span><span class="n">myblog</span><span class="w"></span>
+</code></pre></div>
+
+<p>Hook</p>
+<div class="highlight"><pre><span></span><code>/home/git/repositories/myblog.git/hooks/post-receive
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/sh</span>
+<span class="nb">umask</span> <span class="m">002</span>
+git --work-tree<span class="o">=</span>/var/www/git/myblog --git-dir<span class="o">=</span>/home/git/repositories/myblog.git checkout -f 
+</code></pre></div>
+                <a class="readmore" href="/system-apache.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/ubuntu.html" rel="bookmark"
+                           title="Permalink to Ubuntu">Ubuntu</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-10-02T20:11:09+02:00">
+                Published: Tue 02 October 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/systeme.html">Système</a>.</p>
+<p>tags: <a href="/tag/linux.html">Linux</a> </p>
+</footer><!-- /.post-info -->                <p>Pulseaudio</p>
+<p><a href="https://askubuntu.com/questions/14077/how-can-i-change-the-default-audio-device-from-command-line">https://askubuntu.com/questions/14077/how-can-i-change-the-default-audio-device-from-command-line</a></p>
+                <a class="readmore" href="/ubuntu.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/tech-olinuxino.html" rel="bookmark"
+                           title="Permalink to olinuxino">olinuxino</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-10-02T16:55:28+02:00">
+                Published: Tue 02 October 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/systeme.html">Système</a>.</p>
+<p>tags: <a href="/tag/minipc.html">MiniPC</a> </p>
+</footer><!-- /.post-info -->                <p><a href="https://www.olimex.com/Products/OLinuXino/A13/A13-OLinuXino/">https://www.olimex.com/Products/OLinuXino/A13/A13-OLinuXino/</a></p>
+<p><a href="https://www.olimex.com/Products/OLinuXino/A13/A13-OLinuXino/resources/A13-Brief.pdf">https://www.olimex.com/Products/OLinuXino/A13/A13-OLinuXino/resources/A13-Brief.pdf</a></p>
+<p><a href="http://shawnhymel.com/87/getting-wifi-working-on-the-a13-olinuxino-micro/">http://shawnhymel.com/87/getting-wifi-working-on-the-a13-olinuxino-micro/</a></p>
+<p><a href="https://www.olimex.com/wiki/index.php?title=Configuration_of_hardware_in_the_debian_image">https://www.olimex.com/wiki/index.php?title=Configuration_of_hardware_in_the_debian_image</a></p>
+<p><a href="https://linux-sunxi.org/Sunxi-tools">https://linux-sunxi.org/Sunxi-tools</a></p>
+<div class="highlight"><pre><span></span><code><span class="n">git</span><span class="w"> </span><span class="n">clone</span><span class="w"> </span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">linux</span><span class="o">-</span><span class="n">sunxi</span><span class="o">/</span><span class="n">sunxi</span><span class="o">-</span><span class="n">tools</span><span class="w"></span>
+<span class="n">sudo</span><span class="w"> </span><span class="n">apt</span><span class="o">-</span><span class="n">get</span><span class="w"> </span><span class="n">install …</span></code></pre></div>
+                <a class="readmore" href="/tech-olinuxino.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/liseuse-kobo.html" rel="bookmark"
+                           title="Permalink to Liseuse Kobo">Liseuse Kobo</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-09-30T13:39:12+02:00">
+                Published: Sun 30 September 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/culture.html">Culture</a>.</p>
+<p>tags: <a href="/tag/livres.html">Livres</a> </p>
+</footer><!-- /.post-info -->                <p><a href="https://calibre-ebook.com/">Calibre</a></p>
+<p><a href="https://www.cnet.com/reviews/kobo-aura-h20-edition-2-preview/">https://www.cnet.com/reviews/kobo-aura-h20-edition-2-preview/</a></p>
+<p>Specs and features</p>
+<div class="highlight"><pre><span></span><code><span class="mf">6.8</span><span class="o">-</span><span class="n">inch</span><span class="w"> </span><span class="n">Carta</span><span class="w"> </span><span class="n">E</span><span class="w"> </span><span class="n">Ink</span><span class="w"> </span><span class="kr">to</span><span class="n">uchscreen</span><span class="p">,</span><span class="w"> </span><span class="mf">265</span><span class="w"> </span><span class="n">ppi</span><span class="w"></span>
+<span class="mf">129</span><span class="n">x172x8</span><span class="mf">.9</span><span class="w"> </span><span class="n">mm</span><span class="p">,</span><span class="w"> </span><span class="mf">210</span><span class="n">g</span><span class="w"></span>
+<span class="n">Connects</span><span class="w"> </span><span class="n">via</span><span class="w"> </span><span class="n">Wi</span><span class="o">-</span><span class="n">Fi</span><span class="w"> </span><span class="mf">802.11</span><span class="w"> </span><span class="n">b</span><span class="o">/</span><span class="n">g</span><span class="o">/</span><span class="n">n</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">Micro</span><span class="w"> </span><span class="n">USB</span><span class="w"></span>
+<span class="n">Processor</span><span class="p">:</span><span class="w"> </span><span class="nb">Fre</span><span class="n">escale</span><span class="w"> </span><span class="n">SoloLite</span><span class="w"> </span><span class="n">iMx6</span><span class="w"> </span><span class="mf">1</span><span class="n">Ghz</span><span class="w"></span>
+<span class="n">Fully</span><span class="w"> </span><span class="n">adjustable</span><span class="w"> </span><span class="n">built</span><span class="o">-</span><span class="n">in</span><span class="w"> </span><span class="n">ComfortLight …</span></code></pre></div>
+                <a class="readmore" href="/liseuse-kobo.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/fpga.html" rel="bookmark"
+                           title="Permalink to FPGA">FPGA</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-09-29T07:41:03+02:00">
+                Published: Sat 29 September 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/tech.html">Tech</a>.</p>
+<p>tags: <a href="/tag/electronique.html">Electronique</a> </p>
+</footer><!-- /.post-info -->                <p><a href="https://www.lextronic.fr/platines-fpga/20218-module-cpld-cmod.html">https://www.lextronic.fr/platines-fpga/20218-module-cpld-cmod.html</a></p>
+<p><a href="https://www.digikey.fr/product-detail/fr/sparkfun-electronics/DEV-14828/1568-1915-ND/9561755">https://www.digikey.fr/product-detail/fr/sparkfun-electronics/DEV-14828/1568-1915-ND/9561755</a></p>
+<p><a href="https://github.com/tinyfpga/TinyFPGA-A-Series">https://github.com/tinyfpga/TinyFPGA-A-Series</a></p>
+<p><a href="https://www.elektormagazine.com/news/tinyfpga-bx-review/18819">https://www.elektormagazine.com/news/tinyfpga-bx-review/18819</a></p>
+<p><a href="https://www.youtube.com/watch?v=pM1ZSZNUS-w">Complete Xilinx FPGA Tutorial Mike's Lab</a></p>
+<p><a href="https://tinyfpga.com/bx/guide.html">https://tinyfpga.com/bx/guide.html</a></p>
+<p><a href="http://kicad-pcb.org/">KiCad</a></p>
+<h1>Synth</h1>
+<p><a href="http://people.ece.cornell.edu/land/courses/ece5760/FinalProjects/s2017/eli8_sjy33_awx2/ece5760finalproject/ece5760finalproject/index.html">Big Red Strings: A FPGA Musical Trio …</a></p>
+                <a class="readmore" href="/fpga.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/gnupg.html" rel="bookmark"
+                           title="Permalink to GnuPG">GnuPG</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-09-24T22:07:55+02:00">
+                Published: Mon 24 September 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/securite.html">Sécurité</a>.</p>
+<p>tags: <a href="/tag/securite.html">Sécurité</a> </p>
+</footer><!-- /.post-info -->                <p>Authentification ssh via agent pgp</p>
+<p><a href="https://opensource.com/article/19/4/gpg-subkeys-ssh">https://opensource.com/article/19/4/gpg-subkeys-ssh</a></p>
+<div class="highlight"><pre><span></span><code><span class="k">export</span><span class="w"> </span><span class="n">SSH_AUTH_SOCK</span><span class="o">=$</span><span class="p">(</span><span class="n">gpgconf</span><span class="w"> </span><span class="o">--</span><span class="n">list</span><span class="o">-</span><span class="n">dirs</span><span class="w"> </span><span class="n">agent</span><span class="o">-</span><span class="n">ssh</span><span class="o">-</span><span class="n">socket</span><span class="p">)</span><span class="w"></span>
+</code></pre></div>
+
+<p>erreur pass lors du déchiffrement d'une entrée:</p>
+<div class="highlight"><pre><span></span><code><span class="n">gpg</span><span class="o">:</span><span class="w"> </span><span class="err">é</span><span class="n">chec</span><span class="w"> </span><span class="n">du</span><span class="w"> </span><span class="n">déchiffrement</span><span class="w"> </span><span class="n">par</span><span class="w"> </span><span class="n">clef</span><span class="w"> </span><span class="n">publique</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">Pas</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">pinentry</span><span class="w"></span>
+<span class="n">gpg</span><span class="o">:</span><span class="w"> </span><span class="err">é</span><span class="n">chec</span><span class="w"> </span><span class="n">du</span><span class="w"> </span><span class="n">déchiffrement</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">Pas</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">clef</span><span class="w"> </span><span class="n">secrète</span><span class="w"></span>
+</code></pre></div>
+
+<p>Cause:
+Problème de …</p>
+                <a class="readmore" href="/gnupg.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/tech-domotique.html" rel="bookmark"
+                           title="Permalink to Domotique">Domotique</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-09-23T21:16:35+02:00">
+                Published: Sun 23 September 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/projets.html">Projets</a>.</p>
+<p>tags: <a href="/tag/projets.html">Projets</a> <a href="/tag/domotique.html">Domotique</a> <a href="/tag/pi.html">pi</a> </p>
+</footer><!-- /.post-info -->                <h1>Liens</h1>
+<ul>
+<li><a href="https://www.mysensors.org/">MySensors</a></li>
+<li><a href="https://mosquitto.org/">Mosquitto MQTT Broker</a></li>
+<li><a href="https://domoticz.com/">Domoticz</a></li>
+<li><a href="https://nodered.org/">Node-Red</a></li>
+</ul>
+<h1>Carte SD du pi</h1>
+<p><a href="https://askubuntu.com/questions/69363/mount-single-partition-from-image-of-entire-disk-device">Montage de l'image</a></p>
+<div class="highlight"><pre><span></span><code><span class="n">stephane</span><span class="nv">@stephane</span><span class="o">-</span><span class="nl">PC</span><span class="p">:</span><span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">sata</span><span class="o">/</span><span class="n">stephane</span><span class="err">$</span><span class="w"> </span><span class="n">fdisk</span><span class="w"> </span><span class="o">-</span><span class="n">l</span><span class="w"> </span><span class="nf">pi</span><span class="o">-</span><span class="n">sd</span><span class="p">.</span><span class="n">img</span><span class="w"> </span>
+<span class="n">Disque</span><span class="w"> </span><span class="nf">pi</span><span class="o">-</span><span class="n">sd</span><span class="p">.</span><span class="n">img</span><span class="w"> </span><span class="err">:</span><span class="w"> </span><span class="mi">7</span><span class="p">,</span><span class="mi">4</span><span class="w"> </span><span class="n">GiB</span><span class="p">,</span><span class="w"> </span><span class="mi">7948206080</span><span class="w"> </span><span class="n">octets</span><span class="p">,</span><span class="w"> </span><span class="mi">15523840</span><span class="w"> </span><span class="n">secteurs</span><span class="w"></span>
+<span class="n">Unités</span><span class="w"> </span><span class="err">:</span><span class="w"> </span><span class="n">secteur</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="err">×</span><span class="w"> </span><span class="mi">512</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">512</span><span class="w"> </span><span class="n">octets</span><span class="w"></span>
+<span class="n">Taille</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">secteur</span><span class="w"> </span><span class="p">(</span><span class="n">logique</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">physique</span><span class="p">)</span><span class="w"> </span><span class="err">:</span><span class="w"> </span><span class="mi">512</span><span class="w"> </span><span class="n">octets …</span></code></pre></div>
+                <a class="readmore" href="/tech-domotique.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+                </ol><!-- /#posts-list -->
+<p class="paginator">
+        <a href="/index.html">&#8647;</a>
+        <a href="/index9.html">&laquo;</a>
+    Page 10 / 15
+        <a href="/index11.html">&raquo;</a>
+        <a href="/index15.html">&#8649;</a>
+</p>
+                </section><!-- /#content -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

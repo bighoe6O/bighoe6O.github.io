@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Mon Blog | Articles by duloup@duloup.org</title>
+    <link rel="shortcut icon" type="image/png" href="http://dev.duloup.org/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="http://dev.duloup.org/favicon.ico">
+    <link rel="stylesheet" href="http://dev.duloup.org/theme/css/main.css" type="text/css" />
+    <link rel="stylesheet" href="http://dev.duloup.org/theme/css/pygments.css" type="text/css" />
+    <meta name="generator" content="Pelican" />
+    <meta name="description" content="" />
+    <meta name="author" content="duloup@duloup.org" />
+    <link rel="stylesheet" href="http://dev.duloup.org/theme/css/stork.css">
+    <link rel="stylesheet" media="screen and (prefers-color-scheme: dark)" href="http://dev.duloup.org/theme/css/stork-dark.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+
+                <li class="ephemeral selected"><a href="http://dev.duloup.org/author/duloupdulouporg5.html">duloup@duloup.org</a></li>
+                <li><a href="http://dev.duloup.org/">Home</a></li>
+                <li><a href="http://blog.duloup.org">Site</a></li>
+                <li><a href="http://dev.duloup.org/category/tech.html">Tech</a></li>
+                <li><a href="http://dev.duloup.org/category/musique.html">Musique</a></li>
+                <li><a href="http://dev.duloup.org/categories.html">Categories</a></li>
+                <li><a href="http://dev.duloup.org/tags.html">Tags</a></li>
+                <li><a href="http://dev.duloup.org/about.html">About</a></li>
+            </ul>
+        </nav>
+        <div class="header_box">
+            <h1><a href="http://dev.duloup.org/">Mon Blog</a></h1>
+        </div>
+    </header>
+    <div id="wrapper">
+        <div id="content"><div class="search-box"><div>Search: </div><input data-stork="sitesearch" /></div>
+<div data-stork="sitesearch-output"></div>
+            <h4 class="date">juin 06, 2019</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/tech-reprap.html" rel="bookmark" title="Permanent Link to &quot;RepRap&quot;">RepRap</a>
+                </h2>
+
+                
+                
+
+                <h1><a href="http://reprap.org/wiki/Prusa_Mendel_%28iteration_2%29">RepRap Mendel</a></h1>
+<p><a href="http://www.thingiverse.com/thing:4249/#files">http://reprap.org/wiki/Main_Page</a>
+<a href="http://www.youtube.com/watch?v=EujOBjxyLWs">http://www.youtube.com/watch?v=EujOBjxyLWs</a></p>
+<p>Montage du hot end</p>
+<p><a href="http://www.youtube.com/watch?v=i7-VlQREPbo">http://www.youtube.com/watch?v=i7-VlQREPbo</a></p>
+<h2>Impression des pièces</h2>
+<p><a href="http://reprap.org/wiki/Prusa_Mendel_%28iteration_2%29#Printed_Parts">http://reprap.org/wiki/Prusa_Mendel_%28iteration_2%29#Printed_Parts</a></p>
+<p><a href="https://github.com/prusajr/PrusaMendel/">Dépôt GitHub</a></p>
+<h2>Matériel</h2>
+<h3>Plateau chauffant</h3>
+<p>Modele : Heatbed MK2</p>
+<h3>Hotend</h3>
+<p>Modele : J-Head</p>
+<p><a href="/reprap/firmware">Firmware</a></p>
+<h2>Calibrage</h2>
+<p><a href="http://www.thingiverse.com/thing:4249/#files">http://www.thingiverse.com/thing:4249/#files</a></p>
+<h2>Logiciels</h2>
+<ul>
+<li><a href="/reprap/Logiciels_3D">Logiciels 3D</a></li>
+</ul>
+<h3>Skeinforge</h3>
+<p><a href="https://reprap.org/wiki/Skeinforge">https://reprap.org/wiki/Skeinforge</a></p>
+<div class="highlight"><pre><span></span><code>    sudo apt-add-repository ppa:richi-paraeasy/ppa
+    sudo apt-get update
+    sudo apt-get install skeinforge
+</code></pre></div>
+
+<p>Répertoire .skeinforg/profiles/ du ks53 ubuntu</p>
+<div class="highlight"><pre><span></span><code>skeinforge-profiles/
+</code></pre></div>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/tech-reprap.html">posted at 11:11</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/reprap.html" rel="tag">RepRap</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/reprap.html" class="tags">RepRap</a>
+                </div>
+            </article>            <h4 class="date">juin 06, 2019</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/system-ubuntu-pulseaudio.html" rel="bookmark" title="Permanent Link to &quot;Pulse Audio&quot;">Pulse Audio</a>
+                </h2>
+
+                
+                
+
+                <p>Problème: Dans la console de mixage apparait seulement la sortie HDMI</p>
+<p><a href="https://askubuntu.com/questions/69820/how-do-i-set-a-pulseaudio-card-profile-persistently-across-reboots">https://askubuntu.com/questions/69820/how-do-i-set-a-pulseaudio-card-profile-persistently-across-reboots</a></p>
+<h1>Sélectionner le profil de la carte audio</h1>
+<div class="highlight"><pre><span></span><code>pacmd set-card-profile 0 output:analog-stereo
+</code></pre></div>
+
+<p>Ajoût de la commande dans /etc/pulse/default.pa</p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/system-ubuntu-pulseaudio.html">posted at 10:15</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/systeme.html" rel="tag">Système</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/linux.html" class="tags">Linux</a>
+                </div>
+            </article>            <h4 class="date">juin 06, 2019</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/tech-reprap-foldarap.html" rel="bookmark" title="Permanent Link to &quot;FoldaRap&quot;">FoldaRap</a>
+                </h2>
+
+                
+                
+
+                <p><img alt="FoldaRap.jpg" src="http://dev.duloup.org/images/FoldaRap.jpg"></p>
+<p><a href="https://reprap.org/wiki/FoldaRap">https://reprap.org/wiki/FoldaRap</a></p>
+<h1>Profilés</h1>
+<p><a href="http://forums.reprap.org/read.php?110,272205">http://forums.reprap.org/read.php?110,272205</a></p>
+<p><a href="https://www.motedis.fr/shop/Profile-a-rainures/Profile-20-I-Type-rainure-5/Profile-aluminium-20x20-I-Type-rainure-5::999991076.html">Profile-20-I-Type-rainure-5</a></p>
+<h1>Structure de base</h1>
+<ul>
+<li>x4 profilé 200mm</li>
+<li>x8 M4x8</li>
+<li>
+<p>x8 écrou-T</p>
+</li>
+<li>
+<p>x4 profilé 300mm</p>
+</li>
+<li>x10 M4x8</li>
+<li>x10 écrou-T</li>
+</ul>
+<h1>Axe Y</h1>
+<ul>
+<li>x1 M4x8</li>
+<li>x1 écrou-T</li>
+<li>x1 M3x20</li>
+<li>x1 rondelle M3</li>
+<li>x2 roulement 603zz</li>
+<li>x1 écrou M3</li>
+</ul>
+<h2>Support moteur Y</h2>
+<ul>
+<li>x1 M4x8</li>
+<li>x1 écrou-T</li>
+<li>x1 nema 14</li>
+<li>x2 M3x8</li>
+<li>x1 poulie</li>
+<li>x2 vis sans tête</li>
+</ul>
+<h2>Supports tiges-lisses</h2>
+<ul>
+<li>x4 support-tige-lisse</li>
+<li>x4 M4x8</li>
+<li>x4 écrou-T</li>
+</ul>
+<h1>Etape 3/20 - Prise + interrupteur (45 min)</h1>
+<p>Câble 1
+* x1 cosse 4,8mm (+ isolant)
+* x1 cosse 6,35mm (+ isolant)</p>
+<p>Câble 2
+x1 cosse 4,8mm (+ isolant)
+x1 cosse 6,35mm (+ isolant)</p>
+<p>Câble 3
+x1 cosse 4,8mm (+ isolant)</p>
+<p>Câble 4
+x1 cosse 4,8mm (+ isolant)</p>
+<p>Câble 5
+x1 cosse 6,35mm (+ isolant)</p>
+<p>Plaque prise + interrupteur
+* x1 prise
+* x1 interrupteur
+* x2 M3x8
+* x2 écrou M3
+* x4 M4x8
+* x4 écrou-T</p>
+<p>Etape 4/20 - Plaque-base (20 min) 
+* x1 plaque-base
+* x1 alimentation
+* x2 M3x8
+* x2 écrou M3</p>
+<h1>Fixation de la plaque-base</h1>
+<ul>
+<li>x4 M4x8</li>
+<li>x4 écrou-T</li>
+</ul>
+<p>Etape 5/20 - Axe-Z (1 heure) 
+* x1 support-moteur-z-gauche
+* x1 support-moteur-z-droit
+* x2 profilé 300mm
+* x2 M4x8
+* x2 écrou-T</p>
+<p>Charnières extérieures
+* x1 charnière-extérieur-gauche
+* x1 charnière-extérieur-droite
+* x2 M4x8
+* x2 écrou-T</p>
+<p>Supports-moteurs-Z (2/2)
+* x2 nema 14
+* x4 M3x8</p>
+<p>Chariots-Z
+* x1 chariot-z-gauche
+* x1 chariot-z-gauche
+* M3x30 (tête fraisée)</p>
+<p>Axe-Z
+* x2 écrou M3
+* x2 M3x20</p>
+<ul>
+<li>x4 M4x8</li>
+<li>x4 écrou-T</li>
+</ul>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/tech-reprap-foldarap.html">posted at 09:21</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/reprap.html" rel="tag">RepRap</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/reprap.html" class="tags">RepRap</a>
+                </div>
+            </article>            <h4 class="date">juin 06, 2019</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/tech-reprap-logiciels-3d.html" rel="bookmark" title="Permanent Link to &quot;Logiciels 3D&quot;">Logiciels 3D</a>
+                </h2>
+
+                
+                
+
+                <h1>Art of Illusion</h1>
+<p>Logiciel CAD utilisé pour la realisation des pieces</p>
+<ul>
+<li><a href="http://forums.reprap.org/read.php?12,10052">Export STL</a></li>
+<li><img alt="2500_2500_Reprap_Prusa_ramps_diagram.jpeg" src="2500_2500_Reprap_Prusa_ramps_diagram.jpeg"></li>
+<li><a href="http://reprap.org/wiki/Builders/Metalab/AoI_CSG_Evaluator">CSG_Evaluator</a></li>
+</ul>
+<p>Note: Obsolète, j'utilise OpenSCAD</p>
+<h1>Blender</h1>
+<p><a href="http://www.google.fr/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;ved=0CDQQFjAA&amp;url=http%3A%2F%2Fsupport.ponoko.com%2Fentries%2F21531613-How-to-export-a-STL-design-file-using-Blender-2-6-&amp;ei=FfbPUaqHDo_VsgbEjIGYAQ&amp;usg=AFQjCNFCXZWBJFAMVZMzzFvHp4YdoMiJRg&amp;sig2=st3E-IgUgZrY_hEkfyDN5w&amp;bvm=bv.48572450,d.Yms">Exportation de fichier stl</a></p>
+<h1>OpenSCAD</h1>
+<ul>
+<li><a href="http://www.openscad.org/">OpenSCAD</a></li>
+<li><a href="https://github.com/openscad/MCAD">Librairie MCAD</a></li>
+</ul>
+<h2>Installation</h2>
+<div class="highlight"><pre><span></span><code>sudo apt-get install openscad
+</code></pre></div>
+
+<p><a href="http://www.openscad.org/downloads.html">http://www.openscad.org/downloads.html</a></p>
+<h1>objets</h1>
+<p>hollow10.stl: cube de 10x10 pour le calibrage</p>
+<p>RaspberryPi_v15.scad: http://www.thingiverse.com/thing:16104/#files</p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/tech-reprap-logiciels-3d.html">posted at 09:21</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/reprap.html" rel="tag">RepRap</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/reprap.html" class="tags">RepRap</a>
+                </div>
+            </article>            <h4 class="date">juin 06, 2019</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/tech-reprap-configurations.html" rel="bookmark" title="Permanent Link to &quot;Configuration RepRap&quot;">Configuration RepRap</a>
+                </h2>
+
+                
+                
+
+                <p>[[../]]</p>
+<h1>Cura</h1>
+<p>cura-default.ini
+cura-reprap4-calibrage.ini</p>
+<h1>Marlin</h1>
+<p>skeinforge-profiles</p>
+<h1>Slic3r</h1>
+<p>slic3r-config.ini
+slic3r-config-windows.ini</p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/tech-reprap-configurations.html">posted at 09:20</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/reprap.html" rel="tag">RepRap</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/reprap.html" class="tags">RepRap</a>
+                </div>
+            </article>            <h4 class="date">mai 21, 2019</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/tech-python-pelican.html" rel="bookmark" title="Permanent Link to &quot;Pelican&quot;">Pelican</a>
+                </h2>
+
+                
+                
+
+                <h1>Documentation</h1>
+<p><a href="https://docs.getpelican.com/en/3.6.3/content.html">https://docs.getpelican.com/en/3.6.3/content.html</a></p>
+<p><a href="https://docs.getpelican.com/en/stable/settings.html">https://docs.getpelican.com/en/stable/settings.html</a></p>
+<h1>Installation</h1>
+<div class="highlight"><pre><span></span><code>pipenv install pelican
+</code></pre></div>
+
+<p>pelicanconf.py</p>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/usr/bin/env python</span>
+<span class="c1"># -*- coding: utf-8 -*- #</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">unicode_literals</span>
+
+<span class="n">AUTHOR</span> <span class="o">=</span> <span class="s1">&#39;Duloup&#39;</span>
+<span class="n">SITENAME</span> <span class="o">=</span> <span class="s1">&#39;MonBlog&#39;</span>
+<span class="n">SITEURL</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+
+<span class="n">PATH</span> <span class="o">=</span> <span class="s1">&#39;content&#39;</span>
+
+<span class="n">TIMEZONE</span> <span class="o">=</span> <span class="s1">&#39;Europe/Paris&#39;</span>
+
+<span class="n">DEFAULT_LANG</span> <span class="o">=</span> <span class="s1">&#39;fr&#39;</span>
+
+<span class="c1"># Feed generation is usually not desired when developing</span>
+<span class="n">FEED_ALL_ATOM</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="n">CATEGORY_FEED_ATOM</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="n">TRANSLATION_FEED_ATOM</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="n">AUTHOR_FEED_ATOM</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="n">AUTHOR_FEED_RSS</span> <span class="o">=</span> <span class="kc">None</span>
+
+<span class="c1"># Blogroll</span>
+<span class="n">LINKS</span> <span class="o">=</span> <span class="p">((</span><span class="s1">&#39;Pelican&#39;</span><span class="p">,</span> <span class="s1">&#39;http://getpelican.com/&#39;</span><span class="p">),</span>
+         <span class="p">(</span><span class="s1">&#39;Python.org&#39;</span><span class="p">,</span> <span class="s1">&#39;http://python.org/&#39;</span><span class="p">),</span>
+         <span class="p">(</span><span class="s1">&#39;Jinja2&#39;</span><span class="p">,</span> <span class="s1">&#39;http://jinja.pocoo.org/&#39;</span><span class="p">),</span>
+         <span class="p">(</span><span class="s1">&#39;You can modify those links in your config file&#39;</span><span class="p">,</span> <span class="s1">&#39;#&#39;</span><span class="p">),)</span>
+
+<span class="c1"># Social widget</span>
+<span class="n">SOCIAL</span> <span class="o">=</span> <span class="p">((</span><span class="s1">&#39;You can add links in your config file&#39;</span><span class="p">,</span> <span class="s1">&#39;#&#39;</span><span class="p">),</span>
+          <span class="p">(</span><span class="s1">&#39;Another social link&#39;</span><span class="p">,</span> <span class="s1">&#39;#&#39;</span><span class="p">),)</span>
+
+<span class="n">DEFAULT_PAGINATION</span> <span class="o">=</span> <span class="mi">10</span>
+
+<span class="c1"># Uncomment following line if you want document-relative URLs when developing</span>
+<span class="c1">#RELATIVE_URLS = True</span>
+
+<span class="n">DEFAULT_CATEGORY</span> <span class="o">=</span> <span class="s1">&#39;Divers&#39;</span>
+</code></pre></div>
+
+<h1>Utilisation</h1>
+<h2>Lancement du serveur de dev</h2>
+<div class="highlight"><pre><span></span><code>inv build
+inv publish
+</code></pre></div>
+
+<p>Sous Windows 10, <a href="/system/windows-subsystem-for-linux">installation de ubuntu et nginx</a></p>
+<div class="highlight"><pre><span></span><code>&gt; ubuntu sudo service nginx start
+</code></pre></div>
+
+<h1>Divers</h1>
+<p>rsync fonctionnant sous Windows:</p>
+<p>https://sourceforge.net/projects/grsync-win/</p>
+<h1>Liens</h1>
+<ul>
+<li><a href="http://localhost:8100/">Accès au serveur local</a></li>
+<li><a href="https://github.com/getpelican/pelican-plugins">Plugins: Dépôt Git</a></li>
+<li><a href="http://www.pelicanthemes.com/">Thèmes</a></li>
+<li><a href="https://github.com/getpelican/pelican-themes">Thèmes: Dépôt Git</a></li>
+</ul>
+<h1>Plugins</h1>
+<p><a href="https://blog.geographer.fr/pelican-plugins">The missing Pelican plugins guide</a></p>
+<p><a href="https://github.com/getpelican/pelican-plugins/tree/master/autopages">Auto Pages</a></p>
+<p><a href="https://stackoverflow.com/questions/37385708/introduction-pages-for-categories-in-pelican">https://stackoverflow.com/questions/37385708/introduction-pages-for-categories-in-pelican</a></p>
+<p><a href="https://github.com/pelican-plugins/tipue-search">https://github.com/pelican-plugins/tipue-search</a>: Utilise le thème "elegant"</p>
+<p><a href="https://snipcart.com/blog/pelican-blog-tutorial-search-comments">https://snipcart.com/blog/pelican-blog-tutorial-search-comments</a></p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/tech-python-pelican.html">posted at 07:45</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/tech.html" rel="tag">Tech</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/python.html" class="tags">Python</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/pelican.html" class="tags">Pelican</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/blog.html" class="tags">Blog</a>
+                </div>
+            </article>            <h4 class="date">mai 21, 2019</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/tech-s3-protocol.html" rel="bookmark" title="Permanent Link to &quot;Protocole S3&quot;">Protocole S3</a>
+                </h2>
+
+                
+                
+
+                <h2>Python</h2>
+<div class="highlight"><pre><span></span><code>pipenv install boto3
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">transfer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">S3Transfer</span><span class="p">(</span><span class="n">boto3</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s1">&#39;s3&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">cfg</span><span class="o">.</span><span class="n">AWS_REGION</span><span class="p">,</span><span class="w"> </span><span class="n">aws_access_key_id</span><span class="o">=</span><span class="n">cfg</span><span class="o">.</span><span class="n">AWS_APP_ID</span><span class="p">,</span><span class="w"></span>
+<span class="n">aws_secret_access_key</span><span class="o">=</span><span class="n">cfg</span><span class="o">.</span><span class="n">AWS_APP_SECRET</span><span class="p">))</span><span class="w"></span>
+
+<span class="n">transfer</span><span class="o">.</span><span class="n">upload_file</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span><span class="w"> </span><span class="n">AWS_BUCKET</span><span class="p">,</span><span class="w"> </span><span class="n">file_path</span><span class="p">)</span><span class="w"></span>
+</code></pre></div>
+
+<h2>Ligne de commande</h2>
+<div class="highlight"><pre><span></span><code>sudo apt-get install s3cmd
+
+&lt;https://www.scaleway.com/en/docs/object-storage-with-aws-cli/&gt;
+</code></pre></div>
+
+<h2>Montage</h2>
+<p><a href="http://www.whiteboardcoder.com/2017/12/how-to-mount-s3-bucket-as-hard-drive.html">http://www.whiteboardcoder.com/2017/12/how-to-mount-s3-bucket-as-hard-drive.html</a></p>
+<div class="highlight"><pre><span></span><code>{
+  &quot;CORSRules&quot;: [
+    {
+      &quot;AllowedOrigins&quot;: [&quot;http://www.example.com&quot;],
+      &quot;AllowedHeaders&quot;: [&quot;*&quot;],
+      &quot;AllowedMethods&quot;: [&quot;GET&quot;, &quot;HEAD&quot;, &quot;POST&quot;, &quot;PUT&quot;, &quot;DELETE&quot;],
+      &quot;MaxAgeSeconds&quot;: 3000,
+      &quot;ExposeHeaders&quot;: [&quot;Etag&quot;]
+    }
+  ]
+}
+</code></pre></div>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/tech-s3-protocol.html">posted at 00:04</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/tech.html" rel="tag">Tech</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/web.html" class="tags">Web</a>
+                </div>
+            </article>            <h4 class="date">avr. 11, 2019</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/raspberry-pi-ipv6.html" rel="bookmark" title="Permanent Link to &quot;Raspberry Pi ipv6&quot;">Raspberry Pi ipv6</a>
+                </h2>
+
+                
+                
+
+                <p>/etc/sysctl.conf</p>
+<div class="highlight"><pre><span></span><code>net.ipv6.conf.all.disable_ipv6 = 1
+</code></pre></div>
+
+<p><a href="https://www.leowkahman.com/2016/03/19/disable-ipv6-raspberry-raspbian/">https://www.leowkahman.com/2016/03/19/disable-ipv6-raspberry-raspbian/</a></p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/raspberry-pi-ipv6.html">posted at 15:18</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/systeme.html" rel="tag">Système</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/pi.html" class="tags">Pi</a>
+                </div>
+            </article>            <h4 class="date">déc. 07, 2018</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/radios-web.html" rel="bookmark" title="Permanent Link to &quot;Radios Web&quot;">Radios Web</a>
+                </h2>
+
+                
+                
+
+                <p><a href="http://fluxradios.blogspot.com/p/flux-radios-francaise.html">http://fluxradios.blogspot.com/p/flux-radios-francaise.html</a></p>
+<p>Ajouter des commentaires et des intructions de caching dans un fichier playlist .m3u</p>
+<div class="highlight"><pre><span></span><code>#EXTM3U
+#EXTINF:0,fip - Nouveautés
+http://webradiofip5.scdn.arkena.com/webradiofip5.mp3
+#EXTVLCOPT:network-caching=1000
+#EXTINF:0,Nova
+http://broadcast.infomaniak.net:80/radionova-high.mp3
+#EXTVLCOPT:network-caching=1000
+</code></pre></div>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/radios-web.html">posted at 09:57</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/musique.html" rel="tag">Musique</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/culture.html" class="tags">Culture</a>
+                </div>
+            </article>            <h4 class="date">déc. 02, 2018</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/bibliotheque-musicale.html" rel="bookmark" title="Permanent Link to &quot;Bibliotheque musicale&quot;">Bibliotheque musicale</a>
+                </h2>
+
+                
+                
+
+                <h2>Suppression des doublons de la bibliothèque</h2>
+<p><a href="https://github.com/worldveil/dejavu">https://github.com/worldveil/dejavu</a></p>
+<h2>Raspberry PI</h2>
+<ul>
+<li>Utilisation de la carte Cirrus Logic</li>
+<li>installation de mpd</li>
+</ul>
+<h2>conversion de la bibliothèque au format ogg-vorbis</h2>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/usr/bin/env python3</span>
+<span class="c1"># music-flac2ogg.py</span>
+
+<span class="kn">from</span> <span class="nn">os</span> <span class="kn">import</span> <span class="n">path</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">subprocess</span>
+
+<span class="n">MPD_LIBRARY</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;MPD_LIBRARY&#39;</span><span class="p">]</span>
+<span class="n">OGGDIR</span> <span class="o">=</span> <span class="s1">&#39;/media/stephane/BUFFALO/OGG&#39;</span>
+
+<span class="k">if</span> <span class="ow">not</span> <span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">MPD_LIBRARY</span><span class="p">):</span>
+    <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;directory not found: &quot;</span> <span class="o">+</span> <span class="n">MPD_LIBRARY</span><span class="p">)</span>
+
+<span class="n">FLACDIR</span> <span class="o">=</span> <span class="n">MPD_LIBRARY</span>
+
+<span class="k">if</span> <span class="ow">not</span> <span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">FLACDIR</span><span class="p">):</span>
+    <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;directory not found: &quot;</span> <span class="o">+</span> <span class="n">FLACDIR</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="ow">not</span> <span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">OGGDIR</span><span class="p">):</span>
+    <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;directory not found: &quot;</span> <span class="o">+</span> <span class="n">OGGDIR</span><span class="p">)</span>
+
+
+<span class="k">for</span> <span class="n">root</span><span class="p">,</span> <span class="n">dirs</span><span class="p">,</span> <span class="n">files</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">walk</span><span class="p">(</span><span class="n">FLACDIR</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">myfile</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
+        <span class="c1"># process(os.path.join(root, file))</span>
+        <span class="c1"># os.remove(os.path.join(root, file))</span>
+        <span class="k">if</span> <span class="n">myfile</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;.flac&#39;</span><span class="p">):</span>
+            <span class="n">oggdir</span> <span class="o">=</span> <span class="n">root</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">FLACDIR</span><span class="p">,</span> <span class="n">OGGDIR</span><span class="p">)</span>
+            <span class="n">flacfile</span> <span class="o">=</span> <span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">myfile</span><span class="p">)</span>
+            <span class="n">oggfile</span> <span class="o">=</span> <span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">oggdir</span><span class="p">,</span> <span class="n">myfile</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;.flac&#39;</span><span class="p">,</span> <span class="s1">&#39;.ogg&#39;</span><span class="p">))</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">oggfile</span><span class="p">):</span>
+                <span class="nb">print</span><span class="p">(</span><span class="n">oggfile</span><span class="p">)</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">oggfile</span><span class="p">)):</span>
+                    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">oggfile</span><span class="p">))</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;oggenc -q 6 -o &#39;</span><span class="si">{:s}</span><span class="s2">&#39; &#39;</span><span class="si">{:s}</span><span class="s2">&#39;&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">oggfile</span><span class="p">,</span> <span class="n">flacfile</span><span class="p">))</span>
+                <span class="n">subprocess</span><span class="o">.</span><span class="n">run</span><span class="p">([</span><span class="s1">&#39;oggenc&#39;</span><span class="p">,</span> <span class="s1">&#39;-q&#39;</span><span class="p">,</span> <span class="s1">&#39;6&#39;</span><span class="p">,</span> <span class="s1">&#39;-o&#39;</span><span class="p">,</span> <span class="n">oggfile</span><span class="p">,</span> <span class="n">flacfile</span><span class="p">])</span>
+</code></pre></div>
+
+<h2>Vérification de la présence du fichier source flac pour les fichiers ogg</h2>
+<p>But: éviter les doublons ogg en cas de renommage des fichiers sources flac</p>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/usr/bin/env python3</span>
+<span class="c1"># music-ogg-check.py</span>
+
+<span class="kn">from</span> <span class="nn">os</span> <span class="kn">import</span> <span class="n">path</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">subprocess</span>
+
+<span class="n">MPD_LIBRARY</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;MPD_LIBRARY&#39;</span><span class="p">]</span>
+
+<span class="k">if</span> <span class="ow">not</span> <span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">MPD_LIBRARY</span><span class="p">):</span>
+    <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;directory not found: &quot;</span> <span class="o">+</span> <span class="n">MPD_LIBRARY</span><span class="p">)</span>
+
+<span class="c1"># FLACDIR = path.join(MPD_LIBRARY, &#39;Librairie&#39;)</span>
+<span class="n">FLACDIR</span> <span class="o">=</span> <span class="n">MPD_LIBRARY</span>
+<span class="n">OGGDIR</span> <span class="o">=</span> <span class="s1">&#39;/media/stephane/BUFFALO/OGG&#39;</span>
+<span class="c1"># FLACDIR = &#39;/home/stephane/Dev/Projets/flac&#39;</span>
+<span class="c1"># OGGDIR = &#39;/home/stephane/Dev/Projets/ogg&#39;</span>
+
+
+<span class="k">if</span> <span class="ow">not</span> <span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">FLACDIR</span><span class="p">):</span>
+    <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;directory not found: &quot;</span> <span class="o">+</span> <span class="n">FLACDIR</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="ow">not</span> <span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">OGGDIR</span><span class="p">):</span>
+    <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;directory not found: &quot;</span> <span class="o">+</span> <span class="n">OGGDIR</span><span class="p">)</span>
+
+
+<span class="k">for</span> <span class="n">root</span><span class="p">,</span> <span class="n">dirs</span><span class="p">,</span> <span class="n">files</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">walk</span><span class="p">(</span><span class="n">OGGDIR</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">myfile</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
+        <span class="c1"># process(os.path.join(root, file))</span>
+        <span class="c1"># os.remove(os.path.join(root, file))</span>
+        <span class="k">if</span> <span class="n">myfile</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;.ogg&#39;</span><span class="p">):</span>
+            <span class="n">oggfile</span> <span class="o">=</span> <span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">myfile</span><span class="p">)</span>
+            <span class="n">flacdir</span> <span class="o">=</span> <span class="n">root</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">OGGDIR</span><span class="p">,</span> <span class="n">FLACDIR</span><span class="p">)</span>
+            <span class="n">flacfile</span> <span class="o">=</span> <span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">flacdir</span><span class="p">,</span> <span class="n">myfile</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;.ogg&#39;</span><span class="p">,</span> <span class="s1">&#39;.flac&#39;</span><span class="p">))</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">flacfile</span><span class="p">):</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{:s}</span><span class="s2"> not found. removing...&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">flacfile</span><span class="p">))</span>
+                <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">oggfile</span><span class="p">)</span>
+</code></pre></div>
+
+<h2>Synchronisation de la bibliothèque sur le Raspberry Pi</h2>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
+<span class="c1"># music-rsync-pi.sh</span>
+
+<span class="nb">cd</span> /media/stephane/BUFFALO/OGG/ <span class="o">&amp;&amp;</span> rsync -avr --delete . pi@192.168.1.15:mpdmusic/
+</code></pre></div>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/bibliotheque-musicale.html">posted at 23:00</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/musique.html" rel="tag">Musique</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/mpd.html" class="tags">MPD</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/players.html" class="tags">Players</a>
+                </div>
+            </article>
+
+                <div class="clear"></div>
+                <div class="pages">
+
+                    <a href="http://dev.duloup.org/author/duloupdulouporg4.html" class="prev_page">&larr;&nbsp;Previous</a>
+
+                    <a href="http://dev.duloup.org/author/duloupdulouporg6.html" class="next_page">Next&nbsp;&rarr;</a>
+
+                    <span>Page 5 of 15</span>
+                </div>
+
+            <div class="clear"></div>
+            <footer>
+                <p>
+                <a href="https://github.com/jody-frankowski/blue-penguin">Blue Penguin</a> Theme
+                &middot;
+                Powered by <a href="http://getpelican.com">Pelican</a>
+            </footer>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <script src="http://dev.duloup.org/theme/js/stork.js"></script>
+    <script>
+        stork.initialize("http://dev.duloup.org/theme/js/stork.wasm")
+        stork.downloadIndex("sitesearch", "http://dev.duloup.org/search-index.st")
+        stork.attach("sitesearch")
+    </script>
+</body>
+</html>

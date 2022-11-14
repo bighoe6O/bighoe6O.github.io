@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>MyBlog - Python</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">MyBlog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/archerie.html">Archerie</a></li>
+                    <li><a href="/category/archive.html">Archive</a></li>
+                    <li><a href="/category/culture.html">Culture</a></li>
+                    <li><a href="/category/developpement.html">Développement</a></li>
+                    <li><a href="/category/divers.html">Divers</a></li>
+                    <li><a href="/category/graphisme.html">Graphisme</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li><a href="/category/musique.html">Musique</a></li>
+                    <li><a href="/category/projets.html">Projets</a></li>
+                    <li><a href="/category/reprap.html">RepRap</a></li>
+                    <li><a href="/category/securite.html">Sécurité</a></li>
+                    <li><a href="/category/systeme.html">Système</a></li>
+                    <li><a href="/category/tech.html">Tech</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+                <section id="content" class="body">
+                    <ol id="posts-list" class="hfeed" start="9">
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/tech-python-pelican.html" rel="bookmark"
+                           title="Permalink to Pelican">Pelican</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2019-05-21T07:45:08+02:00">
+                Published: Tue 21 May 2019
+        </abbr>
+		<br />
+        <abbr class="modified" title="2019-08-10T00:43:08+02:00">
+                Updated: Sat 10 August 2019
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/tech.html">Tech</a>.</p>
+<p>tags: <a href="/tag/python.html">Python</a> <a href="/tag/pelican.html">Pelican</a> <a href="/tag/blog.html">Blog</a> </p>
+</footer><!-- /.post-info -->                <h1>Documentation</h1>
+<p><a href="https://docs.getpelican.com/en/3.6.3/content.html">https://docs.getpelican.com/en/3.6.3/content.html</a></p>
+<p><a href="https://docs.getpelican.com/en/stable/settings.html">https://docs.getpelican.com/en/stable/settings.html</a></p>
+<h1>Installation</h1>
+<div class="highlight"><pre><span></span><code>pipenv install pelican
+</code></pre></div>
+
+<p>pelicanconf.py</p>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/usr/bin/env python</span>
+<span class="c1"># -*- coding: utf-8 -*- #</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">unicode_literals</span>
+
+<span class="n">AUTHOR</span> <span class="o">=</span> <span class="s1">&#39;Duloup&#39;</span>
+<span class="n">SITENAME</span> <span class="o">=</span> <span class="s1">&#39;MonBlog&#39;</span>
+<span class="n">SITEURL</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+
+<span class="n">PATH</span> <span class="o">=</span> <span class="s1">&#39;content&#39;</span>
+
+<span class="n">TIMEZONE</span> <span class="o">=</span> <span class="s1">&#39;Europe/Paris&#39;</span>
+
+<span class="n">DEFAULT_LANG</span> <span class="o">=</span> <span class="s1">&#39;fr&#39;</span>
+
+<span class="c1"># Feed generation is …</span></code></pre></div>
+                <a class="readmore" href="/tech-python-pelican.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/parsers-compilateurs.html" rel="bookmark"
+                           title="Permalink to Parsers compilateurs">Parsers compilateurs</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-11-19T13:43:41+01:00">
+                Published: Mon 19 November 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/tech.html">Tech</a>.</p>
+<p>tags: <a href="/tag/python.html">Python</a> </p>
+</footer><!-- /.post-info -->                <p><a href="https://tomassetti.me/parsing-in-python/">https://tomassetti.me/parsing-in-python/</a></p>
+<p><a href="https://github.com/jcoglan/canopy">https://github.com/jcoglan/canopy</a></p>
+<p><a href="http://canopy.jcoglan.com/langs/python.html">http://canopy.jcoglan.com/langs/python.html</a></p>
+<div class="highlight"><pre><span></span><code>npm install -g canopy
+</code></pre></div>
+
+<p><a href="http://web.archive.org/web/20080321094713/http://www.norbeck.nu:80/abc/bnf/abc20bnf.htm">ABC notation 2.0 - BNF specification</a></p>
+<p><a href="https://stackoverflow.com/questions/14922242/how-to-convert-bnf-to-ebnf">https://stackoverflow.com/questions/14922242/how-to-convert-bnf-to-ebnf</a></p>
+<p><a href="https://pypi.org/project/tatsu/">https://pypi.org/project/tatsu/</a></p>
+                <a class="readmore" href="/parsers-compilateurs.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/python-curses.html" rel="bookmark"
+                           title="Permalink to python-curses">python-curses</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-10-27T12:35:52+02:00">
+                Published: Sat 27 October 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/tech.html">Tech</a>.</p>
+<p>tags: <a href="/tag/python.html">Python</a> <a href="/tag/ui.html">UI</a> </p>
+</footer><!-- /.post-info -->                <p><a href="https://docs.python.org/3/howto/curses.html">https://docs.python.org/3/howto/curses.html</a></p>
+<p><a href="https://stackoverflow.com/questions/2515244/how-to-scroll-text-in-python-curses-subwindow">https://stackoverflow.com/questions/2515244/how-to-scroll-text-in-python-curses-subwindow</a></p>
+<p><a href="https://stackoverflow.com/questions/30795161/scroll-page-by-page-or-line-by-line-using-python-curses">https://stackoverflow.com/questions/30795161/scroll-page-by-page-or-line-by-line-using-python-curses</a></p>
+<h1>NPyScreen</h1>
+<p><a href="https://npyscreen.readthedocs.io/introduction.html">https://npyscreen.readthedocs.io/introduction.html</a></p>
+<h1>Urwid</h1>
+<p><a href="http://urwid.org/">http://urwid.org/</a></p>
+                <a class="readmore" href="/python-curses.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/python-tests.html" rel="bookmark"
+                           title="Permalink to python-tests">python-tests</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-10-26T10:54:37+02:00">
+                Published: Fri 26 October 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/tech.html">Tech</a>.</p>
+<p>tags: <a href="/tag/python.html">Python</a> </p>
+</footer><!-- /.post-info -->                <p><a href="https://docs.python-guide.org/writing/tests/">https://docs.python-guide.org/writing/tests/</a></p>
+<p><a href="https://docs.python.org/3/library/unittest.html">https://docs.python.org/3/library/unittest.html</a></p>
+                <a class="readmore" href="/python-tests.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/python-pysimplegui.html" rel="bookmark"
+                           title="Permalink to python-pysimplegui">python-pysimplegui</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-10-25T05:49:54+02:00">
+                Published: Thu 25 October 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/tech.html">Tech</a>.</p>
+<p>tags: <a href="/tag/python.html">Python</a> <a href="/tag/ui.html">UI</a> </p>
+</footer><!-- /.post-info -->                <p><a href="https://github.com/MikeTheWatchGuy/PySimpleGUI">https://github.com/MikeTheWatchGuy/PySimpleGUI</a></p>
+<p><a href="https://pysimplegui.readthedocs.io/tutorial/">https://pysimplegui.readthedocs.io/tutorial/</a></p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">PySimpleGUI</span> <span class="k">as</span> <span class="nn">sg</span>
+
+<span class="c1"># Very basic window.  Return values as a list</span>
+
+<span class="n">layout</span> <span class="o">=</span> <span class="p">[</span>
+          <span class="p">[</span><span class="n">sg</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span><span class="s1">&#39;Please enter your Name, Address, Phone&#39;</span><span class="p">)],</span>
+          <span class="p">[</span><span class="n">sg</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span><span class="s1">&#39;Name&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">1</span><span class="p">)),</span> <span class="n">sg</span><span class="o">.</span><span class="n">InputText</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">)],</span>
+          <span class="p">[</span><span class="n">sg</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span><span class="s1">&#39;Address&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">1</span><span class="p">)),</span> <span class="n">sg</span><span class="o">.</span><span class="n">InputText</span><span class="p">(</span><span class="s1">&#39;address&#39;</span><span class="p">)],</span>
+          <span class="p">[</span><span class="n">sg …</span></code></pre></div>
+                <a class="readmore" href="/python-pysimplegui.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/python-morse.html" rel="bookmark"
+                           title="Permalink to python-morse">python-morse</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-09-21T14:56:27+02:00">
+                Published: Fri 21 September 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/projets.html">Projets</a>.</p>
+<p>tags: <a href="/tag/python.html">Python</a> <a href="/tag/projets.html">Projets</a> </p>
+</footer><!-- /.post-info -->                <h2>Morse</h2>
+<p>Le source utilisé</p>
+<p><a href="https://gist.github.com/dcdeve/3dfba6566029f87b01aa3e38d6e1e26b">https://gist.github.com/dcdeve/3dfba6566029f87b01aa3e38d6e1e26b</a></p>
+<p><a href="https://stackoverflow.com/questions/43012715/morse-audio-decoding-using-python">https://stackoverflow.com/questions/43012715/morse-audio-decoding-using-python</a></p>
+<p><a href="https://code.google.com/archive/p/morse-to-text/source/default/source">https://code.google.com/archive/p/morse-to-text/source/default/source</a></p>
+<p><a href="http://www.kent-engineers.com/codespeed.htm">http://www.kent-engineers.com/codespeed.htm</a></p>
+<p><a href="https://fr.wikipedia.org/wiki/Code_Morse_international#Lettres">https://fr.wikipedia.org/wiki/Code_Morse_international#Lettres</a></p>
+<h2>Audio</h2>
+<p><a href="https://wiki.python.org/moin/Audio">https://wiki.python.org/moin/Audio</a></p>
+<p><a href="http://people.csail.mit.edu/hubert/pyaudio/#play-wave-example">http://people.csail.mit …</a></p>
+                <a class="readmore" href="/python-morse.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/exif-en-python.html" rel="bookmark"
+                           title="Permalink to Exif en Python">Exif en Python</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-09-06T21:28:29+02:00">
+                Published: Thu 06 September 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/divers.html">Divers</a>.</p>
+<p>tags: <a href="/tag/images.html">Images</a> <a href="/tag/python.html">Python</a> </p>
+</footer><!-- /.post-info -->                <p>Scripts dans git@duloup.org/scripts</p>
+<p>Renommage des fichiers scannés (fiches de paie):</p>
+<div class="highlight"><pre><span></span><code>python E:\repo\roaming\scripts\jpg-git-mv.py *.JPG &gt; mycmd.cmd
+</code></pre></div>
+
+<p><a href="https://www.vcode.no/web/resource.nsf/II2LNUG/642.htm">Tags Exif</a></p>
+<p><a href="https://sno.phy.queensu.ca/~phil/exiftool/TagNames/XMP.html">Tags XMP</a></p>
+<h2>Python</h2>
+<p><a href="https://github.com/hMatoba/Piexif">https://github.com/hMatoba/Piexif</a></p>
+<h3>Utilisation de la librairie python Pillow</h3>
+<p><a href="https://pillow.readthedocs.io/en/3.1.x/installation.html">https://pillow.readthedocs.io/en/3.1.x/installation.html</a></p>
+<p>Linux …</p>
+                <a class="readmore" href="/exif-en-python.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+                </ol><!-- /#posts-list -->
+<p class="paginator">
+        <a href="/tag/python.html">&#8647;</a>
+        <a href="/tag/python.html">&laquo;</a>
+    Page 2 / 2
+</p>
+                </section><!-- /#content -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Mon Blog | Articles by duloup@duloup.org</title>
+    <link rel="shortcut icon" type="image/png" href="http://dev.duloup.org/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="http://dev.duloup.org/favicon.ico">
+    <link rel="stylesheet" href="http://dev.duloup.org/theme/css/main.css" type="text/css" />
+    <link rel="stylesheet" href="http://dev.duloup.org/theme/css/pygments.css" type="text/css" />
+    <meta name="generator" content="Pelican" />
+    <meta name="description" content="" />
+    <meta name="author" content="duloup@duloup.org" />
+    <link rel="stylesheet" href="http://dev.duloup.org/theme/css/stork.css">
+    <link rel="stylesheet" media="screen and (prefers-color-scheme: dark)" href="http://dev.duloup.org/theme/css/stork-dark.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+
+                <li class="ephemeral selected"><a href="http://dev.duloup.org/author/duloupdulouporg14.html">duloup@duloup.org</a></li>
+                <li><a href="http://dev.duloup.org/">Home</a></li>
+                <li><a href="http://blog.duloup.org">Site</a></li>
+                <li><a href="http://dev.duloup.org/category/tech.html">Tech</a></li>
+                <li><a href="http://dev.duloup.org/category/musique.html">Musique</a></li>
+                <li><a href="http://dev.duloup.org/categories.html">Categories</a></li>
+                <li><a href="http://dev.duloup.org/tags.html">Tags</a></li>
+                <li><a href="http://dev.duloup.org/about.html">About</a></li>
+            </ul>
+        </nav>
+        <div class="header_box">
+            <h1><a href="http://dev.duloup.org/">Mon Blog</a></h1>
+        </div>
+    </header>
+    <div id="wrapper">
+        <div id="content"><div class="search-box"><div>Search: </div><input data-stork="sitesearch" /></div>
+<div data-stork="sitesearch-output"></div>
+            <h4 class="date">janv. 16, 2018</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/drum-tabs_g.html" rel="bookmark" title="Permanent Link to &quot;drum-tabs_g++&quot;">drum-tabs_g++</a>
+                </h2>
+
+                
+                
+
+                <div class="highlight"><pre><span></span><code><span class="nt">make</span><span class="w"></span>
+<span class="nt">g</span><span class="o">++</span><span class="w"> </span><span class="nt">-Wall</span><span class="w">  </span><span class="nt">-g</span><span class="w"> </span><span class="nt">-c</span><span class="w"> </span><span class="nt">src</span><span class="o">/</span><span class="nt">drumtab-parser</span><span class="p">.</span><span class="nc">cpp</span><span class="w"> </span><span class="nt">-o</span><span class="w"> </span><span class="nt">obj</span><span class="o">/</span><span class="nt">drumtab-parser</span><span class="p">.</span><span class="nc">o</span><span class="w"></span>
+<span class="nt">src</span><span class="o">/</span><span class="nt">drumtab-parser</span><span class="p">.</span><span class="nc">cpp</span><span class="o">:</span><span class="w"> </span><span class="nt">In</span><span class="w"> </span><span class="nt">member</span><span class="w"> </span><span class="nt">function</span><span class="w"> </span><span class="err">‘</span><span class="nt">void</span><span class="w"> </span><span class="nt">DrumTabParser</span><span class="p">::</span><span class="nd">print_bytes</span><span class="o">(</span><span class="nt">std</span><span class="p">::</span><span class="nd">vector</span><span class="o">&lt;</span><span class="nt">int</span><span class="o">&gt;)</span><span class="err">’</span><span class="o">:</span><span class="w"></span>
+<span class="nt">src</span><span class="o">/</span><span class="nt">drumtab-parser</span><span class="p">.</span><span class="nc">cpp</span><span class="p">:</span><span class="nd">103</span><span class="p">:</span><span class="nd">7</span><span class="o">:</span><span class="w"> </span><span class="nt">warning</span><span class="o">:</span><span class="w"> </span><span class="err">‘</span><span class="nt">auto</span><span class="err">’</span><span class="w"> </span><span class="nt">changes</span><span class="w"> </span><span class="nt">meaning</span><span class="w"> </span><span class="nt">in</span><span class="w"> </span><span class="nt">C</span><span class="o">++</span><span class="nt">11</span><span class="o">;</span><span class="w"> </span><span class="nt">please</span><span class="w"> </span><span class="nt">remove</span><span class="w"> </span><span class="nt">it</span><span class="w"> </span><span class="cp">[</span><span class="na">-Wc</span><span class="o">++</span><span class="mi">0</span><span class="nx">x</span><span class="na">-compat</span><span class="cp">]</span><span class="w"></span>
+<span class="w">   </span><span class="nt">for</span><span class="o">(</span><span class="nt">auto</span><span class="w"> </span><span class="nt">it</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nt">steps</span><span class="p">.</span><span class="nc">begin</span><span class="o">();</span><span class="w"> </span><span class="nt">it</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="nt">steps</span><span class="p">.</span><span class="nc">end</span><span class="o">();</span><span class="w"> </span><span class="o">++</span><span class="nt">it</span><span class="o">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">       </span><span class="err">^</span><span class="w"></span>
+<span class="err">src/drumtab-parser.</span><span class="w"></span>
+<span class="n">cpp</span><span class="p">:</span><span class="mi">103</span><span class="o">:</span><span class="mi">12</span><span class="o">:</span><span class="w"> </span><span class="n">error</span><span class="o">:</span><span class="w"> </span><span class="err">‘</span><span class="n">it</span><span class="err">’</span><span class="w"> </span><span class="n">does</span><span class="w"> </span><span class="n">not</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">type</span><span class="w"></span>
+<span class="w">   </span><span class="nf">for</span><span class="p">(</span><span class="kc">auto</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="n">steps</span><span class="err">.</span><span class="nf">begin</span><span class="p">()</span><span class="err">;</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="err">!=</span><span class="w"> </span><span class="n">steps</span><span class="err">.</span><span class="kc">end</span><span class="err">(</span><span class="p">);</span><span class="w"> </span><span class="err">++it)</span><span class="w"> </span><span class="err">{</span><span class="w"></span>
+</code></pre></div>
+
+<p>https://gcc.gnu.org/projects/cxx-status.html#cxx11</p>
+<div class="highlight"><pre><span></span><code><span class="nv">CXXFLAGS</span> <span class="o">=</span> -std<span class="o">=</span>c++11
+</code></pre></div>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/drum-tabs_g.html">posted at 23:36</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/musique.html" rel="tag">Musique</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/daw.html" class="tags">DAW</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/rythmes.html" class="tags">Rythmes</a>
+                </div>
+            </article>            <h4 class="date">janv. 13, 2018</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/musique-divers.html" rel="bookmark" title="Permanent Link to &quot;Musique Divers&quot;">Musique Divers</a>
+                </h2>
+
+                
+                
+
+                <h1>Percussions</h1>
+<div class="highlight"><pre><span></span><code><span class="mf">1</span><span class="w"> </span><span class="n">e</span><span class="w"> </span><span class="err">&amp;</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="mf">2</span><span class="w"> </span><span class="n">e</span><span class="w"> </span><span class="err">&amp;</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="mf">3</span><span class="w"> </span><span class="n">e</span><span class="w"> </span><span class="err">&amp;</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="mf">4</span><span class="w"> </span><span class="n">e</span><span class="w"> </span><span class="err">&amp;</span><span class="w"> </span><span class="n">a</span><span class="w"></span>
+<span class="n">D</span><span class="w"> </span><span class="mf">.</span><span class="w"> </span><span class="n">D</span><span class="w"> </span><span class="mf">.</span><span class="w"> </span><span class="mf">.</span><span class="w"> </span><span class="mf">.</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="mf">.</span><span class="w"> </span><span class="n">D</span><span class="w"> </span><span class="mf">.</span><span class="w"> </span><span class="mf">.</span><span class="w"> </span><span class="mf">.</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="mf">.</span><span class="w"> </span><span class="mf">.</span><span class="w"> </span><span class="mf">.</span><span class="w"></span>
+<span class="n">D</span><span class="w"> </span><span class="mf">.</span><span class="w"> </span><span class="n">D</span><span class="w"> </span><span class="mf">.</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="n">k</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="mf">.</span><span class="w"> </span><span class="n">D</span><span class="w"> </span><span class="mf">.</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="n">k</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="mf">.</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="n">k</span><span class="w"></span>
+<span class="n">D</span><span class="w"> </span><span class="mf">.</span><span class="w"> </span><span class="n">D</span><span class="w"> </span><span class="mf">.</span><span class="w"> </span><span class="n">k</span><span class="w"> </span><span class="mf">.</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="mf">.</span><span class="w"> </span><span class="n">D</span><span class="w"> </span><span class="mf">.</span><span class="w"> </span><span class="n">k</span><span class="w"> </span><span class="mf">.</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="mf">.</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="n">k</span><span class="w"></span>
+<span class="n">D</span><span class="w"> </span><span class="n">k</span><span class="w"> </span><span class="n">D</span><span class="w"> </span><span class="mf">.</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="n">k</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="n">k</span><span class="w"> </span><span class="n">D</span><span class="w"> </span><span class="mf">.</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="n">k</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="mf">.</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="n">k</span><span class="w"> </span>
+</code></pre></div>
+
+<h1>Format Wav</h1>
+<p><a href="http://soundfile.sapp.org/doc/WaveFormat/">http://soundfile.sapp.org/doc/WaveFormat/</a></p>
+<p><a href="http://www.bandcoach.org/chordProgsMaj.html">http://www.bandcoach.org/chordProgsMaj.html</a></p>
+<p><a href="http://www.bandcoach.org/chordProgsMin.html">http://www.bandcoach.org/chordProgsMin.html</a></p>
+<h1>Kontakt</h1>
+<p><a href="https://web.archive.org/web/20160404103813/">https://web.archive.org/web/20160404103813/</a></p>
+<p><a href="http://www.soundonsound.com:80/sos/may99/articles/synthsec.htm">http://www.soundonsound.com:80/sos/may99/articles/synthsec.htm</a></p>
+<h1>Sites Jazz</h1>
+<p><a href="https://swiss-jazz.ch/">https://swiss-jazz.ch/</a></p>
+<h1>Suppression des doublons dans la bibliothèque musicale</h1>
+<p><a href="https://stackoverflow.com/questions/476227/detect-duplicate-mp3-files-with-different-bitrates-and-or-different-id3-tags">https://stackoverflow.com/questions/476227/detect-duplicate-mp3-files-with-different-bitrates-and-or-different-id3-tags</a></p>
+<p><a href="https://github.com/worldveil/dejavu">https://github.com/worldveil/dejavu</a></p>
+<h2>Picard</h2>
+<p><a href="https://picard.musicbrainz.org/">https://picard.musicbrainz.org/</a></p>
+<h3>Installation</h3>
+<div class="highlight"><pre><span></span><code>sudo apt-get install libdiscid-dev
+git clone https://github.com/metabrainz/picard -b 2.0.2
+pip install -r requirements.txt
+</code></pre></div>
+
+<p><a href="https://linuxfr.org/users/kaliko/journaux/mpd_sima-client-mpd-non-interactif-en-version-0-13">https://linuxfr.org/users/kaliko/journaux/mpd_sima-client-mpd-non-interactif-en-version-0-13</a></p>
+<h2>Taglib</h2>
+<div class="highlight"><pre><span></span><code>sudo apt-get install libtag1-dev
+pipfile install pytaglib
+</code></pre></div>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/musique-divers.html">posted at 10:20</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/musique.html" rel="tag">Musique</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/musique.html" class="tags">Musique</a>
+                </div>
+            </article>            <h4 class="date">janv. 12, 2018</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/weather-api.html" rel="bookmark" title="Permanent Link to &quot;Weather API&quot;">Weather API</a>
+                </h2>
+
+                
+                
+
+                <p><a href="http://simpleweatherjs.com/">http://simpleweatherjs.com/</a></p>
+<p><a href="https://www.programmableweb.com/news/26-weather-apis-12-support-json/2012/01/11">https://www.programmableweb.com/news/26-weather-apis-12-support-json/2012/01/11</a></p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/weather-api.html">posted at 10:56</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/projets.html" rel="tag">Projets</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/projets.html" class="tags">Projets</a>
+                </div>
+            </article>            <h4 class="date">janv. 10, 2018</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/msys2-outils-unix-sous-windows.html" rel="bookmark" title="Permanent Link to &quot;MSYS2: Outils unix sous windows&quot;">MSYS2: Outils unix sous windows</a>
+                </h2>
+
+                
+                
+
+                <h1>Configuration Bash</h1>
+<p>.bash_aliases</p>
+<div class="highlight"><pre><span></span><code><span class="nb">alias</span> <span class="nv">gbr</span><span class="o">=</span><span class="s1">&#39;git branch&#39;</span>
+<span class="nb">alias</span> <span class="nv">gst</span><span class="o">=</span><span class="s1">&#39;git status&#39;</span>
+<span class="nb">alias</span> <span class="nv">kissh</span><span class="o">=</span><span class="s1">&#39;kill $SSH_AGENT_PID&#39;</span>
+</code></pre></div>
+
+<h1>ssh-agent</h1>
+<div class="highlight"><pre><span></span><code>##################################<span class="w"></span>
+#<span class="w"> </span><span class="nv">Script</span><span class="w"> </span><span class="nv">de</span><span class="w"> </span><span class="nv">lancement</span><span class="w"> </span><span class="nv">de</span><span class="w"> </span><span class="nv">ssh</span><span class="o">-</span><span class="nv">agent</span><span class="w"></span>
+##################################<span class="w"></span>
+<span class="nv">unset</span><span class="w"> </span><span class="nv">SSH_AGENT_PID</span><span class="w"></span>
+
+<span class="k">if</span><span class="w"> </span>[<span class="w"> </span><span class="o">-</span><span class="nv">f</span><span class="w"> </span>$<span class="nv">HOME</span><span class="o">/</span>.<span class="nv">bash_aliases</span><span class="w"> </span>]<span class="c1">; then</span><span class="w"></span>
+<span class="w">    </span>.<span class="w"> </span>$<span class="nv">HOME</span><span class="o">/</span>.<span class="nv">bash_aliases</span><span class="w"></span>
+<span class="nv">fi</span><span class="w"></span>
+<span class="k">if</span><span class="w"> </span>[<span class="w"> </span><span class="o">-</span><span class="nv">f</span><span class="w"> </span>$<span class="nv">HOME</span><span class="o">/</span><span class="nv">ssh</span><span class="o">-</span><span class="nv">agent</span>.<span class="nv">out</span><span class="w"> </span>]<span class="c1">; then</span><span class="w"></span>
+<span class="w">    </span><span class="nv">echo</span><span class="w"> </span><span class="s2">&quot;fichier ssh-agent.out présent&quot;</span><span class="w"></span>
+<span class="w">    </span>.<span class="w"> </span>$<span class="nv">HOME</span><span class="o">/</span><span class="nv">ssh</span><span class="o">-</span><span class="nv">agent</span>.<span class="nv">out</span><span class="w"></span>
+<span class="w">    </span><span class="nv">ps</span><span class="w"> </span><span class="o">-</span><span class="nv">p</span><span class="w"> </span>$<span class="nv">SSH_AGENT_PID</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span>[<span class="w"> </span><span class="s2">&quot;$?&quot;</span><span class="w"> </span><span class="o">-</span><span class="nv">eq</span><span class="w"> </span><span class="s2">&quot;0&quot;</span><span class="w"> </span>]<span class="c1">; then</span><span class="w"></span>
+<span class="w">        </span><span class="nv">echo</span><span class="w"> </span><span class="s2">&quot;processus ssh-agent trouvé&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="k">else</span><span class="w"></span>
+<span class="w">        </span><span class="nv">echo</span><span class="w"> </span><span class="s2">&quot;processus ssh-agent non trouvé&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="nv">unset</span><span class="w"> </span><span class="nv">SSH_AGENT_PID</span><span class="w"></span>
+<span class="w">    </span><span class="nv">fi</span><span class="w"></span>
+<span class="k">else</span><span class="w"></span>
+<span class="w">    </span><span class="nv">echo</span><span class="w"> </span><span class="s2">&quot;fichier ssh-agent.out absent&quot;</span><span class="w"></span>
+<span class="nv">fi</span><span class="w"></span>
+<span class="k">if</span><span class="w"> </span>[<span class="w"> </span><span class="s2">&quot;&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;$SSH_AGENT_PID&quot;</span><span class="w"> </span>]<span class="c1">; then</span><span class="w"></span>
+<span class="w">    </span><span class="nv">echo</span><span class="w"> </span><span class="s2">&quot;lancement de ssh-agent&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="nv">ssh</span><span class="o">-</span><span class="nv">agent</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span>$<span class="nv">HOME</span><span class="o">/</span><span class="nv">ssh</span><span class="o">-</span><span class="nv">agent</span>.<span class="nv">out</span><span class="w"></span>
+<span class="w">    </span>.<span class="w"> </span>$<span class="nv">HOME</span><span class="o">/</span><span class="nv">ssh</span><span class="o">-</span><span class="nv">agent</span>.<span class="nv">out</span><span class="w"></span>
+<span class="w">    </span><span class="nv">ssh</span><span class="o">-</span><span class="nv">add</span><span class="w"> </span>$<span class="nv">HOME</span><span class="o">/</span>.<span class="nv">ssh</span><span class="o">/</span><span class="nv">id_rsa</span><span class="w"></span>
+<span class="nv">fi</span><span class="w"></span>
+#<span class="w"> </span><span class="nv">Fin</span><span class="w"> </span><span class="nv">lancement</span><span class="w"> </span><span class="nv">ssh</span><span class="o">-</span><span class="nv">agent</span><span class="w"></span>
+##################################<span class="w"></span>
+</code></pre></div>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/msys2-outils-unix-sous-windows.html">posted at 10:45</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/systeme.html" rel="tag">Système</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/windows.html" class="tags">Windows</a>
+                </div>
+            </article>            <h4 class="date">janv. 09, 2018</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/ngspice-conception-electronique.html" rel="bookmark" title="Permanent Link to &quot;Ngspice Conception électronique&quot;">Ngspice Conception électronique</a>
+                </h2>
+
+                
+                
+
+                <div class="highlight"><pre><span></span><code>stephane@raspberrypi ~/ngspice $ gcc -v Using built-in specs. <span class="nv">COLLECT_GCC</span><span class="o">=</span>gcc <span class="nv">COLLECT_LTO_WRAPPER</span><span class="o">=</span>/usr/lib/gcc/arm-linux-gnueabihf/4.6/lto-wrapper Target: arm-linux-gnueabihf Configured with: ../src/configure -v --with-pkgversion<span class="o">=</span><span class="s1">&#39;Debian 4.6.3-14+rpi1&#39;</span> --with-bugurl<span class="o">=</span>file:///usr/share/doc/gcc-4.6/README.Bugs --enable-languages<span class="o">=</span>c,c++,fortran,objc,obj-c++ --prefix<span class="o">=</span>/usr --program-suffix<span class="o">=</span>-4.6 --enable-shared --enable-linker-build-id --with-system-zlib --libexecdir<span class="o">=</span>/usr/lib --without-included-gettext --enable-threads<span class="o">=</span>posix --with-gxx-include-dir<span class="o">=</span>/usr/include/c++/4.6 --libdir<span class="o">=</span>/usr/lib --enable-nls --with-sysroot<span class="o">=</span>/ --enable-clocale<span class="o">=</span>gnu --enable-libstdcxx-debug --enable-libstdcxx-time<span class="o">=</span>yes --enable-gnu-unique-object --enable-plugin --enable-objc-gc --disable-sjlj-exceptions --with-arch<span class="o">=</span>armv6 --with-fpu<span class="o">=</span>vfp --with-float<span class="o">=</span>hard --enable-checking<span class="o">=</span>release --build<span class="o">=</span>arm-linux-gnueabihf --host<span class="o">=</span>arm-linux-gnueabihf --target<span class="o">=</span>arm-linux-gnueabihf Thread model: posix gcc version <span class="m">4</span>.6.3 <span class="o">(</span>Debian <span class="m">4</span>.6.3-14+rpi1<span class="o">)</span>
+</code></pre></div>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/ngspice-conception-electronique.html">posted at 00:42</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/tech.html" rel="tag">Tech</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/electronique.html" class="tags">Electronique</a>
+                </div>
+            </article>            <h4 class="date">janv. 08, 2018</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/generation-des-readmemd-pour-les-sketches-arduino.html" rel="bookmark" title="Permanent Link to &quot;Génération des README.md pour les sketches arduino&quot;">Génération des README.md pour les sketches arduino</a>
+                </h2>
+
+                
+                
+
+                <div class="highlight"><pre><span></span><code><span class="k">for</span> dir <span class="k">in</span> *<span class="p">;</span> <span class="k">do</span> <span class="k">if</span> <span class="o">[</span> -d <span class="s2">&quot;</span><span class="nv">$dir</span><span class="s2">&quot;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span> <span class="k">if</span> <span class="o">[</span> ! -f <span class="s2">&quot;</span><span class="nv">$dir</span><span class="s2">/README.md&quot;</span> -a -f <span class="s2">&quot;</span><span class="nv">$dir</span><span class="s2">/</span><span class="nv">$dir</span><span class="s2">.ino&quot;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span> <span class="nb">echo</span> <span class="nv">$dir</span><span class="p">;</span>  cat README.tmpl <span class="p">|</span> sed -e <span class="s2">&quot;s#@title@#</span><span class="nv">$dir</span><span class="s2">#&quot;</span> &gt; <span class="nv">$dir</span>/README.md<span class="p">;</span> <span class="k">fi</span><span class="p">;</span> <span class="k">fi</span><span class="p">;</span> <span class="k">done</span>
+</code></pre></div>
+
+<p>README.tmpl</p>
+<div class="highlight"><pre><span></span><code><span class="o">---</span><span class="w"></span>
+<span class="nl">title</span><span class="p">:</span><span class="w"> </span><span class="nv">@title</span><span class="err">@</span><span class="w"></span>
+<span class="nl">layout</span><span class="p">:</span><span class="w"> </span><span class="n">inopage</span><span class="w"></span>
+<span class="c1">---</span>
+</code></pre></div>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/generation-des-readmemd-pour-les-sketches-arduino.html">posted at 11:43</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/archive.html" rel="tag">Archive</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/arduino.html" class="tags">Arduino</a>
+                </div>
+            </article>            <h4 class="date">janv. 08, 2018</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/web-linkchecker.html" rel="bookmark" title="Permanent Link to &quot;Linkchecker&quot;">Linkchecker</a>
+                </h2>
+
+                
+                
+
+                <p>Utilitaire permettant de vérifier les liens sur un site</p>
+<p>Vérification des liens du blog :</p>
+<div class="highlight"><pre><span></span><code>linkchecker http://localhost:4000/
+</code></pre></div>
+
+<p><a href="https://www.supertechcrew.com/jekyll-check-for-broken-links/">https://www.supertechcrew.com/jekyll-check-for-broken-links/</a></p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/web-linkchecker.html">posted at 10:38</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/tech.html" rel="tag">Tech</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/web.html" class="tags">Web</a>
+                </div>
+            </article>            <h4 class="date">janv. 07, 2018</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/logiciels-3d-pour-la-reprap.html" rel="bookmark" title="Permanent Link to &quot;Logiciels 3D pour la Reprap&quot;">Logiciels 3D pour la Reprap</a>
+                </h2>
+
+                
+                
+
+                <h1>Logiciels CAD/Slicing</h1>
+<h2>Art of Illusion</h2>
+<p>Logiciel CAD utilisé pour la realisation des pieces</p>
+<ul>
+<li><a href="http://forums.reprap.org/read.php?12,10052">Export STL</a></li>
+<li><img alt="2500_2500_Reprap_Prusa_ramps_diagram.jpeg" src="2500_2500_Reprap_Prusa_ramps_diagram.jpeg"></li>
+<li><a href="http://reprap.org/wiki/Builders/Metalab/AoI_CSG_Evaluator">CSG_Evaluator</a></li>
+</ul>
+<p>Note: Obsolète, j'utilise OpenSCAD</p>
+<h2>Blender</h2>
+<p><a href="http://www.google.fr/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;ved=0CDQQFjAA&amp;url=http%3A%2F%2Fsupport.ponoko.com%2Fentries%2F21531613-How-to-export-a-STL-design-file-using-Blender-2-6-&amp;ei=FfbPUaqHDo_VsgbEjIGYAQ&amp;usg=AFQjCNFCXZWBJFAMVZMzzFvHp4YdoMiJRg&amp;sig2=st3E-IgUgZrY_hEkfyDN5w&amp;bvm=bv.48572450,d.Yms">Exportation de fichier stl</a></p>
+<h2>OpenSCAD</h2>
+<ul>
+<li><a href="http://www.openscad.org/">OpenSCAD</a></li>
+<li><a href="https://github.com/openscad/MCAD">Librairie MCAD</a></li>
+</ul>
+<h3>Installation sous Windows</h3>
+<p><a href="https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Building_on_Microsoft_Windows#Installation">https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Building_on_Microsoft_Windows#Installation</a></p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/logiciels-3d-pour-la-reprap.html">posted at 21:18</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/reprap.html" rel="tag">RepRap</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/reprap.html" class="tags">RepRap</a>
+                </div>
+            </article>            <h4 class="date">janv. 07, 2018</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/jekyll.html" rel="bookmark" title="Permanent Link to &quot;Jekyll&quot;">Jekyll</a>
+                </h2>
+
+                
+                
+
+                <p><a href="https://jekyllrb.com/">https://jekyllrb.com/</a></p>
+<h1>Installation</h1>
+<p><a href="https://jekyllrb.com/docs/installation/windows/">Windows</a></p>
+<div class="highlight"><pre><span></span><code>sudo apt install ruby
+</code></pre></div>
+
+<p>nokogiri</p>
+<div class="highlight"><pre><span></span><code>sudo apt install libxml2-dev
+</code></pre></div>
+
+<p><a href="https://codinfox.github.io/dev/2015/03/06/use-tags-and-categories-in-your-jekyll-based-github-pages/">Catégories dans Jekyll</a></p>
+<h1>Choix d'un thème orienté développement</h1>
+<ul>
+<li><a href="https://github.com/tomjoht/documentation-theme-jekyll">https://github.com/tomjoht/documentation-theme-jekyll</a></li>
+<li><a href="http://idratherbewriting.com/documentation-theme-jekyll/index.html">http://idratherbewriting.com/documentation-theme-jekyll/index.html</a></li>
+<li><a href="https://aksakalli.github.io/jekyll-doc-theme/docs/home/">https://aksakalli.github.io/jekyll-doc-theme/docs/home/</a></li>
+</ul>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/jekyll.html">posted at 18:20</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/archive.html" rel="tag">Archive</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/jekyll.html" class="tags">Jekyll</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/ruby.html" class="tags">Ruby</a>
+                </div>
+            </article>            <h4 class="date">janv. 07, 2018</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/tech-reprap-logiciels.html" rel="bookmark" title="Permanent Link to &quot;Logiciels pour la Reprap&quot;">Logiciels pour la Reprap</a>
+                </h2>
+
+                
+                
+
+                <h2>Logiciels</h2>
+<p><img alt="2500_2500_Reprap_Prusa_ramps_diagram.jpeg" src="2500_2500_Reprap_Prusa_ramps_diagram.jpeg">
+* <a href="http://reprap.org/wiki/Builders/Metalab/AoI_CSG_Evaluator">CSG_Evaluator</a></p>
+<h3>Skeinforge</h3>
+<ul>
+<li><a href="http://fabmetheus.crsndoo.com/">http://fabmetheus.crsndoo.com/</a><div class="highlight"><pre><span></span><code>sudo apt-add-repository ppa:richi-paraeasy/ppa
+sudo apt-get update
+sudo apt-get install skeinforge
+</code></pre></div>
+
+</li>
+</ul>
+<p>Répertoire .skeinforg/profiles/ du ks53 ubuntu</p>
+<div class="highlight"><pre><span></span><code>skeinforge-profiles/
+</code></pre></div>
+
+<h2>Octoprint</h2>
+<p><a href="https://octoprint.org/">https://octoprint.org/</a></p>
+<p><a href="https://octopi.octoprint.org/">https://octopi.octoprint.org/</a></p>
+<p><a href="https://github.com/guysoft/OctoPi">https://github.com/guysoft/OctoPi</a></p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/tech-reprap-logiciels.html">posted at 16:58</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/reprap.html" rel="tag">RepRap</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/reprap.html" class="tags">Reprap</a>
+                </div>
+            </article>
+
+                <div class="clear"></div>
+                <div class="pages">
+
+                    <a href="http://dev.duloup.org/author/duloupdulouporg13.html" class="prev_page">&larr;&nbsp;Previous</a>
+
+                    <a href="http://dev.duloup.org/author/duloupdulouporg15.html" class="next_page">Next&nbsp;&rarr;</a>
+
+                    <span>Page 14 of 15</span>
+                </div>
+
+            <div class="clear"></div>
+            <footer>
+                <p>
+                <a href="https://github.com/jody-frankowski/blue-penguin">Blue Penguin</a> Theme
+                &middot;
+                Powered by <a href="http://getpelican.com">Pelican</a>
+            </footer>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <script src="http://dev.duloup.org/theme/js/stork.js"></script>
+    <script>
+        stork.initialize("http://dev.duloup.org/theme/js/stork.wasm")
+        stork.downloadIndex("sitesearch", "http://dev.duloup.org/search-index.st")
+        stork.attach("sitesearch")
+    </script>
+</body>
+</html>

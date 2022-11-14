@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>Souris Logitech M560</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <meta name="description" content="https://support.logitech.com/en_us/product/wireless-mouse-m560/specs..." />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">MyBlog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/archerie.html">Archerie</a></li>
+                    <li><a href="/category/archive.html">Archive</a></li>
+                    <li><a href="/category/culture.html">Culture</a></li>
+                    <li><a href="/category/developpement.html">Développement</a></li>
+                    <li class="active"><a href="/category/divers.html">Divers</a></li>
+                    <li><a href="/category/graphisme.html">Graphisme</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li><a href="/category/musique.html">Musique</a></li>
+                    <li><a href="/category/projets.html">Projets</a></li>
+                    <li><a href="/category/reprap.html">RepRap</a></li>
+                    <li><a href="/category/securite.html">Sécurité</a></li>
+                    <li><a href="/category/systeme.html">Système</a></li>
+                    <li><a href="/category/tech.html">Tech</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/souris-logitech-m560.html" rel="bookmark"
+           title="Permalink to Souris Logitech M560">Souris Logitech M560</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-10-29T21:11:49+01:00">
+                Published: Mon 29 October 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/divers.html">Divers</a>.</p>
+<p>tags: <a href="/tag/materiel.html">Matériel</a> </p>
+</footer><!-- /.post-info -->      <p><a href="https://support.logitech.com/en_us/product/wireless-mouse-m560/specs">https://support.logitech.com/en_us/product/wireless-mouse-m560/specs</a></p>
+<p><a href="https://askubuntu.com/questions/255890/how-can-i-adjust-the-mouse-scroll-speed#360045">https://askubuntu.com/questions/255890/how-can-i-adjust-the-mouse-scroll-speed#360045</a></p>
+<div class="highlight"><pre><span></span><code>xinput list
+xinput list-props 12
+
+
+sudo apt-get install xserver-xorg-input-synaptics
+</code></pre></div>
+
+<p>now go to /usr/share/X11/xorg.conf.d and just edit the file 70-synaptics.conf</p>
+<div class="highlight"><pre><span></span><code>cd /usr/share/X11/xorg.conf.d
+sudo nano 70-synaptics.conf
+</code></pre></div>
+
+<p>find the section Section "InputClass" Identifier "touchpad catchall" then add these options:</p>
+<div class="highlight"><pre><span></span><code>Option &quot;VertScrollDelta&quot; &quot;16&quot;
+Option &quot;HorizScrollDelta&quot; &quot;16&quot;
+</code></pre></div>
+
+<p>The default number is 26 the lower the number it is faster to scroll, the higher it is slower to scroll. Finally it should look like this:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">Section</span><span class="w"> </span><span class="s2">&quot;InputClass&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="nv">Identifier</span><span class="w"> </span><span class="s2">&quot;touchpad catchall&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="nv">Driver</span><span class="w"> </span><span class="s2">&quot;synaptics&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="nv">MatchIsTouchpad</span><span class="w"> </span><span class="s2">&quot;on&quot;</span><span class="w"></span>
+#<span class="w"> </span><span class="nv">This</span><span class="w"> </span><span class="nv">option</span><span class="w"> </span><span class="nv">is</span><span class="w"> </span><span class="nv">recommend</span><span class="w"> </span><span class="nv">on</span><span class="w"> </span><span class="nv">all</span><span class="w"> </span><span class="nv">Linux</span><span class="w"> </span><span class="nv">systems</span><span class="w"> </span><span class="nv">using</span><span class="w"> </span><span class="nv">evdev</span>,<span class="w"> </span><span class="nv">but</span><span class="w"> </span><span class="nv">cannot</span><span class="w"> </span><span class="nv">be</span><span class="w"></span>
+#<span class="w"> </span><span class="nv">enabled</span><span class="w"> </span><span class="nv">by</span><span class="w"> </span><span class="nv">default</span>.<span class="w"> </span><span class="nv">See</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">following</span><span class="w"> </span><span class="nv">link</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nv">details</span>:<span class="w"></span>
+#<span class="w"> </span><span class="nv">http</span>:<span class="o">//</span><span class="nv">who</span><span class="o">-</span><span class="nv">t</span>.<span class="nv">blogspot</span>.<span class="nv">com</span><span class="o">/</span><span class="mi">2010</span><span class="o">/</span><span class="mi">11</span><span class="o">/</span><span class="nv">how</span><span class="o">-</span><span class="nv">to</span><span class="o">-</span><span class="nv">ignore</span><span class="o">-</span><span class="nv">configuration</span><span class="o">-</span><span class="nv">errors</span>.<span class="nv">html</span><span class="w"></span>
+#<span class="w">       </span><span class="nv">MatchDevicePath</span><span class="w"> </span><span class="s2">&quot;/dev/input/event*&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="nv">Option</span><span class="w"> </span><span class="s2">&quot;VertScrollDelta&quot;</span><span class="w"> </span><span class="s2">&quot;16&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="nv">Option</span><span class="w"> </span><span class="s2">&quot;HorizScrollDelta&quot;</span><span class="w"> </span><span class="s2">&quot;16&quot;</span><span class="w"></span>
+<span class="nv">EndSection</span><span class="w"></span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nv">Section</span><span class="w"> </span><span class="s2">&quot;InputClass&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="nv">Identifier</span><span class="w"> </span><span class="s2">&quot;touchpad catchall&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="nv">Driver</span><span class="w"> </span><span class="s2">&quot;synaptics&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="nv">MatchIsTouchpad</span><span class="w"> </span><span class="s2">&quot;on&quot;</span><span class="w"></span>
+#<span class="w"> </span><span class="nv">This</span><span class="w"> </span><span class="nv">option</span><span class="w"> </span><span class="nv">is</span><span class="w"> </span><span class="nv">recommend</span><span class="w"> </span><span class="nv">on</span><span class="w"> </span><span class="nv">all</span><span class="w"> </span><span class="nv">Linux</span><span class="w"> </span><span class="nv">systems</span><span class="w"> </span><span class="nv">using</span><span class="w"> </span><span class="nv">evdev</span>,<span class="w"> </span><span class="nv">but</span><span class="w"> </span><span class="nv">cannot</span><span class="w"> </span><span class="nv">be</span><span class="w"></span>
+#<span class="w"> </span><span class="nv">enabled</span><span class="w"> </span><span class="nv">by</span><span class="w"> </span><span class="nv">default</span>.<span class="w"> </span><span class="nv">See</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">following</span><span class="w"> </span><span class="nv">link</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nv">details</span>:<span class="w"></span>
+#<span class="w"> </span><span class="nv">http</span>:<span class="o">//</span><span class="nv">who</span><span class="o">-</span><span class="nv">t</span>.<span class="nv">blogspot</span>.<span class="nv">com</span><span class="o">/</span><span class="mi">2010</span><span class="o">/</span><span class="mi">11</span><span class="o">/</span><span class="nv">how</span><span class="o">-</span><span class="nv">to</span><span class="o">-</span><span class="nv">ignore</span><span class="o">-</span><span class="nv">configuration</span><span class="o">-</span><span class="nv">errors</span>.<span class="nv">html</span><span class="w"></span>
+<span class="w">      </span><span class="nv">MatchDevicePath</span><span class="w"> </span><span class="s2">&quot;/dev/input/event*&quot;</span><span class="w"></span>
+<span class="w">    </span>#<span class="w"> </span><span class="nv">Ajout</span><span class="w"> </span><span class="nv">souris</span><span class="w"> </span><span class="nv">logitech</span><span class="w"></span>
+<span class="w">    </span><span class="nv">Option</span><span class="w"> </span><span class="s2">&quot;VertScrollDelta&quot;</span><span class="w"> </span><span class="s2">&quot;52&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="nv">Option</span><span class="w"> </span><span class="s2">&quot;HorizScrollDelta&quot;</span><span class="w"> </span><span class="s2">&quot;52&quot;</span><span class="w">  </span>
+<span class="nv">EndSection</span><span class="w"></span>
+</code></pre></div>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

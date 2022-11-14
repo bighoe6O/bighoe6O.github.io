@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>MyBlog - Système</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">MyBlog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/archerie.html">Archerie</a></li>
+                    <li><a href="/category/archive.html">Archive</a></li>
+                    <li><a href="/category/culture.html">Culture</a></li>
+                    <li><a href="/category/developpement.html">Développement</a></li>
+                    <li><a href="/category/divers.html">Divers</a></li>
+                    <li><a href="/category/graphisme.html">Graphisme</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li><a href="/category/musique.html">Musique</a></li>
+                    <li><a href="/category/projets.html">Projets</a></li>
+                    <li><a href="/category/reprap.html">RepRap</a></li>
+                    <li><a href="/category/securite.html">Sécurité</a></li>
+                    <li class="active"><a href="/category/systeme.html">Système</a></li>
+                    <li><a href="/category/tech.html">Tech</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="/tech-zsh.html">Zsh</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2021-10-31T09:48:00+01:00">
+                Published: Sun 31 October 2021
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/systeme.html">Système</a>.</p>
+<p>tags: <a href="/tag/dev.html">Dev</a> <a href="/tag/shell.html">Shell</a> <a href="/tag/systeme.html">Système</a> </p>
+</footer><!-- /.post-info --><p><a href="https://github.com/ohmyzsh/ohmyzsh">Oh My Zsh</a></p>
+<p><a href="https://github.com/romkatv/powerlevel10k">Powerlevel10k</a></p>
+<h1>Thèmes</h1>
+<p><a href="https://github.com/ohmyzsh/ohmyzsh/wiki/Themes">https://github.com/ohmyzsh/ohmyzsh/wiki/Themes</a></p>
+<div class="highlight"><pre><span></span><code><span class="c1"># .zshrc</span>
+<span class="nb">export</span> <span class="nv">ZSH</span><span class="o">=</span><span class="s2">&quot;/home/stephane/.oh-my-zsh&quot;</span>
+<span class="nv">ZSH_THEME</span><span class="o">=</span><span class="s2">&quot;robbyrussell&quot;</span>
+<span class="nv">plugins</span><span class="o">=(</span>ssh-agent<span class="o">)</span>
+<span class="nb">source</span> <span class="nv">$ZSH</span>/oh-my-zsh.sh
+bindkey -s <span class="s2">&quot;^[OM&quot;</span> <span class="s2">&quot;^M&quot;</span>
+unsetopt BEEP
+<span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:<span class="nv">$HOME</span>/.local/bin
+<span class="nb">alias</span> <span class="nv">prun</span><span class="o">=</span><span class="s1">&#39;pipenv run&#39;</span>
+</code></pre></div>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/Tech/2021-10-25-site-certificats-ssl.html" rel="bookmark"
+                           title="Permalink to Site: Installer un certificat SSL">Site: Installer un certificat SSL</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2021-10-25T19:44:00+02:00">
+                Published: Mon 25 October 2021
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/systeme.html">Système</a>.</p>
+<p>tags: <a href="/tag/site.html">Site</a> <a href="/tag/blog.html">Blog</a> </p>
+</footer><!-- /.post-info -->                <p><a href="https://certbot.eff.org/lets-encrypt/debianstretch-apache">https://certbot.eff.org/lets-encrypt/debianstretch-apache</a></p>
+<h2>Installer snapd</h2>
+<div class="highlight"><pre><span></span><code>sudo apt install snapd
+</code></pre></div>
+
+<h2>S'assure que la version de snapd est à jour</h2>
+<div class="highlight"><pre><span></span><code>sudo snap install core; sudo snap refresh core
+</code></pre></div>
+
+<h2>Installer Cerbot</h2>
+<div class="highlight"><pre><span></span><code>sudo snap install --classic certbot
+</code></pre></div>
+
+<h2>Préparer la commande Certbot</h2>
+<div class="highlight"><pre><span></span><code>sudo ln -s /snap/bin/certbot /usr/bin/certbot
+</code></pre></div>
+
+<h2>Choisir …</h2>
+                <a class="readmore" href="/Tech/2021-10-25-site-certificats-ssl.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/tech-lenovo-y530.html" rel="bookmark"
+                           title="Permalink to Lenovo Y530">Lenovo Y530</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2019-08-08T08:34:00+02:00">
+                Published: Thu 08 August 2019
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/systeme.html">Système</a>.</p>
+<p>tags: <a href="/tag/materiel.html">Matériel</a> </p>
+</footer><!-- /.post-info -->                <ul>
+<li><a href="https://www.lenovo.com/fr/fr/laptops/legion-laptops/legion-y-series/Lenovo-Legion-Y530-15ICH/p/88GMY501020">Lenovo-Legion-Y530-15ICH</a></li>
+</ul>
+                <a class="readmore" href="/tech-lenovo-y530.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/system-ubuntu-pulseaudio.html" rel="bookmark"
+                           title="Permalink to Pulse Audio">Pulse Audio</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2019-06-06T10:15:00+02:00">
+                Published: Thu 06 June 2019
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/systeme.html">Système</a>.</p>
+<p>tags: <a href="/tag/linux.html">Linux</a> </p>
+</footer><!-- /.post-info -->                <p>Problème: Dans la console de mixage apparait seulement la sortie HDMI</p>
+<p><a href="https://askubuntu.com/questions/69820/how-do-i-set-a-pulseaudio-card-profile-persistently-across-reboots">https://askubuntu.com/questions/69820/how-do-i-set-a-pulseaudio-card-profile-persistently-across-reboots</a></p>
+<h1>Sélectionner le profil de la carte audio</h1>
+<div class="highlight"><pre><span></span><code>pacmd set-card-profile 0 output:analog-stereo
+</code></pre></div>
+
+<p>Ajoût de la commande dans /etc/pulse/default.pa</p>
+                <a class="readmore" href="/system-ubuntu-pulseaudio.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/raspberry-pi-ipv6.html" rel="bookmark"
+                           title="Permalink to Raspberry Pi ipv6">Raspberry Pi ipv6</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2019-04-11T15:18:09+02:00">
+                Published: Thu 11 April 2019
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/systeme.html">Système</a>.</p>
+<p>tags: <a href="/tag/pi.html">Pi</a> </p>
+</footer><!-- /.post-info -->                <p>/etc/sysctl.conf</p>
+<div class="highlight"><pre><span></span><code>net.ipv6.conf.all.disable_ipv6 = 1
+</code></pre></div>
+
+<p><a href="https://www.leowkahman.com/2016/03/19/disable-ipv6-raspberry-raspbian/">https://www.leowkahman.com/2016/03/19/disable-ipv6-raspberry-raspbian/</a></p>
+                <a class="readmore" href="/raspberry-pi-ipv6.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/libreelect.html" rel="bookmark"
+                           title="Permalink to libreelect">libreelect</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-11-02T10:12:13+01:00">
+                Published: Fri 02 November 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/systeme.html">Système</a>.</p>
+<p>tags: <a href="/tag/pi.html">Pi</a> </p>
+</footer><!-- /.post-info -->                <p><a href="https://libreelec.tv/">Librelec</a></p>
+<p><a href="https://forum.libreelec.tv/thread/6716-wolfson-cirrus-logic-audio-card-is-now-supported-in-official-libreelec-builds/">Builds</a></p>
+                <a class="readmore" href="/libreelect.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/samba.html" rel="bookmark"
+                           title="Permalink to samba">samba</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-10-20T21:07:23+02:00">
+                Published: Sat 20 October 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/systeme.html">Système</a>.</p>
+<p>tags: <a href="/tag/windows.html">Windows</a> <a href="/tag/linux.html">Linux</a> </p>
+</footer><!-- /.post-info -->                <p><a href="Https://askubuntu.com/questions/754572/cannot-restart-samba-samba-service-is-masked">Https://askubuntu.com/questions/754572/cannot-restart-samba-samba-service-is-masked</a></p>
+<p><a href="https://wiki.samba.org/index.php/Mounting_samba_shares_from_a_unix_client#Common_mount.cifs_options">https://wiki.samba.org/index.php/Mounting_samba_shares_from_a_unix_client#Common_mount.cifs_options</a></p>
+                <a class="readmore" href="/samba.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/lighttpd-sous-windows.html" rel="bookmark"
+                           title="Permalink to lighttpd sous windows">lighttpd sous windows</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-10-20T09:35:02+02:00">
+                Published: Sat 20 October 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/systeme.html">Système</a>.</p>
+<p>tags: <a href="/tag/web.html">Web</a> <a href="/tag/windows.html">Windows</a> </p>
+</footer><!-- /.post-info -->                <p><a href="http://www.lighttpd.net/">http://www.lighttpd.net/</a></p>
+<div class="highlight"><pre><span></span><code><span class="n">wget</span><span class="w"> </span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">download</span><span class="o">.</span><span class="n">lighttpd</span><span class="o">.</span><span class="n">net</span><span class="o">/</span><span class="n">lighttpd</span><span class="o">/</span><span class="n">releases</span><span class="o">-</span><span class="mf">1.4</span><span class="o">.</span><span class="n">x</span><span class="o">/</span><span class="n">lighttpd</span><span class="o">-</span><span class="mf">1.4</span><span class="o">.</span><span class="mf">51.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span><span class="w"></span>
+<span class="n">tar</span><span class="w"> </span><span class="n">zxf</span><span class="w"> </span><span class="n">lighttpd</span><span class="o">-</span><span class="mf">1.4</span><span class="o">.</span><span class="mf">51.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span><span class="w"></span>
+<span class="n">cd</span><span class="w"> </span><span class="n">lighttpd</span><span class="o">-</span><span class="mf">1.4</span><span class="o">.</span><span class="mi">51</span><span class="w"></span>
+<span class="o">./</span><span class="n">configure</span><span class="w"> </span><span class="o">--</span><span class="n">disable</span><span class="o">-</span><span class="n">ipv6</span><span class="w"></span>
+<span class="n">make</span><span class="w"></span>
+
+<span class="n">base</span><span class="o">.</span><span class="n">h</span><span class="p">:</span><span class="mi">457</span><span class="p">:</span><span class="mi">2</span><span class="p">:</span><span class="w"> </span><span class="n">error</span><span class="p">:</span><span class="w"> </span><span class="n">unknown</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="s1">&#39;uid_t&#39;</span><span class="w"></span>
+<span class="n">error</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;LOG_ERR&#39;</span><span class="w"> </span><span class="n">undeclared</span><span class="w"></span>
+</code></pre></div>
+                <a class="readmore" href="/lighttpd-sous-windows.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/cygwin.html" rel="bookmark"
+                           title="Permalink to cygwin">cygwin</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-10-11T09:34:39+02:00">
+                Published: Thu 11 October 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/systeme.html">Système</a>.</p>
+<p>tags: <a href="/tag/windows.html">Windows</a> </p>
+</footer><!-- /.post-info -->                <p><a href="https://stackoverflow.com/questions/1494658/how-can-i-change-my-cygwin-home-folder-after-installation#1494721">https://stackoverflow.com/questions/1494658/how-can-i-change-my-cygwin-home-folder-after-installation#1494721</a></p>
+<p><a href="https://cygwin.com/cygwin-ug-net/ntsec.html#ntsec-mapping-nsswitch-syntax">https://cygwin.com/cygwin-ug-net/ntsec.html#ntsec-mapping-nsswitch-syntax</a></p>
+                <a class="readmore" href="/cygwin.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/system-windows-subsystem-for-linux.html" rel="bookmark"
+                           title="Permalink to Windows Subsystem for Linux">Windows Subsystem for Linux</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-10-05T13:49:40+02:00">
+                Published: Fri 05 October 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/systeme.html">Système</a>.</p>
+<p>tags: <a href="/tag/systeme.html">Système</a> </p>
+</footer><!-- /.post-info -->                <h2>WSL</h2>
+<p><a href="https://docs.microsoft.com/fr-fr/windows/wsl/install-win10">https://docs.microsoft.com/fr-fr/windows/wsl/install-win10</a></p>
+<h2>Windows Terminal</h2>
+<p><a href="https://github.com/powerline/fonts">https://github.com/powerline/fonts</a></p>
+<p><a href="https://github.com/microsoft/terminal">https://github.com/microsoft/terminal</a></p>
+<p>Support de la souris</p>
+<p><a href="https://www.onmsft.com/news/windows-terminal-preview-updated-with-mouse-input-support-duplicate-pane">https://www.onmsft.com/news/windows-terminal-preview-updated-with-mouse-input-support-duplicate-pane</a></p>
+<p>Panneaux</p>
+<p><a href="https://docs.microsoft.com/en-us/windows/terminal/panes">https://docs.microsoft.com/en-us/windows/terminal/panes</a></p>
+                <a class="readmore" href="/system-windows-subsystem-for-linux.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+                </ol><!-- /#posts-list -->
+<p class="paginator">
+    Page 1 / 2
+        <a href="/category/systeme2.html">&raquo;</a>
+        <a href="/category/systeme2.html">&#8649;</a>
+</p>
+                </section><!-- /#content -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

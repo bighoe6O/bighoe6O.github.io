@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>Olinuxino: Installation d'une ArchLinux</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <meta name="description" content="https://archlinuxarm.org/platforms/armv5/olinuxino https://aur.archlinux.org/packages/uboot-a13-olinuxino/..." />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">MyBlog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/archerie.html">Archerie</a></li>
+                    <li><a href="/category/archive.html">Archive</a></li>
+                    <li><a href="/category/culture.html">Culture</a></li>
+                    <li><a href="/category/developpement.html">Développement</a></li>
+                    <li><a href="/category/divers.html">Divers</a></li>
+                    <li><a href="/category/graphisme.html">Graphisme</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li><a href="/category/musique.html">Musique</a></li>
+                    <li><a href="/category/projets.html">Projets</a></li>
+                    <li><a href="/category/reprap.html">RepRap</a></li>
+                    <li><a href="/category/securite.html">Sécurité</a></li>
+                    <li><a href="/category/systeme.html">Système</a></li>
+                    <li class="active"><a href="/category/tech.html">Tech</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/olinuxino-installation-dune-archlinux.html" rel="bookmark"
+           title="Permalink to Olinuxino: Installation d'une ArchLinux">Olinuxino: Installation d'une ArchLinux</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-11-10T00:02:32+01:00">
+                Published: Sat 10 November 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/tech.html">Tech</a>.</p>
+<p>tags: <a href="/tag/olinuxino.html">Olinuxino</a> <a href="/tag/linux.html">Linux</a> <a href="/tag/minipc.html">MiniPC</a> </p>
+</footer><!-- /.post-info -->      <p><a href="https://archlinuxarm.org/platforms/armv5/olinuxino">https://archlinuxarm.org/platforms/armv5/olinuxino</a></p>
+<p><a href="https://aur.archlinux.org/packages/uboot-a13-olinuxino/">https://aur.archlinux.org/packages/uboot-a13-olinuxino/</a></p>
+<p><a href="https://elementztechblog.wordpress.com/2014/05/11/installing-xfce-desktop-in-archlinux-for-olinuxino/">https://elementztechblog.wordpress.com/2014/05/11/installing-xfce-desktop-in-archlinux-for-olinuxino/</a></p>
+<p><a href="https://archlinuxarm.org/platforms/armv7/allwinner/a20-olinuxino-micro">https://archlinuxarm.org/platforms/armv7/allwinner/a20-olinuxino-micro</a></p>
+<h1>Installation de ArchLinux sur une carte SD</h1>
+<p>Pas besoin de compiler, tout est disponible</p>
+<div class="highlight"><pre><span></span><code><span class="nv">sudo</span><span class="w"> </span><span class="nv">dd</span><span class="w"> </span><span class="k">if</span><span class="o">=/</span><span class="nv">dev</span><span class="o">/</span><span class="nv">zero</span><span class="w"> </span><span class="nv">of</span><span class="o">=/</span><span class="nv">dev</span><span class="o">/</span><span class="nv">mmcblk0</span><span class="w"> </span><span class="nv">bs</span><span class="o">=</span><span class="mi">1</span><span class="nv">M</span><span class="w"> </span><span class="nv">count</span><span class="o">=</span><span class="mi">8</span><span class="w"></span>
+<span class="nv">sudo</span><span class="w"> </span><span class="nv">fdisk</span><span class="w"> </span><span class="o">/</span><span class="nv">dev</span><span class="o">/</span><span class="nv">mmcblk0</span><span class="w"></span>
+<span class="nv">sudo</span><span class="w"> </span><span class="nv">mkfs</span>.<span class="nv">ext4</span><span class="w"> </span><span class="o">/</span><span class="nv">dev</span><span class="o">/</span><span class="nv">mmcblk0p1</span><span class="w"></span>
+<span class="nv">mkdir</span><span class="w"> </span><span class="nv">mnt</span><span class="w"></span>
+<span class="nv">sudo</span><span class="w"> </span><span class="nv">mount</span><span class="w"> </span><span class="o">/</span><span class="nv">dev</span><span class="o">/</span><span class="nv">mmcblk0p1</span><span class="w"> </span><span class="nv">mnt</span><span class="o">/</span><span class="w"></span>
+<span class="nv">wget</span><span class="w"> </span><span class="nv">http</span>:<span class="o">//</span><span class="nv">de4</span>.<span class="nv">mirror</span>.<span class="nv">archlinuxarm</span>.<span class="nv">org</span><span class="o">/</span><span class="nv">os</span><span class="o">/</span><span class="nv">sunxi</span><span class="o">/</span><span class="nv">boot</span><span class="o">/</span><span class="nv">a13</span><span class="o">-</span><span class="nv">olinuxino</span><span class="o">/</span><span class="nv">u</span><span class="o">-</span><span class="nv">boot</span><span class="o">-</span><span class="nv">sunxi</span><span class="o">-</span><span class="nv">with</span><span class="o">-</span><span class="nv">spl</span>.<span class="nv">bin</span><span class="w"></span>
+<span class="nv">sudo</span><span class="w"> </span><span class="nv">dd</span><span class="w"> </span><span class="k">if</span><span class="o">=</span><span class="nv">u</span><span class="o">-</span><span class="nv">boot</span><span class="o">-</span><span class="nv">sunxi</span><span class="o">-</span><span class="nv">with</span><span class="o">-</span><span class="nv">spl</span>.<span class="nv">bin</span><span class="w"> </span><span class="nv">of</span><span class="o">=/</span><span class="nv">dev</span><span class="o">/</span><span class="nv">mmcblk0</span><span class="w"> </span><span class="nv">bs</span><span class="o">=</span><span class="mi">1024</span><span class="w"> </span><span class="nv">seek</span><span class="o">=</span><span class="mi">8</span><span class="w"></span>
+<span class="nv">sudo</span><span class="w"> </span><span class="nv">wget</span><span class="w"> </span><span class="nv">http</span>:<span class="o">//</span><span class="nv">de4</span>.<span class="nv">mirror</span>.<span class="nv">archlinuxarm</span>.<span class="nv">org</span><span class="o">/</span><span class="nv">os</span><span class="o">/</span><span class="nv">sunxi</span><span class="o">/</span><span class="nv">boot</span><span class="o">/</span><span class="nv">a13</span><span class="o">-</span><span class="nv">olinuxino</span><span class="o">/</span><span class="nv">boot</span>.<span class="nv">scr</span><span class="w"> </span><span class="o">-</span><span class="nv">O</span><span class="w"> </span><span class="nv">mnt</span><span class="o">/</span><span class="nv">boot</span><span class="o">/</span><span class="nv">boot</span>.<span class="nv">scr</span><span class="w"></span>
+<span class="nv">sudo</span><span class="w"> </span><span class="nv">tar</span><span class="w"> </span><span class="nv">zxf</span><span class="w"> </span><span class="nv">ArchLinuxARM</span><span class="o">-</span><span class="nv">armv7</span><span class="o">-</span><span class="nv">latest</span>.<span class="nv">tar</span>.<span class="nv">gz</span><span class="w"> </span><span class="o">-</span><span class="nv">C</span><span class="w"> </span><span class="nv">mnt</span><span class="o">/</span><span class="w"></span>
+<span class="nv">sudo</span><span class="w"> </span><span class="nv">umount</span><span class="w"> </span><span class="nv">mnt</span><span class="w"></span>
+<span class="nv">sync</span><span class="w"></span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="p">#</span><span class="w"> </span><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">netctl</span><span class="o">/</span><span class="n">wireless</span><span class="o">-</span><span class="n">wpa</span><span class="w"></span>
+<span class="n">Description</span><span class="o">=</span><span class="p">&#39;</span><span class="n">A</span><span class="w"> </span><span class="n">simple</span><span class="w"> </span><span class="n">WPA</span><span class="w"> </span><span class="n">encrypted</span><span class="w"> </span><span class="n">wireless</span><span class="w"> </span><span class="n">connection</span><span class="p">&#39;</span><span class="w"></span>
+<span class="n">Interface</span><span class="o">=</span><span class="n">wlan0</span><span class="w"></span>
+<span class="n">Connection</span><span class="o">=</span><span class="n">wireless</span><span class="w"></span>
+
+<span class="n">Security</span><span class="o">=</span><span class="n">wpa</span><span class="w"></span>
+<span class="n">IP</span><span class="o">=</span><span class="n">dhcp</span><span class="w"></span>
+
+<span class="n">ESSID</span><span class="o">=</span><span class="p">&#39;</span><span class="n">Livebox</span><span class="o">-</span><span class="n">DF4A</span><span class="p">&#39;</span><span class="w"></span>
+<span class="p">#</span><span class="w"> </span><span class="n">Prepend</span><span class="w"> </span><span class="n">hexadecimal</span><span class="w"> </span><span class="n">keys</span><span class="w"> </span><span class="n">with</span><span class="w"> </span><span class="n">\&quot;</span><span class="w"></span>
+<span class="p">#</span><span class="w"> </span><span class="n">If</span><span class="w"> </span><span class="n">your</span><span class="w"> </span><span class="n">key</span><span class="w"> </span><span class="n">starts</span><span class="w"> </span><span class="n">with</span><span class="w"> </span><span class="s">&quot;, write it as &#39;&quot;&quot;&lt;key&gt;&quot;</span><span class="p">&#39;</span><span class="w"></span>
+<span class="p">#</span><span class="w"> </span><span class="n">See</span><span class="w"> </span><span class="nl">also:</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">section</span><span class="w"> </span><span class="n">on</span><span class="w"> </span><span class="n">special</span><span class="w"> </span><span class="n">quoting</span><span class="w"> </span><span class="n">rules</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">netctl</span><span class="p">.</span><span class="n">profile</span><span class="p">(</span><span class="mh">5</span><span class="p">)</span><span class="w"></span>
+<span class="n">Key</span><span class="o">=</span><span class="p">&#39;</span><span class="mh">3</span><span class="n">A2CDCFDFD5561F347C9DF3556</span><span class="p">&#39;</span><span class="w"></span>
+<span class="p">#</span><span class="w"> </span><span class="n">Uncomment</span><span class="w"> </span><span class="n">this</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">your</span><span class="w"> </span><span class="n">ssid</span><span class="w"> </span><span class="n">is</span><span class="w"> </span><span class="n">hidden</span><span class="w"></span>
+<span class="p">#</span><span class="n">Hidden</span><span class="o">=</span><span class="n">yes</span><span class="w"></span>
+<span class="p">#</span><span class="w"> </span><span class="n">Set</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">priority</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="k">automatic</span><span class="w"> </span><span class="n">profile</span><span class="w"> </span><span class="n">selection</span><span class="w"></span>
+<span class="p">#</span><span class="n">Priority</span><span class="o">=</span><span class="mh">10</span><span class="w"></span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code># /etc/dhcpd.conf
+#noipv4ll
+</code></pre></div>
+
+<p>Fonctionne ...</p>
+<h2>Problème pacman gpg lors de l'installation de paquets</h2>
+<div class="highlight"><pre><span></span><code><span class="n">error</span><span class="o">:</span><span class="w"> </span><span class="n">failed</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">synchronize</span><span class="w"> </span><span class="n">any</span><span class="w"> </span><span class="n">databases</span><span class="w"></span>
+<span class="n">error</span><span class="o">:</span><span class="w"> </span><span class="n">failed</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">init</span><span class="w"> </span><span class="n">transaction</span><span class="w"> </span><span class="o">(</span><span class="n">invalid</span><span class="w"> </span><span class="n">or</span><span class="w"> </span><span class="n">corrupted</span><span class="w"> </span><span class="n">database</span><span class="w"> </span><span class="o">(</span><span class="n">PGP</span><span class="w"> </span><span class="n">signature</span><span class="o">))</span><span class="w"></span>
+</code></pre></div>
+
+<p>Solution:</p>
+<div class="highlight"><pre><span></span><code>pacman-key --populate archlinuxarm
+</code></pre></div>
+
+<h2>Samba</h2>
+<div class="highlight"><pre><span></span><code>pacman -S samba
+</code></pre></div>
+
+<p>Copie de pi0:/etc/samba/smb.conf</p>
+<div class="highlight"><pre><span></span><code>useradd -m stephane
+usermod -G users -a stephane
+smbpasswd -a stephane
+
+systemctl enable smb nmb
+systemctl start smb nmb
+</code></pre></div>
+
+<h2>swap</h2>
+<div class="highlight"><pre><span></span><code>sudo fallocate --length 1GiB /swapfile
+sudo mkswap /swapfile
+
+# /etc/fstab
+# &lt;file system&gt; &lt;dir&gt; &lt;type&gt; &lt;options&gt; &lt;dump&gt; &lt;pass&gt;
+/swapfile none            swap    sw              0       0
+</code></pre></div>
+
+<h2>Compilation du noyau</h2>
+<p><a href="https://archlinuxarm.org/forum/viewtopic.php?t=6419">https://archlinuxarm.org/forum/viewtopic.php?t=6419</a></p>
+<p><a href="https://github.com/archlinuxarm/PKGBUILDs.git">https://github.com/archlinuxarm/PKGBUILDs.git</a></p>
+<p><a href="https://wiki.archlinux.org/index.php/Kernel/Arch_Build_System">https://wiki.archlinux.org/index.php/Kernel/Arch_Build_System</a></p>
+<div class="highlight"><pre><span></span><code>$ <span class="nb">cd</span> ~/
+$ mkdir build
+$ <span class="nb">cd</span> build/
+$ asp update linux
+$ asp checkout linux
+
+<span class="c1"># linux/trunk/PKGBUILD</span>
+<span class="nv">pkgbase</span><span class="o">=</span>linux-custom
+
+updpkgsums  
+makepkg -s
+</code></pre></div>
+
+<h2>locales</h2>
+<div class="highlight"><pre><span></span><code><span class="n">tmux</span><span class="o">:</span><span class="w"> </span><span class="n">need</span><span class="w"> </span><span class="n">UTF</span><span class="o">-</span><span class="mi">8</span><span class="w"> </span><span class="n">locale</span><span class="w"> </span><span class="o">(</span><span class="n">LC_CTYPE</span><span class="o">)</span><span class="w"> </span><span class="n">but</span><span class="w"> </span><span class="n">have</span><span class="w"> </span><span class="n">ANSI_X3</span><span class="o">.</span><span class="mi">4</span><span class="o">-</span><span class="mi">1968</span><span class="w"></span>
+
+<span class="sr">/etc/</span><span class="n">locale</span><span class="o">.</span><span class="na">gen</span><span class="w"></span>
+<span class="n">sudo</span><span class="w"> </span><span class="n">locale</span><span class="o">-</span><span class="n">gen</span><span class="w"></span>
+<span class="n">sudo</span><span class="w"> </span><span class="n">localectl</span><span class="w"> </span><span class="kd">set</span><span class="o">-</span><span class="n">locale</span><span class="w"> </span><span class="n">LANG</span><span class="o">=</span><span class="n">fr_FR</span><span class="o">.</span><span class="na">UTF</span><span class="o">-</span><span class="mi">8</span><span class="w"></span>
+</code></pre></div>
+
+<h2>GPIO</h2>
+<p><a href="https://linux-sunxi.org/GPIO#Example:_Controlling_GPIO_on_Olimex.27s_A13-OLinuXino_.28sunxi-3.4.29">https://linux-sunxi.org/GPIO#Example:_Controlling_GPIO_on_Olimex.27s_A13-OLinuXino_.28sunxi-3.4.29</a></p>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

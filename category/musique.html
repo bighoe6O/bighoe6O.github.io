@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>MyBlog - Musique</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">MyBlog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/archerie.html">Archerie</a></li>
+                    <li><a href="/category/archive.html">Archive</a></li>
+                    <li><a href="/category/culture.html">Culture</a></li>
+                    <li><a href="/category/developpement.html">Développement</a></li>
+                    <li><a href="/category/divers.html">Divers</a></li>
+                    <li><a href="/category/graphisme.html">Graphisme</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li class="active"><a href="/category/musique.html">Musique</a></li>
+                    <li><a href="/category/projets.html">Projets</a></li>
+                    <li><a href="/category/reprap.html">RepRap</a></li>
+                    <li><a href="/category/securite.html">Sécurité</a></li>
+                    <li><a href="/category/systeme.html">Système</a></li>
+                    <li><a href="/category/tech.html">Tech</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="/musique-linuxsampler.html">LinuxSampler</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2019-08-17T11:53:00+02:00">
+                Published: Sat 17 August 2019
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/musique.html">Musique</a>.</p>
+<p>tags: <a href="/tag/daw.html">DAW</a> </p>
+</footer><!-- /.post-info --><p><a href="https://linuxsampler.org/">LinuxSampler</a></p>
+<p><a href="https://sourceforge.net/projects/jsampler/">JSampler</a></p>
+<p><a href="https://www.linuxmusicians.com/viewtopic.php?t=18961">https://www.linuxmusicians.com/viewtopic.php?t=18961</a></p>
+<p><a href="https://freepats.zenvoid.org/Piano/acoustic-grand-piano.html">https://freepats.zenvoid.org/Piano/acoustic-grand-piano.html</a></p>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/musique-oscand.html" rel="bookmark"
+                           title="Permalink to OscAnd">OscAnd</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2019-08-15T10:55:00+02:00">
+                Published: Thu 15 August 2019
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/musique.html">Musique</a>.</p>
+<p>tags: <a href="/tag/osc.html">OSC</a> <a href="/tag/daw.html">DAW</a> <a href="/tag/sequenceur.html">Séquenceur</a> <a href="/tag/projets.html">Projets</a> <a href="/tag/kivy.html">Kivy</a> </p>
+</footer><!-- /.post-info -->                <p><a href="git@duloup.org:mao-oscand">Dépôt GIT</a></p>
+<div class="highlight"><pre><span></span><code><span class="n">sudo</span><span class="w"> </span><span class="n">apt</span><span class="w"> </span><span class="n">install</span><span class="w"> </span><span class="n">pkg</span><span class="o">-</span><span class="n">config</span><span class="w"> </span><span class="n">autoconf</span><span class="w"> </span><span class="n">autogen</span><span class="w"> </span><span class="n">libtool</span><span class="w"> </span><span class="n">zlib1g</span><span class="o">-</span><span class="n">dev</span><span class="w"></span>
+<span class="n">git</span><span class="w"> </span><span class="n">clone</span><span class="w"> </span><span class="n">git</span><span class="err">@</span><span class="n">duloup</span><span class="o">.</span><span class="n">org</span><span class="p">:</span><span class="n">mao</span><span class="o">-</span><span class="n">oscand</span><span class="w"></span>
+<span class="n">cd</span><span class="w"> </span><span class="n">mao</span><span class="o">-</span><span class="n">oscand</span><span class="w"></span>
+<span class="n">virtualenv</span><span class="w"> </span><span class="o">~/.</span><span class="n">virtualenvs</span><span class="o">/</span><span class="n">oscand</span><span class="w"></span>
+<span class="o">.</span><span class="w"> </span><span class="o">~/.</span><span class="n">virtualenvs</span><span class="o">/</span><span class="n">oscand</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">activate</span><span class="w"></span>
+<span class="n">pip</span><span class="w"> </span><span class="n">install</span><span class="w"> </span><span class="o">-</span><span class="n">r</span><span class="w"> </span><span class="n">requirements</span><span class="o">.</span><span class="n">txt</span><span class="w"></span>
+<span class="n">cd</span><span class="w"> </span><span class="n">oscand</span><span class="w"></span>
+<span class="n">buildozer</span><span class="w"> </span><span class="n">android</span><span class="w"> </span><span class="n">debug</span><span class="w"> </span><span class="n">deploy</span><span class="w"> </span><span class="n">run</span><span class="w"></span>
+</code></pre></div>
+                <a class="readmore" href="/musique-oscand.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/musique-m-audio-axiom49.html" rel="bookmark"
+                           title="Permalink to Clavier M-Audio Axiom 49">Clavier M-Audio Axiom 49</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2019-08-12T20:35:00+02:00">
+                Published: Mon 12 August 2019
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/musique.html">Musique</a>.</p>
+<p>tags: <a href="/tag/daw.html">DAW</a> <a href="/tag/instruments.html">Instruments</a> </p>
+</footer><!-- /.post-info -->                <h1><a href="/img/musique/M-Audio_Axiom49_UG_FR01french.pdf">Documention</a></h1>
+                <a class="readmore" href="/musique-m-audio-axiom49.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/musique-audacity.html" rel="bookmark"
+                           title="Permalink to Audacity">Audacity</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2019-07-30T11:46:00+02:00">
+                Published: Tue 30 July 2019
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/musique.html">Musique</a>.</p>
+<p>tags: <a href="/tag/daw.html">DAW</a> </p>
+</footer><!-- /.post-info -->                <p>Editeur audio <a href="https://audacity.fr/">Audacity</a></p>
+<ul>
+<li><a href="https://ccm.net/faq/40373-listen-while-recording-or-monitoring-a-new-track-in-audacity">Listen While Recording or Monitoring a New Track in Audacity </a></li>
+</ul>
+                <a class="readmore" href="/musique-audacity.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/musique-ezdrummer.html" rel="bookmark"
+                           title="Permalink to EzDrummer">EzDrummer</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2019-07-25T12:58:00+02:00">
+                Published: Thu 25 July 2019
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/musique.html">Musique</a>.</p>
+<p>tags: <a href="/tag/midi.html">Midi</a> <a href="/tag/daw.html">DAW</a> <a href="/tag/rythmes.html">Rythmes</a> </p>
+</footer><!-- /.post-info -->                <p><a href="https://www.toontrack.com/product/ezdrummer-2/">EzDrummer 2</a></p>
+                <a class="readmore" href="/musique-ezdrummer.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/musique-notion.html" rel="bookmark"
+                           title="Permalink to Editeurs de partition">Editeurs de partition</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2019-07-25T12:45:00+02:00">
+                Published: Thu 25 July 2019
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/musique.html">Musique</a>.</p>
+<p>tags: <a href="/tag/daw.html">DAW</a> <a href="/tag/midi.html">Midi</a> <a href="/tag/notation.html">Notation</a> </p>
+</footer><!-- /.post-info -->                <p><a href="https://presonus.com/products/Notion">Notion</a></p>
+<p><a href="https://musescore.org/fr">MuseScore</a></p>
+<p><a href="notation-abc">Notation ABC</a></p>
+                <a class="readmore" href="/musique-notion.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/flstudio.html" rel="bookmark"
+                           title="Permalink to FLStudio">FLStudio</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2019-07-24T13:53:00+02:00">
+                Published: Wed 24 July 2019
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/musique.html">Musique</a>.</p>
+<p>tags: <a href="/tag/daw.html">DAW</a> <a href="/tag/midi.html">Midi</a> </p>
+</footer><!-- /.post-info -->                <p><a href="https://www.image-line.com/flstudio/">Image Line</a></p>
+                <a class="readmore" href="/flstudio.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/musique-biab.html" rel="bookmark"
+                           title="Permalink to Band in a Box">Band in a Box</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2019-07-24T12:13:00+02:00">
+                Published: Wed 24 July 2019
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/musique.html">Musique</a>.</p>
+<p>tags: <a href="/tag/accompagnement.html">Accompagnement</a> <a href="/tag/daw.html">DAW</a> <a href="/tag/midi.html">Midi</a> </p>
+</footer><!-- /.post-info -->                <p><a href="https://www.pgmusic.com/">https://www.pgmusic.com/</a></p>
+                <a class="readmore" href="/musique-biab.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/radios-web.html" rel="bookmark"
+                           title="Permalink to Radios Web">Radios Web</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-12-07T09:57:37+01:00">
+                Published: Fri 07 December 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/musique.html">Musique</a>.</p>
+<p>tags: <a href="/tag/culture.html">Culture</a> </p>
+</footer><!-- /.post-info -->                <p><a href="http://fluxradios.blogspot.com/p/flux-radios-francaise.html">http://fluxradios.blogspot.com/p/flux-radios-francaise.html</a></p>
+<p>Ajouter des commentaires et des intructions de caching dans un fichier playlist .m3u</p>
+<div class="highlight"><pre><span></span><code>#EXTM3U
+#EXTINF:0,fip - Nouveautés
+http://webradiofip5.scdn.arkena.com/webradiofip5.mp3
+#EXTVLCOPT:network-caching=1000
+#EXTINF:0,Nova
+http://broadcast.infomaniak.net:80/radionova-high.mp3
+#EXTVLCOPT:network-caching=1000
+</code></pre></div>
+                <a class="readmore" href="/radios-web.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/bibliotheque-musicale.html" rel="bookmark"
+                           title="Permalink to Bibliotheque musicale">Bibliotheque musicale</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-12-02T23:00:45+01:00">
+                Published: Sun 02 December 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/musique.html">Musique</a>.</p>
+<p>tags: <a href="/tag/mpd.html">MPD</a> <a href="/tag/players.html">Players</a> </p>
+</footer><!-- /.post-info -->                <h2>Suppression des doublons de la bibliothèque</h2>
+<p><a href="https://github.com/worldveil/dejavu">https://github.com/worldveil/dejavu</a></p>
+<h2>Raspberry PI</h2>
+<ul>
+<li>Utilisation de la carte Cirrus Logic</li>
+<li>installation de mpd</li>
+</ul>
+<h2>conversion de la bibliothèque au format ogg-vorbis</h2>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/usr/bin/env python3</span>
+<span class="c1"># music-flac2ogg.py</span>
+
+<span class="kn">from</span> <span class="nn">os</span> <span class="kn">import</span> <span class="n">path</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">subprocess</span>
+
+<span class="n">MPD_LIBRARY</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;MPD_LIBRARY&#39;</span><span class="p">]</span>
+<span class="n">OGGDIR</span> <span class="o">=</span> <span class="s1">&#39;/media/stephane …</span></code></pre></div>
+                <a class="readmore" href="/bibliotheque-musicale.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+                </ol><!-- /#posts-list -->
+<p class="paginator">
+    Page 1 / 4
+        <a href="/category/musique2.html">&raquo;</a>
+        <a href="/category/musique4.html">&#8649;</a>
+</p>
+                </section><!-- /#content -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

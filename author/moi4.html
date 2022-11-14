@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>MyBlog - Moi</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">MyBlog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/archerie.html">Archerie</a></li>
+                    <li><a href="/category/archive.html">Archive</a></li>
+                    <li><a href="/category/culture.html">Culture</a></li>
+                    <li><a href="/category/developpement.html">Développement</a></li>
+                    <li><a href="/category/divers.html">Divers</a></li>
+                    <li><a href="/category/graphisme.html">Graphisme</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li><a href="/category/musique.html">Musique</a></li>
+                    <li><a href="/category/projets.html">Projets</a></li>
+                    <li><a href="/category/reprap.html">RepRap</a></li>
+                    <li><a href="/category/securite.html">Sécurité</a></li>
+                    <li><a href="/category/systeme.html">Système</a></li>
+                    <li><a href="/category/tech.html">Tech</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+                <section id="content" class="body">
+                    <ol id="posts-list" class="hfeed" start="9">
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/tech-python-pelican-tags.html" rel="bookmark"
+                           title="Permalink to Tables avec Pelican">Tables avec Pelican</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2019-07-27T14:46:00+02:00">
+                Published: Sat 27 July 2019
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/tech.html">Tech</a>.</p>
+<p>tags: <a href="/tag/pelican.html">pelican</a> </p>
+</footer><!-- /.post-info -->                <p><a href="https://github.com/getpelican/pelican-plugins">https://github.com/getpelican/pelican-plugins</a></p>
+<p>installation des plugins</p>
+<div class="highlight"><pre><span></span><code>git clone https://github.com/getpelican/pelican-plugins
+</code></pre></div>
+
+<p>configuration:</p>
+<div class="highlight"><pre><span></span><code>PLUGIN_PATHS = [&#39;path/to/pelican-plugins&#39;]
+PLUGINS = [&#39;assets&#39;, &#39;sitemap&#39;, &#39;gravatar&#39;]
+</code></pre></div>
+
+<p>bootstrapify</p>
+<div class="highlight"><pre><span></span><code>pip install bs4
+</code></pre></div>
+
+<p><a href="https://github.com/ingwinlu/pelican-bootstrapify">https://github.com/ingwinlu/pelican-bootstrapify</a></p>
+                <a class="readmore" href="/tech-python-pelican-tags.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/tech-python.html" rel="bookmark"
+                           title="Permalink to Python">Python</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2019-07-27T08:52:00+02:00">
+                Published: Sat 27 July 2019
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/tech.html">Tech</a>.</p>
+<p>tags: <a href="/tag/languages.html">Languages</a> <a href="/tag/python.html">Python</a> </p>
+</footer><!-- /.post-info -->                <p>Language Python</p>
+<p><a href="https://pep8.org/">PEP 8 - the Style Guide for Python Code</a></p>
+<p>Lancer un sous processus</p>
+<p><a href="https://docs.python.org/3.5/library/subprocess.html">subprocess</a></p>
+<p><a href="https://stackoverflow.com/questions/24771402/powershell-operator-change-encoding">Powershell '&gt;' operator, change encoding?</a></p>
+<p>https://www.xspdf.com/resolution/53213676.html</p>
+<div class="highlight"><pre><span></span><code>$PSDefaultParameterValues[&#39;Out-File:Encoding&#39;] = &#39;utf8&#39;
+</code></pre></div>
+
+<p>PowerShell:</p>
+<div class="highlight"><pre><span></span><code>pip freeze | Out-File -Encoding UTF8 requirements.txt
+</code></pre></div>
+
+<h1>YAML</h1>
+<p>Installation de la version de python par défaut</p>
+<div class="highlight"><pre><span></span><code>sudo update-alternatives --install …</code></pre></div>
+                <a class="readmore" href="/tech-python.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/system-nginx.html" rel="bookmark"
+                           title="Permalink to Nginx">Nginx</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2019-07-26T08:55:00+02:00">
+                Published: Fri 26 July 2019
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/tech.html">Tech</a>.</p>
+<p>tags: <a href="/tag/web.html">Web</a> </p>
+</footer><!-- /.post-info -->                <p><a href="https://nginx.org/en/">nginx</a></p>
+<h1><a href="https://nginxlibrary.com/enable-directory-listing/">Enable directory listing</a></h1>
+<div class="highlight"><pre><span></span><code><span class="n">server</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">listen</span><span class="w">   </span><span class="mi">80</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">server_name</span><span class="w">  </span><span class="n">domain</span><span class="o">.</span><span class="n">com</span><span class="w"> </span><span class="n">www</span><span class="o">.</span><span class="n">domain</span><span class="o">.</span><span class="n">com</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">access_log</span><span class="w">  </span><span class="o">/</span><span class="k">var</span><span class="o">/...........................</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">root</span><span class="w">   </span><span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">root</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">location</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">                </span><span class="n">index</span><span class="w">  </span><span class="n">index</span><span class="o">.</span><span class="n">php</span><span class="w"> </span><span class="n">index</span><span class="o">.</span><span class="n">html</span><span class="w"> </span><span class="n">index</span><span class="o">.</span><span class="n">htm</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span><span class="n">location</span><span class="w"> </span><span class="o">/</span><span class="n">somedir</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">               </span><span class="n">autoindex</span><span class="w"> </span><span class="n">on</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+
+<h1>Démarrage nginx sous windows 10</h1>
+<div class="highlight"><pre><span></span><code>&gt; ubuntu sudo service start nginx
+</code></pre></div>
+
+<h1>Rewrite permanent</h1>
+<p>/etc/nginx/sites-available/myblog</p>
+<div class="highlight"><pre><span></span><code>rewrite ^/$ /arduino/ permanent …</code></pre></div>
+                <a class="readmore" href="/system-nginx.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/musique-ezdrummer.html" rel="bookmark"
+                           title="Permalink to EzDrummer">EzDrummer</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2019-07-25T12:58:00+02:00">
+                Published: Thu 25 July 2019
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/musique.html">Musique</a>.</p>
+<p>tags: <a href="/tag/midi.html">Midi</a> <a href="/tag/daw.html">DAW</a> <a href="/tag/rythmes.html">Rythmes</a> </p>
+</footer><!-- /.post-info -->                <p><a href="https://www.toontrack.com/product/ezdrummer-2/">EzDrummer 2</a></p>
+                <a class="readmore" href="/musique-ezdrummer.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/musique-notion.html" rel="bookmark"
+                           title="Permalink to Editeurs de partition">Editeurs de partition</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2019-07-25T12:45:00+02:00">
+                Published: Thu 25 July 2019
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/musique.html">Musique</a>.</p>
+<p>tags: <a href="/tag/daw.html">DAW</a> <a href="/tag/midi.html">Midi</a> <a href="/tag/notation.html">Notation</a> </p>
+</footer><!-- /.post-info -->                <p><a href="https://presonus.com/products/Notion">Notion</a></p>
+<p><a href="https://musescore.org/fr">MuseScore</a></p>
+<p><a href="notation-abc">Notation ABC</a></p>
+                <a class="readmore" href="/musique-notion.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/flstudio.html" rel="bookmark"
+                           title="Permalink to FLStudio">FLStudio</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2019-07-24T13:53:00+02:00">
+                Published: Wed 24 July 2019
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/musique.html">Musique</a>.</p>
+<p>tags: <a href="/tag/daw.html">DAW</a> <a href="/tag/midi.html">Midi</a> </p>
+</footer><!-- /.post-info -->                <p><a href="https://www.image-line.com/flstudio/">Image Line</a></p>
+                <a class="readmore" href="/flstudio.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/musique-biab.html" rel="bookmark"
+                           title="Permalink to Band in a Box">Band in a Box</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2019-07-24T12:13:00+02:00">
+                Published: Wed 24 July 2019
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/musique.html">Musique</a>.</p>
+<p>tags: <a href="/tag/accompagnement.html">Accompagnement</a> <a href="/tag/daw.html">DAW</a> <a href="/tag/midi.html">Midi</a> </p>
+</footer><!-- /.post-info -->                <p><a href="https://www.pgmusic.com/">https://www.pgmusic.com/</a></p>
+                <a class="readmore" href="/musique-biab.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/system-powershell.html" rel="bookmark"
+                           title="Permalink to PowerShell">PowerShell</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2019-07-24T09:20:00+02:00">
+                Published: Wed 24 July 2019
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/tech.html">Tech</a>.</p>
+<p>tags: <a href="/tag/windows.html">Windows</a> </p>
+</footer><!-- /.post-info -->                <h1>Ajoût de PowerShell au menu contextuel windows</h1>
+<p><a href="https://www.howtogeek.com/165268/how-to-add-open-powershell-here-to-the-context-menu-in-windows/">https://www.howtogeek.com/165268/how-to-add-open-powershell-here-to-the-context-menu-in-windows/</a></p>
+<div class="highlight"><pre><span></span><code>Windows Registry Editor Version 5.00<span class="w"></span>
+
+<span class="k">[</span><span class="nb">HKEY_LOCAL_MACHINE</span><span class="k">\SOFTWARE\Classes\Directory\background\shell\powershellmenu]</span><span class="w"></span>
+<span class="na">@</span><span class="o">=</span><span class="s">&quot;Ouvrir PowerShell ici&quot;</span><span class="w"></span>
+
+<span class="k">[</span><span class="nb">HKEY_LOCAL_MACHINE</span><span class="k">\SOFTWARE\Classes\Directory\background\shell\powershellmenu\command]</span><span class="w"></span>
+<span class="na">@</span><span class="o">=</span><span class="s">&quot;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\powershell.exe -NoExit -Command Set-Location -LiteralPath &#39;%v …</span></code></pre></div>
+                <a class="readmore" href="/system-powershell.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/tech-reprap-skeinforge.html" rel="bookmark"
+                           title="Permalink to Skeinforge">Skeinforge</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2019-06-06T11:59:00+02:00">
+                Published: Thu 06 June 2019
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/reprap.html">RepRap</a>.</p>
+<p>tags: <a href="/tag/reprap.html">RepRap</a> </p>
+</footer><!-- /.post-info -->                <p><a href="https://reprap.org/wiki/Skeinforge">https://reprap.org/wiki/Skeinforge</a></p>
+<div class="highlight"><pre><span></span><code>    sudo apt-add-repository ppa:richi-paraeasy/ppa
+    sudo apt-get update
+    sudo apt-get install skeinforge
+</code></pre></div>
+
+<p>Répertoire .skeinforg/profiles/ du ks53 ubuntu</p>
+<div class="highlight"><pre><span></span><code>skeinforge-profiles/
+</code></pre></div>
+                <a class="readmore" href="/tech-reprap-skeinforge.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/firmware.html" rel="bookmark"
+                           title="Permalink to Firmware">Firmware</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2019-06-06T11:22:00+02:00">
+                Published: Thu 06 June 2019
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/reprap.html">RepRap</a>.</p>
+<p>tags: <a href="/tag/reprap.html">RepRap</a> </p>
+</footer><!-- /.post-info -->                <h1>Firmware</h1>
+<h2>Sprinter</h2>
+<p><a href="http://forum.arduino.cc/index.php?topic=92364.0">http://forum.arduino.cc/index.php?topic=92364.0</a></p>
+<p><a href="http://reprap.org/wiki/RepRapLinuxSoftware">http://reprap.org/wiki/RepRapLinuxSoftware</a></p>
+<h2>Marlin</h2>
+<p><a href="http://reprap.org/wiki/Marlin">http://reprap.org/wiki/Marlin</a></p>
+<p>TODO: ajouter la configuration</p>
+                <a class="readmore" href="/firmware.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+                </ol><!-- /#posts-list -->
+<p class="paginator">
+        <a href="/author/moi.html">&#8647;</a>
+        <a href="/author/moi3.html">&laquo;</a>
+    Page 4 / 15
+        <a href="/author/moi5.html">&raquo;</a>
+        <a href="/author/moi15.html">&#8649;</a>
+</p>
+                </section><!-- /#content -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

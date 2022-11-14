@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>MSYS2: Outils unix sous windows</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <meta name="description" content="Configuration Bash .bash_aliases alias gbr='git branch' alias gst='git status' alias kissh='kill $SSH_AGENT_PID' ssh-agent..." />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">MyBlog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/archerie.html">Archerie</a></li>
+                    <li><a href="/category/archive.html">Archive</a></li>
+                    <li><a href="/category/culture.html">Culture</a></li>
+                    <li><a href="/category/developpement.html">Développement</a></li>
+                    <li><a href="/category/divers.html">Divers</a></li>
+                    <li><a href="/category/graphisme.html">Graphisme</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li><a href="/category/musique.html">Musique</a></li>
+                    <li><a href="/category/projets.html">Projets</a></li>
+                    <li><a href="/category/reprap.html">RepRap</a></li>
+                    <li><a href="/category/securite.html">Sécurité</a></li>
+                    <li class="active"><a href="/category/systeme.html">Système</a></li>
+                    <li><a href="/category/tech.html">Tech</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/msys2-outils-unix-sous-windows.html" rel="bookmark"
+           title="Permalink to MSYS2: Outils unix sous windows">MSYS2: Outils unix sous windows</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-01-10T10:45:54+01:00">
+                Published: Wed 10 January 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/systeme.html">Système</a>.</p>
+<p>tags: <a href="/tag/windows.html">Windows</a> </p>
+</footer><!-- /.post-info -->      <h1>Configuration Bash</h1>
+<p>.bash_aliases</p>
+<div class="highlight"><pre><span></span><code><span class="nb">alias</span> <span class="nv">gbr</span><span class="o">=</span><span class="s1">&#39;git branch&#39;</span>
+<span class="nb">alias</span> <span class="nv">gst</span><span class="o">=</span><span class="s1">&#39;git status&#39;</span>
+<span class="nb">alias</span> <span class="nv">kissh</span><span class="o">=</span><span class="s1">&#39;kill $SSH_AGENT_PID&#39;</span>
+</code></pre></div>
+
+<h1>ssh-agent</h1>
+<div class="highlight"><pre><span></span><code>##################################<span class="w"></span>
+#<span class="w"> </span><span class="nv">Script</span><span class="w"> </span><span class="nv">de</span><span class="w"> </span><span class="nv">lancement</span><span class="w"> </span><span class="nv">de</span><span class="w"> </span><span class="nv">ssh</span><span class="o">-</span><span class="nv">agent</span><span class="w"></span>
+##################################<span class="w"></span>
+<span class="nv">unset</span><span class="w"> </span><span class="nv">SSH_AGENT_PID</span><span class="w"></span>
+
+<span class="k">if</span><span class="w"> </span>[<span class="w"> </span><span class="o">-</span><span class="nv">f</span><span class="w"> </span>$<span class="nv">HOME</span><span class="o">/</span>.<span class="nv">bash_aliases</span><span class="w"> </span>]<span class="c1">; then</span><span class="w"></span>
+<span class="w">    </span>.<span class="w"> </span>$<span class="nv">HOME</span><span class="o">/</span>.<span class="nv">bash_aliases</span><span class="w"></span>
+<span class="nv">fi</span><span class="w"></span>
+<span class="k">if</span><span class="w"> </span>[<span class="w"> </span><span class="o">-</span><span class="nv">f</span><span class="w"> </span>$<span class="nv">HOME</span><span class="o">/</span><span class="nv">ssh</span><span class="o">-</span><span class="nv">agent</span>.<span class="nv">out</span><span class="w"> </span>]<span class="c1">; then</span><span class="w"></span>
+<span class="w">    </span><span class="nv">echo</span><span class="w"> </span><span class="s2">&quot;fichier ssh-agent.out présent&quot;</span><span class="w"></span>
+<span class="w">    </span>.<span class="w"> </span>$<span class="nv">HOME</span><span class="o">/</span><span class="nv">ssh</span><span class="o">-</span><span class="nv">agent</span>.<span class="nv">out</span><span class="w"></span>
+<span class="w">    </span><span class="nv">ps</span><span class="w"> </span><span class="o">-</span><span class="nv">p</span><span class="w"> </span>$<span class="nv">SSH_AGENT_PID</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span>[<span class="w"> </span><span class="s2">&quot;$?&quot;</span><span class="w"> </span><span class="o">-</span><span class="nv">eq</span><span class="w"> </span><span class="s2">&quot;0&quot;</span><span class="w"> </span>]<span class="c1">; then</span><span class="w"></span>
+<span class="w">        </span><span class="nv">echo</span><span class="w"> </span><span class="s2">&quot;processus ssh-agent trouvé&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="k">else</span><span class="w"></span>
+<span class="w">        </span><span class="nv">echo</span><span class="w"> </span><span class="s2">&quot;processus ssh-agent non trouvé&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="nv">unset</span><span class="w"> </span><span class="nv">SSH_AGENT_PID</span><span class="w"></span>
+<span class="w">    </span><span class="nv">fi</span><span class="w"></span>
+<span class="k">else</span><span class="w"></span>
+<span class="w">    </span><span class="nv">echo</span><span class="w"> </span><span class="s2">&quot;fichier ssh-agent.out absent&quot;</span><span class="w"></span>
+<span class="nv">fi</span><span class="w"></span>
+<span class="k">if</span><span class="w"> </span>[<span class="w"> </span><span class="s2">&quot;&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;$SSH_AGENT_PID&quot;</span><span class="w"> </span>]<span class="c1">; then</span><span class="w"></span>
+<span class="w">    </span><span class="nv">echo</span><span class="w"> </span><span class="s2">&quot;lancement de ssh-agent&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="nv">ssh</span><span class="o">-</span><span class="nv">agent</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span>$<span class="nv">HOME</span><span class="o">/</span><span class="nv">ssh</span><span class="o">-</span><span class="nv">agent</span>.<span class="nv">out</span><span class="w"></span>
+<span class="w">    </span>.<span class="w"> </span>$<span class="nv">HOME</span><span class="o">/</span><span class="nv">ssh</span><span class="o">-</span><span class="nv">agent</span>.<span class="nv">out</span><span class="w"></span>
+<span class="w">    </span><span class="nv">ssh</span><span class="o">-</span><span class="nv">add</span><span class="w"> </span>$<span class="nv">HOME</span><span class="o">/</span>.<span class="nv">ssh</span><span class="o">/</span><span class="nv">id_rsa</span><span class="w"></span>
+<span class="nv">fi</span><span class="w"></span>
+#<span class="w"> </span><span class="nv">Fin</span><span class="w"> </span><span class="nv">lancement</span><span class="w"> </span><span class="nv">ssh</span><span class="o">-</span><span class="nv">agent</span><span class="w"></span>
+##################################<span class="w"></span>
+</code></pre></div>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

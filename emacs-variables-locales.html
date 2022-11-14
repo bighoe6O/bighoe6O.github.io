@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>Emacs: Variables locales</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <meta name="description" content="How to use dir locals el with projectile Directory Variables ;; .dir-locals.el ((nil (easy-jekyll-basedir . "e:/repo/myblog-dev/") )) Régénération..." />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">MyBlog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/archerie.html">Archerie</a></li>
+                    <li><a href="/category/archive.html">Archive</a></li>
+                    <li><a href="/category/culture.html">Culture</a></li>
+                    <li class="active"><a href="/category/developpement.html">Développement</a></li>
+                    <li><a href="/category/divers.html">Divers</a></li>
+                    <li><a href="/category/graphisme.html">Graphisme</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li><a href="/category/musique.html">Musique</a></li>
+                    <li><a href="/category/projets.html">Projets</a></li>
+                    <li><a href="/category/reprap.html">RepRap</a></li>
+                    <li><a href="/category/securite.html">Sécurité</a></li>
+                    <li><a href="/category/systeme.html">Système</a></li>
+                    <li><a href="/category/tech.html">Tech</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/emacs-variables-locales.html" rel="bookmark"
+           title="Permalink to Emacs: Variables locales">Emacs: Variables locales</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-09-21T08:56:48+02:00">
+                Published: Fri 21 September 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/developpement.html">Développement</a>.</p>
+<p>tags: <a href="/tag/emacs.html">Emacs</a> </p>
+</footer><!-- /.post-info -->      <ul>
+<li><a href="https://emacs.stackexchange.com/questions/24907/how-to-use-dir-locals-el-with-projectile">How to use dir locals el with projectile</a></li>
+<li><a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Directory-Variables.html">Directory Variables</a></li>
+</ul>
+<div class="highlight"><pre><span></span><code>;; .dir-locals.el
+((nil
+  (easy-jekyll-basedir . &quot;e:/repo/myblog-dev/&quot;)
+))
+</code></pre></div>
+
+<h1>Régénération des tags</h1>
+<p><a href="https://stackoverflow.com/questions/2550474/is-it-possible-to-auto-regenerate-and-load-tags-table-in-emacs-rather-than-havin">https://stackoverflow.com/questions/2550474/is-it-possible-to-auto-regenerate-and-load-tags-table-in-emacs-rather-than-havin</a></p>
+<div class="highlight"><pre><span></span><code>;; .dir-locals.el
+((nil . ((tags-cmd . &quot;etags -R *.py&quot;))))
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">;; init.el</span><span class="w"></span>
+<span class="c1">;; Regénérer les tags</span><span class="w"></span>
+<span class="p">(</span><span class="nb">defvar</span><span class="w"> </span><span class="nv">tags-cmd</span><span class="w"> </span><span class="s">&quot;etags -R 2&gt;/dev/null&quot;</span><span class="p">)</span><span class="w"></span>
+
+<span class="p">(</span><span class="nb">defun</span><span class="w"> </span><span class="nv">regen-tags</span><span class="w"> </span><span class="p">()</span><span class="w"></span>
+<span class="w">  </span><span class="s">&quot;Regenerate the tags file for the current working directory&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="nv">interactive</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="k">let</span><span class="w"> </span><span class="p">((</span><span class="nv">tag-file</span><span class="w"> </span><span class="p">(</span><span class="nv">concat</span><span class="w"> </span><span class="nv">default-directory</span><span class="w"> </span><span class="s">&quot;TAGS&quot;</span><span class="p">)))</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="nv">shell-command</span><span class="w"> </span><span class="nv">tags-cmd</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="nv">visit-tags-table</span><span class="w"> </span><span class="nv">tag-file</span><span class="p">)))</span><span class="w"></span>
+
+<span class="p">(</span><span class="nv">global-set-key</span><span class="w"> </span><span class="p">(</span><span class="nv">kbd</span><span class="w"> </span><span class="s">&quot;C-c t r&quot;</span><span class="p">)</span><span class="w"> </span><span class="ss">&#39;regen-tags</span><span class="p">)</span><span class="w"></span>
+</code></pre></div>
+
+<p>Rechargement automatique de la table des tags</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">setq</span><span class="w"> </span><span class="nv">tags-revert-without-query</span><span class="w"> </span><span class="no">t</span><span class="p">)</span><span class="w"></span>
+</code></pre></div>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

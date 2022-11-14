@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>Jekyll RTest</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <meta name="description" content="Rspec https://medium.com/espark-engineering-blog/testing-your-jekyll-site-the-ruby-way-ccfa386a8318..." />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">MyBlog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/archerie.html">Archerie</a></li>
+                    <li class="active"><a href="/category/archive.html">Archive</a></li>
+                    <li><a href="/category/culture.html">Culture</a></li>
+                    <li><a href="/category/developpement.html">Développement</a></li>
+                    <li><a href="/category/divers.html">Divers</a></li>
+                    <li><a href="/category/graphisme.html">Graphisme</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li><a href="/category/musique.html">Musique</a></li>
+                    <li><a href="/category/projets.html">Projets</a></li>
+                    <li><a href="/category/reprap.html">RepRap</a></li>
+                    <li><a href="/category/securite.html">Sécurité</a></li>
+                    <li><a href="/category/systeme.html">Système</a></li>
+                    <li><a href="/category/tech.html">Tech</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/jekyll-rtest.html" rel="bookmark"
+           title="Permalink to Jekyll RTest">Jekyll RTest</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-10-19T16:34:17+02:00">
+                Published: Fri 19 October 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/archive.html">Archive</a>.</p>
+<p>tags: <a href="/tag/jekyll.html">Jekyll</a> </p>
+</footer><!-- /.post-info -->      <h2>Rspec</h2>
+<p><a href="https://medium.com/espark-engineering-blog/testing-your-jekyll-site-the-ruby-way-ccfa386a8318">https://medium.com/espark-engineering-blog/testing-your-jekyll-site-the-ruby-way-ccfa386a8318</a></p>
+<p><a href="http://chromedriver.storage.googleapis.com/2.9/chromedriver_win32.zip">http://chromedriver.storage.googleapis.com/2.9/chromedriver_win32.zip</a></p>
+<h1>Examples</h1>
+<h2>Rspec</h2>
+<div class="highlight"><pre><span></span><code><span class="c1"># Gemfile</span>
+<span class="n">source</span> <span class="s2">&quot;https://rubygems.org&quot;</span>
+
+<span class="n">gem</span> <span class="s2">&quot;jekyll&quot;</span><span class="p">,</span> <span class="s2">&quot;~&gt; 3.8.4&quot;</span>
+
+<span class="n">gem</span> <span class="s2">&quot;minima&quot;</span><span class="p">,</span> <span class="s2">&quot;~&gt; 2.0&quot;</span>
+
+<span class="c1"># If you have any plugins, put them here!</span>
+<span class="n">group</span> <span class="ss">:jekyll_plugins</span> <span class="k">do</span>
+  <span class="n">gem</span> <span class="s2">&quot;jekyll-feed&quot;</span><span class="p">,</span> <span class="s2">&quot;~&gt; 0.6&quot;</span>
+<span class="k">end</span>
+
+<span class="c1"># Windows does not include zoneinfo files, so bundle the tzinfo-data gem</span>
+<span class="n">gem</span> <span class="s2">&quot;tzinfo-data&quot;</span><span class="p">,</span> <span class="ss">platforms</span><span class="p">:</span> <span class="o">[</span><span class="ss">:mingw</span><span class="p">,</span> <span class="ss">:mswin</span><span class="p">,</span> <span class="ss">:x64_mingw</span><span class="p">,</span> <span class="ss">:jruby</span><span class="o">]</span>
+
+<span class="c1"># Performance-booster for watching directories on Windows</span>
+<span class="n">gem</span> <span class="s2">&quot;wdm&quot;</span><span class="p">,</span> <span class="s2">&quot;~&gt; 0.1.0&quot;</span> <span class="k">if</span> <span class="no">Gem</span><span class="o">.</span><span class="n">win_platform?</span>
+
+<span class="n">group</span> <span class="ss">:development</span><span class="p">,</span> <span class="ss">:test</span> <span class="k">do</span>
+  <span class="n">gem</span> <span class="s2">&quot;rspec&quot;</span>
+  <span class="n">gem</span> <span class="s2">&quot;selenium-webdriver&quot;</span>
+  <span class="n">gem</span> <span class="s2">&quot;chromedriver-helper&quot;</span>
+  <span class="c1"># Ajout de puma (server</span>
+  <span class="c1"># Failures:</span>
+
+  <span class="c1"># 1) sample has the page title</span>
+  <span class="c1">#    Failure/Error: raise LoadError, &#39;Capybara is unable to load `puma` for its server, please add `puma` to your project or specify a different server via something like `Capybara.server = :webrick`.&#39;</span>
+  <span class="n">gem</span> <span class="s2">&quot;puma&quot;</span>
+  <span class="n">gem</span> <span class="s2">&quot;capybara&quot;</span>
+  <span class="n">gem</span> <span class="s2">&quot;rack-jekyll&quot;</span>
+  <span class="n">gem</span> <span class="s2">&quot;pry&quot;</span>
+<span class="k">end</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># spec/spec_helper.rb</span>
+<span class="c1"># Require all of the necessary gems</span>
+<span class="nb">require</span> <span class="s1">&#39;rspec&#39;</span>
+<span class="nb">require</span> <span class="s1">&#39;capybara/rspec&#39;</span>
+<span class="nb">require</span> <span class="s1">&#39;rack/jekyll&#39;</span>
+<span class="nb">require</span> <span class="s1">&#39;rack/test&#39;</span>
+<span class="nb">require</span> <span class="s1">&#39;pry&#39;</span>
+
+<span class="no">RSpec</span><span class="o">.</span><span class="n">configure</span> <span class="k">do</span> <span class="o">|</span><span class="n">config</span><span class="o">|</span>
+  <span class="n">config</span><span class="o">.</span><span class="n">expect_with</span> <span class="ss">:rspec</span> <span class="k">do</span> <span class="o">|</span><span class="n">expectations</span><span class="o">|</span>
+    <span class="n">expectations</span><span class="o">.</span><span class="n">include_chain_clauses_in_custom_matcher_descriptions</span> <span class="o">=</span> <span class="kp">true</span>
+  <span class="k">end</span>
+
+  <span class="n">config</span><span class="o">.</span><span class="n">mock_with</span> <span class="ss">:rspec</span> <span class="k">do</span> <span class="o">|</span><span class="n">mocks</span><span class="o">|</span>
+    <span class="n">mocks</span><span class="o">.</span><span class="n">verify_partial_doubles</span> <span class="o">=</span> <span class="kp">true</span>
+  <span class="k">end</span>
+
+  <span class="c1"># Configure Capybara to use Selenium.</span>
+  <span class="no">Capybara</span><span class="o">.</span><span class="n">register_driver</span> <span class="ss">:selenium</span> <span class="k">do</span> <span class="o">|</span><span class="n">app</span><span class="o">|</span>
+    <span class="c1"># Configure selenium to use Chrome.</span>
+    <span class="no">Capybara</span><span class="o">::</span><span class="no">Selenium</span><span class="o">::</span><span class="no">Driver</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">app</span><span class="p">,</span> <span class="ss">:browser</span> <span class="o">=&gt;</span> <span class="ss">:chrome</span><span class="p">)</span>
+  <span class="k">end</span>
+
+  <span class="c1"># Configure Capybara to load the website through rack-jekyll.</span>
+  <span class="c1"># (force_build: true) builds the site before the tests are run,</span>
+  <span class="c1"># so our tests are always running against the latest version</span>
+  <span class="c1"># of our jekyll site.</span>
+  <span class="no">Capybara</span><span class="o">.</span><span class="n">app</span> <span class="o">=</span> <span class="no">Rack</span><span class="o">::</span><span class="no">Jekyll</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="ss">force_build</span><span class="p">:</span> <span class="kp">true</span><span class="p">)</span>
+<span class="k">end</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Rakefile</span>
+<span class="n">task</span> <span class="ss">:default</span> <span class="o">=&gt;</span> <span class="ss">:rspec</span>
+
+<span class="n">task</span> <span class="ss">:install</span> <span class="k">do</span>
+  <span class="n">sh</span> <span class="s2">&quot;bundle install --path ../vendor/bundle&quot;</span>
+<span class="k">end</span>
+
+<span class="n">task</span> <span class="ss">:update</span> <span class="k">do</span>
+  <span class="n">sh</span> <span class="s2">&quot;bundle update&quot;</span>
+<span class="k">end</span>
+
+<span class="n">task</span> <span class="ss">:rspec</span> <span class="k">do</span>
+  <span class="n">sh</span> <span class="s2">&quot;bundle exec rspec&quot;</span>
+<span class="k">end</span>
+</code></pre></div>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

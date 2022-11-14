@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>MyBlog - Domotique</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">MyBlog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/archerie.html">Archerie</a></li>
+                    <li><a href="/category/archive.html">Archive</a></li>
+                    <li><a href="/category/culture.html">Culture</a></li>
+                    <li><a href="/category/developpement.html">Développement</a></li>
+                    <li><a href="/category/divers.html">Divers</a></li>
+                    <li><a href="/category/graphisme.html">Graphisme</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li><a href="/category/musique.html">Musique</a></li>
+                    <li><a href="/category/projets.html">Projets</a></li>
+                    <li><a href="/category/reprap.html">RepRap</a></li>
+                    <li><a href="/category/securite.html">Sécurité</a></li>
+                    <li><a href="/category/systeme.html">Système</a></li>
+                    <li><a href="/category/tech.html">Tech</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="/tech-domotique.html">Domotique</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2018-09-23T21:16:35+02:00">
+                Published: Sun 23 September 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/projets.html">Projets</a>.</p>
+<p>tags: <a href="/tag/projets.html">Projets</a> <a href="/tag/domotique.html">Domotique</a> <a href="/tag/pi.html">pi</a> </p>
+</footer><!-- /.post-info --><h1>Liens</h1>
+<ul>
+<li><a href="https://www.mysensors.org/">MySensors</a></li>
+<li><a href="https://mosquitto.org/">Mosquitto MQTT Broker</a></li>
+<li><a href="https://domoticz.com/">Domoticz</a></li>
+<li><a href="https://nodered.org/">Node-Red</a></li>
+</ul>
+<h1>Carte SD du pi</h1>
+<p><a href="https://askubuntu.com/questions/69363/mount-single-partition-from-image-of-entire-disk-device">Montage de l'image</a></p>
+<div class="highlight"><pre><span></span><code><span class="n">stephane</span><span class="nv">@stephane</span><span class="o">-</span><span class="nl">PC</span><span class="p">:</span><span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">sata</span><span class="o">/</span><span class="n">stephane</span><span class="err">$</span><span class="w"> </span><span class="n">fdisk</span><span class="w"> </span><span class="o">-</span><span class="n">l</span><span class="w"> </span><span class="nf">pi</span><span class="o">-</span><span class="n">sd</span><span class="p">.</span><span class="n">img</span><span class="w"> </span>
+<span class="n">Disque</span><span class="w"> </span><span class="nf">pi</span><span class="o">-</span><span class="n">sd</span><span class="p">.</span><span class="n">img</span><span class="w"> </span><span class="err">:</span><span class="w"> </span><span class="mi">7</span><span class="p">,</span><span class="mi">4</span><span class="w"> </span><span class="n">GiB</span><span class="p">,</span><span class="w"> </span><span class="mi">7948206080</span><span class="w"> </span><span class="n">octets</span><span class="p">,</span><span class="w"> </span><span class="mi">15523840</span><span class="w"> </span><span class="n">secteurs</span><span class="w"></span>
+<span class="n">Unités</span><span class="w"> </span><span class="err">:</span><span class="w"> </span><span class="n">secteur</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="err">×</span><span class="w"> </span><span class="mi">512</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">512</span><span class="w"> </span><span class="n">octets</span><span class="w"></span>
+<span class="n">Taille</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">secteur</span><span class="w"> </span><span class="p">(</span><span class="n">logique</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">physique</span><span class="p">)</span><span class="w"> </span><span class="err">:</span><span class="w"> </span><span class="mi">512</span><span class="w"> </span><span class="n">octets</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">512</span><span class="w"> </span><span class="n">octets</span><span class="w"></span>
+<span class="n">taille</span><span class="w"> </span><span class="n">d</span><span class="s1">&#39;E/S (minimale / optimale) : 512 octets / 512 octets</span>
+<span class="s1">Type d&#39;</span><span class="n">étiquette</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">disque</span><span class="w"> </span><span class="err">:</span><span class="w"> </span><span class="n">dos</span><span class="w"></span>
+<span class="n">Identifiant</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">disque</span><span class="w"> </span><span class="err">:</span><span class="w"> </span><span class="mh">0x881f5fa7</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">Périphérique</span><span class="w"> </span><span class="n">Amorçage</span><span class="w"> </span><span class="n">Début</span><span class="w">      </span><span class="n">Fin</span><span class="w"> </span><span class="n">Secteurs</span><span class="w"> </span><span class="n">Taille</span><span class="w"> </span><span class="n">Id</span><span class="w"> </span><span class="n">Type</span><span class="w"></span>
+<span class="w">    </span><span class="nf">pi</span><span class="o">-</span><span class="n">sd</span><span class="p">.</span><span class="n">img1</span><span class="w">             </span><span class="mi">8192</span><span class="w">    </span><span class="mi">93813</span><span class="w">    </span><span class="mi">85622</span><span class="w">  </span><span class="mi">41</span><span class="p">,</span><span class="mi">8</span><span class="n">M</span><span class="w">  </span><span class="n">c</span><span class="w"> </span><span class="n">W95</span><span class="w"> </span><span class="n">FAT32</span><span class="w"> </span><span class="p">(</span><span class="n">LBA</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="nf">pi</span><span class="o">-</span><span class="n">sd</span><span class="p">.</span><span class="n">img2</span><span class="w">            </span><span class="mi">94208</span><span class="w"> </span><span class="mi">15523839</span><span class="w"> </span><span class="mi">15429632</span><span class="w">   </span><span class="mi">7</span><span class="p">,</span><span class="mi">4</span><span class="n">G</span><span class="w"> </span><span class="mi">83</span><span class="w"> </span><span class="n">Linux</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">imgstart</span><span class="o">=</span><span class="mi">48234496</span><span class="w"></span>
+<span class="w">    </span><span class="n">sudo</span><span class="w"> </span><span class="n">losetup</span><span class="w"> </span><span class="o">-</span><span class="n">o</span><span class="w"> </span><span class="err">$</span><span class="n">imgstart</span><span class="w"> </span><span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">loop0</span><span class="w"> </span><span class="nf">pi</span><span class="o">-</span><span class="n">sd</span><span class="p">.</span><span class="n">img</span><span class="w"></span>
+<span class="w">    </span><span class="n">sudo</span><span class="w"> </span><span class="n">mount</span><span class="w"> </span><span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">loop0</span><span class="w"> </span><span class="o">/</span><span class="n">mnt</span><span class="w"></span>
+</code></pre></div>
+
+<p>/etc/init.d/domoticz.sh</p>
+<div class="highlight"><pre><span></span><code>OPTIONS=&quot;-www 8080 -loglevel=1 -log /tmp/domoticz.log&quot;
+DAEMON_ARGS=&quot;$DAEMON_ARGS -sslwww 443&quot;
+DAEMON_ARGS=&quot;$DAEMON_ARGS -log /tmp/domoticz.log&quot;
+</code></pre></div>                </article>
+            </aside><!-- /#featured -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

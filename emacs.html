@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>Emacs</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <meta name="description" content="Espaces pour les tabulations (setq-default indent-tabs-mode nil) (setq-default tab-width 4) (setq indent-line-function 'insert-tab) Paquets..." />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">MyBlog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/archerie.html">Archerie</a></li>
+                    <li><a href="/category/archive.html">Archive</a></li>
+                    <li><a href="/category/culture.html">Culture</a></li>
+                    <li class="active"><a href="/category/developpement.html">Développement</a></li>
+                    <li><a href="/category/divers.html">Divers</a></li>
+                    <li><a href="/category/graphisme.html">Graphisme</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li><a href="/category/musique.html">Musique</a></li>
+                    <li><a href="/category/projets.html">Projets</a></li>
+                    <li><a href="/category/reprap.html">RepRap</a></li>
+                    <li><a href="/category/securite.html">Sécurité</a></li>
+                    <li><a href="/category/systeme.html">Système</a></li>
+                    <li><a href="/category/tech.html">Tech</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/emacs.html" rel="bookmark"
+           title="Permalink to Emacs">Emacs</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-09-13T09:21:12+02:00">
+                Published: Thu 13 September 2018
+        </abbr>
+		<br />
+        <abbr class="modified" title="2021-10-23T22:19:00+02:00">
+                Updated: Sat 23 October 2021
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/developpement.html">Développement</a>.</p>
+<p>tags: <a href="/tag/emacs.html">Emacs</a> </p>
+</footer><!-- /.post-info -->      <h2>Espaces pour les tabulations</h2>
+<div class="highlight"><pre><span></span><code>(setq-default indent-tabs-mode nil)
+(setq-default tab-width 4)
+(setq indent-line-function &#39;insert-tab)
+</code></pre></div>
+
+<h2>Paquets utilisés</h2>
+<ul>
+<li><a href="http://melpa.org/#/getting-started">Melpa (Dépôt)</a></li>
+<li><a href="https://www.emacswiki.org/emacs/Projectile">Projectile</a> (Gestion de projets)</li>
+<li><a href="https://oremacs.com/swiper/">Swipper</a> (Recherche avec complétion)</li>
+<li><a href="https://www.emacswiki.org/emacs/CompanyMode">Company mode</a></li>
+<li><a href="https://github.com/masasam/emacs-easy-jekyll">Emacs Easy Jekyll</a></li>
+<li><a href="https://github.com/jorgenschaefer/elpy">Elpy</a> Permet la recherche des tags</li>
+<li><a href="https://perso.univ-rennes1.fr/san.vu-ngoc/prog/mma.el">MMA</a>: Un mode pour l'accompagnateur MIDI <a href="../Musique/mma.html">MMA</a></li>
+</ul>
+<h2>Liens</h2>
+<ul>
+<li><a href="https://www.gnu.org/software/emacs/manual/html_node/eintr/index.html#Top">Manuel</a></li>
+<li><a href="https://nilsdeppe.com/posts/emacs-c++-ide2">emacs-c++-ide2</a></li>
+<li><a href="https://emacs.stackexchange.com/questions/34322/set-default-coding-system-utf-8">Set default coding system-utf-8</a></li>
+<li><a href="https://stackoverflow.com/questions/5795451/how-to-detect-that-emacs-is-in-terminal-mode/5795518#5795518">How to detect that emacs is in terminal mode</a> (Pb de taille de frame au démarrage)</li>
+<li><a href="https://edivad.wordpress.com/2007/04/03/emacs-convert-dos-to-unix-and-vice-versa/">Convertion DOS -&gt; Unix</a></li>
+<li><a href="https://emacs.stackexchange.com/questions/24907/how-to-use-dir-locals-el-with-projectile">How to use dir locals el with projectile</a></li>
+<li><a href="https://desmondrivet.com/2018/03/30/emacs-pelican-workflow">Blogging with Emacs and Pelican</a></li>
+</ul>
+<h2>Linux: Pb avec emacs24 -&gt; Ajoût du dépôt pour emacs25</h2>
+<div class="highlight"><pre><span></span><code><span class="k">deb</span><span class="w"> </span><span class="s">http://ppa.launchpad.net/kelleyk/emacs/ubuntu</span><span class="w"> </span><span class="kp">xenial</span><span class="w"> </span><span class="kp">main</span><span class="w"></span>
+<span class="c"># deb-src http://ppa.launchpad.net/kelleyk/emacs/ubuntu xenial main</span><span class="w"></span>
+<span class="err">sudo</span><span class="w"> </span><span class="err">add-apt-repository</span><span class="w"> </span><span class="err">ppa:kelleyk/emacs</span><span class="w"></span>
+<span class="err">sudo</span><span class="w"> </span><span class="err">apt-get</span><span class="w"> </span><span class="err">update</span><span class="w"></span>
+<span class="err">sudo</span><span class="w"> </span><span class="err">apt-get</span><span class="w"> </span><span class="err">install</span><span class="w"> </span><span class="err">emacs25</span><span class="w"></span>
+</code></pre></div>
+
+<h2>Fichiers backup</h2>
+<p>Eviter la multiplication des fichiers *~</p>
+<div class="highlight"><pre><span></span><code>(setq backup-directory-alist `((&quot;.&quot; . &quot;~/.saves&quot;)))
+</code></pre></div>
+
+<h2>Tags</h2>
+<div class="highlight"><pre><span></span><code>ctags -f TAGS -e -R
+</code></pre></div>
+
+<h2>SQLite</h2>
+<div class="highlight"><pre><span></span><code>cpan install DBI DBD::SQLite
+</code></pre></div>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

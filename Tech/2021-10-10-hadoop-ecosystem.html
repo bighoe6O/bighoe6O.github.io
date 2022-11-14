@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>Ecosystème Hadoop</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <meta name="description" content="Ecosystème Hadoop Pig https://www.tutorialspoint.com/apache_pig/ Spark https://www.tutorialspoint.com/apache_spark/index.htm Docker..." />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">MyBlog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/archerie.html">Archerie</a></li>
+                    <li><a href="/category/archive.html">Archive</a></li>
+                    <li><a href="/category/culture.html">Culture</a></li>
+                    <li class="active"><a href="/category/developpement.html">Développement</a></li>
+                    <li><a href="/category/divers.html">Divers</a></li>
+                    <li><a href="/category/graphisme.html">Graphisme</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li><a href="/category/musique.html">Musique</a></li>
+                    <li><a href="/category/projets.html">Projets</a></li>
+                    <li><a href="/category/reprap.html">RepRap</a></li>
+                    <li><a href="/category/securite.html">Sécurité</a></li>
+                    <li><a href="/category/systeme.html">Système</a></li>
+                    <li><a href="/category/tech.html">Tech</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/Tech/2021-10-10-hadoop-ecosystem.html" rel="bookmark"
+           title="Permalink to Ecosystème Hadoop">Ecosystème Hadoop</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2021-10-10T10:35:00+02:00">
+                Published: Sun 10 October 2021
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/developpement.html">Développement</a>.</p>
+<p>tags: <a href="/tag/dev.html">Dev</a> <a href="/tag/hadoop.html">Hadoop</a> </p>
+</footer><!-- /.post-info -->      <h1>Ecosystème Hadoop</h1>
+<h2>Pig</h2>
+<p><a href="https://www.tutorialspoint.com/apache_pig/">https://www.tutorialspoint.com/apache_pig/</a></p>
+<h2>Spark</h2>
+<p><a href="https://www.tutorialspoint.com/apache_spark/index.htm">https://www.tutorialspoint.com/apache_spark/index.htm</a></p>
+<h2>Docker</h2>
+<p><a href="https://github.com/big-data-europe/docker-spark">https://github.com/big-data-europe/docker-spark</a></p>
+<p><a href="https://github.com/captionnemo/hadoop-Spark-Hive-Pig-Sqoop_on_docker(fetch)">https://github.com/captionnemo/hadoop-Spark-Hive-Pig-Sqoop_on_docker(fetch)</a></p>
+<h2>Datasets</h2>
+<p><a href="https://catalog.data.gov/dataset/air-quality/resource/f3ed1638-92da-4f88-bb6b-7d3940514574">https://catalog.data.gov/dataset/air-quality/resource/f3ed1638-92da-4f88-bb6b-7d3940514574</a></p>
+<p><a href="https://normanlimxk.com/2021/07/12/create-a-jupyterlab-notebook-for-spark/">https://normanlimxk.com/2021/07/12/create-a-jupyterlab-notebook-for-spark/</a></p>
+<div class="highlight"><pre><span></span><code>wget https://s3.amazonaws.com/h2o-airlines-unpacked/allyears2k.csv
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>hdfs dfs -mkdir -p /data/airlines
+hdfs dfs -put allyears2k.csv /data/airlines
+hdfs dfs -ls /data/airlines
+</code></pre></div>
+
+<h2>Projets</h2>
+<div class="highlight"><pre><span></span><code><span class="n">git</span><span class="w"> </span><span class="n">clone</span><span class="w"> </span><span class="n">git</span><span class="nv">@duloup</span><span class="p">.</span><span class="nl">org</span><span class="p">:</span><span class="n">hadoop</span><span class="o">-</span><span class="n">tuto</span><span class="w"></span>
+</code></pre></div>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

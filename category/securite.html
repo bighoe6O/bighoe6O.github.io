@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>MyBlog - Sécurité</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">MyBlog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/archerie.html">Archerie</a></li>
+                    <li><a href="/category/archive.html">Archive</a></li>
+                    <li><a href="/category/culture.html">Culture</a></li>
+                    <li><a href="/category/developpement.html">Développement</a></li>
+                    <li><a href="/category/divers.html">Divers</a></li>
+                    <li><a href="/category/graphisme.html">Graphisme</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li><a href="/category/musique.html">Musique</a></li>
+                    <li><a href="/category/projets.html">Projets</a></li>
+                    <li><a href="/category/reprap.html">RepRap</a></li>
+                    <li class="active"><a href="/category/securite.html">Sécurité</a></li>
+                    <li><a href="/category/systeme.html">Système</a></li>
+                    <li><a href="/category/tech.html">Tech</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="/openvpn.html">openvpn</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2018-10-20T14:58:39+02:00">
+                Published: Sat 20 October 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/securite.html">Sécurité</a>.</p>
+<p>tags: <a href="/tag/securite.html">Sécurité</a> </p>
+</footer><!-- /.post-info --><h1>Installation du serveur linux</h1>
+<p><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-an-openvpn-server-on-ubuntu-18-04">https://www.digitalocean.com/community/tutorials/how-to-set-up-an-openvpn-server-on-ubuntu-18-04</a></p>
+<h2>Installing OpenVPN and EasyRSA</h2>
+<div class="highlight"><pre><span></span><code><span class="n">sudo</span><span class="w"> </span><span class="n">apt</span><span class="w"> </span><span class="n">update</span><span class="w"></span>
+<span class="n">sudo</span><span class="w"> </span><span class="n">apt</span><span class="w"> </span><span class="n">install</span><span class="w"> </span><span class="n">openvpn</span><span class="w"></span>
+<span class="n">wget</span><span class="w"> </span><span class="o">-</span><span class="n">P</span><span class="w"> </span><span class="o">~/</span><span class="w"> </span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">OpenVPN</span><span class="o">/</span><span class="n">easy</span><span class="o">-</span><span class="n">rsa</span><span class="o">/</span><span class="n">releases</span><span class="o">/</span><span class="n">download</span><span class="o">/</span><span class="n">v3</span><span class="o">.</span><span class="mf">0.4</span><span class="o">/</span><span class="n">EasyRSA</span><span class="o">-</span><span class="mf">3.0</span><span class="o">.</span><span class="mf">4.</span><span class="n">tgz</span><span class="w"></span>
+
+<span class="n">cd</span><span class="w"> </span><span class="o">~</span><span class="w"></span>
+<span class="n">tar</span><span class="w"> </span><span class="n">xvf</span><span class="w"> </span><span class="n">EasyRSA</span><span class="o">-</span><span class="mf">3.0</span><span class="o">.</span><span class="mf">4.</span><span class="n">tgz</span><span class="w"></span>
+</code></pre></div>
+
+<h2>Configuring the EasyRSA Variables and Building the CA</h2>
+<p>/etc/openvpn/easy-rsa</p>
+<p>/etc/openvpn/easy-rsa/vars</p>
+<div class="highlight"><pre><span></span><code><span class="k">export</span><span class="w"> </span><span class="n">EASY_RSA</span><span class="o">=</span><span class="s2">&quot;`pwd`&quot;</span><span class="w"></span>
+
+<span class="k">export</span><span class="w"> </span><span class="n">OPENSSL</span><span class="o">=</span><span class="s2">&quot;openssl&quot;</span><span class="w"></span>
+<span class="k">export</span><span class="w"> </span><span class="n">PKCS11TOOL</span><span class="o">=</span><span class="s2">&quot;pkcs11-tool&quot;</span><span class="w"></span>
+<span class="k">export</span><span class="w"> </span><span class="n">GREP</span><span class="o">=</span><span class="s2">&quot;grep&quot;</span><span class="w"></span>
+
+
+<span class="k">export</span><span class="w"> </span><span class="n">KEY_CONFIG</span><span class="o">=</span><span class="n n-Quoted">`$EASY_RSA/whichopensslcnf $EASY_RSA`</span><span class="w"></span>
+
+<span class="k">export</span><span class="w"> </span><span class="n">KEY_DIR</span><span class="o">=</span><span class="s2">&quot;$EASY_RSA/keys&quot;</span><span class="w"></span>
+
+<span class="n">echo</span><span class="w"> </span><span class="n">NOTE</span><span class="o">:</span><span class="w"> </span><span class="k">If</span><span class="w"> </span><span class="n">you</span><span class="w"> </span><span class="n">run</span><span class="w"> </span><span class="p">.</span><span class="o">/</span><span class="n">clean</span><span class="o">-</span><span class="k">all</span><span class="p">,</span><span class="w"> </span><span class="n">I</span><span class="w"> </span><span class="n">will</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">doing</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">rm</span><span class="w"> </span><span class="o">-</span><span class="n">rf</span><span class="w"> </span><span class="k">on</span><span class="w"> </span><span class="n">$KEY_DIR</span><span class="w"></span>
+
+<span class="k">export</span><span class="w"> </span><span class="n">PKCS11_MODULE_PATH</span><span class="o">=</span><span class="s2">&quot;dummy&quot;</span><span class="w"></span>
+<span class="k">export</span><span class="w"> </span><span class="n">PKCS11_PIN</span><span class="o">=</span><span class="s2">&quot;dummy&quot;</span><span class="w"></span>
+
+<span class="k">export</span><span class="w"> </span><span class="n">KEY_SIZE</span><span class="o">=</span><span class="mi">2048</span><span class="w"></span>
+
+<span class="k">export</span><span class="w"> </span><span class="n">CA_EXPIRE</span><span class="o">=</span><span class="mi">3650</span><span class="w"></span>
+
+<span class="k">export</span><span class="w"> </span><span class="n">KEY_EXPIRE</span><span class="o">=</span><span class="mi">3650</span><span class="w"></span>
+
+<span class="k">export</span><span class="w"> </span><span class="n">KEY_COUNTRY</span><span class="o">=</span><span class="s2">&quot;FR&quot;</span><span class="w"></span>
+<span class="k">export</span><span class="w"> </span><span class="n">KEY_PROVINCE</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="w"></span>
+<span class="k">export</span><span class="w"> </span><span class="n">KEY_CITY</span><span class="o">=</span><span class="s2">&quot;Toulon&quot;</span><span class="w"></span>
+<span class="k">export</span><span class="w"> </span><span class="n">KEY_ORG</span><span class="o">=</span><span class="s2">&quot;DuloupOrg&quot;</span><span class="w"></span>
+<span class="k">export</span><span class="w"> </span><span class="n">KEY_EMAIL</span><span class="o">=</span><span class="s2">&quot;admin@duloup.org&quot;</span><span class="w"></span>
+<span class="k">export</span><span class="w"> </span><span class="n">KEY_OU</span><span class="o">=</span><span class="s2">&quot;MonVPN&quot;</span><span class="w"></span>
+<span class="k">export</span><span class="w"> </span><span class="n">KEY_CN</span><span class="o">=</span><span class="s2">&quot;MonVPN&quot;</span><span class="w"></span>
+<span class="k">export</span><span class="w"> </span><span class="n">KEY_ALTNAMES</span><span class="o">=</span><span class="s2">&quot;MonVPN&quot;</span><span class="w"></span>
+
+<span class="k">export</span><span class="w"> </span><span class="n">KEY_NAME</span><span class="o">=</span><span class="s2">&quot;EasyRSA&quot;</span><span class="w"></span>
+</code></pre></div>
+
+<p>Initiate the public key infrastructure on the CA server:</p>
+<div class="highlight"><pre><span></span><code>./easyrsa init-pki
+
+./easyrsa build-ca nopass
+</code></pre></div>
+
+<h2>Creating the Server Certificate, Key, and Encryption Files</h2>
+<h2>Create a strong Diffie-Hellman key to use during key exchange by typing:</h2>
+<div class="highlight"><pre><span></span><code>./easyrsa gen-dh
+openvpn --genkey --secret ta.key
+</code></pre></div>
+
+<h2>Generating a Client Certificate and Key Pair</h2>
+<div class="highlight"><pre><span></span><code>mkdir -p ~/client-configs/keys
+</code></pre></div>
+
+<h2>Problèmes</h2>
+<p><a href="https://selivan.github.io/2017/05/11/mikrotik-openvpn-bad-lzo-header-69.html">https://selivan.github.io/2017/05/11/mikrotik-openvpn-bad-lzo-header-69.html</a></p>
+<h1>OpenVPN</h1>
+<p><a href="https://openvpn.net/">https://openvpn.net/</a></p>
+<p><a href="https://michlstechblog.info/blog/openvpn-set-a-static-ip-address-for-a-client/">https://michlstechblog.info/blog/openvpn-set-a-static-ip-address-for-a-client/</a></p>
+<p><a href="https://openvpn.net/vpn-server-resources/connecting-to-access-server-with-linux/">https://openvpn.net/vpn-server-resources/connecting-to-access-server-with-linux/</a></p>
+<p><a href="https://askubuntu.com/questions/530088/ufw-for-openvpn#796281">https://askubuntu.com/questions/530088/ufw-for-openvpn#796281</a></p>
+<p><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-an-openvpn-server-on-ubuntu-16-04">https://www.digitalocean.com/community/tutorials/how-to-set-up-an-openvpn-server-on-ubuntu-16-04</a></p>
+<p><a href="https://help.ubuntu.com/lts/serverguide/openvpn.html">https://help.ubuntu.com/lts/serverguide/openvpn.html</a></p>
+<p><a href="https://doc.ubuntu-fr.org/tutoriel/connectionvpn">https://doc.ubuntu-fr.org/tutoriel/connectionvpn</a></p>
+<p><a href="https://cloud.scaleway.com/">https://cloud.scaleway.com/</a></p>
+<h1>UFW: Autorisation de samba</h1>
+<div class="highlight"><pre><span></span><code>ufw allow from 10.8.0.0/24 to any app Samba
+</code></pre></div>
+
+<h1>Android</h1>
+<p>TLS Direction 1</p>
+<p><a href="https://wiki.gentoo.org/wiki/Create_a_Public_Key_Infrastructure_Using_the_easy-rsa_Scripts">https://wiki.gentoo.org/wiki/Create_a_Public_Key_Infrastructure_Using_the_easy-rsa_Scripts</a></p>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/gnupg.html" rel="bookmark"
+                           title="Permalink to GnuPG">GnuPG</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-09-24T22:07:55+02:00">
+                Published: Mon 24 September 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/securite.html">Sécurité</a>.</p>
+<p>tags: <a href="/tag/securite.html">Sécurité</a> </p>
+</footer><!-- /.post-info -->                <p>Authentification ssh via agent pgp</p>
+<p><a href="https://opensource.com/article/19/4/gpg-subkeys-ssh">https://opensource.com/article/19/4/gpg-subkeys-ssh</a></p>
+<div class="highlight"><pre><span></span><code><span class="k">export</span><span class="w"> </span><span class="n">SSH_AUTH_SOCK</span><span class="o">=$</span><span class="p">(</span><span class="n">gpgconf</span><span class="w"> </span><span class="o">--</span><span class="n">list</span><span class="o">-</span><span class="n">dirs</span><span class="w"> </span><span class="n">agent</span><span class="o">-</span><span class="n">ssh</span><span class="o">-</span><span class="n">socket</span><span class="p">)</span><span class="w"></span>
+</code></pre></div>
+
+<p>erreur pass lors du déchiffrement d'une entrée:</p>
+<div class="highlight"><pre><span></span><code><span class="n">gpg</span><span class="o">:</span><span class="w"> </span><span class="err">é</span><span class="n">chec</span><span class="w"> </span><span class="n">du</span><span class="w"> </span><span class="n">déchiffrement</span><span class="w"> </span><span class="n">par</span><span class="w"> </span><span class="n">clef</span><span class="w"> </span><span class="n">publique</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">Pas</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">pinentry</span><span class="w"></span>
+<span class="n">gpg</span><span class="o">:</span><span class="w"> </span><span class="err">é</span><span class="n">chec</span><span class="w"> </span><span class="n">du</span><span class="w"> </span><span class="n">déchiffrement</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">Pas</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">clef</span><span class="w"> </span><span class="n">secrète</span><span class="w"></span>
+</code></pre></div>
+
+<p>Cause:
+Problème de …</p>
+                <a class="readmore" href="/gnupg.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+                </ol><!-- /#posts-list -->
+                </section><!-- /#content -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

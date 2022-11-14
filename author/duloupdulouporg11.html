@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Mon Blog | Articles by duloup@duloup.org</title>
+    <link rel="shortcut icon" type="image/png" href="http://dev.duloup.org/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="http://dev.duloup.org/favicon.ico">
+    <link rel="stylesheet" href="http://dev.duloup.org/theme/css/main.css" type="text/css" />
+    <link rel="stylesheet" href="http://dev.duloup.org/theme/css/pygments.css" type="text/css" />
+    <meta name="generator" content="Pelican" />
+    <meta name="description" content="" />
+    <meta name="author" content="duloup@duloup.org" />
+    <link rel="stylesheet" href="http://dev.duloup.org/theme/css/stork.css">
+    <link rel="stylesheet" media="screen and (prefers-color-scheme: dark)" href="http://dev.duloup.org/theme/css/stork-dark.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+
+                <li class="ephemeral selected"><a href="http://dev.duloup.org/author/duloupdulouporg11.html">duloup@duloup.org</a></li>
+                <li><a href="http://dev.duloup.org/">Home</a></li>
+                <li><a href="http://blog.duloup.org">Site</a></li>
+                <li><a href="http://dev.duloup.org/category/tech.html">Tech</a></li>
+                <li><a href="http://dev.duloup.org/category/musique.html">Musique</a></li>
+                <li><a href="http://dev.duloup.org/categories.html">Categories</a></li>
+                <li><a href="http://dev.duloup.org/tags.html">Tags</a></li>
+                <li><a href="http://dev.duloup.org/about.html">About</a></li>
+            </ul>
+        </nav>
+        <div class="header_box">
+            <h1><a href="http://dev.duloup.org/">Mon Blog</a></h1>
+        </div>
+    </header>
+    <div id="wrapper">
+        <div id="content"><div class="search-box"><div>Search: </div><input data-stork="sitesearch" /></div>
+<div data-stork="sitesearch-output"></div>
+            <h4 class="date">sept. 21, 2018</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/linux.html" rel="bookmark" title="Permanent Link to &quot;linux&quot;">linux</a>
+                </h2>
+
+                
+                
+
+                <p>Conversion en minuscules</p>
+<div class="highlight"><pre><span></span><code>tr &#39;[:upper:]&#39; &#39;[:lower:]&#39; &lt; input
+</code></pre></div>
+
+<p>Makefile</p>
+<p><a href="https://www.gnu.org/software/make/manual/make.html#Wildcard-Pitfall">https://www.gnu.org/software/make/manual/make.html#Wildcard-Pitfall</a></p>
+<p>Window Manager</p>
+<ul>
+<li><a href="http://fluxbox.org/">FluxBox window manager</a></li>
+<li><a href="https://stackoverflow.com/questions/13294059/preserving-color-of-text-piped-through-less-or-more">https://stackoverflow.com/questions/13294059/preserving-color-of-text-piped-through-less-or-more</a></li>
+</ul>
+<h1><a href="http://www.webupd8.org/2014/09/dual-boot-fix-time-differences-between.html">Fix time differences between Ubuntu and Windows</a></h1>
+<p>registre:</p>
+<div class="highlight"><pre><span></span><code>Windows Registry Editor Version 5.00<span class="w"></span>
+
+<span class="k">[</span><span class="nb">HKEY_LOCAL_MACHINE</span><span class="k">\SYSTEM\CurrentControlSet\Control\TimeZoneInformation]</span><span class="w"></span>
+<span class="na">&quot;RealTimeIsUniversal&quot;</span><span class="o">=-</span><span class="w"></span>
+</code></pre></div>
+
+<p>cmd (administrateur):</p>
+<div class="highlight"><pre><span></span><code>sc config w32time start= demand
+</code></pre></div>
+
+<p>reboot</p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/linux.html">posted at 23:59</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/systeme.html" rel="tag">Système</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/shell.html" class="tags">Shell</a>
+                </div>
+            </article>            <h4 class="date">sept. 21, 2018</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/windows.html" rel="bookmark" title="Permanent Link to &quot;windows&quot;">windows</a>
+                </h2>
+
+                
+                
+
+                <h1>X11 sous Cygwin</h1>
+<p><a href="https://x.cygwin.com/docs/man1/XWin.1.html#lbAK">https://x.cygwin.com/docs/man1/XWin.1.html#lbAK</a></p>
+<p><a href="https://x.cygwin.com/docs/ug/using-remote-session.html">https://x.cygwin.com/docs/ug/using-remote-session.html</a></p>
+<h1>Rsync</h1>
+<div class="highlight"><pre><span></span><code><span class="n">PS</span><span class="w"> </span><span class="nl">C</span><span class="p">:</span><span class="err">\</span><span class="n">Users</span><span class="err">\</span><span class="n">speyr</span><span class="err">\</span><span class="n">Documents</span><span class="err">\</span><span class="n">myblog</span><span class="err">\</span><span class="n">content</span><span class="err">\</span><span class="n">Dev</span><span class="o">&gt;</span><span class="w"> </span><span class="n">rsync</span><span class="w"> </span><span class="o">-</span><span class="n">rv</span><span class="w"> </span><span class="k">output</span><span class="w"> </span><span class="n">stephane</span><span class="nv">@cirrus</span><span class="err">:</span><span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="k">output</span><span class="w"></span>
+<span class="nl">rsync</span><span class="p">:</span><span class="w"> </span><span class="k">connection</span><span class="w"> </span><span class="n">unexpectedly</span><span class="w"> </span><span class="n">closed</span><span class="w"> </span><span class="p">(</span><span class="mi">0</span><span class="w"> </span><span class="n">bytes</span><span class="w"> </span><span class="n">received</span><span class="w"> </span><span class="n">so</span><span class="w"> </span><span class="n">far</span><span class="p">)</span><span class="w"> </span><span class="o">[</span><span class="n">Receiver</span><span class="o">]</span><span class="w"></span>
+<span class="n">rsync</span><span class="w"> </span><span class="nl">error</span><span class="p">:</span><span class="w"> </span><span class="n">error</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">rsync</span><span class="w"> </span><span class="n">protocol</span><span class="w"> </span><span class="k">data</span><span class="w"> </span><span class="n">stream</span><span class="w"> </span><span class="p">(</span><span class="n">code</span><span class="w"> </span><span class="mi">12</span><span class="p">)</span><span class="w"> </span><span class="k">at</span><span class="w"> </span><span class="n">io</span><span class="p">.</span><span class="n">c</span><span class="p">(</span><span class="mi">235</span><span class="p">)</span><span class="w"> </span><span class="o">[</span><span class="n">Receiver=3.1.2</span><span class="o">]</span><span class="w"></span>
+<span class="nl">rsync</span><span class="p">:</span><span class="w"> </span><span class="n">safe_read</span><span class="w"> </span><span class="n">failed</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="k">read</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="n">bytes</span><span class="w"> </span><span class="o">[</span><span class="n">sender</span><span class="o">]</span><span class="err">:</span><span class="w"> </span><span class="k">Connection</span><span class="w"> </span><span class="n">reset</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">peer</span><span class="w"> </span><span class="p">(</span><span class="mi">104</span><span class="p">)</span><span class="w"></span>
+<span class="n">rsync</span><span class="w"> </span><span class="nl">error</span><span class="p">:</span><span class="w"> </span><span class="n">error</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">rsync</span><span class="w"> </span><span class="n">protocol</span><span class="w"> </span><span class="k">data</span><span class="w"> </span><span class="n">stream</span><span class="w"> </span><span class="p">(</span><span class="n">code</span><span class="w"> </span><span class="mi">12</span><span class="p">)</span><span class="w"> </span><span class="k">at</span><span class="w"> </span><span class="n">io</span><span class="p">.</span><span class="n">c</span><span class="p">(</span><span class="mi">276</span><span class="p">)</span><span class="w"> </span><span class="o">[</span><span class="n">sender=3.1.3</span><span class="o">]</span><span class="w"></span>
+</code></pre></div>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/windows.html">posted at 23:57</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/systeme.html" rel="tag">Système</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/windows.html" class="tags">Windows</a>
+                </div>
+            </article>            <h4 class="date">sept. 21, 2018</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/tech-pi.html" rel="bookmark" title="Permanent Link to &quot;raspberry-pi&quot;">raspberry-pi</a>
+                </h2>
+
+                
+                
+
+                <p><a href="https://raspberrypi.stackexchange.com/questions/61723/raspberry-pi-3-and-raspbian-jessie-how-to-run-fsck-at-boot">Forcer un fsck au boot</a></p>
+<p><a href="https://wiki.linuxaudio.org/wiki/raspberrypi">Raspberry Pi and realtime, low-latency audio</a></p>
+<p><a href="http://www.frank-durr.de/?p=203">Raspberry Pi Going Realtime with RT Preempt</a></p>
+<p><a href="https://lemariva.com/blog/2018/07/raspberry-pi-preempt-rt-patching-tutorial-for-kernel-4-14-y">#Raspberry Pi: Real Time System - Preempt-RT Patching Tutorial for Kernel 4.14.y </a></p>
+<div class="highlight"><pre><span></span><code><span class="o">~/</span><span class="n">rpi</span><span class="o">-</span><span class="n">kernel</span><span class="o">$</span><span class="w"> </span><span class="k">export</span><span class="w"> </span><span class="n">ARCH</span><span class="o">=</span><span class="n">arm</span><span class="w"></span>
+<span class="o">~/</span><span class="n">rpi</span><span class="o">-</span><span class="n">kernel</span><span class="o">$</span><span class="w"> </span><span class="k">export</span><span class="w"> </span><span class="n">CROSS_COMPILE</span><span class="o">=~/</span><span class="n">rpi</span><span class="o">-</span><span class="n">kernel</span><span class="o">/</span><span class="n">tools</span><span class="o">/</span><span class="n">arm</span><span class="o">-</span><span class="n">bcm2708</span><span class="o">/</span><span class="n">gcc</span><span class="o">-</span><span class="n">linaro</span><span class="o">-</span><span class="n">arm</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnueabihf</span><span class="o">-</span><span class="n">raspbian</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">arm</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnueabihf</span><span class="o">-</span><span class="w"></span>
+<span class="o">~/</span><span class="n">rpi</span><span class="o">-</span><span class="n">kernel</span><span class="o">$</span><span class="w"> </span><span class="k">export</span><span class="w"> </span><span class="n">INSTALL_MOD_PATH</span><span class="o">=~/</span><span class="n">rpi</span><span class="o">-</span><span class="n">kernel</span><span class="o">/</span><span class="n">rt</span><span class="o">-</span><span class="n">kernel</span><span class="w"></span>
+<span class="o">~/</span><span class="n">rpi</span><span class="o">-</span><span class="n">kernel</span><span class="o">$</span><span class="w"> </span><span class="k">export</span><span class="w"> </span><span class="n">INSTALL_DTBS_PATH</span><span class="o">=~/</span><span class="n">rpi</span><span class="o">-</span><span class="n">kernel</span><span class="o">/</span><span class="n">rt</span><span class="o">-</span><span class="n">kernel</span><span class="w"></span>
+
+<span class="k">export</span><span class="w"> </span><span class="n">ARCH</span><span class="o">=</span><span class="n">arm</span><span class="w"></span>
+<span class="k">export</span><span class="w"> </span><span class="n">CROSS_COMPILE</span><span class="o">=~/</span><span class="n">rpi</span><span class="o">-</span><span class="n">kernel</span><span class="o">/</span><span class="n">tools</span><span class="o">/</span><span class="n">arm</span><span class="o">-</span><span class="n">bcm2708</span><span class="o">/</span><span class="n">gcc</span><span class="o">-</span><span class="n">linaro</span><span class="o">-</span><span class="n">arm</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnueabihf</span><span class="o">-</span><span class="n">raspbian</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">arm</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnueabihf</span><span class="o">-</span><span class="w"></span>
+<span class="k">export</span><span class="w"> </span><span class="n">INSTALL_MOD_PATH</span><span class="o">=~/</span><span class="n">rpi</span><span class="o">-</span><span class="n">kernel</span><span class="o">/</span><span class="n">rt</span><span class="o">-</span><span class="n">kernel</span><span class="w"></span>
+<span class="k">export</span><span class="w"> </span><span class="n">INSTALL_DTBS_PATH</span><span class="o">=~/</span><span class="n">rpi</span><span class="o">-</span><span class="n">kernel</span><span class="o">/</span><span class="n">rt</span><span class="o">-</span><span class="n">kernel</span><span class="w"></span>
+<span class="k">export</span><span class="w"> </span><span class="n">CROSS_COMPILE</span><span class="o">=~/</span><span class="n">rpi</span><span class="o">-</span><span class="n">kernel</span><span class="o">/</span><span class="n">tools</span><span class="o">/</span><span class="n">arm</span><span class="o">-</span><span class="n">bcm2708</span><span class="o">/</span><span class="n">gcc</span><span class="o">-</span><span class="n">linaro</span><span class="o">-</span><span class="n">arm</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnueabihf</span><span class="o">-</span><span class="n">raspbian</span><span class="o">-</span><span class="n">x64</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">arm</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnueabihf</span><span class="o">-</span><span class="w"></span>
+</code></pre></div>
+
+<p>Rasbperry Pi 1/1.2 B(+), A(+), Zero (W):</p>
+<div class="highlight"><pre><span></span><code><span class="o">~/</span><span class="n">rpi</span><span class="o">-</span><span class="n">kernel</span><span class="o">$</span><span class="w"> </span><span class="k">export</span><span class="w"> </span><span class="n">KERNEL</span><span class="o">=</span><span class="n">kernel</span><span class="w"></span>
+<span class="o">~/</span><span class="n">rpi</span><span class="o">-</span><span class="n">kernel</span><span class="o">$</span><span class="w"> </span><span class="n">cd</span><span class="w"> </span><span class="o">~/</span><span class="n">rpi</span><span class="o">-</span><span class="n">kernel</span><span class="o">/</span><span class="n">linux</span><span class="o">/</span><span class="w"></span>
+<span class="o">~/</span><span class="n">rpi</span><span class="o">-</span><span class="n">kernel</span><span class="o">/</span><span class="n">linux</span><span class="o">/$</span><span class="w"> </span><span class="n">make</span><span class="w"> </span><span class="n">bcmrpi_defconfig</span><span class="w"></span>
+</code></pre></div>
+
+<p>export KERNEL=kernel
+cd ~/rpi-kernel/linux/
+make bcmrpi_defconfig</p>
+<p>Rasbperry Pi 2, 3 B(+):</p>
+<div class="highlight"><pre><span></span><code><span class="o">~/</span><span class="n">rpi</span><span class="o">-</span><span class="n">kernel</span><span class="o">$</span><span class="w"> </span><span class="k">export</span><span class="w"> </span><span class="n">KERNEL</span><span class="o">=</span><span class="n">kernel7</span><span class="w"></span>
+<span class="o">~/</span><span class="n">rpi</span><span class="o">-</span><span class="n">kernel</span><span class="o">$</span><span class="w"> </span><span class="n">cd</span><span class="w"> </span><span class="o">~/</span><span class="n">rpi</span><span class="o">-</span><span class="n">kernel</span><span class="o">/</span><span class="n">linux</span><span class="o">/</span><span class="w"></span>
+<span class="o">~/</span><span class="n">rpi</span><span class="o">-</span><span class="n">kernel</span><span class="o">/</span><span class="n">linux</span><span class="o">/$</span><span class="w"> </span><span class="n">make</span><span class="w"> </span><span class="n">bcm2709_defconfig</span><span class="w"></span>
+</code></pre></div>
+
+<p><a href="https://github.com/raspberrypi/userland">https://github.com/raspberrypi/userland</a></p>
+<p><a href="https://blog.georgmill.de/2015/02/18/update-for-wolfson-audio-card-on-raspberry-pi/">https://blog.georgmill.de/2015/02/18/update-for-wolfson-audio-card-on-raspberry-pi/</a></p>
+<p>Configuration du wifi</p>
+<p><a href="https://kerneldriver.wordpress.com/2012/10/21/configuring-wpa2-using-wpa_supplicant-on-the-raspberry-pi/">https://kerneldriver.wordpress.com/2012/10/21/configuring-wpa2-using-wpa_supplicant-on-the-raspberry-pi/</a></p>
+<p><a href="https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md">https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md</a></p>
+<p>Carte audio Wolfson </p>
+<p><a href="https://blog.georgmill.de/2015/02/18/update-for-wolfson-audio-card-on-raspberry-pi/">https://blog.georgmill.de/2015/02/18/update-for-wolfson-audio-card-on-raspberry-pi/</a></p>
+<p>Noyau basse latence</p>
+<p><a href="https://hackaday.io/project/123415-real-time-kernel-preempt-rt-for-raspberry-pi/details">https://hackaday.io/project/123415-real-time-kernel-preempt-rt-for-raspberry-pi/details</a></p>
+<p>Audio</p>
+<p><a href="https://wiki.linuxaudio.org/wiki/raspberrypi">https://wiki.linuxaudio.org/wiki/raspberrypi</a></p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/tech-pi.html">posted at 20:38</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/systeme.html" rel="tag">Système</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/pi.html" class="tags">Pi</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/minipc.html" class="tags">MiniPC</a>
+                </div>
+            </article>            <h4 class="date">sept. 21, 2018</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/python-morse.html" rel="bookmark" title="Permanent Link to &quot;python-morse&quot;">python-morse</a>
+                </h2>
+
+                
+                
+
+                <h2>Morse</h2>
+<p>Le source utilisé</p>
+<p><a href="https://gist.github.com/dcdeve/3dfba6566029f87b01aa3e38d6e1e26b">https://gist.github.com/dcdeve/3dfba6566029f87b01aa3e38d6e1e26b</a></p>
+<p><a href="https://stackoverflow.com/questions/43012715/morse-audio-decoding-using-python">https://stackoverflow.com/questions/43012715/morse-audio-decoding-using-python</a></p>
+<p><a href="https://code.google.com/archive/p/morse-to-text/source/default/source">https://code.google.com/archive/p/morse-to-text/source/default/source</a></p>
+<p><a href="http://www.kent-engineers.com/codespeed.htm">http://www.kent-engineers.com/codespeed.htm</a></p>
+<p><a href="https://fr.wikipedia.org/wiki/Code_Morse_international#Lettres">https://fr.wikipedia.org/wiki/Code_Morse_international#Lettres</a></p>
+<h2>Audio</h2>
+<p><a href="https://wiki.python.org/moin/Audio">https://wiki.python.org/moin/Audio</a></p>
+<p><a href="http://people.csail.mit.edu/hubert/pyaudio/#play-wave-example">http://people.csail.mit.edu/hubert/pyaudio/#play-wave-example</a></p>
+<p><a href="https://rosettacode.org/wiki/Morse_code#Python">https://rosettacode.org/wiki/Morse_code#Python</a></p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/python-morse.html">posted at 14:56</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/projets.html" rel="tag">Projets</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/python.html" class="tags">Python</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/projets.html" class="tags">Projets</a>
+                </div>
+            </article>            <h4 class="date">sept. 21, 2018</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/emacs-variables-locales.html" rel="bookmark" title="Permanent Link to &quot;Emacs: Variables locales&quot;">Emacs: Variables locales</a>
+                </h2>
+
+                
+                
+
+                <ul>
+<li><a href="https://emacs.stackexchange.com/questions/24907/how-to-use-dir-locals-el-with-projectile">How to use dir locals el with projectile</a></li>
+<li><a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Directory-Variables.html">Directory Variables</a></li>
+</ul>
+<div class="highlight"><pre><span></span><code>;; .dir-locals.el
+((nil
+  (easy-jekyll-basedir . &quot;e:/repo/myblog-dev/&quot;)
+))
+</code></pre></div>
+
+<h1>Régénération des tags</h1>
+<p><a href="https://stackoverflow.com/questions/2550474/is-it-possible-to-auto-regenerate-and-load-tags-table-in-emacs-rather-than-havin">https://stackoverflow.com/questions/2550474/is-it-possible-to-auto-regenerate-and-load-tags-table-in-emacs-rather-than-havin</a></p>
+<div class="highlight"><pre><span></span><code>;; .dir-locals.el
+((nil . ((tags-cmd . &quot;etags -R *.py&quot;))))
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">;; init.el</span><span class="w"></span>
+<span class="c1">;; Regénérer les tags</span><span class="w"></span>
+<span class="p">(</span><span class="nb">defvar</span><span class="w"> </span><span class="nv">tags-cmd</span><span class="w"> </span><span class="s">&quot;etags -R 2&gt;/dev/null&quot;</span><span class="p">)</span><span class="w"></span>
+
+<span class="p">(</span><span class="nb">defun</span><span class="w"> </span><span class="nv">regen-tags</span><span class="w"> </span><span class="p">()</span><span class="w"></span>
+<span class="w">  </span><span class="s">&quot;Regenerate the tags file for the current working directory&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="nv">interactive</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="k">let</span><span class="w"> </span><span class="p">((</span><span class="nv">tag-file</span><span class="w"> </span><span class="p">(</span><span class="nv">concat</span><span class="w"> </span><span class="nv">default-directory</span><span class="w"> </span><span class="s">&quot;TAGS&quot;</span><span class="p">)))</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="nv">shell-command</span><span class="w"> </span><span class="nv">tags-cmd</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="nv">visit-tags-table</span><span class="w"> </span><span class="nv">tag-file</span><span class="p">)))</span><span class="w"></span>
+
+<span class="p">(</span><span class="nv">global-set-key</span><span class="w"> </span><span class="p">(</span><span class="nv">kbd</span><span class="w"> </span><span class="s">&quot;C-c t r&quot;</span><span class="p">)</span><span class="w"> </span><span class="ss">&#39;regen-tags</span><span class="p">)</span><span class="w"></span>
+</code></pre></div>
+
+<p>Rechargement automatique de la table des tags</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">setq</span><span class="w"> </span><span class="nv">tags-revert-without-query</span><span class="w"> </span><span class="no">t</span><span class="p">)</span><span class="w"></span>
+</code></pre></div>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/emacs-variables-locales.html">posted at 08:56</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/developpement.html" rel="tag">Développement</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/emacs.html" class="tags">Emacs</a>
+                </div>
+            </article>            <h4 class="date">sept. 21, 2018</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/system-explorer-menu-contextuel-bash-here.html" rel="bookmark" title="Permanent Link to &quot;Explorer: Menu Contextuel bash-here&quot;">Explorer: Menu Contextuel bash-here</a>
+                </h2>
+
+                
+                
+
+                <div class="highlight"><pre><span></span><code>Windows Registry Editor Version 5.00<span class="w"></span>
+
+<span class="k">[</span><span class="nb">HKEY_CLASSES_ROOT</span><span class="k">\Directory\Background\shell\Bash Here]</span><span class="w"></span>
+
+<span class="k">[</span><span class="nb">HKEY_CLASSES_ROOT</span><span class="k">\Directory\Background\shell\Bash Here\command]</span><span class="w"></span>
+<span class="na">@</span><span class="o">=</span><span class="s">&quot;C:\\tools\\msys64\\msys2_shell.cmd -where %V&quot;</span><span class="w"></span>
+</code></pre></div>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/system-explorer-menu-contextuel-bash-here.html">posted at 06:41</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/tech.html" rel="tag">Tech</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/windows.html" class="tags">Windows</a>
+                </div>
+            </article>            <h4 class="date">sept. 20, 2018</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/jekyll-publish-to-site.html" rel="bookmark" title="Permanent Link to &quot;Jekyll: Publish to site&quot;">Jekyll: Publish to site</a>
+                </h2>
+
+                
+                
+
+                <p><a href="https://www.inmotionhosting.com/support/website/jekyll/how-to-publish-a-jekyll-site-with-git">https://www.inmotionhosting.com/support/website/jekyll/how-to-publish-a-jekyll-site-with-git</a></p>
+<p>hooks/post-receive</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="ch">#!/bin/sh</span>
+git --work-tree<span class="o">=</span>/e/repo/myblog-site --git-dir<span class="o">=</span>/e/repo/myblog.git checkout -f
+</code></pre></div></td></tr></table></div>
+
+<h2>Installation de gitolite</h2>
+<p><a href="http://gitolite.com/gitolite/">http://gitolite.com/gitolite/</a></p>
+<h3>steps to install</h3>
+<p>First, prepare the ssh key:</p>
+<ul>
+<li>login to "git" on the server</li>
+<li>make sure ~/.ssh/authorized_keys is empty or non-existent</li>
+<li>make sure your ssh public key from your workstation has been copied as $HOME/YourName.pub</li>
+</ul>
+<p>Next, install gitolite by running these commands:</p>
+<div class="highlight"><pre><span></span><code>git clone https://github.com/sitaramc/gitolite
+mkdir -p $HOME/bin
+gitolite/install -to $HOME/bin
+</code></pre></div>
+
+<p>Finally, setup gitolite with yourself as the administrator:</p>
+<div class="highlight"><pre><span></span><code>gitolite setup -pk YourName.pub
+</code></pre></div>
+
+<p>Création d'un dépôt</p>
+<div class="highlight"><pre><span></span><code>cd repositories/
+mkdir myblog.git
+cd myblog.git
+git init --bare
+</code></pre></div>
+
+<p>Clonage du dépôt principal</p>
+<div class="highlight"><pre><span></span><code><span class="n">git</span><span class="w"> </span><span class="n">clone</span><span class="w"> </span><span class="n">gittest</span><span class="nv">@duloup</span><span class="p">.</span><span class="nl">org</span><span class="p">:</span><span class="n">myblog</span><span class="w"></span>
+<span class="n">cd</span><span class="w"> </span><span class="n">myblog</span><span class="w"></span>
+</code></pre></div>
+
+<p>Push dans le nouveau dépôt</p>
+<div class="highlight"><pre><span></span><code>git push ~/repositories/myblog.git
+</code></pre></div>
+
+<p>Fichier /home/git/repostitories/myblog.git/hooks/post-receive</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="ch">#!/bin/sh</span>
+<span class="nb">umask</span> <span class="m">002</span>
+git --work-tree<span class="o">=</span>/home/git/myblog --git-dir<span class="o">=</span>/home/git/repositories/myblog.git checkout -f
+</code></pre></div></td></tr></table></div>
+
+<p>Rendre le fichier exécutable</p>
+<div class="highlight"><pre><span></span><code>chmod +x /home/git/repostitories/myblog.git/hooks/post-receive
+</code></pre></div>
+
+<p>Editer la configuration (depuis le client)</p>
+<div class="highlight"><pre><span></span><code><span class="n">git</span><span class="w"> </span><span class="n">clone</span><span class="w"> </span><span class="n">git</span><span class="nv">@pi0</span><span class="err">:</span><span class="n">gitolite</span><span class="o">-</span><span class="k">admin</span><span class="w"></span>
+</code></pre></div>
+
+<p>Editer le fichier conf pout ajouter le nouveau dépôt</p>
+<p>Installer Ruby et Jekyll</p>
+<div class="highlight"><pre><span></span><code>sudo apt-get install ruby ruby-dev
+sudo gem install jekyll
+</code></pre></div>
+
+<p>Lancer le serveur Jekyll</p>
+<div class="highlight"><pre><span></span><code><span class="nv">cd</span><span class="w"> </span><span class="nv">myblog</span><span class="w"></span>
+<span class="nv">bundle</span><span class="w"> </span><span class="k">exec</span><span class="w"> </span><span class="nv">jekyll</span><span class="w"> </span><span class="nv">serve</span><span class="w"> </span><span class="o">--</span><span class="nv">incremental</span><span class="w"></span>
+</code></pre></div>
+
+<p>Tester le service</p>
+<div class="highlight"><pre><span></span><code>http://pi0:4000/
+</code></pre></div>
+
+<p><a href="https://www.booleanworld.com/get-unix-linux-environment-windows-msys2/">https://www.booleanworld.com/get-unix-linux-environment-windows-msys2/</a></p>
+<div class="highlight"><pre><span></span><code><span class="nv">ufw</span><span class="w"> </span><span class="o">--</span><span class="nv">dry</span><span class="o">-</span><span class="nv">run</span><span class="w"> </span><span class="nv">allow</span><span class="w"> </span><span class="nv">in</span><span class="w"> </span><span class="mi">4000</span><span class="o">/</span><span class="nv">tcp</span><span class="w"></span>
+<span class="nv">ufw</span><span class="w"> </span><span class="nv">allow</span><span class="w"> </span><span class="nv">in</span><span class="w"> </span><span class="mi">4000</span><span class="o">/</span><span class="nv">tcp</span><span class="w"></span>
+
+<span class="nv">bundle</span><span class="w"> </span><span class="nv">install</span><span class="w"> </span><span class="o">--</span><span class="nv">path</span><span class="w"> </span><span class="nv">vendor</span><span class="o">/</span><span class="nv">bundle</span><span class="w"></span>
+
+<span class="nv">bundle</span><span class="w"> </span><span class="k">exec</span><span class="w"> </span><span class="nv">jekyll</span><span class="w"> </span><span class="nv">serve</span><span class="w"> </span><span class="o">-</span><span class="nv">B</span><span class="w"></span>
+</code></pre></div>
+
+<p>Lancement du serveur</p>
+<div class="highlight"><pre><span></span><code><span class="nv">cd</span><span class="w"> </span><span class="nv">public_html</span><span class="w"></span>
+<span class="nv">bundle</span><span class="w"> </span><span class="k">exec</span><span class="w"> </span><span class="nv">jekyll</span><span class="w"> </span><span class="nv">serve</span><span class="w"> </span><span class="o">--</span><span class="nv">incremental</span><span class="w"> </span><span class="o">--</span><span class="nv">force</span><span class="o">-</span><span class="nv">polling</span><span class="w"> </span><span class="o">-</span><span class="nv">B</span><span class="w"> </span><span class="o">-</span><span class="nv">H</span><span class="w"> </span><span class="mi">0</span>.<span class="mi">0</span>.<span class="mi">0</span>.<span class="mi">0</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">~/</span><span class="nv">jekyll</span>.<span class="nv">out</span><span class="w"> </span><span class="mi">2</span><span class="o">&gt;&amp;</span><span class="mi">1</span><span class="w"></span>
+</code></pre></div>
+
+<p>Passage sous apache, le serveur jekyll ne prenant pas en compte les modifications</p>
+<div class="highlight"><pre><span></span><code><span class="nv">bundle</span><span class="w"> </span><span class="k">exec</span><span class="w"> </span><span class="nv">jekyll</span><span class="w"> </span><span class="nv">build</span><span class="w"> </span><span class="o">--</span><span class="nv">incremental</span><span class="w"> </span><span class="o">--</span><span class="nv">watch</span><span class="w"></span>
+</code></pre></div>
+
+<p><a href="https://davidegan.me/hide-git-repos-on-public-sites/">https://davidegan.me/hide-git-repos-on-public-sites/</a></p>
+<h2>Problèmes de cache persistant sous apache</h2>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;IfModule</span> <span class="err">mod_expires.c</span><span class="nt">&gt;</span>
+  # Turn on the module.
+  ExpiresActive on
+  # Set the default expiry times.
+  ExpiresByType text/html &quot;modification plus 5 seconds&quot;
+  ExpiresByType text/javascript &quot;modification plus 5 seconds&quot;
+  ExpiresDefault &quot;access plus 2 days&quot;
+<span class="nt">&lt;/IfModule&gt;</span>
+</code></pre></div>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/jekyll-publish-to-site.html">posted at 14:33</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/archive.html" rel="tag">Archive</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/jekyll.html" class="tags">Jekyll</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/git.html" class="tags">Git</a>
+                </div>
+            </article>            <h4 class="date">sept. 20, 2018</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/reaper.html" rel="bookmark" title="Permanent Link to &quot;Reaper&quot;">Reaper</a>
+                </h2>
+
+                
+                
+
+                <ul>
+<li><a href="https://www.youtube.com/watch?v=RJD7aNzSmO8">Drum Machine</a></li>
+<li><a href="https://www.youtube.com/watch?v=RJD7aNzSmO8">Faire une drum machine sous reaper</a></li>
+</ul>
+<h1>OSC</h1>
+<ul>
+<li><a href="https://forum.cockos.com/forumdisplay.php?f=47">Forum</a></li>
+<li><a href="https://osc4py3.readthedocs.io/en/latest/index.html">osc4py3</a></li>
+</ul>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/reaper.html">posted at 08:15</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/musique.html" rel="tag">Musique</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/daw.html" class="tags">DAW</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/sequenceur.html" class="tags">Séquenceur</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/osc.html" class="tags">OSC</a>
+                </div>
+            </article>            <h4 class="date">sept. 19, 2018</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/compilation-dardour-sous-windows.html" rel="bookmark" title="Permanent Link to &quot;Compilation d'ardour sous Windows&quot;">Compilation d'ardour sous Windows</a>
+                </h2>
+
+                
+                
+
+                <p>https://guysherman.com/2015/08/16/building-ardour-on-windows-with-msys2/</p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/compilation-dardour-sous-windows.html">posted at 21:19</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/musique.html" rel="tag">Musique</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/daw.html" class="tags">DAW</a>
+                </div>
+            </article>            <h4 class="date">sept. 19, 2018</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/compilation-de-linuxsampler-sur-asus-1000h.html" rel="bookmark" title="Permanent Link to &quot;Compilation de Linuxsampler sur Asus 1000H&quot;">Compilation de Linuxsampler sur Asus 1000H</a>
+                </h2>
+
+                
+                
+
+                <p><a href="https://linuxsampler.org/debian.html">https://linuxsampler.org/debian.html</a></p>
+<p><a href="http://linuxsampler.org/downloads.html">http://linuxsampler.org/downloads.html</a></p>
+<p><a href="https://raw.githubusercontent.com/pixelb/scripts/master/scripts/gcccpuopt">https://raw.githubusercontent.com/pixelb/scripts/master/scripts/gcccpuopt</a></p>
+<div class="highlight"><pre><span></span><code>-march=atom -mfpmath=sse
+</code></pre></div>
+
+<p>https://wiki.gentoo.org/wiki/Asus_Eee_PC_1000H</p>
+<div class="highlight"><pre><span></span><code>CHOST=&quot;i686-pc-linux-gnu&quot;
+CFLAGS=&quot;-march=atom -O2 -fomit-frame-pointer -pipe -mfpmath=sse&quot;
+CXXFLAGS=&quot;<span class="cp">${</span><span class="n">CFLAGS</span><span class="cp">}</span>&quot;
+
+CXXFLAGS=&quot;-march=atom -O2 -fomit-frame-pointer -pipe -mfpmath=sse&quot; ./configure --prefix=/home/stephane/opt --mandir=\$${prefix}/share/man --infodir=\$${prefix}/share/info
+</code></pre></div>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/compilation-de-linuxsampler-sur-asus-1000h.html">posted at 19:43</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/tech.html" rel="tag">Tech</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/daw.html" class="tags">DAW</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/linux.html" class="tags">Linux</a>
+                </div>
+            </article>
+
+                <div class="clear"></div>
+                <div class="pages">
+
+                    <a href="http://dev.duloup.org/author/duloupdulouporg10.html" class="prev_page">&larr;&nbsp;Previous</a>
+
+                    <a href="http://dev.duloup.org/author/duloupdulouporg12.html" class="next_page">Next&nbsp;&rarr;</a>
+
+                    <span>Page 11 of 15</span>
+                </div>
+
+            <div class="clear"></div>
+            <footer>
+                <p>
+                <a href="https://github.com/jody-frankowski/blue-penguin">Blue Penguin</a> Theme
+                &middot;
+                Powered by <a href="http://getpelican.com">Pelican</a>
+            </footer>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <script src="http://dev.duloup.org/theme/js/stork.js"></script>
+    <script>
+        stork.initialize("http://dev.duloup.org/theme/js/stork.wasm")
+        stork.downloadIndex("sitesearch", "http://dev.duloup.org/search-index.st")
+        stork.attach("sitesearch")
+    </script>
+</body>
+</html>

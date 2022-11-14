@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>MyBlog - Système</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">MyBlog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/archerie.html">Archerie</a></li>
+                    <li><a href="/category/archive.html">Archive</a></li>
+                    <li><a href="/category/culture.html">Culture</a></li>
+                    <li><a href="/category/developpement.html">Développement</a></li>
+                    <li><a href="/category/divers.html">Divers</a></li>
+                    <li><a href="/category/graphisme.html">Graphisme</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li><a href="/category/musique.html">Musique</a></li>
+                    <li><a href="/category/projets.html">Projets</a></li>
+                    <li><a href="/category/reprap.html">RepRap</a></li>
+                    <li><a href="/category/securite.html">Sécurité</a></li>
+                    <li class="active"><a href="/category/systeme.html">Système</a></li>
+                    <li><a href="/category/tech.html">Tech</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+                <section id="content" class="body">
+                    <ol id="posts-list" class="hfeed" start="9">
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/system-apache.html" rel="bookmark"
+                           title="Permalink to Apache">Apache</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-10-03T10:31:17+02:00">
+                Published: Wed 03 October 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/systeme.html">Système</a>.</p>
+<p>tags: <a href="/tag/git.html">Git</a> <a href="/tag/web.html">Web</a> </p>
+</footer><!-- /.post-info -->                <p>Déploiment du blog</p>
+<div class="highlight"><pre><span></span><code><span class="o">/</span><span class="k">var</span><span class="o">/</span><span class="n">www</span><span class="o">/</span><span class="n">git</span><span class="o">/</span><span class="n">myblog</span><span class="w"></span>
+</code></pre></div>
+
+<p>Hook</p>
+<div class="highlight"><pre><span></span><code>/home/git/repositories/myblog.git/hooks/post-receive
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/sh</span>
+<span class="nb">umask</span> <span class="m">002</span>
+git --work-tree<span class="o">=</span>/var/www/git/myblog --git-dir<span class="o">=</span>/home/git/repositories/myblog.git checkout -f 
+</code></pre></div>
+                <a class="readmore" href="/system-apache.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/ubuntu.html" rel="bookmark"
+                           title="Permalink to Ubuntu">Ubuntu</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-10-02T20:11:09+02:00">
+                Published: Tue 02 October 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/systeme.html">Système</a>.</p>
+<p>tags: <a href="/tag/linux.html">Linux</a> </p>
+</footer><!-- /.post-info -->                <p>Pulseaudio</p>
+<p><a href="https://askubuntu.com/questions/14077/how-can-i-change-the-default-audio-device-from-command-line">https://askubuntu.com/questions/14077/how-can-i-change-the-default-audio-device-from-command-line</a></p>
+                <a class="readmore" href="/ubuntu.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/tech-olinuxino.html" rel="bookmark"
+                           title="Permalink to olinuxino">olinuxino</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-10-02T16:55:28+02:00">
+                Published: Tue 02 October 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/systeme.html">Système</a>.</p>
+<p>tags: <a href="/tag/minipc.html">MiniPC</a> </p>
+</footer><!-- /.post-info -->                <p><a href="https://www.olimex.com/Products/OLinuXino/A13/A13-OLinuXino/">https://www.olimex.com/Products/OLinuXino/A13/A13-OLinuXino/</a></p>
+<p><a href="https://www.olimex.com/Products/OLinuXino/A13/A13-OLinuXino/resources/A13-Brief.pdf">https://www.olimex.com/Products/OLinuXino/A13/A13-OLinuXino/resources/A13-Brief.pdf</a></p>
+<p><a href="http://shawnhymel.com/87/getting-wifi-working-on-the-a13-olinuxino-micro/">http://shawnhymel.com/87/getting-wifi-working-on-the-a13-olinuxino-micro/</a></p>
+<p><a href="https://www.olimex.com/wiki/index.php?title=Configuration_of_hardware_in_the_debian_image">https://www.olimex.com/wiki/index.php?title=Configuration_of_hardware_in_the_debian_image</a></p>
+<p><a href="https://linux-sunxi.org/Sunxi-tools">https://linux-sunxi.org/Sunxi-tools</a></p>
+<div class="highlight"><pre><span></span><code><span class="n">git</span><span class="w"> </span><span class="n">clone</span><span class="w"> </span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">linux</span><span class="o">-</span><span class="n">sunxi</span><span class="o">/</span><span class="n">sunxi</span><span class="o">-</span><span class="n">tools</span><span class="w"></span>
+<span class="n">sudo</span><span class="w"> </span><span class="n">apt</span><span class="o">-</span><span class="n">get</span><span class="w"> </span><span class="n">install …</span></code></pre></div>
+                <a class="readmore" href="/tech-olinuxino.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/linux.html" rel="bookmark"
+                           title="Permalink to linux">linux</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-09-21T23:59:50+02:00">
+                Published: Fri 21 September 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/systeme.html">Système</a>.</p>
+<p>tags: <a href="/tag/shell.html">Shell</a> </p>
+</footer><!-- /.post-info -->                <p>Conversion en minuscules</p>
+<div class="highlight"><pre><span></span><code>tr &#39;[:upper:]&#39; &#39;[:lower:]&#39; &lt; input
+</code></pre></div>
+
+<p>Makefile</p>
+<p><a href="https://www.gnu.org/software/make/manual/make.html#Wildcard-Pitfall">https://www.gnu.org/software/make/manual/make.html#Wildcard-Pitfall</a></p>
+<p>Window Manager</p>
+<ul>
+<li><a href="http://fluxbox.org/">FluxBox window manager</a></li>
+<li><a href="https://stackoverflow.com/questions/13294059/preserving-color-of-text-piped-through-less-or-more">https://stackoverflow.com/questions/13294059/preserving-color-of-text-piped-through-less-or-more</a></li>
+</ul>
+<h1><a href="http://www.webupd8.org/2014/09/dual-boot-fix-time-differences-between.html">Fix time differences between Ubuntu and Windows</a></h1>
+<p>registre:</p>
+<div class="highlight"><pre><span></span><code>Windows Registry Editor Version 5.00<span class="w"></span>
+
+<span class="k">[</span><span class="nb">HKEY_LOCAL_MACHINE</span><span class="k">\SYSTEM\CurrentControlSet\Control\TimeZoneInformation]</span><span class="w"></span>
+<span class="na">&quot;RealTimeIsUniversal&quot;</span><span class="o">=-</span><span class="w"></span>
+</code></pre></div>
+
+<p>cmd …</p>
+                <a class="readmore" href="/linux.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/windows.html" rel="bookmark"
+                           title="Permalink to windows">windows</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-09-21T23:57:50+02:00">
+                Published: Fri 21 September 2018
+        </abbr>
+		<br />
+        <abbr class="modified" title="2019-07-26T13:12:34+02:00">
+                Updated: Fri 26 July 2019
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/systeme.html">Système</a>.</p>
+<p>tags: <a href="/tag/windows.html">Windows</a> </p>
+</footer><!-- /.post-info -->                <h1>X11 sous Cygwin</h1>
+<p><a href="https://x.cygwin.com/docs/man1/XWin.1.html#lbAK">https://x.cygwin.com/docs/man1/XWin.1.html#lbAK</a></p>
+<p><a href="https://x.cygwin.com/docs/ug/using-remote-session.html">https://x.cygwin.com/docs/ug/using-remote-session.html</a></p>
+<h1>Rsync</h1>
+<div class="highlight"><pre><span></span><code><span class="n">PS</span><span class="w"> </span><span class="nl">C</span><span class="p">:</span><span class="err">\</span><span class="n">Users</span><span class="err">\</span><span class="n">speyr</span><span class="err">\</span><span class="n">Documents</span><span class="err">\</span><span class="n">myblog</span><span class="err">\</span><span class="n">content</span><span class="err">\</span><span class="n">Dev</span><span class="o">&gt;</span><span class="w"> </span><span class="n">rsync</span><span class="w"> </span><span class="o">-</span><span class="n">rv</span><span class="w"> </span><span class="k">output</span><span class="w"> </span><span class="n">stephane</span><span class="nv">@cirrus</span><span class="err">:</span><span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="k">output</span><span class="w"></span>
+<span class="nl">rsync</span><span class="p">:</span><span class="w"> </span><span class="k">connection</span><span class="w"> </span><span class="n">unexpectedly</span><span class="w"> </span><span class="n">closed</span><span class="w"> </span><span class="p">(</span><span class="mi">0</span><span class="w"> </span><span class="n">bytes</span><span class="w"> </span><span class="n">received</span><span class="w"> </span><span class="n">so</span><span class="w"> </span><span class="n">far</span><span class="p">)</span><span class="w"> </span><span class="o">[</span><span class="n">Receiver</span><span class="o">]</span><span class="w"></span>
+<span class="n">rsync</span><span class="w"> </span><span class="nl">error</span><span class="p">:</span><span class="w"> </span><span class="n">error …</span></code></pre></div>
+                <a class="readmore" href="/windows.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/tech-pi.html" rel="bookmark"
+                           title="Permalink to raspberry-pi">raspberry-pi</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-09-21T20:38:33+02:00">
+                Published: Fri 21 September 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/systeme.html">Système</a>.</p>
+<p>tags: <a href="/tag/pi.html">Pi</a> <a href="/tag/minipc.html">MiniPC</a> </p>
+</footer><!-- /.post-info -->                <p><a href="https://raspberrypi.stackexchange.com/questions/61723/raspberry-pi-3-and-raspbian-jessie-how-to-run-fsck-at-boot">Forcer un fsck au boot</a></p>
+<p><a href="https://wiki.linuxaudio.org/wiki/raspberrypi">Raspberry Pi and realtime, low-latency audio</a></p>
+<p><a href="http://www.frank-durr.de/?p=203">Raspberry Pi Going Realtime with RT Preempt</a></p>
+<p><a href="https://lemariva.com/blog/2018/07/raspberry-pi-preempt-rt-patching-tutorial-for-kernel-4-14-y">#Raspberry Pi: Real Time System - Preempt-RT Patching Tutorial for Kernel 4.14.y </a></p>
+<div class="highlight"><pre><span></span><code><span class="o">~/</span><span class="n">rpi</span><span class="o">-</span><span class="n">kernel</span><span class="o">$</span><span class="w"> </span><span class="k">export</span><span class="w"> </span><span class="n">ARCH</span><span class="o">=</span><span class="n">arm</span><span class="w"></span>
+<span class="o">~/</span><span class="n">rpi</span><span class="o">-</span><span class="n">kernel</span><span class="o">$</span><span class="w"> </span><span class="k">export</span><span class="w"> </span><span class="n">CROSS_COMPILE</span><span class="o">=~/</span><span class="n">rpi</span><span class="o">-</span><span class="n">kernel</span><span class="o">/</span><span class="n">tools</span><span class="o">/</span><span class="n">arm</span><span class="o">-</span><span class="n">bcm2708</span><span class="o">/</span><span class="n">gcc</span><span class="o">-</span><span class="n">linaro</span><span class="o">-</span><span class="n">arm</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnueabihf …</span></code></pre></div>
+                <a class="readmore" href="/tech-pi.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/msys2-outils-unix-sous-windows.html" rel="bookmark"
+                           title="Permalink to MSYS2: Outils unix sous windows">MSYS2: Outils unix sous windows</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-01-10T10:45:54+01:00">
+                Published: Wed 10 January 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/systeme.html">Système</a>.</p>
+<p>tags: <a href="/tag/windows.html">Windows</a> </p>
+</footer><!-- /.post-info -->                <h1>Configuration Bash</h1>
+<p>.bash_aliases</p>
+<div class="highlight"><pre><span></span><code><span class="nb">alias</span> <span class="nv">gbr</span><span class="o">=</span><span class="s1">&#39;git branch&#39;</span>
+<span class="nb">alias</span> <span class="nv">gst</span><span class="o">=</span><span class="s1">&#39;git status&#39;</span>
+<span class="nb">alias</span> <span class="nv">kissh</span><span class="o">=</span><span class="s1">&#39;kill $SSH_AGENT_PID&#39;</span>
+</code></pre></div>
+
+<h1>ssh-agent</h1>
+<div class="highlight"><pre><span></span><code>##################################<span class="w"></span>
+#<span class="w"> </span><span class="nv">Script</span><span class="w"> </span><span class="nv">de</span><span class="w"> </span><span class="nv">lancement</span><span class="w"> </span><span class="nv">de</span><span class="w"> </span><span class="nv">ssh</span><span class="o">-</span><span class="nv">agent</span><span class="w"></span>
+##################################<span class="w"></span>
+<span class="nv">unset</span><span class="w"> </span><span class="nv">SSH_AGENT_PID</span><span class="w"></span>
+
+<span class="k">if</span><span class="w"> </span>[<span class="w"> </span><span class="o">-</span><span class="nv">f</span><span class="w"> </span>$<span class="nv">HOME</span><span class="o">/</span>.<span class="nv">bash_aliases</span><span class="w"> </span>]<span class="c1">; then</span><span class="w"></span>
+<span class="w">    </span>.<span class="w"> </span>$<span class="nv">HOME</span><span class="o">/</span>.<span class="nv">bash_aliases</span><span class="w"></span>
+<span class="nv">fi</span><span class="w"></span>
+<span class="k">if</span><span class="w"> </span>[<span class="w"> </span><span class="o">-</span><span class="nv">f</span><span class="w"> </span>$<span class="nv">HOME</span><span class="o">/</span><span class="nv">ssh</span><span class="o">-</span><span class="nv">agent</span>.<span class="nv">out</span><span class="w"> </span>]<span class="c1">; then</span><span class="w"></span>
+<span class="w">    </span><span class="nv">echo</span><span class="w"> </span><span class="s2">&quot;fichier ssh-agent.out présent&quot;</span><span class="w"></span>
+<span class="w">    </span>.<span class="w"> </span>$<span class="nv">HOME</span><span class="o">/</span><span class="nv">ssh</span><span class="o">-</span><span class="nv">agent</span>.<span class="nv">out</span><span class="w"></span>
+<span class="w">    </span><span class="nv">ps</span><span class="w"> </span><span class="o">-</span><span class="nv">p …</span></code></pre></div>
+                <a class="readmore" href="/msys2-outils-unix-sous-windows.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+                </ol><!-- /#posts-list -->
+<p class="paginator">
+        <a href="/category/systeme.html">&#8647;</a>
+        <a href="/category/systeme.html">&laquo;</a>
+    Page 2 / 2
+</p>
+                </section><!-- /#content -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

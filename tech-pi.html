@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>raspberry-pi</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <meta name="description" content="Forcer un fsck au boot Raspberry Pi and realtime, low-latency audio Raspberry Pi Going Realtime with RT Preempt #Raspberry Pi: Real Time System -..." />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">MyBlog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/archerie.html">Archerie</a></li>
+                    <li><a href="/category/archive.html">Archive</a></li>
+                    <li><a href="/category/culture.html">Culture</a></li>
+                    <li><a href="/category/developpement.html">Développement</a></li>
+                    <li><a href="/category/divers.html">Divers</a></li>
+                    <li><a href="/category/graphisme.html">Graphisme</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li><a href="/category/musique.html">Musique</a></li>
+                    <li><a href="/category/projets.html">Projets</a></li>
+                    <li><a href="/category/reprap.html">RepRap</a></li>
+                    <li><a href="/category/securite.html">Sécurité</a></li>
+                    <li class="active"><a href="/category/systeme.html">Système</a></li>
+                    <li><a href="/category/tech.html">Tech</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/tech-pi.html" rel="bookmark"
+           title="Permalink to raspberry-pi">raspberry-pi</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-09-21T20:38:33+02:00">
+                Published: Fri 21 September 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/systeme.html">Système</a>.</p>
+<p>tags: <a href="/tag/pi.html">Pi</a> <a href="/tag/minipc.html">MiniPC</a> </p>
+</footer><!-- /.post-info -->      <p><a href="https://raspberrypi.stackexchange.com/questions/61723/raspberry-pi-3-and-raspbian-jessie-how-to-run-fsck-at-boot">Forcer un fsck au boot</a></p>
+<p><a href="https://wiki.linuxaudio.org/wiki/raspberrypi">Raspberry Pi and realtime, low-latency audio</a></p>
+<p><a href="http://www.frank-durr.de/?p=203">Raspberry Pi Going Realtime with RT Preempt</a></p>
+<p><a href="https://lemariva.com/blog/2018/07/raspberry-pi-preempt-rt-patching-tutorial-for-kernel-4-14-y">#Raspberry Pi: Real Time System - Preempt-RT Patching Tutorial for Kernel 4.14.y </a></p>
+<div class="highlight"><pre><span></span><code><span class="o">~/</span><span class="n">rpi</span><span class="o">-</span><span class="n">kernel</span><span class="o">$</span><span class="w"> </span><span class="k">export</span><span class="w"> </span><span class="n">ARCH</span><span class="o">=</span><span class="n">arm</span><span class="w"></span>
+<span class="o">~/</span><span class="n">rpi</span><span class="o">-</span><span class="n">kernel</span><span class="o">$</span><span class="w"> </span><span class="k">export</span><span class="w"> </span><span class="n">CROSS_COMPILE</span><span class="o">=~/</span><span class="n">rpi</span><span class="o">-</span><span class="n">kernel</span><span class="o">/</span><span class="n">tools</span><span class="o">/</span><span class="n">arm</span><span class="o">-</span><span class="n">bcm2708</span><span class="o">/</span><span class="n">gcc</span><span class="o">-</span><span class="n">linaro</span><span class="o">-</span><span class="n">arm</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnueabihf</span><span class="o">-</span><span class="n">raspbian</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">arm</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnueabihf</span><span class="o">-</span><span class="w"></span>
+<span class="o">~/</span><span class="n">rpi</span><span class="o">-</span><span class="n">kernel</span><span class="o">$</span><span class="w"> </span><span class="k">export</span><span class="w"> </span><span class="n">INSTALL_MOD_PATH</span><span class="o">=~/</span><span class="n">rpi</span><span class="o">-</span><span class="n">kernel</span><span class="o">/</span><span class="n">rt</span><span class="o">-</span><span class="n">kernel</span><span class="w"></span>
+<span class="o">~/</span><span class="n">rpi</span><span class="o">-</span><span class="n">kernel</span><span class="o">$</span><span class="w"> </span><span class="k">export</span><span class="w"> </span><span class="n">INSTALL_DTBS_PATH</span><span class="o">=~/</span><span class="n">rpi</span><span class="o">-</span><span class="n">kernel</span><span class="o">/</span><span class="n">rt</span><span class="o">-</span><span class="n">kernel</span><span class="w"></span>
+
+<span class="k">export</span><span class="w"> </span><span class="n">ARCH</span><span class="o">=</span><span class="n">arm</span><span class="w"></span>
+<span class="k">export</span><span class="w"> </span><span class="n">CROSS_COMPILE</span><span class="o">=~/</span><span class="n">rpi</span><span class="o">-</span><span class="n">kernel</span><span class="o">/</span><span class="n">tools</span><span class="o">/</span><span class="n">arm</span><span class="o">-</span><span class="n">bcm2708</span><span class="o">/</span><span class="n">gcc</span><span class="o">-</span><span class="n">linaro</span><span class="o">-</span><span class="n">arm</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnueabihf</span><span class="o">-</span><span class="n">raspbian</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">arm</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnueabihf</span><span class="o">-</span><span class="w"></span>
+<span class="k">export</span><span class="w"> </span><span class="n">INSTALL_MOD_PATH</span><span class="o">=~/</span><span class="n">rpi</span><span class="o">-</span><span class="n">kernel</span><span class="o">/</span><span class="n">rt</span><span class="o">-</span><span class="n">kernel</span><span class="w"></span>
+<span class="k">export</span><span class="w"> </span><span class="n">INSTALL_DTBS_PATH</span><span class="o">=~/</span><span class="n">rpi</span><span class="o">-</span><span class="n">kernel</span><span class="o">/</span><span class="n">rt</span><span class="o">-</span><span class="n">kernel</span><span class="w"></span>
+<span class="k">export</span><span class="w"> </span><span class="n">CROSS_COMPILE</span><span class="o">=~/</span><span class="n">rpi</span><span class="o">-</span><span class="n">kernel</span><span class="o">/</span><span class="n">tools</span><span class="o">/</span><span class="n">arm</span><span class="o">-</span><span class="n">bcm2708</span><span class="o">/</span><span class="n">gcc</span><span class="o">-</span><span class="n">linaro</span><span class="o">-</span><span class="n">arm</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnueabihf</span><span class="o">-</span><span class="n">raspbian</span><span class="o">-</span><span class="n">x64</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">arm</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnueabihf</span><span class="o">-</span><span class="w"></span>
+</code></pre></div>
+
+<p>Rasbperry Pi 1/1.2 B(+), A(+), Zero (W):</p>
+<div class="highlight"><pre><span></span><code><span class="o">~/</span><span class="n">rpi</span><span class="o">-</span><span class="n">kernel</span><span class="o">$</span><span class="w"> </span><span class="k">export</span><span class="w"> </span><span class="n">KERNEL</span><span class="o">=</span><span class="n">kernel</span><span class="w"></span>
+<span class="o">~/</span><span class="n">rpi</span><span class="o">-</span><span class="n">kernel</span><span class="o">$</span><span class="w"> </span><span class="n">cd</span><span class="w"> </span><span class="o">~/</span><span class="n">rpi</span><span class="o">-</span><span class="n">kernel</span><span class="o">/</span><span class="n">linux</span><span class="o">/</span><span class="w"></span>
+<span class="o">~/</span><span class="n">rpi</span><span class="o">-</span><span class="n">kernel</span><span class="o">/</span><span class="n">linux</span><span class="o">/$</span><span class="w"> </span><span class="n">make</span><span class="w"> </span><span class="n">bcmrpi_defconfig</span><span class="w"></span>
+</code></pre></div>
+
+<p>export KERNEL=kernel
+cd ~/rpi-kernel/linux/
+make bcmrpi_defconfig</p>
+<p>Rasbperry Pi 2, 3 B(+):</p>
+<div class="highlight"><pre><span></span><code><span class="o">~/</span><span class="n">rpi</span><span class="o">-</span><span class="n">kernel</span><span class="o">$</span><span class="w"> </span><span class="k">export</span><span class="w"> </span><span class="n">KERNEL</span><span class="o">=</span><span class="n">kernel7</span><span class="w"></span>
+<span class="o">~/</span><span class="n">rpi</span><span class="o">-</span><span class="n">kernel</span><span class="o">$</span><span class="w"> </span><span class="n">cd</span><span class="w"> </span><span class="o">~/</span><span class="n">rpi</span><span class="o">-</span><span class="n">kernel</span><span class="o">/</span><span class="n">linux</span><span class="o">/</span><span class="w"></span>
+<span class="o">~/</span><span class="n">rpi</span><span class="o">-</span><span class="n">kernel</span><span class="o">/</span><span class="n">linux</span><span class="o">/$</span><span class="w"> </span><span class="n">make</span><span class="w"> </span><span class="n">bcm2709_defconfig</span><span class="w"></span>
+</code></pre></div>
+
+<p><a href="https://github.com/raspberrypi/userland">https://github.com/raspberrypi/userland</a></p>
+<p><a href="https://blog.georgmill.de/2015/02/18/update-for-wolfson-audio-card-on-raspberry-pi/">https://blog.georgmill.de/2015/02/18/update-for-wolfson-audio-card-on-raspberry-pi/</a></p>
+<p>Configuration du wifi</p>
+<p><a href="https://kerneldriver.wordpress.com/2012/10/21/configuring-wpa2-using-wpa_supplicant-on-the-raspberry-pi/">https://kerneldriver.wordpress.com/2012/10/21/configuring-wpa2-using-wpa_supplicant-on-the-raspberry-pi/</a></p>
+<p><a href="https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md">https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md</a></p>
+<p>Carte audio Wolfson </p>
+<p><a href="https://blog.georgmill.de/2015/02/18/update-for-wolfson-audio-card-on-raspberry-pi/">https://blog.georgmill.de/2015/02/18/update-for-wolfson-audio-card-on-raspberry-pi/</a></p>
+<p>Noyau basse latence</p>
+<p><a href="https://hackaday.io/project/123415-real-time-kernel-preempt-rt-for-raspberry-pi/details">https://hackaday.io/project/123415-real-time-kernel-preempt-rt-for-raspberry-pi/details</a></p>
+<p>Audio</p>
+<p><a href="https://wiki.linuxaudio.org/wiki/raspberrypi">https://wiki.linuxaudio.org/wiki/raspberrypi</a></p>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>MyBlog - Tech</title><link href="http://dev.duloup.org/" rel="alternate"></link><link href="http://dev.duloup.org/feeds/tech.atom.xml" rel="self"></link><id>http://dev.duloup.org/</id><updated>2022-09-02T20:30:00+01:00</updated><entry><title>Raspberry Pi Pico</title><link href="http://dev.duloup.org/raspberry-pi-pico.html" rel="alternate"></link><published>2022-09-02T20:30:00+01:00</published><updated>2022-09-02T20:30:00+01:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2022-09-02:/raspberry-pi-pico.html</id><content type="html">&lt;p&gt;&lt;img alt="Raspberry Pi Pico" src="img/raspberry-pi-pico-sm.jpg"&gt;&lt;/p&gt;
+&lt;h2&gt;Liens&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://www.raspberrypi.com/products/raspberry-pi-pico/"&gt;https://www.raspberrypi.com/products/raspberry-pi-pico/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Editeur&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://thonny.org/"&gt;https://thonny.org/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://picockpit.com/raspberry-pi/raspberry-pi-pico-and-micropython-on-windows/"&gt;https://picockpit.com/raspberry-pi/raspberry-pi-pico-and-micropython-on-windows/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;RShell&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://www.mfitzp.com/using-micropython-raspberry-pico/"&gt;https://www.mfitzp.com/using-micropython-raspberry-pico/&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;python -m pip install rshell
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Pinout&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="Pico Pinout" src="img/Raspberry-Pi-Pico-Pinout.jpg"&gt;&lt;/p&gt;
+&lt;h2&gt;DS1397 RTC&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://www.iotstarters.com/diy-digital-clock-with-rtc-ds1307-and-raspberry-pi-pico/"&gt;https://www.iotstarters.com/diy-digital-clock-with-rtc-ds1307-and-raspberry-pi-pico/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="ds1307" src="img/ds1307-RTC-module-min.jpg"&gt;&lt;/p&gt;
+&lt;h2&gt;I2C&lt;/h2&gt;
+&lt;p&gt;Scanner le bus I2C&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://micropython.fr/modules_center/seriel_i2c/scanner_bus_i2c/"&gt;https://micropython.fr/modules_center/seriel_i2c/scanner_bus_i2c/&lt;/a&gt;&lt;/p&gt;</content><category term="Tech"></category><category term="Web"></category></entry><entry><title>Angular</title><link href="http://dev.duloup.org/angular.html" rel="alternate"></link><published>2021-11-04T10:38:08+01:00</published><updated>2021-11-04T10:38:08+01:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2021-11-04:/angular.html</id><summary type="html">&lt;h2&gt;Liens&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://www.typescriptlang.org/"&gt;https://www.typescriptlang.org/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;TypeScript is JavaScript with syntax for types.&lt;/p&gt;
+&lt;p&gt;TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.&lt;/p&gt;
+&lt;h2&gt;Environnement de développement&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://angular.io/guide/setup-local"&gt;https://angular.io/guide/setup-local&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;scoop&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;install&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;nodejs&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="n"&gt;npm&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;install&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;g&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;@angular&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;cli&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Tutorial 1&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://angular.io/tutorial"&gt;https://angular …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Liens&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://www.typescriptlang.org/"&gt;https://www.typescriptlang.org/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;TypeScript is JavaScript with syntax for types.&lt;/p&gt;
+&lt;p&gt;TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.&lt;/p&gt;
+&lt;h2&gt;Environnement de développement&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://angular.io/guide/setup-local"&gt;https://angular.io/guide/setup-local&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;scoop&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;install&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;nodejs&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="n"&gt;npm&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;install&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;g&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;@angular&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;cli&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Tutorial 1&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://angular.io/tutorial"&gt;https://angular.io/tutorial&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Création de l'application initiale&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;ng new my-app
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Lancer l'application&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;cd my-app
+ng serve --open
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href="http://localhost:4200/"&gt;http://localhost:4200/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Tutorial 2&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://angular.io/tutorial/"&gt;https://angular.io/tutorial/&lt;/a&gt;&lt;/p&gt;</content><category term="Tech"></category><category term="Web"></category></entry><entry><title>PyPass</title><link href="http://dev.duloup.org/pypass.html" rel="alternate"></link><published>2021-09-24T11:19:00+02:00</published><updated>2021-09-24T11:19:00+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2021-09-24:/pypass.html</id><content type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="nv"&gt;@duloup&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nl"&gt;org&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;pypass&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Projets concurrents : &lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/aviau/python-pass"&gt;https://github.com/aviau/python-pass&lt;/a&gt;&lt;/p&gt;</content><category term="Tech"></category><category term="Projets"></category><category term="Python"></category></entry><entry><title>PHP</title><link href="http://dev.duloup.org/2021-09-23-php.html" rel="alternate"></link><published>2021-09-23T11:19:00+02:00</published><updated>2021-09-23T11:19:00+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2021-09-23:/2021-09-23-php.html</id><summary type="html">&lt;p&gt;&lt;a href="https://www.soupbowl.io/2020/03/replace-lamp-with-docker-the-easy-way/"&gt;https://www.soupbowl.io/2020/03/replace-lamp-with-docker-the-easy-way/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.tutorialrepublic.com/php-tutorial/php-get-started.php"&gt;https://www.tutorialrepublic.com/php-tutorial/php-get-started.php&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.swig.org/Doc4.0/Php.html"&gt;http://www.swig.org/Doc4.0/Php.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.jetbrains.com/phpstorm/"&gt;https://www.jetbrains.com/phpstorm/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://getcomposer.org/download/"&gt;https://getcomposer.org/download/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Swig&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://www.dev2qa.com/how-to-install-swig-on-macos-linux-and-windows/"&gt;https://www.dev2qa.com/how-to-install-swig-on-macos-linux-and-windows/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.swig.org/download.html"&gt;http://www.swig.org/download.html&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="o"&gt;/*&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;File&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;example&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;*/&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="c1"&gt;#include &amp;lt;time.h&amp;gt;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;double …&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://www.soupbowl.io/2020/03/replace-lamp-with-docker-the-easy-way/"&gt;https://www.soupbowl.io/2020/03/replace-lamp-with-docker-the-easy-way/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.tutorialrepublic.com/php-tutorial/php-get-started.php"&gt;https://www.tutorialrepublic.com/php-tutorial/php-get-started.php&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.swig.org/Doc4.0/Php.html"&gt;http://www.swig.org/Doc4.0/Php.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.jetbrains.com/phpstorm/"&gt;https://www.jetbrains.com/phpstorm/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://getcomposer.org/download/"&gt;https://getcomposer.org/download/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Swig&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://www.dev2qa.com/how-to-install-swig-on-macos-linux-and-windows/"&gt;https://www.dev2qa.com/how-to-install-swig-on-macos-linux-and-windows/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.swig.org/download.html"&gt;http://www.swig.org/download.html&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="o"&gt;/*&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;File&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;example&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;*/&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="c1"&gt;#include &amp;lt;time.h&amp;gt;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;double&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;My_variable&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;3.0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="nb nb-Type"&gt;int&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;fact&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb nb-Type"&gt;int&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;lt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;return&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;return&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;fact&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="nb nb-Type"&gt;int&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;my_mod&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb nb-Type"&gt;int&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb nb-Type"&gt;int&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="k"&gt;return&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="nb"&gt;char&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;get_time&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;time_t&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ltime&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="n"&gt;ltime&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="k"&gt;return&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ctime&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="n"&gt;ltime&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="cm"&gt;/* example.i */&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nf"&gt;%module&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;example&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="cm"&gt;/* Put header files here or function declarations like below */&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="k"&gt;extern&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;double&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;My_variable&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="k"&gt;extern&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;fact&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="k"&gt;extern&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;my_mod&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="k"&gt;extern&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;char&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="nf"&gt;get_time&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="k"&gt;extern&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;double&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;My_variable&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="k"&gt;extern&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;fact&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="k"&gt;extern&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;my_mod&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="k"&gt;extern&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;char&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="nf"&gt;get_time&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;apt-get install libpcre3 libpcre3-dev
+
+curl https://altushost-swe.dl.sourceforge.net/project/swig/swig/swig-4.0.2/swig-4.0.2.tar.gz -o swig-4.0.2.tar.gz
+tar zxvf swig-4.0.2.tar.gz
+cd swig-4.0.2/
+./configure --prefix=/usr/local
+make &amp;amp;&amp;amp; make install
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href="http://www.swig.org/tutorial.html"&gt;http://www.swig.org/tutorial.html&lt;/a&gt;
+apt install tcl tcl-dev&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nv"&gt;apt&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;install&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;tcl&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;tcl&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;dev&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nv"&gt;gcc&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;fpic&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;c&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;example&lt;/span&gt;.&lt;span class="nv"&gt;c&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;example_wrap&lt;/span&gt;.&lt;span class="nv"&gt;c&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;I&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;usr&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="k"&gt;include&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;tcl&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nv"&gt;gcc&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;shared&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;example&lt;/span&gt;.&lt;span class="nv"&gt;o&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;example_wrap&lt;/span&gt;.&lt;span class="nv"&gt;o&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;o&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;example&lt;/span&gt;.&lt;span class="nv"&gt;so&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Gestionnaire de paquets composer&lt;/h2&gt;
+&lt;h3&gt;Installation&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nt"&gt;php&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;-r&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;copy(&amp;#39;https://getcomposer.org/installer&amp;#39;, &amp;#39;composer-setup.php&amp;#39;);&amp;quot;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nt"&gt;php&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;-r&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;if (hash_file(&amp;#39;sha384&amp;#39;, &amp;#39;composer-setup.php&amp;#39;) === &amp;#39;756890a4488ce9024fc62c56153228907f1545c228516cbf63f885e036d37e9a59d27d63f46af1d4d07ee0f76181c7d3&amp;#39;) { echo &amp;#39;Installer verified&amp;#39;; } else { echo &amp;#39;Installer corrupt&amp;#39;; unlink(&amp;#39;composer-setup.php&amp;#39;); } echo PHP_EOL;&amp;quot;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nt"&gt;php&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;composer-setup&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;php&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nt"&gt;php&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;-r&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;unlink(&amp;#39;composer-setup.php&amp;#39;);&amp;quot;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="nt"&gt;sudo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;mv&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;composer&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;phar&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;usr&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;local&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;bin&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;composer&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Tech"></category><category term="Dev"></category><category term="Langages"></category></entry><entry><title>Bootstarp</title><link href="http://dev.duloup.org/Tech/2021-07-06-bootstrap.html" rel="alternate"></link><published>2021-07-06T16:52:00+02:00</published><updated>2021-07-06T16:52:00+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2021-07-06:/Tech/2021-07-06-bootstrap.html</id><content type="html">&lt;p&gt;&lt;a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/"&gt;https://getbootstrap.com/docs/5.0/getting-started/introduction/&lt;/a&gt;&lt;/p&gt;</content><category term="Tech"></category><category term="Web"></category></entry><entry><title>Pandas</title><link href="http://dev.duloup.org/tech-python-pandas.html" rel="alternate"></link><published>2021-07-05T16:27:00+02:00</published><updated>2021-07-05T16:27:00+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2021-07-05:/tech-python-pandas.html</id><content type="html">&lt;h1&gt;Pandas&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://pypi.org/project/django-pandas/"&gt;django-pandas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://nikgrozev.com/2015/12/27/pandas-in-jupyter-quickstart-and-useful-snippets/"&gt;Pandas in Jupyter - Quickstart and Useful Snippets&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><category term="Tech"></category><category term="python"></category></entry><entry><title>Pygmentize Less</title><link href="http://dev.duloup.org/tech-less.html" rel="alternate"></link><published>2021-07-05T16:18:00+02:00</published><updated>2021-07-05T16:18:00+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2021-07-05:/tech-less.html</id><content type="html">&lt;p&gt;&lt;a href="https://gilesorr.com/blog/pygmentize-less-update.html"&gt;https://gilesorr.com/blog/pygmentize-less-update.html&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# ~/.zshrc&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="k"&gt;export&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;LESSOPEN&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;| pygmentize -g -f terminal &lt;/span&gt;&lt;span class="si"&gt;%s&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Tech"></category><category term="Shell"></category><category term="Linux"></category></entry><entry><title>Django CMS</title><link href="http://dev.duloup.org/Dev/2021-08-05-django-cms.html" rel="alternate"></link><published>2021-05-08T07:34:00+02:00</published><updated>2021-05-08T07:34:00+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2021-05-08:/Dev/2021-08-05-django-cms.html</id><content type="html">&lt;h1&gt;Images docker&lt;/h1&gt;
+&lt;p&gt;https://docs.divio.com/en/latest/how-to/quickstart-django-cms/?highlight=django&lt;/p&gt;
+&lt;h1&gt;Tutos&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://docs.django-cms.org/en/latest/introduction/02-templates_placeholders.html"&gt;https://docs.django-cms.org/en/latest/introduction/02-templates_placeholders.html&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Bootstrap&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://bootswatch.com/"&gt;Thèmes libres de droits&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Plugins&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://github.com/bitlabstudio/cmsplugin-markdown"&gt;cmsplugin-markdown&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Recherche&lt;/h1&gt;
+&lt;p&gt;https://docs.django-cms.org/en/latest/topics/searchdocs.html&lt;/p&gt;</content><category term="Tech"></category><category term="django"></category><category term="python"></category><category term="CMS"></category></entry><entry><title>Fabric</title><link href="http://dev.duloup.org/fabric.html" rel="alternate"></link><published>2019-07-28T17:54:00+02:00</published><updated>2019-07-28T17:54:00+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2019-07-28:/fabric.html</id><content type="html">&lt;p&gt;&lt;a href="https://www.fabfile.org/"&gt;Welcome to Fabric!&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://stackoverflow.com/questions/33148831/python-import-error-no-module-named-fabric-api"&gt;https://stackoverflow.com/questions/33148831/python-import-error-no-module-named-fabric-api&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Pelican&lt;/h1&gt;
+&lt;p&gt;Pelican génère un fabfile.py, mais uniquement python2&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/getpelican/pelican/issues/2354"&gt;https://github.com/getpelican/pelican/issues/2354&lt;/a&gt;&lt;/p&gt;</content><category term="Tech"></category><category term="Build"></category></entry><entry><title>Bumpversion</title><link href="http://dev.duloup.org/tech-python-bumpversion.html" rel="alternate"></link><published>2019-07-28T00:26:00+02:00</published><updated>2019-07-28T00:26:00+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2019-07-28:/tech-python-bumpversion.html</id><content type="html">&lt;p&gt;&lt;a href="https://github.com/peritus/bumpversion"&gt;bumpversion&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/peritus/bumpversion/issues/135"&gt;TypeError: environment can only contain strings&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Solution:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/c4urself/bump2version"&gt;https://github.com/c4urself/bump2version&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install bump2version
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Tech"></category><category term="Git"></category><category term="Python"></category></entry><entry><title>Django Framework</title><link href="http://dev.duloup.org/dev-django.html" rel="alternate"></link><published>2019-07-27T19:40:00+02:00</published><updated>2019-07-27T19:40:00+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2019-07-27:/dev-django.html</id><summary type="html">&lt;h1&gt;Installation&lt;/h1&gt;
+&lt;h2&gt;&lt;a href="python"&gt;Python&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;Virtualenv (ancienne méthode)&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;virtualenv ~/.virtualenvs/django
+. ~/.virtualenvs/django/bin/activate
+pip install django
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Pipenv&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pipenv install django
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.djangoproject.com/en/2.2/howto/initial-data/"&gt;Providing initial data for models&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.hackerearth.com/fr/practice/notes/bokeh-interactive-visualization-library-use-graph-with-django-template/"&gt;Integrating Bokeh Graphs with Django template&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://stackoverflow.com/questions/44184268/django-invalid-http-host-header-testserver-you-may-need-to-add-utestserver"&gt;Django Invalid HTTP_HOST header: 'testserver'. You may need to add u'testserver' to ALLOWED_HOSTS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Commandes&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://docs.djangoproject.com/en/2.2/howto/custom-management-commands/"&gt;Writing custom django-admin commands&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Django&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://openclassrooms.com/fr/courses/4425076-decouvrez-le-framework-django"&gt;OpenClassRoom …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Installation&lt;/h1&gt;
+&lt;h2&gt;&lt;a href="python"&gt;Python&lt;/a&gt;&lt;/h2&gt;
+&lt;h2&gt;Virtualenv (ancienne méthode)&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;virtualenv ~/.virtualenvs/django
+. ~/.virtualenvs/django/bin/activate
+pip install django
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Pipenv&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pipenv install django
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.djangoproject.com/en/2.2/howto/initial-data/"&gt;Providing initial data for models&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.hackerearth.com/fr/practice/notes/bokeh-interactive-visualization-library-use-graph-with-django-template/"&gt;Integrating Bokeh Graphs with Django template&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://stackoverflow.com/questions/44184268/django-invalid-http-host-header-testserver-you-may-need-to-add-utestserver"&gt;Django Invalid HTTP_HOST header: 'testserver'. You may need to add u'testserver' to ALLOWED_HOSTS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Commandes&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://docs.djangoproject.com/en/2.2/howto/custom-management-commands/"&gt;Writing custom django-admin commands&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Django&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://openclassrooms.com/fr/courses/4425076-decouvrez-le-framework-django"&gt;OpenClassRoom: Découvrez le framework Django&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.djangoproject.com/start/"&gt;Getting started with Django&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Vérifier la version de Django&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;python -m django --version
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Créer un projet django&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;mkdir realestate
+cd realestate
+django-admin startproject .
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Créer une application "realestate" dans notre projet "mysite"&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;django-admin startapp realestate
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Créer l'utilisateur admin&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;python&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;manage&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;py&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;createsuperuser&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="c1"&gt;--username admin --email admin@admin.io&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;En python&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;django.contrib.auth&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;get_user_model&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="n"&gt;CustomUser&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;get_user_model&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+&lt;span class="n"&gt;CustomUser&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;objects&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;create_superuser&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;
+&lt;span class="s1"&gt;&amp;#39;admin&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;admin@admin.io&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;admin&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://pypi.org/project/django-pandas/"&gt;django-pandas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://nikgrozev.com/2015/12/27/pandas-in-jupyter-quickstart-and-useful-snippets/"&gt;Pandas in Jupyter - Quickstart and Useful Snippets&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="https://djangopackages.org/grids/g/project-management/"&gt;https://djangopackages.org/grids/g/project-management/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Tests&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://docs.wagtail.io/en/stable/advanced_topics/testing.html"&gt;https://docs.wagtail.io/en/stable/advanced_topics/testing.html&lt;/a&gt;&lt;/p&gt;</content><category term="Tech"></category><category term="Web"></category><category term="Python"></category><category term="Django"></category></entry><entry><title>Tables avec Pelican</title><link href="http://dev.duloup.org/tech-python-pelican-tags.html" rel="alternate"></link><published>2019-07-27T14:46:00+02:00</published><updated>2019-07-27T14:46:00+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2019-07-27:/tech-python-pelican-tags.html</id><content type="html">&lt;p&gt;&lt;a href="https://github.com/getpelican/pelican-plugins"&gt;https://github.com/getpelican/pelican-plugins&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;installation des plugins&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git clone https://github.com/getpelican/pelican-plugins
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;configuration:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;PLUGIN_PATHS = [&amp;#39;path/to/pelican-plugins&amp;#39;]
+PLUGINS = [&amp;#39;assets&amp;#39;, &amp;#39;sitemap&amp;#39;, &amp;#39;gravatar&amp;#39;]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;bootstrapify&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install bs4
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href="https://github.com/ingwinlu/pelican-bootstrapify"&gt;https://github.com/ingwinlu/pelican-bootstrapify&lt;/a&gt;&lt;/p&gt;</content><category term="Tech"></category><category term="pelican"></category></entry><entry><title>Python</title><link href="http://dev.duloup.org/tech-python.html" rel="alternate"></link><published>2019-07-27T08:52:00+02:00</published><updated>2019-07-27T08:52:00+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2019-07-27:/tech-python.html</id><summary type="html">&lt;p&gt;Language Python&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://pep8.org/"&gt;PEP 8 - the Style Guide for Python Code&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Lancer un sous processus&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://docs.python.org/3.5/library/subprocess.html"&gt;subprocess&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://stackoverflow.com/questions/24771402/powershell-operator-change-encoding"&gt;Powershell '&amp;gt;' operator, change encoding?&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;https://www.xspdf.com/resolution/53213676.html&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$PSDefaultParameterValues[&amp;#39;Out-File:Encoding&amp;#39;] = &amp;#39;utf8&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;PowerShell:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip freeze | Out-File -Encoding UTF8 requirements.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h1&gt;YAML&lt;/h1&gt;
+&lt;p&gt;Installation de la version de python par défaut&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo update-alternatives --install …&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Language Python&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://pep8.org/"&gt;PEP 8 - the Style Guide for Python Code&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Lancer un sous processus&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://docs.python.org/3.5/library/subprocess.html"&gt;subprocess&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://stackoverflow.com/questions/24771402/powershell-operator-change-encoding"&gt;Powershell '&amp;gt;' operator, change encoding?&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;https://www.xspdf.com/resolution/53213676.html&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$PSDefaultParameterValues[&amp;#39;Out-File:Encoding&amp;#39;] = &amp;#39;utf8&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;PowerShell:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip freeze | Out-File -Encoding UTF8 requirements.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h1&gt;YAML&lt;/h1&gt;
+&lt;p&gt;Installation de la version de python par défaut&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 10
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Tech"></category><category term="Languages"></category><category term="Python"></category></entry><entry><title>Nginx</title><link href="http://dev.duloup.org/system-nginx.html" rel="alternate"></link><published>2019-07-26T08:55:00+02:00</published><updated>2019-07-26T08:55:00+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2019-07-26:/system-nginx.html</id><summary type="html">&lt;p&gt;&lt;a href="https://nginx.org/en/"&gt;nginx&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;&lt;a href="https://nginxlibrary.com/enable-directory-listing/"&gt;Enable directory listing&lt;/a&gt;&lt;/h1&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;server&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="n"&gt;listen&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="mi"&gt;80&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="n"&gt;server_name&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;domain&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;domain&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="n"&gt;access_log&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="k"&gt;var&lt;/span&gt;&lt;span class="o"&gt;/...........................&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="n"&gt;root&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;root&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="n"&gt;location&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;php&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;html&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;htm&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="n"&gt;location&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;somedir&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;               &lt;/span&gt;&lt;span class="n"&gt;autoindex&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;on&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h1&gt;Démarrage nginx sous windows 10&lt;/h1&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&amp;gt; ubuntu sudo service start nginx
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h1&gt;Rewrite permanent&lt;/h1&gt;
+&lt;p&gt;/etc/nginx/sites-available/myblog&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;rewrite ^/$ /arduino/ permanent …&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://nginx.org/en/"&gt;nginx&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;&lt;a href="https://nginxlibrary.com/enable-directory-listing/"&gt;Enable directory listing&lt;/a&gt;&lt;/h1&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;server&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="n"&gt;listen&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="mi"&gt;80&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="n"&gt;server_name&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;domain&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;domain&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="n"&gt;access_log&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="k"&gt;var&lt;/span&gt;&lt;span class="o"&gt;/...........................&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="n"&gt;root&lt;/span&gt;&lt;span class="w"&gt;   &lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;root&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="n"&gt;location&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;                &lt;/span&gt;&lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;php&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;html&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;htm&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="n"&gt;location&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;somedir&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;               &lt;/span&gt;&lt;span class="n"&gt;autoindex&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;on&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h1&gt;Démarrage nginx sous windows 10&lt;/h1&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&amp;gt; ubuntu sudo service start nginx
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h1&gt;Rewrite permanent&lt;/h1&gt;
+&lt;p&gt;/etc/nginx/sites-available/myblog&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;rewrite ^/$ /arduino/ permanent;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Tech"></category><category term="Web"></category></entry><entry><title>PowerShell</title><link href="http://dev.duloup.org/system-powershell.html" rel="alternate"></link><published>2019-07-24T09:20:00+02:00</published><updated>2019-07-24T09:20:00+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2019-07-24:/system-powershell.html</id><summary type="html">&lt;h1&gt;Ajoût de PowerShell au menu contextuel windows&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://www.howtogeek.com/165268/how-to-add-open-powershell-here-to-the-context-menu-in-windows/"&gt;https://www.howtogeek.com/165268/how-to-add-open-powershell-here-to-the-context-menu-in-windows/&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;Windows Registry Editor Version 5.00&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="k"&gt;[&lt;/span&gt;&lt;span class="nb"&gt;HKEY_LOCAL_MACHINE&lt;/span&gt;&lt;span class="k"&gt;\SOFTWARE\Classes\Directory\background\shell\powershellmenu]&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="na"&gt;@&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Ouvrir PowerShell ici&amp;quot;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="k"&gt;[&lt;/span&gt;&lt;span class="nb"&gt;HKEY_LOCAL_MACHINE&lt;/span&gt;&lt;span class="k"&gt;\SOFTWARE\Classes\Directory\background\shell\powershellmenu\command]&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="na"&gt;@&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\powershell.exe -NoExit -Command Set-Location -LiteralPath &amp;#39;%v …&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h1&gt;Ajoût de PowerShell au menu contextuel windows&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://www.howtogeek.com/165268/how-to-add-open-powershell-here-to-the-context-menu-in-windows/"&gt;https://www.howtogeek.com/165268/how-to-add-open-powershell-here-to-the-context-menu-in-windows/&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;Windows Registry Editor Version 5.00&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="k"&gt;[&lt;/span&gt;&lt;span class="nb"&gt;HKEY_LOCAL_MACHINE&lt;/span&gt;&lt;span class="k"&gt;\SOFTWARE\Classes\Directory\background\shell\powershellmenu]&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="na"&gt;@&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Ouvrir PowerShell ici&amp;quot;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="k"&gt;[&lt;/span&gt;&lt;span class="nb"&gt;HKEY_LOCAL_MACHINE&lt;/span&gt;&lt;span class="k"&gt;\SOFTWARE\Classes\Directory\background\shell\powershellmenu\command]&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="na"&gt;@&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\powershell.exe -NoExit -Command Set-Location -LiteralPath &amp;#39;%v&amp;#39;&amp;quot;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;Windows Registry Editor Version 5.00&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="k"&gt;[&lt;/span&gt;&lt;span class="nb"&gt;HKEY_LOCAL_MACHINE&lt;/span&gt;&lt;span class="k"&gt;\SOFTWARE\Classes\Directory\shell\powershellmenu]&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="na"&gt;@&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Ouvrir PowerShell ici&amp;quot;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="k"&gt;[&lt;/span&gt;&lt;span class="nb"&gt;HKEY_LOCAL_MACHINE&lt;/span&gt;&lt;span class="k"&gt;\SOFTWARE\Classes\Directory\shell\powershellmenu\command]&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="na"&gt;@&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\powershell.exe -NoExit -Command Set-Location -LiteralPath &amp;#39;%L&amp;#39;&amp;quot;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h1&gt;Profile&lt;/h1&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;Test-Path $profile
+False
+New-Item -path $profile -type file –force
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href="https://beebom.com/how-change-powershell-color-scheme-windows-10/"&gt;How to Change Windows PowerShell Color Scheme on Windows 10&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://stackoverflow.com/questions/3592851/executing-a-command-stored-in-a-variable-from-powershell"&gt;Executing a command stored in a variable from PowerShell&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$cmd = &amp;#39;&amp;amp; 7z.exe a -tzip &amp;quot;c:\temp\with space\test2.zip&amp;quot; &amp;quot;C:\TEMP\with space\changelog&amp;quot;&amp;#39;
+Invoke-Expression $cmd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href="https://stackoverflow.com/questions/4166370/how-can-i-write-a-powershell-alias-with-arguments-in-the-middle"&gt;How can I write a PowerShell alias with arguments in the middle?&lt;/a&gt;&lt;/p&gt;</content><category term="Tech"></category><category term="Windows"></category></entry><entry><title>Pelican</title><link href="http://dev.duloup.org/tech-python-pelican.html" rel="alternate"></link><published>2019-05-21T07:45:08+02:00</published><updated>2019-08-10T00:43:08+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2019-05-21:/tech-python-pelican.html</id><summary type="html">&lt;h1&gt;Documentation&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://docs.getpelican.com/en/3.6.3/content.html"&gt;https://docs.getpelican.com/en/3.6.3/content.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://docs.getpelican.com/en/stable/settings.html"&gt;https://docs.getpelican.com/en/stable/settings.html&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Installation&lt;/h1&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pipenv install pelican
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;pelicanconf.py&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="ch"&gt;#!/usr/bin/env python&lt;/span&gt;
+&lt;span class="c1"&gt;# -*- coding: utf-8 -*- #&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;__future__&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;unicode_literals&lt;/span&gt;
+
+&lt;span class="n"&gt;AUTHOR&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Duloup&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;SITENAME&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;MonBlog&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;SITEURL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&amp;#39;&lt;/span&gt;
+
+&lt;span class="n"&gt;PATH&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;content&amp;#39;&lt;/span&gt;
+
+&lt;span class="n"&gt;TIMEZONE&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Europe/Paris&amp;#39;&lt;/span&gt;
+
+&lt;span class="n"&gt;DEFAULT_LANG&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;fr&amp;#39;&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Feed generation is …&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h1&gt;Documentation&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://docs.getpelican.com/en/3.6.3/content.html"&gt;https://docs.getpelican.com/en/3.6.3/content.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://docs.getpelican.com/en/stable/settings.html"&gt;https://docs.getpelican.com/en/stable/settings.html&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Installation&lt;/h1&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pipenv install pelican
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;pelicanconf.py&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="ch"&gt;#!/usr/bin/env python&lt;/span&gt;
+&lt;span class="c1"&gt;# -*- coding: utf-8 -*- #&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;__future__&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;unicode_literals&lt;/span&gt;
+
+&lt;span class="n"&gt;AUTHOR&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Duloup&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;SITENAME&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;MonBlog&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;SITEURL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&amp;#39;&lt;/span&gt;
+
+&lt;span class="n"&gt;PATH&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;content&amp;#39;&lt;/span&gt;
+
+&lt;span class="n"&gt;TIMEZONE&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Europe/Paris&amp;#39;&lt;/span&gt;
+
+&lt;span class="n"&gt;DEFAULT_LANG&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;fr&amp;#39;&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Feed generation is usually not desired when developing&lt;/span&gt;
+&lt;span class="n"&gt;FEED_ALL_ATOM&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;None&lt;/span&gt;
+&lt;span class="n"&gt;CATEGORY_FEED_ATOM&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;None&lt;/span&gt;
+&lt;span class="n"&gt;TRANSLATION_FEED_ATOM&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;None&lt;/span&gt;
+&lt;span class="n"&gt;AUTHOR_FEED_ATOM&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;None&lt;/span&gt;
+&lt;span class="n"&gt;AUTHOR_FEED_RSS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;None&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Blogroll&lt;/span&gt;
+&lt;span class="n"&gt;LINKS&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Pelican&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;http://getpelican.com/&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;
+         &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Python.org&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;http://python.org/&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;
+         &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Jinja2&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;http://jinja.pocoo.org/&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;
+         &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;You can modify those links in your config file&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;#&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;),)&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Social widget&lt;/span&gt;
+&lt;span class="n"&gt;SOCIAL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;You can add links in your config file&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;#&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;
+          &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Another social link&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;#&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;),)&lt;/span&gt;
+
+&lt;span class="n"&gt;DEFAULT_PAGINATION&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Uncomment following line if you want document-relative URLs when developing&lt;/span&gt;
+&lt;span class="c1"&gt;#RELATIVE_URLS = True&lt;/span&gt;
+
+&lt;span class="n"&gt;DEFAULT_CATEGORY&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Divers&amp;#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h1&gt;Utilisation&lt;/h1&gt;
+&lt;h2&gt;Lancement du serveur de dev&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;inv build
+inv publish
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Sous Windows 10, &lt;a href="/system/windows-subsystem-for-linux"&gt;installation de ubuntu et nginx&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&amp;gt; ubuntu sudo service nginx start
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h1&gt;Divers&lt;/h1&gt;
+&lt;p&gt;rsync fonctionnant sous Windows:&lt;/p&gt;
+&lt;p&gt;https://sourceforge.net/projects/grsync-win/&lt;/p&gt;
+&lt;h1&gt;Liens&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://localhost:8100/"&gt;Accès au serveur local&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/getpelican/pelican-plugins"&gt;Plugins: Dépôt Git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.pelicanthemes.com/"&gt;Thèmes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/getpelican/pelican-themes"&gt;Thèmes: Dépôt Git&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Plugins&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://blog.geographer.fr/pelican-plugins"&gt;The missing Pelican plugins guide&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/getpelican/pelican-plugins/tree/master/autopages"&gt;Auto Pages&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://stackoverflow.com/questions/37385708/introduction-pages-for-categories-in-pelican"&gt;https://stackoverflow.com/questions/37385708/introduction-pages-for-categories-in-pelican&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/pelican-plugins/tipue-search"&gt;https://github.com/pelican-plugins/tipue-search&lt;/a&gt;: Utilise le thème "elegant"&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://snipcart.com/blog/pelican-blog-tutorial-search-comments"&gt;https://snipcart.com/blog/pelican-blog-tutorial-search-comments&lt;/a&gt;&lt;/p&gt;</content><category term="Tech"></category><category term="Python"></category><category term="Pelican"></category><category term="Blog"></category></entry><entry><title>Protocole S3</title><link href="http://dev.duloup.org/tech-s3-protocol.html" rel="alternate"></link><published>2019-05-21T00:04:00+02:00</published><updated>2019-05-21T00:04:00+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2019-05-21:/tech-s3-protocol.html</id><summary type="html">&lt;h2&gt;Python&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pipenv install boto3
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;transfer&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;S3Transfer&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;boto3&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;client&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;s3&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;cfg&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;AWS_REGION&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;aws_access_key_id&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;cfg&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;AWS_APP_ID&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;aws_secret_access_key&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;cfg&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;AWS_APP_SECRET&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="n"&gt;transfer&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;upload_file&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;file_path&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;AWS_BUCKET&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;file_path&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Ligne de commande&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo apt-get install s3cmd
+
+&amp;lt;https://www.scaleway.com/en/docs/object-storage-with-aws-cli/&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Montage&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.whiteboardcoder.com/2017/12/how-to-mount-s3-bucket-as-hard-drive.html"&gt;http://www.whiteboardcoder.com/2017/12/how-to-mount-s3-bucket-as-hard-drive.html&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;{
+  &amp;quot;CORSRules&amp;quot;: [
+    {
+      &amp;quot;AllowedOrigins&amp;quot;: [&amp;quot;http://www.example …&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h2&gt;Python&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pipenv install boto3
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;transfer&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;S3Transfer&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;boto3&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;client&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;s3&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;cfg&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;AWS_REGION&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;aws_access_key_id&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;cfg&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;AWS_APP_ID&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;aws_secret_access_key&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;cfg&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;AWS_APP_SECRET&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="n"&gt;transfer&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;upload_file&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;file_path&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;AWS_BUCKET&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;file_path&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Ligne de commande&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo apt-get install s3cmd
+
+&amp;lt;https://www.scaleway.com/en/docs/object-storage-with-aws-cli/&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Montage&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.whiteboardcoder.com/2017/12/how-to-mount-s3-bucket-as-hard-drive.html"&gt;http://www.whiteboardcoder.com/2017/12/how-to-mount-s3-bucket-as-hard-drive.html&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;{
+  &amp;quot;CORSRules&amp;quot;: [
+    {
+      &amp;quot;AllowedOrigins&amp;quot;: [&amp;quot;http://www.example.com&amp;quot;],
+      &amp;quot;AllowedHeaders&amp;quot;: [&amp;quot;*&amp;quot;],
+      &amp;quot;AllowedMethods&amp;quot;: [&amp;quot;GET&amp;quot;, &amp;quot;HEAD&amp;quot;, &amp;quot;POST&amp;quot;, &amp;quot;PUT&amp;quot;, &amp;quot;DELETE&amp;quot;],
+      &amp;quot;MaxAgeSeconds&amp;quot;: 3000,
+      &amp;quot;ExposeHeaders&amp;quot;: [&amp;quot;Etag&amp;quot;]
+    }
+  ]
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Tech"></category><category term="Web"></category></entry><entry><title>Parsers compilateurs</title><link href="http://dev.duloup.org/parsers-compilateurs.html" rel="alternate"></link><published>2018-11-19T13:43:41+01:00</published><updated>2018-11-19T13:43:41+01:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-11-19:/parsers-compilateurs.html</id><content type="html">&lt;p&gt;&lt;a href="https://tomassetti.me/parsing-in-python/"&gt;https://tomassetti.me/parsing-in-python/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/jcoglan/canopy"&gt;https://github.com/jcoglan/canopy&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://canopy.jcoglan.com/langs/python.html"&gt;http://canopy.jcoglan.com/langs/python.html&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;npm install -g canopy
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href="http://web.archive.org/web/20080321094713/http://www.norbeck.nu:80/abc/bnf/abc20bnf.htm"&gt;ABC notation 2.0 - BNF specification&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://stackoverflow.com/questions/14922242/how-to-convert-bnf-to-ebnf"&gt;https://stackoverflow.com/questions/14922242/how-to-convert-bnf-to-ebnf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://pypi.org/project/tatsu/"&gt;https://pypi.org/project/tatsu/&lt;/a&gt;&lt;/p&gt;</content><category term="Tech"></category><category term="Python"></category></entry><entry><title>ruby-parslet</title><link href="http://dev.duloup.org/ruby-parslet.html" rel="alternate"></link><published>2018-11-19T13:34:58+01:00</published><updated>2018-11-19T13:34:58+01:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-11-19:/ruby-parslet.html</id><content type="html">&lt;p&gt;&lt;a href="http://kschiess.github.io/parslet/"&gt;http://kschiess.github.io/parslet/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://blog.openshift.com/using-parslet-to-write-your-own-language/"&gt;https://blog.openshift.com/using-parslet-to-write-your-own-language/&lt;/a&gt;&lt;/p&gt;</content><category term="Tech"></category><category term="Ruby"></category></entry><entry><title>Olinuxino: Installation d'une ArchLinux</title><link href="http://dev.duloup.org/olinuxino-installation-dune-archlinux.html" rel="alternate"></link><published>2018-11-10T00:02:32+01:00</published><updated>2018-11-10T00:02:32+01:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-11-10:/olinuxino-installation-dune-archlinux.html</id><summary type="html">&lt;p&gt;&lt;a href="https://archlinuxarm.org/platforms/armv5/olinuxino"&gt;https://archlinuxarm.org/platforms/armv5/olinuxino&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://aur.archlinux.org/packages/uboot-a13-olinuxino/"&gt;https://aur.archlinux.org/packages/uboot-a13-olinuxino/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://elementztechblog.wordpress.com/2014/05/11/installing-xfce-desktop-in-archlinux-for-olinuxino/"&gt;https://elementztechblog.wordpress.com/2014/05/11/installing-xfce-desktop-in-archlinux-for-olinuxino/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://archlinuxarm.org/platforms/armv7/allwinner/a20-olinuxino-micro"&gt;https://archlinuxarm.org/platforms/armv7/allwinner/a20-olinuxino-micro&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Installation de ArchLinux sur une carte SD&lt;/h1&gt;
+&lt;p&gt;Pas besoin de compiler, tout est disponible&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nv"&gt;sudo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;dd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="o"&gt;=/&lt;/span&gt;&lt;span class="nv"&gt;dev&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;zero&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;of&lt;/span&gt;&lt;span class="o"&gt;=/&lt;/span&gt;&lt;span class="nv"&gt;dev&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;mmcblk0&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;bs …&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://archlinuxarm.org/platforms/armv5/olinuxino"&gt;https://archlinuxarm.org/platforms/armv5/olinuxino&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://aur.archlinux.org/packages/uboot-a13-olinuxino/"&gt;https://aur.archlinux.org/packages/uboot-a13-olinuxino/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://elementztechblog.wordpress.com/2014/05/11/installing-xfce-desktop-in-archlinux-for-olinuxino/"&gt;https://elementztechblog.wordpress.com/2014/05/11/installing-xfce-desktop-in-archlinux-for-olinuxino/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://archlinuxarm.org/platforms/armv7/allwinner/a20-olinuxino-micro"&gt;https://archlinuxarm.org/platforms/armv7/allwinner/a20-olinuxino-micro&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Installation de ArchLinux sur une carte SD&lt;/h1&gt;
+&lt;p&gt;Pas besoin de compiler, tout est disponible&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nv"&gt;sudo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;dd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="o"&gt;=/&lt;/span&gt;&lt;span class="nv"&gt;dev&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;zero&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;of&lt;/span&gt;&lt;span class="o"&gt;=/&lt;/span&gt;&lt;span class="nv"&gt;dev&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;mmcblk0&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;bs&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="nv"&gt;M&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;count&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;8&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nv"&gt;sudo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;fdisk&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;dev&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;mmcblk0&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nv"&gt;sudo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;mkfs&lt;/span&gt;.&lt;span class="nv"&gt;ext4&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;dev&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;mmcblk0p1&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nv"&gt;mkdir&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;mnt&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nv"&gt;sudo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;mount&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;dev&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;mmcblk0p1&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;mnt&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nv"&gt;wget&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;http&lt;/span&gt;:&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="nv"&gt;de4&lt;/span&gt;.&lt;span class="nv"&gt;mirror&lt;/span&gt;.&lt;span class="nv"&gt;archlinuxarm&lt;/span&gt;.&lt;span class="nv"&gt;org&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;os&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;sunxi&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;boot&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;a13&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;olinuxino&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;u&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;boot&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;sunxi&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;with&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;spl&lt;/span&gt;.&lt;span class="nv"&gt;bin&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nv"&gt;sudo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;dd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;u&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;boot&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;sunxi&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;with&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;spl&lt;/span&gt;.&lt;span class="nv"&gt;bin&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;of&lt;/span&gt;&lt;span class="o"&gt;=/&lt;/span&gt;&lt;span class="nv"&gt;dev&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;mmcblk0&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;bs&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;1024&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;seek&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;8&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nv"&gt;sudo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;wget&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;http&lt;/span&gt;:&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="nv"&gt;de4&lt;/span&gt;.&lt;span class="nv"&gt;mirror&lt;/span&gt;.&lt;span class="nv"&gt;archlinuxarm&lt;/span&gt;.&lt;span class="nv"&gt;org&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;os&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;sunxi&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;boot&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;a13&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;olinuxino&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;boot&lt;/span&gt;.&lt;span class="nv"&gt;scr&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;O&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;mnt&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;boot&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;boot&lt;/span&gt;.&lt;span class="nv"&gt;scr&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nv"&gt;sudo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;tar&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;zxf&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;ArchLinuxARM&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;armv7&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;latest&lt;/span&gt;.&lt;span class="nv"&gt;tar&lt;/span&gt;.&lt;span class="nv"&gt;gz&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;C&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;mnt&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nv"&gt;sudo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;umount&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;mnt&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nv"&gt;sync&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="p"&gt;#&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;etc&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;netctl&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;wireless&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;wpa&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;Description&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;A&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;simple&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;WPA&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;encrypted&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;wireless&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;connection&lt;/span&gt;&lt;span class="p"&gt;&amp;#39;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;Interface&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;wlan0&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;Connection&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;wireless&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="n"&gt;Security&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;wpa&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;IP&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;dhcp&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="n"&gt;ESSID&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;Livebox&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;DF4A&lt;/span&gt;&lt;span class="p"&gt;&amp;#39;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="p"&gt;#&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Prepend&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;hexadecimal&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;keys&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;with&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;\&amp;quot;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="p"&gt;#&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;If&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;your&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;key&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;starts&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;with&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;, write it as &amp;#39;&amp;quot;&amp;quot;&amp;lt;key&amp;gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;&amp;#39;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="p"&gt;#&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;See&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nl"&gt;also:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;the&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;section&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;on&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;special&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;quoting&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;rules&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;in&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;netctl&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;profile&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mh"&gt;5&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;Key&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;&amp;#39;&lt;/span&gt;&lt;span class="mh"&gt;3&lt;/span&gt;&lt;span class="n"&gt;A2CDCFDFD5561F347C9DF3556&lt;/span&gt;&lt;span class="p"&gt;&amp;#39;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="p"&gt;#&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Uncomment&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;this&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;your&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ssid&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;is&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;hidden&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="p"&gt;#&lt;/span&gt;&lt;span class="n"&gt;Hidden&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;yes&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="p"&gt;#&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Set&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;priority&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;for&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;automatic&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;profile&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;selection&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="p"&gt;#&lt;/span&gt;&lt;span class="n"&gt;Priority&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mh"&gt;10&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;# /etc/dhcpd.conf
+#noipv4ll
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Fonctionne ...&lt;/p&gt;
+&lt;h2&gt;Problème pacman gpg lors de l'installation de paquets&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;error&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;failed&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;synchronize&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;any&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;databases&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;error&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;failed&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;init&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;transaction&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;invalid&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;or&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;corrupted&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;database&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;PGP&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;signature&lt;/span&gt;&lt;span class="o"&gt;))&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Solution:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pacman-key --populate archlinuxarm
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Samba&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pacman -S samba
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Copie de pi0:/etc/samba/smb.conf&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;useradd -m stephane
+usermod -G users -a stephane
+smbpasswd -a stephane
+
+systemctl enable smb nmb
+systemctl start smb nmb
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;swap&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo fallocate --length 1GiB /swapfile
+sudo mkswap /swapfile
+
+# /etc/fstab
+# &amp;lt;file system&amp;gt; &amp;lt;dir&amp;gt; &amp;lt;type&amp;gt; &amp;lt;options&amp;gt; &amp;lt;dump&amp;gt; &amp;lt;pass&amp;gt;
+/swapfile none            swap    sw              0       0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Compilation du noyau&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://archlinuxarm.org/forum/viewtopic.php?t=6419"&gt;https://archlinuxarm.org/forum/viewtopic.php?t=6419&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/archlinuxarm/PKGBUILDs.git"&gt;https://github.com/archlinuxarm/PKGBUILDs.git&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://wiki.archlinux.org/index.php/Kernel/Arch_Build_System"&gt;https://wiki.archlinux.org/index.php/Kernel/Arch_Build_System&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ &lt;span class="nb"&gt;cd&lt;/span&gt; ~/
+$ mkdir build
+$ &lt;span class="nb"&gt;cd&lt;/span&gt; build/
+$ asp update linux
+$ asp checkout linux
+
+&lt;span class="c1"&gt;# linux/trunk/PKGBUILD&lt;/span&gt;
+&lt;span class="nv"&gt;pkgbase&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;linux-custom
+
+updpkgsums  
+makepkg -s
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;locales&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;tmux&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;need&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;UTF&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;8&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;locale&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;LC_CTYPE&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;but&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;have&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ANSI_X3&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1968&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="sr"&gt;/etc/&lt;/span&gt;&lt;span class="n"&gt;locale&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;gen&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;sudo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;locale&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;gen&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;sudo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;localectl&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kd"&gt;set&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;locale&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;LANG&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;fr_FR&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;UTF&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;8&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;GPIO&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://linux-sunxi.org/GPIO#Example:_Controlling_GPIO_on_Olimex.27s_A13-OLinuXino_.28sunxi-3.4.29"&gt;https://linux-sunxi.org/GPIO#Example:_Controlling_GPIO_on_Olimex.27s_A13-OLinuXino_.28sunxi-3.4.29&lt;/a&gt;&lt;/p&gt;</content><category term="Tech"></category><category term="Olinuxino"></category><category term="Linux"></category><category term="MiniPC"></category></entry><entry><title>PineBook</title><link href="http://dev.duloup.org/pinebook.html" rel="alternate"></link><published>2018-11-09T19:07:31+01:00</published><updated>2018-11-09T19:07:31+01:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-11-09:/pinebook.html</id><content type="html">&lt;p&gt;&lt;a href="https://www.pine64.org/?page_id=3707"&gt;https://www.pine64.org/?page_id=3707&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://wiki.debian.org/InstallingDebianOn/Olimex/Teres-I#Installation"&gt;https://wiki.debian.org/InstallingDebianOn/Olimex/Teres-I#Installation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.cnx-software.com/2017/10/12/olimex-teres-i-diy-oshw-laptop-now-up-for-sale-for-240-euros/"&gt;https://www.cnx-software.com/2017/10/12/olimex-teres-i-diy-oshw-laptop-now-up-for-sale-for-240-euros/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.olimex.com/Products/DIY-Laptop/KITS/TERES-A64-WHITE/open-source-hardware"&gt;https://www.olimex.com/Products/DIY-Laptop/KITS/TERES-A64-WHITE/open-source-hardware&lt;/a&gt;&lt;/p&gt;</content><category term="Tech"></category><category term="MiniPC"></category></entry><entry><title>python-curses</title><link href="http://dev.duloup.org/python-curses.html" rel="alternate"></link><published>2018-10-27T12:35:52+02:00</published><updated>2018-10-27T12:35:52+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-10-27:/python-curses.html</id><content type="html">&lt;p&gt;&lt;a href="https://docs.python.org/3/howto/curses.html"&gt;https://docs.python.org/3/howto/curses.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://stackoverflow.com/questions/2515244/how-to-scroll-text-in-python-curses-subwindow"&gt;https://stackoverflow.com/questions/2515244/how-to-scroll-text-in-python-curses-subwindow&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://stackoverflow.com/questions/30795161/scroll-page-by-page-or-line-by-line-using-python-curses"&gt;https://stackoverflow.com/questions/30795161/scroll-page-by-page-or-line-by-line-using-python-curses&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;NPyScreen&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://npyscreen.readthedocs.io/introduction.html"&gt;https://npyscreen.readthedocs.io/introduction.html&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Urwid&lt;/h1&gt;
+&lt;p&gt;&lt;a href="http://urwid.org/"&gt;http://urwid.org/&lt;/a&gt;&lt;/p&gt;</content><category term="Tech"></category><category term="Python"></category><category term="UI"></category></entry><entry><title>python-tests</title><link href="http://dev.duloup.org/python-tests.html" rel="alternate"></link><published>2018-10-26T10:54:37+02:00</published><updated>2018-10-26T10:54:37+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-10-26:/python-tests.html</id><content type="html">&lt;p&gt;&lt;a href="https://docs.python-guide.org/writing/tests/"&gt;https://docs.python-guide.org/writing/tests/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://docs.python.org/3/library/unittest.html"&gt;https://docs.python.org/3/library/unittest.html&lt;/a&gt;&lt;/p&gt;</content><category term="Tech"></category><category term="Python"></category></entry><entry><title>python-pysimplegui</title><link href="http://dev.duloup.org/python-pysimplegui.html" rel="alternate"></link><published>2018-10-25T05:49:54+02:00</published><updated>2018-10-25T05:49:54+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-10-25:/python-pysimplegui.html</id><summary type="html">&lt;p&gt;&lt;a href="https://github.com/MikeTheWatchGuy/PySimpleGUI"&gt;https://github.com/MikeTheWatchGuy/PySimpleGUI&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://pysimplegui.readthedocs.io/tutorial/"&gt;https://pysimplegui.readthedocs.io/tutorial/&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;PySimpleGUI&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;sg&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Very basic window.  Return values as a list&lt;/span&gt;
+
+&lt;span class="n"&gt;layout&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;
+          &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;sg&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Text&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Please enter your Name, Address, Phone&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)],&lt;/span&gt;
+          &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;sg&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Text&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Name&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;size&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;15&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)),&lt;/span&gt; &lt;span class="n"&gt;sg&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;InputText&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;name&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)],&lt;/span&gt;
+          &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;sg&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Text&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Address&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;size&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;15&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)),&lt;/span&gt; &lt;span class="n"&gt;sg&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;InputText&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;address&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)],&lt;/span&gt;
+          &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;sg …&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://github.com/MikeTheWatchGuy/PySimpleGUI"&gt;https://github.com/MikeTheWatchGuy/PySimpleGUI&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://pysimplegui.readthedocs.io/tutorial/"&gt;https://pysimplegui.readthedocs.io/tutorial/&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;PySimpleGUI&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;sg&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Very basic window.  Return values as a list&lt;/span&gt;
+
+&lt;span class="n"&gt;layout&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;
+          &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;sg&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Text&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Please enter your Name, Address, Phone&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)],&lt;/span&gt;
+          &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;sg&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Text&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Name&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;size&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;15&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)),&lt;/span&gt; &lt;span class="n"&gt;sg&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;InputText&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;name&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)],&lt;/span&gt;
+          &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;sg&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Text&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Address&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;size&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;15&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)),&lt;/span&gt; &lt;span class="n"&gt;sg&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;InputText&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;address&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)],&lt;/span&gt;
+          &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;sg&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Text&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Phone&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;size&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;15&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)),&lt;/span&gt; &lt;span class="n"&gt;sg&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;InputText&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;phone&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)],&lt;/span&gt;
+          &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;sg&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Submit&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt; &lt;span class="n"&gt;sg&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Cancel&lt;/span&gt;&lt;span class="p"&gt;()]&lt;/span&gt;
+         &lt;span class="p"&gt;]&lt;/span&gt;
+
+&lt;span class="n"&gt;window&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;sg&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Window&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Simple data entry window&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Layout&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;layout&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;button&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;values&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;window&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Read&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;button&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;values&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;values&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;values&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Tech"></category><category term="Python"></category><category term="UI"></category></entry><entry><title>Git Hooks</title><link href="http://dev.duloup.org/git-hooks.html" rel="alternate"></link><published>2018-10-20T14:13:50+02:00</published><updated>2018-10-20T14:13:50+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-10-20:/git-hooks.html</id><summary type="html">&lt;p&gt;&lt;a href="https://www.digitalocean.com/community/tutorials/how-to-use-git-hooks-to-automate-development-and-deployment-tasks"&gt;https://www.digitalocean.com/community/tutorials/how-to-use-git-hooks-to-automate-development-and-deployment-tasks&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://stackoverflow.com/questions/7351551/writing-a-git-post-receive-hook-to-deal-with-a-specific-branch#13057643"&gt;https://stackoverflow.com/questions/7351551/writing-a-git-post-receive-hook-to-deal-with-a-specific-branch#13057643&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;test-site/.git/hooks/post-commit &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="ch"&gt;#!/usr/bin/env ruby&lt;/span&gt;
+
+&lt;span class="nb"&gt;puts&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Post Commit...&amp;quot;&lt;/span&gt;
+&lt;span class="nb"&gt;puts&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Dir.pwd: &lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="no"&gt;Dir&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pwd&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+&lt;span class="nb"&gt;puts&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;File.expand_path File.dirname(__FILE__): &lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="no"&gt;File&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;expand_path&lt;/span&gt; &lt;span class="no"&gt;File&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dirname&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;__FILE__&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+&lt;span class="no"&gt;Dir&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;chdir&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="no"&gt;File&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;expand_path&lt;/span&gt; &lt;span class="no"&gt;File&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;join&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="no"&gt;File&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dirname&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;__FILE__ …&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://www.digitalocean.com/community/tutorials/how-to-use-git-hooks-to-automate-development-and-deployment-tasks"&gt;https://www.digitalocean.com/community/tutorials/how-to-use-git-hooks-to-automate-development-and-deployment-tasks&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://stackoverflow.com/questions/7351551/writing-a-git-post-receive-hook-to-deal-with-a-specific-branch#13057643"&gt;https://stackoverflow.com/questions/7351551/writing-a-git-post-receive-hook-to-deal-with-a-specific-branch#13057643&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;test-site/.git/hooks/post-commit &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="ch"&gt;#!/usr/bin/env ruby&lt;/span&gt;
+
+&lt;span class="nb"&gt;puts&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Post Commit...&amp;quot;&lt;/span&gt;
+&lt;span class="nb"&gt;puts&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Dir.pwd: &lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="no"&gt;Dir&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pwd&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+&lt;span class="nb"&gt;puts&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;File.expand_path File.dirname(__FILE__): &lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="no"&gt;File&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;expand_path&lt;/span&gt; &lt;span class="no"&gt;File&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dirname&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;__FILE__&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+&lt;span class="no"&gt;Dir&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;chdir&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="no"&gt;File&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;expand_path&lt;/span&gt; &lt;span class="no"&gt;File&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;join&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="no"&gt;File&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dirname&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;__FILE__&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;../..&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt;
+  &lt;span class="nb"&gt;puts&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;new dir: &lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="no"&gt;Dir&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pwd&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+  &lt;span class="nb"&gt;puts&lt;/span&gt; &lt;span class="sx"&gt;%x[bundle exec jekyll build]&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+&lt;span class="k"&gt;until&lt;/span&gt; &lt;span class="no"&gt;ARGV&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;empty?&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt;
+  &lt;span class="nb"&gt;puts&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;From arguments: &lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="no"&gt;ARGV&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;shift&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+
+&lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;gets&lt;/span&gt;
+  &lt;span class="nb"&gt;puts&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;From stdin: &lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Tech"></category><category term="Git"></category></entry><entry><title>FPGA</title><link href="http://dev.duloup.org/fpga.html" rel="alternate"></link><published>2018-09-29T07:41:03+02:00</published><updated>2018-09-29T07:41:03+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-09-29:/fpga.html</id><summary type="html">&lt;p&gt;&lt;a href="https://www.lextronic.fr/platines-fpga/20218-module-cpld-cmod.html"&gt;https://www.lextronic.fr/platines-fpga/20218-module-cpld-cmod.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.digikey.fr/product-detail/fr/sparkfun-electronics/DEV-14828/1568-1915-ND/9561755"&gt;https://www.digikey.fr/product-detail/fr/sparkfun-electronics/DEV-14828/1568-1915-ND/9561755&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/tinyfpga/TinyFPGA-A-Series"&gt;https://github.com/tinyfpga/TinyFPGA-A-Series&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.elektormagazine.com/news/tinyfpga-bx-review/18819"&gt;https://www.elektormagazine.com/news/tinyfpga-bx-review/18819&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=pM1ZSZNUS-w"&gt;Complete Xilinx FPGA Tutorial Mike's Lab&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://tinyfpga.com/bx/guide.html"&gt;https://tinyfpga.com/bx/guide.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://kicad-pcb.org/"&gt;KiCad&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Synth&lt;/h1&gt;
+&lt;p&gt;&lt;a href="http://people.ece.cornell.edu/land/courses/ece5760/FinalProjects/s2017/eli8_sjy33_awx2/ece5760finalproject/ece5760finalproject/index.html"&gt;Big Red Strings: A FPGA Musical Trio …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://www.lextronic.fr/platines-fpga/20218-module-cpld-cmod.html"&gt;https://www.lextronic.fr/platines-fpga/20218-module-cpld-cmod.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.digikey.fr/product-detail/fr/sparkfun-electronics/DEV-14828/1568-1915-ND/9561755"&gt;https://www.digikey.fr/product-detail/fr/sparkfun-electronics/DEV-14828/1568-1915-ND/9561755&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/tinyfpga/TinyFPGA-A-Series"&gt;https://github.com/tinyfpga/TinyFPGA-A-Series&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.elektormagazine.com/news/tinyfpga-bx-review/18819"&gt;https://www.elektormagazine.com/news/tinyfpga-bx-review/18819&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=pM1ZSZNUS-w"&gt;Complete Xilinx FPGA Tutorial Mike's Lab&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://tinyfpga.com/bx/guide.html"&gt;https://tinyfpga.com/bx/guide.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://kicad-pcb.org/"&gt;KiCad&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Synth&lt;/h1&gt;
+&lt;p&gt;&lt;a href="http://people.ece.cornell.edu/land/courses/ece5760/FinalProjects/s2017/eli8_sjy33_awx2/ece5760finalproject/ece5760finalproject/index.html"&gt;Big Red Strings: A FPGA Musical Trio&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.instructables.com/id/8-Step-FPGA-Sequencer-and-Synthesizer/"&gt;https://www.instructables.com/id/8-Step-FPGA-Sequencer-and-Synthesizer/&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Tutos&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://www.youtube.com/watch?v=pDE2qenDXKQ"&gt;FPGAs; Lesson 1: Concept Guide and Step by Step Tutorial to Flash LEDs&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Icarus Verilog + GTKWave&lt;/h1&gt;
+&lt;h2&gt;Liens&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://inf-server.inf.uth.gr/~konstadel/resources/Icarus_Verilog_GTKWave_guide.pdf"&gt;Icarus Verilog + GTKWave Guide&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://iverilog.wikia.com/wiki/Getting_Started"&gt;http://iverilog.wikia.com/wiki/Getting_Started&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Installation sous Linux&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo apt-add-repository ppa:team-electronics/ppa
+sudo apt-get update
+sudo apt-get install iverilog
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h1&gt;SparkFun TinyFPGA&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://www.sparkfun.com/products/14829#features-tab"&gt;https://www.sparkfun.com/products/14829#features-tab&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://tinyfpga.com/bx/guide.html"&gt;TinyFPGA BX User Guide&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Installation de apio et Atom&lt;/h2&gt;
+&lt;p&gt;Python 3.6&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;pip&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;install&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;apio&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="mf"&gt;0.4&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="n"&gt;b5&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;tinyprog&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;apio&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;install&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;system&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;scons&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;icestorm&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;iverilog&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;apio&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;install&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;drivers&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;apio&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;drivers&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;serial&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;enable&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="n"&gt;tinyprog&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;update&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;bootloader&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Editeur atom&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/atom/atom"&gt;https://github.com/atom/atom&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Template de projet&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/tinyfpga/TinyFPGA-BX/archive/master.zip"&gt;https://github.com/tinyfpga/TinyFPGA-BX/archive/master.zip&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/tinyfpga/TinyFPGA-BX"&gt;https://github.com/tinyfpga/TinyFPGA-BX&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;VHDL&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://stackoverflow.com/questions/3025034/programming-vhdl-on-linux"&gt;Programming VHDL on Linux?&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/ghdl/ghdl"&gt;GHDL&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://qucs.sourceforge.net/"&gt;http://qucs.sourceforge.net/&lt;/a&gt;&lt;/p&gt;</content><category term="Tech"></category><category term="Electronique"></category></entry><entry><title>Explorer: Menu Contextuel bash-here</title><link href="http://dev.duloup.org/system-explorer-menu-contextuel-bash-here.html" rel="alternate"></link><published>2018-09-21T06:41:36+02:00</published><updated>2018-09-21T06:41:36+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-09-21:/system-explorer-menu-contextuel-bash-here.html</id><content type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;Windows Registry Editor Version 5.00&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="k"&gt;[&lt;/span&gt;&lt;span class="nb"&gt;HKEY_CLASSES_ROOT&lt;/span&gt;&lt;span class="k"&gt;\Directory\Background\shell\Bash Here]&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="k"&gt;[&lt;/span&gt;&lt;span class="nb"&gt;HKEY_CLASSES_ROOT&lt;/span&gt;&lt;span class="k"&gt;\Directory\Background\shell\Bash Here\command]&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="na"&gt;@&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;C:\\tools\\msys64\\msys2_shell.cmd -where %V&amp;quot;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Tech"></category><category term="Windows"></category></entry><entry><title>Compilation de Linuxsampler sur Asus 1000H</title><link href="http://dev.duloup.org/compilation-de-linuxsampler-sur-asus-1000h.html" rel="alternate"></link><published>2018-09-19T19:43:12+02:00</published><updated>2018-09-19T19:43:12+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-09-19:/compilation-de-linuxsampler-sur-asus-1000h.html</id><summary type="html">&lt;p&gt;&lt;a href="https://linuxsampler.org/debian.html"&gt;https://linuxsampler.org/debian.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://linuxsampler.org/downloads.html"&gt;http://linuxsampler.org/downloads.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://raw.githubusercontent.com/pixelb/scripts/master/scripts/gcccpuopt"&gt;https://raw.githubusercontent.com/pixelb/scripts/master/scripts/gcccpuopt&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;-march=atom -mfpmath=sse
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;https://wiki.gentoo.org/wiki/Asus_Eee_PC_1000H&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;CHOST=&amp;quot;i686-pc-linux-gnu&amp;quot;
+CFLAGS=&amp;quot;-march=atom -O2 -fomit-frame-pointer -pipe -mfpmath=sse&amp;quot;
+CXXFLAGS=&amp;quot;&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;CFLAGS&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;&amp;quot;
+
+CXXFLAGS=&amp;quot;-march=atom -O2 -fomit-frame-pointer -pipe -mfpmath=sse&amp;quot; ./configure …&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://linuxsampler.org/debian.html"&gt;https://linuxsampler.org/debian.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://linuxsampler.org/downloads.html"&gt;http://linuxsampler.org/downloads.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://raw.githubusercontent.com/pixelb/scripts/master/scripts/gcccpuopt"&gt;https://raw.githubusercontent.com/pixelb/scripts/master/scripts/gcccpuopt&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;-march=atom -mfpmath=sse
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;https://wiki.gentoo.org/wiki/Asus_Eee_PC_1000H&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;CHOST=&amp;quot;i686-pc-linux-gnu&amp;quot;
+CFLAGS=&amp;quot;-march=atom -O2 -fomit-frame-pointer -pipe -mfpmath=sse&amp;quot;
+CXXFLAGS=&amp;quot;&lt;span class="cp"&gt;${&lt;/span&gt;&lt;span class="n"&gt;CFLAGS&lt;/span&gt;&lt;span class="cp"&gt;}&lt;/span&gt;&amp;quot;
+
+CXXFLAGS=&amp;quot;-march=atom -O2 -fomit-frame-pointer -pipe -mfpmath=sse&amp;quot; ./configure --prefix=/home/stephane/opt --mandir=\$${prefix}/share/man --infodir=\$${prefix}/share/info
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Tech"></category><category term="DAW"></category><category term="Linux"></category></entry><entry><title>Ngspice Conception électronique</title><link href="http://dev.duloup.org/ngspice-conception-electronique.html" rel="alternate"></link><published>2018-01-09T00:42:14+01:00</published><updated>2018-01-09T00:42:14+01:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-01-09:/ngspice-conception-electronique.html</id><summary type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;stephane@raspberrypi ~/ngspice $ gcc -v Using built-in specs. &lt;span class="nv"&gt;COLLECT_GCC&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;gcc &lt;span class="nv"&gt;COLLECT_LTO_WRAPPER&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/usr/lib/gcc/arm-linux-gnueabihf/4.6/lto-wrapper Target: arm-linux-gnueabihf Configured with: ../src/configure -v --with-pkgversion&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Debian 4.6.3-14+rpi1&amp;#39;&lt;/span&gt; --with-bugurl&lt;span class="o"&gt;=&lt;/span&gt;file:///usr/share/doc/gcc-4.6/README.Bugs --enable-languages&lt;span class="o"&gt;=&lt;/span&gt;c,c++,fortran,objc,obj-c++ --prefix&lt;span class="o"&gt;=&lt;/span&gt;/usr --program-suffix&lt;span class="o"&gt;=&lt;/span&gt;-4 …&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;stephane@raspberrypi ~/ngspice $ gcc -v Using built-in specs. &lt;span class="nv"&gt;COLLECT_GCC&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;gcc &lt;span class="nv"&gt;COLLECT_LTO_WRAPPER&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/usr/lib/gcc/arm-linux-gnueabihf/4.6/lto-wrapper Target: arm-linux-gnueabihf Configured with: ../src/configure -v --with-pkgversion&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Debian 4.6.3-14+rpi1&amp;#39;&lt;/span&gt; --with-bugurl&lt;span class="o"&gt;=&lt;/span&gt;file:///usr/share/doc/gcc-4.6/README.Bugs --enable-languages&lt;span class="o"&gt;=&lt;/span&gt;c,c++,fortran,objc,obj-c++ --prefix&lt;span class="o"&gt;=&lt;/span&gt;/usr --program-suffix&lt;span class="o"&gt;=&lt;/span&gt;-4.6 --enable-shared --enable-linker-build-id --with-system-zlib --libexecdir&lt;span class="o"&gt;=&lt;/span&gt;/usr/lib --without-included-gettext --enable-threads&lt;span class="o"&gt;=&lt;/span&gt;posix --with-gxx-include-dir&lt;span class="o"&gt;=&lt;/span&gt;/usr/include/c++/4.6 --libdir&lt;span class="o"&gt;=&lt;/span&gt;/usr/lib --enable-nls --with-sysroot&lt;span class="o"&gt;=&lt;/span&gt;/ --enable-clocale&lt;span class="o"&gt;=&lt;/span&gt;gnu --enable-libstdcxx-debug --enable-libstdcxx-time&lt;span class="o"&gt;=&lt;/span&gt;yes --enable-gnu-unique-object --enable-plugin --enable-objc-gc --disable-sjlj-exceptions --with-arch&lt;span class="o"&gt;=&lt;/span&gt;armv6 --with-fpu&lt;span class="o"&gt;=&lt;/span&gt;vfp --with-float&lt;span class="o"&gt;=&lt;/span&gt;hard --enable-checking&lt;span class="o"&gt;=&lt;/span&gt;release --build&lt;span class="o"&gt;=&lt;/span&gt;arm-linux-gnueabihf --host&lt;span class="o"&gt;=&lt;/span&gt;arm-linux-gnueabihf --target&lt;span class="o"&gt;=&lt;/span&gt;arm-linux-gnueabihf Thread model: posix gcc version &lt;span class="m"&gt;4&lt;/span&gt;.6.3 &lt;span class="o"&gt;(&lt;/span&gt;Debian &lt;span class="m"&gt;4&lt;/span&gt;.6.3-14+rpi1&lt;span class="o"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Tech"></category><category term="Electronique"></category></entry><entry><title>Linkchecker</title><link href="http://dev.duloup.org/web-linkchecker.html" rel="alternate"></link><published>2018-01-08T10:38:08+01:00</published><updated>2018-01-08T10:38:08+01:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-01-08:/web-linkchecker.html</id><content type="html">&lt;p&gt;Utilitaire permettant de vérifier les liens sur un site&lt;/p&gt;
+&lt;p&gt;Vérification des liens du blog :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;linkchecker http://localhost:4000/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href="https://www.supertechcrew.com/jekyll-check-for-broken-links/"&gt;https://www.supertechcrew.com/jekyll-check-for-broken-links/&lt;/a&gt;&lt;/p&gt;</content><category term="Tech"></category><category term="Web"></category></entry></feed>

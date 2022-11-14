@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>drum-tabs_g++</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <meta name="description" content="make g++ -Wall -g -c src/drumtab-parser.cpp -o obj/drumtab-parser.o src/drumtab-parser.cpp: In member function ‘void..." />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">MyBlog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/archerie.html">Archerie</a></li>
+                    <li><a href="/category/archive.html">Archive</a></li>
+                    <li><a href="/category/culture.html">Culture</a></li>
+                    <li><a href="/category/developpement.html">Développement</a></li>
+                    <li><a href="/category/divers.html">Divers</a></li>
+                    <li><a href="/category/graphisme.html">Graphisme</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li class="active"><a href="/category/musique.html">Musique</a></li>
+                    <li><a href="/category/projets.html">Projets</a></li>
+                    <li><a href="/category/reprap.html">RepRap</a></li>
+                    <li><a href="/category/securite.html">Sécurité</a></li>
+                    <li><a href="/category/systeme.html">Système</a></li>
+                    <li><a href="/category/tech.html">Tech</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/drum-tabs_g.html" rel="bookmark"
+           title="Permalink to drum-tabs_g++">drum-tabs_g++</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-01-16T23:36:03+01:00">
+                Published: Tue 16 January 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/musique.html">Musique</a>.</p>
+<p>tags: <a href="/tag/daw.html">DAW</a> <a href="/tag/rythmes.html">Rythmes</a> </p>
+</footer><!-- /.post-info -->      <div class="highlight"><pre><span></span><code><span class="nt">make</span><span class="w"></span>
+<span class="nt">g</span><span class="o">++</span><span class="w"> </span><span class="nt">-Wall</span><span class="w">  </span><span class="nt">-g</span><span class="w"> </span><span class="nt">-c</span><span class="w"> </span><span class="nt">src</span><span class="o">/</span><span class="nt">drumtab-parser</span><span class="p">.</span><span class="nc">cpp</span><span class="w"> </span><span class="nt">-o</span><span class="w"> </span><span class="nt">obj</span><span class="o">/</span><span class="nt">drumtab-parser</span><span class="p">.</span><span class="nc">o</span><span class="w"></span>
+<span class="nt">src</span><span class="o">/</span><span class="nt">drumtab-parser</span><span class="p">.</span><span class="nc">cpp</span><span class="o">:</span><span class="w"> </span><span class="nt">In</span><span class="w"> </span><span class="nt">member</span><span class="w"> </span><span class="nt">function</span><span class="w"> </span><span class="err">‘</span><span class="nt">void</span><span class="w"> </span><span class="nt">DrumTabParser</span><span class="p">::</span><span class="nd">print_bytes</span><span class="o">(</span><span class="nt">std</span><span class="p">::</span><span class="nd">vector</span><span class="o">&lt;</span><span class="nt">int</span><span class="o">&gt;)</span><span class="err">’</span><span class="o">:</span><span class="w"></span>
+<span class="nt">src</span><span class="o">/</span><span class="nt">drumtab-parser</span><span class="p">.</span><span class="nc">cpp</span><span class="p">:</span><span class="nd">103</span><span class="p">:</span><span class="nd">7</span><span class="o">:</span><span class="w"> </span><span class="nt">warning</span><span class="o">:</span><span class="w"> </span><span class="err">‘</span><span class="nt">auto</span><span class="err">’</span><span class="w"> </span><span class="nt">changes</span><span class="w"> </span><span class="nt">meaning</span><span class="w"> </span><span class="nt">in</span><span class="w"> </span><span class="nt">C</span><span class="o">++</span><span class="nt">11</span><span class="o">;</span><span class="w"> </span><span class="nt">please</span><span class="w"> </span><span class="nt">remove</span><span class="w"> </span><span class="nt">it</span><span class="w"> </span><span class="cp">[</span><span class="na">-Wc</span><span class="o">++</span><span class="mi">0</span><span class="nx">x</span><span class="na">-compat</span><span class="cp">]</span><span class="w"></span>
+<span class="w">   </span><span class="nt">for</span><span class="o">(</span><span class="nt">auto</span><span class="w"> </span><span class="nt">it</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nt">steps</span><span class="p">.</span><span class="nc">begin</span><span class="o">();</span><span class="w"> </span><span class="nt">it</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="nt">steps</span><span class="p">.</span><span class="nc">end</span><span class="o">();</span><span class="w"> </span><span class="o">++</span><span class="nt">it</span><span class="o">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">       </span><span class="err">^</span><span class="w"></span>
+<span class="err">src/drumtab-parser.</span><span class="w"></span>
+<span class="n">cpp</span><span class="p">:</span><span class="mi">103</span><span class="o">:</span><span class="mi">12</span><span class="o">:</span><span class="w"> </span><span class="n">error</span><span class="o">:</span><span class="w"> </span><span class="err">‘</span><span class="n">it</span><span class="err">’</span><span class="w"> </span><span class="n">does</span><span class="w"> </span><span class="n">not</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">type</span><span class="w"></span>
+<span class="w">   </span><span class="nf">for</span><span class="p">(</span><span class="kc">auto</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="n">steps</span><span class="err">.</span><span class="nf">begin</span><span class="p">()</span><span class="err">;</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="err">!=</span><span class="w"> </span><span class="n">steps</span><span class="err">.</span><span class="kc">end</span><span class="err">(</span><span class="p">);</span><span class="w"> </span><span class="err">++it)</span><span class="w"> </span><span class="err">{</span><span class="w"></span>
+</code></pre></div>
+
+<p>https://gcc.gnu.org/projects/cxx-status.html#cxx11</p>
+<div class="highlight"><pre><span></span><code><span class="nv">CXXFLAGS</span> <span class="o">=</span> -std<span class="o">=</span>c++11
+</code></pre></div>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

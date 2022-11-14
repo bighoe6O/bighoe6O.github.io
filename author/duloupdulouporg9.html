@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Mon Blog | Articles by duloup@duloup.org</title>
+    <link rel="shortcut icon" type="image/png" href="http://dev.duloup.org/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="http://dev.duloup.org/favicon.ico">
+    <link rel="stylesheet" href="http://dev.duloup.org/theme/css/main.css" type="text/css" />
+    <link rel="stylesheet" href="http://dev.duloup.org/theme/css/pygments.css" type="text/css" />
+    <meta name="generator" content="Pelican" />
+    <meta name="description" content="" />
+    <meta name="author" content="duloup@duloup.org" />
+    <link rel="stylesheet" href="http://dev.duloup.org/theme/css/stork.css">
+    <link rel="stylesheet" media="screen and (prefers-color-scheme: dark)" href="http://dev.duloup.org/theme/css/stork-dark.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+
+                <li class="ephemeral selected"><a href="http://dev.duloup.org/author/duloupdulouporg9.html">duloup@duloup.org</a></li>
+                <li><a href="http://dev.duloup.org/">Home</a></li>
+                <li><a href="http://blog.duloup.org">Site</a></li>
+                <li><a href="http://dev.duloup.org/category/tech.html">Tech</a></li>
+                <li><a href="http://dev.duloup.org/category/musique.html">Musique</a></li>
+                <li><a href="http://dev.duloup.org/categories.html">Categories</a></li>
+                <li><a href="http://dev.duloup.org/tags.html">Tags</a></li>
+                <li><a href="http://dev.duloup.org/about.html">About</a></li>
+            </ul>
+        </nav>
+        <div class="header_box">
+            <h1><a href="http://dev.duloup.org/">Mon Blog</a></h1>
+        </div>
+    </header>
+    <div id="wrapper">
+        <div id="content"><div class="search-box"><div>Search: </div><input data-stork="sitesearch" /></div>
+<div data-stork="sitesearch-output"></div>
+            <h4 class="date">oct. 19, 2018</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/jekyll-tdd.html" rel="bookmark" title="Permanent Link to &quot;Jekyll TDD&quot;">Jekyll TDD</a>
+                </h2>
+
+                
+                
+
+                <h2>Rspec</h2>
+<p><a href="https://dev.to/phansch/testing-your-jekyll-website-with-capybara">https://dev.to/phansch/testing-your-jekyll-website-with-capybara</a></p>
+<p><a href="https://medium.com/espark-engineering-blog/testing-your-jekyll-site-the-ruby-way-ccfa386a8318">https://medium.com/espark-engineering-blog/testing-your-jekyll-site-the-ruby-way-ccfa386a8318</a></p>
+<p><a href="http://chromedriver.storage.googleapis.com/2.9/chromedriver_win32.zip">http://chromedriver.storage.googleapis.com/2.9/chromedriver_win32.zip</a></p>
+<h2>Minitest</h2>
+<p><a href="https://github.com/teamcapybara/capybara/blob/3.9_stable/README.md">https://github.com/teamcapybara/capybara/blob/3.9_stable/README.md</a></p>
+<p><a href="https://gist.github.com/thbar/10be2ea924b81f78d24ab800461bfee3">https://gist.github.com/thbar/10be2ea924b81f78d24ab800461bfee3</a></p>
+<p><a href="https://github.com/mozilla/geckodriver/">https://github.com/mozilla/geckodriver/</a></p>
+<p><a href="https://github.com/mozilla/geckodriver/releases/download/v0.23.0/geckodriver-v0.23.0-win32.zip">https://github.com/mozilla/geckodriver/releases/download/v0.23.0/geckodriver-v0.23.0-win32.zip</a></p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Gemfile</span>
+<span class="n">source</span> <span class="s2">&quot;https://rubygems.org&quot;</span>
+
+<span class="n">gem</span> <span class="s2">&quot;jekyll&quot;</span><span class="p">,</span> <span class="s2">&quot;~&gt; 3.8.4&quot;</span>
+
+<span class="n">gem</span> <span class="s2">&quot;minima&quot;</span><span class="p">,</span> <span class="s2">&quot;~&gt; 2.0&quot;</span>
+
+<span class="c1"># If you have any plugins, put them here!</span>
+<span class="n">group</span> <span class="ss">:jekyll_plugins</span> <span class="k">do</span>
+  <span class="n">gem</span> <span class="s2">&quot;jekyll-feed&quot;</span><span class="p">,</span> <span class="s2">&quot;~&gt; 0.6&quot;</span>
+<span class="k">end</span>
+
+<span class="c1"># Windows does not include zoneinfo files, so bundle the tzinfo-data gem</span>
+<span class="n">gem</span> <span class="s2">&quot;tzinfo-data&quot;</span><span class="p">,</span> <span class="ss">platforms</span><span class="p">:</span> <span class="o">[</span><span class="ss">:mingw</span><span class="p">,</span> <span class="ss">:mswin</span><span class="p">,</span> <span class="ss">:x64_mingw</span><span class="p">,</span> <span class="ss">:jruby</span><span class="o">]</span>
+
+<span class="c1"># Performance-booster for watching directories on Windows</span>
+<span class="n">gem</span> <span class="s2">&quot;wdm&quot;</span><span class="p">,</span> <span class="s2">&quot;~&gt; 0.1.0&quot;</span> <span class="k">if</span> <span class="no">Gem</span><span class="o">.</span><span class="n">win_platform?</span>
+
+<span class="n">group</span> <span class="ss">:development</span><span class="p">,</span> <span class="ss">:test</span> <span class="k">do</span>
+  <span class="n">gem</span> <span class="s2">&quot;rspec&quot;</span>
+  <span class="n">gem</span> <span class="s2">&quot;selenium-webdriver&quot;</span>
+  <span class="n">gem</span> <span class="s2">&quot;chromedriver-helper&quot;</span>
+  <span class="c1"># Ajout de puma (server</span>
+  <span class="c1"># Failures:</span>
+
+  <span class="c1"># 1) sample has the page title</span>
+  <span class="c1">#    Failure/Error: raise LoadError, &#39;Capybara is unable to load `puma` for its server, please add `puma` to your project or specify a different server via something like `Capybara.server = :webrick`.&#39;</span>
+  <span class="n">gem</span> <span class="s2">&quot;puma&quot;</span>
+  <span class="n">gem</span> <span class="s2">&quot;capybara&quot;</span>
+  <span class="n">gem</span> <span class="s2">&quot;rack-jekyll&quot;</span>
+  <span class="n">gem</span> <span class="s2">&quot;pry&quot;</span>
+<span class="k">end</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># spec/spec_helper.rb</span>
+<span class="c1"># Require all of the necessary gems</span>
+<span class="nb">require</span> <span class="s1">&#39;rspec&#39;</span>
+<span class="nb">require</span> <span class="s1">&#39;capybara/rspec&#39;</span>
+<span class="nb">require</span> <span class="s1">&#39;rack/jekyll&#39;</span>
+<span class="nb">require</span> <span class="s1">&#39;rack/test&#39;</span>
+<span class="nb">require</span> <span class="s1">&#39;pry&#39;</span>
+
+<span class="no">RSpec</span><span class="o">.</span><span class="n">configure</span> <span class="k">do</span> <span class="o">|</span><span class="n">config</span><span class="o">|</span>
+  <span class="n">config</span><span class="o">.</span><span class="n">expect_with</span> <span class="ss">:rspec</span> <span class="k">do</span> <span class="o">|</span><span class="n">expectations</span><span class="o">|</span>
+    <span class="n">expectations</span><span class="o">.</span><span class="n">include_chain_clauses_in_custom_matcher_descriptions</span> <span class="o">=</span> <span class="kp">true</span>
+  <span class="k">end</span>
+
+  <span class="n">config</span><span class="o">.</span><span class="n">mock_with</span> <span class="ss">:rspec</span> <span class="k">do</span> <span class="o">|</span><span class="n">mocks</span><span class="o">|</span>
+    <span class="n">mocks</span><span class="o">.</span><span class="n">verify_partial_doubles</span> <span class="o">=</span> <span class="kp">true</span>
+  <span class="k">end</span>
+
+  <span class="c1"># Configure Capybara to use Selenium.</span>
+  <span class="no">Capybara</span><span class="o">.</span><span class="n">register_driver</span> <span class="ss">:selenium</span> <span class="k">do</span> <span class="o">|</span><span class="n">app</span><span class="o">|</span>
+    <span class="c1"># Configure selenium to use Chrome.</span>
+    <span class="no">Capybara</span><span class="o">::</span><span class="no">Selenium</span><span class="o">::</span><span class="no">Driver</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">app</span><span class="p">,</span> <span class="ss">:browser</span> <span class="o">=&gt;</span> <span class="ss">:chrome</span><span class="p">)</span>
+  <span class="k">end</span>
+
+  <span class="c1"># Configure Capybara to load the website through rack-jekyll.</span>
+  <span class="c1"># (force_build: true) builds the site before the tests are run,</span>
+  <span class="c1"># so our tests are always running against the latest version</span>
+  <span class="c1"># of our jekyll site.</span>
+  <span class="no">Capybara</span><span class="o">.</span><span class="n">app</span> <span class="o">=</span> <span class="no">Rack</span><span class="o">::</span><span class="no">Jekyll</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="ss">force_build</span><span class="p">:</span> <span class="kp">true</span><span class="p">)</span>
+<span class="k">end</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Rakefile</span>
+<span class="n">task</span> <span class="ss">:default</span> <span class="o">=&gt;</span> <span class="ss">:rspec</span>
+
+<span class="n">task</span> <span class="ss">:install</span> <span class="k">do</span>
+  <span class="n">sh</span> <span class="s2">&quot;bundle install --path ../vendor/bundle&quot;</span>
+<span class="k">end</span>
+
+<span class="n">task</span> <span class="ss">:update</span> <span class="k">do</span>
+  <span class="n">sh</span> <span class="s2">&quot;bundle update&quot;</span>
+<span class="k">end</span>
+
+<span class="n">task</span> <span class="ss">:rspec</span> <span class="k">do</span>
+  <span class="n">sh</span> <span class="s2">&quot;bundle exec rspec&quot;</span>
+<span class="k">end</span>
+</code></pre></div>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/jekyll-tdd.html">posted at 16:34</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/archive.html" rel="tag">Archive</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/jekyll.html" class="tags">Jekyll</a>
+                </div>
+            </article>            <h4 class="date">oct. 18, 2018</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/jekyl-creation-d-un-gem.html" rel="bookmark" title="Permanent Link to &quot;jekyl-creation-d-un-gem&quot;">jekyl-creation-d-un-gem</a>
+                </h2>
+
+                
+                
+
+                <p><a href="https://guides.rubygems.org/make-your-own-gem/">https://guides.rubygems.org/make-your-own-gem/</a></p>
+<p><a href="https://github.com/minimagick/minimagick">https://github.com/minimagick/minimagick</a></p>
+<div class="highlight"><pre><span></span><code>/&gt; convert --version
+Version: ImageMagick 7.0.8-2 Q16 x86_64 2018-06-20 https://www.imagemagick.org
+Copyright: © 1999-2018 ImageMagick Studio LLC
+License: https://www.imagemagick.org/script/license.php
+Features: Cipher DPC HDRI Modules OpenMP
+Delegates (built-in): bzlib cairo djvu fftw flif fontconfig freetype gslib gvc jbig jng jp2 jpeg lcms lqr ltdl lzma openexr pangocairo png ps raw rsvg tiff webp wmf xml zlib
+</code></pre></div>
+
+<p><a href="https://stackoverflow.com/questions/220176/how-can-i-install-a-local-gem">https://stackoverflow.com/questions/220176/how-can-i-install-a-local-gem</a></p>
+<p><a href="https://jekyllrb.com/docs/themes/">https://jekyllrb.com/docs/themes/</a></p>
+<p><a href="https://guides.rubygems.org/make-your-own-gem/">https://guides.rubygems.org/make-your-own-gem/</a></p>
+<p><a href="https://stackoverflow.com/questions/3127670/how-to-include-data-files-in-a-ruby-gem">https://stackoverflow.com/questions/3127670/how-to-include-data-files-in-a-ruby-gem</a></p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/jekyl-creation-d-un-gem.html">posted at 11:35</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/archive.html" rel="tag">Archive</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/jekyll.html" class="tags">Jekyll</a>
+                </div>
+            </article>            <h4 class="date">oct. 17, 2018</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/jekyll-slideshow.html" rel="bookmark" title="Permanent Link to &quot;jekyll-slideshow&quot;">jekyll-slideshow</a>
+                </h2>
+
+                
+                
+
+                <p><a href="https://github.com/matthewowen/jekyll-slideshow">https://github.com/matthewowen/jekyll-slideshow</a></p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/jekyll-slideshow.html">posted at 20:10</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/archive.html" rel="tag">Archive</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/jekyll.html" class="tags">Jekyll</a>
+                </div>
+            </article>            <h4 class="date">oct. 14, 2018</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/exiftool.html" rel="bookmark" title="Permanent Link to &quot;exiftool&quot;">exiftool</a>
+                </h2>
+
+                
+                
+
+                <h2>ExifTool</h2>
+<p><a href="http://u88.n24.queensu.ca/~bogdan/">ExifToolGUI pour Windows</a></p>
+<p><a href="http://owl.phy.queensu.ca/~phil/exiftool/">ExifTool</a></p>
+<p><a href="http://owl.phy.queensu.ca/~phil/exiftool/exiftool_pod.html">http://owl.phy.queensu.ca/~phil/exiftool/exiftool_pod.html</a></p>
+<p><a href="https://www.youtube.com/watch?v=K9PAD7GqUag">https://www.youtube.com/watch?v=K9PAD7GqUag</a></p>
+<h2>Python</h2>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span> 
+<span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s1">&#39;exiftool -h </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">path_name</span><span class="p">)</span>
+</code></pre></div>
+
+<p><a href="https://smarnach.github.io/pyexiftool/">https://smarnach.github.io/pyexiftool/</a></p>
+<h2>Ruby</h2>
+<p><a href="https://github.com/janfri/mini_exiftool">https://github.com/janfri/mini_exiftool</a></p>
+<h2>Utilisation</h2>
+<p>Exemple d'utilisation (remplacer les double quote par simple quote sous linux)</p>
+<div class="highlight"><pre><span></span><code><span class="n">exiftool</span><span class="w"> </span><span class="s2">&quot;-XPKeywords&lt;${Keywords;s/, /;/g}&quot;</span><span class="w"> </span><span class="n">FileOrDir</span><span class="w"></span>
+</code></pre></div>
+
+<h3>Renseignement du titre d'image par le nom de fichier</h3>
+<div class="highlight"><pre><span></span><code>-Xmp:Title<span class="err">&lt;</span><span class="cp">${</span><span class="n">filename</span><span class="p">;</span><span class="n">s</span><span class="o">/</span>\<span class="o">.</span><span class="n">png</span><span class="err">$</span><span class="o">//</span><span class="n">g</span><span class="cp">}</span>
+</code></pre></div>
+
+<h3>Capitalize</h3>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/exiftool.html">posted at 13:47</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/graphisme.html" rel="tag">Graphisme</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/images.html" class="tags">Images</a>
+                </div>
+            </article>            <h4 class="date">oct. 11, 2018</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/cygwin.html" rel="bookmark" title="Permanent Link to &quot;cygwin&quot;">cygwin</a>
+                </h2>
+
+                
+                
+
+                <p><a href="https://stackoverflow.com/questions/1494658/how-can-i-change-my-cygwin-home-folder-after-installation#1494721">https://stackoverflow.com/questions/1494658/how-can-i-change-my-cygwin-home-folder-after-installation#1494721</a></p>
+<p><a href="https://cygwin.com/cygwin-ug-net/ntsec.html#ntsec-mapping-nsswitch-syntax">https://cygwin.com/cygwin-ug-net/ntsec.html#ntsec-mapping-nsswitch-syntax</a></p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/cygwin.html">posted at 09:34</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/systeme.html" rel="tag">Système</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/windows.html" class="tags">Windows</a>
+                </div>
+            </article>            <h4 class="date">oct. 10, 2018</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/ruby-rmagick.html" rel="bookmark" title="Permanent Link to &quot;ruby: rmagick&quot;">ruby: rmagick</a>
+                </h2>
+
+                
+                
+
+                <p><a href="https://rmagick.github.io/usage.html">https://rmagick.github.io/usage.html</a></p>
+<p><a href="https://stackoverflow.com/questions/4989097/rmagick-under-windows#18391086">https://stackoverflow.com/questions/4989097/rmagick-under-windows#18391086</a></p>
+<p><a href="http://ftp.icm.edu.pl/packages/ImageMagick/binaries/ImageMagick-6.7.7-9-Q8-windows-dll.exe">http://ftp.icm.edu.pl/packages/ImageMagick/binaries/ImageMagick-6.7.7-9-Q8-windows-dll.exe</a></p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/ruby-rmagick.html">posted at 19:46</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/developpement.html" rel="tag">Développement</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/ruby.html" class="tags">Ruby</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/images.html" class="tags">Images</a>
+                </div>
+            </article>            <h4 class="date">oct. 10, 2018</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/ruby.html" rel="bookmark" title="Permanent Link to &quot;Ruby&quot;">Ruby</a>
+                </h2>
+
+                
+                
+
+                <h1>Installation</h1>
+<ul>
+<li><a href="https://github.com/oneclick/rubyinstaller2">https://github.com/oneclick/rubyinstaller2</a></li>
+<li><a href="https://github.com/oneclick/rubyinstaller2/releases">Releases</a></li>
+</ul>
+<h1>Documentation</h1>
+<ul>
+<li><a href="https://ruby-doc.org/docs/beginner-fr/xhtml/ch01.html#id2854022">Premiers pas</a></li>
+<li><a href="https://www.codecademy.com/articles/ruby-command-line-argv">Arguments ligne de commande</a></li>
+<li><a href="http://www.jrsoftware.org/isdl.php">commande isdl</a></li>
+<li><a href="https://stackoverflow.com/questions/7517524/understanding-the-gemfile-lock-file">Gemfile.lock</a></li>
+</ul>
+<h1>Librairies</h1>
+<ul>
+<li><a href="https://ruby-doc.org/stdlib-1.9.3/libdoc/yaml/rdoc/YAML.html">YAML</a></li>
+<li><a href="https://ruby-doc.com/stdlib/libdoc/fileutils/rdoc/FileUtils.html">FileUtils</a></li>
+<li><a href="https://ruby-doc.org/core-2.5.1/Array.html">Array</a></li>
+<li><a href="http://www.jrsoftware.org/download.php/is-unicode.exe">is-unicode</a></li>
+<li><a href="http://www.tutorialspoint.com/ruby/ruby_regular_expressions.htm">Regexp</a></li>
+</ul>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/ruby.html">posted at 08:51</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/developpement.html" rel="tag">Développement</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/ruby.html" class="tags">Ruby</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/languages.html" class="tags">Languages</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/jekyll.html" class="tags">Jekyll</a>
+                </div>
+            </article>            <h4 class="date">oct. 09, 2018</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/pyo.html" rel="bookmark" title="Permanent Link to &quot;Pyo&quot;">Pyo</a>
+                </h2>
+
+                
+                
+
+                <p><a href="https://github.com/belangeo/pyo">Pyo sur GitHub</a></p>
+<p><a href="https://www.matthieuamiguet.ch/blog/python-music-and-black-magic">https://www.matthieuamiguet.ch/blog/python-music-and-black-magic</a></p>
+<h1>Dépendances</h1>
+<p><a href="http://www.portaudio.com/">Portaudio</a></p>
+<p><a href="http://portmedia.sourceforge.net/portmidi/">Portmidi</a></p>
+<p><a href="http://www.mega-nerd.com/libsndfile/">libsndfile</a></p>
+<p><a href="http://ajaxsoundstudio.com/pyodoc/compiling.html">http://ajaxsoundstudio.com/pyodoc/compiling.html</a></p>
+<h1>Installation sous Windows</h1>
+<p>Python27-win32</p>
+<p>devrait fontionne en Python36-win32</p>
+<h2>Compilation de portaudio sous Windows/mingw32</h2>
+<p><a href="https://sdk.steinberg.net/viewtopic.php?f=6&amp;t=566">https://sdk.steinberg.net/viewtopic.php?f=6&amp;t=566</a></p>
+<div class="highlight"><pre><span></span><code>./configure --with-winapi=asio --with-asiodir=/e/repo/Dev/libs/ASIOSDK2.3.1
+make
+</code></pre></div>
+
+<h2>Compilation de portmidi</h2>
+<p><a href="https://sourceforge.net/p/portmedia/wiki/Installing_portmidi_on_Windows/">https://sourceforge.net/p/portmedia/wiki/Installing_portmidi_on_Windows/</a></p>
+<p><a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html">https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html</a></p>
+<h1>Installation sous Linux</h1>
+<h2>Installation des dépendances</h2>
+<div class="highlight"><pre><span></span><code>sudo apt-get install libportmidi-dev
+sudo apt-get install libsndfile-dev
+sudo apt-get install liblo-dev
+</code></pre></div>
+
+<h2>Clonage du dépôt</h2>
+<div class="highlight"><pre><span></span><code>git clone https://github.com/belangeo/pyo.git
+</code></pre></div>
+
+<h2>Installation de l'environnement et des librairies python</h2>
+<p><a href="https://www.wxpython.org/pages/downloads/">https://www.wxpython.org/pages/downloads/</a></p>
+<div class="highlight"><pre><span></span><code>pip install -U -f https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ubuntu-18.04 wxPython
+virtualenv -p python3 $VENVS/pyo
+. $VENVS/outils/bin/activate
+
+pip install wxPython    
+python setup.py install --install-layout=deb --use-jack
+</code></pre></div>
+
+<h1>Synths</h1>
+<p><a href="https://mdoege.github.io/PySynth/">https://mdoege.github.io/PySynth/</a></p>
+<h1>Tutos</h1>
+<p><a href="https://waterpigs.co.uk/articles/simple-pyo-synth/">https://waterpigs.co.uk/articles/simple-pyo-synth/</a></p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/pyo.html">posted at 08:55</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/musique.html" rel="tag">Musique</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/daw.html" class="tags">DAW</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/instruments.html" class="tags">Instruments</a>
+                </div>
+            </article>            <h4 class="date">oct. 07, 2018</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/developper-un-plugin-jekyll.html" rel="bookmark" title="Permanent Link to &quot;developper-un-plugin-jekyll&quot;">developper-un-plugin-jekyll</a>
+                </h2>
+
+                
+                
+
+                <p><a href="https://tuananh.org/2014/08/04/writing-your-first-jekyll-plugin/">https://tuananh.org/2014/08/04/writing-your-first-jekyll-plugin/</a></p>
+<div class="highlight"><pre><span></span><code>module Jekyll
+  module Checked
+    def checked(text)
+      text.sub(%r{\[x\]}i, &#39;<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;ballot_box_with_check&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#39;).sub(%r{\[\]}i, &#39;<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;ballot_box&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>&#39;)
+    end
+  end
+end
+
+Liquid::Template.register_filter(Jekyll::Checked)
+</code></pre></div>
+
+<p>Groupement des scans par mot clé (keyword)</p>
+<p><a href="https://www.marktrapp.com/blog/2014/01/07/group-posts-jekyll-front-matter/">https://www.marktrapp.com/blog/2014/01/07/group-posts-jekyll-front-matter/</a></p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/developper-un-plugin-jekyll.html">posted at 08:03</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/archive.html" rel="tag">Archive</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/jekyll.html" class="tags">Jekyll</a>
+                </div>
+            </article>            <h4 class="date">oct. 07, 2018</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/lektor.html" rel="bookmark" title="Permanent Link to &quot;Lektor&quot;">Lektor</a>
+                </h2>
+
+                
+                
+
+                <p><a href="https://headlesscms.org/">https://headlesscms.org/</a></p>
+<h2>Lektor</h2>
+<p><a href="https://github.com/lektor/lektor">https://github.com/lektor/lektor</a></p>
+<div class="highlight"><pre><span></span><code>$ git clone https://github.com/lektor/lektor
+$ <span class="nb">cd</span> lektor
+$ virtualenv venv
+$ . venv/bin/activate
+$ pip install --editable .
+$ make build-js
+$ make install-git-hooks
+$ <span class="nb">export</span> <span class="nv">LEKTOR_DEV</span><span class="o">=</span><span class="m">1</span>
+$ cp -r example example-project
+$ lektor --project example-project server
+</code></pre></div>
+
+<h2>Coisas</h2>
+<p><a href="https://github.com/fiatjaf/coisas">https://github.com/fiatjaf/coisas</a></p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/lektor.html">posted at 07:28</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/divers.html" rel="tag">Divers</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/cms.html" class="tags">CMS</a>
+                </div>
+            </article>
+
+                <div class="clear"></div>
+                <div class="pages">
+
+                    <a href="http://dev.duloup.org/author/duloupdulouporg8.html" class="prev_page">&larr;&nbsp;Previous</a>
+
+                    <a href="http://dev.duloup.org/author/duloupdulouporg10.html" class="next_page">Next&nbsp;&rarr;</a>
+
+                    <span>Page 9 of 15</span>
+                </div>
+
+            <div class="clear"></div>
+            <footer>
+                <p>
+                <a href="https://github.com/jody-frankowski/blue-penguin">Blue Penguin</a> Theme
+                &middot;
+                Powered by <a href="http://getpelican.com">Pelican</a>
+            </footer>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <script src="http://dev.duloup.org/theme/js/stork.js"></script>
+    <script>
+        stork.initialize("http://dev.duloup.org/theme/js/stork.wasm")
+        stork.downloadIndex("sitesearch", "http://dev.duloup.org/search-index.st")
+        stork.attach("sitesearch")
+    </script>
+</body>
+</html>

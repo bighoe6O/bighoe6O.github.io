@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>Django Framework</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <meta name="description" content="Installation Python Virtualenv (ancienne méthode) virtualenv ~/.virtualenvs/django . ~/.virtualenvs/django/bin/activate pip install django Pipenv..." />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">MyBlog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/archerie.html">Archerie</a></li>
+                    <li><a href="/category/archive.html">Archive</a></li>
+                    <li><a href="/category/culture.html">Culture</a></li>
+                    <li><a href="/category/developpement.html">Développement</a></li>
+                    <li><a href="/category/divers.html">Divers</a></li>
+                    <li><a href="/category/graphisme.html">Graphisme</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li><a href="/category/musique.html">Musique</a></li>
+                    <li><a href="/category/projets.html">Projets</a></li>
+                    <li><a href="/category/reprap.html">RepRap</a></li>
+                    <li><a href="/category/securite.html">Sécurité</a></li>
+                    <li><a href="/category/systeme.html">Système</a></li>
+                    <li class="active"><a href="/category/tech.html">Tech</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/dev-django.html" rel="bookmark"
+           title="Permalink to Django Framework">Django Framework</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2019-07-27T19:40:00+02:00">
+                Published: Sat 27 July 2019
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/tech.html">Tech</a>.</p>
+<p>tags: <a href="/tag/web.html">Web</a> <a href="/tag/python.html">Python</a> <a href="/tag/django.html">Django</a> </p>
+</footer><!-- /.post-info -->      <h1>Installation</h1>
+<h2><a href="python">Python</a></h2>
+<h2>Virtualenv (ancienne méthode)</h2>
+<div class="highlight"><pre><span></span><code>virtualenv ~/.virtualenvs/django
+. ~/.virtualenvs/django/bin/activate
+pip install django
+</code></pre></div>
+
+<h2>Pipenv</h2>
+<div class="highlight"><pre><span></span><code>pipenv install django
+</code></pre></div>
+
+<ul>
+<li><a href="https://docs.djangoproject.com/en/2.2/howto/initial-data/">Providing initial data for models</a></li>
+<li><a href="https://www.hackerearth.com/fr/practice/notes/bokeh-interactive-visualization-library-use-graph-with-django-template/">Integrating Bokeh Graphs with Django template</a></li>
+<li><a href="https://stackoverflow.com/questions/44184268/django-invalid-http-host-header-testserver-you-may-need-to-add-utestserver">Django Invalid HTTP_HOST header: 'testserver'. You may need to add u'testserver' to ALLOWED_HOSTS</a></li>
+</ul>
+<h1>Commandes</h1>
+<p><a href="https://docs.djangoproject.com/en/2.2/howto/custom-management-commands/">Writing custom django-admin commands</a></p>
+<h1>Django</h1>
+<p><a href="https://openclassrooms.com/fr/courses/4425076-decouvrez-le-framework-django">OpenClassRoom: Découvrez le framework Django</a></p>
+<p><a href="https://www.djangoproject.com/start/">Getting started with Django</a></p>
+<h2>Vérifier la version de Django</h2>
+<div class="highlight"><pre><span></span><code>python -m django --version
+</code></pre></div>
+
+<h2>Créer un projet django</h2>
+<div class="highlight"><pre><span></span><code>mkdir realestate
+cd realestate
+django-admin startproject .
+</code></pre></div>
+
+<h2>Créer une application "realestate" dans notre projet "mysite"</h2>
+<div class="highlight"><pre><span></span><code>django-admin startapp realestate
+</code></pre></div>
+
+<h3>Créer l'utilisateur admin</h3>
+<div class="highlight"><pre><span></span><code><span class="n">python</span><span class="w"> </span><span class="n">manage</span><span class="p">.</span><span class="n">py</span><span class="w"> </span><span class="n">createsuperuser</span><span class="w"> </span><span class="c1">--username admin --email admin@admin.io</span>
+</code></pre></div>
+
+<p>En python</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">django.contrib.auth</span> <span class="kn">import</span> <span class="n">get_user_model</span><span class="p">;</span>
+<span class="n">CustomUser</span> <span class="o">=</span> <span class="n">get_user_model</span><span class="p">();</span>
+<span class="n">CustomUser</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">create_superuser</span><span class="p">(</span>
+<span class="s1">&#39;admin&#39;</span><span class="p">,</span> <span class="s1">&#39;admin@admin.io&#39;</span><span class="p">,</span> <span class="s1">&#39;admin&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<ul>
+<li><a href="https://pypi.org/project/django-pandas/">django-pandas</a></li>
+<li><a href="https://nikgrozev.com/2015/12/27/pandas-in-jupyter-quickstart-and-useful-snippets/">Pandas in Jupyter - Quickstart and Useful Snippets</a></li>
+</ul>
+<p><a href="https://djangopackages.org/grids/g/project-management/">https://djangopackages.org/grids/g/project-management/</a></p>
+<h2>Tests</h2>
+<p><a href="https://docs.wagtail.io/en/stable/advanced_topics/testing.html">https://docs.wagtail.io/en/stable/advanced_topics/testing.html</a></p>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

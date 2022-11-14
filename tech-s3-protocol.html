@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>Protocole S3</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <meta name="description" content="Python pipenv install boto3 transfer = S3Transfer(boto3.client('s3', cfg.AWS_REGION, aws_access_key_id=cfg.AWS_APP_ID,..." />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">MyBlog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/archerie.html">Archerie</a></li>
+                    <li><a href="/category/archive.html">Archive</a></li>
+                    <li><a href="/category/culture.html">Culture</a></li>
+                    <li><a href="/category/developpement.html">Développement</a></li>
+                    <li><a href="/category/divers.html">Divers</a></li>
+                    <li><a href="/category/graphisme.html">Graphisme</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li><a href="/category/musique.html">Musique</a></li>
+                    <li><a href="/category/projets.html">Projets</a></li>
+                    <li><a href="/category/reprap.html">RepRap</a></li>
+                    <li><a href="/category/securite.html">Sécurité</a></li>
+                    <li><a href="/category/systeme.html">Système</a></li>
+                    <li class="active"><a href="/category/tech.html">Tech</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/tech-s3-protocol.html" rel="bookmark"
+           title="Permalink to Protocole S3">Protocole S3</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2019-05-21T00:04:00+02:00">
+                Published: Tue 21 May 2019
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/tech.html">Tech</a>.</p>
+<p>tags: <a href="/tag/web.html">Web</a> </p>
+</footer><!-- /.post-info -->      <h2>Python</h2>
+<div class="highlight"><pre><span></span><code>pipenv install boto3
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">transfer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">S3Transfer</span><span class="p">(</span><span class="n">boto3</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s1">&#39;s3&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">cfg</span><span class="o">.</span><span class="n">AWS_REGION</span><span class="p">,</span><span class="w"> </span><span class="n">aws_access_key_id</span><span class="o">=</span><span class="n">cfg</span><span class="o">.</span><span class="n">AWS_APP_ID</span><span class="p">,</span><span class="w"></span>
+<span class="n">aws_secret_access_key</span><span class="o">=</span><span class="n">cfg</span><span class="o">.</span><span class="n">AWS_APP_SECRET</span><span class="p">))</span><span class="w"></span>
+
+<span class="n">transfer</span><span class="o">.</span><span class="n">upload_file</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span><span class="w"> </span><span class="n">AWS_BUCKET</span><span class="p">,</span><span class="w"> </span><span class="n">file_path</span><span class="p">)</span><span class="w"></span>
+</code></pre></div>
+
+<h2>Ligne de commande</h2>
+<div class="highlight"><pre><span></span><code>sudo apt-get install s3cmd
+
+&lt;https://www.scaleway.com/en/docs/object-storage-with-aws-cli/&gt;
+</code></pre></div>
+
+<h2>Montage</h2>
+<p><a href="http://www.whiteboardcoder.com/2017/12/how-to-mount-s3-bucket-as-hard-drive.html">http://www.whiteboardcoder.com/2017/12/how-to-mount-s3-bucket-as-hard-drive.html</a></p>
+<div class="highlight"><pre><span></span><code>{
+  &quot;CORSRules&quot;: [
+    {
+      &quot;AllowedOrigins&quot;: [&quot;http://www.example.com&quot;],
+      &quot;AllowedHeaders&quot;: [&quot;*&quot;],
+      &quot;AllowedMethods&quot;: [&quot;GET&quot;, &quot;HEAD&quot;, &quot;POST&quot;, &quot;PUT&quot;, &quot;DELETE&quot;],
+      &quot;MaxAgeSeconds&quot;: 3000,
+      &quot;ExposeHeaders&quot;: [&quot;Etag&quot;]
+    }
+  ]
+}
+</code></pre></div>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

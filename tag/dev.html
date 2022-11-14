@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>MyBlog - Dev</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">MyBlog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/archerie.html">Archerie</a></li>
+                    <li><a href="/category/archive.html">Archive</a></li>
+                    <li><a href="/category/culture.html">Culture</a></li>
+                    <li><a href="/category/developpement.html">Développement</a></li>
+                    <li><a href="/category/divers.html">Divers</a></li>
+                    <li><a href="/category/graphisme.html">Graphisme</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li><a href="/category/musique.html">Musique</a></li>
+                    <li><a href="/category/projets.html">Projets</a></li>
+                    <li><a href="/category/reprap.html">RepRap</a></li>
+                    <li><a href="/category/securite.html">Sécurité</a></li>
+                    <li><a href="/category/systeme.html">Système</a></li>
+                    <li><a href="/category/tech.html">Tech</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="/tech-zsh.html">Zsh</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2021-10-31T09:48:00+01:00">
+                Published: Sun 31 October 2021
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/systeme.html">Système</a>.</p>
+<p>tags: <a href="/tag/dev.html">Dev</a> <a href="/tag/shell.html">Shell</a> <a href="/tag/systeme.html">Système</a> </p>
+</footer><!-- /.post-info --><p><a href="https://github.com/ohmyzsh/ohmyzsh">Oh My Zsh</a></p>
+<p><a href="https://github.com/romkatv/powerlevel10k">Powerlevel10k</a></p>
+<h1>Thèmes</h1>
+<p><a href="https://github.com/ohmyzsh/ohmyzsh/wiki/Themes">https://github.com/ohmyzsh/ohmyzsh/wiki/Themes</a></p>
+<div class="highlight"><pre><span></span><code><span class="c1"># .zshrc</span>
+<span class="nb">export</span> <span class="nv">ZSH</span><span class="o">=</span><span class="s2">&quot;/home/stephane/.oh-my-zsh&quot;</span>
+<span class="nv">ZSH_THEME</span><span class="o">=</span><span class="s2">&quot;robbyrussell&quot;</span>
+<span class="nv">plugins</span><span class="o">=(</span>ssh-agent<span class="o">)</span>
+<span class="nb">source</span> <span class="nv">$ZSH</span>/oh-my-zsh.sh
+bindkey -s <span class="s2">&quot;^[OM&quot;</span> <span class="s2">&quot;^M&quot;</span>
+unsetopt BEEP
+<span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:<span class="nv">$HOME</span>/.local/bin
+<span class="nb">alias</span> <span class="nv">prun</span><span class="o">=</span><span class="s1">&#39;pipenv run&#39;</span>
+</code></pre></div>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/Tech/2021-10-10-hadoop-ecosystem.html" rel="bookmark"
+                           title="Permalink to Ecosystème Hadoop">Ecosystème Hadoop</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2021-10-10T10:35:00+02:00">
+                Published: Sun 10 October 2021
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/developpement.html">Développement</a>.</p>
+<p>tags: <a href="/tag/dev.html">Dev</a> <a href="/tag/hadoop.html">Hadoop</a> </p>
+</footer><!-- /.post-info -->                <h1>Ecosystème Hadoop</h1>
+<h2>Pig</h2>
+<p><a href="https://www.tutorialspoint.com/apache_pig/">https://www.tutorialspoint.com/apache_pig/</a></p>
+<h2>Spark</h2>
+<p><a href="https://www.tutorialspoint.com/apache_spark/index.htm">https://www.tutorialspoint.com/apache_spark/index.htm</a></p>
+<h2>Docker</h2>
+<p><a href="https://github.com/big-data-europe/docker-spark">https://github.com/big-data-europe/docker-spark</a></p>
+<p><a href="https://github.com/captionnemo/hadoop-Spark-Hive-Pig-Sqoop_on_docker(fetch)">https://github.com/captionnemo/hadoop-Spark-Hive-Pig-Sqoop_on_docker(fetch)</a></p>
+<h2>Datasets</h2>
+<p><a href="https://catalog.data.gov/dataset/air-quality/resource/f3ed1638-92da-4f88-bb6b-7d3940514574">https://catalog.data.gov/dataset/air-quality/resource/f3ed1638-92da-4f88-bb6b-7d3940514574</a></p>
+<p><a href="https://normanlimxk.com/2021/07/12/create-a-jupyterlab-notebook-for-spark/">https://normanlimxk.com/2021/07/12/create-a-jupyterlab-notebook-for-spark/</a></p>
+<div class="highlight"><pre><span></span><code>wget https://s3.amazonaws.com/h2o-airlines-unpacked …</code></pre></div>
+                <a class="readmore" href="/Tech/2021-10-10-hadoop-ecosystem.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/2021-09-23-php.html" rel="bookmark"
+                           title="Permalink to PHP">PHP</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2021-09-23T11:19:00+02:00">
+                Published: Thu 23 September 2021
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/tech.html">Tech</a>.</p>
+<p>tags: <a href="/tag/dev.html">Dev</a> <a href="/tag/langages.html">Langages</a> </p>
+</footer><!-- /.post-info -->                <p><a href="https://www.soupbowl.io/2020/03/replace-lamp-with-docker-the-easy-way/">https://www.soupbowl.io/2020/03/replace-lamp-with-docker-the-easy-way/</a></p>
+<p><a href="https://www.tutorialrepublic.com/php-tutorial/php-get-started.php">https://www.tutorialrepublic.com/php-tutorial/php-get-started.php</a></p>
+<p><a href="http://www.swig.org/Doc4.0/Php.html">http://www.swig.org/Doc4.0/Php.html</a></p>
+<p><a href="https://www.jetbrains.com/phpstorm/">https://www.jetbrains.com/phpstorm/</a></p>
+<p><a href="https://getcomposer.org/download/">https://getcomposer.org/download/</a></p>
+<h2>Swig</h2>
+<p><a href="https://www.dev2qa.com/how-to-install-swig-on-macos-linux-and-windows/">https://www.dev2qa.com/how-to-install-swig-on-macos-linux-and-windows/</a></p>
+<p><a href="http://www.swig.org/download.html">http://www.swig.org/download.html</a></p>
+<div class="highlight"><pre><span></span><code><span class="o">/*</span><span class="w"> </span><span class="n">File</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">example</span><span class="o">.</span><span class="n">c</span><span class="w"> </span><span class="o">*/</span><span class="w"></span>
+
+<span class="c1">#include &lt;time.h&gt;</span><span class="w"></span>
+<span class="n">double …</span></code></pre></div>
+                <a class="readmore" href="/2021-09-23-php.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+                </ol><!-- /#posts-list -->
+                </section><!-- /#content -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

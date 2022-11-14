@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>Jekyll Minitest</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <meta name="description" content="Liens https://dev.to/phansch/testing-your-jekyll-website-with-capybara https://github.com/teamcapybara/capybara/blob/3.9_stable/README.md Example..." />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">MyBlog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/archerie.html">Archerie</a></li>
+                    <li class="active"><a href="/category/archive.html">Archive</a></li>
+                    <li><a href="/category/culture.html">Culture</a></li>
+                    <li><a href="/category/developpement.html">Développement</a></li>
+                    <li><a href="/category/divers.html">Divers</a></li>
+                    <li><a href="/category/graphisme.html">Graphisme</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li><a href="/category/musique.html">Musique</a></li>
+                    <li><a href="/category/projets.html">Projets</a></li>
+                    <li><a href="/category/reprap.html">RepRap</a></li>
+                    <li><a href="/category/securite.html">Sécurité</a></li>
+                    <li><a href="/category/systeme.html">Système</a></li>
+                    <li><a href="/category/tech.html">Tech</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/jekyll-minitest.html" rel="bookmark"
+           title="Permalink to Jekyll Minitest">Jekyll Minitest</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-10-24T09:18:41+02:00">
+                Published: Wed 24 October 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/archive.html">Archive</a>.</p>
+<p>tags: <a href="/tag/jekyll.html">Jekyll</a> </p>
+</footer><!-- /.post-info -->      <h2>Liens</h2>
+<p><a href="https://dev.to/phansch/testing-your-jekyll-website-with-capybara">https://dev.to/phansch/testing-your-jekyll-website-with-capybara</a></p>
+<p><a href="https://github.com/teamcapybara/capybara/blob/3.9_stable/README.md">https://github.com/teamcapybara/capybara/blob/3.9_stable/README.md</a></p>
+<h2>Example</h2>
+<p><a href="https://gist.github.com/thbar/10be2ea924b81f78d24ab800461bfee3">Using minitest to regression-test your Jekyll static site</a></p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Gemfile</span>
+<span class="n">source</span> <span class="s1">&#39;https://rubygems.org&#39;</span>
+
+<span class="n">gem</span> <span class="s1">&#39;jekyll&#39;</span><span class="p">,</span> <span class="s1">&#39;3.3.1&#39;</span>
+
+<span class="n">group</span> <span class="ss">:test</span> <span class="k">do</span>
+  <span class="n">gem</span> <span class="s1">&#39;capybara&#39;</span>
+  <span class="n">gem</span> <span class="s1">&#39;rack&#39;</span>
+  <span class="n">gem</span> <span class="s1">&#39;rack-jekyll&#39;</span>
+  <span class="n">gem</span> <span class="s1">&#39;rake&#39;</span>
+<span class="k">end</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># test/test_helper.rb</span>
+<span class="nb">require</span> <span class="s1">&#39;minitest/autorun&#39;</span>
+
+<span class="nb">require</span> <span class="s1">&#39;bundler/setup&#39;</span>
+<span class="nb">require</span> <span class="s1">&#39;capybara/dsl&#39;</span>
+<span class="nb">require</span> <span class="s1">&#39;rack/jekyll&#39;</span>
+
+<span class="no">Capybara</span><span class="o">.</span><span class="n">app</span> <span class="o">=</span> <span class="no">Rack</span><span class="o">::</span><span class="no">Jekyll</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="ss">force_build</span><span class="p">:</span> <span class="kp">true</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">CapybaraTestCase</span> <span class="o">&lt;</span> <span class="no">MiniTest</span><span class="o">::</span><span class="no">Test</span>
+  <span class="kp">include</span> <span class="no">Capybara</span><span class="o">::</span><span class="no">DSL</span>
+
+  <span class="k">def</span> <span class="nf">teardown</span>
+    <span class="no">Capybara</span><span class="o">.</span><span class="n">reset_sessions!</span>
+    <span class="no">Capybara</span><span class="o">.</span><span class="n">use_default_driver</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># _plugins/tests.rb: permet d&#39;executer les tests au build</span>
+<span class="no">Jekyll</span><span class="o">::</span><span class="no">Hooks</span><span class="o">.</span><span class="n">register</span> <span class="ss">:site</span><span class="p">,</span> <span class="ss">:post_write</span> <span class="k">do</span> <span class="o">|</span><span class="n">site</span><span class="o">|</span>
+  <span class="c1"># NOTE: you may want to raise conditionally here to stop the deploy</span>
+  <span class="nb">system</span><span class="p">(</span><span class="s2">&quot;bundle exec ruby tests.rb&quot;</span><span class="p">)</span>
+<span class="k">end</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># test/features/this_blog_post_test.rb</span>
+<span class="nb">require</span> <span class="s1">&#39;test_helper&#39;</span>
+
+<span class="k">class</span> <span class="nc">ThisBlogPostTest</span> <span class="o">&lt;</span> <span class="no">CapybaraTestCase</span>
+  <span class="k">def</span> <span class="nf">test_describes_how_to_write_tests</span>
+    <span class="n">visit</span> <span class="s1">&#39;2017/03/02/testing-jekyll-websites/&#39;</span>
+    <span class="n">assert</span> <span class="n">page</span><span class="o">.</span><span class="n">has_content?</span><span class="p">(</span><span class="s1">&#39;configured we can now start &#39;</span><span class="p">\</span>
+      <span class="s1">&#39;writing Capybara tests as usual:&#39;</span><span class="p">)</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
