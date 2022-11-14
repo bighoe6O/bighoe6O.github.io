@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>DAW sous Linux</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <meta name="description" content="Synthétiseur midi Timidity fonctionne mal FluidSynth semble mieux fontionner Fontes utilisées :..." />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">MyBlog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/archerie.html">Archerie</a></li>
+                    <li><a href="/category/archive.html">Archive</a></li>
+                    <li><a href="/category/culture.html">Culture</a></li>
+                    <li><a href="/category/developpement.html">Développement</a></li>
+                    <li><a href="/category/divers.html">Divers</a></li>
+                    <li><a href="/category/graphisme.html">Graphisme</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li class="active"><a href="/category/musique.html">Musique</a></li>
+                    <li><a href="/category/projets.html">Projets</a></li>
+                    <li><a href="/category/reprap.html">RepRap</a></li>
+                    <li><a href="/category/securite.html">Sécurité</a></li>
+                    <li><a href="/category/systeme.html">Système</a></li>
+                    <li><a href="/category/tech.html">Tech</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/daw-sous-linux.html" rel="bookmark"
+           title="Permalink to DAW sous Linux">DAW sous Linux</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-09-18T16:24:34+02:00">
+                Published: Tue 18 September 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/musique.html">Musique</a>.</p>
+<p>tags: <a href="/tag/linux.html">Linux</a> <a href="/tag/daw.html">DAW</a> </p>
+</footer><!-- /.post-info -->      <h2>Synthétiseur midi</h2>
+<p>Timidity fonctionne mal</p>
+<p>FluidSynth semble mieux fontionner</p>
+<p>Fontes utilisées :</p>
+<ul>
+<li><a href="https://osdn.net/projects/sfnet_androidframe/downloads/soundfonts/SGM-V2.01.sf2/">https://osdn.net/projects/sfnet_androidframe/downloads/soundfonts/SGM-V2.01.sf2/</a></li>
+</ul>
+<h2>Séquenceurs</h2>
+<ul>
+<li><a href="http://ardour.org/">Ardour</a></li>
+<li><a href="http://manual.ardour.org/working-with-midi/">Manuel</a></li>
+</ul>
+<h2>Accompagnement</h2>
+<h3><a href="https://www.cs.hmc.edu/~keller/jazz/improvisor/">Impro-Visor</a></h3>
+<p>En java</p>
+<h3><a href="http://linuxband.org/">LinuxBand</a></h3>
+<p>Interface graphique à MMA</p>
+<h3><a href="https://www.mellowood.ca/mma/">MMA</a> (Musical MIDI Accompaniment)</h3>
+<h1>Wine</h1>
+<p><a href="https://www.reddit.com/r/FL_Studio/comments/4ucx0i/tutorial_how_to_install_fl_studio_on_linux/">https://www.reddit.com/r/FL_Studio/comments/4ucx0i/tutorial_how_to_install_fl_studio_on_linux/</a></p>
+<h2>Kontakt5</h2>
+<p>Native Access</p>
+<p>Crash (librairie qt5.2 manquante)</p>
+<div class="highlight"><pre><span></span><code><span class="n">ERROR</span><span class="p">:</span><span class="w"> </span><span class="n">ld</span><span class="o">.</span><span class="n">so</span><span class="p">:</span><span class="w"> </span><span class="n">object</span><span class="w"> </span><span class="s1">&#39;libgtk3-nocsd.so.0&#39;</span><span class="w"> </span><span class="n">from</span><span class="w"> </span><span class="n">LD_PRELOAD</span><span class="w"> </span><span class="n">cannot</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">preloaded</span><span class="w"> </span><span class="p">(</span><span class="n">cannot</span><span class="w"> </span><span class="n">open</span><span class="w"> </span><span class="n">shared</span><span class="w"> </span><span class="n">object</span><span class="w"> </span><span class="n">file</span><span class="p">):</span><span class="w"> </span><span class="n">ignored</span><span class="s2">&quot;</span>
+</code></pre></div>
+
+<p><a href="https://www.linuxquestions.org/questions/blog/the-dsc-472367/getting-rid-of-error-ld-so-object-libgtk3-nocsd-so-0-from-ld_preload-cannot-be-preloaded-cannot-open-shared-object-file-ignored-37823/">https://www.linuxquestions.org/questions/blog/the-dsc-472367/getting-rid-of-error-ld-so-object-libgtk3-nocsd-so-0-from-ld_preload-cannot-be-preloaded-cannot-open-shared-object-file-ignored-37823/</a></p>
+<div class="highlight"><pre><span></span><code>sudo apt-get install libgtk3-nocsd0:i386
+</code></pre></div>
+
+<p><a href="https://tehnick.github.io/q4wine/">https://tehnick.github.io/q4wine/</a></p>
+<div class="highlight"><pre><span></span><code>sudo add-apt-repository ppa:tehnick/q4wine
+sudo apt-get install q4wine
+</code></pre></div>
+
+<p><a href="https://bugs.winehq.org/show_bug.cgi?id=44138">https://bugs.winehq.org/show_bug.cgi?id=44138</a></p>
+<p><a href="http://linuxmao.org/Wine+-+WineASIO">http://linuxmao.org/Wine+-+WineASIO</a></p>
+<p><a href="https://kxstudio.linuxaudio.org/Documentation:Manual:wineasio_and_reaper">https://kxstudio.linuxaudio.org/Documentation:Manual:wineasio_and_reaper</a></p>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

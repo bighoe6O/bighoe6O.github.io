@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Mon Blog | Articles by duloup@duloup.org</title>
+    <link rel="shortcut icon" type="image/png" href="http://dev.duloup.org/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="http://dev.duloup.org/favicon.ico">
+    <link rel="stylesheet" href="http://dev.duloup.org/theme/css/main.css" type="text/css" />
+    <link rel="stylesheet" href="http://dev.duloup.org/theme/css/pygments.css" type="text/css" />
+    <meta name="generator" content="Pelican" />
+    <meta name="description" content="" />
+    <meta name="author" content="duloup@duloup.org" />
+    <link rel="stylesheet" href="http://dev.duloup.org/theme/css/stork.css">
+    <link rel="stylesheet" media="screen and (prefers-color-scheme: dark)" href="http://dev.duloup.org/theme/css/stork-dark.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+
+                <li class="ephemeral selected"><a href="http://dev.duloup.org/author/duloupdulouporg.html">duloup@duloup.org</a></li>
+                <li><a href="http://dev.duloup.org/">Home</a></li>
+                <li><a href="http://blog.duloup.org">Site</a></li>
+                <li><a href="http://dev.duloup.org/category/tech.html">Tech</a></li>
+                <li><a href="http://dev.duloup.org/category/musique.html">Musique</a></li>
+                <li><a href="http://dev.duloup.org/categories.html">Categories</a></li>
+                <li><a href="http://dev.duloup.org/tags.html">Tags</a></li>
+                <li><a href="http://dev.duloup.org/about.html">About</a></li>
+            </ul>
+        </nav>
+        <div class="header_box">
+            <h1><a href="http://dev.duloup.org/">Mon Blog</a></h1>
+        </div>
+    </header>
+    <div id="wrapper">
+        <div id="content"><div class="search-box"><div>Search: </div><input data-stork="sitesearch" /></div>
+<div data-stork="sitesearch-output"></div>
+            <h4 class="date">sept. 02, 2022</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/raspberry-pi-pico.html" rel="bookmark" title="Permanent Link to &quot;Raspberry Pi Pico&quot;">Raspberry Pi Pico</a>
+                </h2>
+
+                
+                
+
+                <p><img alt="Raspberry Pi Pico" src="img/raspberry-pi-pico-sm.jpg"></p>
+<h2>Liens</h2>
+<p><a href="https://www.raspberrypi.com/products/raspberry-pi-pico/">https://www.raspberrypi.com/products/raspberry-pi-pico/</a></p>
+<p>Editeur</p>
+<p><a href="https://thonny.org/">https://thonny.org/</a></p>
+<p><a href="https://picockpit.com/raspberry-pi/raspberry-pi-pico-and-micropython-on-windows/">https://picockpit.com/raspberry-pi/raspberry-pi-pico-and-micropython-on-windows/</a></p>
+<h2>RShell</h2>
+<p><a href="https://www.mfitzp.com/using-micropython-raspberry-pico/">https://www.mfitzp.com/using-micropython-raspberry-pico/</a></p>
+<div class="highlight"><pre><span></span><code>python -m pip install rshell
+</code></pre></div>
+
+<h2>Pinout</h2>
+<p><img alt="Pico Pinout" src="img/Raspberry-Pi-Pico-Pinout.jpg"></p>
+<h2>DS1397 RTC</h2>
+<p><a href="https://www.iotstarters.com/diy-digital-clock-with-rtc-ds1307-and-raspberry-pi-pico/">https://www.iotstarters.com/diy-digital-clock-with-rtc-ds1307-and-raspberry-pi-pico/</a></p>
+<p><img alt="ds1307" src="img/ds1307-RTC-module-min.jpg"></p>
+<h2>I2C</h2>
+<p>Scanner le bus I2C</p>
+<p><a href="https://micropython.fr/modules_center/seriel_i2c/scanner_bus_i2c/">https://micropython.fr/modules_center/seriel_i2c/scanner_bus_i2c/</a></p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/raspberry-pi-pico.html">posted at 20:30</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/tech.html" rel="tag">Tech</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/web.html" class="tags">Web</a>
+                </div>
+            </article>            <h4 class="date">nov. 04, 2021</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/angular.html" rel="bookmark" title="Permanent Link to &quot;Angular&quot;">Angular</a>
+                </h2>
+
+                
+                
+
+                <h2>Liens</h2>
+<p><a href="https://www.typescriptlang.org/">https://www.typescriptlang.org/</a></p>
+<p>TypeScript is JavaScript with syntax for types.</p>
+<p>TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.</p>
+<h2>Environnement de développement</h2>
+<p><a href="https://angular.io/guide/setup-local">https://angular.io/guide/setup-local</a></p>
+<div class="highlight"><pre><span></span><code><span class="n">scoop</span><span class="w"> </span><span class="n">install</span><span class="w"> </span><span class="n">nodejs</span><span class="w"></span>
+
+<span class="n">npm</span><span class="w"> </span><span class="n">install</span><span class="w"> </span><span class="o">-</span><span class="n">g</span><span class="w"> </span><span class="nv">@angular</span><span class="o">/</span><span class="n">cli</span><span class="w"></span>
+</code></pre></div>
+
+<h2>Tutorial 1</h2>
+<p><a href="https://angular.io/tutorial">https://angular.io/tutorial</a></p>
+<h3>Création de l'application initiale</h3>
+<div class="highlight"><pre><span></span><code>ng new my-app
+</code></pre></div>
+
+<h2>Lancer l'application</h2>
+<div class="highlight"><pre><span></span><code>cd my-app
+ng serve --open
+</code></pre></div>
+
+<p><a href="http://localhost:4200/">http://localhost:4200/</a></p>
+<h2>Tutorial 2</h2>
+<p><a href="https://angular.io/tutorial/">https://angular.io/tutorial/</a></p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/angular.html">posted at 10:38</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/tech.html" rel="tag">Tech</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/web.html" class="tags">Web</a>
+                </div>
+            </article>            <h4 class="date">nov. 01, 2021</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/about.html" rel="bookmark" title="Permanent Link to &quot;About&quot;">About</a>
+                </h2>
+
+                
+                
+
+                <h2>About duloup.org</h2>
+<p>Hello, world it's duloup!</p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/about.html">posted at 13:32</a>
+                </div>
+            </article>            <h4 class="date">nov. 01, 2021</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/tech-python-kivy.html" rel="bookmark" title="Permanent Link to &quot;Kivy&quot;">Kivy</a>
+                </h2>
+
+                
+                
+
+                <h2>Dépendances</h2>
+<p><a href="https://docs.cython.org/en/latest/src/quickstart/install.html">Cython</a></p>
+<ul>
+<li><a href="https://kivy.org/">Kivy</a></li>
+<li><a href="https://riptutorial.com/kivy/example/6889/installation---setup">Installation &amp; Setup</a></li>
+<li><a href="https://github.com/kivy/kivy">https://github.com/kivy/kivy</a></li>
+<li><a href="https://kivy.org/doc/stable/guide/packaging-android.html#packaging-android">Create a package for Android</a><div class="highlight"><pre><span></span><code>sudo apt install default-jdk-headless
+</code></pre></div>
+
+</li>
+</ul>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/tech-python-kivy.html">posted at 10:29</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/developpement.html" rel="tag">Développement</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/python.html" class="tags">Python</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/ui.html" class="tags">UI</a>
+                </div>
+            </article>            <h4 class="date">oct. 31, 2021</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/tech-zsh.html" rel="bookmark" title="Permanent Link to &quot;Zsh&quot;">Zsh</a>
+                </h2>
+
+                
+                
+
+                <p><a href="https://github.com/ohmyzsh/ohmyzsh">Oh My Zsh</a></p>
+<p><a href="https://github.com/romkatv/powerlevel10k">Powerlevel10k</a></p>
+<h1>Thèmes</h1>
+<p><a href="https://github.com/ohmyzsh/ohmyzsh/wiki/Themes">https://github.com/ohmyzsh/ohmyzsh/wiki/Themes</a></p>
+<div class="highlight"><pre><span></span><code><span class="c1"># .zshrc</span>
+<span class="nb">export</span> <span class="nv">ZSH</span><span class="o">=</span><span class="s2">&quot;/home/stephane/.oh-my-zsh&quot;</span>
+<span class="nv">ZSH_THEME</span><span class="o">=</span><span class="s2">&quot;robbyrussell&quot;</span>
+<span class="nv">plugins</span><span class="o">=(</span>ssh-agent<span class="o">)</span>
+<span class="nb">source</span> <span class="nv">$ZSH</span>/oh-my-zsh.sh
+bindkey -s <span class="s2">&quot;^[OM&quot;</span> <span class="s2">&quot;^M&quot;</span>
+unsetopt BEEP
+<span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:<span class="nv">$HOME</span>/.local/bin
+<span class="nb">alias</span> <span class="nv">prun</span><span class="o">=</span><span class="s1">&#39;pipenv run&#39;</span>
+</code></pre></div>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/tech-zsh.html">posted at 09:48</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/systeme.html" rel="tag">Système</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/dev.html" class="tags">Dev</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/shell.html" class="tags">Shell</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/systeme.html" class="tags">Système</a>
+                </div>
+            </article>            <h4 class="date">oct. 29, 2021</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/Divers/2021-10-29-graphisme.html" rel="bookmark" title="Permanent Link to &quot;Graphisme&quot;">Graphisme</a>
+                </h2>
+
+                
+                
+
+                <p><a href="https://drive.google.com/drive/folders/1kfxf5jn4xl_p-WwKhHWVjFKbLJM8p6d6">https://drive.google.com/drive/folders/1kfxf5jn4xl_p-WwKhHWVjFKbLJM8p6d6</a></p>
+<h2>Résolution</h2>
+<p>Web 72dpi</p>
+<p>Impression 300dpi</p>
+<h2>Photoshop</h2>
+<h3>Formats</h3>
+<ul>
+<li>PSD (transparence)</li>
+<li>JPEG (qualité correcte, mais pas de transparence)</li>
+<li>PNG (qualité correcte, garde la transparence)</li>
+</ul>
+<p>&lt;&gt;</p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/Divers/2021-10-29-graphisme.html">posted at 09:10</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/graphisme.html" rel="tag">Graphisme</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/graphisme.html" class="tags">Graphisme</a>
+                </div>
+            </article>            <h4 class="date">oct. 28, 2021</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/Tech/2021-10-28-svg.html" rel="bookmark" title="Permanent Link to &quot;SVG&quot;">SVG</a>
+                </h2>
+
+                
+                
+
+                <p><a href="https://www.drububu.com/animation/beziercurves/index.html">https://www.drububu.com/animation/beziercurves/index.html</a></p>
+<div class="highlight"><pre><span></span><code> <span class="p">&lt;</span><span class="nt">pre</span><span class="p">&gt;&lt;</span><span class="nt">code</span><span class="p">&gt;</span>
+ function interpolateQuadraticBezierCurve(
+                                          lambdaStart,
+                                          lambdaEnd,
+                                          xAnchorStart,
+                                          yAnchorStart,
+                                          xHandle,
+                                          yHandle,
+                                          xAnchorEnd,
+                                          yAnchorEnd 
+                                         ) {
+  &#39;use strict&#39;;
+
+  var x0, y0, x1, y1, path, txt;
+
+  if ( lambdaStart <span class="ni">&amp;gt;</span> 0.0 ) {
+   x0 =  xAnchorStart + lambdaStart * ( xHandle    - xAnchorStart );
+   y0 =  yAnchorStart + lambdaStart * ( yHandle    - yAnchorStart );
+   x1 =  xHandle      + lambdaStart * ( xAnchorEnd - xHandle      );
+   y1 =  yHandle      + lambdaStart * ( yAnchorEnd - yHandle      );
+
+   xAnchorStart = x0 + lambdaStart * ( x1 - x0 );
+   yAnchorStart = y0 + lambdaStart * ( y1 - y0 );
+   xHandle      = x1;
+   yHandle      = y1; 
+  }
+
+  if ( lambdaEnd <span class="ni">&amp;lt;</span> 1.0 ) {
+   x0 =  xAnchorStart + lambdaEnd * ( xHandle    - xAnchorStart );
+   y0 =  yAnchorStart + lambdaEnd * ( yHandle    - yAnchorStart );
+   x1 =  xHandle      + lambdaEnd * ( xAnchorEnd - xHandle      );
+   y1 =  yHandle      + lambdaEnd * ( yAnchorEnd - yHandle      );
+
+   xHandle    = x0;
+   yHandle    = y0;
+   xAnchorEnd = x0 + lambdaEnd * ( x1 - x0 );
+   yAnchorEnd = y0 + lambdaEnd * ( y1 - y0 );
+  }
+
+  path = document.createElementNS( &#39;http://www.w3.org/2000/svg&#39;, &#39;path&#39; );
+
+  txt  = &#39;M&#39; + xAnchorStart + &#39; &#39; + yAnchorStart + &#39; &#39;;
+  txt += &#39;Q&#39; + xHandle      + &#39; &#39; + yHandle      + &#39; &#39;;
+  txt +=       xAnchorEnd   + &#39; &#39; + yAnchorEnd;
+
+  path.setAttribute( &#39;d&#39; , txt );
+  path.setAttribute( &#39;stroke&#39; , &#39;#00FF00&#39; );
+  path.setAttribute( &#39;stroke-width&#39; , 2.0 );
+  path.setAttribute( &#39;fill&#39; , &#39;none&#39; );
+
+  return path;
+ }
+
+ <span class="p">&lt;/</span><span class="nt">code</span><span class="p">&gt;&lt;/</span><span class="nt">pre</span><span class="p">&gt;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code> <span class="nt">&lt;h2&gt;</span>Cubic B<span class="ni">&amp;eacute;</span>zier Curve<span class="nt">&lt;/h2&gt;</span>
+
+
+ <span class="cm">&lt;!-- &lt;div class=&quot;clear&quot;&gt;&lt;/div&gt; --&gt;</span>
+
+
+ <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;bezier_cubic_animation&quot;</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">&quot;images/interpolated-cubic-bezier-curve.png&quot;</span> <span class="na">alt=</span><span class="s">&quot;interpolated cubic bezier curve&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">interpolateCubicBezierCurve</span><span class="p">(</span><span class="w"></span>
+<span class="w">                                      </span><span class="nx">lambdaStart</span><span class="p">,</span><span class="w"></span>
+<span class="w">                                      </span><span class="nx">lambdaEnd</span><span class="p">,</span><span class="w"></span>
+<span class="w">                                      </span><span class="nx">xAnchorStart</span><span class="p">,</span><span class="w"></span>
+<span class="w">                                      </span><span class="nx">yAnchorStart</span><span class="p">,</span><span class="w"></span>
+<span class="w">                                      </span><span class="nx">xHandleStart</span><span class="p">,</span><span class="w"></span>
+<span class="w">                                      </span><span class="nx">yHandleStart</span><span class="p">,</span><span class="w"></span>
+<span class="w">                                      </span><span class="nx">xHandleEnd</span><span class="p">,</span><span class="w"></span>
+<span class="w">                                      </span><span class="nx">yHandleEnd</span><span class="p">,</span><span class="w"></span>
+<span class="w">                                      </span><span class="nx">xAnchorEnd</span><span class="p">,</span><span class="w"></span>
+<span class="w">                                      </span><span class="nx">yAnchorEnd</span><span class="w"> </span>
+<span class="w">                                    </span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="s1">&#39;use strict&#39;</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">  </span><span class="kd">var</span><span class="w"> </span><span class="nx">x0</span><span class="p">,</span><span class="w"> </span><span class="nx">y0</span><span class="p">,</span><span class="w"> </span><span class="nx">x1</span><span class="p">,</span><span class="w"> </span><span class="nx">y1</span><span class="p">,</span><span class="w"> </span><span class="nx">x2</span><span class="p">,</span><span class="w"> </span><span class="nx">y2</span><span class="p">,</span><span class="w"> </span><span class="nx">x3</span><span class="p">,</span><span class="w"> </span><span class="nx">y3</span><span class="p">,</span><span class="w"> </span><span class="nx">x4</span><span class="p">,</span><span class="w"> </span><span class="nx">y4</span><span class="p">,</span><span class="w"> </span><span class="nx">path</span><span class="p">,</span><span class="w"> </span><span class="nx">txt</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">lambdaStart</span><span class="w"> </span><span class="o">&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="w"> </span><span class="mf">0.0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="nx">x0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">xAnchorStart</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">lambdaStart</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="nx">xHandleStart</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">xAnchorStart</span><span class="w"> </span><span class="p">);</span><span class="w"></span>
+<span class="w">   </span><span class="nx">y0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">yAnchorStart</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">lambdaStart</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="nx">yHandleStart</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">yAnchorStart</span><span class="w"> </span><span class="p">);</span><span class="w"></span>
+<span class="w">   </span><span class="nx">x1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">xHandleStart</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">lambdaStart</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="nx">xHandleEnd</span><span class="w">   </span><span class="o">-</span><span class="w"> </span><span class="nx">xHandleStart</span><span class="w"> </span><span class="p">);</span><span class="w"></span>
+<span class="w">   </span><span class="nx">y1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">yHandleStart</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">lambdaStart</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="nx">yHandleEnd</span><span class="w">   </span><span class="o">-</span><span class="w"> </span><span class="nx">yHandleStart</span><span class="w"> </span><span class="p">);</span><span class="w"></span>
+<span class="w">   </span><span class="nx">x2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">xHandleEnd</span><span class="w">   </span><span class="o">+</span><span class="w"> </span><span class="nx">lambdaStart</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="nx">xAnchorEnd</span><span class="w">   </span><span class="o">-</span><span class="w"> </span><span class="nx">xHandleEnd</span><span class="w">   </span><span class="p">);</span><span class="w"></span>
+<span class="w">   </span><span class="nx">y2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">yHandleEnd</span><span class="w">   </span><span class="o">+</span><span class="w"> </span><span class="nx">lambdaStart</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="nx">yAnchorEnd</span><span class="w">   </span><span class="o">-</span><span class="w"> </span><span class="nx">yHandleEnd</span><span class="w">   </span><span class="p">);</span><span class="w"></span>
+
+<span class="w">   </span><span class="nx">x3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">x0</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">lambdaStart</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="nx">x1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">x0</span><span class="w"> </span><span class="p">);</span><span class="w"></span>
+<span class="w">   </span><span class="nx">y3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">y0</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">lambdaStart</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="nx">y1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">y0</span><span class="w"> </span><span class="p">);</span><span class="w"></span>
+<span class="w">   </span><span class="nx">x4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">x1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">lambdaStart</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="nx">x2</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">x1</span><span class="w"> </span><span class="p">);</span><span class="w"></span>
+<span class="w">   </span><span class="nx">y4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">y1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">lambdaStart</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="nx">y2</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">y1</span><span class="w"> </span><span class="p">);</span><span class="w"></span>
+
+<span class="w">   </span><span class="nx">xAnchorStart</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">x3</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">lambdaStart</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="nx">x4</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">x3</span><span class="w"> </span><span class="p">);</span><span class="w"></span>
+<span class="w">   </span><span class="nx">yAnchorStart</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">y3</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">lambdaStart</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="nx">y4</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">y3</span><span class="w"> </span><span class="p">);</span><span class="w"></span>
+<span class="w">   </span><span class="nx">xHandleStart</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">x4</span><span class="p">;</span><span class="w"></span>
+<span class="w">   </span><span class="nx">yHandleStart</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">y4</span><span class="p">;</span><span class="w"></span>
+<span class="w">   </span><span class="nx">xHandleEnd</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="nx">x2</span><span class="p">;</span><span class="w"></span>
+<span class="w">   </span><span class="nx">yHandleEnd</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="nx">y2</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="nx">lambdaEnd</span><span class="w"> </span><span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span><span class="w"> </span><span class="mf">1.0</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="nx">x0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">xAnchorStart</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">lambdaEnd</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="nx">xHandleStart</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">xAnchorStart</span><span class="w"> </span><span class="p">);</span><span class="w"></span>
+<span class="w">   </span><span class="nx">y0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">yAnchorStart</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">lambdaEnd</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="nx">yHandleStart</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">yAnchorStart</span><span class="w"> </span><span class="p">);</span><span class="w"></span>
+<span class="w">   </span><span class="nx">x1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">xHandleStart</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">lambdaEnd</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="nx">xHandleEnd</span><span class="w">   </span><span class="o">-</span><span class="w"> </span><span class="nx">xHandleStart</span><span class="w"> </span><span class="p">);</span><span class="w"></span>
+<span class="w">   </span><span class="nx">y1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">yHandleStart</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">lambdaEnd</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="nx">yHandleEnd</span><span class="w">   </span><span class="o">-</span><span class="w"> </span><span class="nx">yHandleStart</span><span class="w"> </span><span class="p">);</span><span class="w"></span>
+<span class="w">   </span><span class="nx">x2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">xHandleEnd</span><span class="w">   </span><span class="o">+</span><span class="w"> </span><span class="nx">lambdaEnd</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="nx">xAnchorEnd</span><span class="w">   </span><span class="o">-</span><span class="w"> </span><span class="nx">xHandleEnd</span><span class="w">   </span><span class="p">);</span><span class="w"></span>
+<span class="w">   </span><span class="nx">y2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">yHandleEnd</span><span class="w">   </span><span class="o">+</span><span class="w"> </span><span class="nx">lambdaEnd</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="nx">yAnchorEnd</span><span class="w">   </span><span class="o">-</span><span class="w"> </span><span class="nx">yHandleEnd</span><span class="w">   </span><span class="p">);</span><span class="w"></span>
+
+<span class="w">   </span><span class="nx">x3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">x0</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">lambdaEnd</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="nx">x1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">x0</span><span class="w"> </span><span class="p">);</span><span class="w"></span>
+<span class="w">   </span><span class="nx">y3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">y0</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">lambdaEnd</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="nx">y1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">y0</span><span class="w"> </span><span class="p">);</span><span class="w"></span>
+<span class="w">   </span><span class="nx">x4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">x1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">lambdaEnd</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="nx">x2</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">x1</span><span class="w"> </span><span class="p">);</span><span class="w"></span>
+<span class="w">   </span><span class="nx">y4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">y1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">lambdaEnd</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="nx">y2</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">y1</span><span class="w"> </span><span class="p">);</span><span class="w"></span>
+
+<span class="w">   </span><span class="nx">xHandleStart</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">x0</span><span class="p">;</span><span class="w"></span>
+<span class="w">   </span><span class="nx">yHandleStart</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">y0</span><span class="p">;</span><span class="w"></span>
+<span class="w">   </span><span class="nx">xHandleEnd</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="nx">x3</span><span class="p">;</span><span class="w"></span>
+<span class="w">   </span><span class="nx">yHandleEnd</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="nx">y3</span><span class="p">;</span><span class="w"></span>
+<span class="w">   </span><span class="nx">xAnchorEnd</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="nx">x3</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">lambdaEnd</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="nx">x4</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">x3</span><span class="w"> </span><span class="p">);</span><span class="w"></span>
+<span class="w">   </span><span class="nx">yAnchorEnd</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="nx">y3</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">lambdaEnd</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="nx">y4</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">y3</span><span class="w"> </span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">  </span><span class="nx">path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">createElementNS</span><span class="p">(</span><span class="w"> </span><span class="s1">&#39;http://www.w3.org/2000/svg&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;path&#39;</span><span class="w"> </span><span class="p">);</span><span class="w"></span>
+
+<span class="w">  </span><span class="nx">txt</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;M&#39;</span><span class="w"> </span><span class="o">+</span><span class="w">  </span><span class="nx">xAnchorStart</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39; &#39;</span><span class="w"> </span><span class="o">+</span><span class="w">  </span><span class="nx">yAnchorStart</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="nx">txt</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="s1">&#39;C&#39;</span><span class="w"> </span><span class="o">+</span><span class="w">  </span><span class="nx">xHandleStart</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39; &#39;</span><span class="w"> </span><span class="o">+</span><span class="w">  </span><span class="nx">yHandleStart</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="nx">txt</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="s1">&#39; &#39;</span><span class="w"> </span><span class="o">+</span><span class="w">  </span><span class="nx">xHandleEnd</span><span class="w">   </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39; &#39;</span><span class="w"> </span><span class="o">+</span><span class="w">  </span><span class="nx">yHandleEnd</span><span class="w">  </span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="nx">txt</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="s1">&#39; &#39;</span><span class="w"> </span><span class="o">+</span><span class="w">  </span><span class="nx">xAnchorEnd</span><span class="w">   </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39; &#39;</span><span class="w"> </span><span class="o">+</span><span class="w">  </span><span class="nx">yAnchorEnd</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">  </span><span class="nx">path</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="w"> </span><span class="s1">&#39;d&#39;</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="nx">path</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="w"> </span><span class="s1">&#39;stroke&#39;</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;#0000FF&#39;</span><span class="w"> </span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="nx">path</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="w"> </span><span class="s1">&#39;stroke-width&#39;</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="mf">2.0</span><span class="w"> </span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="nx">path</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="w"> </span><span class="s1">&#39;fill&#39;</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;none&#39;</span><span class="w"> </span><span class="p">);</span><span class="w"></span>
+
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">path</span><span class="p">;</span><span class="w"></span>
+<span class="w"> </span><span class="p">}</span><span class="w"></span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span><span class="w"></span>
+<span class="w">  </span><span class="c1">//&lt;![CDATA[</span><span class="w"></span>
+<span class="w">   </span><span class="o">!</span><span class="nb">window</span><span class="p">.</span><span class="nx">jQuery</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="s1">&#39;&lt;script src=&quot;../../scripts/jquery_3.1.1.min.js&quot;&gt;&lt;\/script&gt;&#39;</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="c1">//]]&gt;</span><span class="w"></span>
+<span class="w"> </span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+
+ <span class="p">&lt;</span><span class="nt">pre</span><span class="p">&gt;&lt;</span><span class="nt">code</span><span class="p">&gt;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">interpolateLinearBezierCurve</span><span class="p">(</span><span class="w"></span>
+<span class="w">                                       </span><span class="nx">lambdaStart</span><span class="p">,</span><span class="w"></span>
+<span class="w">                                       </span><span class="nx">lambdaEnd</span><span class="p">,</span><span class="w"></span>
+<span class="w">                                       </span><span class="nx">xAnchorStart</span><span class="p">,</span><span class="w"></span>
+<span class="w">                                       </span><span class="nx">yAnchorStart</span><span class="p">,</span><span class="w"></span>
+<span class="w">                                       </span><span class="nx">xAnchorEnd</span><span class="p">,</span><span class="w"></span>
+<span class="w">                                       </span><span class="nx">yAnchorEnd</span><span class="w"> </span>
+<span class="w">                                      </span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="s1">&#39;use strict&#39;</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">  </span><span class="kd">var</span><span class="w"> </span><span class="nx">x0</span><span class="p">,</span><span class="w"> </span><span class="nx">y0</span><span class="p">,</span><span class="w"> </span><span class="nx">x1</span><span class="p">,</span><span class="w"> </span><span class="nx">y1</span><span class="p">,</span><span class="w"> </span><span class="nx">path</span><span class="p">,</span><span class="w"> </span><span class="nx">txt</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="nx">lambdaStart</span><span class="w"> </span><span class="o">&amp;</span><span class="nx">gt</span><span class="p">;</span><span class="w"> </span><span class="mf">0.0</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="nx">xAnchorStart</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">xAnchorStart</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">lambdaStart</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="nx">xAnchorEnd</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">xAnchorStart</span><span class="w"> </span><span class="p">);</span><span class="w"></span>
+<span class="w">   </span><span class="nx">yAnchorStart</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">yAnchorStart</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">lambdaStart</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="nx">yAnchorEnd</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">yAnchorStart</span><span class="w"> </span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="nx">lambdaEnd</span><span class="w"> </span><span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span><span class="w"> </span><span class="mf">1.0</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="nx">xAnchorEnd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">xAnchorStart</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">lambdaEnd</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="nx">xAnchorEnd</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">xAnchorStart</span><span class="w"> </span><span class="p">);</span><span class="w"></span>
+<span class="w">   </span><span class="nx">yAnchorEnd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">yAnchorStart</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">lambdaEnd</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="nx">yAnchorEnd</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">yAnchorStart</span><span class="w"> </span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">  </span><span class="nx">path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">createElementNS</span><span class="p">(</span><span class="w"> </span><span class="s1">&#39;http://www.w3.org/2000/svg&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;path&#39;</span><span class="w"> </span><span class="p">);</span><span class="w"></span>
+
+<span class="w">  </span><span class="nx">txt</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;M&#39;</span><span class="w"> </span><span class="o">+</span><span class="w">  </span><span class="nx">xAnchorStart</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39; &#39;</span><span class="w"> </span><span class="o">+</span><span class="w">  </span><span class="nx">yAnchorStart</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="nx">txt</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="s1">&#39; &#39;</span><span class="w"> </span><span class="o">+</span><span class="w">  </span><span class="nx">xAnchorEnd</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39; &#39;</span><span class="w"> </span><span class="o">+</span><span class="w">  </span><span class="nx">yAnchorEnd</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">  </span><span class="nx">path</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="w"> </span><span class="s1">&#39;d&#39;</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="nx">txt</span><span class="w"> </span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="nx">path</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="w"> </span><span class="s1">&#39;stroke&#39;</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;#FF0000&#39;</span><span class="w"> </span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="nx">path</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="w"> </span><span class="s1">&#39;stroke-width&#39;</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="mf">2.0</span><span class="w"> </span><span class="p">);</span><span class="w"></span>
+
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">path</span><span class="p">;</span><span class="w"></span>
+<span class="w"> </span><span class="p">}</span><span class="w"> </span>
+
+<span class="w"> </span><span class="o">&lt;</span><span class="err">/code&gt;&lt;/pre&gt;</span><span class="w"></span>
+</code></pre></div>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/Tech/2021-10-28-svg.html">posted at 20:43</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/graphisme.html" rel="tag">Graphisme</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/svg.html" class="tags">SVG</a>
+                </div>
+            </article>            <h4 class="date">oct. 25, 2021</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/Tech/2021-10-25-site-certificats-ssl.html" rel="bookmark" title="Permanent Link to &quot;Site: Installer un certificat SSL&quot;">Site: Installer un certificat SSL</a>
+                </h2>
+
+                
+                
+
+                <p><a href="https://certbot.eff.org/lets-encrypt/debianstretch-apache">https://certbot.eff.org/lets-encrypt/debianstretch-apache</a></p>
+<h2>Installer snapd</h2>
+<div class="highlight"><pre><span></span><code>sudo apt install snapd
+</code></pre></div>
+
+<h2>S'assure que la version de snapd est à jour</h2>
+<div class="highlight"><pre><span></span><code>sudo snap install core; sudo snap refresh core
+</code></pre></div>
+
+<h2>Installer Cerbot</h2>
+<div class="highlight"><pre><span></span><code>sudo snap install --classic certbot
+</code></pre></div>
+
+<h2>Préparer la commande Certbot</h2>
+<div class="highlight"><pre><span></span><code>sudo ln -s /snap/bin/certbot /usr/bin/certbot
+</code></pre></div>
+
+<h2>Choisir comment installer Certbot</h2>
+<div class="highlight"><pre><span></span><code>sudo certbot --apache
+</code></pre></div>
+
+<p>Au bout de cinq erreurs, il faut attendre une heure il peut être préférable d'utiliser le <a href="https://letsencrypt.org/docs/staging-environment/">staging environment</a></p>
+<div class="highlight"><pre><span></span><code>certbot --apache --dry-run
+</code></pre></div>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/Tech/2021-10-25-site-certificats-ssl.html">posted at 19:44</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/systeme.html" rel="tag">Système</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/site.html" class="tags">Site</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/blog.html" class="tags">Blog</a>
+                </div>
+            </article>            <h4 class="date">oct. 10, 2021</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/Tech/2021-10-10-hadoop-ecosystem.html" rel="bookmark" title="Permanent Link to &quot;Ecosystème Hadoop&quot;">Ecosystème Hadoop</a>
+                </h2>
+
+                
+                
+
+                <h1>Ecosystème Hadoop</h1>
+<h2>Pig</h2>
+<p><a href="https://www.tutorialspoint.com/apache_pig/">https://www.tutorialspoint.com/apache_pig/</a></p>
+<h2>Spark</h2>
+<p><a href="https://www.tutorialspoint.com/apache_spark/index.htm">https://www.tutorialspoint.com/apache_spark/index.htm</a></p>
+<h2>Docker</h2>
+<p><a href="https://github.com/big-data-europe/docker-spark">https://github.com/big-data-europe/docker-spark</a></p>
+<p><a href="https://github.com/captionnemo/hadoop-Spark-Hive-Pig-Sqoop_on_docker(fetch)">https://github.com/captionnemo/hadoop-Spark-Hive-Pig-Sqoop_on_docker(fetch)</a></p>
+<h2>Datasets</h2>
+<p><a href="https://catalog.data.gov/dataset/air-quality/resource/f3ed1638-92da-4f88-bb6b-7d3940514574">https://catalog.data.gov/dataset/air-quality/resource/f3ed1638-92da-4f88-bb6b-7d3940514574</a></p>
+<p><a href="https://normanlimxk.com/2021/07/12/create-a-jupyterlab-notebook-for-spark/">https://normanlimxk.com/2021/07/12/create-a-jupyterlab-notebook-for-spark/</a></p>
+<div class="highlight"><pre><span></span><code>wget https://s3.amazonaws.com/h2o-airlines-unpacked/allyears2k.csv
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>hdfs dfs -mkdir -p /data/airlines
+hdfs dfs -put allyears2k.csv /data/airlines
+hdfs dfs -ls /data/airlines
+</code></pre></div>
+
+<h2>Projets</h2>
+<div class="highlight"><pre><span></span><code><span class="n">git</span><span class="w"> </span><span class="n">clone</span><span class="w"> </span><span class="n">git</span><span class="nv">@duloup</span><span class="p">.</span><span class="nl">org</span><span class="p">:</span><span class="n">hadoop</span><span class="o">-</span><span class="n">tuto</span><span class="w"></span>
+</code></pre></div>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/Tech/2021-10-10-hadoop-ecosystem.html">posted at 10:35</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/developpement.html" rel="tag">Développement</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/dev.html" class="tags">Dev</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/hadoop.html" class="tags">Hadoop</a>
+                </div>
+            </article>            <h4 class="date">sept. 29, 2021</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/python-gtk.html" rel="bookmark" title="Permanent Link to &quot;Python Gtk&quot;">Python Gtk</a>
+                </h2>
+
+                
+                
+
+                <h2>Prérequis</h2>
+<h3>Linux</h3>
+<div class="highlight"><pre><span></span><code>jhbuild sanitycheck
+jhbuild sysdeps --install pygobject
+jhbuild sysdeps --install gtk+-3
+
+sudo apt install libgirepository1.0-dev libcairo2-dev
+
+pipenv install pygobject
+</code></pre></div>
+
+<p><a href="https://python-gtk-3-tutorial.readthedocs.io/en/latest/introduction.html">https://python-gtk-3-tutorial.readthedocs.io/en/latest/introduction.html</a></p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/python-gtk.html">posted at 16:41</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/developpement.html" rel="tag">Développement</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/python.html" class="tags">Python</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/ui.html" class="tags">UI</a>
+                </div>
+            </article>
+
+                <div class="clear"></div>
+                <div class="pages">
+
+
+                    <a href="http://dev.duloup.org/author/duloupdulouporg2.html" class="next_page">Next&nbsp;&rarr;</a>
+
+                    <span>Page 1 of 15</span>
+                </div>
+
+            <div class="clear"></div>
+            <footer>
+                <p>
+                <a href="https://github.com/jody-frankowski/blue-penguin">Blue Penguin</a> Theme
+                &middot;
+                Powered by <a href="http://getpelican.com">Pelican</a>
+            </footer>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <script src="http://dev.duloup.org/theme/js/stork.js"></script>
+    <script>
+        stork.initialize("http://dev.duloup.org/theme/js/stork.wasm")
+        stork.downloadIndex("sitesearch", "http://dev.duloup.org/search-index.st")
+        stork.attach("sitesearch")
+    </script>
+</body>
+</html>

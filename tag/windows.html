@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>MyBlog - Windows</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">MyBlog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/archerie.html">Archerie</a></li>
+                    <li><a href="/category/archive.html">Archive</a></li>
+                    <li><a href="/category/culture.html">Culture</a></li>
+                    <li><a href="/category/developpement.html">Développement</a></li>
+                    <li><a href="/category/divers.html">Divers</a></li>
+                    <li><a href="/category/graphisme.html">Graphisme</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li><a href="/category/musique.html">Musique</a></li>
+                    <li><a href="/category/projets.html">Projets</a></li>
+                    <li><a href="/category/reprap.html">RepRap</a></li>
+                    <li><a href="/category/securite.html">Sécurité</a></li>
+                    <li><a href="/category/systeme.html">Système</a></li>
+                    <li><a href="/category/tech.html">Tech</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="/system-powershell.html">PowerShell</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2019-07-24T09:20:00+02:00">
+                Published: Wed 24 July 2019
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/tech.html">Tech</a>.</p>
+<p>tags: <a href="/tag/windows.html">Windows</a> </p>
+</footer><!-- /.post-info --><h1>Ajoût de PowerShell au menu contextuel windows</h1>
+<p><a href="https://www.howtogeek.com/165268/how-to-add-open-powershell-here-to-the-context-menu-in-windows/">https://www.howtogeek.com/165268/how-to-add-open-powershell-here-to-the-context-menu-in-windows/</a></p>
+<div class="highlight"><pre><span></span><code>Windows Registry Editor Version 5.00<span class="w"></span>
+
+<span class="k">[</span><span class="nb">HKEY_LOCAL_MACHINE</span><span class="k">\SOFTWARE\Classes\Directory\background\shell\powershellmenu]</span><span class="w"></span>
+<span class="na">@</span><span class="o">=</span><span class="s">&quot;Ouvrir PowerShell ici&quot;</span><span class="w"></span>
+
+<span class="k">[</span><span class="nb">HKEY_LOCAL_MACHINE</span><span class="k">\SOFTWARE\Classes\Directory\background\shell\powershellmenu\command]</span><span class="w"></span>
+<span class="na">@</span><span class="o">=</span><span class="s">&quot;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\powershell.exe -NoExit -Command Set-Location -LiteralPath &#39;%v&#39;&quot;</span><span class="w"></span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Windows Registry Editor Version 5.00<span class="w"></span>
+
+<span class="k">[</span><span class="nb">HKEY_LOCAL_MACHINE</span><span class="k">\SOFTWARE\Classes\Directory\shell\powershellmenu]</span><span class="w"></span>
+<span class="na">@</span><span class="o">=</span><span class="s">&quot;Ouvrir PowerShell ici&quot;</span><span class="w"></span>
+
+<span class="k">[</span><span class="nb">HKEY_LOCAL_MACHINE</span><span class="k">\SOFTWARE\Classes\Directory\shell\powershellmenu\command]</span><span class="w"></span>
+<span class="na">@</span><span class="o">=</span><span class="s">&quot;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\powershell.exe -NoExit -Command Set-Location -LiteralPath &#39;%L&#39;&quot;</span><span class="w"></span>
+</code></pre></div>
+
+<h1>Profile</h1>
+<div class="highlight"><pre><span></span><code>Test-Path $profile
+False
+New-Item -path $profile -type file –force
+</code></pre></div>
+
+<p><a href="https://beebom.com/how-change-powershell-color-scheme-windows-10/">How to Change Windows PowerShell Color Scheme on Windows 10</a></p>
+<p><a href="https://stackoverflow.com/questions/3592851/executing-a-command-stored-in-a-variable-from-powershell">Executing a command stored in a variable from PowerShell</a></p>
+<div class="highlight"><pre><span></span><code>$cmd = &#39;&amp; 7z.exe a -tzip &quot;c:\temp\with space\test2.zip&quot; &quot;C:\TEMP\with space\changelog&quot;&#39;
+Invoke-Expression $cmd
+</code></pre></div>
+
+<p><a href="https://stackoverflow.com/questions/4166370/how-can-i-write-a-powershell-alias-with-arguments-in-the-middle">How can I write a PowerShell alias with arguments in the middle?</a></p>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/samba.html" rel="bookmark"
+                           title="Permalink to samba">samba</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-10-20T21:07:23+02:00">
+                Published: Sat 20 October 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/systeme.html">Système</a>.</p>
+<p>tags: <a href="/tag/windows.html">Windows</a> <a href="/tag/linux.html">Linux</a> </p>
+</footer><!-- /.post-info -->                <p><a href="Https://askubuntu.com/questions/754572/cannot-restart-samba-samba-service-is-masked">Https://askubuntu.com/questions/754572/cannot-restart-samba-samba-service-is-masked</a></p>
+<p><a href="https://wiki.samba.org/index.php/Mounting_samba_shares_from_a_unix_client#Common_mount.cifs_options">https://wiki.samba.org/index.php/Mounting_samba_shares_from_a_unix_client#Common_mount.cifs_options</a></p>
+                <a class="readmore" href="/samba.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/lighttpd-sous-windows.html" rel="bookmark"
+                           title="Permalink to lighttpd sous windows">lighttpd sous windows</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-10-20T09:35:02+02:00">
+                Published: Sat 20 October 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/systeme.html">Système</a>.</p>
+<p>tags: <a href="/tag/web.html">Web</a> <a href="/tag/windows.html">Windows</a> </p>
+</footer><!-- /.post-info -->                <p><a href="http://www.lighttpd.net/">http://www.lighttpd.net/</a></p>
+<div class="highlight"><pre><span></span><code><span class="n">wget</span><span class="w"> </span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">download</span><span class="o">.</span><span class="n">lighttpd</span><span class="o">.</span><span class="n">net</span><span class="o">/</span><span class="n">lighttpd</span><span class="o">/</span><span class="n">releases</span><span class="o">-</span><span class="mf">1.4</span><span class="o">.</span><span class="n">x</span><span class="o">/</span><span class="n">lighttpd</span><span class="o">-</span><span class="mf">1.4</span><span class="o">.</span><span class="mf">51.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span><span class="w"></span>
+<span class="n">tar</span><span class="w"> </span><span class="n">zxf</span><span class="w"> </span><span class="n">lighttpd</span><span class="o">-</span><span class="mf">1.4</span><span class="o">.</span><span class="mf">51.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span><span class="w"></span>
+<span class="n">cd</span><span class="w"> </span><span class="n">lighttpd</span><span class="o">-</span><span class="mf">1.4</span><span class="o">.</span><span class="mi">51</span><span class="w"></span>
+<span class="o">./</span><span class="n">configure</span><span class="w"> </span><span class="o">--</span><span class="n">disable</span><span class="o">-</span><span class="n">ipv6</span><span class="w"></span>
+<span class="n">make</span><span class="w"></span>
+
+<span class="n">base</span><span class="o">.</span><span class="n">h</span><span class="p">:</span><span class="mi">457</span><span class="p">:</span><span class="mi">2</span><span class="p">:</span><span class="w"> </span><span class="n">error</span><span class="p">:</span><span class="w"> </span><span class="n">unknown</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="s1">&#39;uid_t&#39;</span><span class="w"></span>
+<span class="n">error</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;LOG_ERR&#39;</span><span class="w"> </span><span class="n">undeclared</span><span class="w"></span>
+</code></pre></div>
+                <a class="readmore" href="/lighttpd-sous-windows.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/cygwin.html" rel="bookmark"
+                           title="Permalink to cygwin">cygwin</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-10-11T09:34:39+02:00">
+                Published: Thu 11 October 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/systeme.html">Système</a>.</p>
+<p>tags: <a href="/tag/windows.html">Windows</a> </p>
+</footer><!-- /.post-info -->                <p><a href="https://stackoverflow.com/questions/1494658/how-can-i-change-my-cygwin-home-folder-after-installation#1494721">https://stackoverflow.com/questions/1494658/how-can-i-change-my-cygwin-home-folder-after-installation#1494721</a></p>
+<p><a href="https://cygwin.com/cygwin-ug-net/ntsec.html#ntsec-mapping-nsswitch-syntax">https://cygwin.com/cygwin-ug-net/ntsec.html#ntsec-mapping-nsswitch-syntax</a></p>
+                <a class="readmore" href="/cygwin.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/changer-la-banque-de-sons-midi-par-defaut-sous-windows.html" rel="bookmark"
+                           title="Permalink to Changer la banque de sons midi par defaut sous windows">Changer la banque de sons midi par defaut sous windows</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-10-06T08:44:49+02:00">
+                Published: Sat 06 October 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/musique.html">Musique</a>.</p>
+<p>tags: <a href="/tag/daw.html">DAW</a> <a href="/tag/midi.html">Midi</a> <a href="/tag/windows.html">Windows</a> </p>
+</footer><!-- /.post-info -->                <p><a href="http://www.informatics-tech.com/how-to-make-midi-files-sound-better.html">http://www.informatics-tech.com/how-to-make-midi-files-sound-better.html</a></p>
+<p><a href="http://coolsoft.altervista.org/en/virtualmidisynth#download">http://coolsoft.altervista.org/en/virtualmidisynth#download</a></p>
+<div class="highlight"><pre><span></span><code>C:\Users\stephane\SF2\SGM-V2.01.sf2
+</code></pre></div>
+                <a class="readmore" href="/changer-la-banque-de-sons-midi-par-defaut-sous-windows.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/windows.html" rel="bookmark"
+                           title="Permalink to windows">windows</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-09-21T23:57:50+02:00">
+                Published: Fri 21 September 2018
+        </abbr>
+		<br />
+        <abbr class="modified" title="2019-07-26T13:12:34+02:00">
+                Updated: Fri 26 July 2019
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/systeme.html">Système</a>.</p>
+<p>tags: <a href="/tag/windows.html">Windows</a> </p>
+</footer><!-- /.post-info -->                <h1>X11 sous Cygwin</h1>
+<p><a href="https://x.cygwin.com/docs/man1/XWin.1.html#lbAK">https://x.cygwin.com/docs/man1/XWin.1.html#lbAK</a></p>
+<p><a href="https://x.cygwin.com/docs/ug/using-remote-session.html">https://x.cygwin.com/docs/ug/using-remote-session.html</a></p>
+<h1>Rsync</h1>
+<div class="highlight"><pre><span></span><code><span class="n">PS</span><span class="w"> </span><span class="nl">C</span><span class="p">:</span><span class="err">\</span><span class="n">Users</span><span class="err">\</span><span class="n">speyr</span><span class="err">\</span><span class="n">Documents</span><span class="err">\</span><span class="n">myblog</span><span class="err">\</span><span class="n">content</span><span class="err">\</span><span class="n">Dev</span><span class="o">&gt;</span><span class="w"> </span><span class="n">rsync</span><span class="w"> </span><span class="o">-</span><span class="n">rv</span><span class="w"> </span><span class="k">output</span><span class="w"> </span><span class="n">stephane</span><span class="nv">@cirrus</span><span class="err">:</span><span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="k">output</span><span class="w"></span>
+<span class="nl">rsync</span><span class="p">:</span><span class="w"> </span><span class="k">connection</span><span class="w"> </span><span class="n">unexpectedly</span><span class="w"> </span><span class="n">closed</span><span class="w"> </span><span class="p">(</span><span class="mi">0</span><span class="w"> </span><span class="n">bytes</span><span class="w"> </span><span class="n">received</span><span class="w"> </span><span class="n">so</span><span class="w"> </span><span class="n">far</span><span class="p">)</span><span class="w"> </span><span class="o">[</span><span class="n">Receiver</span><span class="o">]</span><span class="w"></span>
+<span class="n">rsync</span><span class="w"> </span><span class="nl">error</span><span class="p">:</span><span class="w"> </span><span class="n">error …</span></code></pre></div>
+                <a class="readmore" href="/windows.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/system-explorer-menu-contextuel-bash-here.html" rel="bookmark"
+                           title="Permalink to Explorer: Menu Contextuel bash-here">Explorer: Menu Contextuel bash-here</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-09-21T06:41:36+02:00">
+                Published: Fri 21 September 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/tech.html">Tech</a>.</p>
+<p>tags: <a href="/tag/windows.html">Windows</a> </p>
+</footer><!-- /.post-info -->                <div class="highlight"><pre><span></span><code>Windows Registry Editor Version 5.00<span class="w"></span>
+
+<span class="k">[</span><span class="nb">HKEY_CLASSES_ROOT</span><span class="k">\Directory\Background\shell\Bash Here]</span><span class="w"></span>
+
+<span class="k">[</span><span class="nb">HKEY_CLASSES_ROOT</span><span class="k">\Directory\Background\shell\Bash Here\command]</span><span class="w"></span>
+<span class="na">@</span><span class="o">=</span><span class="s">&quot;C:\\tools\\msys64\\msys2_shell.cmd -where %V&quot;</span><span class="w"></span>
+</code></pre></div>
+                <a class="readmore" href="/system-explorer-menu-contextuel-bash-here.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/git-pb-ctrl-m-sous-windows.html" rel="bookmark"
+                           title="Permalink to Git: pb ctrl-m sous Windows">Git: pb ctrl-m sous Windows</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-09-17T18:45:23+02:00">
+                Published: Mon 17 September 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/developpement.html">Développement</a>.</p>
+<p>tags: <a href="/tag/git.html">Git</a> <a href="/tag/windows.html">Windows</a> </p>
+</footer><!-- /.post-info -->                <ul>
+<li><a href="https://stackoverflow.com/questions/1889559/git-diff-to-ignore-m">https://stackoverflow.com/questions/1889559/git-diff-to-ignore-m</a></li>
+</ul>
+<p><a href="https://stackoverflow.com/questions/9225599/should-git-change-the-ending-of-line-controlm-or-m-at-the-end-of-the-first-l">https://stackoverflow.com/questions/9225599/should-git-change-the-ending-of-line-controlm-or-m-at-the-end-of-the-first-l</a></p>
+                <a class="readmore" href="/git-pb-ctrl-m-sous-windows.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/msys2-outils-unix-sous-windows.html" rel="bookmark"
+                           title="Permalink to MSYS2: Outils unix sous windows">MSYS2: Outils unix sous windows</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-01-10T10:45:54+01:00">
+                Published: Wed 10 January 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/systeme.html">Système</a>.</p>
+<p>tags: <a href="/tag/windows.html">Windows</a> </p>
+</footer><!-- /.post-info -->                <h1>Configuration Bash</h1>
+<p>.bash_aliases</p>
+<div class="highlight"><pre><span></span><code><span class="nb">alias</span> <span class="nv">gbr</span><span class="o">=</span><span class="s1">&#39;git branch&#39;</span>
+<span class="nb">alias</span> <span class="nv">gst</span><span class="o">=</span><span class="s1">&#39;git status&#39;</span>
+<span class="nb">alias</span> <span class="nv">kissh</span><span class="o">=</span><span class="s1">&#39;kill $SSH_AGENT_PID&#39;</span>
+</code></pre></div>
+
+<h1>ssh-agent</h1>
+<div class="highlight"><pre><span></span><code>##################################<span class="w"></span>
+#<span class="w"> </span><span class="nv">Script</span><span class="w"> </span><span class="nv">de</span><span class="w"> </span><span class="nv">lancement</span><span class="w"> </span><span class="nv">de</span><span class="w"> </span><span class="nv">ssh</span><span class="o">-</span><span class="nv">agent</span><span class="w"></span>
+##################################<span class="w"></span>
+<span class="nv">unset</span><span class="w"> </span><span class="nv">SSH_AGENT_PID</span><span class="w"></span>
+
+<span class="k">if</span><span class="w"> </span>[<span class="w"> </span><span class="o">-</span><span class="nv">f</span><span class="w"> </span>$<span class="nv">HOME</span><span class="o">/</span>.<span class="nv">bash_aliases</span><span class="w"> </span>]<span class="c1">; then</span><span class="w"></span>
+<span class="w">    </span>.<span class="w"> </span>$<span class="nv">HOME</span><span class="o">/</span>.<span class="nv">bash_aliases</span><span class="w"></span>
+<span class="nv">fi</span><span class="w"></span>
+<span class="k">if</span><span class="w"> </span>[<span class="w"> </span><span class="o">-</span><span class="nv">f</span><span class="w"> </span>$<span class="nv">HOME</span><span class="o">/</span><span class="nv">ssh</span><span class="o">-</span><span class="nv">agent</span>.<span class="nv">out</span><span class="w"> </span>]<span class="c1">; then</span><span class="w"></span>
+<span class="w">    </span><span class="nv">echo</span><span class="w"> </span><span class="s2">&quot;fichier ssh-agent.out présent&quot;</span><span class="w"></span>
+<span class="w">    </span>.<span class="w"> </span>$<span class="nv">HOME</span><span class="o">/</span><span class="nv">ssh</span><span class="o">-</span><span class="nv">agent</span>.<span class="nv">out</span><span class="w"></span>
+<span class="w">    </span><span class="nv">ps</span><span class="w"> </span><span class="o">-</span><span class="nv">p …</span></code></pre></div>
+                <a class="readmore" href="/msys2-outils-unix-sous-windows.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+                </ol><!-- /#posts-list -->
+                </section><!-- /#content -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

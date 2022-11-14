@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>MyBlog - Emacs</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">MyBlog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/archerie.html">Archerie</a></li>
+                    <li><a href="/category/archive.html">Archive</a></li>
+                    <li><a href="/category/culture.html">Culture</a></li>
+                    <li><a href="/category/developpement.html">Développement</a></li>
+                    <li><a href="/category/divers.html">Divers</a></li>
+                    <li><a href="/category/graphisme.html">Graphisme</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li><a href="/category/musique.html">Musique</a></li>
+                    <li><a href="/category/projets.html">Projets</a></li>
+                    <li><a href="/category/reprap.html">RepRap</a></li>
+                    <li><a href="/category/securite.html">Sécurité</a></li>
+                    <li><a href="/category/systeme.html">Système</a></li>
+                    <li><a href="/category/tech.html">Tech</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="/ruby-tags.html">ruby-tags</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2018-10-24T12:36:35+02:00">
+                Published: Wed 24 October 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/developpement.html">Développement</a>.</p>
+<p>tags: <a href="/tag/emacs.html">Emacs</a> <a href="/tag/ruby.html">Ruby</a> </p>
+</footer><!-- /.post-info --><p><a href="https://stackoverflow.com/questions/10120720/generating-emacs-tags-file-for-a-ruby-on-rails-project">https://stackoverflow.com/questions/10120720/generating-emacs-tags-file-for-a-ruby-on-rails-project</a></p>
+<div class="highlight"><pre><span></span><code><span class="nv">gem</span><span class="w"> </span><span class="nv">install</span><span class="w"> </span><span class="nv">ripper</span><span class="o">-</span><span class="nv">tags</span><span class="w"></span>
+<span class="nv">cd</span><span class="w"> </span><span class="nv">your_project</span><span class="o">/</span><span class="w"></span>
+<span class="nv">ripper</span><span class="o">-</span><span class="nv">tags</span><span class="w"> </span><span class="o">-</span><span class="nv">R</span><span class="w"> </span>#<span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nv">vim</span><span class="w"></span>
+<span class="nv">ripper</span><span class="o">-</span><span class="nv">tags</span><span class="w"> </span><span class="o">-</span><span class="nv">R</span><span class="w"> </span><span class="o">-</span><span class="nv">f</span><span class="w"> </span><span class="nv">TAGS</span><span class="w"> </span>#<span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nv">emacs</span><span class="w"></span>
+</code></pre></div>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/emacs-variables-locales.html" rel="bookmark"
+                           title="Permalink to Emacs: Variables locales">Emacs: Variables locales</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-09-21T08:56:48+02:00">
+                Published: Fri 21 September 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/developpement.html">Développement</a>.</p>
+<p>tags: <a href="/tag/emacs.html">Emacs</a> </p>
+</footer><!-- /.post-info -->                <ul>
+<li><a href="https://emacs.stackexchange.com/questions/24907/how-to-use-dir-locals-el-with-projectile">How to use dir locals el with projectile</a></li>
+<li><a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Directory-Variables.html">Directory Variables</a></li>
+</ul>
+<div class="highlight"><pre><span></span><code>;; .dir-locals.el
+((nil
+  (easy-jekyll-basedir . &quot;e:/repo/myblog-dev/&quot;)
+))
+</code></pre></div>
+
+<h1>Régénération des tags</h1>
+<p><a href="https://stackoverflow.com/questions/2550474/is-it-possible-to-auto-regenerate-and-load-tags-table-in-emacs-rather-than-havin">https://stackoverflow.com/questions/2550474/is-it-possible-to-auto-regenerate-and-load-tags-table-in-emacs-rather-than-havin</a></p>
+<div class="highlight"><pre><span></span><code>;; .dir-locals.el
+((nil . ((tags-cmd . &quot;etags -R *.py&quot;))))
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">;; init.el</span><span class="w"></span>
+<span class="c1">;; Regénérer les tags</span><span class="w"></span>
+<span class="p">(</span><span class="nb">defvar</span><span class="w"> </span><span class="nv">tags-cmd</span><span class="w"> </span><span class="s">&quot;etags -R 2&gt;/dev/null&quot;</span><span class="p">)</span><span class="w"></span>
+
+<span class="p">(</span><span class="nb">defun</span><span class="w"> </span><span class="nv">regen-tags</span><span class="w"> </span><span class="p">()</span><span class="w"></span>
+<span class="w">  </span><span class="s">&quot;Regenerate the tags …</span></code></pre></div>
+                <a class="readmore" href="/emacs-variables-locales.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/emacs.html" rel="bookmark"
+                           title="Permalink to Emacs">Emacs</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-09-13T09:21:12+02:00">
+                Published: Thu 13 September 2018
+        </abbr>
+		<br />
+        <abbr class="modified" title="2021-10-23T22:19:00+02:00">
+                Updated: Sat 23 October 2021
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/developpement.html">Développement</a>.</p>
+<p>tags: <a href="/tag/emacs.html">Emacs</a> </p>
+</footer><!-- /.post-info -->                <h2>Espaces pour les tabulations</h2>
+<div class="highlight"><pre><span></span><code>(setq-default indent-tabs-mode nil)
+(setq-default tab-width 4)
+(setq indent-line-function &#39;insert-tab)
+</code></pre></div>
+
+<h2>Paquets utilisés</h2>
+<ul>
+<li><a href="http://melpa.org/#/getting-started">Melpa (Dépôt)</a></li>
+<li><a href="https://www.emacswiki.org/emacs/Projectile">Projectile</a> (Gestion de projets)</li>
+<li><a href="https://oremacs.com/swiper/">Swipper</a> (Recherche avec complétion)</li>
+<li><a href="https://www.emacswiki.org/emacs/CompanyMode">Company mode</a></li>
+<li><a href="https://github.com/masasam/emacs-easy-jekyll">Emacs Easy Jekyll</a></li>
+<li><a href="https://github.com/jorgenschaefer/elpy">Elpy</a> Permet la recherche des tags</li>
+<li><a href="https://perso.univ-rennes1.fr/san.vu-ngoc/prog/mma.el">MMA</a>: Un mode pour l'accompagnateur MIDI <a href="../Musique/mma.html">MMA</a></li>
+</ul>
+<h2>Liens</h2>
+<ul>
+<li><a href="https://www.gnu.org/software/emacs/manual/html_node/eintr/index.html#Top">Manuel</a></li>
+<li><a href="https://nilsdeppe.com/posts/emacs-c++-ide2">emacs-c++-ide2</a></li>
+<li><a href="https://emacs.stackexchange.com/questions/34322/set-default-coding-system-utf-8">Set default coding …</a></li></ul>
+                <a class="readmore" href="/emacs.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/emacs-for-python.html" rel="bookmark"
+                           title="Permalink to Emacs for python">Emacs for python</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-02-06T18:28:52+01:00">
+                Published: Tue 06 February 2018
+        </abbr>
+		<br />
+        <abbr class="modified" title="2021-07-04T10:47:00+02:00">
+                Updated: Sun 04 July 2021
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/developpement.html">Développement</a>.</p>
+<p>tags: <a href="/tag/emacs.html">Emacs</a> </p>
+</footer><!-- /.post-info -->                <ul>
+<li><a href="https://www.emacswiki.org/emacs/PythonProgrammingInEmacs">Python programming in Emacs</a></li>
+<li><a href="https://github.com/gabrielelanaro/emacs-for-python">Emacs for Python</a> Fonctionne bien, fournit la complétion (M-/)</li>
+<li><a href="https://github.com/afroisalreadyinu/abl-mode">abl-mode</a></li>
+<li><a href="https://github.com/jorgenschaefer/elpy">Elpy</a></li>
+</ul>
+<h1>flycheck-pychekers</h1>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="n">global</span><span class="o">-</span><span class="n">flycheck</span><span class="o">-</span><span class="n">mode</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"></span>
+<span class="p">(</span><span class="n">with</span><span class="o">-</span><span class="n">eval</span><span class="o">-</span><span class="n">after</span><span class="o">-</span><span class="nb">load</span><span class="w"> </span><span class="s1">&#39;flycheck</span>
+<span class="p">(</span><span class="n">add</span><span class="o">-</span><span class="n">hook</span><span class="w"> </span><span class="s1">&#39;flycheck-mode-hook #&#39;</span><span class="n">flycheck</span><span class="o">-</span><span class="n">pycheckers</span><span class="o">-</span><span class="n">setup</span><span class="p">))</span><span class="w"></span>
+</code></pre></div>
+
+<p>Filtrer les messages</p>
+<h2>Mypy</h2>
+<div class="highlight"><pre><span></span><code>pip install mypy
+</code></pre></div>
+
+<p>configuration: </p>
+<div class="highlight"><pre><span></span><code><span class="err">#</span><span class="w"> </span><span class="o">~/</span><span class="p">.</span><span class="n">config</span><span class="o">/</span><span class="n">mypy</span><span class="o">/</span><span class="n">config</span><span class="w"></span>
+<span class="o">[</span><span class="n">mypy</span><span class="o">]</span><span class="w"></span>
+<span class="n">ignore_missing_imports</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">True</span><span class="w"></span>
+</code></pre></div>
+
+<h2>Pylint</h2>
+<p>Générer .pylinrc pour le …</p>
+                <a class="readmore" href="/emacs-for-python.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/emacs-easy-jekyll.html" rel="bookmark"
+                           title="Permalink to Emacs: easy-jekyll">Emacs: easy-jekyll</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-01-07T14:43:31+01:00">
+                Published: Sun 07 January 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/archive.html">Archive</a>.</p>
+<p>tags: <a href="/tag/emacs.html">Emacs</a> <a href="/tag/jekyll.html">Jekyll</a> </p>
+</footer><!-- /.post-info -->                <h1>Installation du mode easy-jekyll</h1>
+<p>variable: easy-jekyll-base-dir: /home/stephane/repo/myblog</p>
+<p>à positionner dans le répertoire: .dir-locals.el</p>
+<div class="highlight"><pre><span></span><code>(setq easy-jekyll-basedir &quot;~/repo/myblog&quot;)
+</code></pre></div>
+
+<p><a href="https://www.miskatonic.org/2014/01/26/more-about-emacs-and-jekyll/">https://www.miskatonic.org/2014/01/26/more-about-emacs-and-jekyll/</a></p>
+<h1>Multiples blogs</h1>
+<div class="highlight"><pre><span></span><code> &#39;(easy-jekyll-bloglist
+   (quote
+    (((easy-jekyll-basedir . &quot;e:/repo/myblog&quot;)
+      (easy-jekyll-url . &quot;http://localhost/blog&quot;)
+      (easy-jekyll-sshdomain . &quot;duloup.org&quot;))
+     ((easy-jekyll-basedir . &quot;e:/repo/Dev/arduino-doc&quot;)
+      (easy-jekyll-url …</code></pre></div>
+                <a class="readmore" href="/emacs-easy-jekyll.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+                </ol><!-- /#posts-list -->
+                </section><!-- /#content -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

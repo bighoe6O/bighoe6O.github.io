@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>MyBlog - Moi</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">MyBlog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/archerie.html">Archerie</a></li>
+                    <li><a href="/category/archive.html">Archive</a></li>
+                    <li><a href="/category/culture.html">Culture</a></li>
+                    <li><a href="/category/developpement.html">Développement</a></li>
+                    <li><a href="/category/divers.html">Divers</a></li>
+                    <li><a href="/category/graphisme.html">Graphisme</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li><a href="/category/musique.html">Musique</a></li>
+                    <li><a href="/category/projets.html">Projets</a></li>
+                    <li><a href="/category/reprap.html">RepRap</a></li>
+                    <li><a href="/category/securite.html">Sécurité</a></li>
+                    <li><a href="/category/systeme.html">Système</a></li>
+                    <li><a href="/category/tech.html">Tech</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+                <section id="content" class="body">
+                    <ol id="posts-list" class="hfeed" start="9">
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/pure-data.html" rel="bookmark"
+                           title="Permalink to Pure Data">Pure Data</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-09-09T08:18:32+02:00">
+                Published: Sun 09 September 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/musique.html">Musique</a>.</p>
+<p>tags: <a href="/tag/puredata.html">PureData</a> <a href="/tag/daw.html">DAW</a> </p>
+</footer><!-- /.post-info -->                <h1>Livre</h1>
+<p><a href="http://msp.ucsd.edu/techniques/latest/book-html/">http://msp.ucsd.edu/techniques/latest/book-html/</a></p>
+<h1>Tutos</h1>
+<ul>
+<li><a href="https://wiki.labomedia.org/index.php/Premiers_pas_sur_Pure_Data">https://wiki.labomedia.org/index.php/Premiers_pas_sur_Pure_Data</a></li>
+<li><a href="http://libremusicproduction.com/tutorials/creating-simple-synthesizer-pure-data-%E2%80%93-part-i">Tuto 1</a></li>
+<li><a href="http://libremusicproduction.com/tutorials/creating-simple-synthesizer-pure-data-%E2%80%93-part-ii">Tuto 2</a></li>
+</ul>
+<h1>Liens</h1>
+<ul>
+<li><a href="http://puredata.info/downloads/pure-data">Pure Data</a> (Projet original)</li>
+<li><a href="https://github.com/agraef/purr-data/releases">Purr-Data</a> (Interface JavaScript)</li>
+<li><a href="https://github.com/pierreguillot/Camomile">Camomile VST</a></li>
+<li><a href="https://www.youtube.com/watch?v=WpO-egAOcOM&amp;t=0s&amp;index=2&amp;list=PLQpnOqsrcBupd5_iJzW4d81n7l7Eu7bYJ">Making Virtual Instruments &amp; Effects S01E01 Making a Simple Synthesizer with MobMuPlat &amp;Pure Data</a></li>
+<li><a href="http://www.danieliglesia.com/mobmuplat/">MobMuPlat</a></li>
+<li><a href="https://www.automatonism.com/">https://www.automatonism.com/</a></li>
+<li><a href="https://forum.pdpatchrepo.info/topic/9887/save-presets-to-textfile">https://forum …</a></li></ul>
+                <a class="readmore" href="/pure-data.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/jekyll-yaml.html" rel="bookmark"
+                           title="Permalink to Jekyll: YAML">Jekyll: YAML</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-09-09T07:04:49+02:00">
+                Published: Sun 09 September 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/archive.html">Archive</a>.</p>
+<p>tags: <a href="/tag/jekyll.html">Jekyll</a> </p>
+</footer><!-- /.post-info -->                <p><a href="https://idratherbewriting.com/documentation-theme-jekyll/mydoc_yaml_tutorial">YAML tutorial in the context of Jekyll</a></p>
+<h2>Example 1: Simple mapping</h2>
+<div class="highlight"><pre><span></span><code><span class="n">name</span><span class="o">:</span><span class="w"></span>
+<span class="w">  </span><span class="n">husband</span><span class="o">:</span><span class="w"> </span><span class="n">Tom</span><span class="w"></span>
+<span class="w">  </span><span class="n">wife</span><span class="o">:</span><span class="w"> </span><span class="n">Shannon</span><span class="w"></span>
+</code></pre></div>
+
+<p>{% raw %}</p>
+<div class="highlight"><pre><span></span><code><span class="x">Husband&#39;s name: </span><span class="cp">{{</span><span class="nv">site.data.samplelist.name.husband</span><span class="cp">}}</span><span class="x"></span>
+
+<span class="x">Wife&#39;s name: </span><span class="cp">{{</span><span class="nv">site.data.samplelist.name.wife</span><span class="cp">}}</span><span class="x"></span>
+</code></pre></div>
+
+<p>{% endraw %}</p>
+<p>Husband's name: {{site.data.samplelist.name.husband}}</p>
+<p>Wife's name: {{site.data.samplelist.name.wife}}</p>
+<h2>Example 2 …</h2>
+                <a class="readmore" href="/jekyll-yaml.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/accordeon.html" rel="bookmark"
+                           title="Permalink to Accordéon">Accordéon</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-09-08T19:30:33+02:00">
+                Published: Sat 08 September 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/musique.html">Musique</a>.</p>
+<p>tags: <a href="/tag/instruments.html">Instruments</a> </p>
+</footer><!-- /.post-info -->                <p>Entretiens avec Richard Galiano</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=1wIWDRGz5N0">Galiano I (Timbres)</a></li>
+<li><a href="https://www.youtube.com/watch?v=rbYdXH40VTk">Galiano II (Timbres)</a></li>
+<li><a href="https://www.youtube.com/watch?v=kcWh5AVaEuk">Galiano III (midi)</a></li>
+<li><a href="https://www.youtube.com/watch?v=Jzqt0JEFWVk">Galiano IV (Bandoneon)</a></li>
+<li><a href="https://www.youtube.com/watch?v=1FsxBzoB0A0">Galiano V (Accordina)</a></li>
+<li><a href="https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Accord%C3%A9oniste_de_jazz">Accordéonistes de Jazz</a></li>
+</ul>
+<p>Concertina</p>
+<ul>
+<li><a href="http://www.concertina.com/fingering/">Fingering Charts for Concertinas</a></li>
+</ul>
+<p>Qobuz</p>
+<ul>
+<li><a href="https://www.qobuz.com/fr-fr/album/jazz-accordion-experience-bouvelle-and-friends-various-artists/0840958172332">Jazz Accordion Experience: Bouvelle and Friends</a></li>
+<li><a href="https://www.qobuz.com/fr-fr/album/classiques-de-laccordeon-various-artists/5099996590652">Classiques De L'Accordéon</a></li>
+</ul>
+<p>Divers</p>
+<ul>
+<li><a href="https://www.franceinter.fr/emissions/l-humeur-vagabonde/l-humeur-vagabonde-22-janvier-2015">France Inter: Daniel Mille</a></li>
+</ul>
+<h1>Frank Marocco</h1>
+<ul>
+<li><a href="https://www.qobuz.com/fr-fr/album/like-frank-marocco-frank-marocco-and-friends/8427328609401#item">Frank Marocco: Like Frank Marocco</a></li>
+</ul>
+<h2>Technique …</h2>
+                <a class="readmore" href="/accordeon.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/exif-en-python.html" rel="bookmark"
+                           title="Permalink to Exif en Python">Exif en Python</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-09-06T21:28:29+02:00">
+                Published: Thu 06 September 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/divers.html">Divers</a>.</p>
+<p>tags: <a href="/tag/images.html">Images</a> <a href="/tag/python.html">Python</a> </p>
+</footer><!-- /.post-info -->                <p>Scripts dans git@duloup.org/scripts</p>
+<p>Renommage des fichiers scannés (fiches de paie):</p>
+<div class="highlight"><pre><span></span><code>python E:\repo\roaming\scripts\jpg-git-mv.py *.JPG &gt; mycmd.cmd
+</code></pre></div>
+
+<p><a href="https://www.vcode.no/web/resource.nsf/II2LNUG/642.htm">Tags Exif</a></p>
+<p><a href="https://sno.phy.queensu.ca/~phil/exiftool/TagNames/XMP.html">Tags XMP</a></p>
+<h2>Python</h2>
+<p><a href="https://github.com/hMatoba/Piexif">https://github.com/hMatoba/Piexif</a></p>
+<h3>Utilisation de la librairie python Pillow</h3>
+<p><a href="https://pillow.readthedocs.io/en/3.1.x/installation.html">https://pillow.readthedocs.io/en/3.1.x/installation.html</a></p>
+<p>Linux …</p>
+                <a class="readmore" href="/exif-en-python.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/divers-photo-galleries.html" rel="bookmark"
+                           title="Permalink to Galeries de photos">Galeries de photos</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-09-06T09:38:40+02:00">
+                Published: Thu 06 September 2018
+        </abbr>
+		<br />
+        <abbr class="modified" title="2019-07-27T20:02:28+02:00">
+                Updated: Sat 27 July 2019
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/divers.html">Divers</a>.</p>
+<p>tags: <a href="/tag/images.html">Images</a> <a href="/tag/django.html">Django</a> <a href="/tag/jekyll.html">Jekyll</a> </p>
+</footer><!-- /.post-info -->                <h1>Comparatif de générateurs de sites statiques</h1>
+<p><a href="https://www.staticgen.com/">https://www.staticgen.com/</a></p>
+<h1><a href="../dev/django.html">Django</a></h1>
+<p><a href="https://djangopackages.org/grids/g/gallery/">https://djangopackages.org/grids/g/gallery/</a></p>
+<h2>Django Photo Gallery</h2>
+<p><a href="https://github.com/VelinGeorgiev/django-photo-gallery">https://github.com/VelinGeorgiev/django-photo-gallery</a></p>
+<p><a href="https://www.python.org/downloads/release/python-365/">https://www.python.org/downloads/release/python-365/</a></p>
+<h3>Répertoire d'installation</h3>
+<p>E:\repo\django-photo-gallery</p>
+<h3>Virtualenv</h3>
+<p>Utilisation de python36</p>
+<div class="highlight"><pre><span></span><code><span class="n">C</span><span class="p">:</span>\<span class="n">tools</span>\<span class="n">Python36</span><span class="w"></span>
+
+<span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">stephane</span>\<span class="n">venvs</span>\<span class="n">django</span><span class="o">-</span><span class="n">gallery …</span></code></pre></div>
+                <a class="readmore" href="/divers-photo-galleries.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/musique-notation-abc.html" rel="bookmark"
+                           title="Permalink to Notation ABC">Notation ABC</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-08-04T11:38:32+02:00">
+                Published: Sat 04 August 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/musique.html">Musique</a>.</p>
+<p>tags: <a href="/tag/daw.html">DAW</a> <a href="/tag/abc.html">ABC</a> <a href="/tag/notation.html">Notation</a> </p>
+</footer><!-- /.post-info -->                <p><a href="http://abcnotation.com/wiki/abc:standard:v2.2">Documentation</a></p>
+<p><a href="http://www.mit.edu/~6.005/fa12/projects/abcPlayer/">http://www.mit.edu/~6.005/fa12/projects/abcPlayer/</a></p>
+<p><a href="http://www.mit.edu/~6.005/fa12/projects/abcPlayer/assignment_files/abc_subset_bnf.txt">http://www.mit.edu/~6.005/fa12/projects/abcPlayer/assignment_files/abc_subset_bnf.txt</a></p>
+<p><a href="http://abcnotation.com/">http://abcnotation.com/</a></p>
+<h1>Accordeon</h1>
+<p><a href="https://m.youtube.com/watch?v=xNaskUU5los#">https://m.youtube.com/watch?v=xNaskUU5los#</a></p>
+<p>Tam Lin</p>
+<p><a href="https://thesession.org/tunes/248">https://thesession.org/tunes/248</a></p>
+<p>Session Book</p>
+<p><a href="https://thesession.org/members/105978/tunebook">https://thesession.org/members/105978/tunebook</a></p>
+<h2>Logiciels</h2>
+<p><a href="http://abcnotation.com/software">http …</a></p>
+                <a class="readmore" href="/musique-notation-abc.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/emacs-for-python.html" rel="bookmark"
+                           title="Permalink to Emacs for python">Emacs for python</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-02-06T18:28:52+01:00">
+                Published: Tue 06 February 2018
+        </abbr>
+		<br />
+        <abbr class="modified" title="2021-07-04T10:47:00+02:00">
+                Updated: Sun 04 July 2021
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/developpement.html">Développement</a>.</p>
+<p>tags: <a href="/tag/emacs.html">Emacs</a> </p>
+</footer><!-- /.post-info -->                <ul>
+<li><a href="https://www.emacswiki.org/emacs/PythonProgrammingInEmacs">Python programming in Emacs</a></li>
+<li><a href="https://github.com/gabrielelanaro/emacs-for-python">Emacs for Python</a> Fonctionne bien, fournit la complétion (M-/)</li>
+<li><a href="https://github.com/afroisalreadyinu/abl-mode">abl-mode</a></li>
+<li><a href="https://github.com/jorgenschaefer/elpy">Elpy</a></li>
+</ul>
+<h1>flycheck-pychekers</h1>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="n">global</span><span class="o">-</span><span class="n">flycheck</span><span class="o">-</span><span class="n">mode</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"></span>
+<span class="p">(</span><span class="n">with</span><span class="o">-</span><span class="n">eval</span><span class="o">-</span><span class="n">after</span><span class="o">-</span><span class="nb">load</span><span class="w"> </span><span class="s1">&#39;flycheck</span>
+<span class="p">(</span><span class="n">add</span><span class="o">-</span><span class="n">hook</span><span class="w"> </span><span class="s1">&#39;flycheck-mode-hook #&#39;</span><span class="n">flycheck</span><span class="o">-</span><span class="n">pycheckers</span><span class="o">-</span><span class="n">setup</span><span class="p">))</span><span class="w"></span>
+</code></pre></div>
+
+<p>Filtrer les messages</p>
+<h2>Mypy</h2>
+<div class="highlight"><pre><span></span><code>pip install mypy
+</code></pre></div>
+
+<p>configuration: </p>
+<div class="highlight"><pre><span></span><code><span class="err">#</span><span class="w"> </span><span class="o">~/</span><span class="p">.</span><span class="n">config</span><span class="o">/</span><span class="n">mypy</span><span class="o">/</span><span class="n">config</span><span class="w"></span>
+<span class="o">[</span><span class="n">mypy</span><span class="o">]</span><span class="w"></span>
+<span class="n">ignore_missing_imports</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">True</span><span class="w"></span>
+</code></pre></div>
+
+<h2>Pylint</h2>
+<p>Générer .pylinrc pour le …</p>
+                <a class="readmore" href="/emacs-for-python.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/rythmes-orientaux.html" rel="bookmark"
+                           title="Permalink to Rythmes Orientaux">Rythmes Orientaux</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-01-23T08:55:05+01:00">
+                Published: Tue 23 January 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/musique.html">Musique</a>.</p>
+<p>tags: <a href="/tag/rythmes.html">Rythmes</a> </p>
+</footer><!-- /.post-info -->                <p><a href="http://www.babayagamusic.com/Music/oriental-dance-rhythm-diagrams-and-descriptions.htm#44">http://www.babayagamusic.com/Music/oriental-dance-rhythm-diagrams-and-descriptions.htm#44</a></p>
+                <a class="readmore" href="/rythmes-orientaux.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/chasse-a-larc.html" rel="bookmark"
+                           title="Permalink to Chasse à l'arc">Chasse à l'arc</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-01-22T13:22:58+01:00">
+                Published: Mon 22 January 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/archerie.html">Archerie</a>.</p>
+<p>tags: <a href="/tag/archerie.html">Archerie</a> </p>
+</footer><!-- /.post-info -->                <p><a href="http://fdc83.com/pdfs/cerfa%2010804-03%20chasse%20a%20l%20arc.pdf">http://fdc83.com/pdfs/cerfa%2010804-03%20chasse%20a%20l%20arc.pdf</a></p>
+                <a class="readmore" href="/chasse-a-larc.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/image-magick.html" rel="bookmark"
+                           title="Permalink to Image Magick">Image Magick</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-01-22T09:56:34+01:00">
+                Published: Mon 22 January 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/graphisme.html">Graphisme</a>.</p>
+<p>tags: <a href="/tag/images.html">Images</a> </p>
+</footer><!-- /.post-info -->                <h1>Resize image</h1>
+<div class="highlight"><pre><span></span><code>magick .\raspberry-pi-pico.jpg -resize 50%x50% .\raspberry-pi-pico-sm.jpg
+</code></pre></div>
+
+<h1>Conversion de multiples jpg vers un pdf</h1>
+<div class="highlight"><pre><span></span><code>convert *.jpg foo.pdf
+convert -resize 50%x50% *.jpg attestation-employeur.pdf
+
+magick convert -density 96 -resize 595x842 *.jpg fiches-de-paie.pdf
+</code></pre></div>
+
+<p><a href="https://www.imagemagick.org/Usage/resize/#shrink">https://www.imagemagick.org/Usage/resize/#shrink</a></p>
+<div class="highlight"><pre><span></span><code><span class="k">for</span><span class="w"> </span><span class="nv">i</span><span class="w"> </span><span class="nv">in</span><span class="w"> </span><span class="s2">&quot;Alone Together.png …</span></code></pre></div>
+                <a class="readmore" href="/image-magick.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+                </ol><!-- /#posts-list -->
+<p class="paginator">
+        <a href="/author/moi.html">&#8647;</a>
+        <a href="/author/moi12.html">&laquo;</a>
+    Page 13 / 15
+        <a href="/author/moi14.html">&raquo;</a>
+        <a href="/author/moi15.html">&#8649;</a>
+</p>
+                </section><!-- /#content -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

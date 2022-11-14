@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>MyBlog - Développement</title><link href="http://dev.duloup.org/" rel="alternate"></link><link href="http://dev.duloup.org/feeds/developpement.atom.xml" rel="self"></link><id>http://dev.duloup.org/</id><updated>2021-11-01T10:29:00+01:00</updated><entry><title>Kivy</title><link href="http://dev.duloup.org/tech-python-kivy.html" rel="alternate"></link><published>2021-11-01T10:29:00+01:00</published><updated>2021-11-01T10:29:00+01:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2021-11-01:/tech-python-kivy.html</id><content type="html">&lt;h2&gt;Dépendances&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://docs.cython.org/en/latest/src/quickstart/install.html"&gt;Cython&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://kivy.org/"&gt;Kivy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://riptutorial.com/kivy/example/6889/installation---setup"&gt;Installation &amp;amp; Setup&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/kivy/kivy"&gt;https://github.com/kivy/kivy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kivy.org/doc/stable/guide/packaging-android.html#packaging-android"&gt;Create a package for Android&lt;/a&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo apt install default-jdk-headless
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;/ul&gt;</content><category term="Développement"></category><category term="Python"></category><category term="UI"></category></entry><entry><title>Ecosystème Hadoop</title><link href="http://dev.duloup.org/Tech/2021-10-10-hadoop-ecosystem.html" rel="alternate"></link><published>2021-10-10T10:35:00+02:00</published><updated>2021-10-10T10:35:00+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2021-10-10:/Tech/2021-10-10-hadoop-ecosystem.html</id><summary type="html">&lt;h1&gt;Ecosystème Hadoop&lt;/h1&gt;
+&lt;h2&gt;Pig&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://www.tutorialspoint.com/apache_pig/"&gt;https://www.tutorialspoint.com/apache_pig/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Spark&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://www.tutorialspoint.com/apache_spark/index.htm"&gt;https://www.tutorialspoint.com/apache_spark/index.htm&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Docker&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/big-data-europe/docker-spark"&gt;https://github.com/big-data-europe/docker-spark&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/captionnemo/hadoop-Spark-Hive-Pig-Sqoop_on_docker(fetch)"&gt;https://github.com/captionnemo/hadoop-Spark-Hive-Pig-Sqoop_on_docker(fetch)&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Datasets&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://catalog.data.gov/dataset/air-quality/resource/f3ed1638-92da-4f88-bb6b-7d3940514574"&gt;https://catalog.data.gov/dataset/air-quality/resource/f3ed1638-92da-4f88-bb6b-7d3940514574&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://normanlimxk.com/2021/07/12/create-a-jupyterlab-notebook-for-spark/"&gt;https://normanlimxk.com/2021/07/12/create-a-jupyterlab-notebook-for-spark/&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;wget https://s3.amazonaws.com/h2o-airlines-unpacked …&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h1&gt;Ecosystème Hadoop&lt;/h1&gt;
+&lt;h2&gt;Pig&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://www.tutorialspoint.com/apache_pig/"&gt;https://www.tutorialspoint.com/apache_pig/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Spark&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://www.tutorialspoint.com/apache_spark/index.htm"&gt;https://www.tutorialspoint.com/apache_spark/index.htm&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Docker&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/big-data-europe/docker-spark"&gt;https://github.com/big-data-europe/docker-spark&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/captionnemo/hadoop-Spark-Hive-Pig-Sqoop_on_docker(fetch)"&gt;https://github.com/captionnemo/hadoop-Spark-Hive-Pig-Sqoop_on_docker(fetch)&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Datasets&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://catalog.data.gov/dataset/air-quality/resource/f3ed1638-92da-4f88-bb6b-7d3940514574"&gt;https://catalog.data.gov/dataset/air-quality/resource/f3ed1638-92da-4f88-bb6b-7d3940514574&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://normanlimxk.com/2021/07/12/create-a-jupyterlab-notebook-for-spark/"&gt;https://normanlimxk.com/2021/07/12/create-a-jupyterlab-notebook-for-spark/&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;wget https://s3.amazonaws.com/h2o-airlines-unpacked/allyears2k.csv
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;hdfs dfs -mkdir -p /data/airlines
+hdfs dfs -put allyears2k.csv /data/airlines
+hdfs dfs -ls /data/airlines
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Projets&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;clone&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="nv"&gt;@duloup&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nl"&gt;org&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;hadoop&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;tuto&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Développement"></category><category term="Dev"></category><category term="Hadoop"></category></entry><entry><title>Python Gtk</title><link href="http://dev.duloup.org/python-gtk.html" rel="alternate"></link><published>2021-09-29T16:41:00+02:00</published><updated>2021-09-29T16:41:00+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2021-09-29:/python-gtk.html</id><content type="html">&lt;h2&gt;Prérequis&lt;/h2&gt;
+&lt;h3&gt;Linux&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;jhbuild sanitycheck
+jhbuild sysdeps --install pygobject
+jhbuild sysdeps --install gtk+-3
+
+sudo apt install libgirepository1.0-dev libcairo2-dev
+
+pipenv install pygobject
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href="https://python-gtk-3-tutorial.readthedocs.io/en/latest/introduction.html"&gt;https://python-gtk-3-tutorial.readthedocs.io/en/latest/introduction.html&lt;/a&gt;&lt;/p&gt;</content><category term="Développement"></category><category term="Python"></category><category term="UI"></category></entry><entry><title>Pygmentize Less</title><link href="http://dev.duloup.org/tech-jupyter.html" rel="alternate"></link><published>2021-07-08T23:51:00+02:00</published><updated>2021-07-08T23:51:00+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2021-07-08:/tech-jupyter.html</id><content type="html">&lt;p&gt;&lt;a href="https://www.pugetsystems.com/labs/hpc/Note-How-To-Install-JupyterHub-on-a-Local-Server-1673/"&gt;How To Install JupyterHub on a Local Server&lt;/a&gt;&lt;/p&gt;</content><category term="Développement"></category><category term="Python"></category></entry><entry><title>Docker</title><link href="http://dev.duloup.org/tech-docker.html" rel="alternate"></link><published>2021-05-15T08:53:00+02:00</published><updated>2021-05-15T08:53:00+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2021-05-15:/tech-docker.html</id><summary type="html">&lt;p&gt;Installation de docker&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Docker&lt;/h1&gt;
+&lt;p&gt;Container d'applications&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.docker.com/"&gt;Docker&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Installer docker&lt;/h2&gt;
+&lt;h3&gt;Activer wsl (Windows Subsystem for Linux)&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Définir/Mettre à jour la version de WSL&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://docs.microsoft.com/fr-fr/windows/wsl/install-win10#step-4---download-the-linux-kernel-update-package"&gt;Mise à jour du noyau linux en WSL2&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://admcpr.com/how-to-upgrade-wsl-1-to-wsl-2/"&gt;How to upgrade a WSL 1 Linux distro to WSL 2&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Dans une fenêtre powershell&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;wsl --set-default-version 2
+
+wsl --list --verbose
+
+wsl --set-version &amp;lt;distribution name&amp;gt; &amp;lt;versionNumber&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Lister les distr et leur version wsl&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;PS C:\WINDOWS\system32&amp;gt; wsl -l -v
+  NAME                   STATE           VERSION
+* Ubuntu                 Running         1
+  docker-desktop-data    Stopped         2
+  docker-desktop         Stopped         2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Changer la version de la distro Ubuntu de V1 vers V2&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;PS C:\WINDOWS\system32&amp;gt; wsl --set-version Ubuntu 2
+La conversion est en cours. Cette opération peut prendre quelques minutes...
+Pour plus d’informations sur les différences de clés avec WSL 2, visitez https://aka.ms/wsl2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Utilisation&lt;/h2&gt;
+&lt;h3&gt;Commandes&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;docker
+
+docker-compose
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;docker-compose&lt;/h3&gt;
+&lt;p&gt;Générer l'image&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;docker-compose up --build
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;lister les containers&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;docker-compose ps
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href="https://testdriven.io/blog/dockerizing-django-with-postgres-gunicorn-and-nginx/"&gt;Dockerizing Django with Postgres, Gunicorn, and Nginx&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Note: Utiliser le http_proxy et non uwsgi&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://testdriven.io/blog/django-docker-traefik/"&gt;Dockerizing Django with Postgres, Gunicorn, and Traefik&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Ouvrir un shell dans un container&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nv"&gt;docker&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;exec&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;it&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nv"&gt;container&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;bash&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href="https://www.docker.com/blog/how-to-deploy-on-remote-docker-hosts-with-docker-compose/"&gt;How to deploy on remote Docker hosts with docker-compose&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;https://github.com/docker-archive/nginx-gohttp&lt;/p&gt;
+&lt;h1&gt;Divers&lt;/h1&gt;
+&lt;h2&gt;Linux&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://ostechnix.com/how-to-run-docker-as-non-root-user-in-linux/"&gt;https://ostechnix.com/how-to-run-docker-as-non-root-user-in-linux/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Déplacement du répertoire Docker du disque SSD vers le disque classique&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://docs.microsoft.com/en-us/windows/win32/fileio/hard-links-and-junctions"&gt;https://docs.microsoft.com/en-us/windows/win32/fileio/hard-links-and-junctions&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Hébergement&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://www.kamatera.com/"&gt;https://www.kamatera.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.digitalocean.com/products/droplets/"&gt;https://www.digitalocean.com/products/droplets/&lt;/a&gt;&lt;/p&gt;</content><category term="Développement"></category><category term="Virtualisation"></category></entry><entry><title>wagtail</title><link href="http://dev.duloup.org/Dev/2021-05-07-wagtail.html" rel="alternate"></link><published>2021-05-07T12:56:00+02:00</published><updated>2021-05-07T12:56:00+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2021-05-07:/Dev/2021-05-07-wagtail.html</id><content type="html">&lt;p&gt;&lt;a href="https://github.com/wagtail/wagtail"&gt;Wagtail&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.wagtail-localize.org/"&gt;L10N&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://docs.wagtail.io/en/stable/reference/contrib/routablepage.html"&gt;RoutablePageMixin&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.accordbox.com/blog/wagtail-tutorials-routable-page/"&gt;https://www.accordbox.com/blog/wagtail-tutorials-routable-page/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://learnwagtail.com/tutorials/adding-tags-to-wagtail-cms-pages/"&gt;https://learnwagtail.com/tutorials/adding-tags-to-wagtail-cms-pages/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/AccordBox/wagtail-bootstrap-blog"&gt;https://github.com/AccordBox/wagtail-bootstrap-blog&lt;/a&gt;&lt;/p&gt;</content><category term="Développement"></category><category term="python"></category><category term="django"></category><category term="CMS"></category></entry><entry><title>ruby-tags</title><link href="http://dev.duloup.org/ruby-tags.html" rel="alternate"></link><published>2018-10-24T12:36:35+02:00</published><updated>2018-10-24T12:36:35+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-10-24:/ruby-tags.html</id><content type="html">&lt;p&gt;&lt;a href="https://stackoverflow.com/questions/10120720/generating-emacs-tags-file-for-a-ruby-on-rails-project"&gt;https://stackoverflow.com/questions/10120720/generating-emacs-tags-file-for-a-ruby-on-rails-project&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nv"&gt;gem&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;install&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;ripper&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;tags&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nv"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;your_project&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nv"&gt;ripper&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;tags&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;R&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;#&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;for&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;vim&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nv"&gt;ripper&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;tags&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;R&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;f&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;TAGS&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;#&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;for&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;emacs&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Développement"></category><category term="Emacs"></category><category term="Ruby"></category></entry><entry><title>rub-rubocop-checker</title><link href="http://dev.duloup.org/rub-rubocop-checker.html" rel="alternate"></link><published>2018-10-23T09:36:31+02:00</published><updated>2018-10-23T09:36:31+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-10-23:/rub-rubocop-checker.html</id><content type="html">&lt;p&gt;&lt;a href="https://github.com/rubocop-hq/rubocop/blob/master/config/default.yml"&gt;GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://rubocop.readthedocs.io/en/latest/configuration/"&gt;Configuration&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# .rubocop.yml&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="c1"&gt;# inherit_from: ../.rubocop.yml&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="nt"&gt;Style/Encoding&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="nt"&gt;Enabled&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;false&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="nt"&gt;Metrics/LineLength&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="nt"&gt;Max&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;99&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="nt"&gt;Metrics/MethodLength&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="nt"&gt;Max&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;99&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="nt"&gt;Metrics/AbcSize&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="nt"&gt;Max&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;49&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="nt"&gt;Layout/EndOfLine&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="nt"&gt;EnforcedStyle&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;lf&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Développement"></category><category term="Ruby"></category></entry><entry><title>git-dangling</title><link href="http://dev.duloup.org/git-dangling.html" rel="alternate"></link><published>2018-10-22T12:06:15+02:00</published><updated>2018-10-22T12:06:15+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-10-22:/git-dangling.html</id><content type="html">&lt;p&gt;&lt;a href="https://tekkie.ro/news/howto-remove-all-dangling-commits-from-your-git-repository/"&gt;https://tekkie.ro/news/howto-remove-all-dangling-commits-from-your-git-repository/&lt;/a&gt;&lt;/p&gt;</content><category term="Développement"></category><category term="Git"></category></entry><entry><title>ruby-rake</title><link href="http://dev.duloup.org/ruby-rake.html" rel="alternate"></link><published>2018-10-21T08:50:11+02:00</published><updated>2018-10-21T08:50:11+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-10-21:/ruby-rake.html</id><content type="html">&lt;p&gt;&lt;a href="https://github.com/ruby/rake"&gt;GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://ruby.github.io/rake/"&gt;Documentation&lt;/a&gt;&lt;/p&gt;</content><category term="Développement"></category><category term="Ruby"></category><category term="Build"></category></entry><entry><title>ruby: rmagick</title><link href="http://dev.duloup.org/ruby-rmagick.html" rel="alternate"></link><published>2018-10-10T19:46:46+02:00</published><updated>2018-10-10T19:46:46+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-10-10:/ruby-rmagick.html</id><content type="html">&lt;p&gt;&lt;a href="https://rmagick.github.io/usage.html"&gt;https://rmagick.github.io/usage.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://stackoverflow.com/questions/4989097/rmagick-under-windows#18391086"&gt;https://stackoverflow.com/questions/4989097/rmagick-under-windows#18391086&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://ftp.icm.edu.pl/packages/ImageMagick/binaries/ImageMagick-6.7.7-9-Q8-windows-dll.exe"&gt;http://ftp.icm.edu.pl/packages/ImageMagick/binaries/ImageMagick-6.7.7-9-Q8-windows-dll.exe&lt;/a&gt;&lt;/p&gt;</content><category term="Développement"></category><category term="Ruby"></category><category term="Images"></category></entry><entry><title>Ruby</title><link href="http://dev.duloup.org/ruby.html" rel="alternate"></link><published>2018-10-10T08:51:44+02:00</published><updated>2019-08-09T08:27:26+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-10-10:/ruby.html</id><content type="html">&lt;h1&gt;Installation&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/oneclick/rubyinstaller2"&gt;https://github.com/oneclick/rubyinstaller2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/oneclick/rubyinstaller2/releases"&gt;Releases&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Documentation&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://ruby-doc.org/docs/beginner-fr/xhtml/ch01.html#id2854022"&gt;Premiers pas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.codecademy.com/articles/ruby-command-line-argv"&gt;Arguments ligne de commande&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.jrsoftware.org/isdl.php"&gt;commande isdl&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://stackoverflow.com/questions/7517524/understanding-the-gemfile-lock-file"&gt;Gemfile.lock&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Librairies&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://ruby-doc.org/stdlib-1.9.3/libdoc/yaml/rdoc/YAML.html"&gt;YAML&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://ruby-doc.com/stdlib/libdoc/fileutils/rdoc/FileUtils.html"&gt;FileUtils&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://ruby-doc.org/core-2.5.1/Array.html"&gt;Array&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.jrsoftware.org/download.php/is-unicode.exe"&gt;is-unicode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.tutorialspoint.com/ruby/ruby_regular_expressions.htm"&gt;Regexp&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><category term="Développement"></category><category term="Ruby"></category><category term="Languages"></category><category term="Jekyll"></category></entry><entry><title>Synchronisation des depots Git</title><link href="http://dev.duloup.org/tech-git-repo-sync.html" rel="alternate"></link><published>2018-10-05T23:05:20+02:00</published><updated>2018-10-05T23:05:20+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-10-05:/tech-git-repo-sync.html</id><summary type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="ch"&gt;#!/bin/bash&lt;/span&gt;
+&lt;span class="c1"&gt;# ~git/bin/git-push-pi0.sh&lt;/span&gt;
+
+&lt;span class="nb"&gt;pushd&lt;/span&gt; ~/repositories
+&lt;span class="c1"&gt;#prefix=scans&lt;/span&gt;
+&lt;span class="c1"&gt;#prefix=&amp;quot;mysensors-&amp;quot;&lt;/span&gt;
+&lt;span class="nv"&gt;prefixes&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;mao- mysensors- pio- arduino roaming myblog outils scripts musique&amp;quot;&lt;/span&gt;
+&lt;span class="k"&gt;for&lt;/span&gt; p &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;prefixes&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt;
+    &lt;span class="nv"&gt;prefix&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;$p&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; f &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;prefix&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;*&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt;
+        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; -d &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$f&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
+            &lt;span class="nb"&gt;pushd&lt;/span&gt; &lt;span class="nv"&gt;$f&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+            &lt;span class="nb"&gt;echo&lt;/span&gt;  --- &lt;span class="nv"&gt;$f&lt;/span&gt; ---&lt;span class="p"&gt;;&lt;/span&gt;
+            &lt;span class="nb"&gt;echo&lt;/span&gt; git push --mirror git@pi0:&lt;span class="nv"&gt;$f&lt;/span&gt;
+            git …&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="ch"&gt;#!/bin/bash&lt;/span&gt;
+&lt;span class="c1"&gt;# ~git/bin/git-push-pi0.sh&lt;/span&gt;
+
+&lt;span class="nb"&gt;pushd&lt;/span&gt; ~/repositories
+&lt;span class="c1"&gt;#prefix=scans&lt;/span&gt;
+&lt;span class="c1"&gt;#prefix=&amp;quot;mysensors-&amp;quot;&lt;/span&gt;
+&lt;span class="nv"&gt;prefixes&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;mao- mysensors- pio- arduino roaming myblog outils scripts musique&amp;quot;&lt;/span&gt;
+&lt;span class="k"&gt;for&lt;/span&gt; p &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;prefixes&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt;
+    &lt;span class="nv"&gt;prefix&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;$p&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; f &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;prefix&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;*&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt;
+        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; -d &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$f&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
+            &lt;span class="nb"&gt;pushd&lt;/span&gt; &lt;span class="nv"&gt;$f&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+            &lt;span class="nb"&gt;echo&lt;/span&gt;  --- &lt;span class="nv"&gt;$f&lt;/span&gt; ---&lt;span class="p"&gt;;&lt;/span&gt;
+            &lt;span class="nb"&gt;echo&lt;/span&gt; git push --mirror git@pi0:&lt;span class="nv"&gt;$f&lt;/span&gt;
+            git push --mirror git@pi0:&lt;span class="nv"&gt;$f&lt;/span&gt;
+            &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;ret: &lt;/span&gt;&lt;span class="nv"&gt;$?&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+            &lt;span class="nb"&gt;popd&lt;/span&gt;
+        &lt;span class="k"&gt;fi&lt;/span&gt;
+    &lt;span class="k"&gt;done&lt;/span&gt;
+&lt;span class="k"&gt;done&lt;/span&gt;
+&lt;span class="nb"&gt;popd&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# Rakefile&lt;/span&gt;
+
+&lt;span class="n"&gt;task&lt;/span&gt; &lt;span class="ss"&gt;:mirror&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt;
+  &lt;span class="no"&gt;Dir&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;chdir&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;/home/git/repositories&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="n"&gt;mydirs&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="no"&gt;Rake&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="no"&gt;FileList&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;*.git&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+  &lt;span class="n"&gt;mydirs&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;exclude&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;gitolite-admin.git&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="n"&gt;mydirs&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;exclude&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;serveurs.git&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+  &lt;span class="n"&gt;mydirs&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;each&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;mydir&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;
+    &lt;span class="no"&gt;Dir&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;chdir&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;mydir&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt;
+      &lt;span class="n"&gt;repo_name&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;mydir&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;gsub&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;.git&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+      &lt;span class="n"&gt;sh&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;git push --mirror git@pi0:&lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="n"&gt;repo_name&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+    &lt;span class="k"&gt;end&lt;/span&gt;
+  &lt;span class="k"&gt;end&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# git-mirror.py&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;os&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;subprocess&lt;/span&gt;
+
+&lt;span class="n"&gt;host&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;stephane-lenovo.local&amp;#39;&lt;/span&gt;
+
+&lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;chdir&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;~/repositories&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;dirs&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;listdir&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="nb"&gt;dir&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;dirs&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;subprocess&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;run&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;git&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;-C&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;mydir&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;push&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;--mirror&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;git@&lt;/span&gt;&lt;span class="si"&gt;{}&lt;/span&gt;&lt;span class="s1"&gt;:&lt;/span&gt;&lt;span class="si"&gt;{}&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;host&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;mydir&lt;/span&gt;&lt;span class="p"&gt;)],&lt;/span&gt; &lt;span class="n"&gt;capture_output&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+
+&lt;span class="n"&gt;Script&lt;/span&gt; &lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;ajout des répertoires manquants à la configuration&lt;/span&gt;
+&lt;span class="err"&gt;```&lt;/span&gt;&lt;span class="n"&gt;python&lt;/span&gt;
+
+&lt;span class="k"&gt;with&lt;/span&gt; &lt;span class="nb"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;liste-todo.txt&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;r&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;myrights&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&amp;#39;&amp;#39;repo &lt;/span&gt;&lt;span class="si"&gt;{prjname}&lt;/span&gt;&lt;span class="s1"&gt;&lt;/span&gt;
+&lt;span class="s1"&gt;    RW+ = @priv&lt;/span&gt;
+&lt;span class="s1"&gt;&amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;
+
+    &lt;span class="n"&gt;lines&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;readlines&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="n"&gt;lines&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;replace&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;replace&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;.git&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;l&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;lines&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;lines&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;myrights&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;prjname&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;line&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Développement"></category><category term="Git"></category></entry><entry><title>Emacs: Variables locales</title><link href="http://dev.duloup.org/emacs-variables-locales.html" rel="alternate"></link><published>2018-09-21T08:56:48+02:00</published><updated>2018-09-21T08:56:48+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-09-21:/emacs-variables-locales.html</id><summary type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://emacs.stackexchange.com/questions/24907/how-to-use-dir-locals-el-with-projectile"&gt;How to use dir locals el with projectile&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Directory-Variables.html"&gt;Directory Variables&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;;; .dir-locals.el
+((nil
+  (easy-jekyll-basedir . &amp;quot;e:/repo/myblog-dev/&amp;quot;)
+))
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h1&gt;Régénération des tags&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://stackoverflow.com/questions/2550474/is-it-possible-to-auto-regenerate-and-load-tags-table-in-emacs-rather-than-havin"&gt;https://stackoverflow.com/questions/2550474/is-it-possible-to-auto-regenerate-and-load-tags-table-in-emacs-rather-than-havin&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;;; .dir-locals.el
+((nil . ((tags-cmd . &amp;quot;etags -R *.py&amp;quot;))))
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;;; init.el&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="c1"&gt;;; Regénérer les tags&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;defvar&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;tags-cmd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;etags -R 2&amp;gt;/dev/null&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;defun&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;regen-tags&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Regenerate the tags …&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://emacs.stackexchange.com/questions/24907/how-to-use-dir-locals-el-with-projectile"&gt;How to use dir locals el with projectile&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Directory-Variables.html"&gt;Directory Variables&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;;; .dir-locals.el
+((nil
+  (easy-jekyll-basedir . &amp;quot;e:/repo/myblog-dev/&amp;quot;)
+))
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h1&gt;Régénération des tags&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://stackoverflow.com/questions/2550474/is-it-possible-to-auto-regenerate-and-load-tags-table-in-emacs-rather-than-havin"&gt;https://stackoverflow.com/questions/2550474/is-it-possible-to-auto-regenerate-and-load-tags-table-in-emacs-rather-than-havin&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;;; .dir-locals.el
+((nil . ((tags-cmd . &amp;quot;etags -R *.py&amp;quot;))))
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;;; init.el&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="c1"&gt;;; Regénérer les tags&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;defvar&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;tags-cmd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;etags -R 2&amp;gt;/dev/null&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;defun&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;regen-tags&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Regenerate the tags file for the current working directory&amp;quot;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;interactive&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;let&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="nv"&gt;tag-file&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;concat&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;default-directory&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;TAGS&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;shell-command&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;tags-cmd&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;visit-tags-table&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;tag-file&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;global-set-key&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;kbd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;C-c t r&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="ss"&gt;&amp;#39;regen-tags&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Rechargement automatique de la table des tags&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;setq&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;tags-revert-without-query&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="no"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Développement"></category><category term="Emacs"></category></entry><entry><title>Git: pb ctrl-m sous Windows</title><link href="http://dev.duloup.org/git-pb-ctrl-m-sous-windows.html" rel="alternate"></link><published>2018-09-17T18:45:23+02:00</published><updated>2018-09-17T18:45:23+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-09-17:/git-pb-ctrl-m-sous-windows.html</id><content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://stackoverflow.com/questions/1889559/git-diff-to-ignore-m"&gt;https://stackoverflow.com/questions/1889559/git-diff-to-ignore-m&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="https://stackoverflow.com/questions/9225599/should-git-change-the-ending-of-line-controlm-or-m-at-the-end-of-the-first-l"&gt;https://stackoverflow.com/questions/9225599/should-git-change-the-ending-of-line-controlm-or-m-at-the-end-of-the-first-l&lt;/a&gt;&lt;/p&gt;</content><category term="Développement"></category><category term="Git"></category><category term="Windows"></category></entry><entry><title>Emacs</title><link href="http://dev.duloup.org/emacs.html" rel="alternate"></link><published>2018-09-13T09:21:12+02:00</published><updated>2021-10-23T22:19:00+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-09-13:/emacs.html</id><summary type="html">&lt;h2&gt;Espaces pour les tabulations&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;(setq-default indent-tabs-mode nil)
+(setq-default tab-width 4)
+(setq indent-line-function &amp;#39;insert-tab)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Paquets utilisés&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://melpa.org/#/getting-started"&gt;Melpa (Dépôt)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.emacswiki.org/emacs/Projectile"&gt;Projectile&lt;/a&gt; (Gestion de projets)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://oremacs.com/swiper/"&gt;Swipper&lt;/a&gt; (Recherche avec complétion)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.emacswiki.org/emacs/CompanyMode"&gt;Company mode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/masasam/emacs-easy-jekyll"&gt;Emacs Easy Jekyll&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/jorgenschaefer/elpy"&gt;Elpy&lt;/a&gt; Permet la recherche des tags&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://perso.univ-rennes1.fr/san.vu-ngoc/prog/mma.el"&gt;MMA&lt;/a&gt;: Un mode pour l'accompagnateur MIDI &lt;a href="../Musique/mma.html"&gt;MMA&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Liens&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.gnu.org/software/emacs/manual/html_node/eintr/index.html#Top"&gt;Manuel&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://nilsdeppe.com/posts/emacs-c++-ide2"&gt;emacs-c++-ide2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://emacs.stackexchange.com/questions/34322/set-default-coding-system-utf-8"&gt;Set default coding …&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;h2&gt;Espaces pour les tabulations&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;(setq-default indent-tabs-mode nil)
+(setq-default tab-width 4)
+(setq indent-line-function &amp;#39;insert-tab)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Paquets utilisés&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://melpa.org/#/getting-started"&gt;Melpa (Dépôt)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.emacswiki.org/emacs/Projectile"&gt;Projectile&lt;/a&gt; (Gestion de projets)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://oremacs.com/swiper/"&gt;Swipper&lt;/a&gt; (Recherche avec complétion)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.emacswiki.org/emacs/CompanyMode"&gt;Company mode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/masasam/emacs-easy-jekyll"&gt;Emacs Easy Jekyll&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/jorgenschaefer/elpy"&gt;Elpy&lt;/a&gt; Permet la recherche des tags&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://perso.univ-rennes1.fr/san.vu-ngoc/prog/mma.el"&gt;MMA&lt;/a&gt;: Un mode pour l'accompagnateur MIDI &lt;a href="../Musique/mma.html"&gt;MMA&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Liens&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.gnu.org/software/emacs/manual/html_node/eintr/index.html#Top"&gt;Manuel&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://nilsdeppe.com/posts/emacs-c++-ide2"&gt;emacs-c++-ide2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://emacs.stackexchange.com/questions/34322/set-default-coding-system-utf-8"&gt;Set default coding system-utf-8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://stackoverflow.com/questions/5795451/how-to-detect-that-emacs-is-in-terminal-mode/5795518#5795518"&gt;How to detect that emacs is in terminal mode&lt;/a&gt; (Pb de taille de frame au démarrage)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://edivad.wordpress.com/2007/04/03/emacs-convert-dos-to-unix-and-vice-versa/"&gt;Convertion DOS -&amp;gt; Unix&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://emacs.stackexchange.com/questions/24907/how-to-use-dir-locals-el-with-projectile"&gt;How to use dir locals el with projectile&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://desmondrivet.com/2018/03/30/emacs-pelican-workflow"&gt;Blogging with Emacs and Pelican&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Linux: Pb avec emacs24 -&amp;gt; Ajoût du dépôt pour emacs25&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;deb&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;http://ppa.launchpad.net/kelleyk/emacs/ubuntu&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;xenial&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kp"&gt;main&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="c"&gt;# deb-src http://ppa.launchpad.net/kelleyk/emacs/ubuntu xenial main&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="err"&gt;sudo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;add-apt-repository&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;ppa:kelleyk/emacs&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="err"&gt;sudo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;apt-get&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;update&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="err"&gt;sudo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;apt-get&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;install&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="err"&gt;emacs25&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Fichiers backup&lt;/h2&gt;
+&lt;p&gt;Eviter la multiplication des fichiers *~&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;(setq backup-directory-alist `((&amp;quot;.&amp;quot; . &amp;quot;~/.saves&amp;quot;)))
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Tags&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;ctags -f TAGS -e -R
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;SQLite&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;cpan install DBI DBD::SQLite
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Développement"></category><category term="Emacs"></category></entry><entry><title>git: Déplacement d'un répertoire vers un submodule</title><link href="http://dev.duloup.org/git-deplacement-dun-repertoire-vers-un-submodule.html" rel="alternate"></link><published>2018-09-11T21:05:46+02:00</published><updated>2018-09-11T21:05:46+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-09-11:/git-deplacement-dun-repertoire-vers-un-submodule.html</id><summary type="html">&lt;p&gt;Solution utilisée:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://stackoverflow.com/questions/17413493/create-a-submodule-repository-from-a-folder-and-keep-its-git-commit-history"&gt;https://stackoverflow.com/questions/17413493/create-a-submodule-repository-from-a-folder-and-keep-its-git-commit-history&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Solution préconsisée par github:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://help.github.com/articles/splitting-a-subfolder-out-into-a-new-repository/"&gt;https://help.github.com/articles/splitting-a-subfolder-out-into-a-new-repository/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Nettoyage de .git (500M+ pour mao)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://stackoverflow.com/questions/5277467/how-can-i-clean-my-git-folder-cleaned-up-my-project-directory-but-git-is-sti"&gt;https://stackoverflow.com/questions/5277467/how-can-i-clean-my-git-folder-cleaned-up-my-project-directory-but-git-is-sti&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;git&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;rev&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;list&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="nv"&gt;objects&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="nv"&gt;all&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="w"&gt;     &lt;/span&gt;&lt;span class="k"&gt;while&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;read&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;sha1&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;fname&lt;/span&gt;&lt;span class="c1"&gt;;     do          echo -e &amp;quot;$(git cat-file -s $sha1)\t$\t$fname&amp;quot;;     done …&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Solution utilisée:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://stackoverflow.com/questions/17413493/create-a-submodule-repository-from-a-folder-and-keep-its-git-commit-history"&gt;https://stackoverflow.com/questions/17413493/create-a-submodule-repository-from-a-folder-and-keep-its-git-commit-history&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Solution préconsisée par github:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://help.github.com/articles/splitting-a-subfolder-out-into-a-new-repository/"&gt;https://help.github.com/articles/splitting-a-subfolder-out-into-a-new-repository/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Nettoyage de .git (500M+ pour mao)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://stackoverflow.com/questions/5277467/how-can-i-clean-my-git-folder-cleaned-up-my-project-directory-but-git-is-sti"&gt;https://stackoverflow.com/questions/5277467/how-can-i-clean-my-git-folder-cleaned-up-my-project-directory-but-git-is-sti&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;git&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;rev&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;list&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="nv"&gt;objects&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="nv"&gt;all&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="w"&gt;     &lt;/span&gt;&lt;span class="k"&gt;while&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;read&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;sha1&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;fname&lt;/span&gt;&lt;span class="c1"&gt;;     do          echo -e &amp;quot;$(git cat-file -s $sha1)\t$\t$fname&amp;quot;;     done | sort -n &amp;gt; rev-list.out&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href="https://stackoverflow.com/questions/4515580/how-do-i-remove-the-old-history-from-a-git-repository"&gt;https://stackoverflow.com/questions/4515580/how-do-i-remove-the-old-history-from-a-git-repository&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://git-scm.com/book/en/v2/Git-Tools-Replace"&gt;https://git-scm.com/book/en/v2/Git-Tools-Replace&lt;/a&gt;&lt;/p&gt;</content><category term="Développement"></category><category term="Git"></category></entry><entry><title>Emacs for python</title><link href="http://dev.duloup.org/emacs-for-python.html" rel="alternate"></link><published>2018-02-06T18:28:52+01:00</published><updated>2021-07-04T10:47:00+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-02-06:/emacs-for-python.html</id><summary type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.emacswiki.org/emacs/PythonProgrammingInEmacs"&gt;Python programming in Emacs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/gabrielelanaro/emacs-for-python"&gt;Emacs for Python&lt;/a&gt; Fonctionne bien, fournit la complétion (M-/)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/afroisalreadyinu/abl-mode"&gt;abl-mode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/jorgenschaefer/elpy"&gt;Elpy&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;flycheck-pychekers&lt;/h1&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;global&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;flycheck&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;mode&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;with&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;eval&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;after&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nb"&gt;load&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;flycheck&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;add&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;hook&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;flycheck-mode-hook #&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;flycheck&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;pycheckers&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;setup&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Filtrer les messages&lt;/p&gt;
+&lt;h2&gt;Mypy&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install mypy
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;configuration: &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;~/&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;mypy&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;mypy&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;ignore_missing_imports&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;True&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Pylint&lt;/h2&gt;
+&lt;p&gt;Générer .pylinrc pour le …&lt;/p&gt;</summary><content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.emacswiki.org/emacs/PythonProgrammingInEmacs"&gt;Python programming in Emacs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/gabrielelanaro/emacs-for-python"&gt;Emacs for Python&lt;/a&gt; Fonctionne bien, fournit la complétion (M-/)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/afroisalreadyinu/abl-mode"&gt;abl-mode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/jorgenschaefer/elpy"&gt;Elpy&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;flycheck-pychekers&lt;/h1&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;global&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;flycheck&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;mode&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;with&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;eval&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;after&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nb"&gt;load&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;flycheck&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;add&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;hook&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;flycheck-mode-hook #&amp;#39;&lt;/span&gt;&lt;span class="n"&gt;flycheck&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;pycheckers&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;setup&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Filtrer les messages&lt;/p&gt;
+&lt;h2&gt;Mypy&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pip install mypy
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;configuration: &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;~/&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;mypy&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;mypy&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;ignore_missing_imports&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;True&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Pylint&lt;/h2&gt;
+&lt;p&gt;Générer .pylinrc pour le projet:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;pylint --generate-rcfile &amp;gt; .pylintrc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Dans .pylintrc du projet modifier init-hook:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;init&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;hook&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;import sys; sys.path.append(&amp;quot;/home/stephane/.local/share/virtualenvs/pypass--rJIKvrW/lib/python3.9/site-packages*&amp;quot;)&amp;#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;.pylintrc utilisateur&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="cp"&gt;# ~/.pylintrc&lt;/span&gt;
+&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;MESSAGES&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;CONTROL&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;disable&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;too&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;many&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;ancestors&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;disable&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;missing&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;function&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;docstring&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h1&gt;&lt;a href="https://github.com/jorgenschaefer/elpy"&gt;Elpy&lt;/a&gt;&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Tags fonctionnels&lt;/li&gt;
+&lt;li&gt;Checkers fonctionnels&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Problème:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/jorgenschaefer/elpy/issues/538"&gt;Elpy is not using python from my activated virtualenv&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;GTags&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://blade6570.github.io/soumyatripathy/blog_gnuglobal/gnu_global.html"&gt;GTags for Python in Emacs&lt;/a&gt;&lt;/p&gt;</content><category term="Développement"></category><category term="Emacs"></category></entry></feed>

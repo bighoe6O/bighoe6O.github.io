@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>FPGA</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <meta name="description" content="https://www.lextronic.fr/platines-fpga/20218-module-cpld-cmod.html..." />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">MyBlog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/archerie.html">Archerie</a></li>
+                    <li><a href="/category/archive.html">Archive</a></li>
+                    <li><a href="/category/culture.html">Culture</a></li>
+                    <li><a href="/category/developpement.html">Développement</a></li>
+                    <li><a href="/category/divers.html">Divers</a></li>
+                    <li><a href="/category/graphisme.html">Graphisme</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li><a href="/category/musique.html">Musique</a></li>
+                    <li><a href="/category/projets.html">Projets</a></li>
+                    <li><a href="/category/reprap.html">RepRap</a></li>
+                    <li><a href="/category/securite.html">Sécurité</a></li>
+                    <li><a href="/category/systeme.html">Système</a></li>
+                    <li class="active"><a href="/category/tech.html">Tech</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/fpga.html" rel="bookmark"
+           title="Permalink to FPGA">FPGA</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-09-29T07:41:03+02:00">
+                Published: Sat 29 September 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/tech.html">Tech</a>.</p>
+<p>tags: <a href="/tag/electronique.html">Electronique</a> </p>
+</footer><!-- /.post-info -->      <p><a href="https://www.lextronic.fr/platines-fpga/20218-module-cpld-cmod.html">https://www.lextronic.fr/platines-fpga/20218-module-cpld-cmod.html</a></p>
+<p><a href="https://www.digikey.fr/product-detail/fr/sparkfun-electronics/DEV-14828/1568-1915-ND/9561755">https://www.digikey.fr/product-detail/fr/sparkfun-electronics/DEV-14828/1568-1915-ND/9561755</a></p>
+<p><a href="https://github.com/tinyfpga/TinyFPGA-A-Series">https://github.com/tinyfpga/TinyFPGA-A-Series</a></p>
+<p><a href="https://www.elektormagazine.com/news/tinyfpga-bx-review/18819">https://www.elektormagazine.com/news/tinyfpga-bx-review/18819</a></p>
+<p><a href="https://www.youtube.com/watch?v=pM1ZSZNUS-w">Complete Xilinx FPGA Tutorial Mike's Lab</a></p>
+<p><a href="https://tinyfpga.com/bx/guide.html">https://tinyfpga.com/bx/guide.html</a></p>
+<p><a href="http://kicad-pcb.org/">KiCad</a></p>
+<h1>Synth</h1>
+<p><a href="http://people.ece.cornell.edu/land/courses/ece5760/FinalProjects/s2017/eli8_sjy33_awx2/ece5760finalproject/ece5760finalproject/index.html">Big Red Strings: A FPGA Musical Trio</a></p>
+<p><a href="https://www.instructables.com/id/8-Step-FPGA-Sequencer-and-Synthesizer/">https://www.instructables.com/id/8-Step-FPGA-Sequencer-and-Synthesizer/</a></p>
+<h1>Tutos</h1>
+<p><a href="https://www.youtube.com/watch?v=pDE2qenDXKQ">FPGAs; Lesson 1: Concept Guide and Step by Step Tutorial to Flash LEDs</a></p>
+<h1>Icarus Verilog + GTKWave</h1>
+<h2>Liens</h2>
+<p><a href="http://inf-server.inf.uth.gr/~konstadel/resources/Icarus_Verilog_GTKWave_guide.pdf">Icarus Verilog + GTKWave Guide</a></p>
+<p><a href="http://iverilog.wikia.com/wiki/Getting_Started">http://iverilog.wikia.com/wiki/Getting_Started</a></p>
+<h2>Installation sous Linux</h2>
+<div class="highlight"><pre><span></span><code>sudo apt-add-repository ppa:team-electronics/ppa
+sudo apt-get update
+sudo apt-get install iverilog
+</code></pre></div>
+
+<h1>SparkFun TinyFPGA</h1>
+<p><a href="https://www.sparkfun.com/products/14829#features-tab">https://www.sparkfun.com/products/14829#features-tab</a></p>
+<p><a href="https://tinyfpga.com/bx/guide.html">TinyFPGA BX User Guide</a></p>
+<h2>Installation de apio et Atom</h2>
+<p>Python 3.6</p>
+<div class="highlight"><pre><span></span><code><span class="n">pip</span><span class="w"> </span><span class="n">install</span><span class="w"> </span><span class="n">apio</span><span class="o">==</span><span class="mf">0.4</span><span class="o">.</span><span class="mi">0</span><span class="n">b5</span><span class="w"> </span><span class="n">tinyprog</span><span class="w"></span>
+<span class="n">apio</span><span class="w"> </span><span class="n">install</span><span class="w"> </span><span class="n">system</span><span class="w"> </span><span class="n">scons</span><span class="w"> </span><span class="n">icestorm</span><span class="w"> </span><span class="n">iverilog</span><span class="w"></span>
+<span class="n">apio</span><span class="w"> </span><span class="n">install</span><span class="w"> </span><span class="n">drivers</span><span class="w"></span>
+<span class="n">apio</span><span class="w"> </span><span class="n">drivers</span><span class="w"> </span><span class="o">--</span><span class="n">serial</span><span class="o">-</span><span class="n">enable</span><span class="w"></span>
+
+<span class="n">tinyprog</span><span class="w"> </span><span class="o">--</span><span class="n">update</span><span class="o">-</span><span class="n">bootloader</span><span class="w"></span>
+</code></pre></div>
+
+<p>Editeur atom</p>
+<p><a href="https://github.com/atom/atom">https://github.com/atom/atom</a></p>
+<p>Template de projet</p>
+<p><a href="https://github.com/tinyfpga/TinyFPGA-BX/archive/master.zip">https://github.com/tinyfpga/TinyFPGA-BX/archive/master.zip</a></p>
+<p><a href="https://github.com/tinyfpga/TinyFPGA-BX">https://github.com/tinyfpga/TinyFPGA-BX</a></p>
+<h1>VHDL</h1>
+<p><a href="https://stackoverflow.com/questions/3025034/programming-vhdl-on-linux">Programming VHDL on Linux?</a></p>
+<p><a href="https://github.com/ghdl/ghdl">GHDL</a></p>
+<p><a href="http://qucs.sourceforge.net/">http://qucs.sourceforge.net/</a></p>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>MyBlog - Blog</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">MyBlog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/archerie.html">Archerie</a></li>
+                    <li><a href="/category/archive.html">Archive</a></li>
+                    <li><a href="/category/culture.html">Culture</a></li>
+                    <li><a href="/category/developpement.html">Développement</a></li>
+                    <li><a href="/category/divers.html">Divers</a></li>
+                    <li><a href="/category/graphisme.html">Graphisme</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li><a href="/category/musique.html">Musique</a></li>
+                    <li><a href="/category/projets.html">Projets</a></li>
+                    <li><a href="/category/reprap.html">RepRap</a></li>
+                    <li><a href="/category/securite.html">Sécurité</a></li>
+                    <li><a href="/category/systeme.html">Système</a></li>
+                    <li><a href="/category/tech.html">Tech</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="/Tech/2021-10-25-site-certificats-ssl.html">Site: Installer un certificat SSL</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2021-10-25T19:44:00+02:00">
+                Published: Mon 25 October 2021
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/systeme.html">Système</a>.</p>
+<p>tags: <a href="/tag/site.html">Site</a> <a href="/tag/blog.html">Blog</a> </p>
+</footer><!-- /.post-info --><p><a href="https://certbot.eff.org/lets-encrypt/debianstretch-apache">https://certbot.eff.org/lets-encrypt/debianstretch-apache</a></p>
+<h2>Installer snapd</h2>
+<div class="highlight"><pre><span></span><code>sudo apt install snapd
+</code></pre></div>
+
+<h2>S'assure que la version de snapd est à jour</h2>
+<div class="highlight"><pre><span></span><code>sudo snap install core; sudo snap refresh core
+</code></pre></div>
+
+<h2>Installer Cerbot</h2>
+<div class="highlight"><pre><span></span><code>sudo snap install --classic certbot
+</code></pre></div>
+
+<h2>Préparer la commande Certbot</h2>
+<div class="highlight"><pre><span></span><code>sudo ln -s /snap/bin/certbot /usr/bin/certbot
+</code></pre></div>
+
+<h2>Choisir comment installer Certbot</h2>
+<div class="highlight"><pre><span></span><code>sudo certbot --apache
+</code></pre></div>
+
+<p>Au bout de cinq erreurs, il faut attendre une heure il peut être préférable d'utiliser le <a href="https://letsencrypt.org/docs/staging-environment/">staging environment</a></p>
+<div class="highlight"><pre><span></span><code>certbot --apache --dry-run
+</code></pre></div>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/tech-python-pelican.html" rel="bookmark"
+                           title="Permalink to Pelican">Pelican</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2019-05-21T07:45:08+02:00">
+                Published: Tue 21 May 2019
+        </abbr>
+		<br />
+        <abbr class="modified" title="2019-08-10T00:43:08+02:00">
+                Updated: Sat 10 August 2019
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/tech.html">Tech</a>.</p>
+<p>tags: <a href="/tag/python.html">Python</a> <a href="/tag/pelican.html">Pelican</a> <a href="/tag/blog.html">Blog</a> </p>
+</footer><!-- /.post-info -->                <h1>Documentation</h1>
+<p><a href="https://docs.getpelican.com/en/3.6.3/content.html">https://docs.getpelican.com/en/3.6.3/content.html</a></p>
+<p><a href="https://docs.getpelican.com/en/stable/settings.html">https://docs.getpelican.com/en/stable/settings.html</a></p>
+<h1>Installation</h1>
+<div class="highlight"><pre><span></span><code>pipenv install pelican
+</code></pre></div>
+
+<p>pelicanconf.py</p>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/usr/bin/env python</span>
+<span class="c1"># -*- coding: utf-8 -*- #</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">unicode_literals</span>
+
+<span class="n">AUTHOR</span> <span class="o">=</span> <span class="s1">&#39;Duloup&#39;</span>
+<span class="n">SITENAME</span> <span class="o">=</span> <span class="s1">&#39;MonBlog&#39;</span>
+<span class="n">SITEURL</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+
+<span class="n">PATH</span> <span class="o">=</span> <span class="s1">&#39;content&#39;</span>
+
+<span class="n">TIMEZONE</span> <span class="o">=</span> <span class="s1">&#39;Europe/Paris&#39;</span>
+
+<span class="n">DEFAULT_LANG</span> <span class="o">=</span> <span class="s1">&#39;fr&#39;</span>
+
+<span class="c1"># Feed generation is …</span></code></pre></div>
+                <a class="readmore" href="/tech-python-pelican.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+                </ol><!-- /#posts-list -->
+                </section><!-- /#content -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

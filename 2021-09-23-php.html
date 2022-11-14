@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>PHP</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <meta name="description" content="https://www.soupbowl.io/2020/03/replace-lamp-with-docker-the-easy-way/ https://www.tutorialrepublic.com/php-tutorial/php-get-started.php..." />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">MyBlog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/archerie.html">Archerie</a></li>
+                    <li><a href="/category/archive.html">Archive</a></li>
+                    <li><a href="/category/culture.html">Culture</a></li>
+                    <li><a href="/category/developpement.html">Développement</a></li>
+                    <li><a href="/category/divers.html">Divers</a></li>
+                    <li><a href="/category/graphisme.html">Graphisme</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li><a href="/category/musique.html">Musique</a></li>
+                    <li><a href="/category/projets.html">Projets</a></li>
+                    <li><a href="/category/reprap.html">RepRap</a></li>
+                    <li><a href="/category/securite.html">Sécurité</a></li>
+                    <li><a href="/category/systeme.html">Système</a></li>
+                    <li class="active"><a href="/category/tech.html">Tech</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/2021-09-23-php.html" rel="bookmark"
+           title="Permalink to PHP">PHP</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2021-09-23T11:19:00+02:00">
+                Published: Thu 23 September 2021
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/tech.html">Tech</a>.</p>
+<p>tags: <a href="/tag/dev.html">Dev</a> <a href="/tag/langages.html">Langages</a> </p>
+</footer><!-- /.post-info -->      <p><a href="https://www.soupbowl.io/2020/03/replace-lamp-with-docker-the-easy-way/">https://www.soupbowl.io/2020/03/replace-lamp-with-docker-the-easy-way/</a></p>
+<p><a href="https://www.tutorialrepublic.com/php-tutorial/php-get-started.php">https://www.tutorialrepublic.com/php-tutorial/php-get-started.php</a></p>
+<p><a href="http://www.swig.org/Doc4.0/Php.html">http://www.swig.org/Doc4.0/Php.html</a></p>
+<p><a href="https://www.jetbrains.com/phpstorm/">https://www.jetbrains.com/phpstorm/</a></p>
+<p><a href="https://getcomposer.org/download/">https://getcomposer.org/download/</a></p>
+<h2>Swig</h2>
+<p><a href="https://www.dev2qa.com/how-to-install-swig-on-macos-linux-and-windows/">https://www.dev2qa.com/how-to-install-swig-on-macos-linux-and-windows/</a></p>
+<p><a href="http://www.swig.org/download.html">http://www.swig.org/download.html</a></p>
+<div class="highlight"><pre><span></span><code><span class="o">/*</span><span class="w"> </span><span class="n">File</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">example</span><span class="o">.</span><span class="n">c</span><span class="w"> </span><span class="o">*/</span><span class="w"></span>
+
+<span class="c1">#include &lt;time.h&gt;</span><span class="w"></span>
+<span class="n">double</span><span class="w"> </span><span class="n">My_variable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3.0</span><span class="p">;</span><span class="w"></span>
+
+<span class="nb nb-Type">int</span><span class="w"> </span><span class="n">fact</span><span class="p">(</span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">else</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">n</span><span class="o">*</span><span class="n">fact</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="nb nb-Type">int</span><span class="w"> </span><span class="n">my_mod</span><span class="p">(</span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">y</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="o">%</span><span class="n">y</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="nb">char</span><span class="w"> </span><span class="o">*</span><span class="n">get_time</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">time_t</span><span class="w"> </span><span class="n">ltime</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">time</span><span class="p">(</span><span class="o">&amp;</span><span class="n">ltime</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">ctime</span><span class="p">(</span><span class="o">&amp;</span><span class="n">ltime</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="cm">/* example.i */</span><span class="w"></span>
+<span class="nf">%module</span><span class="w"> </span><span class="n">example</span><span class="w"></span>
+<span class="o">%</span><span class="p">{</span><span class="w"></span>
+<span class="cm">/* Put header files here or function declarations like below */</span><span class="w"></span>
+<span class="k">extern</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">My_variable</span><span class="p">;</span><span class="w"></span>
+<span class="k">extern</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">fact</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">);</span><span class="w"></span>
+<span class="k">extern</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">my_mod</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">y</span><span class="p">);</span><span class="w"></span>
+<span class="k">extern</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="nf">get_time</span><span class="p">();</span><span class="w"></span>
+<span class="o">%</span><span class="p">}</span><span class="w"></span>
+
+<span class="k">extern</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">My_variable</span><span class="p">;</span><span class="w"></span>
+<span class="k">extern</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">fact</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">);</span><span class="w"></span>
+<span class="k">extern</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">my_mod</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">y</span><span class="p">);</span><span class="w"></span>
+<span class="k">extern</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="nf">get_time</span><span class="p">();</span><span class="w"></span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>apt-get install libpcre3 libpcre3-dev
+
+curl https://altushost-swe.dl.sourceforge.net/project/swig/swig/swig-4.0.2/swig-4.0.2.tar.gz -o swig-4.0.2.tar.gz
+tar zxvf swig-4.0.2.tar.gz
+cd swig-4.0.2/
+./configure --prefix=/usr/local
+make &amp;&amp; make install
+</code></pre></div>
+
+<p><a href="http://www.swig.org/tutorial.html">http://www.swig.org/tutorial.html</a>
+apt install tcl tcl-dev</p>
+<div class="highlight"><pre><span></span><code><span class="nv">apt</span><span class="w"> </span><span class="nv">install</span><span class="w"> </span><span class="nv">tcl</span><span class="w"> </span><span class="nv">tcl</span><span class="o">-</span><span class="nv">dev</span><span class="w"></span>
+<span class="nv">gcc</span><span class="w"> </span><span class="o">-</span><span class="nv">fpic</span><span class="w"> </span><span class="o">-</span><span class="nv">c</span><span class="w"> </span><span class="nv">example</span>.<span class="nv">c</span><span class="w"> </span><span class="nv">example_wrap</span>.<span class="nv">c</span><span class="w"> </span><span class="o">-</span><span class="nv">I</span><span class="o">/</span><span class="nv">usr</span><span class="o">/</span><span class="k">include</span><span class="o">/</span><span class="nv">tcl</span><span class="w"></span>
+<span class="nv">gcc</span><span class="w"> </span><span class="o">-</span><span class="nv">shared</span><span class="w"> </span><span class="nv">example</span>.<span class="nv">o</span><span class="w"> </span><span class="nv">example_wrap</span>.<span class="nv">o</span><span class="w"> </span><span class="o">-</span><span class="nv">o</span><span class="w"> </span><span class="nv">example</span>.<span class="nv">so</span><span class="w"></span>
+</code></pre></div>
+
+<h2>Gestionnaire de paquets composer</h2>
+<h3>Installation</h3>
+<div class="highlight"><pre><span></span><code><span class="nt">php</span><span class="w"> </span><span class="nt">-r</span><span class="w"> </span><span class="s2">&quot;copy(&#39;https://getcomposer.org/installer&#39;, &#39;composer-setup.php&#39;);&quot;</span><span class="w"></span>
+<span class="nt">php</span><span class="w"> </span><span class="nt">-r</span><span class="w"> </span><span class="s2">&quot;if (hash_file(&#39;sha384&#39;, &#39;composer-setup.php&#39;) === &#39;756890a4488ce9024fc62c56153228907f1545c228516cbf63f885e036d37e9a59d27d63f46af1d4d07ee0f76181c7d3&#39;) { echo &#39;Installer verified&#39;; } else { echo &#39;Installer corrupt&#39;; unlink(&#39;composer-setup.php&#39;); } echo PHP_EOL;&quot;</span><span class="w"></span>
+<span class="nt">php</span><span class="w"> </span><span class="nt">composer-setup</span><span class="p">.</span><span class="nc">php</span><span class="w"></span>
+<span class="nt">php</span><span class="w"> </span><span class="nt">-r</span><span class="w"> </span><span class="s2">&quot;unlink(&#39;composer-setup.php&#39;);&quot;</span><span class="w"></span>
+
+<span class="nt">sudo</span><span class="w"> </span><span class="nt">mv</span><span class="w"> </span><span class="nt">composer</span><span class="p">.</span><span class="nc">phar</span><span class="w"> </span><span class="o">/</span><span class="nt">usr</span><span class="o">/</span><span class="nt">local</span><span class="o">/</span><span class="nt">bin</span><span class="o">/</span><span class="nt">composer</span><span class="w"></span>
+</code></pre></div>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

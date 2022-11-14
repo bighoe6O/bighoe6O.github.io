@@ -1,0 +1,723 @@
+[input]
+base_directory = "output"
+html_selector = "article"
+
+[[input.files]]
+path = "raspberry-pi-pico.html"
+url = "/raspberry-pi-pico.html"
+title = "Raspberry Pi Pico"
+
+[[input.files]]
+path = "angular.html"
+url = "/angular.html"
+title = "Angular"
+
+[[input.files]]
+path = "about.html"
+url = "/about.html"
+title = "About"
+
+[[input.files]]
+path = "tech-python-kivy.html"
+url = "/tech-python-kivy.html"
+title = "Kivy"
+
+[[input.files]]
+path = "tech-zsh.html"
+url = "/tech-zsh.html"
+title = "Zsh"
+
+[[input.files]]
+path = "Divers/2021-10-29-graphisme.html"
+url = "/Divers/2021-10-29-graphisme.html"
+title = "Graphisme"
+
+[[input.files]]
+path = "Tech/2021-10-28-svg.html"
+url = "/Tech/2021-10-28-svg.html"
+title = "SVG"
+
+[[input.files]]
+path = "Tech/2021-10-25-site-certificats-ssl.html"
+url = "/Tech/2021-10-25-site-certificats-ssl.html"
+title = "Site: Installer un certificat SSL"
+
+[[input.files]]
+path = "Tech/2021-10-10-hadoop-ecosystem.html"
+url = "/Tech/2021-10-10-hadoop-ecosystem.html"
+title = "Ecosystème Hadoop"
+
+[[input.files]]
+path = "python-gtk.html"
+url = "/python-gtk.html"
+title = "Python Gtk"
+
+[[input.files]]
+path = "pypass.html"
+url = "/pypass.html"
+title = "PyPass"
+
+[[input.files]]
+path = "2021-09-23-php.html"
+url = "/2021-09-23-php.html"
+title = "PHP"
+
+[[input.files]]
+path = "tech-jupyter.html"
+url = "/tech-jupyter.html"
+title = "Pygmentize Less"
+
+[[input.files]]
+path = "Tech/2021-07-06-bootstrap.html"
+url = "/Tech/2021-07-06-bootstrap.html"
+title = "Bootstarp"
+
+[[input.files]]
+path = "tech/diyw.html"
+url = "/tech/diyw.html"
+title = "DiyW"
+
+[[input.files]]
+path = "tech-python-pandas.html"
+url = "/tech-python-pandas.html"
+title = "Pandas"
+
+[[input.files]]
+path = "tech-less.html"
+url = "/tech-less.html"
+title = "Pygmentize Less"
+
+[[input.files]]
+path = "Livres/index.html"
+url = "/Livres/index.html"
+title = "Livres"
+
+[[input.files]]
+path = "tech-docker.html"
+url = "/tech-docker.html"
+title = "Docker"
+
+[[input.files]]
+path = "Dev/2021-08-05-django-cms.html"
+url = "/Dev/2021-08-05-django-cms.html"
+title = "Django CMS"
+
+[[input.files]]
+path = "Dev/2021-05-07-wagtail.html"
+url = "/Dev/2021-05-07-wagtail.html"
+title = "wagtail"
+
+[[input.files]]
+path = "musique-partitions.html"
+url = "/musique-partitions.html"
+title = "Partitions"
+
+[[input.files]]
+path = "musique-linuxsampler.html"
+url = "/musique-linuxsampler.html"
+title = "LinuxSampler"
+
+[[input.files]]
+path = "musique-oscand.html"
+url = "/musique-oscand.html"
+title = "OscAnd"
+
+[[input.files]]
+path = "musique-m-audio-axiom49.html"
+url = "/musique-m-audio-axiom49.html"
+title = "Clavier M-Audio Axiom 49"
+
+[[input.files]]
+path = "tech-lenovo-y530.html"
+url = "/tech-lenovo-y530.html"
+title = "Lenovo Y530"
+
+[[input.files]]
+path = "musique-audacity.html"
+url = "/musique-audacity.html"
+title = "Audacity"
+
+[[input.files]]
+path = "fabric.html"
+url = "/fabric.html"
+title = "Fabric"
+
+[[input.files]]
+path = "tech-python-bumpversion.html"
+url = "/tech-python-bumpversion.html"
+title = "Bumpversion"
+
+[[input.files]]
+path = "dev-django.html"
+url = "/dev-django.html"
+title = "Django Framework"
+
+[[input.files]]
+path = "tech-python-pelican-tags.html"
+url = "/tech-python-pelican-tags.html"
+title = "Tables avec Pelican"
+
+[[input.files]]
+path = "tech-python.html"
+url = "/tech-python.html"
+title = "Python"
+
+[[input.files]]
+path = "system-nginx.html"
+url = "/system-nginx.html"
+title = "Nginx"
+
+[[input.files]]
+path = "musique-ezdrummer.html"
+url = "/musique-ezdrummer.html"
+title = "EzDrummer"
+
+[[input.files]]
+path = "musique-notion.html"
+url = "/musique-notion.html"
+title = "Editeurs de partition"
+
+[[input.files]]
+path = "flstudio.html"
+url = "/flstudio.html"
+title = "FLStudio"
+
+[[input.files]]
+path = "musique-biab.html"
+url = "/musique-biab.html"
+title = "Band in a Box"
+
+[[input.files]]
+path = "system-powershell.html"
+url = "/system-powershell.html"
+title = "PowerShell"
+
+[[input.files]]
+path = "tech-reprap-skeinforge.html"
+url = "/tech-reprap-skeinforge.html"
+title = "Skeinforge"
+
+[[input.files]]
+path = "firmware.html"
+url = "/firmware.html"
+title = "Firmware"
+
+[[input.files]]
+path = "tech-reprap.html"
+url = "/tech-reprap.html"
+title = "RepRap"
+
+[[input.files]]
+path = "system-ubuntu-pulseaudio.html"
+url = "/system-ubuntu-pulseaudio.html"
+title = "Pulse Audio"
+
+[[input.files]]
+path = "tech-reprap-foldarap.html"
+url = "/tech-reprap-foldarap.html"
+title = "FoldaRap"
+
+[[input.files]]
+path = "tech-reprap-logiciels-3d.html"
+url = "/tech-reprap-logiciels-3d.html"
+title = "Logiciels 3D"
+
+[[input.files]]
+path = "tech-reprap-configurations.html"
+url = "/tech-reprap-configurations.html"
+title = "Configuration RepRap"
+
+[[input.files]]
+path = "tech-python-pelican.html"
+url = "/tech-python-pelican.html"
+title = "Pelican"
+
+[[input.files]]
+path = "tech-s3-protocol.html"
+url = "/tech-s3-protocol.html"
+title = "Protocole S3"
+
+[[input.files]]
+path = "raspberry-pi-ipv6.html"
+url = "/raspberry-pi-ipv6.html"
+title = "Raspberry Pi ipv6"
+
+[[input.files]]
+path = "radios-web.html"
+url = "/radios-web.html"
+title = "Radios Web"
+
+[[input.files]]
+path = "bibliotheque-musicale.html"
+url = "/bibliotheque-musicale.html"
+title = "Bibliotheque musicale"
+
+[[input.files]]
+path = "raspberry-pi-carte-son-cirrus-logic.html"
+url = "/raspberry-pi-carte-son-cirrus-logic.html"
+title = "Raspberry PI: carte son Cirrus Logic"
+
+[[input.files]]
+path = "build-mpd-from-sources.html"
+url = "/build-mpd-from-sources.html"
+title = "Build MPD from sources"
+
+[[input.files]]
+path = "parsers-compilateurs.html"
+url = "/parsers-compilateurs.html"
+title = "Parsers compilateurs"
+
+[[input.files]]
+path = "ruby-parslet.html"
+url = "/ruby-parslet.html"
+title = "ruby-parslet"
+
+[[input.files]]
+path = "musique-mma.html"
+url = "/musique-mma.html"
+title = "MMA (Musical Midi Accompaniment)"
+
+[[input.files]]
+path = "archerie.html"
+url = "/archerie.html"
+title = "Archerie"
+
+[[input.files]]
+path = "olinuxino-installation-dune-archlinux.html"
+url = "/olinuxino-installation-dune-archlinux.html"
+title = "Olinuxino: Installation d'une ArchLinux"
+
+[[input.files]]
+path = "pinebook.html"
+url = "/pinebook.html"
+title = "PineBook"
+
+[[input.files]]
+path = "ketron-sd4.html"
+url = "/ketron-sd4.html"
+title = "Ketron SD4"
+
+[[input.files]]
+path = "linux-kxstudio.html"
+url = "/linux-kxstudio.html"
+title = "linux-kxstudio"
+
+[[input.files]]
+path = "akai-ewi-5000.html"
+url = "/akai-ewi-5000.html"
+title = "AKAI Ewi-5000"
+
+[[input.files]]
+path = "libreelect.html"
+url = "/libreelect.html"
+title = "libreelect"
+
+[[input.files]]
+path = "sequencer-sur-raspberry-pi.html"
+url = "/sequencer-sur-raspberry-pi.html"
+title = "sequencer-sur-raspberry-pi"
+
+[[input.files]]
+path = "souris-logitech-m560.html"
+url = "/souris-logitech-m560.html"
+title = "Souris Logitech M560"
+
+[[input.files]]
+path = "python-curses.html"
+url = "/python-curses.html"
+title = "python-curses"
+
+[[input.files]]
+path = "python-tests.html"
+url = "/python-tests.html"
+title = "python-tests"
+
+[[input.files]]
+path = "python-pysimplegui.html"
+url = "/python-pysimplegui.html"
+title = "python-pysimplegui"
+
+[[input.files]]
+path = "ruby-tags.html"
+url = "/ruby-tags.html"
+title = "ruby-tags"
+
+[[input.files]]
+path = "jekyll-capybara.html"
+url = "/jekyll-capybara.html"
+title = "jekyll-capybara"
+
+[[input.files]]
+path = "jekyll-minitest.html"
+url = "/jekyll-minitest.html"
+title = "Jekyll Minitest"
+
+[[input.files]]
+path = "rub-rubocop-checker.html"
+url = "/rub-rubocop-checker.html"
+title = "rub-rubocop-checker"
+
+[[input.files]]
+path = "git-dangling.html"
+url = "/git-dangling.html"
+title = "git-dangling"
+
+[[input.files]]
+path = "ruby-rake.html"
+url = "/ruby-rake.html"
+title = "ruby-rake"
+
+[[input.files]]
+path = "sites-de-presse.html"
+url = "/sites-de-presse.html"
+title = "sites-de-presse"
+
+[[input.files]]
+path = "samba.html"
+url = "/samba.html"
+title = "samba"
+
+[[input.files]]
+path = "mpd-icecast.html"
+url = "/mpd-icecast.html"
+title = "mpd-icecast"
+
+[[input.files]]
+path = "openvpn.html"
+url = "/openvpn.html"
+title = "openvpn"
+
+[[input.files]]
+path = "git-hooks.html"
+url = "/git-hooks.html"
+title = "Git Hooks"
+
+[[input.files]]
+path = "lighttpd-sous-windows.html"
+url = "/lighttpd-sous-windows.html"
+title = "lighttpd sous windows"
+
+[[input.files]]
+path = "jekyll-rtest.html"
+url = "/jekyll-rtest.html"
+title = "Jekyll RTest"
+
+[[input.files]]
+path = "jekyll-tdd.html"
+url = "/jekyll-tdd.html"
+title = "Jekyll TDD"
+
+[[input.files]]
+path = "jekyl-creation-d-un-gem.html"
+url = "/jekyl-creation-d-un-gem.html"
+title = "jekyl-creation-d-un-gem"
+
+[[input.files]]
+path = "jekyll-slideshow.html"
+url = "/jekyll-slideshow.html"
+title = "jekyll-slideshow"
+
+[[input.files]]
+path = "exiftool.html"
+url = "/exiftool.html"
+title = "exiftool"
+
+[[input.files]]
+path = "cygwin.html"
+url = "/cygwin.html"
+title = "cygwin"
+
+[[input.files]]
+path = "ruby-rmagick.html"
+url = "/ruby-rmagick.html"
+title = "ruby: rmagick"
+
+[[input.files]]
+path = "ruby.html"
+url = "/ruby.html"
+title = "Ruby"
+
+[[input.files]]
+path = "pyo.html"
+url = "/pyo.html"
+title = "Pyo"
+
+[[input.files]]
+path = "developper-un-plugin-jekyll.html"
+url = "/developper-un-plugin-jekyll.html"
+title = "developper-un-plugin-jekyll"
+
+[[input.files]]
+path = "lektor.html"
+url = "/lektor.html"
+title = "Lektor"
+
+[[input.files]]
+path = "changer-la-banque-de-sons-midi-par-defaut-sous-windows.html"
+url = "/changer-la-banque-de-sons-midi-par-defaut-sous-windows.html"
+title = "Changer la banque de sons midi par defaut sous windows"
+
+[[input.files]]
+path = "tech-git-repo-sync.html"
+url = "/tech-git-repo-sync.html"
+title = "Synchronisation des depots Git"
+
+[[input.files]]
+path = "system-windows-subsystem-for-linux.html"
+url = "/system-windows-subsystem-for-linux.html"
+title = "Windows Subsystem for Linux"
+
+[[input.files]]
+path = "system-apache.html"
+url = "/system-apache.html"
+title = "Apache"
+
+[[input.files]]
+path = "ubuntu.html"
+url = "/ubuntu.html"
+title = "Ubuntu"
+
+[[input.files]]
+path = "tech-olinuxino.html"
+url = "/tech-olinuxino.html"
+title = "olinuxino"
+
+[[input.files]]
+path = "liseuse-kobo.html"
+url = "/liseuse-kobo.html"
+title = "Liseuse Kobo"
+
+[[input.files]]
+path = "fpga.html"
+url = "/fpga.html"
+title = "FPGA"
+
+[[input.files]]
+path = "gnupg.html"
+url = "/gnupg.html"
+title = "GnuPG"
+
+[[input.files]]
+path = "tech-domotique.html"
+url = "/tech-domotique.html"
+title = "Domotique"
+
+[[input.files]]
+path = "linux.html"
+url = "/linux.html"
+title = "linux"
+
+[[input.files]]
+path = "windows.html"
+url = "/windows.html"
+title = "windows"
+
+[[input.files]]
+path = "tech-pi.html"
+url = "/tech-pi.html"
+title = "raspberry-pi"
+
+[[input.files]]
+path = "python-morse.html"
+url = "/python-morse.html"
+title = "python-morse"
+
+[[input.files]]
+path = "emacs-variables-locales.html"
+url = "/emacs-variables-locales.html"
+title = "Emacs: Variables locales"
+
+[[input.files]]
+path = "system-explorer-menu-contextuel-bash-here.html"
+url = "/system-explorer-menu-contextuel-bash-here.html"
+title = "Explorer: Menu Contextuel bash-here"
+
+[[input.files]]
+path = "jekyll-publish-to-site.html"
+url = "/jekyll-publish-to-site.html"
+title = "Jekyll: Publish to site"
+
+[[input.files]]
+path = "reaper.html"
+url = "/reaper.html"
+title = "Reaper"
+
+[[input.files]]
+path = "compilation-dardour-sous-windows.html"
+url = "/compilation-dardour-sous-windows.html"
+title = "Compilation d'ardour sous Windows"
+
+[[input.files]]
+path = "compilation-de-linuxsampler-sur-asus-1000h.html"
+url = "/compilation-de-linuxsampler-sur-asus-1000h.html"
+title = "Compilation de Linuxsampler sur Asus 1000H"
+
+[[input.files]]
+path = "daw-open-source.html"
+url = "/daw-open-source.html"
+title = "DAW Open Source"
+
+[[input.files]]
+path = "daw-sous-linux.html"
+url = "/daw-sous-linux.html"
+title = "DAW sous Linux"
+
+[[input.files]]
+path = "hydrogen.html"
+url = "/hydrogen.html"
+title = "Hydrogen"
+
+[[input.files]]
+path = "git-pb-ctrl-m-sous-windows.html"
+url = "/git-pb-ctrl-m-sous-windows.html"
+title = "Git: pb ctrl-m sous Windows"
+
+[[input.files]]
+path = "ewi-et-pure-data.html"
+url = "/ewi-et-pure-data.html"
+title = "EWI et Pure Data"
+
+[[input.files]]
+path = "emacs.html"
+url = "/emacs.html"
+title = "Emacs"
+
+[[input.files]]
+path = "pure-data-sur-raspberry-pi.html"
+url = "/pure-data-sur-raspberry-pi.html"
+title = "Pure Data sur Raspberry Pi"
+
+[[input.files]]
+path = "git-deplacement-dun-repertoire-vers-un-submodule.html"
+url = "/git-deplacement-dun-repertoire-vers-un-submodule.html"
+title = "git: Déplacement d'un répertoire vers un submodule"
+
+[[input.files]]
+path = "synthetiseurs.html"
+url = "/synthetiseurs.html"
+title = "Synthétiseurs"
+
+[[input.files]]
+path = "looper-mobius.html"
+url = "/looper-mobius.html"
+title = "Looper Mobius"
+
+[[input.files]]
+path = "pure-data.html"
+url = "/pure-data.html"
+title = "Pure Data"
+
+[[input.files]]
+path = "jekyll-yaml.html"
+url = "/jekyll-yaml.html"
+title = "Jekyll: YAML"
+
+[[input.files]]
+path = "accordeon.html"
+url = "/accordeon.html"
+title = "Accordéon"
+
+[[input.files]]
+path = "exif-en-python.html"
+url = "/exif-en-python.html"
+title = "Exif en Python"
+
+[[input.files]]
+path = "divers-photo-galleries.html"
+url = "/divers-photo-galleries.html"
+title = "Galeries de photos"
+
+[[input.files]]
+path = "musique-notation-abc.html"
+url = "/musique-notation-abc.html"
+title = "Notation ABC"
+
+[[input.files]]
+path = "emacs-for-python.html"
+url = "/emacs-for-python.html"
+title = "Emacs for python"
+
+[[input.files]]
+path = "rythmes-orientaux.html"
+url = "/rythmes-orientaux.html"
+title = "Rythmes Orientaux"
+
+[[input.files]]
+path = "chasse-a-larc.html"
+url = "/chasse-a-larc.html"
+title = "Chasse à l'arc"
+
+[[input.files]]
+path = "image-magick.html"
+url = "/image-magick.html"
+title = "Image Magick"
+
+[[input.files]]
+path = "drum-tabs_g.html"
+url = "/drum-tabs_g.html"
+title = "drum-tabs_g++"
+
+[[input.files]]
+path = "musique-divers.html"
+url = "/musique-divers.html"
+title = "Musique Divers"
+
+[[input.files]]
+path = "weather-api.html"
+url = "/weather-api.html"
+title = "Weather API"
+
+[[input.files]]
+path = "msys2-outils-unix-sous-windows.html"
+url = "/msys2-outils-unix-sous-windows.html"
+title = "MSYS2: Outils unix sous windows"
+
+[[input.files]]
+path = "ngspice-conception-electronique.html"
+url = "/ngspice-conception-electronique.html"
+title = "Ngspice Conception électronique"
+
+[[input.files]]
+path = "generation-des-readmemd-pour-les-sketches-arduino.html"
+url = "/generation-des-readmemd-pour-les-sketches-arduino.html"
+title = "Génération des README.md pour les sketches arduino"
+
+[[input.files]]
+path = "web-linkchecker.html"
+url = "/web-linkchecker.html"
+title = "Linkchecker"
+
+[[input.files]]
+path = "logiciels-3d-pour-la-reprap.html"
+url = "/logiciels-3d-pour-la-reprap.html"
+title = "Logiciels 3D pour la Reprap"
+
+[[input.files]]
+path = "jekyll.html"
+url = "/jekyll.html"
+title = "Jekyll"
+
+[[input.files]]
+path = "tech-reprap-logiciels.html"
+url = "/tech-reprap-logiciels.html"
+title = "Logiciels pour la Reprap"
+
+[[input.files]]
+path = "tech-reprap-mendel.html"
+url = "/tech-reprap-mendel.html"
+title = "RepRap Mendel"
+
+[[input.files]]
+path = "emacs-easy-jekyll.html"
+url = "/emacs-easy-jekyll.html"
+title = "Emacs: easy-jekyll"
+
+[[input.files]]
+path = "jekyll-searchbox.html"
+url = "/jekyll-searchbox.html"
+title = "Jekyll SearchBox"
+
+[[input.files]]
+path = "installation-de-jekyll.html"
+url = "/installation-de-jekyll.html"
+title = "Installation de Jekyll"

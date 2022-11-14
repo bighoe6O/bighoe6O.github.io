@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>Docker</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <meta name="description" content="Installation de docker" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">MyBlog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/archerie.html">Archerie</a></li>
+                    <li><a href="/category/archive.html">Archive</a></li>
+                    <li><a href="/category/culture.html">Culture</a></li>
+                    <li class="active"><a href="/category/developpement.html">Développement</a></li>
+                    <li><a href="/category/divers.html">Divers</a></li>
+                    <li><a href="/category/graphisme.html">Graphisme</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li><a href="/category/musique.html">Musique</a></li>
+                    <li><a href="/category/projets.html">Projets</a></li>
+                    <li><a href="/category/reprap.html">RepRap</a></li>
+                    <li><a href="/category/securite.html">Sécurité</a></li>
+                    <li><a href="/category/systeme.html">Système</a></li>
+                    <li><a href="/category/tech.html">Tech</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/tech-docker.html" rel="bookmark"
+           title="Permalink to Docker">Docker</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2021-05-15T08:53:00+02:00">
+                Published: Sat 15 May 2021
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/developpement.html">Développement</a>.</p>
+<p>tags: <a href="/tag/virtualisation.html">Virtualisation</a> </p>
+</footer><!-- /.post-info -->      <h1>Docker</h1>
+<p>Container d'applications</p>
+<p><a href="https://www.docker.com/">Docker</a></p>
+<h2>Installer docker</h2>
+<h3>Activer wsl (Windows Subsystem for Linux)</h3>
+<div class="highlight"><pre><span></span><code>dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+</code></pre></div>
+
+<h3>Définir/Mettre à jour la version de WSL</h3>
+<p><a href="https://docs.microsoft.com/fr-fr/windows/wsl/install-win10#step-4---download-the-linux-kernel-update-package">Mise à jour du noyau linux en WSL2</a></p>
+<p><a href="https://admcpr.com/how-to-upgrade-wsl-1-to-wsl-2/">How to upgrade a WSL 1 Linux distro to WSL 2</a></p>
+<p>Dans une fenêtre powershell</p>
+<div class="highlight"><pre><span></span><code>wsl --set-default-version 2
+
+wsl --list --verbose
+
+wsl --set-version &lt;distribution name&gt; &lt;versionNumber&gt;
+</code></pre></div>
+
+<p>Lister les distr et leur version wsl</p>
+<div class="highlight"><pre><span></span><code>PS C:\WINDOWS\system32&gt; wsl -l -v
+  NAME                   STATE           VERSION
+* Ubuntu                 Running         1
+  docker-desktop-data    Stopped         2
+  docker-desktop         Stopped         2
+</code></pre></div>
+
+<p>Changer la version de la distro Ubuntu de V1 vers V2</p>
+<div class="highlight"><pre><span></span><code>PS C:\WINDOWS\system32&gt; wsl --set-version Ubuntu 2
+La conversion est en cours. Cette opération peut prendre quelques minutes...
+Pour plus d’informations sur les différences de clés avec WSL 2, visitez https://aka.ms/wsl2
+</code></pre></div>
+
+<h2>Utilisation</h2>
+<h3>Commandes</h3>
+<div class="highlight"><pre><span></span><code>docker
+
+docker-compose
+</code></pre></div>
+
+<h3>docker-compose</h3>
+<p>Générer l'image</p>
+<div class="highlight"><pre><span></span><code>docker-compose up --build
+</code></pre></div>
+
+<p>lister les containers</p>
+<div class="highlight"><pre><span></span><code>docker-compose ps
+</code></pre></div>
+
+<p><a href="https://testdriven.io/blog/dockerizing-django-with-postgres-gunicorn-and-nginx/">Dockerizing Django with Postgres, Gunicorn, and Nginx</a></p>
+<p>Note: Utiliser le http_proxy et non uwsgi</p>
+<p><a href="https://testdriven.io/blog/django-docker-traefik/">Dockerizing Django with Postgres, Gunicorn, and Traefik</a></p>
+<h2>Ouvrir un shell dans un container</h2>
+<div class="highlight"><pre><span></span><code><span class="nv">docker</span><span class="w"> </span><span class="k">exec</span><span class="w"> </span><span class="o">-</span><span class="nv">it</span><span class="w"> </span><span class="o">&lt;</span><span class="nv">container</span><span class="o">&gt;</span><span class="w"> </span><span class="nv">bash</span><span class="w"></span>
+</code></pre></div>
+
+<p><a href="https://www.docker.com/blog/how-to-deploy-on-remote-docker-hosts-with-docker-compose/">How to deploy on remote Docker hosts with docker-compose</a></p>
+<p>https://github.com/docker-archive/nginx-gohttp</p>
+<h1>Divers</h1>
+<h2>Linux</h2>
+<p><a href="https://ostechnix.com/how-to-run-docker-as-non-root-user-in-linux/">https://ostechnix.com/how-to-run-docker-as-non-root-user-in-linux/</a></p>
+<h2>Déplacement du répertoire Docker du disque SSD vers le disque classique</h2>
+<p><a href="https://docs.microsoft.com/en-us/windows/win32/fileio/hard-links-and-junctions">https://docs.microsoft.com/en-us/windows/win32/fileio/hard-links-and-junctions</a></p>
+<h2>Hébergement</h2>
+<p><a href="https://www.kamatera.com/">https://www.kamatera.com/</a></p>
+<p><a href="https://www.digitalocean.com/products/droplets/">https://www.digitalocean.com/products/droplets/</a></p>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>Build MPD from sources</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <meta name="description" content="https://www.musicpd.org/ Forum Sous Ubuntu http://taudac.com/building-mpd-from-source/ Messon build system https://github.com/mesonbuild/meson..." />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">MyBlog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/archerie.html">Archerie</a></li>
+                    <li><a href="/category/archive.html">Archive</a></li>
+                    <li><a href="/category/culture.html">Culture</a></li>
+                    <li><a href="/category/developpement.html">Développement</a></li>
+                    <li><a href="/category/divers.html">Divers</a></li>
+                    <li><a href="/category/graphisme.html">Graphisme</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li class="active"><a href="/category/musique.html">Musique</a></li>
+                    <li><a href="/category/projets.html">Projets</a></li>
+                    <li><a href="/category/reprap.html">RepRap</a></li>
+                    <li><a href="/category/securite.html">Sécurité</a></li>
+                    <li><a href="/category/systeme.html">Système</a></li>
+                    <li><a href="/category/tech.html">Tech</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/build-mpd-from-sources.html" rel="bookmark"
+           title="Permalink to Build MPD from sources">Build MPD from sources</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-12-01T11:44:54+01:00">
+                Published: Sat 01 December 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/musique.html">Musique</a>.</p>
+<p>tags: <a href="/tag/mpd.html">MPD</a> <a href="/tag/players.html">Players</a> </p>
+</footer><!-- /.post-info -->      <p><a href="https://www.musicpd.org/">https://www.musicpd.org/</a></p>
+<p><a href="https://forum.musicpd.org/">Forum</a></p>
+<h1>Sous Ubuntu</h1>
+<p><a href="http://taudac.com/building-mpd-from-source/">http://taudac.com/building-mpd-from-source/</a></p>
+<h2>Messon build system</h2>
+<p><a href="https://github.com/mesonbuild/meson">https://github.com/mesonbuild/meson</a></p>
+<div class="highlight"><pre><span></span><code>pipenv install meson
+</code></pre></div>
+
+<p><a href="https://www.musicpd.org/doc/html/user.html">https://www.musicpd.org/doc/html/user.html</a></p>
+<p><a href="https://github.com/MusicPlayerDaemon/MPD">https://github.com/MusicPlayerDaemon/MPD</a></p>
+<div class="highlight"><pre><span></span><code><span class="c1"># git clone https://github.com/MusicPlayerDaemon/MPD</span><span class="w"></span>
+
+<span class="n">wget</span><span class="w"> </span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">musicpd</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">download</span><span class="o">/</span><span class="n">mpd</span><span class="o">/</span><span class="mf">0.21</span><span class="o">/</span><span class="n">mpd</span><span class="o">-</span><span class="mf">0.21</span><span class="o">.</span><span class="mf">3.</span><span class="n">tar</span><span class="o">.</span><span class="n">xz</span><span class="w"></span>
+<span class="n">xz</span><span class="w"> </span><span class="o">-</span><span class="n">dc</span><span class="w"> </span><span class="n">mpd</span><span class="o">-</span><span class="mf">0.21</span><span class="o">.</span><span class="mf">3.</span><span class="n">tar</span><span class="o">.</span><span class="n">xz</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">tar</span><span class="w"> </span><span class="n">xf</span><span class="w"> </span><span class="o">-</span><span class="w"></span>
+<span class="n">cd</span><span class="w"> </span><span class="n">mpd</span><span class="o">-</span><span class="mf">0.21</span><span class="o">.</span><span class="mi">3</span><span class="w"></span>
+<span class="n">meson</span><span class="w"> </span><span class="o">.</span><span class="w"> </span><span class="n">output</span><span class="o">/</span><span class="n">release</span><span class="w"> </span><span class="o">--</span><span class="n">buildtype</span><span class="o">=</span><span class="n">debugoptimized</span><span class="w"> </span><span class="o">-</span><span class="n">Db_ndebug</span><span class="o">=</span><span class="bp">true</span><span class="w"></span>
+<span class="n">meson</span><span class="w"> </span><span class="n">configure</span><span class="w"> </span><span class="n">output</span><span class="o">/</span><span class="n">release</span><span class="w"></span>
+<span class="n">ninja</span><span class="w"> </span><span class="o">-</span><span class="n">C</span><span class="w"> </span><span class="n">output</span><span class="o">/</span><span class="n">release</span><span class="w"></span>
+<span class="n">ninja</span><span class="w"> </span><span class="o">-</span><span class="n">C</span><span class="w"> </span><span class="n">output</span><span class="o">/</span><span class="n">release</span><span class="w"> </span><span class="n">install</span><span class="w"></span>
+</code></pre></div>
+
+<h2>Raspberry PI</h2>
+<div class="highlight"><pre><span></span><code>sudo apt-get install g++ libboost-dev libicu-dev libglib2.0-dev
+
+sudo apt-get install libsqlite3-dev libmpdclient-dev libexpat1-dev \
+libid3tag0-dev libflac-dev libaudiofile-dev libmad0-dev libmp3lame-dev \
+libasound2-dev libcurl4-gnutls-dev libsystemd-dev
+</code></pre></div>
+
+<h2>Qobuz</h2>
+<p><a href="https://github.com/Qobuz/api-documentation/blob/master/endpoints/track/getFileUrl.md#parameters">https://github.com/Qobuz/api-documentation/blob/master/endpoints/track/getFileUrl.md#parameters</a></p>
+<h1>Pour Android</h1>
+<p><a href="https://developer.android.com/studio/install">https://developer.android.com/studio/install</a></p>
+<h1>Compilation croisée pour raspberry-pi</h1>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

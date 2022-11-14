@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>MyBlog - Divers</title><link href="http://dev.duloup.org/" rel="alternate"></link><link href="http://dev.duloup.org/feeds/divers.atom.xml" rel="self"></link><id>http://dev.duloup.org/</id><updated>2019-07-27T20:02:28+02:00</updated><entry><title>Souris Logitech M560</title><link href="http://dev.duloup.org/souris-logitech-m560.html" rel="alternate"></link><published>2018-10-29T21:11:49+01:00</published><updated>2018-10-29T21:11:49+01:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-10-29:/souris-logitech-m560.html</id><summary type="html">&lt;p&gt;&lt;a href="https://support.logitech.com/en_us/product/wireless-mouse-m560/specs"&gt;https://support.logitech.com/en_us/product/wireless-mouse-m560/specs&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://askubuntu.com/questions/255890/how-can-i-adjust-the-mouse-scroll-speed#360045"&gt;https://askubuntu.com/questions/255890/how-can-i-adjust-the-mouse-scroll-speed#360045&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;xinput list
+xinput list-props 12
+
+
+sudo apt-get install xserver-xorg-input-synaptics
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;now go to /usr/share/X11/xorg.conf.d and just edit the file 70-synaptics.conf&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;cd /usr/share/X11/xorg.conf.d
+sudo nano 70-synaptics …&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://support.logitech.com/en_us/product/wireless-mouse-m560/specs"&gt;https://support.logitech.com/en_us/product/wireless-mouse-m560/specs&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://askubuntu.com/questions/255890/how-can-i-adjust-the-mouse-scroll-speed#360045"&gt;https://askubuntu.com/questions/255890/how-can-i-adjust-the-mouse-scroll-speed#360045&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;xinput list
+xinput list-props 12
+
+
+sudo apt-get install xserver-xorg-input-synaptics
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;now go to /usr/share/X11/xorg.conf.d and just edit the file 70-synaptics.conf&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;cd /usr/share/X11/xorg.conf.d
+sudo nano 70-synaptics.conf
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;find the section Section "InputClass" Identifier "touchpad catchall" then add these options:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;Option &amp;quot;VertScrollDelta&amp;quot; &amp;quot;16&amp;quot;
+Option &amp;quot;HorizScrollDelta&amp;quot; &amp;quot;16&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The default number is 26 the lower the number it is faster to scroll, the higher it is slower to scroll. Finally it should look like this:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nv"&gt;Section&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;InputClass&amp;quot;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="nv"&gt;Identifier&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;touchpad catchall&amp;quot;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="nv"&gt;Driver&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;synaptics&amp;quot;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="nv"&gt;MatchIsTouchpad&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;on&amp;quot;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+#&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;This&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;option&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;is&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;recommend&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;on&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;all&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;Linux&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;systems&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;using&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;evdev&lt;/span&gt;,&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;but&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;cannot&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;be&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+#&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;enabled&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;by&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;default&lt;/span&gt;.&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;See&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;the&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;following&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;link&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;for&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;details&lt;/span&gt;:&lt;span class="w"&gt;&lt;/span&gt;
+#&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;http&lt;/span&gt;:&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="nv"&gt;who&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;t&lt;/span&gt;.&lt;span class="nv"&gt;blogspot&lt;/span&gt;.&lt;span class="nv"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;2010&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;11&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;how&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;to&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;ignore&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;configuration&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;errors&lt;/span&gt;.&lt;span class="nv"&gt;html&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+#&lt;span class="w"&gt;       &lt;/span&gt;&lt;span class="nv"&gt;MatchDevicePath&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;/dev/input/event*&amp;quot;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="nv"&gt;Option&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;VertScrollDelta&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;16&amp;quot;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="nv"&gt;Option&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;HorizScrollDelta&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;16&amp;quot;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nv"&gt;EndSection&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nv"&gt;Section&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;InputClass&amp;quot;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="nv"&gt;Identifier&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;touchpad catchall&amp;quot;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="nv"&gt;Driver&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;synaptics&amp;quot;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;        &lt;/span&gt;&lt;span class="nv"&gt;MatchIsTouchpad&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;on&amp;quot;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+#&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;This&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;option&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;is&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;recommend&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;on&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;all&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;Linux&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;systems&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;using&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;evdev&lt;/span&gt;,&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;but&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;cannot&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;be&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+#&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;enabled&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;by&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;default&lt;/span&gt;.&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;See&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;the&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;following&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;link&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;for&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;details&lt;/span&gt;:&lt;span class="w"&gt;&lt;/span&gt;
+#&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;http&lt;/span&gt;:&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="nv"&gt;who&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;t&lt;/span&gt;.&lt;span class="nv"&gt;blogspot&lt;/span&gt;.&lt;span class="nv"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;2010&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;11&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;how&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;to&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;ignore&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;configuration&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;errors&lt;/span&gt;.&lt;span class="nv"&gt;html&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;      &lt;/span&gt;&lt;span class="nv"&gt;MatchDevicePath&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;/dev/input/event*&amp;quot;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;#&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;Ajout&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;souris&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;logitech&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nv"&gt;Option&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;VertScrollDelta&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;52&amp;quot;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="nv"&gt;Option&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;HorizScrollDelta&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;52&amp;quot;&lt;/span&gt;&lt;span class="w"&gt;  &lt;/span&gt;
+&lt;span class="nv"&gt;EndSection&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Divers"></category><category term="Matériel"></category></entry><entry><title>Lektor</title><link href="http://dev.duloup.org/lektor.html" rel="alternate"></link><published>2018-10-07T07:28:15+02:00</published><updated>2018-10-07T07:28:15+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-10-07:/lektor.html</id><content type="html">&lt;p&gt;&lt;a href="https://headlesscms.org/"&gt;https://headlesscms.org/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Lektor&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/lektor/lektor"&gt;https://github.com/lektor/lektor&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ git clone https://github.com/lektor/lektor
+$ &lt;span class="nb"&gt;cd&lt;/span&gt; lektor
+$ virtualenv venv
+$ . venv/bin/activate
+$ pip install --editable .
+$ make build-js
+$ make install-git-hooks
+$ &lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;LEKTOR_DEV&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;
+$ cp -r example example-project
+$ lektor --project example-project server
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Coisas&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/fiatjaf/coisas"&gt;https://github.com/fiatjaf/coisas&lt;/a&gt;&lt;/p&gt;</content><category term="Divers"></category><category term="CMS"></category></entry><entry><title>Exif en Python</title><link href="http://dev.duloup.org/exif-en-python.html" rel="alternate"></link><published>2018-09-06T21:28:29+02:00</published><updated>2018-09-06T21:28:29+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-09-06:/exif-en-python.html</id><summary type="html">&lt;p&gt;Scripts dans git@duloup.org/scripts&lt;/p&gt;
+&lt;p&gt;Renommage des fichiers scannés (fiches de paie):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;python E:\repo\roaming\scripts\jpg-git-mv.py *.JPG &amp;gt; mycmd.cmd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href="https://www.vcode.no/web/resource.nsf/II2LNUG/642.htm"&gt;Tags Exif&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://sno.phy.queensu.ca/~phil/exiftool/TagNames/XMP.html"&gt;Tags XMP&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Python&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/hMatoba/Piexif"&gt;https://github.com/hMatoba/Piexif&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Utilisation de la librairie python Pillow&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://pillow.readthedocs.io/en/3.1.x/installation.html"&gt;https://pillow.readthedocs.io/en/3.1.x/installation.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Linux …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Scripts dans git@duloup.org/scripts&lt;/p&gt;
+&lt;p&gt;Renommage des fichiers scannés (fiches de paie):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;python E:\repo\roaming\scripts\jpg-git-mv.py *.JPG &amp;gt; mycmd.cmd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href="https://www.vcode.no/web/resource.nsf/II2LNUG/642.htm"&gt;Tags Exif&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://sno.phy.queensu.ca/~phil/exiftool/TagNames/XMP.html"&gt;Tags XMP&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Python&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/hMatoba/Piexif"&gt;https://github.com/hMatoba/Piexif&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Utilisation de la librairie python Pillow&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://pillow.readthedocs.io/en/3.1.x/installation.html"&gt;https://pillow.readthedocs.io/en/3.1.x/installation.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Linux&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;apt-get install python-imaging
+apt-get install python3-dev
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Autres modules&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://pypi.python.org/pypi/ExifRead"&gt;https://pypi.python.org/pypi/ExifRead&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://smarnach.github.io/pyexiftool/"&gt;https://smarnach.github.io/pyexiftool/&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Capturer stdout&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://stackoverflow.com/questions/3197509/redirecting-stdio-from-a-command-in-os-system-in-python"&gt;https://stackoverflow.com/questions/3197509/redirecting-stdio-from-a-command-in-os-system-in-python&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Formatage et parse de dates&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://sametmax.com/serialiser-et-parser-une-date-en-python-formats-de-strftimestrptime-et-timestamps/"&gt;http://sametmax.com/serialiser-et-parser-une-date-en-python-formats-de-strftimestrptime-et-timestamps/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://pymotw.com/3/datetime/"&gt;https://pymotw.com/3/datetime/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Divers&lt;/h2&gt;
+&lt;h3&gt;Remplacement de "date_"" ou "date "" par date- dans les noms de fichier&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;find&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;regextype&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;sed&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;regex&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;.*/[0-9]\{8\}[_ ].*\.jpg&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;while&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;read&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;do&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;newf&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;echo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;$f&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;sed&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;e&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;s#^\(.*/[0-9]\{8\}\)[_ ]#&lt;/span&gt;&lt;span class="se"&gt;\\&lt;/span&gt;&lt;span class="s"&gt;1-#&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;mv&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;$f&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;$newf&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;done&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="n"&gt;find&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;regextype&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;sed&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;regex&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;.*/[a-zA-Z]*-[0-9]\{8\}.*\.jpg&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;sed&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;e&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;s#.*/\([a-zA-Z]*\)-\([0-9]\{8\}\)#&lt;/span&gt;&lt;span class="se"&gt;\\&lt;/span&gt;&lt;span class="s"&gt;2-&lt;/span&gt;&lt;span class="se"&gt;\\&lt;/span&gt;&lt;span class="s"&gt;1#&amp;quot;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="n"&gt;find&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;regextype&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;sed&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;regex&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;.*/[a-zA-Z_]*-[0-9]\{8\}.*\.jpg&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;while&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;read&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;do&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;newf&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="err"&gt;$&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;echo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;$f&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;sed&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;e&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;s#.*/\([a-zA-Z_]*\)-\([0-9]\{8\}\)#&lt;/span&gt;&lt;span class="se"&gt;\\&lt;/span&gt;&lt;span class="s"&gt;2-&lt;/span&gt;&lt;span class="se"&gt;\\&lt;/span&gt;&lt;span class="s"&gt;1#&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;echo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;mv&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;$f&amp;quot;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;quot;$newf&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;done&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Divers"></category><category term="Images"></category><category term="Python"></category></entry><entry><title>Galeries de photos</title><link href="http://dev.duloup.org/divers-photo-galleries.html" rel="alternate"></link><published>2018-09-06T09:38:40+02:00</published><updated>2019-07-27T20:02:28+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-09-06:/divers-photo-galleries.html</id><summary type="html">&lt;h1&gt;Comparatif de générateurs de sites statiques&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://www.staticgen.com/"&gt;https://www.staticgen.com/&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;&lt;a href="../dev/django.html"&gt;Django&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://djangopackages.org/grids/g/gallery/"&gt;https://djangopackages.org/grids/g/gallery/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Django Photo Gallery&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/VelinGeorgiev/django-photo-gallery"&gt;https://github.com/VelinGeorgiev/django-photo-gallery&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.python.org/downloads/release/python-365/"&gt;https://www.python.org/downloads/release/python-365/&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Répertoire d'installation&lt;/h3&gt;
+&lt;p&gt;E:\repo\django-photo-gallery&lt;/p&gt;
+&lt;h3&gt;Virtualenv&lt;/h3&gt;
+&lt;p&gt;Utilisation de python36&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;\&lt;span class="n"&gt;tools&lt;/span&gt;\&lt;span class="n"&gt;Python36&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;\&lt;span class="n"&gt;Users&lt;/span&gt;\&lt;span class="n"&gt;stephane&lt;/span&gt;\&lt;span class="n"&gt;venvs&lt;/span&gt;\&lt;span class="n"&gt;django&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;gallery …&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h1&gt;Comparatif de générateurs de sites statiques&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://www.staticgen.com/"&gt;https://www.staticgen.com/&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;&lt;a href="../dev/django.html"&gt;Django&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://djangopackages.org/grids/g/gallery/"&gt;https://djangopackages.org/grids/g/gallery/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Django Photo Gallery&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/VelinGeorgiev/django-photo-gallery"&gt;https://github.com/VelinGeorgiev/django-photo-gallery&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.python.org/downloads/release/python-365/"&gt;https://www.python.org/downloads/release/python-365/&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Répertoire d'installation&lt;/h3&gt;
+&lt;p&gt;E:\repo\django-photo-gallery&lt;/p&gt;
+&lt;h3&gt;Virtualenv&lt;/h3&gt;
+&lt;p&gt;Utilisation de python36&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;\&lt;span class="n"&gt;tools&lt;/span&gt;\&lt;span class="n"&gt;Python36&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="n"&gt;C&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;\&lt;span class="n"&gt;Users&lt;/span&gt;\&lt;span class="n"&gt;stephane&lt;/span&gt;\&lt;span class="n"&gt;venvs&lt;/span&gt;\&lt;span class="n"&gt;django&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;gallery&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Django Photologue&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://django-photologue.readthedocs.io/en/stable/pages/installation.html"&gt;https://django-photologue.readthedocs.io/en/stable/pages/installation.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/jdriscoll/django-photologue/tree/master/example_project"&gt;https://github.com/jdriscoll/django-photologue/tree/master/example_project&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/matthewwithanm/django-imagekit"&gt;https://github.com/matthewwithanm/django-imagekit&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Jekyll&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://github.com/ggreer/jekyll-gallery-generator"&gt;Jekyll Gallery Generator&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/opieters/jekyll-gallery-example"&gt;https://github.com/opieters/jekyll-gallery-example&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;dépendances: PyYAML imagesize&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/rmagick/rmagick"&gt;https://github.com/rmagick/rmagick&lt;/a&gt;&lt;/p&gt;</content><category term="Divers"></category><category term="Images"></category><category term="Django"></category><category term="Jekyll"></category></entry></feed>

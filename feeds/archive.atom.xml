@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>MyBlog - Archive</title><link href="http://dev.duloup.org/" rel="alternate"></link><link href="http://dev.duloup.org/feeds/archive.atom.xml" rel="self"></link><id>http://dev.duloup.org/</id><updated>2019-08-09T08:27:47+02:00</updated><entry><title>Ketron SD4</title><link href="http://dev.duloup.org/ketron-sd4.html" rel="alternate"></link><published>2018-11-07T17:24:08+01:00</published><updated>2018-11-07T17:24:08+01:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-11-07:/ketron-sd4.html</id><content type="html">&lt;p&gt;&lt;a href="https://www.ketron.it/en/software/49-utilities/sd2-sd4-sd1000-utilities"&gt;https://www.ketron.it/en/software/49-utilities/sd2-sd4-sd1000-utilities&lt;/a&gt;&lt;/p&gt;</content><category term="Archive"></category><category term="Midi"></category><category term="Matériel"></category></entry><entry><title>jekyll-capybara</title><link href="http://dev.duloup.org/jekyll-capybara.html" rel="alternate"></link><published>2018-10-24T11:19:01+02:00</published><updated>2018-10-24T11:19:01+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-10-24:/jekyll-capybara.html</id><content type="html">&lt;p&gt;&lt;a href="https://www.sitepoint.com/basics-capybara-improving-tests/"&gt;https://www.sitepoint.com/basics-capybara-improving-tests/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://code.tutsplus.com/articles/ruby-page-objects-for-capybara-connoisseurs--cms-25204"&gt;https://code.tutsplus.com/articles/ruby-page-objects-for-capybara-connoisseurs--cms-25204&lt;/a&gt;&lt;/p&gt;</content><category term="Archive"></category><category term="Jekyll"></category></entry><entry><title>Jekyll Minitest</title><link href="http://dev.duloup.org/jekyll-minitest.html" rel="alternate"></link><published>2018-10-24T09:18:41+02:00</published><updated>2018-10-24T09:18:41+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-10-24:/jekyll-minitest.html</id><summary type="html">&lt;h2&gt;Liens&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://dev.to/phansch/testing-your-jekyll-website-with-capybara"&gt;https://dev.to/phansch/testing-your-jekyll-website-with-capybara&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/teamcapybara/capybara/blob/3.9_stable/README.md"&gt;https://github.com/teamcapybara/capybara/blob/3.9_stable/README.md&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Example&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://gist.github.com/thbar/10be2ea924b81f78d24ab800461bfee3"&gt;Using minitest to regression-test your Jekyll static site&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# Gemfile&lt;/span&gt;
+&lt;span class="n"&gt;source&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;https://rubygems.org&amp;#39;&lt;/span&gt;
+
+&lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;jekyll&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;3.3.1&amp;#39;&lt;/span&gt;
+
+&lt;span class="n"&gt;group&lt;/span&gt; &lt;span class="ss"&gt;:test&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt;
+  &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;capybara&amp;#39;&lt;/span&gt;
+  &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;rack&amp;#39;&lt;/span&gt;
+  &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;rack-jekyll&amp;#39;&lt;/span&gt;
+  &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;rake&amp;#39;&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# test/test_helper.rb …&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h2&gt;Liens&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://dev.to/phansch/testing-your-jekyll-website-with-capybara"&gt;https://dev.to/phansch/testing-your-jekyll-website-with-capybara&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/teamcapybara/capybara/blob/3.9_stable/README.md"&gt;https://github.com/teamcapybara/capybara/blob/3.9_stable/README.md&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Example&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://gist.github.com/thbar/10be2ea924b81f78d24ab800461bfee3"&gt;Using minitest to regression-test your Jekyll static site&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# Gemfile&lt;/span&gt;
+&lt;span class="n"&gt;source&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;https://rubygems.org&amp;#39;&lt;/span&gt;
+
+&lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;jekyll&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;3.3.1&amp;#39;&lt;/span&gt;
+
+&lt;span class="n"&gt;group&lt;/span&gt; &lt;span class="ss"&gt;:test&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt;
+  &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;capybara&amp;#39;&lt;/span&gt;
+  &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;rack&amp;#39;&lt;/span&gt;
+  &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;rack-jekyll&amp;#39;&lt;/span&gt;
+  &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;rake&amp;#39;&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# test/test_helper.rb&lt;/span&gt;
+&lt;span class="nb"&gt;require&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;minitest/autorun&amp;#39;&lt;/span&gt;
+
+&lt;span class="nb"&gt;require&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;bundler/setup&amp;#39;&lt;/span&gt;
+&lt;span class="nb"&gt;require&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;capybara/dsl&amp;#39;&lt;/span&gt;
+&lt;span class="nb"&gt;require&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;rack/jekyll&amp;#39;&lt;/span&gt;
+
+&lt;span class="no"&gt;Capybara&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;app&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="no"&gt;Rack&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="no"&gt;Jekyll&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;new&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ss"&gt;force_build&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kp"&gt;true&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;CapybaraTestCase&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="no"&gt;MiniTest&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="no"&gt;Test&lt;/span&gt;
+  &lt;span class="kp"&gt;include&lt;/span&gt; &lt;span class="no"&gt;Capybara&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="no"&gt;DSL&lt;/span&gt;
+
+  &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;teardown&lt;/span&gt;
+    &lt;span class="no"&gt;Capybara&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;reset_sessions!&lt;/span&gt;
+    &lt;span class="no"&gt;Capybara&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;use_default_driver&lt;/span&gt;
+  &lt;span class="k"&gt;end&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# _plugins/tests.rb: permet d&amp;#39;executer les tests au build&lt;/span&gt;
+&lt;span class="no"&gt;Jekyll&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="no"&gt;Hooks&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;register&lt;/span&gt; &lt;span class="ss"&gt;:site&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;:post_write&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;site&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;
+  &lt;span class="c1"&gt;# NOTE: you may want to raise conditionally here to stop the deploy&lt;/span&gt;
+  &lt;span class="nb"&gt;system&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;bundle exec ruby tests.rb&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# test/features/this_blog_post_test.rb&lt;/span&gt;
+&lt;span class="nb"&gt;require&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;test_helper&amp;#39;&lt;/span&gt;
+
+&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;ThisBlogPostTest&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="no"&gt;CapybaraTestCase&lt;/span&gt;
+  &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;test_describes_how_to_write_tests&lt;/span&gt;
+    &lt;span class="n"&gt;visit&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;2017/03/02/testing-jekyll-websites/&amp;#39;&lt;/span&gt;
+    &lt;span class="n"&gt;assert&lt;/span&gt; &lt;span class="n"&gt;page&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;has_content?&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;configured we can now start &amp;#39;&lt;/span&gt;&lt;span class="p"&gt;\&lt;/span&gt;
+      &lt;span class="s1"&gt;&amp;#39;writing Capybara tests as usual:&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="k"&gt;end&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Archive"></category><category term="Jekyll"></category></entry><entry><title>Jekyll RTest</title><link href="http://dev.duloup.org/jekyll-rtest.html" rel="alternate"></link><published>2018-10-19T16:34:17+02:00</published><updated>2018-10-19T16:34:17+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-10-19:/jekyll-rtest.html</id><summary type="html">&lt;h2&gt;Rspec&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://medium.com/espark-engineering-blog/testing-your-jekyll-site-the-ruby-way-ccfa386a8318"&gt;https://medium.com/espark-engineering-blog/testing-your-jekyll-site-the-ruby-way-ccfa386a8318&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://chromedriver.storage.googleapis.com/2.9/chromedriver_win32.zip"&gt;http://chromedriver.storage.googleapis.com/2.9/chromedriver_win32.zip&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Examples&lt;/h1&gt;
+&lt;h2&gt;Rspec&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# Gemfile&lt;/span&gt;
+&lt;span class="n"&gt;source&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;https://rubygems.org&amp;quot;&lt;/span&gt;
+
+&lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;jekyll&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;~&amp;gt; 3.8.4&amp;quot;&lt;/span&gt;
+
+&lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;minima&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;~&amp;gt; 2.0&amp;quot;&lt;/span&gt;
+
+&lt;span class="c1"&gt;# If you have any plugins, put them here!&lt;/span&gt;
+&lt;span class="n"&gt;group&lt;/span&gt; &lt;span class="ss"&gt;:jekyll_plugins&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt;
+  &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;jekyll-feed&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;~&amp;gt; 0.6&amp;quot;&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Windows does not …&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h2&gt;Rspec&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://medium.com/espark-engineering-blog/testing-your-jekyll-site-the-ruby-way-ccfa386a8318"&gt;https://medium.com/espark-engineering-blog/testing-your-jekyll-site-the-ruby-way-ccfa386a8318&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://chromedriver.storage.googleapis.com/2.9/chromedriver_win32.zip"&gt;http://chromedriver.storage.googleapis.com/2.9/chromedriver_win32.zip&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Examples&lt;/h1&gt;
+&lt;h2&gt;Rspec&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# Gemfile&lt;/span&gt;
+&lt;span class="n"&gt;source&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;https://rubygems.org&amp;quot;&lt;/span&gt;
+
+&lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;jekyll&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;~&amp;gt; 3.8.4&amp;quot;&lt;/span&gt;
+
+&lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;minima&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;~&amp;gt; 2.0&amp;quot;&lt;/span&gt;
+
+&lt;span class="c1"&gt;# If you have any plugins, put them here!&lt;/span&gt;
+&lt;span class="n"&gt;group&lt;/span&gt; &lt;span class="ss"&gt;:jekyll_plugins&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt;
+  &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;jekyll-feed&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;~&amp;gt; 0.6&amp;quot;&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Windows does not include zoneinfo files, so bundle the tzinfo-data gem&lt;/span&gt;
+&lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;tzinfo-data&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;platforms&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="ss"&gt;:mingw&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;:mswin&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;:x64_mingw&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;:jruby&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Performance-booster for watching directories on Windows&lt;/span&gt;
+&lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;wdm&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;~&amp;gt; 0.1.0&amp;quot;&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="no"&gt;Gem&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;win_platform?&lt;/span&gt;
+
+&lt;span class="n"&gt;group&lt;/span&gt; &lt;span class="ss"&gt;:development&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;:test&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt;
+  &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;rspec&amp;quot;&lt;/span&gt;
+  &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;selenium-webdriver&amp;quot;&lt;/span&gt;
+  &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;chromedriver-helper&amp;quot;&lt;/span&gt;
+  &lt;span class="c1"&gt;# Ajout de puma (server&lt;/span&gt;
+  &lt;span class="c1"&gt;# Failures:&lt;/span&gt;
+
+  &lt;span class="c1"&gt;# 1) sample has the page title&lt;/span&gt;
+  &lt;span class="c1"&gt;#    Failure/Error: raise LoadError, &amp;#39;Capybara is unable to load `puma` for its server, please add `puma` to your project or specify a different server via something like `Capybara.server = :webrick`.&amp;#39;&lt;/span&gt;
+  &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;puma&amp;quot;&lt;/span&gt;
+  &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;capybara&amp;quot;&lt;/span&gt;
+  &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;rack-jekyll&amp;quot;&lt;/span&gt;
+  &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;pry&amp;quot;&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# spec/spec_helper.rb&lt;/span&gt;
+&lt;span class="c1"&gt;# Require all of the necessary gems&lt;/span&gt;
+&lt;span class="nb"&gt;require&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;rspec&amp;#39;&lt;/span&gt;
+&lt;span class="nb"&gt;require&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;capybara/rspec&amp;#39;&lt;/span&gt;
+&lt;span class="nb"&gt;require&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;rack/jekyll&amp;#39;&lt;/span&gt;
+&lt;span class="nb"&gt;require&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;rack/test&amp;#39;&lt;/span&gt;
+&lt;span class="nb"&gt;require&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;pry&amp;#39;&lt;/span&gt;
+
+&lt;span class="no"&gt;RSpec&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;configure&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;
+  &lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;expect_with&lt;/span&gt; &lt;span class="ss"&gt;:rspec&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;expectations&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;
+    &lt;span class="n"&gt;expectations&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;include_chain_clauses_in_custom_matcher_descriptions&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kp"&gt;true&lt;/span&gt;
+  &lt;span class="k"&gt;end&lt;/span&gt;
+
+  &lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mock_with&lt;/span&gt; &lt;span class="ss"&gt;:rspec&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;mocks&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;
+    &lt;span class="n"&gt;mocks&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;verify_partial_doubles&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kp"&gt;true&lt;/span&gt;
+  &lt;span class="k"&gt;end&lt;/span&gt;
+
+  &lt;span class="c1"&gt;# Configure Capybara to use Selenium.&lt;/span&gt;
+  &lt;span class="no"&gt;Capybara&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;register_driver&lt;/span&gt; &lt;span class="ss"&gt;:selenium&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;app&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;
+    &lt;span class="c1"&gt;# Configure selenium to use Chrome.&lt;/span&gt;
+    &lt;span class="no"&gt;Capybara&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="no"&gt;Selenium&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="no"&gt;Driver&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;new&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;app&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;:browser&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="ss"&gt;:chrome&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="k"&gt;end&lt;/span&gt;
+
+  &lt;span class="c1"&gt;# Configure Capybara to load the website through rack-jekyll.&lt;/span&gt;
+  &lt;span class="c1"&gt;# (force_build: true) builds the site before the tests are run,&lt;/span&gt;
+  &lt;span class="c1"&gt;# so our tests are always running against the latest version&lt;/span&gt;
+  &lt;span class="c1"&gt;# of our jekyll site.&lt;/span&gt;
+  &lt;span class="no"&gt;Capybara&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;app&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="no"&gt;Rack&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="no"&gt;Jekyll&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;new&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ss"&gt;force_build&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kp"&gt;true&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# Rakefile&lt;/span&gt;
+&lt;span class="n"&gt;task&lt;/span&gt; &lt;span class="ss"&gt;:default&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="ss"&gt;:rspec&lt;/span&gt;
+
+&lt;span class="n"&gt;task&lt;/span&gt; &lt;span class="ss"&gt;:install&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt;
+  &lt;span class="n"&gt;sh&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;bundle install --path ../vendor/bundle&amp;quot;&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+
+&lt;span class="n"&gt;task&lt;/span&gt; &lt;span class="ss"&gt;:update&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt;
+  &lt;span class="n"&gt;sh&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;bundle update&amp;quot;&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+
+&lt;span class="n"&gt;task&lt;/span&gt; &lt;span class="ss"&gt;:rspec&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt;
+  &lt;span class="n"&gt;sh&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;bundle exec rspec&amp;quot;&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Archive"></category><category term="Jekyll"></category></entry><entry><title>Jekyll TDD</title><link href="http://dev.duloup.org/jekyll-tdd.html" rel="alternate"></link><published>2018-10-19T16:34:17+02:00</published><updated>2018-10-19T16:34:17+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-10-19:/jekyll-tdd.html</id><summary type="html">&lt;h2&gt;Rspec&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://dev.to/phansch/testing-your-jekyll-website-with-capybara"&gt;https://dev.to/phansch/testing-your-jekyll-website-with-capybara&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://medium.com/espark-engineering-blog/testing-your-jekyll-site-the-ruby-way-ccfa386a8318"&gt;https://medium.com/espark-engineering-blog/testing-your-jekyll-site-the-ruby-way-ccfa386a8318&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://chromedriver.storage.googleapis.com/2.9/chromedriver_win32.zip"&gt;http://chromedriver.storage.googleapis.com/2.9/chromedriver_win32.zip&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Minitest&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/teamcapybara/capybara/blob/3.9_stable/README.md"&gt;https://github.com/teamcapybara/capybara/blob/3.9_stable/README.md&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://gist.github.com/thbar/10be2ea924b81f78d24ab800461bfee3"&gt;https://gist.github.com/thbar/10be2ea924b81f78d24ab800461bfee3&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/mozilla/geckodriver/"&gt;https://github.com/mozilla/geckodriver/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/mozilla/geckodriver/releases/download/v0.23.0/geckodriver-v0.23.0-win32.zip"&gt;https://github.com/mozilla/geckodriver/releases/download/v0 …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Rspec&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://dev.to/phansch/testing-your-jekyll-website-with-capybara"&gt;https://dev.to/phansch/testing-your-jekyll-website-with-capybara&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://medium.com/espark-engineering-blog/testing-your-jekyll-site-the-ruby-way-ccfa386a8318"&gt;https://medium.com/espark-engineering-blog/testing-your-jekyll-site-the-ruby-way-ccfa386a8318&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://chromedriver.storage.googleapis.com/2.9/chromedriver_win32.zip"&gt;http://chromedriver.storage.googleapis.com/2.9/chromedriver_win32.zip&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Minitest&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/teamcapybara/capybara/blob/3.9_stable/README.md"&gt;https://github.com/teamcapybara/capybara/blob/3.9_stable/README.md&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://gist.github.com/thbar/10be2ea924b81f78d24ab800461bfee3"&gt;https://gist.github.com/thbar/10be2ea924b81f78d24ab800461bfee3&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/mozilla/geckodriver/"&gt;https://github.com/mozilla/geckodriver/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/mozilla/geckodriver/releases/download/v0.23.0/geckodriver-v0.23.0-win32.zip"&gt;https://github.com/mozilla/geckodriver/releases/download/v0.23.0/geckodriver-v0.23.0-win32.zip&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# Gemfile&lt;/span&gt;
+&lt;span class="n"&gt;source&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;https://rubygems.org&amp;quot;&lt;/span&gt;
+
+&lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;jekyll&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;~&amp;gt; 3.8.4&amp;quot;&lt;/span&gt;
+
+&lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;minima&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;~&amp;gt; 2.0&amp;quot;&lt;/span&gt;
+
+&lt;span class="c1"&gt;# If you have any plugins, put them here!&lt;/span&gt;
+&lt;span class="n"&gt;group&lt;/span&gt; &lt;span class="ss"&gt;:jekyll_plugins&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt;
+  &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;jekyll-feed&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;~&amp;gt; 0.6&amp;quot;&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Windows does not include zoneinfo files, so bundle the tzinfo-data gem&lt;/span&gt;
+&lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;tzinfo-data&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;platforms&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="ss"&gt;:mingw&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;:mswin&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;:x64_mingw&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;:jruby&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Performance-booster for watching directories on Windows&lt;/span&gt;
+&lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;wdm&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;~&amp;gt; 0.1.0&amp;quot;&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="no"&gt;Gem&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;win_platform?&lt;/span&gt;
+
+&lt;span class="n"&gt;group&lt;/span&gt; &lt;span class="ss"&gt;:development&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;:test&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt;
+  &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;rspec&amp;quot;&lt;/span&gt;
+  &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;selenium-webdriver&amp;quot;&lt;/span&gt;
+  &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;chromedriver-helper&amp;quot;&lt;/span&gt;
+  &lt;span class="c1"&gt;# Ajout de puma (server&lt;/span&gt;
+  &lt;span class="c1"&gt;# Failures:&lt;/span&gt;
+
+  &lt;span class="c1"&gt;# 1) sample has the page title&lt;/span&gt;
+  &lt;span class="c1"&gt;#    Failure/Error: raise LoadError, &amp;#39;Capybara is unable to load `puma` for its server, please add `puma` to your project or specify a different server via something like `Capybara.server = :webrick`.&amp;#39;&lt;/span&gt;
+  &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;puma&amp;quot;&lt;/span&gt;
+  &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;capybara&amp;quot;&lt;/span&gt;
+  &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;rack-jekyll&amp;quot;&lt;/span&gt;
+  &lt;span class="n"&gt;gem&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;pry&amp;quot;&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# spec/spec_helper.rb&lt;/span&gt;
+&lt;span class="c1"&gt;# Require all of the necessary gems&lt;/span&gt;
+&lt;span class="nb"&gt;require&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;rspec&amp;#39;&lt;/span&gt;
+&lt;span class="nb"&gt;require&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;capybara/rspec&amp;#39;&lt;/span&gt;
+&lt;span class="nb"&gt;require&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;rack/jekyll&amp;#39;&lt;/span&gt;
+&lt;span class="nb"&gt;require&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;rack/test&amp;#39;&lt;/span&gt;
+&lt;span class="nb"&gt;require&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;pry&amp;#39;&lt;/span&gt;
+
+&lt;span class="no"&gt;RSpec&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;configure&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;
+  &lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;expect_with&lt;/span&gt; &lt;span class="ss"&gt;:rspec&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;expectations&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;
+    &lt;span class="n"&gt;expectations&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;include_chain_clauses_in_custom_matcher_descriptions&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kp"&gt;true&lt;/span&gt;
+  &lt;span class="k"&gt;end&lt;/span&gt;
+
+  &lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mock_with&lt;/span&gt; &lt;span class="ss"&gt;:rspec&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;mocks&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;
+    &lt;span class="n"&gt;mocks&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;verify_partial_doubles&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kp"&gt;true&lt;/span&gt;
+  &lt;span class="k"&gt;end&lt;/span&gt;
+
+  &lt;span class="c1"&gt;# Configure Capybara to use Selenium.&lt;/span&gt;
+  &lt;span class="no"&gt;Capybara&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;register_driver&lt;/span&gt; &lt;span class="ss"&gt;:selenium&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;app&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;
+    &lt;span class="c1"&gt;# Configure selenium to use Chrome.&lt;/span&gt;
+    &lt;span class="no"&gt;Capybara&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="no"&gt;Selenium&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="no"&gt;Driver&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;new&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;app&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;:browser&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="ss"&gt;:chrome&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="k"&gt;end&lt;/span&gt;
+
+  &lt;span class="c1"&gt;# Configure Capybara to load the website through rack-jekyll.&lt;/span&gt;
+  &lt;span class="c1"&gt;# (force_build: true) builds the site before the tests are run,&lt;/span&gt;
+  &lt;span class="c1"&gt;# so our tests are always running against the latest version&lt;/span&gt;
+  &lt;span class="c1"&gt;# of our jekyll site.&lt;/span&gt;
+  &lt;span class="no"&gt;Capybara&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;app&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="no"&gt;Rack&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="no"&gt;Jekyll&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;new&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ss"&gt;force_build&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kp"&gt;true&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="c1"&gt;# Rakefile&lt;/span&gt;
+&lt;span class="n"&gt;task&lt;/span&gt; &lt;span class="ss"&gt;:default&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="ss"&gt;:rspec&lt;/span&gt;
+
+&lt;span class="n"&gt;task&lt;/span&gt; &lt;span class="ss"&gt;:install&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt;
+  &lt;span class="n"&gt;sh&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;bundle install --path ../vendor/bundle&amp;quot;&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+
+&lt;span class="n"&gt;task&lt;/span&gt; &lt;span class="ss"&gt;:update&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt;
+  &lt;span class="n"&gt;sh&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;bundle update&amp;quot;&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+
+&lt;span class="n"&gt;task&lt;/span&gt; &lt;span class="ss"&gt;:rspec&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt;
+  &lt;span class="n"&gt;sh&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;bundle exec rspec&amp;quot;&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Archive"></category><category term="Jekyll"></category></entry><entry><title>jekyl-creation-d-un-gem</title><link href="http://dev.duloup.org/jekyl-creation-d-un-gem.html" rel="alternate"></link><published>2018-10-18T11:35:58+02:00</published><updated>2018-10-18T11:35:58+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-10-18:/jekyl-creation-d-un-gem.html</id><summary type="html">&lt;p&gt;&lt;a href="https://guides.rubygems.org/make-your-own-gem/"&gt;https://guides.rubygems.org/make-your-own-gem/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/minimagick/minimagick"&gt;https://github.com/minimagick/minimagick&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;/&amp;gt; convert --version
+Version: ImageMagick 7.0.8-2 Q16 x86_64 2018-06-20 https://www.imagemagick.org
+Copyright: © 1999-2018 ImageMagick Studio LLC
+License: https://www.imagemagick.org/script/license.php
+Features: Cipher DPC HDRI Modules OpenMP
+Delegates (built-in): bzlib cairo djvu fftw flif …&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://guides.rubygems.org/make-your-own-gem/"&gt;https://guides.rubygems.org/make-your-own-gem/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/minimagick/minimagick"&gt;https://github.com/minimagick/minimagick&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;/&amp;gt; convert --version
+Version: ImageMagick 7.0.8-2 Q16 x86_64 2018-06-20 https://www.imagemagick.org
+Copyright: © 1999-2018 ImageMagick Studio LLC
+License: https://www.imagemagick.org/script/license.php
+Features: Cipher DPC HDRI Modules OpenMP
+Delegates (built-in): bzlib cairo djvu fftw flif fontconfig freetype gslib gvc jbig jng jp2 jpeg lcms lqr ltdl lzma openexr pangocairo png ps raw rsvg tiff webp wmf xml zlib
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href="https://stackoverflow.com/questions/220176/how-can-i-install-a-local-gem"&gt;https://stackoverflow.com/questions/220176/how-can-i-install-a-local-gem&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://jekyllrb.com/docs/themes/"&gt;https://jekyllrb.com/docs/themes/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://guides.rubygems.org/make-your-own-gem/"&gt;https://guides.rubygems.org/make-your-own-gem/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://stackoverflow.com/questions/3127670/how-to-include-data-files-in-a-ruby-gem"&gt;https://stackoverflow.com/questions/3127670/how-to-include-data-files-in-a-ruby-gem&lt;/a&gt;&lt;/p&gt;</content><category term="Archive"></category><category term="Jekyll"></category></entry><entry><title>jekyll-slideshow</title><link href="http://dev.duloup.org/jekyll-slideshow.html" rel="alternate"></link><published>2018-10-17T20:10:51+02:00</published><updated>2018-10-17T20:10:51+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-10-17:/jekyll-slideshow.html</id><content type="html">&lt;p&gt;&lt;a href="https://github.com/matthewowen/jekyll-slideshow"&gt;https://github.com/matthewowen/jekyll-slideshow&lt;/a&gt;&lt;/p&gt;</content><category term="Archive"></category><category term="Jekyll"></category></entry><entry><title>developper-un-plugin-jekyll</title><link href="http://dev.duloup.org/developper-un-plugin-jekyll.html" rel="alternate"></link><published>2018-10-07T08:03:02+02:00</published><updated>2018-10-07T08:03:02+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-10-07:/developper-un-plugin-jekyll.html</id><summary type="html">&lt;p&gt;&lt;a href="https://tuananh.org/2014/08/04/writing-your-first-jekyll-plugin/"&gt;https://tuananh.org/2014/08/04/writing-your-first-jekyll-plugin/&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;module Jekyll
+  module Checked
+    def checked(text)
+      text.sub(%r{\[x\]}i, &amp;#39;&lt;span class="nt"&gt;&amp;lt;span&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;ballot_box_with_check&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;&amp;#39;).sub(%r{\[\]}i, &amp;#39;&lt;span class="nt"&gt;&amp;lt;span&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;ballot_box&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;&amp;#39;)
+    end
+  end
+end
+
+Liquid::Template.register_filter(Jekyll::Checked)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Groupement des scans par mot clé (keyword)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.marktrapp.com/blog/2014/01/07/group-posts-jekyll-front-matter/"&gt;https://www.marktrapp.com/blog …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://tuananh.org/2014/08/04/writing-your-first-jekyll-plugin/"&gt;https://tuananh.org/2014/08/04/writing-your-first-jekyll-plugin/&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;module Jekyll
+  module Checked
+    def checked(text)
+      text.sub(%r{\[x\]}i, &amp;#39;&lt;span class="nt"&gt;&amp;lt;span&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;ballot_box_with_check&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;&amp;#39;).sub(%r{\[\]}i, &amp;#39;&lt;span class="nt"&gt;&amp;lt;span&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;ballot_box&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/span&amp;gt;&lt;/span&gt;&amp;#39;)
+    end
+  end
+end
+
+Liquid::Template.register_filter(Jekyll::Checked)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Groupement des scans par mot clé (keyword)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.marktrapp.com/blog/2014/01/07/group-posts-jekyll-front-matter/"&gt;https://www.marktrapp.com/blog/2014/01/07/group-posts-jekyll-front-matter/&lt;/a&gt;&lt;/p&gt;</content><category term="Archive"></category><category term="Jekyll"></category></entry><entry><title>Jekyll: Publish to site</title><link href="http://dev.duloup.org/jekyll-publish-to-site.html" rel="alternate"></link><published>2018-09-20T14:33:42+02:00</published><updated>2018-09-20T14:33:42+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-09-20:/jekyll-publish-to-site.html</id><summary type="html">&lt;p&gt;&lt;a href="https://www.inmotionhosting.com/support/website/jekyll/how-to-publish-a-jekyll-site-with-git"&gt;https://www.inmotionhosting.com/support/website/jekyll/how-to-publish-a-jekyll-site-with-git&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;hooks/post-receive&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;&lt;span class="normal"&gt;1&lt;/span&gt;
+&lt;span class="normal"&gt;2&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="ch"&gt;#!/bin/sh&lt;/span&gt;
+git --work-tree&lt;span class="o"&gt;=&lt;/span&gt;/e/repo/myblog-site --git-dir&lt;span class="o"&gt;=&lt;/span&gt;/e/repo/myblog.git checkout -f
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+
+&lt;h2&gt;Installation de gitolite&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://gitolite.com/gitolite/"&gt;http://gitolite.com/gitolite/&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;steps to install&lt;/h3&gt;
+&lt;p&gt;First, prepare the ssh key:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;login to "git" on the server&lt;/li&gt;
+&lt;li&gt;make sure ~/.ssh …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://www.inmotionhosting.com/support/website/jekyll/how-to-publish-a-jekyll-site-with-git"&gt;https://www.inmotionhosting.com/support/website/jekyll/how-to-publish-a-jekyll-site-with-git&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;hooks/post-receive&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;&lt;span class="normal"&gt;1&lt;/span&gt;
+&lt;span class="normal"&gt;2&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="ch"&gt;#!/bin/sh&lt;/span&gt;
+git --work-tree&lt;span class="o"&gt;=&lt;/span&gt;/e/repo/myblog-site --git-dir&lt;span class="o"&gt;=&lt;/span&gt;/e/repo/myblog.git checkout -f
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+
+&lt;h2&gt;Installation de gitolite&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://gitolite.com/gitolite/"&gt;http://gitolite.com/gitolite/&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;steps to install&lt;/h3&gt;
+&lt;p&gt;First, prepare the ssh key:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;login to "git" on the server&lt;/li&gt;
+&lt;li&gt;make sure ~/.ssh/authorized_keys is empty or non-existent&lt;/li&gt;
+&lt;li&gt;make sure your ssh public key from your workstation has been copied as $HOME/YourName.pub&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Next, install gitolite by running these commands:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git clone https://github.com/sitaramc/gitolite
+mkdir -p $HOME/bin
+gitolite/install -to $HOME/bin
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Finally, setup gitolite with yourself as the administrator:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;gitolite setup -pk YourName.pub
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Création d'un dépôt&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;cd repositories/
+mkdir myblog.git
+cd myblog.git
+git init --bare
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Clonage du dépôt principal&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;clone&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;gittest&lt;/span&gt;&lt;span class="nv"&gt;@duloup&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nl"&gt;org&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;myblog&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;myblog&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Push dans le nouveau dépôt&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;git push ~/repositories/myblog.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Fichier /home/git/repostitories/myblog.git/hooks/post-receive&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;&lt;span class="normal"&gt;1&lt;/span&gt;
+&lt;span class="normal"&gt;2&lt;/span&gt;
+&lt;span class="normal"&gt;3&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="ch"&gt;#!/bin/sh&lt;/span&gt;
+&lt;span class="nb"&gt;umask&lt;/span&gt; &lt;span class="m"&gt;002&lt;/span&gt;
+git --work-tree&lt;span class="o"&gt;=&lt;/span&gt;/home/git/myblog --git-dir&lt;span class="o"&gt;=&lt;/span&gt;/home/git/repositories/myblog.git checkout -f
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+
+&lt;p&gt;Rendre le fichier exécutable&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;chmod +x /home/git/repostitories/myblog.git/hooks/post-receive
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Editer la configuration (depuis le client)&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;clone&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="nv"&gt;@pi0&lt;/span&gt;&lt;span class="err"&gt;:&lt;/span&gt;&lt;span class="n"&gt;gitolite&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;admin&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Editer le fichier conf pout ajouter le nouveau dépôt&lt;/p&gt;
+&lt;p&gt;Installer Ruby et Jekyll&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo apt-get install ruby ruby-dev
+sudo gem install jekyll
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Lancer le serveur Jekyll&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nv"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;myblog&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nv"&gt;bundle&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;exec&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;jekyll&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;serve&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="nv"&gt;incremental&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Tester le service&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;http://pi0:4000/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href="https://www.booleanworld.com/get-unix-linux-environment-windows-msys2/"&gt;https://www.booleanworld.com/get-unix-linux-environment-windows-msys2/&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nv"&gt;ufw&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="nv"&gt;dry&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;run&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;allow&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;in&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;4000&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;tcp&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nv"&gt;ufw&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;allow&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;in&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;4000&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;tcp&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="nv"&gt;bundle&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;install&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="nv"&gt;path&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;vendor&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;bundle&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="nv"&gt;bundle&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;exec&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;jekyll&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;serve&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;B&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Lancement du serveur&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nv"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;public_html&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nv"&gt;bundle&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;exec&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;jekyll&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;serve&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="nv"&gt;incremental&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="nv"&gt;force&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;polling&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;B&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nv"&gt;H&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;.&lt;span class="mi"&gt;0&lt;/span&gt;.&lt;span class="mi"&gt;0&lt;/span&gt;.&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;~/&lt;/span&gt;&lt;span class="nv"&gt;jekyll&lt;/span&gt;.&lt;span class="nv"&gt;out&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&amp;amp;&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Passage sous apache, le serveur jekyll ne prenant pas en compte les modifications&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nv"&gt;bundle&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;exec&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;jekyll&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;build&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="nv"&gt;incremental&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="nv"&gt;watch&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href="https://davidegan.me/hide-git-repos-on-public-sites/"&gt;https://davidegan.me/hide-git-repos-on-public-sites/&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Problèmes de cache persistant sous apache&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nt"&gt;&amp;lt;IfModule&lt;/span&gt; &lt;span class="err"&gt;mod_expires.c&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+  # Turn on the module.
+  ExpiresActive on
+  # Set the default expiry times.
+  ExpiresByType text/html &amp;quot;modification plus 5 seconds&amp;quot;
+  ExpiresByType text/javascript &amp;quot;modification plus 5 seconds&amp;quot;
+  ExpiresDefault &amp;quot;access plus 2 days&amp;quot;
+&lt;span class="nt"&gt;&amp;lt;/IfModule&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Archive"></category><category term="Jekyll"></category><category term="Git"></category></entry><entry><title>Jekyll: YAML</title><link href="http://dev.duloup.org/jekyll-yaml.html" rel="alternate"></link><published>2018-09-09T07:04:49+02:00</published><updated>2018-09-09T07:04:49+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-09-09:/jekyll-yaml.html</id><summary type="html">&lt;p&gt;&lt;a href="https://idratherbewriting.com/documentation-theme-jekyll/mydoc_yaml_tutorial"&gt;YAML tutorial in the context of Jekyll&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Example 1: Simple mapping&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;husband&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Tom&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;wife&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Shannon&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;{% raw %}&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="x"&gt;Husband&amp;#39;s name: &lt;/span&gt;&lt;span class="cp"&gt;{{&lt;/span&gt;&lt;span class="nv"&gt;site.data.samplelist.name.husband&lt;/span&gt;&lt;span class="cp"&gt;}}&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+
+&lt;span class="x"&gt;Wife&amp;#39;s name: &lt;/span&gt;&lt;span class="cp"&gt;{{&lt;/span&gt;&lt;span class="nv"&gt;site.data.samplelist.name.wife&lt;/span&gt;&lt;span class="cp"&gt;}}&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;{% endraw %}&lt;/p&gt;
+&lt;p&gt;Husband's name: {{site.data.samplelist.name.husband}}&lt;/p&gt;
+&lt;p&gt;Wife's name: {{site.data.samplelist.name.wife}}&lt;/p&gt;
+&lt;h2&gt;Example 2 …&lt;/h2&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://idratherbewriting.com/documentation-theme-jekyll/mydoc_yaml_tutorial"&gt;YAML tutorial in the context of Jekyll&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Example 1: Simple mapping&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;husband&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Tom&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="n"&gt;wife&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;Shannon&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;{% raw %}&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="x"&gt;Husband&amp;#39;s name: &lt;/span&gt;&lt;span class="cp"&gt;{{&lt;/span&gt;&lt;span class="nv"&gt;site.data.samplelist.name.husband&lt;/span&gt;&lt;span class="cp"&gt;}}&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+
+&lt;span class="x"&gt;Wife&amp;#39;s name: &lt;/span&gt;&lt;span class="cp"&gt;{{&lt;/span&gt;&lt;span class="nv"&gt;site.data.samplelist.name.wife&lt;/span&gt;&lt;span class="cp"&gt;}}&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;{% endraw %}&lt;/p&gt;
+&lt;p&gt;Husband's name: {{site.data.samplelist.name.husband}}&lt;/p&gt;
+&lt;p&gt;Wife's name: {{site.data.samplelist.name.wife}}&lt;/p&gt;
+&lt;h2&gt;Example 2: Line breaks&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nv"&gt;feedback&lt;/span&gt;:&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="nv"&gt;This&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;is&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;my&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;feedback&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;to&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;you&lt;/span&gt;.&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="nv"&gt;Even&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;I&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;include&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;linebreaks&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;here&lt;/span&gt;,&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="nv"&gt;all&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;of&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;the&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;linebreaks&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;will&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;be&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;removed&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;when&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;the&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;value&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;is&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;inserted&lt;/span&gt;.&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="nv"&gt;block&lt;/span&gt;:&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="nv"&gt;This&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;pipe&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;does&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;something&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;a&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;little&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;different&lt;/span&gt;.&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="nv"&gt;It&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;preserves&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;the&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;breaks&lt;/span&gt;.&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="nv"&gt;This&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;is&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;really&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;helpful&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;for&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;code&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;samples&lt;/span&gt;,&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="nv"&gt;since&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;you&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;can&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;format&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;the&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;code&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;samples&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;with&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="nv"&gt;the&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;appropriate&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;{% raw %}&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="x"&gt;**Feedback**&lt;/span&gt;
+
+&lt;span class="cp"&gt;{{&lt;/span&gt;&lt;span class="nv"&gt;site.data.samplelist.feedback&lt;/span&gt;&lt;span class="cp"&gt;}}&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+
+&lt;span class="x"&gt;**Block**&lt;/span&gt;
+
+&lt;span class="cp"&gt;{{&lt;/span&gt;&lt;span class="nv"&gt;site.data.samplelist.block&lt;/span&gt;&lt;span class="cp"&gt;}}&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;{% endraw %}&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Feedback&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;{{site.data.samplelist.feedback}}&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Block&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;{{site.data.samplelist.block}}&lt;/p&gt;
+&lt;h2&gt;Example 3: Simple list&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;bikes:
+  - title: mountain bikes
+  - title: road bikes
+  - title: hybrid bikes
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;{% raw %}&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="cp"&gt;{%&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="nv"&gt;item&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="nv"&gt;site.data.samplelist.bikes&lt;/span&gt; &lt;span class="cp"&gt;%}&lt;/span&gt;&lt;span class="x"&gt;* &lt;/span&gt;&lt;span class="cp"&gt;{{&lt;/span&gt;&lt;span class="nv"&gt;item.title&lt;/span&gt;&lt;span class="cp"&gt;}}&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;span class="cp"&gt;{%&lt;/span&gt; &lt;span class="k"&gt;endfor&lt;/span&gt; &lt;span class="cp"&gt;%}&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;{% endraw %}&lt;/p&gt;
+&lt;p _="%" endfor&gt;{% for item in site.data.samplelist.bikes %}* {{item.title}}&lt;/p&gt;
+&lt;h2&gt;Example 4: List items&lt;/h2&gt;
+&lt;p&gt;YAML:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;salesteams:
+- title: Regions
+ subfolderitems:
+   - location: US
+   - location: Spain
+   - location: France
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;{% raw %}&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="cp"&gt;{%&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="nv"&gt;item&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="nv"&gt;site.data.samplelist.salesteams&lt;/span&gt; &lt;span class="cp"&gt;%}&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;span class="x"&gt;### &lt;/span&gt;&lt;span class="cp"&gt;{{&lt;/span&gt;&lt;span class="nv"&gt;item.title&lt;/span&gt;&lt;span class="cp"&gt;}}&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;span class="cp"&gt;{%&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="nv"&gt;entry&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="nv"&gt;item.subfolderitems&lt;/span&gt; &lt;span class="cp"&gt;%}&lt;/span&gt;&lt;span class="x"&gt;* &lt;/span&gt;&lt;span class="cp"&gt;{{&lt;/span&gt;&lt;span class="nv"&gt;entry.location&lt;/span&gt;&lt;span class="cp"&gt;}}&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;span class="cp"&gt;{%&lt;/span&gt; &lt;span class="k"&gt;endfor&lt;/span&gt; &lt;span class="cp"&gt;%}&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;span class="cp"&gt;{%&lt;/span&gt; &lt;span class="k"&gt;endfor&lt;/span&gt; &lt;span class="cp"&gt;%}&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p _="%" for in item site.data.samplelist.salesteams&gt;{% endraw %
+}&lt;/p&gt;
+&lt;h3&gt;{{item.title}}&lt;/h3&gt;
+&lt;p _="%" endfor&gt;{% for entry in item.subfolderitems %}* {{entry.location}}
+{% endfor %}&lt;/p&gt;
+&lt;h2&gt;Example 5: Table of contents&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;toc:
+  - title: Group 1
+    subfolderitems:
+      - page: Thing 1
+      - page: Thing 2
+      - page: Thing 3
+  - title: Group 2
+    subfolderitems:
+      - page: Piece 1
+      - page: Piece 2
+      - page: Piece 3
+  - title: Group 3
+    subfolderitems:
+      - page: Widget 1
+      - page: Widget 2 it&amp;#39;s
+      - page: Widget 3
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;{% raw %}&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="cp"&gt;{%&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="nv"&gt;item&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="nv"&gt;site.data.samplelist.toc&lt;/span&gt; &lt;span class="cp"&gt;%}&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;span class="x"&gt;### &lt;/span&gt;&lt;span class="cp"&gt;{{&lt;/span&gt;&lt;span class="nv"&gt;item.title&lt;/span&gt;&lt;span class="cp"&gt;}}&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;span class="cp"&gt;{%&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="nv"&gt;entry&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="nv"&gt;item.subfolderitems&lt;/span&gt; &lt;span class="cp"&gt;%}&lt;/span&gt;&lt;span class="x"&gt;* &lt;/span&gt;&lt;span class="cp"&gt;{{&lt;/span&gt;&lt;span class="nv"&gt;entry.page&lt;/span&gt;&lt;span class="cp"&gt;}}&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;span class="cp"&gt;{%&lt;/span&gt; &lt;span class="k"&gt;endfor&lt;/span&gt; &lt;span class="cp"&gt;%}&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;span class="cp"&gt;{%&lt;/span&gt; &lt;span class="k"&gt;endfor&lt;/span&gt; &lt;span class="cp"&gt;%}&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;{% endraw %}&lt;/p&gt;
+&lt;p&gt;{% for item in site.data.samplelist.toc %}&lt;/p&gt;
+&lt;h3&gt;{{item.title}}&lt;/h3&gt;
+&lt;p _="%" endfor&gt;{% for entry in item.subfolderitems %}* {{entry.page}}
+{% endfor %}&lt;/p&gt;
+&lt;h2&gt;Example 6: Variables&lt;/h2&gt;
+&lt;p&gt;{{ site.data.samplelist.myref }}&lt;/p&gt;
+&lt;h2&gt;Example 7: Positions in lists&lt;/h2&gt;
+&lt;h3&gt;YAML&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;about:
+ - zero
+ - one
+ - two
+ - three
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Markdown&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="cp"&gt;{{&lt;/span&gt; &lt;span class="nv"&gt;site.data.samplelist.about&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="cp"&gt;}}&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;{{ site.data.samplelist.about[0] }}&lt;/p&gt;
+&lt;h2&gt;Example 8: Properties from list items at specific positions&lt;/h2&gt;
+&lt;h3&gt;YAML:&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;numbercolors:
+ - zero:
+   properties: red
+ - one:
+   properties: yellow
+ - two:
+   properties: green
+ - three:
+   properties: blue
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Markdown + Liquid:&lt;/h3&gt;
+&lt;p&gt;{% raw %}&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="cp"&gt;{{&lt;/span&gt; &lt;span class="nv"&gt;site.data.samplelist.numbercolors&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="nv"&gt;.properties&lt;/span&gt; &lt;span class="cp"&gt;}}&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;{% endraw %}&lt;/p&gt;
+&lt;p&gt;{{ site.data.samplelist.numbercolors[0].properties }}&lt;/p&gt;
+&lt;h2&gt;Example 9: Conditions&lt;/h2&gt;
+&lt;h3&gt;YAML:&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;mypages:
+- section1: Section 1
+  audience: developers
+  product: acme
+  url: facebook.com
+- section2: Section 2
+  audience: writers
+  product: acme
+  url: google.com
+- section3: Section 3
+  audience: developers
+  product: acme
+  url: amazon.com
+- section4: Section 4
+  audience: writers
+  product: gizmo
+  url: apple.com
+- section5: Section 5
+  audience: writers
+  product: acme
+  url: microsoft.com
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Markdown + Liquid:&lt;/h3&gt;
+&lt;p&gt;{% raw %}&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="cp"&gt;{%&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="nv"&gt;sec&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="nv"&gt;site.data.samplelist.mypages&lt;/span&gt; &lt;span class="cp"&gt;%}{%&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nv"&gt;sec.audience&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;writers&amp;quot;&lt;/span&gt; &lt;span class="cp"&gt;%}&lt;/span&gt;&lt;span class="x"&gt;* &lt;/span&gt;&lt;span class="cp"&gt;{{&lt;/span&gt;&lt;span class="nv"&gt;sec.url&lt;/span&gt;&lt;span class="cp"&gt;}}&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;span class="cp"&gt;{%&lt;/span&gt; &lt;span class="k"&gt;endif&lt;/span&gt; &lt;span class="cp"&gt;%}{%&lt;/span&gt; &lt;span class="k"&gt;endfor&lt;/span&gt; &lt;span class="cp"&gt;%}&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;{% endraw %}&lt;/p&gt;
+&lt;p&gt;{% for sec in site.data.samplelist.mypages %}{% if sec.audience == "writers" %}* {{sec.url}}
+{% endif %}{% endfor %}&lt;/p&gt;
+&lt;p&gt;{% raw %}&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="cp"&gt;{%&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="nv"&gt;sec&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="nv"&gt;site.data.samplelist.mypages&lt;/span&gt; &lt;span class="cp"&gt;%}{%&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nv"&gt;sec.audience&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;writers&amp;quot;&lt;/span&gt; &lt;span class="k"&gt;and&lt;/span&gt; &lt;span class="nv"&gt;sec.product&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;gizmo&amp;quot;&lt;/span&gt; &lt;span class="cp"&gt;%}&lt;/span&gt;&lt;span class="x"&gt;* &lt;/span&gt;&lt;span class="cp"&gt;{{&lt;/span&gt;&lt;span class="nv"&gt;sec.url&lt;/span&gt;&lt;span class="cp"&gt;}}&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;span class="cp"&gt;{%&lt;/span&gt; &lt;span class="k"&gt;endif&lt;/span&gt; &lt;span class="cp"&gt;%}{%&lt;/span&gt; &lt;span class="k"&gt;endfor&lt;/span&gt; &lt;span class="cp"&gt;%}&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;{% endraw %}&lt;/p&gt;
+&lt;p&gt;{% for sec in site.data.samplelist.mypages %}{% if sec.audience == "writers" and sec.product == "gizmo" %}* {{sec.url}}
+{% endif %}{% endfor %}&lt;/p&gt;</content><category term="Archive"></category><category term="Jekyll"></category></entry><entry><title>Génération des README.md pour les sketches arduino</title><link href="http://dev.duloup.org/generation-des-readmemd-pour-les-sketches-arduino.html" rel="alternate"></link><published>2018-01-08T11:43:19+01:00</published><updated>2018-01-08T11:43:19+01:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-01-08:/generation-des-readmemd-pour-les-sketches-arduino.html</id><content type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="k"&gt;for&lt;/span&gt; dir &lt;span class="k"&gt;in&lt;/span&gt; *&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; -d &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$dir&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; ! -f &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$dir&lt;/span&gt;&lt;span class="s2"&gt;/README.md&amp;quot;&lt;/span&gt; -a -f &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$dir&lt;/span&gt;&lt;span class="s2"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;$dir&lt;/span&gt;&lt;span class="s2"&gt;.ino&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt; &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="nv"&gt;$dir&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;  cat README.tmpl &lt;span class="p"&gt;|&lt;/span&gt; sed -e &lt;span class="s2"&gt;&amp;quot;s#@title@#&lt;/span&gt;&lt;span class="nv"&gt;$dir&lt;/span&gt;&lt;span class="s2"&gt;#&amp;quot;&lt;/span&gt; &amp;gt; &lt;span class="nv"&gt;$dir&lt;/span&gt;/README.md&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;fi&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;fi&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;done&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;README.tmpl&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="o"&gt;---&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nl"&gt;title&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nv"&gt;@title&lt;/span&gt;&lt;span class="err"&gt;@&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="nl"&gt;layout&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;inopage&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="c1"&gt;---&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Archive"></category><category term="Arduino"></category></entry><entry><title>Jekyll</title><link href="http://dev.duloup.org/jekyll.html" rel="alternate"></link><published>2018-01-07T18:20:46+01:00</published><updated>2019-08-09T08:27:47+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-01-07:/jekyll.html</id><content type="html">&lt;p&gt;&lt;a href="https://jekyllrb.com/"&gt;https://jekyllrb.com/&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Installation&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://jekyllrb.com/docs/installation/windows/"&gt;Windows&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo apt install ruby
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;nokogiri&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo apt install libxml2-dev
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href="https://codinfox.github.io/dev/2015/03/06/use-tags-and-categories-in-your-jekyll-based-github-pages/"&gt;Catégories dans Jekyll&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Choix d'un thème orienté développement&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/tomjoht/documentation-theme-jekyll"&gt;https://github.com/tomjoht/documentation-theme-jekyll&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://idratherbewriting.com/documentation-theme-jekyll/index.html"&gt;http://idratherbewriting.com/documentation-theme-jekyll/index.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://aksakalli.github.io/jekyll-doc-theme/docs/home/"&gt;https://aksakalli.github.io/jekyll-doc-theme/docs/home/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><category term="Archive"></category><category term="Jekyll"></category><category term="Ruby"></category></entry><entry><title>Emacs: easy-jekyll</title><link href="http://dev.duloup.org/emacs-easy-jekyll.html" rel="alternate"></link><published>2018-01-07T14:43:31+01:00</published><updated>2018-01-07T14:43:31+01:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-01-07:/emacs-easy-jekyll.html</id><summary type="html">&lt;h1&gt;Installation du mode easy-jekyll&lt;/h1&gt;
+&lt;p&gt;variable: easy-jekyll-base-dir: /home/stephane/repo/myblog&lt;/p&gt;
+&lt;p&gt;à positionner dans le répertoire: .dir-locals.el&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;(setq easy-jekyll-basedir &amp;quot;~/repo/myblog&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href="https://www.miskatonic.org/2014/01/26/more-about-emacs-and-jekyll/"&gt;https://www.miskatonic.org/2014/01/26/more-about-emacs-and-jekyll/&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Multiples blogs&lt;/h1&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt; &amp;#39;(easy-jekyll-bloglist
+   (quote
+    (((easy-jekyll-basedir . &amp;quot;e:/repo/myblog&amp;quot;)
+      (easy-jekyll-url . &amp;quot;http://localhost/blog&amp;quot;)
+      (easy-jekyll-sshdomain . &amp;quot;duloup.org&amp;quot;))
+     ((easy-jekyll-basedir . &amp;quot;e:/repo/Dev/arduino-doc&amp;quot;)
+      (easy-jekyll-url …&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h1&gt;Installation du mode easy-jekyll&lt;/h1&gt;
+&lt;p&gt;variable: easy-jekyll-base-dir: /home/stephane/repo/myblog&lt;/p&gt;
+&lt;p&gt;à positionner dans le répertoire: .dir-locals.el&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;(setq easy-jekyll-basedir &amp;quot;~/repo/myblog&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href="https://www.miskatonic.org/2014/01/26/more-about-emacs-and-jekyll/"&gt;https://www.miskatonic.org/2014/01/26/more-about-emacs-and-jekyll/&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Multiples blogs&lt;/h1&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt; &amp;#39;(easy-jekyll-bloglist
+   (quote
+    (((easy-jekyll-basedir . &amp;quot;e:/repo/myblog&amp;quot;)
+      (easy-jekyll-url . &amp;quot;http://localhost/blog&amp;quot;)
+      (easy-jekyll-sshdomain . &amp;quot;duloup.org&amp;quot;))
+     ((easy-jekyll-basedir . &amp;quot;e:/repo/Dev/arduino-doc&amp;quot;)
+      (easy-jekyll-url . &amp;quot;http://localhost/arduino-doc&amp;quot;)
+      (easy-jekyll-sshdomain . &amp;quot;duloup.org&amp;quot;))
+     ((easy-jekyll-basedir . &amp;quot;e:/repo/Dev/scripts&amp;quot;)
+      (easy-jekyll-url . &amp;quot;http://localhost/scripts&amp;quot;)
+      (easy-jekyll-sshdomain . &amp;quot;duloup.org&amp;quot;)))))
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Archive"></category><category term="Emacs"></category><category term="Jekyll"></category></entry><entry><title>Jekyll SearchBox</title><link href="http://dev.duloup.org/jekyll-searchbox.html" rel="alternate"></link><published>2017-12-20T12:54:13+01:00</published><updated>2017-12-20T12:54:13+01:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2017-12-20:/jekyll-searchbox.html</id><content type="html">&lt;p&gt;mercredi 20 décembre 2017, 12:55:33 (UTC+0100)&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.marran.com/tech/jquery-full-text-indexing-on-jekyll/"&gt;http://www.marran.com/tech/jquery-full-text-indexing-on-jekyll/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/christian-fei/Simple-Jekyll-Search"&gt;https://github.com/christian-fei/Simple-Jekyll-Search&lt;/a&gt;&lt;/p&gt;</content><category term="Archive"></category><category term="Jekyll"></category></entry><entry><title>Installation de Jekyll</title><link href="http://dev.duloup.org/installation-de-jekyll.html" rel="alternate"></link><published>2017-12-20T00:17:13+01:00</published><updated>2017-12-20T00:17:13+01:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2017-12-20:/installation-de-jekyll.html</id><summary type="html">&lt;h1&gt;Options du fichier de configuration&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://jekyllrb.com/docs/configuration/options/"&gt;https://jekyllrb.com/docs/configuration/options/&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Installation sous linux&lt;/h1&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;sudo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;get&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;install&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ruby&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ruby&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ruby&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;bundler&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;sudo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;get&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;install&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;libffi&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;clone&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nl"&gt;ssh&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="nv"&gt;@duloup&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;org&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;myblog&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;myblog&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;bundle&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;install&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h1&gt;Utilisation des tags&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://dev.to/rpalo/jekyll-tags-the-easy-way"&gt;https://dev.to/rpalo/jekyll-tags-the-easy-way&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problèmes&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://stackoverflow.com/questions/39057405/unable-to-build-a-jekyll-site-invalid-date"&gt;https …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Options du fichier de configuration&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://jekyllrb.com/docs/configuration/options/"&gt;https://jekyllrb.com/docs/configuration/options/&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Installation sous linux&lt;/h1&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;sudo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;get&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;install&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ruby&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ruby&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;ruby&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;bundler&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;sudo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="k"&gt;get&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;install&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;libffi&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;dev&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+
+&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;clone&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nl"&gt;ssh&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="nv"&gt;@duloup&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;org&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;myblog&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;myblog&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;bundle&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;install&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h1&gt;Utilisation des tags&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://dev.to/rpalo/jekyll-tags-the-easy-way"&gt;https://dev.to/rpalo/jekyll-tags-the-easy-way&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problèmes&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://stackoverflow.com/questions/39057405/unable-to-build-a-jekyll-site-invalid-date"&gt;https://stackoverflow.com/questions/39057405/unable-to-build-a-jekyll-site-invalid-date&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;exclude:
+  - vendor
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h1&gt;Utilitaire permettant de générer des posts et des pages&lt;/h1&gt;
+&lt;p&gt;(entre autres)&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/gummesson/jekyll-rake-boilerplate"&gt;https://github.com/gummesson/jekyll-rake-boilerplate&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Framework Octopress&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://github.com/imathis/octopress"&gt;https://github.com/imathis/octopress&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Lancement sous windows&lt;/h1&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;e&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;e&lt;/span&gt;&lt;span class="o"&gt;:/&lt;/span&gt;&lt;span class="n"&gt;repo&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;myblog&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;bundle&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;exec&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;jekyll&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;serve&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h1&gt;Admin&lt;/h1&gt;
+&lt;p&gt;https://github.com/jekyll/jekyll-admin&lt;/p&gt;
+&lt;p&gt;Ajoût de la ligne suivante au fichier Gemfile&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;gem 'jekyll-admin', group: :jekyll_plugins&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Installation du paquet&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;bundle install --path vendor/bundle&lt;/code&gt;&lt;/p&gt;</content><category term="Archive"></category><category term="Jekyll"></category></entry></feed>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>Notation ABC</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <meta name="description" content="Documentation http://www.mit.edu/~6.005/fa12/projects/abcPlayer/..." />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">MyBlog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/archerie.html">Archerie</a></li>
+                    <li><a href="/category/archive.html">Archive</a></li>
+                    <li><a href="/category/culture.html">Culture</a></li>
+                    <li><a href="/category/developpement.html">Développement</a></li>
+                    <li><a href="/category/divers.html">Divers</a></li>
+                    <li><a href="/category/graphisme.html">Graphisme</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li class="active"><a href="/category/musique.html">Musique</a></li>
+                    <li><a href="/category/projets.html">Projets</a></li>
+                    <li><a href="/category/reprap.html">RepRap</a></li>
+                    <li><a href="/category/securite.html">Sécurité</a></li>
+                    <li><a href="/category/systeme.html">Système</a></li>
+                    <li><a href="/category/tech.html">Tech</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/musique-notation-abc.html" rel="bookmark"
+           title="Permalink to Notation ABC">Notation ABC</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-08-04T11:38:32+02:00">
+                Published: Sat 04 August 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/musique.html">Musique</a>.</p>
+<p>tags: <a href="/tag/daw.html">DAW</a> <a href="/tag/abc.html">ABC</a> <a href="/tag/notation.html">Notation</a> </p>
+</footer><!-- /.post-info -->      <p><a href="http://abcnotation.com/wiki/abc:standard:v2.2">Documentation</a></p>
+<p><a href="http://www.mit.edu/~6.005/fa12/projects/abcPlayer/">http://www.mit.edu/~6.005/fa12/projects/abcPlayer/</a></p>
+<p><a href="http://www.mit.edu/~6.005/fa12/projects/abcPlayer/assignment_files/abc_subset_bnf.txt">http://www.mit.edu/~6.005/fa12/projects/abcPlayer/assignment_files/abc_subset_bnf.txt</a></p>
+<p><a href="http://abcnotation.com/">http://abcnotation.com/</a></p>
+<h1>Accordeon</h1>
+<p><a href="https://m.youtube.com/watch?v=xNaskUU5los#">https://m.youtube.com/watch?v=xNaskUU5los#</a></p>
+<p>Tam Lin</p>
+<p><a href="https://thesession.org/tunes/248">https://thesession.org/tunes/248</a></p>
+<p>Session Book</p>
+<p><a href="https://thesession.org/members/105978/tunebook">https://thesession.org/members/105978/tunebook</a></p>
+<h2>Logiciels</h2>
+<p><a href="http://abcnotation.com/software">http://abcnotation.com/software</a></p>
+<p><a href="https://www.nilsliberg.se/ksp/easyabc/">EasyABC</a></p>
+<h3>abc2xml</h3>
+<p><a href="https://wim.vree.org/svgParse/abc2xml.html">abc2xml</a></p>
+<p><a href="https://wim.vree.org/svgParse/abc2xml.py-218.zip">https://wim.vree.org/svgParse/abc2xml.py-218.zip</a></p>
+<h3>pyabc</h3>
+<p><a href="https://github.com/campagnola/pyabc">https://github.com/campagnola/pyabc</a></p>
+<h3>abcm2ps</h3>
+<p><a href="https://github.com/leesavide/abcm2ps">https://github.com/leesavide/abcm2ps</a></p>
+<h3>abc2midi</h3>
+<h1>Rakefile</h1>
+<div class="highlight"><pre><span></span><code><span class="c1"># Rakefile</span>
+<span class="nb">require</span> <span class="s1">&#39;rake&#39;</span>
+<span class="nb">require</span> <span class="s1">&#39;rake/clean&#39;</span>
+
+<span class="no">ABC_FILES</span> <span class="o">=</span> <span class="no">Rake</span><span class="o">::</span><span class="no">FileList</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;**/*.abc&quot;</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">fl</span><span class="o">|</span>
+  <span class="n">fl</span><span class="o">.</span><span class="n">exclude</span><span class="p">(</span><span class="s2">&quot;~*&quot;</span><span class="p">)</span>
+  <span class="n">fl</span><span class="o">.</span><span class="n">exclude</span><span class="p">(</span><span class="s1">&#39;balk1.abc&#39;</span><span class="p">)</span>
+  <span class="n">fl</span><span class="o">.</span><span class="n">exclude</span> <span class="k">do</span> <span class="o">|</span><span class="n">f</span><span class="o">|</span>
+    <span class="sb">`git ls-files </span><span class="si">#{</span><span class="n">f</span><span class="si">}</span><span class="sb">`</span><span class="o">.</span><span class="n">empty?</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">task</span> <span class="ss">:default</span> <span class="o">=&gt;</span> <span class="ss">:list_abc</span>
+
+<span class="n">task</span> <span class="ss">:all</span> <span class="o">=&gt;</span> <span class="o">[</span><span class="ss">:midi</span><span class="p">,</span> <span class="ss">:ps</span><span class="p">,</span> <span class="ss">:svg</span><span class="p">,</span> <span class="ss">:html</span><span class="o">]</span>
+
+<span class="n">task</span> <span class="ss">:list_abc</span> <span class="k">do</span>
+  <span class="c1"># sh &quot;ls *.abc&quot;</span>
+  <span class="c1"># files = Rake::FileList[&#39;*.abc&#39;]</span>
+  <span class="nb">puts</span> <span class="no">ABC_FILES</span>
+  <span class="nb">puts</span> <span class="no">ABC_FILES</span><span class="o">.</span><span class="n">ext</span><span class="p">(</span><span class="s1">&#39;.ps&#39;</span><span class="p">)</span>
+<span class="k">end</span>
+
+<span class="n">task</span> <span class="ss">:test</span> <span class="k">do</span>
+  <span class="nb">puts</span> 
+<span class="k">end</span>
+
+<span class="n">rule</span> <span class="s2">&quot;.ps&quot;</span> <span class="o">=&gt;</span> <span class="s2">&quot;.abc&quot;</span> <span class="k">do</span> <span class="o">|</span><span class="n">t</span><span class="o">|</span>
+  <span class="nb">puts</span> <span class="s2">&quot;abcm2ps -O </span><span class="si">#{</span><span class="n">t</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> </span><span class="si">#{</span><span class="n">t</span><span class="o">.</span><span class="n">source</span><span class="si">}</span><span class="s2">&quot;</span>
+  <span class="n">sh</span> <span class="s2">&quot;abcm2ps -O </span><span class="si">#{</span><span class="n">t</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> </span><span class="si">#{</span><span class="n">t</span><span class="o">.</span><span class="n">source</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="k">end</span>
+
+<span class="n">rule</span> <span class="s2">&quot;.svg&quot;</span> <span class="o">=&gt;</span> <span class="s2">&quot;.abc&quot;</span> <span class="k">do</span> <span class="o">|</span><span class="n">t</span><span class="o">|</span>
+  <span class="nb">puts</span> <span class="s2">&quot;abcm2ps -g -O </span><span class="si">#{</span><span class="n">t</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> </span><span class="si">#{</span><span class="n">t</span><span class="o">.</span><span class="n">source</span><span class="si">}</span><span class="s2">&quot;</span>
+  <span class="n">sh</span> <span class="s2">&quot;abcm2ps -g -O </span><span class="si">#{</span><span class="n">t</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> </span><span class="si">#{</span><span class="n">t</span><span class="o">.</span><span class="n">source</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="k">end</span>
+
+<span class="n">rule</span> <span class="s2">&quot;.html&quot;</span> <span class="o">=&gt;</span> <span class="s2">&quot;.abc&quot;</span> <span class="k">do</span> <span class="o">|</span><span class="n">t</span><span class="o">|</span>
+  <span class="nb">puts</span> <span class="s2">&quot;abcm2ps -X -O </span><span class="si">#{</span><span class="n">t</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> </span><span class="si">#{</span><span class="n">t</span><span class="o">.</span><span class="n">source</span><span class="si">}</span><span class="s2">&quot;</span>
+  <span class="n">sh</span> <span class="s2">&quot;abcm2ps -X -O </span><span class="si">#{</span><span class="n">t</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> </span><span class="si">#{</span><span class="n">t</span><span class="o">.</span><span class="n">source</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="k">end</span>
+
+<span class="n">rule</span> <span class="s2">&quot;.mid&quot;</span> <span class="o">=&gt;</span> <span class="s2">&quot;.abc&quot;</span> <span class="k">do</span> <span class="o">|</span><span class="n">t</span><span class="o">|</span>
+  <span class="nb">puts</span> <span class="s2">&quot;abc2midi -o </span><span class="si">#{</span><span class="n">t</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> </span><span class="si">#{</span><span class="n">t</span><span class="o">.</span><span class="n">source</span><span class="si">}</span><span class="s2">&quot;</span>
+  <span class="n">sh</span> <span class="s2">&quot;abc2midi </span><span class="si">#{</span><span class="n">t</span><span class="o">.</span><span class="n">source</span><span class="si">}</span><span class="s2"> -o </span><span class="si">#{</span><span class="n">t</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="k">end</span>
+
+<span class="n">task</span> <span class="ss">:ps</span> <span class="o">=&gt;</span> <span class="no">ABC_FILES</span><span class="o">.</span><span class="n">ext</span><span class="p">(</span><span class="s2">&quot;.ps&quot;</span><span class="p">)</span>
+<span class="n">task</span> <span class="ss">:midi</span> <span class="o">=&gt;</span> <span class="no">ABC_FILES</span><span class="o">.</span><span class="n">ext</span><span class="p">(</span><span class="s2">&quot;.mid&quot;</span><span class="p">)</span>
+<span class="n">task</span> <span class="ss">:html</span> <span class="o">=&gt;</span> <span class="no">ABC_FILES</span><span class="o">.</span><span class="n">ext</span><span class="p">(</span><span class="s2">&quot;.html&quot;</span><span class="p">)</span>
+<span class="n">task</span> <span class="ss">:svg</span> <span class="o">=&gt;</span> <span class="no">ABC_FILES</span><span class="o">.</span><span class="n">ext</span><span class="p">(</span><span class="s2">&quot;.svg&quot;</span><span class="p">)</span>
+
+<span class="no">CLEAN</span><span class="o">.</span><span class="n">include</span><span class="p">(</span><span class="no">ABC_FILES</span><span class="o">.</span><span class="n">ext</span><span class="p">(</span><span class="s1">&#39;.ps&#39;</span><span class="p">))</span>
+<span class="no">CLEAN</span><span class="o">.</span><span class="n">include</span><span class="p">(</span><span class="no">ABC_FILES</span><span class="o">.</span><span class="n">ext</span><span class="p">(</span><span class="s1">&#39;.mid&#39;</span><span class="p">))</span>
+<span class="no">CLEAN</span><span class="o">.</span><span class="n">include</span><span class="p">(</span><span class="no">ABC_FILES</span><span class="o">.</span><span class="n">ext</span><span class="p">(</span><span class="s1">&#39;.svg&#39;</span><span class="p">))</span>
+<span class="no">CLEAN</span><span class="o">.</span><span class="n">include</span><span class="p">(</span><span class="no">ABC_FILES</span><span class="o">.</span><span class="n">ext</span><span class="p">(</span><span class="s1">&#39;.html&#39;</span><span class="p">))</span>
+</code></pre></div>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

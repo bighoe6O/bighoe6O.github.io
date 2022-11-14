@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>Jekyll: Publish to site</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <meta name="description" content="https://www.inmotionhosting.com/support/website/jekyll/how-to-publish-a-jekyll-site-with-git hooks/post-receive 1 2#!/bin/sh git..." />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">MyBlog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/archerie.html">Archerie</a></li>
+                    <li class="active"><a href="/category/archive.html">Archive</a></li>
+                    <li><a href="/category/culture.html">Culture</a></li>
+                    <li><a href="/category/developpement.html">Développement</a></li>
+                    <li><a href="/category/divers.html">Divers</a></li>
+                    <li><a href="/category/graphisme.html">Graphisme</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li><a href="/category/musique.html">Musique</a></li>
+                    <li><a href="/category/projets.html">Projets</a></li>
+                    <li><a href="/category/reprap.html">RepRap</a></li>
+                    <li><a href="/category/securite.html">Sécurité</a></li>
+                    <li><a href="/category/systeme.html">Système</a></li>
+                    <li><a href="/category/tech.html">Tech</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/jekyll-publish-to-site.html" rel="bookmark"
+           title="Permalink to Jekyll: Publish to site">Jekyll: Publish to site</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-09-20T14:33:42+02:00">
+                Published: Thu 20 September 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/archive.html">Archive</a>.</p>
+<p>tags: <a href="/tag/jekyll.html">Jekyll</a> <a href="/tag/git.html">Git</a> </p>
+</footer><!-- /.post-info -->      <p><a href="https://www.inmotionhosting.com/support/website/jekyll/how-to-publish-a-jekyll-site-with-git">https://www.inmotionhosting.com/support/website/jekyll/how-to-publish-a-jekyll-site-with-git</a></p>
+<p>hooks/post-receive</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="ch">#!/bin/sh</span>
+git --work-tree<span class="o">=</span>/e/repo/myblog-site --git-dir<span class="o">=</span>/e/repo/myblog.git checkout -f
+</code></pre></div></td></tr></table></div>
+
+<h2>Installation de gitolite</h2>
+<p><a href="http://gitolite.com/gitolite/">http://gitolite.com/gitolite/</a></p>
+<h3>steps to install</h3>
+<p>First, prepare the ssh key:</p>
+<ul>
+<li>login to "git" on the server</li>
+<li>make sure ~/.ssh/authorized_keys is empty or non-existent</li>
+<li>make sure your ssh public key from your workstation has been copied as $HOME/YourName.pub</li>
+</ul>
+<p>Next, install gitolite by running these commands:</p>
+<div class="highlight"><pre><span></span><code>git clone https://github.com/sitaramc/gitolite
+mkdir -p $HOME/bin
+gitolite/install -to $HOME/bin
+</code></pre></div>
+
+<p>Finally, setup gitolite with yourself as the administrator:</p>
+<div class="highlight"><pre><span></span><code>gitolite setup -pk YourName.pub
+</code></pre></div>
+
+<p>Création d'un dépôt</p>
+<div class="highlight"><pre><span></span><code>cd repositories/
+mkdir myblog.git
+cd myblog.git
+git init --bare
+</code></pre></div>
+
+<p>Clonage du dépôt principal</p>
+<div class="highlight"><pre><span></span><code><span class="n">git</span><span class="w"> </span><span class="n">clone</span><span class="w"> </span><span class="n">gittest</span><span class="nv">@duloup</span><span class="p">.</span><span class="nl">org</span><span class="p">:</span><span class="n">myblog</span><span class="w"></span>
+<span class="n">cd</span><span class="w"> </span><span class="n">myblog</span><span class="w"></span>
+</code></pre></div>
+
+<p>Push dans le nouveau dépôt</p>
+<div class="highlight"><pre><span></span><code>git push ~/repositories/myblog.git
+</code></pre></div>
+
+<p>Fichier /home/git/repostitories/myblog.git/hooks/post-receive</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="ch">#!/bin/sh</span>
+<span class="nb">umask</span> <span class="m">002</span>
+git --work-tree<span class="o">=</span>/home/git/myblog --git-dir<span class="o">=</span>/home/git/repositories/myblog.git checkout -f
+</code></pre></div></td></tr></table></div>
+
+<p>Rendre le fichier exécutable</p>
+<div class="highlight"><pre><span></span><code>chmod +x /home/git/repostitories/myblog.git/hooks/post-receive
+</code></pre></div>
+
+<p>Editer la configuration (depuis le client)</p>
+<div class="highlight"><pre><span></span><code><span class="n">git</span><span class="w"> </span><span class="n">clone</span><span class="w"> </span><span class="n">git</span><span class="nv">@pi0</span><span class="err">:</span><span class="n">gitolite</span><span class="o">-</span><span class="k">admin</span><span class="w"></span>
+</code></pre></div>
+
+<p>Editer le fichier conf pout ajouter le nouveau dépôt</p>
+<p>Installer Ruby et Jekyll</p>
+<div class="highlight"><pre><span></span><code>sudo apt-get install ruby ruby-dev
+sudo gem install jekyll
+</code></pre></div>
+
+<p>Lancer le serveur Jekyll</p>
+<div class="highlight"><pre><span></span><code><span class="nv">cd</span><span class="w"> </span><span class="nv">myblog</span><span class="w"></span>
+<span class="nv">bundle</span><span class="w"> </span><span class="k">exec</span><span class="w"> </span><span class="nv">jekyll</span><span class="w"> </span><span class="nv">serve</span><span class="w"> </span><span class="o">--</span><span class="nv">incremental</span><span class="w"></span>
+</code></pre></div>
+
+<p>Tester le service</p>
+<div class="highlight"><pre><span></span><code>http://pi0:4000/
+</code></pre></div>
+
+<p><a href="https://www.booleanworld.com/get-unix-linux-environment-windows-msys2/">https://www.booleanworld.com/get-unix-linux-environment-windows-msys2/</a></p>
+<div class="highlight"><pre><span></span><code><span class="nv">ufw</span><span class="w"> </span><span class="o">--</span><span class="nv">dry</span><span class="o">-</span><span class="nv">run</span><span class="w"> </span><span class="nv">allow</span><span class="w"> </span><span class="nv">in</span><span class="w"> </span><span class="mi">4000</span><span class="o">/</span><span class="nv">tcp</span><span class="w"></span>
+<span class="nv">ufw</span><span class="w"> </span><span class="nv">allow</span><span class="w"> </span><span class="nv">in</span><span class="w"> </span><span class="mi">4000</span><span class="o">/</span><span class="nv">tcp</span><span class="w"></span>
+
+<span class="nv">bundle</span><span class="w"> </span><span class="nv">install</span><span class="w"> </span><span class="o">--</span><span class="nv">path</span><span class="w"> </span><span class="nv">vendor</span><span class="o">/</span><span class="nv">bundle</span><span class="w"></span>
+
+<span class="nv">bundle</span><span class="w"> </span><span class="k">exec</span><span class="w"> </span><span class="nv">jekyll</span><span class="w"> </span><span class="nv">serve</span><span class="w"> </span><span class="o">-</span><span class="nv">B</span><span class="w"></span>
+</code></pre></div>
+
+<p>Lancement du serveur</p>
+<div class="highlight"><pre><span></span><code><span class="nv">cd</span><span class="w"> </span><span class="nv">public_html</span><span class="w"></span>
+<span class="nv">bundle</span><span class="w"> </span><span class="k">exec</span><span class="w"> </span><span class="nv">jekyll</span><span class="w"> </span><span class="nv">serve</span><span class="w"> </span><span class="o">--</span><span class="nv">incremental</span><span class="w"> </span><span class="o">--</span><span class="nv">force</span><span class="o">-</span><span class="nv">polling</span><span class="w"> </span><span class="o">-</span><span class="nv">B</span><span class="w"> </span><span class="o">-</span><span class="nv">H</span><span class="w"> </span><span class="mi">0</span>.<span class="mi">0</span>.<span class="mi">0</span>.<span class="mi">0</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">~/</span><span class="nv">jekyll</span>.<span class="nv">out</span><span class="w"> </span><span class="mi">2</span><span class="o">&gt;&amp;</span><span class="mi">1</span><span class="w"></span>
+</code></pre></div>
+
+<p>Passage sous apache, le serveur jekyll ne prenant pas en compte les modifications</p>
+<div class="highlight"><pre><span></span><code><span class="nv">bundle</span><span class="w"> </span><span class="k">exec</span><span class="w"> </span><span class="nv">jekyll</span><span class="w"> </span><span class="nv">build</span><span class="w"> </span><span class="o">--</span><span class="nv">incremental</span><span class="w"> </span><span class="o">--</span><span class="nv">watch</span><span class="w"></span>
+</code></pre></div>
+
+<p><a href="https://davidegan.me/hide-git-repos-on-public-sites/">https://davidegan.me/hide-git-repos-on-public-sites/</a></p>
+<h2>Problèmes de cache persistant sous apache</h2>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;IfModule</span> <span class="err">mod_expires.c</span><span class="nt">&gt;</span>
+  # Turn on the module.
+  ExpiresActive on
+  # Set the default expiry times.
+  ExpiresByType text/html &quot;modification plus 5 seconds&quot;
+  ExpiresByType text/javascript &quot;modification plus 5 seconds&quot;
+  ExpiresDefault &quot;access plus 2 days&quot;
+<span class="nt">&lt;/IfModule&gt;</span>
+</code></pre></div>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

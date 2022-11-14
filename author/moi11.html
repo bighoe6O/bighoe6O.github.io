@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>MyBlog - Moi</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">MyBlog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/archerie.html">Archerie</a></li>
+                    <li><a href="/category/archive.html">Archive</a></li>
+                    <li><a href="/category/culture.html">Culture</a></li>
+                    <li><a href="/category/developpement.html">Développement</a></li>
+                    <li><a href="/category/divers.html">Divers</a></li>
+                    <li><a href="/category/graphisme.html">Graphisme</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li><a href="/category/musique.html">Musique</a></li>
+                    <li><a href="/category/projets.html">Projets</a></li>
+                    <li><a href="/category/reprap.html">RepRap</a></li>
+                    <li><a href="/category/securite.html">Sécurité</a></li>
+                    <li><a href="/category/systeme.html">Système</a></li>
+                    <li><a href="/category/tech.html">Tech</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+                <section id="content" class="body">
+                    <ol id="posts-list" class="hfeed" start="9">
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/linux.html" rel="bookmark"
+                           title="Permalink to linux">linux</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-09-21T23:59:50+02:00">
+                Published: Fri 21 September 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/systeme.html">Système</a>.</p>
+<p>tags: <a href="/tag/shell.html">Shell</a> </p>
+</footer><!-- /.post-info -->                <p>Conversion en minuscules</p>
+<div class="highlight"><pre><span></span><code>tr &#39;[:upper:]&#39; &#39;[:lower:]&#39; &lt; input
+</code></pre></div>
+
+<p>Makefile</p>
+<p><a href="https://www.gnu.org/software/make/manual/make.html#Wildcard-Pitfall">https://www.gnu.org/software/make/manual/make.html#Wildcard-Pitfall</a></p>
+<p>Window Manager</p>
+<ul>
+<li><a href="http://fluxbox.org/">FluxBox window manager</a></li>
+<li><a href="https://stackoverflow.com/questions/13294059/preserving-color-of-text-piped-through-less-or-more">https://stackoverflow.com/questions/13294059/preserving-color-of-text-piped-through-less-or-more</a></li>
+</ul>
+<h1><a href="http://www.webupd8.org/2014/09/dual-boot-fix-time-differences-between.html">Fix time differences between Ubuntu and Windows</a></h1>
+<p>registre:</p>
+<div class="highlight"><pre><span></span><code>Windows Registry Editor Version 5.00<span class="w"></span>
+
+<span class="k">[</span><span class="nb">HKEY_LOCAL_MACHINE</span><span class="k">\SYSTEM\CurrentControlSet\Control\TimeZoneInformation]</span><span class="w"></span>
+<span class="na">&quot;RealTimeIsUniversal&quot;</span><span class="o">=-</span><span class="w"></span>
+</code></pre></div>
+
+<p>cmd …</p>
+                <a class="readmore" href="/linux.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/windows.html" rel="bookmark"
+                           title="Permalink to windows">windows</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-09-21T23:57:50+02:00">
+                Published: Fri 21 September 2018
+        </abbr>
+		<br />
+        <abbr class="modified" title="2019-07-26T13:12:34+02:00">
+                Updated: Fri 26 July 2019
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/systeme.html">Système</a>.</p>
+<p>tags: <a href="/tag/windows.html">Windows</a> </p>
+</footer><!-- /.post-info -->                <h1>X11 sous Cygwin</h1>
+<p><a href="https://x.cygwin.com/docs/man1/XWin.1.html#lbAK">https://x.cygwin.com/docs/man1/XWin.1.html#lbAK</a></p>
+<p><a href="https://x.cygwin.com/docs/ug/using-remote-session.html">https://x.cygwin.com/docs/ug/using-remote-session.html</a></p>
+<h1>Rsync</h1>
+<div class="highlight"><pre><span></span><code><span class="n">PS</span><span class="w"> </span><span class="nl">C</span><span class="p">:</span><span class="err">\</span><span class="n">Users</span><span class="err">\</span><span class="n">speyr</span><span class="err">\</span><span class="n">Documents</span><span class="err">\</span><span class="n">myblog</span><span class="err">\</span><span class="n">content</span><span class="err">\</span><span class="n">Dev</span><span class="o">&gt;</span><span class="w"> </span><span class="n">rsync</span><span class="w"> </span><span class="o">-</span><span class="n">rv</span><span class="w"> </span><span class="k">output</span><span class="w"> </span><span class="n">stephane</span><span class="nv">@cirrus</span><span class="err">:</span><span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="k">output</span><span class="w"></span>
+<span class="nl">rsync</span><span class="p">:</span><span class="w"> </span><span class="k">connection</span><span class="w"> </span><span class="n">unexpectedly</span><span class="w"> </span><span class="n">closed</span><span class="w"> </span><span class="p">(</span><span class="mi">0</span><span class="w"> </span><span class="n">bytes</span><span class="w"> </span><span class="n">received</span><span class="w"> </span><span class="n">so</span><span class="w"> </span><span class="n">far</span><span class="p">)</span><span class="w"> </span><span class="o">[</span><span class="n">Receiver</span><span class="o">]</span><span class="w"></span>
+<span class="n">rsync</span><span class="w"> </span><span class="nl">error</span><span class="p">:</span><span class="w"> </span><span class="n">error …</span></code></pre></div>
+                <a class="readmore" href="/windows.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/tech-pi.html" rel="bookmark"
+                           title="Permalink to raspberry-pi">raspberry-pi</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-09-21T20:38:33+02:00">
+                Published: Fri 21 September 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/systeme.html">Système</a>.</p>
+<p>tags: <a href="/tag/pi.html">Pi</a> <a href="/tag/minipc.html">MiniPC</a> </p>
+</footer><!-- /.post-info -->                <p><a href="https://raspberrypi.stackexchange.com/questions/61723/raspberry-pi-3-and-raspbian-jessie-how-to-run-fsck-at-boot">Forcer un fsck au boot</a></p>
+<p><a href="https://wiki.linuxaudio.org/wiki/raspberrypi">Raspberry Pi and realtime, low-latency audio</a></p>
+<p><a href="http://www.frank-durr.de/?p=203">Raspberry Pi Going Realtime with RT Preempt</a></p>
+<p><a href="https://lemariva.com/blog/2018/07/raspberry-pi-preempt-rt-patching-tutorial-for-kernel-4-14-y">#Raspberry Pi: Real Time System - Preempt-RT Patching Tutorial for Kernel 4.14.y </a></p>
+<div class="highlight"><pre><span></span><code><span class="o">~/</span><span class="n">rpi</span><span class="o">-</span><span class="n">kernel</span><span class="o">$</span><span class="w"> </span><span class="k">export</span><span class="w"> </span><span class="n">ARCH</span><span class="o">=</span><span class="n">arm</span><span class="w"></span>
+<span class="o">~/</span><span class="n">rpi</span><span class="o">-</span><span class="n">kernel</span><span class="o">$</span><span class="w"> </span><span class="k">export</span><span class="w"> </span><span class="n">CROSS_COMPILE</span><span class="o">=~/</span><span class="n">rpi</span><span class="o">-</span><span class="n">kernel</span><span class="o">/</span><span class="n">tools</span><span class="o">/</span><span class="n">arm</span><span class="o">-</span><span class="n">bcm2708</span><span class="o">/</span><span class="n">gcc</span><span class="o">-</span><span class="n">linaro</span><span class="o">-</span><span class="n">arm</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnueabihf …</span></code></pre></div>
+                <a class="readmore" href="/tech-pi.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/python-morse.html" rel="bookmark"
+                           title="Permalink to python-morse">python-morse</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-09-21T14:56:27+02:00">
+                Published: Fri 21 September 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/projets.html">Projets</a>.</p>
+<p>tags: <a href="/tag/python.html">Python</a> <a href="/tag/projets.html">Projets</a> </p>
+</footer><!-- /.post-info -->                <h2>Morse</h2>
+<p>Le source utilisé</p>
+<p><a href="https://gist.github.com/dcdeve/3dfba6566029f87b01aa3e38d6e1e26b">https://gist.github.com/dcdeve/3dfba6566029f87b01aa3e38d6e1e26b</a></p>
+<p><a href="https://stackoverflow.com/questions/43012715/morse-audio-decoding-using-python">https://stackoverflow.com/questions/43012715/morse-audio-decoding-using-python</a></p>
+<p><a href="https://code.google.com/archive/p/morse-to-text/source/default/source">https://code.google.com/archive/p/morse-to-text/source/default/source</a></p>
+<p><a href="http://www.kent-engineers.com/codespeed.htm">http://www.kent-engineers.com/codespeed.htm</a></p>
+<p><a href="https://fr.wikipedia.org/wiki/Code_Morse_international#Lettres">https://fr.wikipedia.org/wiki/Code_Morse_international#Lettres</a></p>
+<h2>Audio</h2>
+<p><a href="https://wiki.python.org/moin/Audio">https://wiki.python.org/moin/Audio</a></p>
+<p><a href="http://people.csail.mit.edu/hubert/pyaudio/#play-wave-example">http://people.csail.mit …</a></p>
+                <a class="readmore" href="/python-morse.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/emacs-variables-locales.html" rel="bookmark"
+                           title="Permalink to Emacs: Variables locales">Emacs: Variables locales</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-09-21T08:56:48+02:00">
+                Published: Fri 21 September 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/developpement.html">Développement</a>.</p>
+<p>tags: <a href="/tag/emacs.html">Emacs</a> </p>
+</footer><!-- /.post-info -->                <ul>
+<li><a href="https://emacs.stackexchange.com/questions/24907/how-to-use-dir-locals-el-with-projectile">How to use dir locals el with projectile</a></li>
+<li><a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Directory-Variables.html">Directory Variables</a></li>
+</ul>
+<div class="highlight"><pre><span></span><code>;; .dir-locals.el
+((nil
+  (easy-jekyll-basedir . &quot;e:/repo/myblog-dev/&quot;)
+))
+</code></pre></div>
+
+<h1>Régénération des tags</h1>
+<p><a href="https://stackoverflow.com/questions/2550474/is-it-possible-to-auto-regenerate-and-load-tags-table-in-emacs-rather-than-havin">https://stackoverflow.com/questions/2550474/is-it-possible-to-auto-regenerate-and-load-tags-table-in-emacs-rather-than-havin</a></p>
+<div class="highlight"><pre><span></span><code>;; .dir-locals.el
+((nil . ((tags-cmd . &quot;etags -R *.py&quot;))))
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">;; init.el</span><span class="w"></span>
+<span class="c1">;; Regénérer les tags</span><span class="w"></span>
+<span class="p">(</span><span class="nb">defvar</span><span class="w"> </span><span class="nv">tags-cmd</span><span class="w"> </span><span class="s">&quot;etags -R 2&gt;/dev/null&quot;</span><span class="p">)</span><span class="w"></span>
+
+<span class="p">(</span><span class="nb">defun</span><span class="w"> </span><span class="nv">regen-tags</span><span class="w"> </span><span class="p">()</span><span class="w"></span>
+<span class="w">  </span><span class="s">&quot;Regenerate the tags …</span></code></pre></div>
+                <a class="readmore" href="/emacs-variables-locales.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/system-explorer-menu-contextuel-bash-here.html" rel="bookmark"
+                           title="Permalink to Explorer: Menu Contextuel bash-here">Explorer: Menu Contextuel bash-here</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-09-21T06:41:36+02:00">
+                Published: Fri 21 September 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/tech.html">Tech</a>.</p>
+<p>tags: <a href="/tag/windows.html">Windows</a> </p>
+</footer><!-- /.post-info -->                <div class="highlight"><pre><span></span><code>Windows Registry Editor Version 5.00<span class="w"></span>
+
+<span class="k">[</span><span class="nb">HKEY_CLASSES_ROOT</span><span class="k">\Directory\Background\shell\Bash Here]</span><span class="w"></span>
+
+<span class="k">[</span><span class="nb">HKEY_CLASSES_ROOT</span><span class="k">\Directory\Background\shell\Bash Here\command]</span><span class="w"></span>
+<span class="na">@</span><span class="o">=</span><span class="s">&quot;C:\\tools\\msys64\\msys2_shell.cmd -where %V&quot;</span><span class="w"></span>
+</code></pre></div>
+                <a class="readmore" href="/system-explorer-menu-contextuel-bash-here.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/jekyll-publish-to-site.html" rel="bookmark"
+                           title="Permalink to Jekyll: Publish to site">Jekyll: Publish to site</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-09-20T14:33:42+02:00">
+                Published: Thu 20 September 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/archive.html">Archive</a>.</p>
+<p>tags: <a href="/tag/jekyll.html">Jekyll</a> <a href="/tag/git.html">Git</a> </p>
+</footer><!-- /.post-info -->                <p><a href="https://www.inmotionhosting.com/support/website/jekyll/how-to-publish-a-jekyll-site-with-git">https://www.inmotionhosting.com/support/website/jekyll/how-to-publish-a-jekyll-site-with-git</a></p>
+<p>hooks/post-receive</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="ch">#!/bin/sh</span>
+git --work-tree<span class="o">=</span>/e/repo/myblog-site --git-dir<span class="o">=</span>/e/repo/myblog.git checkout -f
+</code></pre></div></td></tr></table></div>
+
+<h2>Installation de gitolite</h2>
+<p><a href="http://gitolite.com/gitolite/">http://gitolite.com/gitolite/</a></p>
+<h3>steps to install</h3>
+<p>First, prepare the ssh key:</p>
+<ul>
+<li>login to "git" on the server</li>
+<li>make sure ~/.ssh …</li></ul>
+                <a class="readmore" href="/jekyll-publish-to-site.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/reaper.html" rel="bookmark"
+                           title="Permalink to Reaper">Reaper</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-09-20T08:15:48+02:00">
+                Published: Thu 20 September 2018
+        </abbr>
+		<br />
+        <abbr class="modified" title="2019-08-14T08:38:59+02:00">
+                Updated: Wed 14 August 2019
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/musique.html">Musique</a>.</p>
+<p>tags: <a href="/tag/daw.html">DAW</a> <a href="/tag/sequenceur.html">Séquenceur</a> <a href="/tag/osc.html">OSC</a> </p>
+</footer><!-- /.post-info -->                <ul>
+<li><a href="https://www.youtube.com/watch?v=RJD7aNzSmO8">Drum Machine</a></li>
+<li><a href="https://www.youtube.com/watch?v=RJD7aNzSmO8">Faire une drum machine sous reaper</a></li>
+</ul>
+<h1>OSC</h1>
+<ul>
+<li><a href="https://forum.cockos.com/forumdisplay.php?f=47">Forum</a></li>
+<li><a href="https://osc4py3.readthedocs.io/en/latest/index.html">osc4py3</a></li>
+</ul>
+                <a class="readmore" href="/reaper.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/compilation-dardour-sous-windows.html" rel="bookmark"
+                           title="Permalink to Compilation d'ardour sous Windows">Compilation d'ardour sous Windows</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-09-19T21:19:55+02:00">
+                Published: Wed 19 September 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/musique.html">Musique</a>.</p>
+<p>tags: <a href="/tag/daw.html">DAW</a> </p>
+</footer><!-- /.post-info -->                <p>https://guysherman.com/2015/08/16/building-ardour-on-windows-with-msys2/</p>
+                <a class="readmore" href="/compilation-dardour-sous-windows.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/compilation-de-linuxsampler-sur-asus-1000h.html" rel="bookmark"
+                           title="Permalink to Compilation de Linuxsampler sur Asus 1000H">Compilation de Linuxsampler sur Asus 1000H</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-09-19T19:43:12+02:00">
+                Published: Wed 19 September 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/tech.html">Tech</a>.</p>
+<p>tags: <a href="/tag/daw.html">DAW</a> <a href="/tag/linux.html">Linux</a> </p>
+</footer><!-- /.post-info -->                <p><a href="https://linuxsampler.org/debian.html">https://linuxsampler.org/debian.html</a></p>
+<p><a href="http://linuxsampler.org/downloads.html">http://linuxsampler.org/downloads.html</a></p>
+<p><a href="https://raw.githubusercontent.com/pixelb/scripts/master/scripts/gcccpuopt">https://raw.githubusercontent.com/pixelb/scripts/master/scripts/gcccpuopt</a></p>
+<div class="highlight"><pre><span></span><code>-march=atom -mfpmath=sse
+</code></pre></div>
+
+<p>https://wiki.gentoo.org/wiki/Asus_Eee_PC_1000H</p>
+<div class="highlight"><pre><span></span><code>CHOST=&quot;i686-pc-linux-gnu&quot;
+CFLAGS=&quot;-march=atom -O2 -fomit-frame-pointer -pipe -mfpmath=sse&quot;
+CXXFLAGS=&quot;<span class="cp">${</span><span class="n">CFLAGS</span><span class="cp">}</span>&quot;
+
+CXXFLAGS=&quot;-march=atom -O2 -fomit-frame-pointer -pipe -mfpmath=sse&quot; ./configure …</code></pre></div>
+                <a class="readmore" href="/compilation-de-linuxsampler-sur-asus-1000h.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+                </ol><!-- /#posts-list -->
+<p class="paginator">
+        <a href="/author/moi.html">&#8647;</a>
+        <a href="/author/moi10.html">&laquo;</a>
+    Page 11 / 15
+        <a href="/author/moi12.html">&raquo;</a>
+        <a href="/author/moi15.html">&#8649;</a>
+</p>
+                </section><!-- /#content -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

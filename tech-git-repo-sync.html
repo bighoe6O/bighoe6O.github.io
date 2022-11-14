@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>Synchronisation des depots Git</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <meta name="description" content="#!/bin/bash # ~git/bin/git-push-pi0.sh pushd ~/repositories #prefix=scans #prefix="mysensors-" prefixes="mao- mysensors- pio- arduino roaming..." />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">MyBlog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/archerie.html">Archerie</a></li>
+                    <li><a href="/category/archive.html">Archive</a></li>
+                    <li><a href="/category/culture.html">Culture</a></li>
+                    <li class="active"><a href="/category/developpement.html">Développement</a></li>
+                    <li><a href="/category/divers.html">Divers</a></li>
+                    <li><a href="/category/graphisme.html">Graphisme</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li><a href="/category/musique.html">Musique</a></li>
+                    <li><a href="/category/projets.html">Projets</a></li>
+                    <li><a href="/category/reprap.html">RepRap</a></li>
+                    <li><a href="/category/securite.html">Sécurité</a></li>
+                    <li><a href="/category/systeme.html">Système</a></li>
+                    <li><a href="/category/tech.html">Tech</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/tech-git-repo-sync.html" rel="bookmark"
+           title="Permalink to Synchronisation des depots Git">Synchronisation des depots Git</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-10-05T23:05:20+02:00">
+                Published: Fri 05 October 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/developpement.html">Développement</a>.</p>
+<p>tags: <a href="/tag/git.html">Git</a> </p>
+</footer><!-- /.post-info -->      <div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
+<span class="c1"># ~git/bin/git-push-pi0.sh</span>
+
+<span class="nb">pushd</span> ~/repositories
+<span class="c1">#prefix=scans</span>
+<span class="c1">#prefix=&quot;mysensors-&quot;</span>
+<span class="nv">prefixes</span><span class="o">=</span><span class="s2">&quot;mao- mysensors- pio- arduino roaming myblog outils scripts musique&quot;</span>
+<span class="k">for</span> p <span class="k">in</span> <span class="si">${</span><span class="nv">prefixes</span><span class="si">}</span><span class="p">;</span> <span class="k">do</span>
+    <span class="nv">prefix</span><span class="o">=</span><span class="nv">$p</span>
+    <span class="k">for</span> f <span class="k">in</span> <span class="si">${</span><span class="nv">prefix</span><span class="si">}</span>*<span class="p">;</span> <span class="k">do</span>
+        <span class="k">if</span> <span class="o">[</span> -d <span class="s2">&quot;</span><span class="nv">$f</span><span class="s2">&quot;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+            <span class="nb">pushd</span> <span class="nv">$f</span><span class="p">;</span>
+            <span class="nb">echo</span>  --- <span class="nv">$f</span> ---<span class="p">;</span>
+            <span class="nb">echo</span> git push --mirror git@pi0:<span class="nv">$f</span>
+            git push --mirror git@pi0:<span class="nv">$f</span>
+            <span class="nb">echo</span> <span class="s2">&quot;ret: </span><span class="nv">$?</span><span class="s2">&quot;</span>
+            <span class="nb">popd</span>
+        <span class="k">fi</span>
+    <span class="k">done</span>
+<span class="k">done</span>
+<span class="nb">popd</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Rakefile</span>
+
+<span class="n">task</span> <span class="ss">:mirror</span> <span class="k">do</span>
+  <span class="no">Dir</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="s2">&quot;/home/git/repositories&quot;</span><span class="p">)</span>
+  <span class="n">mydirs</span> <span class="o">=</span> <span class="no">Rake</span><span class="o">::</span><span class="no">FileList</span><span class="o">[</span><span class="s1">&#39;*.git&#39;</span><span class="o">]</span>
+  <span class="n">mydirs</span><span class="o">.</span><span class="n">exclude</span><span class="p">(</span><span class="s1">&#39;gitolite-admin.git&#39;</span><span class="p">)</span>
+  <span class="n">mydirs</span><span class="o">.</span><span class="n">exclude</span><span class="p">(</span><span class="s1">&#39;serveurs.git&#39;</span><span class="p">)</span>
+
+  <span class="n">mydirs</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">mydir</span><span class="o">|</span>
+    <span class="no">Dir</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">mydir</span><span class="p">)</span> <span class="k">do</span>
+      <span class="n">repo_name</span> <span class="o">=</span> <span class="n">mydir</span><span class="o">.</span><span class="n">gsub</span><span class="p">(</span><span class="s1">&#39;.git&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+      <span class="n">sh</span> <span class="s2">&quot;git push --mirror git@pi0:</span><span class="si">#{</span><span class="n">repo_name</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># git-mirror.py</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">subprocess</span>
+
+<span class="n">host</span><span class="o">=</span><span class="s1">&#39;stephane-lenovo.local&#39;</span>
+
+<span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="s1">&#39;~/repositories&#39;</span><span class="p">)</span>
+<span class="n">dirs</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">()</span>
+<span class="k">for</span> <span class="nb">dir</span> <span class="ow">in</span> <span class="n">dirs</span><span class="p">:</span>
+    <span class="n">subprocess</span><span class="o">.</span><span class="n">run</span><span class="p">([</span><span class="s1">&#39;git&#39;</span><span class="p">,</span> <span class="s1">&#39;-C&#39;</span><span class="p">,</span> <span class="n">mydir</span><span class="p">,</span> <span class="s1">&#39;push&#39;</span><span class="p">,</span> <span class="s1">&#39;--mirror&#39;</span><span class="p">,</span> <span class="s1">&#39;git@</span><span class="si">{}</span><span class="s1">:</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">host</span><span class="p">,</span> <span class="n">mydir</span><span class="p">)],</span> <span class="n">capture_output</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+
+<span class="n">Script</span> <span class="n">d</span><span class="s1">&#39;ajout des répertoires manquants à la configuration</span>
+<span class="err">```</span><span class="n">python</span>
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;liste-todo.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">myrights</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;repo </span><span class="si">{prjname}</span><span class="s1"></span>
+<span class="s1">    RW+ = @priv</span>
+<span class="s1">&#39;&#39;&#39;</span>
+
+    <span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+    <span class="n">lines</span> <span class="o">=</span> <span class="p">[</span><span class="n">l</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;.git&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">]</span>
+    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">myrights</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">prjname</span><span class="o">=</span><span class="n">line</span><span class="p">))</span>
+</code></pre></div>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

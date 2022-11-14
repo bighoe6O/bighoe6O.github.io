@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>MyBlog - Linux</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">MyBlog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/archerie.html">Archerie</a></li>
+                    <li><a href="/category/archive.html">Archive</a></li>
+                    <li><a href="/category/culture.html">Culture</a></li>
+                    <li><a href="/category/developpement.html">Développement</a></li>
+                    <li><a href="/category/divers.html">Divers</a></li>
+                    <li><a href="/category/graphisme.html">Graphisme</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li><a href="/category/musique.html">Musique</a></li>
+                    <li><a href="/category/projets.html">Projets</a></li>
+                    <li><a href="/category/reprap.html">RepRap</a></li>
+                    <li><a href="/category/securite.html">Sécurité</a></li>
+                    <li><a href="/category/systeme.html">Système</a></li>
+                    <li><a href="/category/tech.html">Tech</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="/tech-less.html">Pygmentize Less</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2021-07-05T16:18:00+02:00">
+                Published: Mon 05 July 2021
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/tech.html">Tech</a>.</p>
+<p>tags: <a href="/tag/shell.html">Shell</a> <a href="/tag/linux.html">Linux</a> </p>
+</footer><!-- /.post-info --><p><a href="https://gilesorr.com/blog/pygmentize-less-update.html">https://gilesorr.com/blog/pygmentize-less-update.html</a></p>
+<div class="highlight"><pre><span></span><code><span class="c1"># ~/.zshrc</span><span class="w"></span>
+<span class="k">export</span><span class="w"> </span><span class="n">LESSOPEN</span><span class="o">=</span><span class="s2">&quot;| pygmentize -g -f terminal </span><span class="si">%s</span><span class="s2">&quot;</span><span class="w"></span>
+</code></pre></div>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/system-ubuntu-pulseaudio.html" rel="bookmark"
+                           title="Permalink to Pulse Audio">Pulse Audio</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2019-06-06T10:15:00+02:00">
+                Published: Thu 06 June 2019
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/systeme.html">Système</a>.</p>
+<p>tags: <a href="/tag/linux.html">Linux</a> </p>
+</footer><!-- /.post-info -->                <p>Problème: Dans la console de mixage apparait seulement la sortie HDMI</p>
+<p><a href="https://askubuntu.com/questions/69820/how-do-i-set-a-pulseaudio-card-profile-persistently-across-reboots">https://askubuntu.com/questions/69820/how-do-i-set-a-pulseaudio-card-profile-persistently-across-reboots</a></p>
+<h1>Sélectionner le profil de la carte audio</h1>
+<div class="highlight"><pre><span></span><code>pacmd set-card-profile 0 output:analog-stereo
+</code></pre></div>
+
+<p>Ajoût de la commande dans /etc/pulse/default.pa</p>
+                <a class="readmore" href="/system-ubuntu-pulseaudio.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/raspberry-pi-carte-son-cirrus-logic.html" rel="bookmark"
+                           title="Permalink to Raspberry PI: carte son Cirrus Logic">Raspberry PI: carte son Cirrus Logic</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-12-02T12:23:22+01:00">
+                Published: Sun 02 December 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/musique.html">Musique</a>.</p>
+<p>tags: <a href="/tag/pi.html">Pi</a> <a href="/tag/daw.html">DAW</a> <a href="/tag/linux.html">Linux</a> </p>
+</footer><!-- /.post-info -->                <p><a href="http://www.richardmudhar.com/blog/2014/10/testing-the-wolfson-audio-board-and-raspberry-pi/">http://www.richardmudhar.com/blog/2014/10/testing-the-wolfson-audio-board-and-raspberry-pi/</a></p>
+<h1>Initialisation de la sortie audio au boot</h1>
+                <a class="readmore" href="/raspberry-pi-carte-son-cirrus-logic.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/olinuxino-installation-dune-archlinux.html" rel="bookmark"
+                           title="Permalink to Olinuxino: Installation d'une ArchLinux">Olinuxino: Installation d'une ArchLinux</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-11-10T00:02:32+01:00">
+                Published: Sat 10 November 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/tech.html">Tech</a>.</p>
+<p>tags: <a href="/tag/olinuxino.html">Olinuxino</a> <a href="/tag/linux.html">Linux</a> <a href="/tag/minipc.html">MiniPC</a> </p>
+</footer><!-- /.post-info -->                <p><a href="https://archlinuxarm.org/platforms/armv5/olinuxino">https://archlinuxarm.org/platforms/armv5/olinuxino</a></p>
+<p><a href="https://aur.archlinux.org/packages/uboot-a13-olinuxino/">https://aur.archlinux.org/packages/uboot-a13-olinuxino/</a></p>
+<p><a href="https://elementztechblog.wordpress.com/2014/05/11/installing-xfce-desktop-in-archlinux-for-olinuxino/">https://elementztechblog.wordpress.com/2014/05/11/installing-xfce-desktop-in-archlinux-for-olinuxino/</a></p>
+<p><a href="https://archlinuxarm.org/platforms/armv7/allwinner/a20-olinuxino-micro">https://archlinuxarm.org/platforms/armv7/allwinner/a20-olinuxino-micro</a></p>
+<h1>Installation de ArchLinux sur une carte SD</h1>
+<p>Pas besoin de compiler, tout est disponible</p>
+<div class="highlight"><pre><span></span><code><span class="nv">sudo</span><span class="w"> </span><span class="nv">dd</span><span class="w"> </span><span class="k">if</span><span class="o">=/</span><span class="nv">dev</span><span class="o">/</span><span class="nv">zero</span><span class="w"> </span><span class="nv">of</span><span class="o">=/</span><span class="nv">dev</span><span class="o">/</span><span class="nv">mmcblk0</span><span class="w"> </span><span class="nv">bs …</span></code></pre></div>
+                <a class="readmore" href="/olinuxino-installation-dune-archlinux.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/samba.html" rel="bookmark"
+                           title="Permalink to samba">samba</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-10-20T21:07:23+02:00">
+                Published: Sat 20 October 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/systeme.html">Système</a>.</p>
+<p>tags: <a href="/tag/windows.html">Windows</a> <a href="/tag/linux.html">Linux</a> </p>
+</footer><!-- /.post-info -->                <p><a href="Https://askubuntu.com/questions/754572/cannot-restart-samba-samba-service-is-masked">Https://askubuntu.com/questions/754572/cannot-restart-samba-samba-service-is-masked</a></p>
+<p><a href="https://wiki.samba.org/index.php/Mounting_samba_shares_from_a_unix_client#Common_mount.cifs_options">https://wiki.samba.org/index.php/Mounting_samba_shares_from_a_unix_client#Common_mount.cifs_options</a></p>
+                <a class="readmore" href="/samba.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/ubuntu.html" rel="bookmark"
+                           title="Permalink to Ubuntu">Ubuntu</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-10-02T20:11:09+02:00">
+                Published: Tue 02 October 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/systeme.html">Système</a>.</p>
+<p>tags: <a href="/tag/linux.html">Linux</a> </p>
+</footer><!-- /.post-info -->                <p>Pulseaudio</p>
+<p><a href="https://askubuntu.com/questions/14077/how-can-i-change-the-default-audio-device-from-command-line">https://askubuntu.com/questions/14077/how-can-i-change-the-default-audio-device-from-command-line</a></p>
+                <a class="readmore" href="/ubuntu.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/compilation-de-linuxsampler-sur-asus-1000h.html" rel="bookmark"
+                           title="Permalink to Compilation de Linuxsampler sur Asus 1000H">Compilation de Linuxsampler sur Asus 1000H</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-09-19T19:43:12+02:00">
+                Published: Wed 19 September 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/tech.html">Tech</a>.</p>
+<p>tags: <a href="/tag/daw.html">DAW</a> <a href="/tag/linux.html">Linux</a> </p>
+</footer><!-- /.post-info -->                <p><a href="https://linuxsampler.org/debian.html">https://linuxsampler.org/debian.html</a></p>
+<p><a href="http://linuxsampler.org/downloads.html">http://linuxsampler.org/downloads.html</a></p>
+<p><a href="https://raw.githubusercontent.com/pixelb/scripts/master/scripts/gcccpuopt">https://raw.githubusercontent.com/pixelb/scripts/master/scripts/gcccpuopt</a></p>
+<div class="highlight"><pre><span></span><code>-march=atom -mfpmath=sse
+</code></pre></div>
+
+<p>https://wiki.gentoo.org/wiki/Asus_Eee_PC_1000H</p>
+<div class="highlight"><pre><span></span><code>CHOST=&quot;i686-pc-linux-gnu&quot;
+CFLAGS=&quot;-march=atom -O2 -fomit-frame-pointer -pipe -mfpmath=sse&quot;
+CXXFLAGS=&quot;<span class="cp">${</span><span class="n">CFLAGS</span><span class="cp">}</span>&quot;
+
+CXXFLAGS=&quot;-march=atom -O2 -fomit-frame-pointer -pipe -mfpmath=sse&quot; ./configure …</code></pre></div>
+                <a class="readmore" href="/compilation-de-linuxsampler-sur-asus-1000h.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/daw-sous-linux.html" rel="bookmark"
+                           title="Permalink to DAW sous Linux">DAW sous Linux</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-09-18T16:24:34+02:00">
+                Published: Tue 18 September 2018
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/musique.html">Musique</a>.</p>
+<p>tags: <a href="/tag/linux.html">Linux</a> <a href="/tag/daw.html">DAW</a> </p>
+</footer><!-- /.post-info -->                <h2>Synthétiseur midi</h2>
+<p>Timidity fonctionne mal</p>
+<p>FluidSynth semble mieux fontionner</p>
+<p>Fontes utilisées :</p>
+<ul>
+<li><a href="https://osdn.net/projects/sfnet_androidframe/downloads/soundfonts/SGM-V2.01.sf2/">https://osdn.net/projects/sfnet_androidframe/downloads/soundfonts/SGM-V2.01.sf2/</a></li>
+</ul>
+<h2>Séquenceurs</h2>
+<ul>
+<li><a href="http://ardour.org/">Ardour</a></li>
+<li><a href="http://manual.ardour.org/working-with-midi/">Manuel</a></li>
+</ul>
+<h2>Accompagnement</h2>
+<h3><a href="https://www.cs.hmc.edu/~keller/jazz/improvisor/">Impro-Visor</a></h3>
+<p>En java</p>
+<h3><a href="http://linuxband.org/">LinuxBand</a></h3>
+<p>Interface graphique à MMA</p>
+<h3><a href="https://www.mellowood.ca/mma/">MMA</a> (Musical MIDI Accompaniment)</h3>
+<h1>Wine</h1>
+<p><a href="https://www.reddit.com/r/FL_Studio/comments/4ucx0i/tutorial_how_to_install_fl_studio_on_linux/">https://www.reddit.com/r/FL_Studio/comments/4ucx0i/tutorial_how_to_install_fl_studio_on_linux/</a></p>
+<h2>Kontakt5</h2>
+<p>Native Access …</p>
+                <a class="readmore" href="/daw-sous-linux.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+                </ol><!-- /#posts-list -->
+                </section><!-- /#content -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

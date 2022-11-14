@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>windows</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <meta name="description" content="X11 sous Cygwin https://x.cygwin.com/docs/man1/XWin.1.html#lbAK https://x.cygwin.com/docs/ug/using-remote-session.html Rsync PS..." />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">MyBlog</a></h1>
+                <nav><ul>
+                    <li><a href="/category/archerie.html">Archerie</a></li>
+                    <li><a href="/category/archive.html">Archive</a></li>
+                    <li><a href="/category/culture.html">Culture</a></li>
+                    <li><a href="/category/developpement.html">Développement</a></li>
+                    <li><a href="/category/divers.html">Divers</a></li>
+                    <li><a href="/category/graphisme.html">Graphisme</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li><a href="/category/musique.html">Musique</a></li>
+                    <li><a href="/category/projets.html">Projets</a></li>
+                    <li><a href="/category/reprap.html">RepRap</a></li>
+                    <li><a href="/category/securite.html">Sécurité</a></li>
+                    <li class="active"><a href="/category/systeme.html">Système</a></li>
+                    <li><a href="/category/tech.html">Tech</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/windows.html" rel="bookmark"
+           title="Permalink to windows">windows</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-09-21T23:57:50+02:00">
+                Published: Fri 21 September 2018
+        </abbr>
+		<br />
+        <abbr class="modified" title="2019-07-26T13:12:34+02:00">
+                Updated: Fri 26 July 2019
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/moi.html">Moi</a>
+        </address>
+<p>In <a href="/category/systeme.html">Système</a>.</p>
+<p>tags: <a href="/tag/windows.html">Windows</a> </p>
+</footer><!-- /.post-info -->      <h1>X11 sous Cygwin</h1>
+<p><a href="https://x.cygwin.com/docs/man1/XWin.1.html#lbAK">https://x.cygwin.com/docs/man1/XWin.1.html#lbAK</a></p>
+<p><a href="https://x.cygwin.com/docs/ug/using-remote-session.html">https://x.cygwin.com/docs/ug/using-remote-session.html</a></p>
+<h1>Rsync</h1>
+<div class="highlight"><pre><span></span><code><span class="n">PS</span><span class="w"> </span><span class="nl">C</span><span class="p">:</span><span class="err">\</span><span class="n">Users</span><span class="err">\</span><span class="n">speyr</span><span class="err">\</span><span class="n">Documents</span><span class="err">\</span><span class="n">myblog</span><span class="err">\</span><span class="n">content</span><span class="err">\</span><span class="n">Dev</span><span class="o">&gt;</span><span class="w"> </span><span class="n">rsync</span><span class="w"> </span><span class="o">-</span><span class="n">rv</span><span class="w"> </span><span class="k">output</span><span class="w"> </span><span class="n">stephane</span><span class="nv">@cirrus</span><span class="err">:</span><span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="k">output</span><span class="w"></span>
+<span class="nl">rsync</span><span class="p">:</span><span class="w"> </span><span class="k">connection</span><span class="w"> </span><span class="n">unexpectedly</span><span class="w"> </span><span class="n">closed</span><span class="w"> </span><span class="p">(</span><span class="mi">0</span><span class="w"> </span><span class="n">bytes</span><span class="w"> </span><span class="n">received</span><span class="w"> </span><span class="n">so</span><span class="w"> </span><span class="n">far</span><span class="p">)</span><span class="w"> </span><span class="o">[</span><span class="n">Receiver</span><span class="o">]</span><span class="w"></span>
+<span class="n">rsync</span><span class="w"> </span><span class="nl">error</span><span class="p">:</span><span class="w"> </span><span class="n">error</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">rsync</span><span class="w"> </span><span class="n">protocol</span><span class="w"> </span><span class="k">data</span><span class="w"> </span><span class="n">stream</span><span class="w"> </span><span class="p">(</span><span class="n">code</span><span class="w"> </span><span class="mi">12</span><span class="p">)</span><span class="w"> </span><span class="k">at</span><span class="w"> </span><span class="n">io</span><span class="p">.</span><span class="n">c</span><span class="p">(</span><span class="mi">235</span><span class="p">)</span><span class="w"> </span><span class="o">[</span><span class="n">Receiver=3.1.2</span><span class="o">]</span><span class="w"></span>
+<span class="nl">rsync</span><span class="p">:</span><span class="w"> </span><span class="n">safe_read</span><span class="w"> </span><span class="n">failed</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="k">read</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="n">bytes</span><span class="w"> </span><span class="o">[</span><span class="n">sender</span><span class="o">]</span><span class="err">:</span><span class="w"> </span><span class="k">Connection</span><span class="w"> </span><span class="n">reset</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">peer</span><span class="w"> </span><span class="p">(</span><span class="mi">104</span><span class="p">)</span><span class="w"></span>
+<span class="n">rsync</span><span class="w"> </span><span class="nl">error</span><span class="p">:</span><span class="w"> </span><span class="n">error</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">rsync</span><span class="w"> </span><span class="n">protocol</span><span class="w"> </span><span class="k">data</span><span class="w"> </span><span class="n">stream</span><span class="w"> </span><span class="p">(</span><span class="n">code</span><span class="w"> </span><span class="mi">12</span><span class="p">)</span><span class="w"> </span><span class="k">at</span><span class="w"> </span><span class="n">io</span><span class="p">.</span><span class="n">c</span><span class="p">(</span><span class="mi">276</span><span class="p">)</span><span class="w"> </span><span class="o">[</span><span class="n">sender=3.1.3</span><span class="o">]</span><span class="w"></span>
+</code></pre></div>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

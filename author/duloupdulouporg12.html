@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Mon Blog | Articles by duloup@duloup.org</title>
+    <link rel="shortcut icon" type="image/png" href="http://dev.duloup.org/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="http://dev.duloup.org/favicon.ico">
+    <link rel="stylesheet" href="http://dev.duloup.org/theme/css/main.css" type="text/css" />
+    <link rel="stylesheet" href="http://dev.duloup.org/theme/css/pygments.css" type="text/css" />
+    <meta name="generator" content="Pelican" />
+    <meta name="description" content="" />
+    <meta name="author" content="duloup@duloup.org" />
+    <link rel="stylesheet" href="http://dev.duloup.org/theme/css/stork.css">
+    <link rel="stylesheet" media="screen and (prefers-color-scheme: dark)" href="http://dev.duloup.org/theme/css/stork-dark.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+
+                <li class="ephemeral selected"><a href="http://dev.duloup.org/author/duloupdulouporg12.html">duloup@duloup.org</a></li>
+                <li><a href="http://dev.duloup.org/">Home</a></li>
+                <li><a href="http://blog.duloup.org">Site</a></li>
+                <li><a href="http://dev.duloup.org/category/tech.html">Tech</a></li>
+                <li><a href="http://dev.duloup.org/category/musique.html">Musique</a></li>
+                <li><a href="http://dev.duloup.org/categories.html">Categories</a></li>
+                <li><a href="http://dev.duloup.org/tags.html">Tags</a></li>
+                <li><a href="http://dev.duloup.org/about.html">About</a></li>
+            </ul>
+        </nav>
+        <div class="header_box">
+            <h1><a href="http://dev.duloup.org/">Mon Blog</a></h1>
+        </div>
+    </header>
+    <div id="wrapper">
+        <div id="content"><div class="search-box"><div>Search: </div><input data-stork="sitesearch" /></div>
+<div data-stork="sitesearch-output"></div>
+            <h4 class="date">sept. 19, 2018</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/daw-open-source.html" rel="bookmark" title="Permanent Link to &quot;DAW Open Source&quot;">DAW Open Source</a>
+                </h2>
+
+                
+                
+
+                <p><a href="http://www.dskmusic.com/dsk-sf2-v2/">Player SFZ2</a></p>
+<p>LMMS : Séquenceur style FLStudio</p>
+<p><a href="https://www.mellowood.ca/mma/index.html">MMA  (Musical MIDI Accompaniment)</a></p>
+<p><a href="https://welltemperedstudio.wordpress.com/code/abc2mma/">abc2mma</a></p>
+<h2>Convertir des fichiers BiaB vers MMA</h2>
+<p><a href="http://www.brenzi.ch/builder.php?content=projects_biabconverter">projects_biabconverter</a></p>
+<div class="highlight"><pre><span></span><code>sudo apt-get install libswitch-perl
+</code></pre></div>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/daw-open-source.html">posted at 07:46</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/musique.html" rel="tag">Musique</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/daw.html" class="tags">DAW</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/midi.html" class="tags">Midi</a>
+                </div>
+            </article>            <h4 class="date">sept. 18, 2018</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/daw-sous-linux.html" rel="bookmark" title="Permanent Link to &quot;DAW sous Linux&quot;">DAW sous Linux</a>
+                </h2>
+
+                
+                
+
+                <h2>Synthétiseur midi</h2>
+<p>Timidity fonctionne mal</p>
+<p>FluidSynth semble mieux fontionner</p>
+<p>Fontes utilisées :</p>
+<ul>
+<li><a href="https://osdn.net/projects/sfnet_androidframe/downloads/soundfonts/SGM-V2.01.sf2/">https://osdn.net/projects/sfnet_androidframe/downloads/soundfonts/SGM-V2.01.sf2/</a></li>
+</ul>
+<h2>Séquenceurs</h2>
+<ul>
+<li><a href="http://ardour.org/">Ardour</a></li>
+<li><a href="http://manual.ardour.org/working-with-midi/">Manuel</a></li>
+</ul>
+<h2>Accompagnement</h2>
+<h3><a href="https://www.cs.hmc.edu/~keller/jazz/improvisor/">Impro-Visor</a></h3>
+<p>En java</p>
+<h3><a href="http://linuxband.org/">LinuxBand</a></h3>
+<p>Interface graphique à MMA</p>
+<h3><a href="https://www.mellowood.ca/mma/">MMA</a> (Musical MIDI Accompaniment)</h3>
+<h1>Wine</h1>
+<p><a href="https://www.reddit.com/r/FL_Studio/comments/4ucx0i/tutorial_how_to_install_fl_studio_on_linux/">https://www.reddit.com/r/FL_Studio/comments/4ucx0i/tutorial_how_to_install_fl_studio_on_linux/</a></p>
+<h2>Kontakt5</h2>
+<p>Native Access</p>
+<p>Crash (librairie qt5.2 manquante)</p>
+<div class="highlight"><pre><span></span><code><span class="n">ERROR</span><span class="p">:</span><span class="w"> </span><span class="n">ld</span><span class="o">.</span><span class="n">so</span><span class="p">:</span><span class="w"> </span><span class="n">object</span><span class="w"> </span><span class="s1">&#39;libgtk3-nocsd.so.0&#39;</span><span class="w"> </span><span class="n">from</span><span class="w"> </span><span class="n">LD_PRELOAD</span><span class="w"> </span><span class="n">cannot</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">preloaded</span><span class="w"> </span><span class="p">(</span><span class="n">cannot</span><span class="w"> </span><span class="n">open</span><span class="w"> </span><span class="n">shared</span><span class="w"> </span><span class="n">object</span><span class="w"> </span><span class="n">file</span><span class="p">):</span><span class="w"> </span><span class="n">ignored</span><span class="s2">&quot;</span>
+</code></pre></div>
+
+<p><a href="https://www.linuxquestions.org/questions/blog/the-dsc-472367/getting-rid-of-error-ld-so-object-libgtk3-nocsd-so-0-from-ld_preload-cannot-be-preloaded-cannot-open-shared-object-file-ignored-37823/">https://www.linuxquestions.org/questions/blog/the-dsc-472367/getting-rid-of-error-ld-so-object-libgtk3-nocsd-so-0-from-ld_preload-cannot-be-preloaded-cannot-open-shared-object-file-ignored-37823/</a></p>
+<div class="highlight"><pre><span></span><code>sudo apt-get install libgtk3-nocsd0:i386
+</code></pre></div>
+
+<p><a href="https://tehnick.github.io/q4wine/">https://tehnick.github.io/q4wine/</a></p>
+<div class="highlight"><pre><span></span><code>sudo add-apt-repository ppa:tehnick/q4wine
+sudo apt-get install q4wine
+</code></pre></div>
+
+<p><a href="https://bugs.winehq.org/show_bug.cgi?id=44138">https://bugs.winehq.org/show_bug.cgi?id=44138</a></p>
+<p><a href="http://linuxmao.org/Wine+-+WineASIO">http://linuxmao.org/Wine+-+WineASIO</a></p>
+<p><a href="https://kxstudio.linuxaudio.org/Documentation:Manual:wineasio_and_reaper">https://kxstudio.linuxaudio.org/Documentation:Manual:wineasio_and_reaper</a></p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/daw-sous-linux.html">posted at 16:24</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/musique.html" rel="tag">Musique</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/linux.html" class="tags">Linux</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/daw.html" class="tags">DAW</a>
+                </div>
+            </article>            <h4 class="date">sept. 18, 2018</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/hydrogen.html" rel="bookmark" title="Permanent Link to &quot;Hydrogen&quot;">Hydrogen</a>
+                </h2>
+
+                
+                
+
+                <ul>
+<li><a href="http://hydrogen-music.org/">http://hydrogen-music.org/</a></li>
+<li><a href="https://github.com/nicklan/drmr">Plugin LV2</a></li>
+<li>LV2 non supporté par reaper</li>
+<li><a href="https://github.com/hydrogen-music/Song-and-pattern-repository">https://github.com/hydrogen-music/Song-and-pattern-repository</a></li>
+</ul>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/hydrogen.html">posted at 09:46</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/musique.html" rel="tag">Musique</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/rythmes.html" class="tags">Rythmes</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/daw.html" class="tags">DAW</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/midi.html" class="tags">Midi</a>
+                </div>
+            </article>            <h4 class="date">sept. 17, 2018</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/git-pb-ctrl-m-sous-windows.html" rel="bookmark" title="Permanent Link to &quot;Git: pb ctrl-m sous Windows&quot;">Git: pb ctrl-m sous Windows</a>
+                </h2>
+
+                
+                
+
+                <ul>
+<li><a href="https://stackoverflow.com/questions/1889559/git-diff-to-ignore-m">https://stackoverflow.com/questions/1889559/git-diff-to-ignore-m</a></li>
+</ul>
+<p><a href="https://stackoverflow.com/questions/9225599/should-git-change-the-ending-of-line-controlm-or-m-at-the-end-of-the-first-l">https://stackoverflow.com/questions/9225599/should-git-change-the-ending-of-line-controlm-or-m-at-the-end-of-the-first-l</a></p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/git-pb-ctrl-m-sous-windows.html">posted at 18:45</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/developpement.html" rel="tag">Développement</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/git.html" class="tags">Git</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/windows.html" class="tags">Windows</a>
+                </div>
+            </article>            <h4 class="date">sept. 14, 2018</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/ewi-et-pure-data.html" rel="bookmark" title="Permanent Link to &quot;EWI et Pure Data&quot;">EWI et Pure Data</a>
+                </h2>
+
+                
+                
+
+                <h1>Liens</h1>
+<ul>
+<li><a href="https://forum.pdpatchrepo.info/topic/10554/noob-trying-to-create-a-midi-chorder-harmonizer/1">noob trying to create a midi chorder harmonizer</a></li>
+<li><a href="https://forum.audiob.us/discussion/18730/free-thor-patches-for-ewi-players">Free thor patches for ewi players</a></li>
+<li><a href="https://www.youtube.com/watch?v=XcU5dfBIKh4">Michael Breckers MIDI Rotator explained</a></li>
+<li><a href="https://fr.audiofanzine.com/vent-electronique/akai/EWI4000S/forums/t.356664,le-rotator-de-m-brecker-realtime-harmonic-midi-processor.html">Le rotator de M Brecker : Realtime Harmonic MIDI Processor</a></li>
+<li><a href="https://www.youtube.com/channel/UCcqhlDTPzh-Kq-K-4JPAD6w">Robby Kilgore (YouTube)</a></li>
+<li><a href="https://github.com/RobbyKilgore/LogicProX_MidiFX_Scripts">LogicProX_MidiFX_Scripts</a></li>
+<li><a href="https://robbykilgore.com/">https://robbykilgore.com/</a></li>
+</ul>
+<h1><a href="https://patchstorage.com/miniwoog/">MiniWoog</a></h1>
+<p>Synthé style minimoog, </p>
+<ul>
+<li>modifié pour accepter le breath control (CC2))</li>
+<li>modif du canal 5 pour le glide</li>
+</ul>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/ewi-et-pure-data.html">posted at 22:38</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/musique.html" rel="tag">Musique</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/puredata.html" class="tags">PureData</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/instruments.html" class="tags">Instruments</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/ewi.html" class="tags">EWI</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/daw.html" class="tags">DAW</a>
+                </div>
+            </article>            <h4 class="date">sept. 13, 2018</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/emacs.html" rel="bookmark" title="Permanent Link to &quot;Emacs&quot;">Emacs</a>
+                </h2>
+
+                
+                
+
+                <h2>Espaces pour les tabulations</h2>
+<div class="highlight"><pre><span></span><code>(setq-default indent-tabs-mode nil)
+(setq-default tab-width 4)
+(setq indent-line-function &#39;insert-tab)
+</code></pre></div>
+
+<h2>Paquets utilisés</h2>
+<ul>
+<li><a href="http://melpa.org/#/getting-started">Melpa (Dépôt)</a></li>
+<li><a href="https://www.emacswiki.org/emacs/Projectile">Projectile</a> (Gestion de projets)</li>
+<li><a href="https://oremacs.com/swiper/">Swipper</a> (Recherche avec complétion)</li>
+<li><a href="https://www.emacswiki.org/emacs/CompanyMode">Company mode</a></li>
+<li><a href="https://github.com/masasam/emacs-easy-jekyll">Emacs Easy Jekyll</a></li>
+<li><a href="https://github.com/jorgenschaefer/elpy">Elpy</a> Permet la recherche des tags</li>
+<li><a href="https://perso.univ-rennes1.fr/san.vu-ngoc/prog/mma.el">MMA</a>: Un mode pour l'accompagnateur MIDI <a href="../Musique/mma.html">MMA</a></li>
+</ul>
+<h2>Liens</h2>
+<ul>
+<li><a href="https://www.gnu.org/software/emacs/manual/html_node/eintr/index.html#Top">Manuel</a></li>
+<li><a href="https://nilsdeppe.com/posts/emacs-c++-ide2">emacs-c++-ide2</a></li>
+<li><a href="https://emacs.stackexchange.com/questions/34322/set-default-coding-system-utf-8">Set default coding system-utf-8</a></li>
+<li><a href="https://stackoverflow.com/questions/5795451/how-to-detect-that-emacs-is-in-terminal-mode/5795518#5795518">How to detect that emacs is in terminal mode</a> (Pb de taille de frame au démarrage)</li>
+<li><a href="https://edivad.wordpress.com/2007/04/03/emacs-convert-dos-to-unix-and-vice-versa/">Convertion DOS -&gt; Unix</a></li>
+<li><a href="https://emacs.stackexchange.com/questions/24907/how-to-use-dir-locals-el-with-projectile">How to use dir locals el with projectile</a></li>
+<li><a href="https://desmondrivet.com/2018/03/30/emacs-pelican-workflow">Blogging with Emacs and Pelican</a></li>
+</ul>
+<h2>Linux: Pb avec emacs24 -&gt; Ajoût du dépôt pour emacs25</h2>
+<div class="highlight"><pre><span></span><code><span class="k">deb</span><span class="w"> </span><span class="s">http://ppa.launchpad.net/kelleyk/emacs/ubuntu</span><span class="w"> </span><span class="kp">xenial</span><span class="w"> </span><span class="kp">main</span><span class="w"></span>
+<span class="c"># deb-src http://ppa.launchpad.net/kelleyk/emacs/ubuntu xenial main</span><span class="w"></span>
+<span class="err">sudo</span><span class="w"> </span><span class="err">add-apt-repository</span><span class="w"> </span><span class="err">ppa:kelleyk/emacs</span><span class="w"></span>
+<span class="err">sudo</span><span class="w"> </span><span class="err">apt-get</span><span class="w"> </span><span class="err">update</span><span class="w"></span>
+<span class="err">sudo</span><span class="w"> </span><span class="err">apt-get</span><span class="w"> </span><span class="err">install</span><span class="w"> </span><span class="err">emacs25</span><span class="w"></span>
+</code></pre></div>
+
+<h2>Fichiers backup</h2>
+<p>Eviter la multiplication des fichiers *~</p>
+<div class="highlight"><pre><span></span><code>(setq backup-directory-alist `((&quot;.&quot; . &quot;~/.saves&quot;)))
+</code></pre></div>
+
+<h2>Tags</h2>
+<div class="highlight"><pre><span></span><code>ctags -f TAGS -e -R
+</code></pre></div>
+
+<h2>SQLite</h2>
+<div class="highlight"><pre><span></span><code>cpan install DBI DBD::SQLite
+</code></pre></div>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/emacs.html">posted at 09:21</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/developpement.html" rel="tag">Développement</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/emacs.html" class="tags">Emacs</a>
+                </div>
+            </article>            <h4 class="date">sept. 12, 2018</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/pure-data-sur-raspberry-pi.html" rel="bookmark" title="Permanent Link to &quot;Pure Data sur Raspberry Pi&quot;">Pure Data sur Raspberry Pi</a>
+                </h2>
+
+                
+                
+
+                <p><a href="https://puredata.info/docs/raspberry-pi/">https://puredata.info/docs/raspberry-pi/</a></p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/pure-data-sur-raspberry-pi.html">posted at 22:00</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/musique.html" rel="tag">Musique</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/puredata.html" class="tags">PureData</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/pi.html" class="tags">Pi</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/daw.html" class="tags">DAW</a>
+                </div>
+            </article>            <h4 class="date">sept. 11, 2018</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/git-deplacement-dun-repertoire-vers-un-submodule.html" rel="bookmark" title="Permanent Link to &quot;git: Déplacement d'un répertoire vers un submodule&quot;">git: Déplacement d'un répertoire vers un submodule</a>
+                </h2>
+
+                
+                
+
+                <p>Solution utilisée:</p>
+<p><a href="https://stackoverflow.com/questions/17413493/create-a-submodule-repository-from-a-folder-and-keep-its-git-commit-history">https://stackoverflow.com/questions/17413493/create-a-submodule-repository-from-a-folder-and-keep-its-git-commit-history</a></p>
+<p>Solution préconsisée par github:</p>
+<p><a href="https://help.github.com/articles/splitting-a-subfolder-out-into-a-new-repository/">https://help.github.com/articles/splitting-a-subfolder-out-into-a-new-repository/</a></p>
+<p>Nettoyage de .git (500M+ pour mao)</p>
+<p><a href="https://stackoverflow.com/questions/5277467/how-can-i-clean-my-git-folder-cleaned-up-my-project-directory-but-git-is-sti">https://stackoverflow.com/questions/5277467/how-can-i-clean-my-git-folder-cleaned-up-my-project-directory-but-git-is-sti</a></p>
+<div class="highlight"><pre><span></span><code><span class="w"> </span><span class="nv">git</span><span class="w"> </span><span class="nv">rev</span><span class="o">-</span><span class="nv">list</span><span class="w"> </span><span class="o">--</span><span class="nv">objects</span><span class="w"> </span><span class="o">--</span><span class="nv">all</span><span class="w"> </span><span class="o">|</span><span class="w">     </span><span class="k">while</span><span class="w"> </span><span class="nv">read</span><span class="w"> </span><span class="nv">sha1</span><span class="w"> </span><span class="nv">fname</span><span class="c1">;     do          echo -e &quot;$(git cat-file -s $sha1)\t$\t$fname&quot;;     done | sort -n &gt; rev-list.out</span><span class="w"></span>
+</code></pre></div>
+
+<p><a href="https://stackoverflow.com/questions/4515580/how-do-i-remove-the-old-history-from-a-git-repository">https://stackoverflow.com/questions/4515580/how-do-i-remove-the-old-history-from-a-git-repository</a></p>
+<p><a href="https://git-scm.com/book/en/v2/Git-Tools-Replace">https://git-scm.com/book/en/v2/Git-Tools-Replace</a></p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/git-deplacement-dun-repertoire-vers-un-submodule.html">posted at 21:05</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/developpement.html" rel="tag">Développement</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/git.html" class="tags">Git</a>
+                </div>
+            </article>            <h4 class="date">sept. 11, 2018</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/synthetiseurs.html" rel="bookmark" title="Permanent Link to &quot;Synthétiseurs&quot;">Synthétiseurs</a>
+                </h2>
+
+                
+                
+
+                <p><a href="https://www.youtube.com/watch?v=ctOhwRGdVvo">Jean-Michel Jarre</a></p>
+<p><a href="http://floss.booktype.pro/pure-data/additive-synthesis/">http://floss.booktype.pro/pure-data/additive-synthesis/</a></p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/synthetiseurs.html">posted at 08:57</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/musique.html" rel="tag">Musique</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/instruments.html" class="tags">Instruments</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/daw.html" class="tags">DAW</a>
+                </div>
+            </article>            <h4 class="date">sept. 10, 2018</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/looper-mobius.html" rel="bookmark" title="Permanent Link to &quot;Looper Mobius&quot;">Looper Mobius</a>
+                </h2>
+
+                
+                
+
+                <p><a href="http://circularlabs.com/">http://circularlabs.com/</a></p>
+<p><a href="http://www.circularlabs.com/doc/v1/reference.htm">Aide</a></p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/looper-mobius.html">posted at 10:56</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/musique.html" rel="tag">Musique</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/daw.html" class="tags">DAW</a>
+                </div>
+            </article>
+
+                <div class="clear"></div>
+                <div class="pages">
+
+                    <a href="http://dev.duloup.org/author/duloupdulouporg11.html" class="prev_page">&larr;&nbsp;Previous</a>
+
+                    <a href="http://dev.duloup.org/author/duloupdulouporg13.html" class="next_page">Next&nbsp;&rarr;</a>
+
+                    <span>Page 12 of 15</span>
+                </div>
+
+            <div class="clear"></div>
+            <footer>
+                <p>
+                <a href="https://github.com/jody-frankowski/blue-penguin">Blue Penguin</a> Theme
+                &middot;
+                Powered by <a href="http://getpelican.com">Pelican</a>
+            </footer>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <script src="http://dev.duloup.org/theme/js/stork.js"></script>
+    <script>
+        stork.initialize("http://dev.duloup.org/theme/js/stork.wasm")
+        stork.downloadIndex("sitesearch", "http://dev.duloup.org/search-index.st")
+        stork.attach("sitesearch")
+    </script>
+</body>
+</html>

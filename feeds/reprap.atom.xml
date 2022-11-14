@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>MyBlog - RepRap</title><link href="http://dev.duloup.org/" rel="alternate"></link><link href="http://dev.duloup.org/feeds/reprap.atom.xml" rel="self"></link><id>http://dev.duloup.org/</id><updated>2019-06-06T11:59:00+02:00</updated><entry><title>Skeinforge</title><link href="http://dev.duloup.org/tech-reprap-skeinforge.html" rel="alternate"></link><published>2019-06-06T11:59:00+02:00</published><updated>2019-06-06T11:59:00+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2019-06-06:/tech-reprap-skeinforge.html</id><content type="html">&lt;p&gt;&lt;a href="https://reprap.org/wiki/Skeinforge"&gt;https://reprap.org/wiki/Skeinforge&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;    sudo apt-add-repository ppa:richi-paraeasy/ppa
+    sudo apt-get update
+    sudo apt-get install skeinforge
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Répertoire .skeinforg/profiles/ du ks53 ubuntu&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;skeinforge-profiles/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="RepRap"></category><category term="RepRap"></category></entry><entry><title>Firmware</title><link href="http://dev.duloup.org/firmware.html" rel="alternate"></link><published>2019-06-06T11:22:00+02:00</published><updated>2019-06-06T11:22:00+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2019-06-06:/firmware.html</id><content type="html">&lt;h1&gt;Firmware&lt;/h1&gt;
+&lt;h2&gt;Sprinter&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://forum.arduino.cc/index.php?topic=92364.0"&gt;http://forum.arduino.cc/index.php?topic=92364.0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://reprap.org/wiki/RepRapLinuxSoftware"&gt;http://reprap.org/wiki/RepRapLinuxSoftware&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Marlin&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://reprap.org/wiki/Marlin"&gt;http://reprap.org/wiki/Marlin&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;TODO: ajouter la configuration&lt;/p&gt;</content><category term="RepRap"></category><category term="RepRap"></category></entry><entry><title>RepRap</title><link href="http://dev.duloup.org/tech-reprap.html" rel="alternate"></link><published>2019-06-06T11:11:00+02:00</published><updated>2019-06-06T11:11:00+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2019-06-06:/tech-reprap.html</id><summary type="html">&lt;h1&gt;&lt;a href="http://reprap.org/wiki/Prusa_Mendel_%28iteration_2%29"&gt;RepRap Mendel&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;a href="http://www.thingiverse.com/thing:4249/#files"&gt;http://reprap.org/wiki/Main_Page&lt;/a&gt;
+&lt;a href="http://www.youtube.com/watch?v=EujOBjxyLWs"&gt;http://www.youtube.com/watch?v=EujOBjxyLWs&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Montage du hot end&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.youtube.com/watch?v=i7-VlQREPbo"&gt;http://www.youtube.com/watch?v=i7-VlQREPbo&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Impression des pièces&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://reprap.org/wiki/Prusa_Mendel_%28iteration_2%29#Printed_Parts"&gt;http://reprap.org/wiki/Prusa_Mendel_%28iteration_2%29#Printed_Parts&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/prusajr/PrusaMendel/"&gt;Dépôt GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Matériel&lt;/h2&gt;
+&lt;h3&gt;Plateau chauffant&lt;/h3&gt;
+&lt;p&gt;Modele : Heatbed MK2&lt;/p&gt;
+&lt;h3&gt;Hotend&lt;/h3&gt;
+&lt;p&gt;Modele : J-Head&lt;/p&gt;
+&lt;p&gt;&lt;a href="/reprap/firmware"&gt;Firmware&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Calibrage&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.thingiverse.com/thing:4249/#files"&gt;http …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;h1&gt;&lt;a href="http://reprap.org/wiki/Prusa_Mendel_%28iteration_2%29"&gt;RepRap Mendel&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;a href="http://www.thingiverse.com/thing:4249/#files"&gt;http://reprap.org/wiki/Main_Page&lt;/a&gt;
+&lt;a href="http://www.youtube.com/watch?v=EujOBjxyLWs"&gt;http://www.youtube.com/watch?v=EujOBjxyLWs&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Montage du hot end&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.youtube.com/watch?v=i7-VlQREPbo"&gt;http://www.youtube.com/watch?v=i7-VlQREPbo&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Impression des pièces&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://reprap.org/wiki/Prusa_Mendel_%28iteration_2%29#Printed_Parts"&gt;http://reprap.org/wiki/Prusa_Mendel_%28iteration_2%29#Printed_Parts&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/prusajr/PrusaMendel/"&gt;Dépôt GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Matériel&lt;/h2&gt;
+&lt;h3&gt;Plateau chauffant&lt;/h3&gt;
+&lt;p&gt;Modele : Heatbed MK2&lt;/p&gt;
+&lt;h3&gt;Hotend&lt;/h3&gt;
+&lt;p&gt;Modele : J-Head&lt;/p&gt;
+&lt;p&gt;&lt;a href="/reprap/firmware"&gt;Firmware&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Calibrage&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.thingiverse.com/thing:4249/#files"&gt;http://www.thingiverse.com/thing:4249/#files&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Logiciels&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="/reprap/Logiciels_3D"&gt;Logiciels 3D&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Skeinforge&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://reprap.org/wiki/Skeinforge"&gt;https://reprap.org/wiki/Skeinforge&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;    sudo apt-add-repository ppa:richi-paraeasy/ppa
+    sudo apt-get update
+    sudo apt-get install skeinforge
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Répertoire .skeinforg/profiles/ du ks53 ubuntu&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;skeinforge-profiles/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="RepRap"></category><category term="RepRap"></category></entry><entry><title>FoldaRap</title><link href="http://dev.duloup.org/tech-reprap-foldarap.html" rel="alternate"></link><published>2019-06-06T09:21:00+02:00</published><updated>2019-06-06T09:21:00+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2019-06-06:/tech-reprap-foldarap.html</id><summary type="html">&lt;p&gt;&lt;img alt="FoldaRap.jpg" src="http://dev.duloup.org/images/FoldaRap.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://reprap.org/wiki/FoldaRap"&gt;https://reprap.org/wiki/FoldaRap&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Profilés&lt;/h1&gt;
+&lt;p&gt;&lt;a href="http://forums.reprap.org/read.php?110,272205"&gt;http://forums.reprap.org/read.php?110,272205&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.motedis.fr/shop/Profile-a-rainures/Profile-20-I-Type-rainure-5/Profile-aluminium-20x20-I-Type-rainure-5::999991076.html"&gt;Profile-20-I-Type-rainure-5&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Structure de base&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;x4 profilé 200mm&lt;/li&gt;
+&lt;li&gt;x8 M4x8&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;x8 écrou-T&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;x4 profilé 300mm&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;x10 M4x8&lt;/li&gt;
+&lt;li&gt;x10 écrou-T&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Axe Y&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;x1 M4x8&lt;/li&gt;
+&lt;li&gt;x1 écrou-T&lt;/li&gt;
+&lt;li&gt;x1 M3x20&lt;/li&gt;
+&lt;li&gt;x1 rondelle M3&lt;/li&gt;
+&lt;li&gt;x2 roulement 603zz&lt;/li&gt;
+&lt;li&gt;x1 écrou M3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Support …&lt;/h2&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="FoldaRap.jpg" src="http://dev.duloup.org/images/FoldaRap.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://reprap.org/wiki/FoldaRap"&gt;https://reprap.org/wiki/FoldaRap&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Profilés&lt;/h1&gt;
+&lt;p&gt;&lt;a href="http://forums.reprap.org/read.php?110,272205"&gt;http://forums.reprap.org/read.php?110,272205&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.motedis.fr/shop/Profile-a-rainures/Profile-20-I-Type-rainure-5/Profile-aluminium-20x20-I-Type-rainure-5::999991076.html"&gt;Profile-20-I-Type-rainure-5&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Structure de base&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;x4 profilé 200mm&lt;/li&gt;
+&lt;li&gt;x8 M4x8&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;x8 écrou-T&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;x4 profilé 300mm&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;x10 M4x8&lt;/li&gt;
+&lt;li&gt;x10 écrou-T&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Axe Y&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;x1 M4x8&lt;/li&gt;
+&lt;li&gt;x1 écrou-T&lt;/li&gt;
+&lt;li&gt;x1 M3x20&lt;/li&gt;
+&lt;li&gt;x1 rondelle M3&lt;/li&gt;
+&lt;li&gt;x2 roulement 603zz&lt;/li&gt;
+&lt;li&gt;x1 écrou M3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Support moteur Y&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;x1 M4x8&lt;/li&gt;
+&lt;li&gt;x1 écrou-T&lt;/li&gt;
+&lt;li&gt;x1 nema 14&lt;/li&gt;
+&lt;li&gt;x2 M3x8&lt;/li&gt;
+&lt;li&gt;x1 poulie&lt;/li&gt;
+&lt;li&gt;x2 vis sans tête&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Supports tiges-lisses&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;x4 support-tige-lisse&lt;/li&gt;
+&lt;li&gt;x4 M4x8&lt;/li&gt;
+&lt;li&gt;x4 écrou-T&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Etape 3/20 - Prise + interrupteur (45 min)&lt;/h1&gt;
+&lt;p&gt;Câble 1
+* x1 cosse 4,8mm (+ isolant)
+* x1 cosse 6,35mm (+ isolant)&lt;/p&gt;
+&lt;p&gt;Câble 2
+x1 cosse 4,8mm (+ isolant)
+x1 cosse 6,35mm (+ isolant)&lt;/p&gt;
+&lt;p&gt;Câble 3
+x1 cosse 4,8mm (+ isolant)&lt;/p&gt;
+&lt;p&gt;Câble 4
+x1 cosse 4,8mm (+ isolant)&lt;/p&gt;
+&lt;p&gt;Câble 5
+x1 cosse 6,35mm (+ isolant)&lt;/p&gt;
+&lt;p&gt;Plaque prise + interrupteur
+* x1 prise
+* x1 interrupteur
+* x2 M3x8
+* x2 écrou M3
+* x4 M4x8
+* x4 écrou-T&lt;/p&gt;
+&lt;p&gt;Etape 4/20 - Plaque-base (20 min) 
+* x1 plaque-base
+* x1 alimentation
+* x2 M3x8
+* x2 écrou M3&lt;/p&gt;
+&lt;h1&gt;Fixation de la plaque-base&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;x4 M4x8&lt;/li&gt;
+&lt;li&gt;x4 écrou-T&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Etape 5/20 - Axe-Z (1 heure) 
+* x1 support-moteur-z-gauche
+* x1 support-moteur-z-droit
+* x2 profilé 300mm
+* x2 M4x8
+* x2 écrou-T&lt;/p&gt;
+&lt;p&gt;Charnières extérieures
+* x1 charnière-extérieur-gauche
+* x1 charnière-extérieur-droite
+* x2 M4x8
+* x2 écrou-T&lt;/p&gt;
+&lt;p&gt;Supports-moteurs-Z (2/2)
+* x2 nema 14
+* x4 M3x8&lt;/p&gt;
+&lt;p&gt;Chariots-Z
+* x1 chariot-z-gauche
+* x1 chariot-z-gauche
+* M3x30 (tête fraisée)&lt;/p&gt;
+&lt;p&gt;Axe-Z
+* x2 écrou M3
+* x2 M3x20&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;x4 M4x8&lt;/li&gt;
+&lt;li&gt;x4 écrou-T&lt;/li&gt;
+&lt;/ul&gt;</content><category term="RepRap"></category><category term="RepRap"></category></entry><entry><title>Logiciels 3D</title><link href="http://dev.duloup.org/tech-reprap-logiciels-3d.html" rel="alternate"></link><published>2019-06-06T09:21:00+02:00</published><updated>2019-06-06T09:21:00+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2019-06-06:/tech-reprap-logiciels-3d.html</id><summary type="html">&lt;h1&gt;Art of Illusion&lt;/h1&gt;
+&lt;p&gt;Logiciel CAD utilisé pour la realisation des pieces&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://forums.reprap.org/read.php?12,10052"&gt;Export STL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;img alt="2500_2500_Reprap_Prusa_ramps_diagram.jpeg" src="2500_2500_Reprap_Prusa_ramps_diagram.jpeg"&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://reprap.org/wiki/Builders/Metalab/AoI_CSG_Evaluator"&gt;CSG_Evaluator&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Note: Obsolète, j'utilise OpenSCAD&lt;/p&gt;
+&lt;h1&gt;Blender&lt;/h1&gt;
+&lt;p&gt;&lt;a href="http://www.google.fr/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=1&amp;amp;ved=0CDQQFjAA&amp;amp;url=http%3A%2F%2Fsupport.ponoko.com%2Fentries%2F21531613-How-to-export-a-STL-design-file-using-Blender-2-6-&amp;amp;ei=FfbPUaqHDo_VsgbEjIGYAQ&amp;amp;usg=AFQjCNFCXZWBJFAMVZMzzFvHp4YdoMiJRg&amp;amp;sig2=st3E-IgUgZrY_hEkfyDN5w&amp;amp;bvm=bv.48572450,d.Yms"&gt;Exportation de fichier stl&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;OpenSCAD&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.openscad.org/"&gt;OpenSCAD&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/openscad/MCAD"&gt;Librairie MCAD&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Installation&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo apt-get install openscad
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href="http://www.openscad.org/downloads.html"&gt;http://www.openscad.org/downloads.html&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;objets&lt;/h1&gt;
+&lt;p&gt;hollow10.stl: cube de 10x10 pour le calibrage&lt;/p&gt;
+&lt;p&gt;RaspberryPi_v15.scad: http …&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Art of Illusion&lt;/h1&gt;
+&lt;p&gt;Logiciel CAD utilisé pour la realisation des pieces&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://forums.reprap.org/read.php?12,10052"&gt;Export STL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;img alt="2500_2500_Reprap_Prusa_ramps_diagram.jpeg" src="2500_2500_Reprap_Prusa_ramps_diagram.jpeg"&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://reprap.org/wiki/Builders/Metalab/AoI_CSG_Evaluator"&gt;CSG_Evaluator&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Note: Obsolète, j'utilise OpenSCAD&lt;/p&gt;
+&lt;h1&gt;Blender&lt;/h1&gt;
+&lt;p&gt;&lt;a href="http://www.google.fr/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=1&amp;amp;ved=0CDQQFjAA&amp;amp;url=http%3A%2F%2Fsupport.ponoko.com%2Fentries%2F21531613-How-to-export-a-STL-design-file-using-Blender-2-6-&amp;amp;ei=FfbPUaqHDo_VsgbEjIGYAQ&amp;amp;usg=AFQjCNFCXZWBJFAMVZMzzFvHp4YdoMiJRg&amp;amp;sig2=st3E-IgUgZrY_hEkfyDN5w&amp;amp;bvm=bv.48572450,d.Yms"&gt;Exportation de fichier stl&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;OpenSCAD&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.openscad.org/"&gt;OpenSCAD&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/openscad/MCAD"&gt;Librairie MCAD&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Installation&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo apt-get install openscad
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href="http://www.openscad.org/downloads.html"&gt;http://www.openscad.org/downloads.html&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;objets&lt;/h1&gt;
+&lt;p&gt;hollow10.stl: cube de 10x10 pour le calibrage&lt;/p&gt;
+&lt;p&gt;RaspberryPi_v15.scad: http://www.thingiverse.com/thing:16104/#files&lt;/p&gt;</content><category term="RepRap"></category><category term="RepRap"></category></entry><entry><title>Configuration RepRap</title><link href="http://dev.duloup.org/tech-reprap-configurations.html" rel="alternate"></link><published>2019-06-06T09:20:00+02:00</published><updated>2019-06-06T09:20:00+02:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2019-06-06:/tech-reprap-configurations.html</id><content type="html">&lt;p&gt;[[../]]&lt;/p&gt;
+&lt;h1&gt;Cura&lt;/h1&gt;
+&lt;p&gt;cura-default.ini
+cura-reprap4-calibrage.ini&lt;/p&gt;
+&lt;h1&gt;Marlin&lt;/h1&gt;
+&lt;p&gt;skeinforge-profiles&lt;/p&gt;
+&lt;h1&gt;Slic3r&lt;/h1&gt;
+&lt;p&gt;slic3r-config.ini
+slic3r-config-windows.ini&lt;/p&gt;</content><category term="RepRap"></category><category term="RepRap"></category></entry><entry><title>Logiciels 3D pour la Reprap</title><link href="http://dev.duloup.org/logiciels-3d-pour-la-reprap.html" rel="alternate"></link><published>2018-01-07T21:18:35+01:00</published><updated>2018-01-07T21:18:35+01:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-01-07:/logiciels-3d-pour-la-reprap.html</id><content type="html">&lt;h1&gt;Logiciels CAD/Slicing&lt;/h1&gt;
+&lt;h2&gt;Art of Illusion&lt;/h2&gt;
+&lt;p&gt;Logiciel CAD utilisé pour la realisation des pieces&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://forums.reprap.org/read.php?12,10052"&gt;Export STL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;img alt="2500_2500_Reprap_Prusa_ramps_diagram.jpeg" src="2500_2500_Reprap_Prusa_ramps_diagram.jpeg"&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://reprap.org/wiki/Builders/Metalab/AoI_CSG_Evaluator"&gt;CSG_Evaluator&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Note: Obsolète, j'utilise OpenSCAD&lt;/p&gt;
+&lt;h2&gt;Blender&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.google.fr/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=1&amp;amp;ved=0CDQQFjAA&amp;amp;url=http%3A%2F%2Fsupport.ponoko.com%2Fentries%2F21531613-How-to-export-a-STL-design-file-using-Blender-2-6-&amp;amp;ei=FfbPUaqHDo_VsgbEjIGYAQ&amp;amp;usg=AFQjCNFCXZWBJFAMVZMzzFvHp4YdoMiJRg&amp;amp;sig2=st3E-IgUgZrY_hEkfyDN5w&amp;amp;bvm=bv.48572450,d.Yms"&gt;Exportation de fichier stl&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;OpenSCAD&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.openscad.org/"&gt;OpenSCAD&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/openscad/MCAD"&gt;Librairie MCAD&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Installation sous Windows&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Building_on_Microsoft_Windows#Installation"&gt;https://en.wikibooks.org/wiki/OpenSCAD_User_Manual/Building_on_Microsoft_Windows#Installation&lt;/a&gt;&lt;/p&gt;</content><category term="RepRap"></category><category term="RepRap"></category></entry><entry><title>Logiciels pour la Reprap</title><link href="http://dev.duloup.org/tech-reprap-logiciels.html" rel="alternate"></link><published>2018-01-07T16:58:11+01:00</published><updated>2018-01-07T16:58:11+01:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-01-07:/tech-reprap-logiciels.html</id><content type="html">&lt;h2&gt;Logiciels&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="2500_2500_Reprap_Prusa_ramps_diagram.jpeg" src="2500_2500_Reprap_Prusa_ramps_diagram.jpeg"&gt;
+* &lt;a href="http://reprap.org/wiki/Builders/Metalab/AoI_CSG_Evaluator"&gt;CSG_Evaluator&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Skeinforge&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://fabmetheus.crsndoo.com/"&gt;http://fabmetheus.crsndoo.com/&lt;/a&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;sudo apt-add-repository ppa:richi-paraeasy/ppa
+sudo apt-get update
+sudo apt-get install skeinforge
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Répertoire .skeinforg/profiles/ du ks53 ubuntu&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;skeinforge-profiles/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Octoprint&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://octoprint.org/"&gt;https://octoprint.org/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://octopi.octoprint.org/"&gt;https://octopi.octoprint.org/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/guysoft/OctoPi"&gt;https://github.com/guysoft/OctoPi&lt;/a&gt;&lt;/p&gt;</content><category term="RepRap"></category><category term="Reprap"></category></entry><entry><title>RepRap Mendel</title><link href="http://dev.duloup.org/tech-reprap-mendel.html" rel="alternate"></link><published>2018-01-07T16:55:10+01:00</published><updated>2018-01-07T16:55:10+01:00</updated><author><name>Moi</name></author><id>tag:dev.duloup.org,2018-01-07:/tech-reprap-mendel.html</id><summary type="html">&lt;p&gt;Imprimante 3D RepRap Mendel&lt;/p&gt;
+&lt;h1&gt;&lt;a href="http://reprap.org/wiki/Prusa_Mendel_%28iteration_2%29"&gt;RepRap Mendel&lt;/a&gt;&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://reprap.org/wiki/Main_Page"&gt;http://reprap.org/wiki/Main_Page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.youtube.com/watch?v=EujOBjxyLWs"&gt;http://www.youtube.com/watch?v=EujOBjxyLWs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Montage du hot end&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.youtube.com/watch?v=i7-VlQREPbo"&gt;http://www.youtube.com/watch?v=i7-VlQREPbo&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Impression des pièces&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://reprap.org/wiki/Prusa_Mendel_%28iteration_2%29#Printed_Parts"&gt;http://reprap.org/wiki/Prusa_Mendel_%28iteration_2%29#Printed_Parts&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/prusajr/PrusaMendel/"&gt;Dépôt GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Matériel&lt;/h2&gt;
+&lt;h3&gt;Plateau chauffant&lt;/h3&gt;
+&lt;p&gt;Modele : Heatbed MK2&lt;/p&gt;
+&lt;h3&gt;Hotend&lt;/h3&gt;
+&lt;p&gt;Modele …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Imprimante 3D RepRap Mendel&lt;/p&gt;
+&lt;h1&gt;&lt;a href="http://reprap.org/wiki/Prusa_Mendel_%28iteration_2%29"&gt;RepRap Mendel&lt;/a&gt;&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://reprap.org/wiki/Main_Page"&gt;http://reprap.org/wiki/Main_Page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.youtube.com/watch?v=EujOBjxyLWs"&gt;http://www.youtube.com/watch?v=EujOBjxyLWs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Montage du hot end&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.youtube.com/watch?v=i7-VlQREPbo"&gt;http://www.youtube.com/watch?v=i7-VlQREPbo&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Impression des pièces&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://reprap.org/wiki/Prusa_Mendel_%28iteration_2%29#Printed_Parts"&gt;http://reprap.org/wiki/Prusa_Mendel_%28iteration_2%29#Printed_Parts&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/prusajr/PrusaMendel/"&gt;Dépôt GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Matériel&lt;/h2&gt;
+&lt;h3&gt;Plateau chauffant&lt;/h3&gt;
+&lt;p&gt;Modele : Heatbed MK2&lt;/p&gt;
+&lt;h3&gt;Hotend&lt;/h3&gt;
+&lt;p&gt;Modele : J-Head&lt;/p&gt;
+&lt;h2&gt;Firmware&lt;/h2&gt;
+&lt;h3&gt;Sprinter&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://forum.arduino.cc/index.php?topic=92364.0"&gt;http://forum.arduino.cc/index.php?topic=92364.0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://reprap.org/wiki/RepRapLinuxSoftware"&gt;http://reprap.org/wiki/RepRapLinuxSoftware&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Marlin&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://reprap.org/wiki/Marlin"&gt;http://reprap.org/wiki/Marlin&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;TODO: ajouter la configuration&lt;/p&gt;
+&lt;h2&gt;Calibrage&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.thingiverse.com/thing:4249/#files"&gt;http://www.thingiverse.com/thing:4249/#files&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Scripts&lt;/h1&gt;
+&lt;p&gt;&lt;a href="http://code.google.com/p/skeinarchiver/"&gt;http://code.google.com/p/skeinarchiver/&lt;/a&gt;&lt;/p&gt;</content><category term="RepRap"></category><category term="RepRap"></category></entry></feed>

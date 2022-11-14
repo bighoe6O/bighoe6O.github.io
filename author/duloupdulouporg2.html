@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Mon Blog | Articles by duloup@duloup.org</title>
+    <link rel="shortcut icon" type="image/png" href="http://dev.duloup.org/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="http://dev.duloup.org/favicon.ico">
+    <link rel="stylesheet" href="http://dev.duloup.org/theme/css/main.css" type="text/css" />
+    <link rel="stylesheet" href="http://dev.duloup.org/theme/css/pygments.css" type="text/css" />
+    <meta name="generator" content="Pelican" />
+    <meta name="description" content="" />
+    <meta name="author" content="duloup@duloup.org" />
+    <link rel="stylesheet" href="http://dev.duloup.org/theme/css/stork.css">
+    <link rel="stylesheet" media="screen and (prefers-color-scheme: dark)" href="http://dev.duloup.org/theme/css/stork-dark.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+
+                <li class="ephemeral selected"><a href="http://dev.duloup.org/author/duloupdulouporg2.html">duloup@duloup.org</a></li>
+                <li><a href="http://dev.duloup.org/">Home</a></li>
+                <li><a href="http://blog.duloup.org">Site</a></li>
+                <li><a href="http://dev.duloup.org/category/tech.html">Tech</a></li>
+                <li><a href="http://dev.duloup.org/category/musique.html">Musique</a></li>
+                <li><a href="http://dev.duloup.org/categories.html">Categories</a></li>
+                <li><a href="http://dev.duloup.org/tags.html">Tags</a></li>
+                <li><a href="http://dev.duloup.org/about.html">About</a></li>
+            </ul>
+        </nav>
+        <div class="header_box">
+            <h1><a href="http://dev.duloup.org/">Mon Blog</a></h1>
+        </div>
+    </header>
+    <div id="wrapper">
+        <div id="content"><div class="search-box"><div>Search: </div><input data-stork="sitesearch" /></div>
+<div data-stork="sitesearch-output"></div>
+            <h4 class="date">sept. 24, 2021</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/pypass.html" rel="bookmark" title="Permanent Link to &quot;PyPass&quot;">PyPass</a>
+                </h2>
+
+                
+                
+
+                <div class="highlight"><pre><span></span><code><span class="n">git</span><span class="nv">@duloup</span><span class="p">.</span><span class="nl">org</span><span class="p">:</span><span class="n">pypass</span><span class="w"></span>
+</code></pre></div>
+
+<p>Projets concurrents : </p>
+<p><a href="https://github.com/aviau/python-pass">https://github.com/aviau/python-pass</a></p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/pypass.html">posted at 11:19</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/tech.html" rel="tag">Tech</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/projets.html" class="tags">Projets</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/python.html" class="tags">Python</a>
+                </div>
+            </article>            <h4 class="date">sept. 23, 2021</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/2021-09-23-php.html" rel="bookmark" title="Permanent Link to &quot;PHP&quot;">PHP</a>
+                </h2>
+
+                
+                
+
+                <p><a href="https://www.soupbowl.io/2020/03/replace-lamp-with-docker-the-easy-way/">https://www.soupbowl.io/2020/03/replace-lamp-with-docker-the-easy-way/</a></p>
+<p><a href="https://www.tutorialrepublic.com/php-tutorial/php-get-started.php">https://www.tutorialrepublic.com/php-tutorial/php-get-started.php</a></p>
+<p><a href="http://www.swig.org/Doc4.0/Php.html">http://www.swig.org/Doc4.0/Php.html</a></p>
+<p><a href="https://www.jetbrains.com/phpstorm/">https://www.jetbrains.com/phpstorm/</a></p>
+<p><a href="https://getcomposer.org/download/">https://getcomposer.org/download/</a></p>
+<h2>Swig</h2>
+<p><a href="https://www.dev2qa.com/how-to-install-swig-on-macos-linux-and-windows/">https://www.dev2qa.com/how-to-install-swig-on-macos-linux-and-windows/</a></p>
+<p><a href="http://www.swig.org/download.html">http://www.swig.org/download.html</a></p>
+<div class="highlight"><pre><span></span><code><span class="o">/*</span><span class="w"> </span><span class="n">File</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">example</span><span class="o">.</span><span class="n">c</span><span class="w"> </span><span class="o">*/</span><span class="w"></span>
+
+<span class="c1">#include &lt;time.h&gt;</span><span class="w"></span>
+<span class="n">double</span><span class="w"> </span><span class="n">My_variable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3.0</span><span class="p">;</span><span class="w"></span>
+
+<span class="nb nb-Type">int</span><span class="w"> </span><span class="n">fact</span><span class="p">(</span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">else</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">n</span><span class="o">*</span><span class="n">fact</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="nb nb-Type">int</span><span class="w"> </span><span class="n">my_mod</span><span class="p">(</span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="nb nb-Type">int</span><span class="w"> </span><span class="n">y</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="o">%</span><span class="n">y</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="nb">char</span><span class="w"> </span><span class="o">*</span><span class="n">get_time</span><span class="p">()</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">time_t</span><span class="w"> </span><span class="n">ltime</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">time</span><span class="p">(</span><span class="o">&amp;</span><span class="n">ltime</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">ctime</span><span class="p">(</span><span class="o">&amp;</span><span class="n">ltime</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="cm">/* example.i */</span><span class="w"></span>
+<span class="nf">%module</span><span class="w"> </span><span class="n">example</span><span class="w"></span>
+<span class="o">%</span><span class="p">{</span><span class="w"></span>
+<span class="cm">/* Put header files here or function declarations like below */</span><span class="w"></span>
+<span class="k">extern</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">My_variable</span><span class="p">;</span><span class="w"></span>
+<span class="k">extern</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">fact</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">);</span><span class="w"></span>
+<span class="k">extern</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">my_mod</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">y</span><span class="p">);</span><span class="w"></span>
+<span class="k">extern</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="nf">get_time</span><span class="p">();</span><span class="w"></span>
+<span class="o">%</span><span class="p">}</span><span class="w"></span>
+
+<span class="k">extern</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">My_variable</span><span class="p">;</span><span class="w"></span>
+<span class="k">extern</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">fact</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">);</span><span class="w"></span>
+<span class="k">extern</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">my_mod</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">y</span><span class="p">);</span><span class="w"></span>
+<span class="k">extern</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="nf">get_time</span><span class="p">();</span><span class="w"></span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>apt-get install libpcre3 libpcre3-dev
+
+curl https://altushost-swe.dl.sourceforge.net/project/swig/swig/swig-4.0.2/swig-4.0.2.tar.gz -o swig-4.0.2.tar.gz
+tar zxvf swig-4.0.2.tar.gz
+cd swig-4.0.2/
+./configure --prefix=/usr/local
+make &amp;&amp; make install
+</code></pre></div>
+
+<p><a href="http://www.swig.org/tutorial.html">http://www.swig.org/tutorial.html</a>
+apt install tcl tcl-dev</p>
+<div class="highlight"><pre><span></span><code><span class="nv">apt</span><span class="w"> </span><span class="nv">install</span><span class="w"> </span><span class="nv">tcl</span><span class="w"> </span><span class="nv">tcl</span><span class="o">-</span><span class="nv">dev</span><span class="w"></span>
+<span class="nv">gcc</span><span class="w"> </span><span class="o">-</span><span class="nv">fpic</span><span class="w"> </span><span class="o">-</span><span class="nv">c</span><span class="w"> </span><span class="nv">example</span>.<span class="nv">c</span><span class="w"> </span><span class="nv">example_wrap</span>.<span class="nv">c</span><span class="w"> </span><span class="o">-</span><span class="nv">I</span><span class="o">/</span><span class="nv">usr</span><span class="o">/</span><span class="k">include</span><span class="o">/</span><span class="nv">tcl</span><span class="w"></span>
+<span class="nv">gcc</span><span class="w"> </span><span class="o">-</span><span class="nv">shared</span><span class="w"> </span><span class="nv">example</span>.<span class="nv">o</span><span class="w"> </span><span class="nv">example_wrap</span>.<span class="nv">o</span><span class="w"> </span><span class="o">-</span><span class="nv">o</span><span class="w"> </span><span class="nv">example</span>.<span class="nv">so</span><span class="w"></span>
+</code></pre></div>
+
+<h2>Gestionnaire de paquets composer</h2>
+<h3>Installation</h3>
+<div class="highlight"><pre><span></span><code><span class="nt">php</span><span class="w"> </span><span class="nt">-r</span><span class="w"> </span><span class="s2">&quot;copy(&#39;https://getcomposer.org/installer&#39;, &#39;composer-setup.php&#39;);&quot;</span><span class="w"></span>
+<span class="nt">php</span><span class="w"> </span><span class="nt">-r</span><span class="w"> </span><span class="s2">&quot;if (hash_file(&#39;sha384&#39;, &#39;composer-setup.php&#39;) === &#39;756890a4488ce9024fc62c56153228907f1545c228516cbf63f885e036d37e9a59d27d63f46af1d4d07ee0f76181c7d3&#39;) { echo &#39;Installer verified&#39;; } else { echo &#39;Installer corrupt&#39;; unlink(&#39;composer-setup.php&#39;); } echo PHP_EOL;&quot;</span><span class="w"></span>
+<span class="nt">php</span><span class="w"> </span><span class="nt">composer-setup</span><span class="p">.</span><span class="nc">php</span><span class="w"></span>
+<span class="nt">php</span><span class="w"> </span><span class="nt">-r</span><span class="w"> </span><span class="s2">&quot;unlink(&#39;composer-setup.php&#39;);&quot;</span><span class="w"></span>
+
+<span class="nt">sudo</span><span class="w"> </span><span class="nt">mv</span><span class="w"> </span><span class="nt">composer</span><span class="p">.</span><span class="nc">phar</span><span class="w"> </span><span class="o">/</span><span class="nt">usr</span><span class="o">/</span><span class="nt">local</span><span class="o">/</span><span class="nt">bin</span><span class="o">/</span><span class="nt">composer</span><span class="w"></span>
+</code></pre></div>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/2021-09-23-php.html">posted at 11:19</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/tech.html" rel="tag">Tech</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/dev.html" class="tags">Dev</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/langages.html" class="tags">Langages</a>
+                </div>
+            </article>            <h4 class="date">juil. 08, 2021</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/tech-jupyter.html" rel="bookmark" title="Permanent Link to &quot;Pygmentize Less&quot;">Pygmentize Less</a>
+                </h2>
+
+                
+                
+
+                <p><a href="https://www.pugetsystems.com/labs/hpc/Note-How-To-Install-JupyterHub-on-a-Local-Server-1673/">How To Install JupyterHub on a Local Server</a></p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/tech-jupyter.html">posted at 23:51</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/developpement.html" rel="tag">Développement</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/python.html" class="tags">Python</a>
+                </div>
+            </article>            <h4 class="date">juil. 06, 2021</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/Tech/2021-07-06-bootstrap.html" rel="bookmark" title="Permanent Link to &quot;Bootstarp&quot;">Bootstarp</a>
+                </h2>
+
+                
+                
+
+                <p><a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/">https://getbootstrap.com/docs/5.0/getting-started/introduction/</a></p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/Tech/2021-07-06-bootstrap.html">posted at 16:52</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/tech.html" rel="tag">Tech</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/web.html" class="tags">Web</a>
+                </div>
+            </article>            <h4 class="date">juil. 05, 2021</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/tech/diyw.html" rel="bookmark" title="Permanent Link to &quot;DiyW&quot;">DiyW</a>
+                </h2>
+
+                
+                
+
+                <h1>DiyW</h1>
+<ul>
+<li><a href="https://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html#selection">https://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html#selection</a></li>
+<li><a href="https://docs.djangoproject.com/en/2.2/topics/db/aggregation/">https://docs.djangoproject.com/en/2.2/topics/db/aggregation/</a></li>
+<li><a href="http://ressources.univ-lemans.fr/AccesLibre/UM/Pedago/physique/02/divers/dureejour.html">http://ressources.univ-lemans.fr/AccesLibre/UM/Pedago/physique/02/divers/dureejour.html</a></li>
+<li><a href="https://stackoverflow.com/questions/21405895/datepickerwidget-in-createview">https://stackoverflow.com/questions/21405895/datepickerwidget-in-createview</a></li>
+<li><a href="https://www.youtube.com/watch?v=nle3u6Ww6Xk">https://www.youtube.com/watch?v=nle3u6Ww6Xk</a></li>
+<li><a href="https://pypi.org/project/django-pandas/">https://pypi.org/project/django-pandas/</a></li>
+<li><a href="https://stackoverflow.com/questions/11610797/trigger-function-when-date-is-selected-with-jquery-ui-datepicker">https://stackoverflow.com/questions/11610797/trigger-function-when-date-is-selected-with-jquery-ui-datepicker</a></li>
+<li><a href="https://django-filter.readthedocs.io/en/master/guide/usage.html#the-model">https://django-filter.readthedocs.io/en/master/guide/usage.html#the-model</a></li>
+<li><a href="http://localhost:8000/ws/growplans/1/">http://localhost:8000/ws/growplans/1/</a></li>
+<li><a href="https://stackoverflow.com/questions/18106454/how-to-use-a-jquery-datepicker-with-the-django-template-language">https://stackoverflow.com/questions/18106454/how-to-use-a-jquery-datepicker-with-the-django-template-language</a></li>
+<li><a href="https://raw.githubusercontent.com/programminghistorian/ph-submissions/gh-pages/assets/visualizing-with-bokeh/thor_wwii.csv">https://raw.githubusercontent.com/programminghistorian/ph-submissions/gh-pages/assets/visualizing-with-bokeh/thor_wwii.csv</a></li>
+<li><a href="https://fr.wikipedia.org/wiki/Jean_Meeus">https://fr.wikipedia.org/wiki/Jean_Meeus</a></li>
+<li><a href="https://www.sogedima.be/java/declin.php">https://www.sogedima.be/java/declin.php</a></li>
+<li><a href="http://mapage.noos.fr/r.ferreol/atelecharger/textes/jour/duree%20du%20jour.html">http://mapage.noos.fr/r.ferreol/atelecharger/textes/jour/duree%20du%20jour.html</a></li>
+<li><a href="https://nikgrozev.com/2015/12/27/pandas-in-jupyter-quickstart-and-useful-snippets/">https://nikgrozev.com/2015/12/27/pandas-in-jupyter-quickstart-and-useful-snippets/</a></li>
+<li><a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.join.html">https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.join.html</a></li>
+<li><a href="https://stackoverflow.com/questions/26265819/how-to-merge-a-series-and-dataframe">https://stackoverflow.com/questions/26265819/how-to-merge-a-series-and-dataframe</a></li>
+<li><a href="https://emacs.stackexchange.com/questions/46458/specifying-pyvenv-in-projects-dir-locals-el">https://emacs.stackexchange.com/questions/46458/specifying-pyvenv-in-projects-dir-locals-el</a></li>
+<li><a href="https://web.archive.org/web/20050302054420/http://www.guraydere.com/soundfonts/sfdetails.aspx?kat=5">https://web.archive.org/web/20050302054420/http://www.guraydere.com/soundfonts/sfdetails.aspx?kat=5</a></li>
+</ul>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/tech/diyw.html">posted at 18:10</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/projets.html" rel="tag">Projets</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/arduino.html" class="tags">arduino</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/projets.html" class="tags">Projets</a>
+                </div>
+            </article>            <h4 class="date">juil. 05, 2021</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/tech-python-pandas.html" rel="bookmark" title="Permanent Link to &quot;Pandas&quot;">Pandas</a>
+                </h2>
+
+                
+                
+
+                <h1>Pandas</h1>
+<ul>
+<li><a href="https://pypi.org/project/django-pandas/">django-pandas</a></li>
+<li><a href="https://nikgrozev.com/2015/12/27/pandas-in-jupyter-quickstart-and-useful-snippets/">Pandas in Jupyter - Quickstart and Useful Snippets</a></li>
+</ul>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/tech-python-pandas.html">posted at 16:27</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/tech.html" rel="tag">Tech</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/python.html" class="tags">python</a>
+                </div>
+            </article>            <h4 class="date">juil. 05, 2021</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/tech-less.html" rel="bookmark" title="Permanent Link to &quot;Pygmentize Less&quot;">Pygmentize Less</a>
+                </h2>
+
+                
+                
+
+                <p><a href="https://gilesorr.com/blog/pygmentize-less-update.html">https://gilesorr.com/blog/pygmentize-less-update.html</a></p>
+<div class="highlight"><pre><span></span><code><span class="c1"># ~/.zshrc</span><span class="w"></span>
+<span class="k">export</span><span class="w"> </span><span class="n">LESSOPEN</span><span class="o">=</span><span class="s2">&quot;| pygmentize -g -f terminal </span><span class="si">%s</span><span class="s2">&quot;</span><span class="w"></span>
+</code></pre></div>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/tech-less.html">posted at 16:18</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/tech.html" rel="tag">Tech</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/shell.html" class="tags">Shell</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/linux.html" class="tags">Linux</a>
+                </div>
+            </article>            <h4 class="date">mai 15, 2021</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/Livres/index.html" rel="bookmark" title="Permanent Link to &quot;Livres&quot;">Livres</a>
+                </h2>
+
+                
+                
+
+                <h1>Histoire</h1>
+<ul>
+<li><a href="https://fr.wikipedia.org/wiki/L'%C3%89trange_D%C3%A9faite">L'étrange défaite (Marc Bloch)</a></li>
+</ul>
+<h1>Musique</h1>
+<ul>
+<li>La partition intérieure (Siron)</li>
+<li>RealBooks</li>
+</ul>
+<h1>Echecs</h1>
+<p><a href="https://chessentials.com/chess-pgn-downloads/">https://chessentials.com/chess-pgn-downloads/</a></p>
+<ul>
+<li>Le guide des ouvertures aux échecs</li>
+<li>My 60 memorables games (Bobby Fischer)</li>
+</ul>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/Livres/index.html">posted at 08:53</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/culture.html" rel="tag">Culture</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/livres.html" class="tags">Livres</a>
+                </div>
+            </article>            <h4 class="date">mai 15, 2021</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/tech-docker.html" rel="bookmark" title="Permanent Link to &quot;Docker&quot;">Docker</a>
+                </h2>
+
+                
+                
+
+                <h1>Docker</h1>
+<p>Container d'applications</p>
+<p><a href="https://www.docker.com/">Docker</a></p>
+<h2>Installer docker</h2>
+<h3>Activer wsl (Windows Subsystem for Linux)</h3>
+<div class="highlight"><pre><span></span><code>dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+</code></pre></div>
+
+<h3>Définir/Mettre à jour la version de WSL</h3>
+<p><a href="https://docs.microsoft.com/fr-fr/windows/wsl/install-win10#step-4---download-the-linux-kernel-update-package">Mise à jour du noyau linux en WSL2</a></p>
+<p><a href="https://admcpr.com/how-to-upgrade-wsl-1-to-wsl-2/">How to upgrade a WSL 1 Linux distro to WSL 2</a></p>
+<p>Dans une fenêtre powershell</p>
+<div class="highlight"><pre><span></span><code>wsl --set-default-version 2
+
+wsl --list --verbose
+
+wsl --set-version &lt;distribution name&gt; &lt;versionNumber&gt;
+</code></pre></div>
+
+<p>Lister les distr et leur version wsl</p>
+<div class="highlight"><pre><span></span><code>PS C:\WINDOWS\system32&gt; wsl -l -v
+  NAME                   STATE           VERSION
+* Ubuntu                 Running         1
+  docker-desktop-data    Stopped         2
+  docker-desktop         Stopped         2
+</code></pre></div>
+
+<p>Changer la version de la distro Ubuntu de V1 vers V2</p>
+<div class="highlight"><pre><span></span><code>PS C:\WINDOWS\system32&gt; wsl --set-version Ubuntu 2
+La conversion est en cours. Cette opération peut prendre quelques minutes...
+Pour plus d’informations sur les différences de clés avec WSL 2, visitez https://aka.ms/wsl2
+</code></pre></div>
+
+<h2>Utilisation</h2>
+<h3>Commandes</h3>
+<div class="highlight"><pre><span></span><code>docker
+
+docker-compose
+</code></pre></div>
+
+<h3>docker-compose</h3>
+<p>Générer l'image</p>
+<div class="highlight"><pre><span></span><code>docker-compose up --build
+</code></pre></div>
+
+<p>lister les containers</p>
+<div class="highlight"><pre><span></span><code>docker-compose ps
+</code></pre></div>
+
+<p><a href="https://testdriven.io/blog/dockerizing-django-with-postgres-gunicorn-and-nginx/">Dockerizing Django with Postgres, Gunicorn, and Nginx</a></p>
+<p>Note: Utiliser le http_proxy et non uwsgi</p>
+<p><a href="https://testdriven.io/blog/django-docker-traefik/">Dockerizing Django with Postgres, Gunicorn, and Traefik</a></p>
+<h2>Ouvrir un shell dans un container</h2>
+<div class="highlight"><pre><span></span><code><span class="nv">docker</span><span class="w"> </span><span class="k">exec</span><span class="w"> </span><span class="o">-</span><span class="nv">it</span><span class="w"> </span><span class="o">&lt;</span><span class="nv">container</span><span class="o">&gt;</span><span class="w"> </span><span class="nv">bash</span><span class="w"></span>
+</code></pre></div>
+
+<p><a href="https://www.docker.com/blog/how-to-deploy-on-remote-docker-hosts-with-docker-compose/">How to deploy on remote Docker hosts with docker-compose</a></p>
+<p>https://github.com/docker-archive/nginx-gohttp</p>
+<h1>Divers</h1>
+<h2>Linux</h2>
+<p><a href="https://ostechnix.com/how-to-run-docker-as-non-root-user-in-linux/">https://ostechnix.com/how-to-run-docker-as-non-root-user-in-linux/</a></p>
+<h2>Déplacement du répertoire Docker du disque SSD vers le disque classique</h2>
+<p><a href="https://docs.microsoft.com/en-us/windows/win32/fileio/hard-links-and-junctions">https://docs.microsoft.com/en-us/windows/win32/fileio/hard-links-and-junctions</a></p>
+<h2>Hébergement</h2>
+<p><a href="https://www.kamatera.com/">https://www.kamatera.com/</a></p>
+<p><a href="https://www.digitalocean.com/products/droplets/">https://www.digitalocean.com/products/droplets/</a></p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/tech-docker.html">posted at 08:53</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/developpement.html" rel="tag">Développement</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/virtualisation.html" class="tags">Virtualisation</a>
+                </div>
+            </article>            <h4 class="date">mai 08, 2021</h4>
+
+            <article class="post">
+                <h2 class="title">
+                    <a href="http://dev.duloup.org/Dev/2021-08-05-django-cms.html" rel="bookmark" title="Permanent Link to &quot;Django CMS&quot;">Django CMS</a>
+                </h2>
+
+                
+                
+
+                <h1>Images docker</h1>
+<p>https://docs.divio.com/en/latest/how-to/quickstart-django-cms/?highlight=django</p>
+<h1>Tutos</h1>
+<p><a href="https://docs.django-cms.org/en/latest/introduction/02-templates_placeholders.html">https://docs.django-cms.org/en/latest/introduction/02-templates_placeholders.html</a></p>
+<h1>Bootstrap</h1>
+<p><a href="https://bootswatch.com/">Thèmes libres de droits</a></p>
+<h1>Plugins</h1>
+<p><a href="https://github.com/bitlabstudio/cmsplugin-markdown">cmsplugin-markdown</a></p>
+<h1>Recherche</h1>
+<p>https://docs.django-cms.org/en/latest/topics/searchdocs.html</p>
+                <div class="clear"></div>
+
+                <div class="info">
+                    <a href="http://dev.duloup.org/Dev/2021-08-05-django-cms.html">posted at 07:34</a>
+                    &nbsp;&middot;&nbsp;<a href="http://dev.duloup.org/category/tech.html" rel="tag">Tech</a>
+                    &nbsp;&middot;
+                    &nbsp;<a href="http://dev.duloup.org/tag/django.html" class="tags">django</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/python.html" class="tags">python</a>
+                    &nbsp;<a href="http://dev.duloup.org/tag/cms.html" class="tags">CMS</a>
+                </div>
+            </article>
+
+                <div class="clear"></div>
+                <div class="pages">
+
+                    <a href="http://dev.duloup.org/author/duloupdulouporg.html" class="prev_page">&larr;&nbsp;Previous</a>
+
+                    <a href="http://dev.duloup.org/author/duloupdulouporg3.html" class="next_page">Next&nbsp;&rarr;</a>
+
+                    <span>Page 2 of 15</span>
+                </div>
+
+            <div class="clear"></div>
+            <footer>
+                <p>
+                <a href="https://github.com/jody-frankowski/blue-penguin">Blue Penguin</a> Theme
+                &middot;
+                Powered by <a href="http://getpelican.com">Pelican</a>
+            </footer>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <script src="http://dev.duloup.org/theme/js/stork.js"></script>
+    <script>
+        stork.initialize("http://dev.duloup.org/theme/js/stork.wasm")
+        stork.downloadIndex("sitesearch", "http://dev.duloup.org/search-index.st")
+        stork.attach("sitesearch")
+    </script>
+</body>
+</html>
